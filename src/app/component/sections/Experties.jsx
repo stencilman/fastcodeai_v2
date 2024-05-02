@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import Image from "next/image";
 import React, { useState, useEffect, useRef } from "react";
 
@@ -6,7 +6,7 @@ const Experties = () => {
   const [activeMain, setActiveMain] = useState(null);
   const navRef = useRef(null);
   const mainRefs = {
-    "Consultation": useRef(null),
+    Consultation: useRef(null),
     "ML Software Solutions": useRef(null),
     "Niche Staffing": useRef(null),
     "Product Portfolio": useRef(null),
@@ -15,7 +15,7 @@ const Experties = () => {
   useEffect(() => {
     const observerOptions = {
       root: null,
-      rootMargin: '0px',
+      rootMargin: "0px",
       threshold: 0.5,
     };
 
@@ -36,11 +36,11 @@ const Experties = () => {
     return () => {
       observer.disconnect();
     };
-  }, []);
+  }, [mainRefs]);
 
   const handleSetActiveMain = (main) => {
     setActiveMain(main);
-    mainRefs[main].current.scrollIntoView({ behavior: 'smooth' });
+    mainRefs[main].current.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
@@ -105,9 +105,9 @@ const Experties = () => {
               <div className="w-[45%]">
                 <h1 className="text-[42px] text-white">Consultation</h1>
                 <p className="text-[#9EB3CF] text-[19px] font-light">
-                  Lorem Ipsum is simply dummy text of the printing and typesetting
-                  industry. Lorem Ipsum has been the industry's standard dummy text
-                  ever since the 1500s.
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industrys
+                  standard dummy text ever since the 1500s.
                 </p>
               </div>
               <div>
@@ -128,11 +128,13 @@ const Experties = () => {
           >
             <div className="flex gap-[5%] w-full">
               <div className="w-[45%]">
-                <h1 className="text-[42px] text-white">ML Software Solutions</h1>
+                <h1 className="text-[42px] text-white">
+                  ML Software Solutions
+                </h1>
                 <p className="text-[#9EB3CF] text-[19px] font-light">
-                  Lorem Ipsum is simply dummy text of the printing and typesetting
-                  industry. Lorem Ipsum has been the industry's standard dummy text
-                  ever since the 1500s.
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industrys
+                  standard dummy text ever since the 1500s.
                 </p>
               </div>
               <div>
@@ -155,9 +157,9 @@ const Experties = () => {
               <div className="w-[45%]">
                 <h1 className="text-[42px] text-white">Niche Staffing</h1>
                 <p className="text-[#9EB3CF] text-[19px] font-light">
-                  Lorem Ipsum is simply dummy text of the printing and typesetting
-                  industry. Lorem Ipsum has been the industry's standard dummy text
-                  ever since the 1500s.
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industrys
+                  standard dummy text ever since the 1500s.
                 </p>
               </div>
               <div>
@@ -180,9 +182,9 @@ const Experties = () => {
               <div className="w-[45%]">
                 <h1 className="text-[42px] text-white">Product Portfolio</h1>
                 <p className="text-[#9EB3CF] text-[19px] font-light">
-                  Lorem Ipsum is simply dummy text of the printing and typesetting
-                  industry. Lorem Ipsum has been the industry's standard dummy text
-                  ever since the 1500s.
+                  Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the industrys
+                  standard dummy text ever since the 1500s.
                 </p>
               </div>
               <div>
