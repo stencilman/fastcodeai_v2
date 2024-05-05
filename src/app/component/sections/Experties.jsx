@@ -6,7 +6,7 @@ const Experties = () => {
   const [activeMain, setActiveMain] = useState(null);
   const navRef = useRef(null);
   const mainRefs = {
-    Consultation: useRef(null),
+    "Consultation": useRef(null),
     "ML Software Solutions": useRef(null),
     "Niche Staffing": useRef(null),
     "Product Portfolio": useRef(null),
@@ -36,7 +36,7 @@ const Experties = () => {
     return () => {
       observer.disconnect();
     };
-  }, [mainRefs]);
+  }, []);
 
   const handleSetActiveMain = (main) => {
     setActiveMain(main);
