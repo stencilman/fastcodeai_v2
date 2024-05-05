@@ -4,6 +4,7 @@ import Shadow from "../Shadow";
 import Image from "next/image";
 import $ from "jquery";
 import "jquery-ui-dist/jquery-ui";
+
 const Team = () => {
   const team = [
     { Image: "/team/Arjun_Jain.webp" },
@@ -20,39 +21,56 @@ const Team = () => {
   // const anim = " border  border-[#ffffffcc]";
 
   useEffect(() => {
-   // animation of team avatars
-$(document).ready(() => {
-  const $teamAvas = $('[data-team-avas]');
-  const $teamAssets = $('[data-team-assets] img');
+    // animation of team avatars
+    $(() => {
+      const $teamAvas = $("[data-team-avas]");
+      const $teamAssets = $("[data-team-assets] img");
 
-  setInterval(() => {
-      const $hiddenImages = $teamAvas.find('.team_circle > img.opacity-0');
-      const $visibleImages = $teamAvas.find('.team_circle > img:not(.opacity-0)');
-      const uniqueSrcs = $visibleImages.map(function () {
-          return $(this).attr('src');
-      }).toArray();
+      setInterval(() => {
+        const $hiddenImages = $teamAvas.find(".team_circle > img.opacity-0");
+        const $visibleImages = $teamAvas.find(
+          ".team_circle > img:not(.opacity-0)"
+        );
+        const uniqueSrcs = $visibleImages
+          .map(function () {
+            return $(this).attr("src");
+          })
+          .toArray();
 
-      let randomAssetIndex;
+        let randomAssetIndex;
 
-      do {
+        do {
           randomAssetIndex = Math.floor(Math.random() * $teamAssets.length);
-      } while (uniqueSrcs.includes($teamAssets.eq(randomAssetIndex).attr('src')));
+        } while (
+          uniqueSrcs.includes($teamAssets.eq(randomAssetIndex).attr("src"))
+        );
 
-      const $randomAsset = $teamAssets.eq(randomAssetIndex);
-      const randomHiddenAvaIndex = Math.floor(Math.random() * $hiddenImages.length);
-      const randomVisibleAvaIndex = Math.floor(Math.random() * $visibleImages.length);
+        const $randomAsset = $teamAssets.eq(randomAssetIndex);
+        const randomHiddenAvaIndex = Math.floor(
+          Math.random() * $hiddenImages.length
+        );
+        const randomVisibleAvaIndex = Math.floor(
+          Math.random() * $visibleImages.length
+        );
 
-      const $randomHiddenAva = $hiddenImages.eq(randomHiddenAvaIndex);
-      const $randomVisibleAva = $visibleImages.eq(randomVisibleAvaIndex);
-      const assetSrc = $randomAsset.attr('src');
+        const $randomHiddenAva = $hiddenImages.eq(randomHiddenAvaIndex);
+        const $randomVisibleAva = $visibleImages.eq(randomVisibleAvaIndex);
+        const assetSrc = $randomAsset.attr("src");
 
-      $randomHiddenAva.attr('src', assetSrc).removeClass('opacity-0').addClass('transition-opacity').parent().addClass('transition-all');
-      $randomVisibleAva.not($randomHiddenAva).addClass('opacity-0').removeClass('transition-opacity').parent().removeClass('transition-all');
-
-  }, 2000);
-
-});
-
+        $randomHiddenAva
+          .attr("src", assetSrc)
+          .removeClass("opacity-0")
+          .addClass("transition-opacity")
+          .parent()
+          .addClass("transition-all");
+        $randomVisibleAva
+          .not($randomHiddenAva)
+          .addClass("opacity-0")
+          .removeClass("transition-opacity")
+          .parent()
+          .removeClass("transition-all");
+      }, 2000);
+    });
   }, []);
   return (
     <div className="w-full h-[100vh] bg-gradient-to-br from-[#000E32] to-[#000929] opacity-83 relative flex flex-col items-center justify-center z-[4]">
@@ -209,12 +227,12 @@ $(document).ready(() => {
               </div>
             </div>
           </div>
-          <div data-team-assets="" class="team__assets-avas hide hidden">
+          <div data-team-assets="" className="team__assets-avas hide hidden">
             <Image
               src="/team/Arjun_Jain.webp"
               loading="eager"
               alt="Arjun Jain"
-              class="team__assets-ava"
+              className="team__assets-ava"
               width="120"
               height="120"
             />
@@ -222,7 +240,7 @@ $(document).ready(() => {
               src="/team/abdul.png"
               loading="eager"
               alt="Abdul team member"
-              class="team__assets-ava"
+              className="team__assets-ava"
               width="120"
               height="120"
             />
@@ -230,7 +248,7 @@ $(document).ready(() => {
               src="/team/darshan.webp"
               loading="eager"
               alt="Darshan team member"
-              class="team__assets-ava"
+              className="team__assets-ava"
               width="120"
               height="120"
             />
@@ -238,7 +256,7 @@ $(document).ready(() => {
               src="/team/Dhaval.webp"
               loading="eager"
               alt="Dhaval team member"
-              class="team__assets-ava"
+              className="team__assets-ava"
               width="120"
               height="120"
             />
@@ -246,7 +264,7 @@ $(document).ready(() => {
               src="/team/dhruv1.webp"
               loading="eager"
               alt="Dhruv team member"
-              class="team__assets-ava"
+              className="team__assets-ava"
               width="120"
               height="120"
             />
@@ -254,15 +272,23 @@ $(document).ready(() => {
               src="/team/eshwar.webp"
               loading="eager"
               alt="Eshwar team member"
-              class="team__assets-ava"
+              className="team__assets-ava"
               width="120"
               height="120"
             />
-            <Image
+            {/* <Image
               src="/team/gautham.webp"
               loading="eager"
               alt="Gautham team member"
-              class="team__assets-ava"
+              className="team__assets-ava"
+              width="120"
+              height="120"
+            /> */}
+            <Image
+              src="/team/Jadhav.webp"
+              loading="eager"
+              alt="Jadhav team member"
+              className="team__assets-ava"
               width="120"
               height="120"
             />
@@ -270,15 +296,7 @@ $(document).ready(() => {
               src="/team/Jadhav.webp"
               loading="eager"
               alt="Jadhav team member"
-              class="team__assets-ava"
-              width="120"
-              height="120"
-            />
-            <Image
-              src="/team/Jadhav.webp"
-              loading="eager"
-              alt="Jadhav team member"
-              class="team__assets-ava"
+              className="team__assets-ava"
               width="120"
               height="120"
             />
@@ -286,7 +304,7 @@ $(document).ready(() => {
               src="/team/Nanda.webp"
               loading="eager"
               alt="Nanda team member"
-              class="team__assets-ava"
+              className="team__assets-ava"
               width="120"
               height="120"
             />
@@ -294,7 +312,7 @@ $(document).ready(() => {
               src="/team/parth-bw.webp"
               loading="eager"
               alt="Parth team member"
-              class="team__assets-ava"
+              className="team__assets-ava"
               width="120"
               height="120"
             />
@@ -302,7 +320,7 @@ $(document).ready(() => {
               src="/team/Prabal.webp"
               loading="eager"
               alt="Prabal team member"
-              class="team__assets-ava"
+              className="team__assets-ava"
               width="120"
               height="120"
             />
@@ -310,7 +328,7 @@ $(document).ready(() => {
               src="/team/Sanjay.webp"
               loading="eager"
               alt="Sanjay team member"
-              class="team__assets-ava"
+              className="team__assets-ava"
               width="120"
               height="120"
             />
@@ -318,7 +336,7 @@ $(document).ready(() => {
               src="/team/Shreyas.webp"
               loading="eager"
               alt="Shreyas team member"
-              class="team__assets-ava"
+              className="team__assets-ava"
               width="120"
               height="120"
             />
@@ -326,7 +344,7 @@ $(document).ready(() => {
               src="/team/Sughosh.webp"
               loading="eager"
               alt="Sughosh team member"
-              class="team__assets-ava"
+              className="team__assets-ava"
               width="120"
               height="120"
             />
@@ -334,7 +352,7 @@ $(document).ready(() => {
               src="/team/Tirth.webp"
               loading="eager"
               alt="Tirth team member"
-              class="team__assets-ava"
+              className="team__assets-ava"
               width="120"
               height="120"
             />

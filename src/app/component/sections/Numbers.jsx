@@ -32,8 +32,8 @@ const Numbers = () => {
       <div className="circles absolute inset-0 flex items-center justify-center w-[100vw] max-w-[484vh]">
         <div className="circle circle-1 absolute border border-white rounded-full left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 aspect-[1] opacity-[0.3] w-[45%]"></div>
         <div className="circle circle-2 absolute border border-dashed border-white rounded-full left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 aspect-[1] w-[35%]"></div>
-        <div class="circle circle-3 absolute border border-solid border-white rounded-full left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 aspect-[1] opacity-[0.3] w-[25%]"></div>
-        <div class="circle circle-4 absolute border border-solid border-white rounded-full left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 aspect-[1] opacity-[0.3] w-[20%]"></div>
+        <div className="circle circle-3 absolute border border-solid border-white rounded-full left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 aspect-[1] opacity-[0.3] w-[25%]"></div>
+        <div className="circle circle-4 absolute border border-solid border-white rounded-full left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 aspect-[1] opacity-[0.3] w-[20%]"></div>
       </div>
     </div>
   );

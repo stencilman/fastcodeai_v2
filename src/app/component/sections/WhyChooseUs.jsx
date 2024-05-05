@@ -10,7 +10,7 @@ const WhyChooseUs = () => {
       <div className="absolute right-[10px]  w-[169px] h-[421px] blur-[50px] translate-y-[167px] scale-90  rounded-[50%] z-[4] bg-gradient-to-br from-[#1D8283] to-[#033577] bg-gradient-156deg bg-no-repeat bg-[0% 0%] opacity-49 border-0 border-opacity-0 filter blur-[100px]"></div>
       <h1 className="text-5xl text-white">Why Choose us?</h1>
       <div className="reltive z-10 grid grid-rows-3 grid-flow-col gap-[27px] w-full h-[506px] mt-[61px]">
-        <div class="row-span-3 bg-gradient-to-br from-[#000E32] to-[#000929] opacity-83 h-[506px] rounded-[18px] w-[413px]">
+        <div className="row-span-3 bg-gradient-to-br from-[#000E32] to-[#000929] opacity-83 h-[506px] rounded-[18px] w-[413px]">
           <div className="w-full flex flex-col items-center">
             <h3 className="text-[32px] w-[290px] text-white text-center pt-[54px]">
               <span className="font-bold">Al</span> Adoption across diverse
@@ -25,7 +25,7 @@ const WhyChooseUs = () => {
             </div>
           </div>
         </div>
-        <div class="col-span-2 bg-gradient-to-br from-[#000E32] to-[#000929] h-[156px] rounded-[18px]">
+        <div className="col-span-2 bg-gradient-to-br from-[#000E32] to-[#000929] h-[156px] rounded-[18px]">
           <div className="flex py-[29px] px-[35px] gap-[30px]">
             <Image
               className="relative top-[-20px]"
@@ -43,7 +43,7 @@ const WhyChooseUs = () => {
             </div>
           </div>
         </div>
-        <div class="col-span-2 bg-gradient-to-br from-[#000E32] to-[#000929] h-[156px] rounded-[18px]">
+        <div className="col-span-2 bg-gradient-to-br from-[#000E32] to-[#000929] h-[156px] rounded-[18px]">
           <div className="flex py-[29px] px-[35px] gap-[30px]">
             <Image
               className="relative top-[-20px]"
@@ -61,7 +61,7 @@ const WhyChooseUs = () => {
             </div>
           </div>
         </div>
-        <div class="col-span-2 bg-gradient-to-br from-[#000E32] to-[#000929] h-[156px] rounded-[18px]">
+        <div className="col-span-2 bg-gradient-to-br from-[#000E32] to-[#000929] h-[156px] rounded-[18px]">
           <div className="flex py-[29px] px-[35px] gap-[30px]">
             <Image
               className="relative top-[-20px]"
