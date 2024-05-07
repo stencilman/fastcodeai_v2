@@ -61,12 +61,9 @@ const Team = () => {
       <div className="flex gap-[0px] w-full items-center z-[3]">
         <div className="pl-[100px] w-[45%]">
           <h1 className="text-[51px] text-white">Our Team</h1>
-          <p className="text-[#9EB3CF] w-[80%] text-[19px] font-light">
-            Lorem Ipsum is simply dummy text of the printing and typesetting
-            industry Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-            Commodi ratione asperiores laboriosam dolorem dolores amet inventore
-            repellat autem officia dolorum accusamus expedita numquam adipisci
-            eligendi neque, rerum eius alias non?
+          <p className="text-[#9EB3CF] w-[80%] text-[19px] font-light mt-[30px]">
+          Our team consists of seasoned professionals with extensive research backgrounds, authors of influential papers, and contributors to open-source initiatives. Carefully selected from top universities, with a premium placed on innovative problem solvers.
+
           </p>
           <button className="rounded-[28px] mt-[50px] flex items-center gap-[7px] bg-gradient-to-br from-[#2DC1C3] to-[#0268F2] text-white p-[15px] text-lg">
             Get Started

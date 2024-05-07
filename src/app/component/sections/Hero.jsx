@@ -22,12 +22,12 @@ const Hero = () => {
       </div>
       <div className="w-full bottom-28 absolute z-[1] text-center ">
         <h1 className="text-[#F3F3F3] text-8xl pb-[20px]">
-          Real-time on Edge
-          <br /> Computer Vision
+        Accelerating Innovation
         </h1>
         <p className="text-[#9EB3CF] text-lg items-center">
-          Leading AI Adoption partner enabling industry leaders
-          <br /> to harness cutting edge intelligence
+        Expertly engineered tailored AI solutions—precision, reliability, <br />  and unrelenting excellence
+
+          {/* <br /> to harness cutting edge intelligence */}
         </p>
       </div>
     </div>

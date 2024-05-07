@@ -40,13 +40,11 @@ const HowWeDo = () => {
             {showAccordion === 0 && (
               <div className="flex flex-col w-[333px]  ">
                 <h3 className="text-4xl w-full text-white pt-[20px]">
-                  Sign Non-Disclosure Agreement
+                  Connect With Us
                 </h3>
                 <p className="text-[#9EB3CF] text-[19px] leading-7 pt-[23px]">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industrys
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of{" "}
+                  Fill out our NDA-protected contact form, book a time on our
+                  calendar, and arrange an e-meeting with our expert team.
                 </p>
               </div>
             )}
@@ -80,13 +78,11 @@ const HowWeDo = () => {
             {showAccordion === 1 && (
               <div className="flex flex-col w-[333px]  ">
                 <h3 className="text-4xl w-full text-white pt-[20px]">
-                  Sign Non-Disclosure Agreement
+                  Project Feasibility Consultation
                 </h3>
                 <p className="text-[#9EB3CF] text-[19px] leading-7 pt-[23px]">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industrys
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of{" "}
+                  Discuss your project ideas in a consultation call with our
+                  team, to assess their feasibility and potential impact.
                 </p>
               </div>
             )}
@@ -120,13 +116,12 @@ const HowWeDo = () => {
             {showAccordion === 2 && (
               <div className="flex flex-col w-[333px]  ">
                 <h3 className="text-4xl w-full text-white pt-[20px]">
-                  Sign Non-Disclosure Agreement
+                  Get a Detailed Cost Estimate
                 </h3>
                 <p className="text-[#9EB3CF] text-[19px] leading-7 pt-[23px]">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industrys
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of{" "}
+                  {"We'll"} provide a comprehensive project proposal, including
+                  budget and timeline estimates, tailored to your specific
+                  requirements.
                 </p>
               </div>
             )}
@@ -160,13 +155,11 @@ const HowWeDo = () => {
             {showAccordion === 3 && (
               <div className="flex flex-col w-[333px]  ">
                 <h3 className="text-4xl w-full text-white pt-[20px]">
-                  Sign Non-Disclosure Agreement
+                  Project Kickoff
                 </h3>
                 <p className="text-[#9EB3CF] text-[19px] leading-7 pt-[23px]">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industrys
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of{" "}
+                  After finalizing the agreement, we initiate your project,
+                  committed to delivering excellence.
                 </p>
               </div>
             )}

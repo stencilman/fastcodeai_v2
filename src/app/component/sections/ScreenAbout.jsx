@@ -17,13 +17,13 @@ const ScreenAbout = () => {
       </div>
       <div className="mb-[100px]">
         <h1 className="text-[51px] text-white">About FastCodeAI</h1>
-        <p className="text-[#9EB3CF] text-[19px] w-[80%]">
-          Fast Code AI is a leading AI adoption partner that collaborates with
-          industry leaders to harness the power of advanced intelligence. They
-          specialize in developing AI solutions for various domains, including
-          computer vision, trend forecasting, and targeted consumer insights.
-          Ipsum potenti at congue magna amet id egestas. Quisque imperdiet
-          feugiat ac sit est vitae cras. Amet ut ornare eu at
+        <p className="text-[#9EB3CF] text-[19px] w-[80%] pt-[20px]">
+          As a leading AI adoption partner, we empower industry leaders to
+          harness cutting-edge intelligence, scale and execute applications, and
+          automate operations. We enhance safety, streamline experiences, and
+          provide deep insights into machinery and manufacturing through
+          advanced automation and data exchange. Our commitment to Excellence,
+          Innovation, and Integrity drives every solution.
         </p>
       </div>
     </div>

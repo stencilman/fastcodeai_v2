@@ -111,7 +111,7 @@ const TestimonialsN = () => {
   return (
     <>
       {/* Slide Contaner */}
-      <div className="section overflow-hidden">
+      <div className="section overflow-hidden bg-[#00081F] relative">
         <div className="page-padding">
           <div className="container">
             <div className="customer-stories-slider">
