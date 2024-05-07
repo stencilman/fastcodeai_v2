@@ -23,8 +23,9 @@ const TestimonialsN = () => {
     console.log("link", link);
     console.log("script", script);
     return () => {
-      document.body.removeChild(script);
-      document.head.removeChild(link);
+        console.log("slider compo unmount")
+    //   document.body.removeChild(script);
+    //   document.head.removeChild(link);
     };
   }, []);
 
