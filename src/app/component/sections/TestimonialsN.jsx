@@ -4,7 +4,6 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-
 const TestimonialsN = () => {
   const [swiperLoaded, setSwiperLoaded] = useState(false);
 
@@ -18,20 +17,19 @@ const TestimonialsN = () => {
     const link = document.createElement("link");
     link.href = "https://unpkg.com/swiper@8/swiper-bundle.min.css";
     link.rel = "stylesheet";
-    link.onload = () => setSwiperLoaded(true);
     document.head.appendChild(link);
     console.log("link", link);
     console.log("script", script);
     return () => {
-        console.log("slider compo unmount")
-    //   document.body.removeChild(script);
-    //   document.head.removeChild(link);
+      console.log("slider compo unmount");
+      document.body.removeChild(script);
+      document.head.removeChild(link);
     };
   }, []);
 
   useEffect(() => {
     if (!swiperLoaded) return;
-
+    console.log("swiperLoaded", swiperLoaded);
     document
       .querySelectorAll(".cs-cards-container, .cs-nav-container")
       .forEach((element) => {
@@ -112,7 +110,6 @@ const TestimonialsN = () => {
   }, [swiperLoaded]);
   return (
     <>
-     
       {/* Slide Contaner */}
       <div className="section overflow-hidden">
         <div className="page-padding">
@@ -431,8 +428,8 @@ const TestimonialsN = () => {
                       </div>
                     </div>
                   </div>
-                   {/* Slide 4 */}
-                   <div
+                  {/* Slide 4 */}
+                  <div
                     role="listitem"
                     className="cs-cards-slide swiper-slide w-dyn-item"
                   >
@@ -449,7 +446,14 @@ const TestimonialsN = () => {
                 /> */}
                       <div className="cs-card-quote cc-embed w-embed">
                         <blockquote className="cs-card-quote">
-                          “ I had the pleasure of working with Arjun on a project focused on pedestrian pose estimation for autonomous driving. I genuinely enjoyed collaborating with him. His expertise in computer vision and commitment to innovation were pivotal in achieving our project goals. I am confident that Arjun and his team at Fastcode.ai will be an invaluable asset in any future endeavor and highly recommend him.”
+                          “ I had the pleasure of working with Arjun on a
+                          project focused on pedestrian pose estimation for
+                          autonomous driving. I genuinely enjoyed collaborating
+                          with him. His expertise in computer vision and
+                          commitment to innovation were pivotal in achieving our
+                          project goals. I am confident that Arjun and his team
+                          at Fastcode.ai will be an invaluable asset in any
+                          future endeavor and highly recommend him.”
                         </blockquote>
                       </div>
                       <div className="cs-card-bottom">
@@ -463,10 +467,11 @@ const TestimonialsN = () => {
                           />
                           <div>
                             <div className="text-color-light-2 ">
-                            Fabian Flohr
+                              Fabian Flohr
                             </div>
                             <div className="text-block ">
-                            Professor of Machine learning @ Munich University of Applied Sciences
+                              Professor of Machine learning @ Munich University
+                              of Applied Sciences
                             </div>
                           </div>
                         </div>
@@ -585,8 +590,8 @@ const TestimonialsN = () => {
                         className="cs-nav-slide-line"
                       />
                     </div>
-                     {/* Nav Slide 4 */}
-                     <div
+                    {/* Nav Slide 4 */}
+                    <div
                       role="listitem"
                       className="cs-nav-slide swiper-slide w-dyn-item"
                     >
