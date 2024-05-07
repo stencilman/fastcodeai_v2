@@ -136,15 +136,16 @@ const TestimonialsN = () => {
                       className="cs-card-accent"
                     ></div>
                     <div className="cs-card-content">
-                      {/* <img
-                  src="https://assets-global.website-files.com/621f84dc15b5ed16dc85a18a/654d270e40fa9a01f696c38d_chromatic-seeklogo.com%202.svg"
-                  loading="lazy"
-                  alt=""
-                  className="cs-card-logo"
-                /> */}
+                      <Image
+                        src="/testimonials/logos/Google.png"
+                        alt=""
+                        width="120"
+                        height="50"
+                        className="cs-card-logo w-auto h-auto"
+                      />
                       <div className="cs-card-quote cc-embed w-embed">
                         <blockquote className="cs-card-quote">
-                          “ Arjun is a great researcher / scientist / and
+                          “Arjun is a great researcher / scientist / and
                           entrepreneur. I first learned about his research at
                           MPI on his movie-reshape work that made a big splash
                           in the community, and subsequently I managed to
@@ -157,7 +158,7 @@ const TestimonialsN = () => {
                           Yann Lecuns lab, as well as kept collaborating
                           internationally with other leading research teams. It
                           was a joy to work with him, he was a very productive
-                          and strong researcher! ”
+                          and strong researcher!”
                         </blockquote>
                       </div>
                       <div className="cs-card-bottom">
@@ -178,7 +179,11 @@ const TestimonialsN = () => {
                             </div>
                           </div>
                         </div>
-                        <Link href="/" className="">
+                        <Link
+                          href="https://www.linkedin.com/in/chrisbregler/"
+                          target="_blank"
+                          className=""
+                        >
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             x="0px"
@@ -240,12 +245,13 @@ const TestimonialsN = () => {
                       className="cs-card-accent"
                     />
                     <div className="cs-card-content">
-                      {/* <img
-                  src="https://assets-global.website-files.com/621f84dc15b5ed16dc85a18a/65f43dd23bea3bc201457978_indeed-logo.svg"
-                  loading="lazy"
-                  alt=""
-                  className="cs-card-logo"
-                /> */}
+                      <Image
+                        src="/testimonials/logos/meta1.svg"
+                        alt=""
+                        width="120"
+                        height="50"
+                        className="cs-card-logo w-auto h-auto"
+                      />
                       <div className="cs-card-quote cc-embed w-embed">
                         <blockquote className="cs-card-quote">
                           “​I had the pleasure of working with Arjun while he
@@ -277,7 +283,11 @@ const TestimonialsN = () => {
                             </div>
                           </div>
                         </div>
-                        <Link href="/" className="">
+                        <Link
+                          href="https://www.linkedin.com/in/yann-lecun"
+                          target="_blank"
+                          className=""
+                        >
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             x="0px"
@@ -339,12 +349,13 @@ const TestimonialsN = () => {
                       className="cs-card-accent"
                     />
                     <div className="cs-card-content">
-                      {/* <img
-                  src="https://assets-global.website-files.com/621f84dc15b5ed16dc85a18a/65f43dd23bea3bc201457978_indeed-logo.svg"
-                  loading="lazy"
-                  alt=""
-                  className="cs-card-logo"
-                /> */}
+                      <Image
+                        src="/testimonials/logos/liftlab.webp"
+                        alt=""
+                        width="120"
+                        height="50"
+                        className="cs-card-logo w-auto h-auto"
+                      />
                       <div className="cs-card-quote cc-embed w-embed">
                         <blockquote className="cs-card-quote">
                           “ {"Arjun's"} dedication and innovative approach
@@ -376,7 +387,11 @@ const TestimonialsN = () => {
                             </div>
                           </div>
                         </div>
-                        <Link href="/" className="">
+                        <Link
+                          href="https://www.linkedin.com/in/nitin-kj"
+                          target="_blank"
+                          className=""
+                        >
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             x="0px"
@@ -438,12 +453,13 @@ const TestimonialsN = () => {
                       className="cs-card-accent"
                     />
                     <div className="cs-card-content">
-                      {/* <img
-                  src="https://assets-global.website-files.com/621f84dc15b5ed16dc85a18a/65f43dd23bea3bc201457978_indeed-logo.svg"
-                  loading="lazy"
-                  alt=""
-                  className="cs-card-logo"
-                /> */}
+                      <Image
+                        src="/testimonials/logos/munichuniv.png"
+                        alt=""
+                        width="120"
+                        height="50"
+                        className="cs-card-logo w-auto h-auto"
+                      />
                       <div className="cs-card-quote cc-embed w-embed">
                         <blockquote className="cs-card-quote">
                           “ I had the pleasure of working with Arjun on a
@@ -475,7 +491,125 @@ const TestimonialsN = () => {
                             </div>
                           </div>
                         </div>
-                        <Link href="/" className="">
+                        <Link
+                          href="https://www.linkedin.com/in/fabian-flohr-a99031115"
+                          target="_blank"
+                          className=""
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            x="0px"
+                            y="0px"
+                            width="50"
+                            height="50"
+                            viewBox="0,0,300,150"
+                          >
+                            <g
+                              fill="#ffffff"
+                              fillRule="nonzero"
+                              stroke="none"
+                              strokeWidth="1"
+                              strokeLinecap="butt"
+                              strokeLinejoin="miter"
+                              strokeMiterlimit="10"
+                              strokeDasharray=""
+                              strokeDashoffset="0"
+                              fontFamily="none"
+                              fontWeight="none"
+                              fontSize="none"
+                              textAnchor="none"
+                              style={{ mixBlendMode: "normal" }}
+                            >
+                              <g transform="scale(5.12,5.12)">
+                                <path d="M41,4h-32c-2.76,0 -5,2.24 -5,5v32c0,2.76 2.24,5 5,5h32c2.76,0 5,-2.24 5,-5v-32c0,-2.76 -2.24,-5 -5,-5zM17,20v19h-6v-19zM11,14.47c0,-1.4 1.2,-2.47 3,-2.47c1.8,0 2.93,1.07 3,2.47c0,1.4 -1.12,2.53 -3,2.53c-1.8,0 -3,-1.13 -3,-2.53zM39,39h-6c0,0 0,-9.26 0,-10c0,-2 -1,-4 -3.5,-4.04h-0.08c-2.42,0 -3.42,2.06 -3.42,4.04c0,0.91 0,10 0,10h-6v-19h6v2.56c0,0 1.93,-2.56 5.81,-2.56c3.97,0 7.19,2.73 7.19,8.26z"></path>
+                              </g>
+                            </g>
+                          </svg>
+
+                          {/* <div className="sec-button-chevron w-embed">
+                      <svg
+                        width={14}
+                        height={14}
+                        viewBox="0 0 14 14"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M5.25 10.5L8.75 7L5.25 3.5"
+                          stroke="#B1B3F6"
+                          strokeWidth="1.33"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
+                      </svg>
+                    </div> */}
+                        </Link>
+                      </div>
+                    </div>
+                  </div>
+                  {/* Slide 5 */}
+                  <div
+                    role="listitem"
+                    className="cs-cards-slide swiper-slide w-dyn-item"
+                  >
+                    <div
+                      style={{ backgroundColor: "#003a9b" }}
+                      className="cs-card-accent"
+                    />
+                    <div className="cs-card-content">
+                      <Image
+                        src="/testimonials/logos/bosch.png"
+                        alt=""
+                        width="120"
+                        height="50"
+                        className="cs-card-logo w-auto h-auto"
+                      />
+
+                      <div className="cs-card-quote cc-embed w-embed">
+                        <blockquote className="cs-card-quote">
+                          “I have been working with Arjun and his team for over
+                          four years now. Together we have been working and
+                          solving complex AI computer vision problems in the
+                          space of Autonomous driving Software. Arjun brings
+                          with him a very deep understanding of how to apply AI
+                          in the autonomous driving space. His connection to
+                          academia and industry differentiates his contribution
+                          from being just theoretical research and more towards
+                          application research.
+                          {"Arjun’s"} team working on the projects are brilliant
+                          , resourceful and extremely effective at cracking very
+                          difficult problems and delivering state of the art CV
+                          software. I highly recommend Arjun and his engineers
+                          for their deep knowledge on AI CV , along with their
+                          excellent professionalism. It has been great working
+                          with Arjun and team over the last many years.”
+                        </blockquote>
+                      </div>
+                      <div className="cs-card-bottom">
+                        <div className="cs-card-author">
+                          <Image
+                            src="/testimonials/Bindu.webp"
+                            width="64"
+                            height="64"
+                            alt=""
+                            className="cs-card-img object-cover bg-white"
+                          />
+                          <div>
+                            <div className="text-color-light-2 ">
+                              Bindu Santha Philip
+                            </div>
+                            <div className="text-block ">
+                              Vice President Technology - Autonomous driving
+                              Functions and Data enablers @ Bosch Global
+                              Software Technologies India
+                            </div>
+                          </div>
+                        </div>
+                        <Link
+                          href="https://www.linkedin.com/in/bindu-santha-philip-b6462956"
+                          target="_blank"
+                          className=""
+                        >
                           <svg
                             xmlns="http://www.w3.org/2000/svg"
                             x="0px"
@@ -562,7 +696,7 @@ const TestimonialsN = () => {
                       className="cs-nav-slide swiper-slide w-dyn-item"
                     >
                       <Image
-                        src="/testimonials/logos/meta.jpeg"
+                        src="/testimonials/logos/meta1.svg"
                         width="120"
                         height="50"
                         alt=""
@@ -604,6 +738,23 @@ const TestimonialsN = () => {
                       />
                       <div
                         style={{ backgroundColor: "#fb5454" }}
+                        className="cs-nav-slide-line"
+                      />
+                    </div>
+                    {/* Nav Slide 5 */}
+                    <div
+                      role="listitem"
+                      className="cs-nav-slide swiper-slide w-dyn-item"
+                    >
+                      <Image
+                        src="/testimonials/logos/bosch.png"
+                        width="120"
+                        height="50"
+                        alt=""
+                        className="cs-nav-logo "
+                      />
+                      <div
+                        style={{ backgroundColor: "#c92125" }}
                         className="cs-nav-slide-line"
                       />
                     </div>
