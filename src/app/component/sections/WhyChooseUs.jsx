@@ -8,7 +8,7 @@ const WhyChooseUs = () => {
   return (
     <div className="w-full h-[100vh] pl-[160px] pr-[127px] relative bg-[#00081F] flex flex-col justify-center ">
       <div className="absolute right-[10px]  w-[169px] h-[421px] blur-[50px] translate-y-[167px] scale-90  rounded-[50%] z-[4] bg-gradient-to-br from-[#1D8283] to-[#033577] bg-gradient-156deg bg-no-repeat bg-[0% 0%] opacity-49 border-0 border-opacity-0 filter blur-[100px]"></div>
-      <h1 className="text-5xl text-white">Why Choose us?</h1>
+      <h1 className="text-5xl  text-white">Why Choose us?</h1>
       <div className="reltive z-10 grid grid-rows-3 grid-flow-col gap-[27px] w-full h-[506px] mt-[61px]">
         <div className="row-span-3 bg-gradient-to-br from-[#000E32] to-[#000929] opacity-83 h-[506px] rounded-[18px] w-[413px]">
           <div className="w-full flex flex-col items-center">

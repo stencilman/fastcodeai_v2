@@ -3,14 +3,14 @@ import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/effect-coverflow';
-import 'swiper/css/pagination';
+// import 'swiper/css';
+// import 'swiper/css/effect-coverflow';
+// import 'swiper/css/pagination';
 
 
 
 // import required modules
-import { EffectCoverflow, Pagination } from 'swiper/modules';
+// import { EffectCoverflow, Pagination } from 'swiper/modules';
 import Image from "next/image";
 import Slider from "../Slider";
 

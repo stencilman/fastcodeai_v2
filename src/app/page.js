@@ -11,6 +11,7 @@ import HowWeDo from "./component/sections/HowWeDo";
 import Testimonials from "./component/sections/Testimonials";
 import Footer from "./component/sections/Footer";
 import Numbers from "./component/sections/Numbers";
+import TestimonialsN from "./component/sections/TestimonialsN";
 
 export default function Home() {
   return (
@@ -20,13 +21,13 @@ export default function Home() {
       <ScreenAbout />
       <Clients />
       <Numbers />
-      <Experties />
+      {/* <Experties /> */}
       <Team />
       <OurWork />
       <WhyChooseUs />
       <HowWeDo />
       <Industries />
-      {/* <Testimonials/> */}
+      <TestimonialsN/>
       <Footer />
     </>
   )

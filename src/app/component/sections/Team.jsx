@@ -38,11 +38,11 @@ const Team = () => {
           const randomVisibleIndex = Math.floor(
             Math.random() * visibleImages.length
           );
-          console.log("randomVisibleIndex",randomVisibleIndex)
+          // console.log("randomVisibleIndex",randomVisibleIndex)
           const randomHiddenIndex = Math.floor(
             Math.random() * hiddenImages.length
           );
-          console.log("randomHiddenIndex",randomHiddenIndex)
+          // console.log("randomHiddenIndex",randomHiddenIndex)
 
           // Swap visibility
           visibleImages[randomVisibleIndex].visible = false;
