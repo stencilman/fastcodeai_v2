@@ -14,9 +14,9 @@ const Clients = () => {
     offset: ["start end", "end start"],
   });
 
-  const x1 = useTransform(scrollYProgress, [0, 1], ["-50%", "10%"]);
+  const x1 = useTransform(scrollYProgress, [0, 1], ["-30%", "10%"]);
 
-  const x2 = useTransform(scrollYProgress, [0, 1], ["10%", "-50%"]);
+  const x2 = useTransform(scrollYProgress, [0, 1], ["10%", "-30%"]);
 
   const slider1 = [
     {
@@ -97,7 +97,7 @@ const Clients = () => {
           <div className="relative z-[5] h-full pl-[100px] w-[40%] ">
             <div className="w-full h-full flex flex-col justify-center">
               <h1 className="text-[51px] text-white">Our Clients</h1>
-              <p className="text-[#9EB3CF] pl-[20px] text-[19px] font-light mt-[30px]">
+              <p className="text-[#9EB3CF] pr-[20px] text-[19px] font-light mt-[30px]">
                 {"We've "}worked with a diverse clientele - from Forbes 500
                 Enterprise firms to Sillicon Valley startups, across various
                 industries.
@@ -108,7 +108,7 @@ const Clients = () => {
           <div className="w-[60%] flex flex-col gap-[2vw] relative z-[1] overflow-x-hidden">
             <div className="absolute left-[-65px] w-[80px] h-full  bg-gradient-to-br from-[#000E32] to-[#000929] opacity-83 z-20 blur-[10px]"></div>
             {/* slider */}
-            <motion.div style={{ x: x1 }} className="flex relative gap-[20px] w-[250%]">
+            <motion.div style={{ x: x1, transition: { duration: 0.5, type: "spring", stiffness: 100 } }} className="flex relative gap-[20px] w-[250%]">
               {slider1.map((e, i) => {
                 return (
                   <div
@@ -127,7 +127,7 @@ const Clients = () => {
             </motion.div>
             {/* slider */}
             <motion.div
-              style={{ x: x2 }}
+              style={{ x: x2, transition: { duration: 0.5, type: "spring", stiffness: 100 } }}
               className="flex gap-[20px] ml-[120px] w-[250%]"
             >
               {slider2.map((e, i) => {
