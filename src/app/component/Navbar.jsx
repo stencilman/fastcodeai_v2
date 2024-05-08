@@ -5,6 +5,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import Nav from "./Nav";
 import { useGlobalContext } from "../context/GlobalContext";
+import Link from "next/link";
 
 const Navbar = () => {
   // const [isActive, setIsActive] = useState(false);
@@ -44,7 +45,7 @@ const Navbar = () => {
     >
       <div className="mx-[100px]  pt-[50px] flex items-center justify-between ">
         <div className="relative z-[1]">
-          <Image src="/logo1.png" alt="logo" width="290" height="68" />
+          <Link href="/"> <Image priority="true" src="/logo1.png" alt="logo" width="290" height="68" /></Link>
         </div>
         <div className="flex items-center gap-[14px]">
           <button

@@ -14,17 +14,19 @@ import Footer from "./component/sections/Footer";
 import Numbers from "./component/sections/Numbers";
 import TestimonialsN from "./component/sections/TestimonialsN";
 import { useGlobalContext } from "./context/GlobalContext";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+
 
 export default function Home() {
   const { setIsActive } = useGlobalContext();
 
+
   useEffect(() => {
     setIsActive(false)
   }, [])
+
   return (
     <>
-
       <Hero />
       <ScreenAbout />
       <Clients />
@@ -35,8 +37,9 @@ export default function Home() {
       <WhyChooseUs />
       <HowWeDo />
       <Industries />
-      <TestimonialsN/>
+      <TestimonialsN />
       <Footer />
+
     </>
   )
 }
