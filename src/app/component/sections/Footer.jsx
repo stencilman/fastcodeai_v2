@@ -60,7 +60,7 @@ const Footer = () => {
             <div className="w-[58%] ml-[120px] mr-[10px] flex flex-col justify-around">
               {/* Nav */}
               <div className="w-full border-b border-[#AFC0FF] pb-[22px] mt-[52px]">
-                <ul className="flex justify-around w-full text-white font-aeonik text-[19px] font-aeonik">
+                <ul className="flex justify-around w-full text-white font-aeonik text-[19px]">
                   <Link href="/">
                     <li>Home</li>
                   </Link>

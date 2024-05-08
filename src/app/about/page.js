@@ -1,6 +1,16 @@
 "use client"
 import React, { useEffect } from 'react'
 import { useGlobalContext } from '../context/GlobalContext'
+import Hero from './sections/Hero';
+import WhoWeAre from './sections/WhoWeAre';
+import Team from '../component/sections/Team';
+import ArjunAndTeam from './sections/ArjunAndTeam';
+import Believe from './sections/Believe';
+import TechStack from './sections/TechStack';
+import WhyChooseUs from '../component/sections/WhyChooseUs';
+import Industries from '../component/sections/Industries';
+import TestimonialsN from '../component/sections/TestimonialsN';
+import Footer from '../component/sections/Footer';
 
 const About = () => {
   const { setIsActive } = useGlobalContext();
@@ -8,10 +18,19 @@ const About = () => {
   useEffect(() => {
     setIsActive(false)
   }, [])
+
   return (
-    <div className='relative'>
-      <h1 className='relative z-20'>Hello</h1>
-    </div>
+    <>
+      <Hero />
+      <WhoWeAre />
+      <ArjunAndTeam/>
+      <Believe/>
+      <TechStack/>
+      <WhyChooseUs/>
+      <Industries/>
+      <TestimonialsN/>
+      <Footer/>
+    </>
   )
 }
 
