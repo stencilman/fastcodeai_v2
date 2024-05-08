@@ -15,7 +15,7 @@ const aeonik = localFont({
       style: "normal"
     },
     {
-      path: "../../public/fonts/aeonik/AeonikTRIAL-Light.woff2",
+      path: "../../public/fonts/aeonik/AeonikTRIAL-Regular.woff2",
       weight: "400", //regular
       style: "normal"
     },

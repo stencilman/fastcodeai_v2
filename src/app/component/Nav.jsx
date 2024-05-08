@@ -56,7 +56,7 @@ export default function Nav() {
           onMouseLeave={() => {
             setSelectedIndicator(pathname);
           }}
-          className="flex flex-col text-[55px] font-thin text-[#A4A4A4] leading-[4.4rem]  "
+          className="flex flex-col text-[55px] text-[#A4A4A4] leading-[4.4rem]    "
         >
           {navItems.map((data, index) => {
             return (

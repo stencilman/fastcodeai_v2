@@ -69,7 +69,7 @@ const Navbar = () => {
           <button
             onClick={handleClick}
             className={`w-[56px] relative z-[3] h-[56px] ${
-              isActive ? "bg-black" : "bg-[#F3F3F3]"
+              isActive ? "bg-[#0E1E49]" : "bg-[#F3F3F3]"
             }  rounded-full flex flex-col justify-center items-center`}
           >
             <span

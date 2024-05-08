@@ -2,7 +2,7 @@
 import React, { useEffect } from 'react'
 import { useGlobalContext } from '../context/GlobalContext'
 
-const page = () => {
+const About = () => {
   const { setIsActive } = useGlobalContext();
 
   useEffect(() => {
@@ -15,4 +15,4 @@ const page = () => {
   )
 }
 
-export default page
+export default About

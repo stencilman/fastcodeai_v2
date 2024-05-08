@@ -20,7 +20,7 @@ export default function LinkNav({ data, isActive, setSelectedIndicator }) {
         animate={isActive ? "open" : "closed"}
         className="w-[10px] h-[10px] bg-black rounded-full absolute left-[-30px]">
       </motion.div> */}
-      <Link className={`cursor-pointer ${isActive && "text-black pl-[30px]"} transition-transform duration-700 transform hover:translate-x-5 hover:text-black ease-in-out`} href={href}>{title}</Link>
+      <Link className={`cursor-pointer ${isActive && "text-[#0E1E49] pl-[30px]"} transition-transform duration-700 transform hover:translate-x-5 hover:text-[#0E1E49] ease-in-out font-aeonik font-light`} href={href}>{title}</Link>
     </motion.div>
   );
 }
