@@ -96,8 +96,8 @@ const Clients = () => {
         <div className="flex gap-[10px]  w-full items-center z-[3]">
           <div className="relative z-[5] h-full pl-[100px] w-[40%] ">
             <div className="w-full h-full flex flex-col justify-center">
-              <h1 className="text-[51px] text-white">Our Clients</h1>
-              <p className="text-[#9EB3CF] pr-[20px] text-[19px] font-light mt-[30px]">
+              <h1 className="text-[51px] text-white font-aeonik">Our Clients</h1>
+              <p className="text-[#9EB3CF] pr-[20px] text-[19px] font-light mt-[30px] font-bwmss01">
                 {"We've "}worked with a diverse clientele - from Forbes 500
                 Enterprise firms to Sillicon Valley startups, across various
                 industries.

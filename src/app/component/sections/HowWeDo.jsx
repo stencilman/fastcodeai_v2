@@ -10,7 +10,7 @@ const HowWeDo = () => {
   return (
     <div className="w-full h-[100vh] pl-[160px] pr-[127px] relative bg-[#00081F] flex flex-col justify-center">
       <div>
-        <h1 className="text-5xl text-white">How We Do It</h1>
+        <h1 className="text-5xl text-white font-aeonik ">How We Do It</h1>
       </div>
       <div className="mt-[55px] flex">
         {/* Accordion 1 */}
@@ -31,7 +31,7 @@ const HowWeDo = () => {
           )}
           <div className=" flex flex-col mt-[60px] px-[32px] ">
             <h1
-              className={`text-7xl text-white transition-all duration-300 ease-in-out ${
+              className={`text-7xl text-white font-aeonik transition-all duration-300 ease-in-out ${
                 showAccordion !== 0 ? "group-hover:scale-[1.1]" : ""
               }`}
             >
@@ -39,10 +39,10 @@ const HowWeDo = () => {
             </h1>
             {showAccordion === 0 && (
               <div className="flex flex-col w-[333px]  ">
-                <h3 className="text-4xl w-full text-white pt-[20px]">
+                <h3 className="text-4xl w-full text-white font-aeonik pt-[20px]">
                   Connect With Us
                 </h3>
-                <p className="text-[#9EB3CF] text-[19px] leading-7 pt-[23px]">
+                <p className="text-[#9EB3CF] font-bwmss01  text-[19px] leading-7 pt-[23px]">
                   Fill out our NDA-protected contact form, book a time on our
                   calendar, and arrange an e-meeting with our expert team.
                 </p>
@@ -69,7 +69,7 @@ const HowWeDo = () => {
           )}
           <div className=" flex flex-col mt-[60px]  px-[32px]">
             <h1
-              className={`text-7xl text-white transition-all duration-300 ease-in-out ${
+              className={`text-7xl text-white font-aeonik transition-all duration-300 ease-in-out ${
                 showAccordion !== 1 ? "group-hover:scale-[1.1]" : ""
               }`}
             >
@@ -77,10 +77,10 @@ const HowWeDo = () => {
             </h1>
             {showAccordion === 1 && (
               <div className="flex flex-col w-[333px]  ">
-                <h3 className="text-4xl w-full text-white pt-[20px]">
+                <h3 className="text-4xl w-full text-white font-aeonik pt-[20px]">
                   Project Feasibility Consultation
                 </h3>
-                <p className="text-[#9EB3CF] text-[19px] leading-7 pt-[23px]">
+                <p className="text-[#9EB3CF] font-bwmss01 text-[19px] leading-7 pt-[23px]">
                   Discuss your project ideas in a consultation call with our
                   team, to assess their feasibility and potential impact.
                 </p>
@@ -107,7 +107,7 @@ const HowWeDo = () => {
           )}
           <div className=" flex flex-col mt-[60px] px-[32px] ">
             <h1
-              className={`text-7xl text-white transition-all duration-300 ease-in-out ${
+              className={`text-7xl text-white font-aeonik transition-all duration-300 ease-in-out ${
                 showAccordion !== 2 ? "group-hover:scale-[1.1]" : ""
               }`}
             >
@@ -115,10 +115,10 @@ const HowWeDo = () => {
             </h1>
             {showAccordion === 2 && (
               <div className="flex flex-col w-[333px]  ">
-                <h3 className="text-4xl w-full text-white pt-[20px]">
+                <h3 className="text-4xl w-full text-white font-aeonik pt-[20px]">
                   Get a Detailed Cost Estimate
                 </h3>
-                <p className="text-[#9EB3CF] text-[19px] leading-7 pt-[23px]">
+                <p className="text-[#9EB3CF] font-bwmss01 text-[19px] leading-7 pt-[23px]">
                   {"We'll"} provide a comprehensive project proposal, including
                   budget and timeline estimates, tailored to your specific
                   requirements.
@@ -146,7 +146,7 @@ const HowWeDo = () => {
           )}
           <div className=" flex flex-col mt-[60px] px-[32px] ">
             <h1
-              className={`text-7xl text-white transition-all duration-300 ease-in-out ${
+              className={`text-7xl text-white font-aeonik transition-all duration-300 ease-in-out ${
                 showAccordion !== 3 ? "group-hover:scale-[1.1]" : ""
               }`}
             >
@@ -154,10 +154,10 @@ const HowWeDo = () => {
             </h1>
             {showAccordion === 3 && (
               <div className="flex flex-col w-[333px]  ">
-                <h3 className="text-4xl w-full text-white pt-[20px]">
+                <h3 className="text-4xl w-full text-white font-aeonik pt-[20px]">
                   Project Kickoff
                 </h3>
-                <p className="text-[#9EB3CF] text-[19px] leading-7 pt-[23px]">
+                <p className="text-[#9EB3CF] font-bwmss01 text-[19px] leading-7 pt-[23px]">
                   After finalizing the agreement, we initiate your project,
                   committed to delivering excellence.
                 </p>

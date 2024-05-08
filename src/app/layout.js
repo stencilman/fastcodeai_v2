@@ -1,9 +1,45 @@
-import { Inter } from "next/font/google";
+// import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "./component/Navbar";
+import localFont from "next/font/local"
 import { SpeedInsights } from "@vercel/speed-insights/next"
-import Script from "next/script";
-const inter = Inter({ subsets: ["latin"] });
+
+// const inter = Inter({ subsets: ["latin"] });
+
+const aeonik = localFont({
+  src: [
+    {
+      path: "../../public/fonts/aeonik/AeonikTRIAL-Light.woff2",
+      weight: "300", //light
+      style: "normal"
+    },
+    {
+      path: "../../public/fonts/aeonik/AeonikTRIAL-Light.woff2",
+      weight: "400", //regular
+      style: "normal"
+    },
+    {
+      path: "../../public/fonts/aeonik/AeonikTRIAL-Bold.woff2",
+      weight: "700", //bold
+      style: "normal"
+    },
+   
+  ],
+  variable: "--font-aeonik"
+})
+
+const bwmss01 = localFont({
+  src: [
+    {
+      path: "../../public/fonts/BwModelica_SS01/BwModelicaSS01-Regular.woff2",
+      weight: "300", //light
+      style: "normal"
+    },
+   
+   
+  ],
+  variable: "--font-bwmss01"
+})
 
 export const metadata = {
   title: "Create Next App",
@@ -13,13 +49,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <Navbar/>
+      <body className={`${aeonik.variable} ${bwmss01.variable}`}>
+        <Navbar />
         {children}
-      
-   
+
+
         <SpeedInsights />
-        </body>
+      </body>
     </html>
   );
 }

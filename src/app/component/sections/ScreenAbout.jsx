@@ -16,8 +16,8 @@ const ScreenAbout = () => {
         </div>
       </div>
       <div className="mb-[100px]">
-        <h1 className="text-[51px] text-white">About FastCodeAI</h1>
-        <p className="text-[#9EB3CF] text-[19px] w-[80%] pt-[20px]">
+        <h1 className="text-[51px] text-white font-aeonik">About FastCodeAI</h1>
+        <p className="text-[#9EB3CF] text-[19px] w-[80%] pt-[20px] font-bwmss01">
           As a leading AI adoption partner, we empower industry leaders to
           harness cutting-edge intelligence, scale and execute applications, and
           automate operations. We enhance safety, streamline experiences, and

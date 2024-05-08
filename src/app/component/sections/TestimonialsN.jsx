@@ -144,7 +144,7 @@ const TestimonialsN = () => {
                         className="cs-card-logo w-auto h-auto"
                       />
                       <div className="cs-card-quote cc-embed w-embed">
-                        <blockquote className="cs-card-quote">
+                        <blockquote className="cs-card-quote font-bwmss01" >
                           “Arjun is a great researcher / scientist / and
                           entrepreneur. I first learned about his research at
                           MPI on his movie-reshape work that made a big splash
@@ -171,10 +171,10 @@ const TestimonialsN = () => {
                             className="cs-card-img object-cover"
                           />
                           <div>
-                            <div className="text-color-light-2">
+                            <div  className="text-color-light-2 font-aeonik">
                               Chris (Christoph) Bregler
                             </div>
-                            <div className="text-block">
+                            <div className=" text-block font-aeonik">
                               Director / Principal Scientist @ Google
                             </div>
                           </div>
@@ -253,7 +253,7 @@ const TestimonialsN = () => {
                         className="cs-card-logo w-auto h-auto"
                       />
                       <div className="cs-card-quote cc-embed w-embed">
-                        <blockquote className="cs-card-quote">
+                        <blockquote className="cs-card-quote font-bwmss01">
                           “​I had the pleasure of working with Arjun while he
                           was a PhD student at NYU. We co-authored a number of
                           papers together on deep unsupervised learning methods.
@@ -275,10 +275,10 @@ const TestimonialsN = () => {
                             className="cs-card-img object-cover"
                           />
                           <div>
-                            <div className="text-color-light-2 ">
+                            <div  className="text-color-light-2 font-aeonik">
                               Yann LeCun
                             </div>
-                            <div className="text-block ">
+                            <div className=" text-block font-aeonik">
                               VP & Chief AI Scientist @ Meta
                             </div>
                           </div>
@@ -357,7 +357,7 @@ const TestimonialsN = () => {
                         className="cs-card-logo w-auto h-auto"
                       />
                       <div className="cs-card-quote cc-embed w-embed">
-                        <blockquote className="cs-card-quote">
+                        <blockquote className="cs-card-quote font-bwmss01">
                           “ {"Arjun's"} dedication and innovative approach
                           significantly accelerated our projects success at
                           Incivus. His expertise and commitment to excellence
@@ -379,10 +379,10 @@ const TestimonialsN = () => {
                             className="cs-card-img object-cover"
                           />
                           <div>
-                            <div className="text-color-light-2 ">
+                            <div className="text-color-light-2 font-aeonik">
                               Nitin Kumar
                             </div>
-                            <div className="text-block ">
+                            <div className=" text-block font-aeonik">
                               Chief Technology Officer @ LiftLab
                             </div>
                           </div>
@@ -461,7 +461,7 @@ const TestimonialsN = () => {
                         className="cs-card-logo w-auto h-auto"
                       />
                       <div className="cs-card-quote cc-embed w-embed">
-                        <blockquote className="cs-card-quote">
+                        <blockquote className="cs-card-quote font-bwmss01">
                           “ I had the pleasure of working with Arjun on a
                           project focused on pedestrian pose estimation for
                           autonomous driving. I genuinely enjoyed collaborating
@@ -482,10 +482,10 @@ const TestimonialsN = () => {
                             className="cs-card-img object-cover"
                           />
                           <div>
-                            <div className="text-color-light-2 ">
+                            <div className="text-color-light-2 font-aeonik">
                               Fabian Flohr
                             </div>
-                            <div className="text-block ">
+                            <div className=" text-block font-aeonik">
                               Professor of Machine learning @ Munich University
                               of Applied Sciences
                             </div>
@@ -566,7 +566,7 @@ const TestimonialsN = () => {
                       />
 
                       <div className="cs-card-quote cc-embed w-embed">
-                        <blockquote className="cs-card-quote">
+                        <blockquote className="cs-card-quote font-bwmss01">
                           “I have been working with Arjun and his team for over
                           four years now. Together we have been working and
                           solving complex AI computer vision problems in the
@@ -595,10 +595,10 @@ const TestimonialsN = () => {
                             className="cs-card-img object-cover bg-white"
                           />
                           <div>
-                            <div className="text-color-light-2 ">
+                            <div className="text-color-light-2 font-aeonik">
                               Bindu Santha Philip
                             </div>
-                            <div className="text-block ">
+                            <div className=" text-block font-aeonik">
                               Vice President Technology - Autonomous driving
                               Functions and Data enablers @ Bosch Global
                               Software Technologies India

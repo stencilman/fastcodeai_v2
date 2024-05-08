@@ -52,7 +52,7 @@ const OurWork = () => {
       <div className="absolute top-[-160px] left-0 w-full h-[150px] blur-[50px] translate-y-[30px] scale-90  rounded-[50%] z-[1] bg-gradient-to-br from-[#1D8283] to-[#033577] bg-gradient-156deg bg-no-repeat bg-[0% 0%] opacity-49 border-0 border-opacity-0 filter blur-[50px]"></div>
       {/* Titile with buttons */}
       <div className="flex justify-between pr-[127px]">
-        <h1 className="text-5xl text-white">Check Out Our Work</h1>
+        <h1 className="text-5xl text-white font-aeonik">Check Out Our Work</h1>
         {/* Buttons */}
         <div className="flex gap-[15px]">
           {/* Left Button */}
@@ -87,11 +87,11 @@ const OurWork = () => {
               style={{ transform: `translateX(-${currentSlide * 100}%)` }}
             >
               <div className="pl-[10px] w-[50%]">
-                <h3 className="text-[42px] text-white leading-[47px]">{slide.title}</h3>
-                <p className="text-[#9EB3CF] text-[19px] pt-[22px] leading-[29px]">
+                <h3 className="text-[42px] text-white leading-[47px] font-aeonik">{slide.title}</h3>
+                <p className="text-[#9EB3CF] text-[19px] pt-[22px] leading-[29px] font-bwmss01">
                   {slide.content}
                 </p>
-                <button className="rounded-[28px] mt-[50px]  flex items-center gap-[7px] bg-gradient-to-br from-[#2DC1C3] to-[#0268F2] text-white p-[15px] text-lg ">
+                <button className="rounded-[28px] mt-[50px]  flex items-center gap-[7px] bg-gradient-to-br from-[#2DC1C3] to-[#0268F2] text-white p-[15px] text-lg font-bwmss01">
                   <div>Read More</div>
                 </button>
               </div>

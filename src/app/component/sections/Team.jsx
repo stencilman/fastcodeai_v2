@@ -59,8 +59,8 @@ const Team = () => {
     <div className="w-full h-[100vh] bg-gradient-to-br from-[#000E32] to-[#000929] opacity-83 relative flex flex-col items-center justify-center z-[4]">
       <div className="flex gap-[0px] w-full items-center z-[3]">
         <div className="pl-[100px] w-[45%]">
-          <h1 className="text-[51px] text-white">Our Team</h1>
-          <p className="text-[#9EB3CF] w-[80%] text-[19px] font-light mt-[30px]">
+          <h1 className="text-[51px] text-white font-aeonik">Our Team</h1>
+          <p className="text-[#9EB3CF] w-[80%] text-[19px] font-bwmss01 font-light mt-[30px]">
           Our team consists of seasoned professionals with extensive research backgrounds, authors of influential papers, and contributors to open-source initiatives. Carefully selected from top universities, with a premium placed on innovative problem solvers.
 
           </p>

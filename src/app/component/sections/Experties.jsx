@@ -108,8 +108,8 @@ const Experties = () => {
           >
             <div className="flex gap-[5%] w-full">
               <div className="w-[45%]">
-                <h1 className="text-[42px] text-white">Artificial Intelligence</h1>
-                <p className="text-[#9EB3CF] text-[19px] font-light pt-[15px]">
+                <h1 className="text-[42px] text-white font-aeonik">Artificial Intelligence</h1>
+                <p className="text-[#9EB3CF] text-[19px] font-light pt-[15px] font-bwmss01 ">
                 Develop and implement bespoke AI solutions to rapidly advance your organizational goals. We collaborate with you to identify the optimal artificial intelligence strategies, tools and technologies.
                 </p>
               </div>
@@ -131,10 +131,10 @@ const Experties = () => {
           >
             <div className="flex gap-[5%] w-full">
               <div className="w-[45%]">
-                <h1 className="text-[42px] text-white">
+                <h1 className="text-[42px] text-white font-aeonik ">
                   Computer Vision
                 </h1>
-                <p className="text-[#9EB3CF] text-[19px] font-light pt-[15px]">
+                <p className="text-[#9EB3CF] text-[19px] font-light pt-[15px] font-bwmss01">
                 We develop custom software solutions using computer vision and deep learning to analyze images, videos, LiDAR, and live streams, helping businesses identify and track objects for enhanced decision-making.
                 </p>
               </div>
@@ -156,8 +156,8 @@ const Experties = () => {
           >
             <div className="flex gap-[5%] w-full">
               <div className="w-[45%]">
-                <h1 className="text-[42px] text-white">Machine Learning</h1>
-                <p className="text-[#9EB3CF] text-[19px] font-light pt-[15px]">
+                <h1 className="text-[42px] text-white font-aeonik">Machine Learning</h1>
+                <p className="text-[#9EB3CF] text-[19px] font-light pt-[15px] font-bwmss01">
                 Design and implement innovative ML solutions rapidly — from foundational infrastructure to customer products. Our expert engineers will partner with you to advance innovation effectively within your company.
                 </p>
               </div>
@@ -179,8 +179,8 @@ const Experties = () => {
           >
             <div className="flex gap-[5%] w-full">
               <div className="w-[45%]">
-                <h1 className="text-[42px] text-white">Data Science</h1>
-                <p className="text-[#9EB3CF] text-[19px] font-light pt-[15px]">
+                <h1 className="text-[42px] text-white font-aeonik">Data Science</h1>
+                <p className="text-[#9EB3CF] text-[19px] font-light pt-[15px] font-bwmss01">
                 Our full-stack data scientists excel in solving intricate data challenges, regardless of data volume or structure, enabling your business to significantly improve efficiency and increase profitability rapidly.
                 </p>
               </div>

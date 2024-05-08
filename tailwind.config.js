@@ -12,8 +12,12 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
-      background:{
-        cusgrad : "transparent linear-gradient(360deg, #13224F 0%, #13224F 0%, #0C1C46 51%, #020F3B 100%) 0% 0% no-repeat padding-box"
+      background: {
+        cusgrad: "transparent linear-gradient(360deg, #13224F 0%, #13224F 0%, #0C1C46 51%, #020F3B 100%) 0% 0% no-repeat padding-box"
+      },
+      fontFamily: {
+        aeonik: ["var(--font-aeonik)"],
+        bwmss01: ["var(--font-bwmss01)"],
       }
     },
   },
