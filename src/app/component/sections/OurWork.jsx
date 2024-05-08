@@ -6,26 +6,26 @@ const slides = [
   {
     title: "Mercedes Benz",
     content:
-      "Enhance interaction between driver and car by detecting driver hand gesture for superior level driver experience with Mercedes Benz User Experience - MBUX System.",
+      "Enhance interaction between driver and car by detecting driver hand gesture for superior level driver experience with Mercedes Benz User Experience - MBUX System..",
     image: "/our-work/merc.png",
   },
   {
     title: "Bosch",
     content:
-      "Enhance interaction between driver and car by detecting driver hand gesture for superior level driver experience with Mercedes Benz User Experience - MBUX System.",
-    image: "/our-work/merc.png",
+      "Accurate, low footprint detection with vulnerable roadside users (VRUs) and road signs covered in the Bosch-Daimler autonomous driving initiative.",
+    image: "/our-work/bosch.webp",
   },
   {
-    title: "Fitness",
+    title: "Fitness Pose Estimation",
     content:
-      "Enhance interaction between driver and car by detecting driver hand gesture for superior level driver experience with Mercedes Benz User Experience - MBUX System.",
-    image: "/our-work/merc.png",
+      "Empowering exercise perfection with AI-driven real-time pose estimation, providing interactive visual feedback for correct posture and effective workouts.",
+    image: "/our-work/fitness.webp",
   },
   {
-    title: "Fitness",
+    title: "AI-Assisted Dermatology",
     content:
-      "Enhance interaction between driver and car by detecting driver hand gesture for superior level driver experience with Mercedes Benz User Experience - MBUX System.",
-    image: "/our-work/merc.png",
+      "Advancing AI-powered Dermatology solutions: Identification, insights & assistance for better skin lesion treatment outcomes and accessible dermatological care.",
+    image: "/our-work/ai_dermo.webp",
   },
   // Add more slides here as needed
 ];
@@ -45,7 +45,7 @@ const OurWork = () => {
     );
   };
 
-  console.log("currentSlide",currentSlide)
+  console.log("currentSlide", currentSlide);
 
   return (
     <div className="w-full h-[100vh] pl-[160px] relative bg-[#00081F] flex flex-col justify-center">
@@ -87,7 +87,7 @@ const OurWork = () => {
               style={{ transform: `translateX(-${currentSlide * 100}%)` }}
             >
               <div className="pl-[10px] w-[50%]">
-                <h3 className="text-[42px] text-white ">{slide.title}</h3>
+                <h3 className="text-[42px] text-white leading-[47px]">{slide.title}</h3>
                 <p className="text-[#9EB3CF] text-[19px] pt-[22px] leading-[29px]">
                   {slide.content}
                 </p>
@@ -97,7 +97,7 @@ const OurWork = () => {
               </div>
               <div className="w-[40%]">
                 <Image
-                  className="w-[100%] h-[293px]"
+                  className="w-[100%] h-[293px] rounded-[25px]"
                   src={slide.image}
                   width="368"
                   height="360"
@@ -113,6 +113,3 @@ const OurWork = () => {
 };
 
 export default OurWork;
-
-
-

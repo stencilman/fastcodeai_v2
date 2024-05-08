@@ -6,10 +6,10 @@ const Experties = () => {
   const [activeMain, setActiveMain] = useState(null);
   const navRef = useRef(null);
   const mainRefs = {
-    "Consultation": useRef(null),
-    "ML Software Solutions": useRef(null),
-    "Niche Staffing": useRef(null),
-    "Product Portfolio": useRef(null),
+    "Artificial Intelligence": useRef(null),
+    "Computer Vision": useRef(null),
+    "Machine Learning": useRef(null),
+    "Data Science": useRef(null),
   };
 
   useEffect(() => {
@@ -44,75 +44,78 @@ const Experties = () => {
   };
 
   return (
-    <div className="bg-[#00081F] w-full h-[100vh] overflow-x-hidden overflow-y-hidden sticky top-0">
-      <div className="flex gap-[120px] pl-[170px] pr-[127px] w-full h-[100vh] relative justify-center pt-[250px]">
+    <div className="bg-[#00081F] w-full h-[100%] overflow-x-hidden overflow-y-hidden relative pb-[250px]">
+      <div className="grid grid-cols-12 gap-[0px] pl-[170px] pr-[127px] w-full h-[100%]  justify-center pt-[250px]">
         {/* NAV */}
-        <div className="flex flex-col gap-[15px]" ref={navRef}>
-          {/* Consultation */}
+
+        <div
+          className="col-span-3 flex flex-col gap-[15px] sticky top-0 h-fit"
+          ref={navRef}
+        >
+          {/* Artificial Intelligence */}
           <div
             className={`w-[77px] h-[77px] rounded-full flex items-center justify-center ${
-              activeMain === "Consultation"
+              activeMain === "Artificial Intelligence"
                 ? "bg-gradient-to-br from-[#2DC1C3] to-[#0268F2]"
                 : "bg-gradient-to-br from-[#13224F] to-[#13224F]"
             }`}
-            onClick={() => handleSetActiveMain("Consultation")}
+            onClick={() => handleSetActiveMain("Artificial Intelligence")}
           >
             <Image src="/experties/icon1.svg" width="44" height="44" alt="" />
           </div>
-          {/* ML Software Solutions */}
+          {/* Computer Vision */}
           <div
             className={`w-[77px] h-[77px] rounded-full flex items-center justify-center ${
-              activeMain === "ML Software Solutions"
+              activeMain === "Computer Vision"
                 ? "bg-gradient-to-br from-[#2DC1C3] to-[#0268F2]"
                 : "bg-gradient-to-br from-[#13224F] to-[#13224F]"
             }`}
-            onClick={() => handleSetActiveMain("ML Software Solutions")}
+            onClick={() => handleSetActiveMain("Computer Vision")}
           >
             <Image src="/experties/icon2.svg" width="44" height="44" alt="" />
           </div>
-          {/* Niche Staffing */}
+          {/* Machine Learning */}
           <div
             className={`w-[77px] h-[77px] rounded-full flex items-center justify-center ${
-              activeMain === "Niche Staffing"
+              activeMain === "Machine Learning"
                 ? "bg-gradient-to-br from-[#2DC1C3] to-[#0268F2]"
                 : "bg-gradient-to-br from-[#13224F] to-[#13224F]"
             }`}
-            onClick={() => handleSetActiveMain("Niche Staffing")}
+            onClick={() => handleSetActiveMain("Machine Learning")}
           >
             <Image src="/experties/icon3.svg" width="44" height="44" alt="" />
           </div>
-          {/* Product Portfolio */}
+          {/* Data Science */}
           <div
             className={`w-[77px] h-[77px] rounded-full flex items-center justify-center ${
-              activeMain === "Product Portfolio"
+              activeMain === "Data Science"
                 ? "bg-gradient-to-br from-[#2DC1C3] to-[#0268F2]"
                 : "bg-gradient-to-br from-[#13224F] to-[#13224F]"
             }`}
-            onClick={() => handleSetActiveMain("Product Portfolio")}
+            onClick={() => handleSetActiveMain("Data Science")}
           >
             <Image src="/experties/icon4.svg" width="44" height="44" alt="" />
           </div>
         </div>
+
         {/* Main */}
-        <div className="w-full flex flex-col gap-[90px] relative overflow-scroll h-[250px]">
-          {/* Consultation */}
+        <div className="col-span-9 w-full flex flex-col gap-[90px] relative overflow-scroll h-[100%]">
+          {/* Artificial Intelligence */}
           <div
             className="main-content"
-            ref={mainRefs["Consultation"]}
-            data-main="Consultation"
+            ref={mainRefs["Artificial Intelligence"]}
+            data-main="Artificial Intelligence"
           >
             <div className="flex gap-[5%] w-full">
               <div className="w-[45%]">
-                <h1 className="text-[42px] text-white">Consultation</h1>
-                <p className="text-[#9EB3CF] text-[19px] font-light">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industrys
-                  standard dummy text ever since the 1500s.
+                <h1 className="text-[42px] text-white">Artificial Intelligence</h1>
+                <p className="text-[#9EB3CF] text-[19px] font-light pt-[15px]">
+                Develop and implement bespoke AI solutions to rapidly advance your organizational goals. We collaborate with you to identify the optimal artificial intelligence strategies, tools and technologies.
                 </p>
               </div>
               <div>
                 <Image
-                  src="/experties/consultation.png"
+                  src="/experties/ai.png"
                   width="470"
                   height="244"
                   alt="consultation"
@@ -120,26 +123,24 @@ const Experties = () => {
               </div>
             </div>
           </div>
-          {/* ML Software Solutions */}
+          {/* Computer Vision */}
           <div
             className="main-content"
-            ref={mainRefs["ML Software Solutions"]}
-            data-main="ML Software Solutions"
+            ref={mainRefs["Computer Vision"]}
+            data-main="Computer Vision"
           >
             <div className="flex gap-[5%] w-full">
               <div className="w-[45%]">
                 <h1 className="text-[42px] text-white">
-                  ML Software Solutions
+                  Computer Vision
                 </h1>
-                <p className="text-[#9EB3CF] text-[19px] font-light">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industrys
-                  standard dummy text ever since the 1500s.
+                <p className="text-[#9EB3CF] text-[19px] font-light pt-[15px]">
+                We develop custom software solutions using computer vision and deep learning to analyze images, videos, LiDAR, and live streams, helping businesses identify and track objects for enhanced decision-making.
                 </p>
               </div>
               <div>
                 <Image
-                  src="/experties/consultation.png"
+                  src="/experties/computer_vesion.png"
                   width="470"
                   height="244"
                   alt="consultation"
@@ -147,24 +148,22 @@ const Experties = () => {
               </div>
             </div>
           </div>
-          {/* Niche Staffing */}
+          {/* Machine Learning */}
           <div
             className="main-content"
-            ref={mainRefs["Niche Staffing"]}
-            data-main="Niche Staffing"
+            ref={mainRefs["Machine Learning"]}
+            data-main="Machine Learning"
           >
             <div className="flex gap-[5%] w-full">
               <div className="w-[45%]">
-                <h1 className="text-[42px] text-white">Niche Staffing</h1>
-                <p className="text-[#9EB3CF] text-[19px] font-light">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industrys
-                  standard dummy text ever since the 1500s.
+                <h1 className="text-[42px] text-white">Machine Learning</h1>
+                <p className="text-[#9EB3CF] text-[19px] font-light pt-[15px]">
+                Design and implement innovative ML solutions rapidly — from foundational infrastructure to customer products. Our expert engineers will partner with you to advance innovation effectively within your company.
                 </p>
               </div>
               <div>
                 <Image
-                  src="/experties/consultation.png"
+                  src="/experties/consultation2.png"
                   width="470"
                   height="244"
                   alt="consultation"
@@ -172,24 +171,22 @@ const Experties = () => {
               </div>
             </div>
           </div>
-          {/* Product Portfolio */}
+          {/* Data Science */}
           <div
             className="main-content"
-            ref={mainRefs["Product Portfolio"]}
-            data-main="Product Portfolio"
+            ref={mainRefs["Data Science"]}
+            data-main="Data Science"
           >
             <div className="flex gap-[5%] w-full">
               <div className="w-[45%]">
-                <h1 className="text-[42px] text-white">Product Portfolio</h1>
-                <p className="text-[#9EB3CF] text-[19px] font-light">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industrys
-                  standard dummy text ever since the 1500s.
+                <h1 className="text-[42px] text-white">Data Science</h1>
+                <p className="text-[#9EB3CF] text-[19px] font-light pt-[15px]">
+                Our full-stack data scientists excel in solving intricate data challenges, regardless of data volume or structure, enabling your business to significantly improve efficiency and increase profitability rapidly.
                 </p>
               </div>
               <div>
                 <Image
-                  src="/experties/consultation.png"
+                  src="/experties/ds.png"
                   width="470"
                   height="244"
                   alt="consultation"
