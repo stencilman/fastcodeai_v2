@@ -18,10 +18,10 @@ const TestimonialsN = () => {
     link.href = "https://unpkg.com/swiper@8/swiper-bundle.min.css";
     link.rel = "stylesheet";
     document.head.appendChild(link);
-    console.log("link", link);
-    console.log("script", script);
+    // console.log("link", link);
+    // console.log("script", script);
     return () => {
-      console.log("slider compo unmount");
+      // console.log("slider compo unmount");
       document.body.removeChild(script);
       document.head.removeChild(link);
     };
@@ -29,7 +29,7 @@ const TestimonialsN = () => {
 
   useEffect(() => {
     if (!swiperLoaded) return;
-    console.log("swiperLoaded", swiperLoaded);
+    // console.log("swiperLoaded", swiperLoaded);
     document
       .querySelectorAll(".cs-cards-container, .cs-nav-container")
       .forEach((element) => {

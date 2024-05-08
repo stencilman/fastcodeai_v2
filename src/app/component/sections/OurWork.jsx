@@ -45,7 +45,7 @@ const OurWork = () => {
     );
   };
 
-  console.log("currentSlide", currentSlide);
+  // console.log("currentSlide", currentSlide);
 
   return (
     <div className="w-full h-[100vh] pl-[160px] relative bg-[#00081F] flex flex-col justify-center">

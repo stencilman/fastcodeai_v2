@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "./component/Navbar";
 import localFont from "next/font/local"
 import { SpeedInsights } from "@vercel/speed-insights/next"
+import { GlobalProvider } from "./context/GlobalContext";
 
 // const inter = Inter({ subsets: ["latin"] });
 
@@ -23,7 +24,7 @@ const aeonik = localFont({
       weight: "700", //bold
       style: "normal"
     },
-   
+
   ],
   variable: "--font-aeonik"
 })
@@ -35,8 +36,8 @@ const bwmss01 = localFont({
       weight: "300", //light
       style: "normal"
     },
-   
-   
+
+
   ],
   variable: "--font-bwmss01"
 })
@@ -50,11 +51,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${aeonik.variable} ${bwmss01.variable}`}>
-        <Navbar />
-        {children}
-
-
-        <SpeedInsights />
+        <GlobalProvider>
+          <Navbar />
+          {children}
+          <SpeedInsights />
+        </GlobalProvider>
       </body>
     </html>
   );

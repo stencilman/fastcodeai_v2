@@ -1,3 +1,4 @@
+"use client"
 import Image from "next/image";
 import Hero from "./component/sections/Hero";
 import ScreenAbout from "./component/sections/ScreenAbout";
@@ -12,8 +13,15 @@ import Testimonials from "./component/sections/Testimonials";
 import Footer from "./component/sections/Footer";
 import Numbers from "./component/sections/Numbers";
 import TestimonialsN from "./component/sections/TestimonialsN";
+import { useGlobalContext } from "./context/GlobalContext";
+import { useEffect } from "react";
 
 export default function Home() {
+  const { setIsActive } = useGlobalContext();
+
+  useEffect(() => {
+    setIsActive(false)
+  }, [])
   return (
     <>
 

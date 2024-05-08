@@ -131,7 +131,7 @@ const Footer = () => {
 
         {/* Marque Effect */}
 
-        <div
+        <Link href="/contacts"
           id="marqEffCont"
           ref={container}
           // animate={active ? "open" : "close"}
@@ -183,7 +183,7 @@ const Footer = () => {
               </div>
             </div>
           </motion.div>
-        </div>
+        </Link>
       </div>
     </>
   );

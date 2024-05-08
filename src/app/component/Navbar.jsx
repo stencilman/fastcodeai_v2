@@ -4,11 +4,14 @@ import Image from "next/image";
 import React from "react";
 import { useState, useEffect } from "react";
 import Nav from "./Nav";
+import { useGlobalContext } from "../context/GlobalContext";
 
 const Navbar = () => {
-  const [isActive, setIsActive] = useState(false);
+  // const [isActive, setIsActive] = useState(false);
+  const { isActive, setIsActive } = useGlobalContext();
   const [scrollPosition, setScrollPosition] = useState(0);
 
+  console.log("isActive",isActive)
   const handleClick = () => {
     setIsActive(!isActive);
   };
