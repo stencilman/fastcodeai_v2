@@ -5,7 +5,7 @@ import Shadow from "../../component/Shadow";
 import { useRef } from "react";
 import { useScroll, useTransform, motion } from "framer-motion";
 
-const TechStack = () => {
+const TechStack = ({ z }) => {
   const container = useRef(null);
 
   const { scrollYProgress } = useScroll({
@@ -87,17 +87,17 @@ const TechStack = () => {
     <>
       <div
         ref={container}
-        className="w-full h-[100vh] bg-gradient-to-br from-[#000E32] to-[#000929] opacity-83 relative flex flex-col items-center justify-center"
+        className={`w-full h-[100vh] bg-gradient-to-br from-[#000E32] to-[#000929] opacity-83 relative flex flex-col items-center justify-center ${z}`}
       >
         {/* shadow */}
         {/* <div className="absolute bottom-[0px] left-0 w-full h-[150px] blur-[50px] translate-y-[30px] scale-90  rounded-[50%] z-[-1] bg-gradient-to-br from-[#1D8283] to-[#033577] bg-gradient-156deg bg-no-repeat bg-[0% 0%] opacity-49 border-0 border-opacity-0 filter blur-[50px]"></div> */}
-        <Shadow />
+        {/* <Shadow /> */}
 
         <div className="flex gap-[10px]  w-full items-center z-[3]">
           <div className="relative z-[5] h-full pl-[100px] w-[40%] ">
             <div className="w-full h-full flex flex-col justify-center">
-              <h1 className="text-[51px] text-white font-aeonik">
-                Our Clients
+              <h1 className="text-[51px] text-white tracking-wide font-aeonik">
+                Tech Stack
               </h1>
               <p className="text-[#9EB3CF] pr-[20px] text-[19px] font-light mt-[30px] font-bwmss01">
                 {"We've "}worked with a diverse clientele - from Forbes 500

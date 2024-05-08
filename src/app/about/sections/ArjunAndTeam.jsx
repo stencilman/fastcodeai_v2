@@ -58,7 +58,7 @@ const ArjunAndTeam = () => {
 
   return (
     <div className="w-full h-[160vh] bg-gradient-to-br from-[#000E32] to-[#000929] opacity-83 pr-[127px] pl-[100px] relative z-[5]">
-      <div className="w-full h-[80vh]  border-b-2 border-[#FFFFFF] relative flex items-center gap-[10%] justify-center">
+      <div className="w-full h-[80vh]  border-b border-[#FFFFFF] relative flex items-center gap-[10%] justify-center">
         <div className=" h-full w-[70%] flex flex-col justify-center gap-[26px]">
           <h1 className="font-aeonik text-[5.5vw] text-white leading-[5.5vw] tracking-wide font-light">
             Powerfull People <br />

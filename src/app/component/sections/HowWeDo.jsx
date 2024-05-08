@@ -2,13 +2,13 @@
 import Image from "next/image";
 import React, { useState } from "react";
 
-const HowWeDo = () => {
+const HowWeDo = ({pb}) => {
   const [showAccordion, setShowAccordion] = useState(0);
   const handleAccordion = (accordionNumber) => {
     setShowAccordion(accordionNumber);
   };
   return (
-    <div className="w-full h-[100vh] pl-[160px] pr-[127px] relative bg-[#00081F] flex flex-col justify-center">
+    <div className={`w-full ${pb} h-[100vh] pl-[160px] pr-[127px] relative bg-[#00081F] flex flex-col justify-center`}>
       <div>
         <h1 className="text-5xl text-white font-aeonik ">How We Do It</h1>
       </div>

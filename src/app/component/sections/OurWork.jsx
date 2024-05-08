@@ -87,7 +87,9 @@ const OurWork = () => {
               style={{ transform: `translateX(-${currentSlide * 100}%)` }}
             >
               <div className="pl-[10px] w-[50%]">
-                <h3 className="text-[42px] text-white leading-[47px] font-aeonik">{slide.title}</h3>
+                <h3 className="text-[42px] text-white leading-[47px] font-aeonik">
+                  {slide.title}
+                </h3>
                 <p className="text-[#9EB3CF] text-[19px] pt-[22px] leading-[29px] font-bwmss01">
                   {slide.content}
                 </p>
