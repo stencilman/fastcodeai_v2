@@ -99,7 +99,7 @@ const OurWork = () => {
               </div>
               <div className="w-[40%]">
                 <Image
-                  className="w-[100%] h-[293px] rounded-[25px]"
+                  className="w-[100%] h-[293px] rounded-[25px] object-cover"
                   src={slide.image}
                   width="368"
                   height="360"

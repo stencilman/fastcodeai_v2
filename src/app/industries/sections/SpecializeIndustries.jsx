@@ -2,19 +2,17 @@
 import Button from "@/app/component/Button";
 import Image from "next/image";
 import React, { useState } from "react";
-import { motion } from "framer-motion";
 
 const SpecializeIndustries = () => {
   const [active, setActive] = useState({
     id: 1,
     name: "Automibile",
-    description: "Quisque imperdiet feugiat",
+    description: "Fast Code AI is a leading AI adoption partner that collaborates with industry leaders to harness the power of advanced intelligence. They specialize in developing AI solutions for various domains, including computer vision, trend forecasting, and targeted consumer insights. Ipsum potenti at congue magna amet id egestas. Quisque imperdiet feugiat ac sit est vitae cras. Amet ut ornare eu at",
     icon: "icon4.svg",
     percentage: "60%",
     showPercentageBar: true,
   });
 
-  const scaleIds = [1, 2, 4];
   const specializationList = [
     {
       id: 1,
@@ -109,18 +107,14 @@ const SpecializeIndustries = () => {
         <div className="w-[50%] h-full flex flex-col gap-[50px]">
           <div>
             <div
-              className={`w-[240px] h-[240px] flex items-center justify-center border border-[#1A2758] rounded-[14px] bg-[#00081F] transform transition-all duration-100 ${
-                active.icon ? "scale-100" : "scale-0"
-              }`}
+              className={`w-[240px] h-[240px] flex items-center justify-center border border-[#1A2758] rounded-[14px] bg-[#00081F] `}
               style={{
                 background:
                   "transparent linear-gradient(360deg, #000000 0%, #040d27 0%, #081028 51%, #010821 100%) 0% 0% no-repeat padding-box",
               }}
             >
               <Image
-                className={`transition-transform ${
-                  scaleIds.includes(active.id) ? "scale-100" : "scale-0"
-                } ease-in-out duration-700`}
+                
                 src={`/industries/${active.icon}`}
                 alt=""
                 width="170"
@@ -130,9 +124,7 @@ const SpecializeIndustries = () => {
           </div>
           <div>
             <h5
-              initial={active ? { x: 100 } : {}}
-              animate={{ x: 0 }}
-              transition={{ duration: 0.5 }}
+             
               className="text-white font-aeonik font-light tracking-normal text-[30px]"
             >
               {active.name}
