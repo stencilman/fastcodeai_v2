@@ -14,7 +14,7 @@ const Industries = () => {
           processes, and growth strategies, regardless of your industry.
         </p>
       </div>
-      <div className="flex pt-[120px] gap-[60px]">
+      <div className="flex pt-[120px] gap-[60px] justify-center">
         <div
           className=" w-[172px] h-[182px] rounded-[18px] flex flex-col items-center justify-center gap-[42px] "
           style={{

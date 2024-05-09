@@ -4,11 +4,12 @@ import React from "react";
 
 const ExpertiseSlide = () => {
   return (
-    <div className="w-full h-[auto] pt-[40%] pb-[10%]  relative overflow-hidden bg-[#00081F] flex flex-col ">
+    <div className="w-full h-[auto] pt-[40%] pb-[15%]  relative overflow-hidden bg-[#00081F] flex flex-col ">
       <div className="absolute top-[-100px] left-[-150px] w-[150%] overflow-hidden h-[250px] blur-[50px] translate-y-[30px] scale-90  rounded-[50%] z-[1] bg-gradient-to-br from-[#1D8283] to-[#033577] bg-gradient-156deg bg-no-repeat bg-[0% 0%] opacity-49 border-0 border-opacity-0 filter blur-[50px] "></div>
 
-      <div className="pl-[100px] pr-[90px] grid grid-cols-12 gap-[75px] ">
+      <div className="pl-[100px] pr-[90px] grid grid-cols-12 gap-[85px] gap-y-[150px] ">
         {/* slide - 1 */}
+        
         <div className="hidden md:grid md:col-span-4 lg:col-span-5 ">
           <Image
             src="/expertisePage/scroll/pic1-2.png"
