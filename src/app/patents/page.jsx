@@ -7,9 +7,9 @@ import Showcase from "./sections/Showcase";
 import HowWeDo from "../component/sections/HowWeDo";
 import Industries from "../component/sections/Industries";
 import TechStack from "../about/sections/TechStack";
-import Testimonials from "../component/sections/Testimonials";
 import Footer from "../component/sections/Footer";
 import Cta from "../industries/sections/Cta";
+import TestimonialsN from "../component/sections/TestimonialsN";
 
 
 const Patents = () => {
@@ -26,7 +26,7 @@ const Patents = () => {
       <HowWeDo/>
       <Industries/>
       <TechStack/>
-      <Testimonials/>
+      <TestimonialsN/>
       <Cta title="Got a groundbreaking idea?" quote="let's turn it into a patented innovation"/>
       <Footer/>
     </>
