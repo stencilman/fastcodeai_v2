@@ -8,7 +8,7 @@ const HowWeDo = ({pb}) => {
     setShowAccordion(accordionNumber);
   };
   return (
-    <div className={`w-full ${pb} h-[100vh] pl-[160px] pr-[127px] relative bg-[#00081F] flex flex-col justify-center`}>
+    <div className={`w-full ${pb} h-[100vh] pl-[160px] pr-[127px] relative bg-[#00081F] flex flex-col justify-center mt-[60px]`}>
       <div>
         <h1 className="text-5xl text-white font-aeonik ">How We Do It</h1>
       </div>
