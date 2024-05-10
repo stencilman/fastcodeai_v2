@@ -1,4 +1,5 @@
 "use client";
+import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 import React, { useState, useEffect, useRef } from "react";
 
@@ -16,7 +17,7 @@ const Experties = () => {
     const observerOptions = {
       root: null,
       rootMargin: "0px",
-      threshold: 0.5,
+      threshold: 1,
     };
 
     const observer = new IntersectionObserver((entries) => {
@@ -53,64 +54,125 @@ const Experties = () => {
           ref={navRef}
         >
           {/* Artificial Intelligence */}
-          <div
-            className={`w-[77px] h-[77px] rounded-full flex items-center justify-center ${
+          <motion.div
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className={`w-[77px] h-[77px] rounded-full flex items-center justify-center relative ${
               activeMain === "Artificial Intelligence"
                 ? "bg-gradient-to-br from-[#2DC1C3] to-[#0268F2]"
                 : "bg-gradient-to-br from-[#13224F] to-[#13224F]"
             }`}
             onClick={() => handleSetActiveMain("Artificial Intelligence")}
           >
-            <Image src="/experties/icon1.svg" width="44" height="44" alt="" />
-          </div>
+            <span className="block relative z-10">
+              <Image src="/experties/icon1.svg" width="44" height="44" alt="" />
+            </span>
+            <AnimatePresence>
+              {activeMain === "Artificial Intelligence" && (
+                <motion.span
+                  className="absolute inset-0 rounded-full bg-gradient-to-br from-[#2DC1C3] to-[#0268F2] z-0"
+                  initial={{ scale: 0 }}
+                  animate={{ scale: 1 }}
+                  exit={{ scale: 0 }}
+                ></motion.span>
+              )}
+            </AnimatePresence>
+          </motion.div>
           {/* Computer Vision */}
-          <div
-            className={`w-[77px] h-[77px] rounded-full flex items-center justify-center ${
+          <motion.div
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className={`w-[77px] h-[77px] rounded-full flex items-center justify-center relative ${
               activeMain === "Computer Vision"
                 ? "bg-gradient-to-br from-[#2DC1C3] to-[#0268F2]"
                 : "bg-gradient-to-br from-[#13224F] to-[#13224F]"
             }`}
             onClick={() => handleSetActiveMain("Computer Vision")}
           >
-            <Image src="/experties/icon2.svg" width="44" height="44" alt="" />
-          </div>
+            <span className="block relative z-10">
+              <Image src="/experties/icon2.svg" width="44" height="44" alt="" />
+            </span>
+            <AnimatePresence>
+              {activeMain === "Computer Vision" && (
+                <motion.span
+                  className="absolute inset-0 rounded-full bg-gradient-to-br from-[#2DC1C3] to-[#0268F2] z-0"
+                  initial={{ scale: 0 }}
+                  animate={{ scale: 1 }}
+                  exit={{ scale: 0 }}
+                ></motion.span>
+              )}
+            </AnimatePresence>
+          </motion.div>
           {/* Machine Learning */}
-          <div
-            className={`w-[77px] h-[77px] rounded-full flex items-center justify-center ${
+          <motion.div
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className={`w-[77px] h-[77px] rounded-full flex items-center justify-center relative ${
               activeMain === "Machine Learning"
                 ? "bg-gradient-to-br from-[#2DC1C3] to-[#0268F2]"
                 : "bg-gradient-to-br from-[#13224F] to-[#13224F]"
             }`}
             onClick={() => handleSetActiveMain("Machine Learning")}
           >
-            <Image src="/experties/icon3.svg" width="44" height="44" alt="" />
-          </div>
+            <span className="block relative z-10">
+              <Image src="/experties/icon3.svg" width="44" height="44" alt="" />
+            </span>
+            <AnimatePresence>
+              {activeMain === "Machine Learning" && (
+                <motion.span
+                  className="absolute inset-0 rounded-full bg-gradient-to-br from-[#2DC1C3] to-[#0268F2] z-0"
+                  initial={{ scale: 0 }}
+                  animate={{ scale: 1 }}
+                  exit={{ scale: 0 }}
+                ></motion.span>
+              )}
+            </AnimatePresence>
+          </motion.div>
           {/* Data Science */}
-          <div
-            className={`w-[77px] h-[77px] rounded-full flex items-center justify-center ${
+          <motion.div
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className={`w-[77px] h-[77px] rounded-full flex items-center justify-center relative ${
               activeMain === "Data Science"
                 ? "bg-gradient-to-br from-[#2DC1C3] to-[#0268F2]"
                 : "bg-gradient-to-br from-[#13224F] to-[#13224F]"
             }`}
             onClick={() => handleSetActiveMain("Data Science")}
           >
-            <Image src="/experties/icon4.svg" width="44" height="44" alt="" />
-          </div>
+            <span className="block relative z-10">
+              <Image src="/experties/icon4.svg" width="44" height="44" alt="" />
+            </span>
+            <AnimatePresence>
+              {activeMain === "Data Science" && (
+                <motion.span
+                  className="absolute inset-0 rounded-full bg-gradient-to-br from-[#2DC1C3] to-[#0268F2] z-0"
+                  initial={{ scale: 0 }}
+                  animate={{ scale: 1 }}
+                  exit={{ scale: 0 }}
+                ></motion.span>
+              )}
+            </AnimatePresence>
+          </motion.div>
         </div>
 
         {/* Main */}
-        <div className="col-span-9 w-full flex flex-col gap-[90px] relative overflow-scroll h-[100%]">
+        <div className="col-span-9 w-full flex flex-col gap-[10vw] relative overflow-scroll h-[100%]">
           {/* Artificial Intelligence */}
           <div
-            className="main-content"
+            className="main-content mb-[10vw]"
             ref={mainRefs["Artificial Intelligence"]}
             data-main="Artificial Intelligence"
           >
             <div className="flex gap-[5%] w-full">
               <div className="w-[45%]">
-                <h1 className="text-[42px] text-white font-aeonik">Artificial Intelligence</h1>
+                <h1 className="text-[42px] text-white font-aeonik">
+                  Artificial Intelligence
+                </h1>
                 <p className="text-[#9EB3CF] text-[19px] font-light pt-[15px] font-bwmss01 ">
-                Develop and implement bespoke AI solutions to rapidly advance your organizational goals. We collaborate with you to identify the optimal artificial intelligence strategies, tools and technologies.
+                  Develop and implement bespoke AI solutions to rapidly advance
+                  your organizational goals. We collaborate with you to identify
+                  the optimal artificial intelligence strategies, tools and
+                  technologies.
                 </p>
               </div>
               <div>
@@ -125,7 +187,7 @@ const Experties = () => {
           </div>
           {/* Computer Vision */}
           <div
-            className="main-content"
+            className="main-content mb-[10vw]"
             ref={mainRefs["Computer Vision"]}
             data-main="Computer Vision"
           >
@@ -135,7 +197,10 @@ const Experties = () => {
                   Computer Vision
                 </h1>
                 <p className="text-[#9EB3CF] text-[19px] font-light pt-[15px] font-bwmss01">
-                We develop custom software solutions using computer vision and deep learning to analyze images, videos, LiDAR, and live streams, helping businesses identify and track objects for enhanced decision-making.
+                  We develop custom software solutions using computer vision and
+                  deep learning to analyze images, videos, LiDAR, and live
+                  streams, helping businesses identify and track objects for
+                  enhanced decision-making.
                 </p>
               </div>
               <div>
@@ -150,15 +215,20 @@ const Experties = () => {
           </div>
           {/* Machine Learning */}
           <div
-            className="main-content"
+            className="main-content mb-[10vw]"
             ref={mainRefs["Machine Learning"]}
             data-main="Machine Learning"
           >
             <div className="flex gap-[5%] w-full">
               <div className="w-[45%]">
-                <h1 className="text-[42px] text-white font-aeonik">Machine Learning</h1>
+                <h1 className="text-[42px] text-white font-aeonik">
+                  Machine Learning
+                </h1>
                 <p className="text-[#9EB3CF] text-[19px] font-light pt-[15px] font-bwmss01">
-                Design and implement innovative ML solutions rapidly — from foundational infrastructure to customer products. Our expert engineers will partner with you to advance innovation effectively within your company.
+                  Design and implement innovative ML solutions rapidly — from
+                  foundational infrastructure to customer products. Our expert
+                  engineers will partner with you to advance innovation
+                  effectively within your company.
                 </p>
               </div>
               <div>
@@ -173,15 +243,20 @@ const Experties = () => {
           </div>
           {/* Data Science */}
           <div
-            className="main-content"
+            className="main-content mb-[10vw]"
             ref={mainRefs["Data Science"]}
             data-main="Data Science"
           >
             <div className="flex gap-[5%] w-full">
               <div className="w-[45%]">
-                <h1 className="text-[42px] text-white font-aeonik">Data Science</h1>
+                <h1 className="text-[42px] text-white font-aeonik">
+                  Data Science
+                </h1>
                 <p className="text-[#9EB3CF] text-[19px] font-light pt-[15px] font-bwmss01">
-                Our full-stack data scientists excel in solving intricate data challenges, regardless of data volume or structure, enabling your business to significantly improve efficiency and increase profitability rapidly.
+                  Our full-stack data scientists excel in solving intricate data
+                  challenges, regardless of data volume or structure, enabling
+                  your business to significantly improve efficiency and increase
+                  profitability rapidly.
                 </p>
               </div>
               <div>

@@ -20,9 +20,11 @@ const Navbar = () => {
   const handleScroll = () => {
     setScrollPosition(window.scrollY);
   };
+  useEffect(()=>{
+    setIsActive(false);
+  },[])
 
   useEffect(() => {
-    setIsActive(false);
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
@@ -30,10 +32,10 @@ const Navbar = () => {
   }, []);
 
   const scale = scrollPosition < 450 ? 1 : 0;
-  const backdropBlur = `backdrop-filter: blur(${Math.min(
+  const backdropBlur = ` blur(${Math.min(
     scrollPosition / 4,
     20
-  )}px);`;
+  )}px)`;
   const backdropOpacity = Math.min(scrollPosition / 450, 1);
   return (
     <div
@@ -42,8 +44,10 @@ const Navbar = () => {
       // style={{
       //   background: `linear-gradient(to top, rgba(0, 0, 0, ${backdropOpacity}) 0%, rgba(0, 0, 0, 0) 100%)`
       // }}
+      style={{    background: `linear-gradient(to top, rgba(0, 8, 31, ${backdropOpacity}) 0%, rgb(0 0 0 / 57%) 100%)`,
+      backdropFilter: `${backdropBlur}`}}
     >
-      <div className="mx-[100px]  pt-[50px] flex items-center justify-between ">
+      <div className="mx-[100px]  pt-[30px]  pb-[20px] flex items-center justify-between ">
         <div className="relative z-[1]">
           <Link href="/"> <Image priority="true" src="/logo1.png" alt="logo" width="290" height="68" /></Link>
         </div>
