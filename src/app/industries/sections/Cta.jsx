@@ -1,11 +1,11 @@
 import Image from "next/image";
 import React from "react";
 
-const Cta = () => {
+const Cta = ({title,quote}) => {
   return (
     <div className="w-full h-[80vh] pl-[20px] md:pl-[50px] lg:pl-[100px] pr-[20px] md:pr-[50px] lg:pr-0 relative bg-[#00081F] flex flex-col justify-center gap-[4vw]">
       <h1 className="text-5xl text-white font-aeonik">
-        Do you Have a Project in Mind?
+        {title}
       </h1>
       <div
         className="w-[90%] md:w-[80%] rounded-[28px] h-[60px] md:h-[80px] lg:h-[100px] flex items-center justify-between px-[20px] "
@@ -16,7 +16,7 @@ const Cta = () => {
       >
         <div>
           <p className="text-white font-aeonik font-bold text-[26px] md:text-[32px] ">
-            Give us Some Detail on Your Project and Let us Help
+            {quote}
           </p>
         </div>
         <div className="flex items-center gap-[10px]">
