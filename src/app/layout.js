@@ -4,6 +4,7 @@ import Navbar from "./component/Navbar";
 import localFont from "next/font/local"
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import { GlobalProvider } from "./context/GlobalContext";
+import SmoothScroll from "./component/SmoothScroll";
 
 // const inter = Inter({ subsets: ["latin"] });
 
@@ -52,8 +53,10 @@ export default function RootLayout({ children }) {
     <html lang="en" >
       <body className={`${aeonik.variable} ${bwmss01.variable}`}>
         <GlobalProvider>
-          <Navbar />
-          {children}
+          <SmoothScroll>
+            <Navbar />
+            {children}
+          </SmoothScroll>
           <SpeedInsights />
         </GlobalProvider>
       </body>
