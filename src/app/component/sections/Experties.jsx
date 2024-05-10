@@ -44,12 +44,12 @@ const Experties = () => {
   };
 
   return (
-    <div className="bg-[#00081F] w-full h-[100%] overflow-x-hidden overflow-y-hidden relative pb-[250px]">
+    <div className="bg-[#00081F] w-full h-[100%]  relative pb-[250px]">
       <div className="grid grid-cols-12 gap-[0px] pl-[170px] pr-[127px] w-full h-[100%]  justify-center pt-[250px]">
         {/* NAV */}
 
         <div
-          className="col-span-3 flex flex-col gap-[15px] sticky top-0 h-fit"
+          className="col-span-3 flex flex-col gap-[15px] sticky top-[10vw] h-fit"
           ref={navRef}
         >
           {/* Artificial Intelligence */}
