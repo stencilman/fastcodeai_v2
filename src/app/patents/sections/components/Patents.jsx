@@ -60,7 +60,7 @@ const Patents = () => {
   return (
     <div className="h-auto w-full flex flex-col gap-[70px] items-center">
       {/* catagories */}
-      <div className="flex gap-[35px] items-center flex-wrap">
+      <div className="flex gap-[35px] items-center justify-center flex-wrap">
         <div className="border border-[#082373] rounded-[30px] bg-[#00081F] px-[21px] py-[10px] text-lg font-bwmss01 text-white">
           Catagory 1
         </div>
@@ -77,7 +77,7 @@ const Patents = () => {
           Catagory 5
         </div>
       </div>
-      <div className="w-full px-[20px] md:px-[50px] lg:px-[100px] flex-col gap-[60px]">
+      <div className="w-full px-[20px] md:px-[50px] lg:px-[100px] flex flex-col gap-[60px]">
         {patentsList.map((e, i) => (
           <div
             key={i}
