@@ -5,7 +5,7 @@ import React from "react";
 const Button = ({to,name}) => {
   return (
     <Link href={to}
-      className="rounded-[28px] relative z-[1] flex items-center gap-[7px] bg-gradient-to-br from-[#2DC1C3] to-[#0268F2] text-white p-[15px] text-lg "
+      className="rounded-[28px] relative z-[1] flex items-center gap-[7px] bg-gradient-to-br from-[#2DC1C3] to-[#0268F2] text-white p-[15px] text-lg justify-between"
      
     >
       <div>{name}</div>
