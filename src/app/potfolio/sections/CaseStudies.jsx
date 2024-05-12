@@ -9,19 +9,19 @@ const CaseStudies = () => {
 
   const porfolioList = [
     {
-      img: "mbenz/img1-2.png",
+      img: "bg-benz",
       title: "Mercedes Benz",
       description:
         "Enhance interaction between driver and car by detecting driver hand gesture for superior level driver experience with Mercedes Benz User Experience - MBUX System.",
     },
     {
-      img: "fedLearning/img1-2.png",
+      img: "bg-learning",
       title: "Fitness Pose Estimation",
       description:
         "Enhance interaction between driver and car by detecting driver hand gesture for superior level driver experience with Mercedes Benz User Experience - MBUX System.",
     },
     {
-      img: "fitness/img1-2.png",
+      img: "bg-fitness",
       title: "Federated Learning on the Edge",
       description:
         "Enhance interaction between driver and car by detecting driver hand gesture for superior level driver experience with Mercedes Benz User Experience - MBUX System.",
@@ -66,7 +66,7 @@ const CaseStudies = () => {
           return (
             <div
               key={i}
-              className={`p-[0] border border-[#082373] lg:px-[35px] lg:pt-[0px] lg:pb-[40px] w-full h-[460px] sm:h-[434px] lg:h-[410px] bg-[url('/potfolio/${e?.img}')] rounded-[20px] bg-cover bg-no-repeat`}
+              className={`p-[0] border border-[#082373] lg:px-[35px] lg:pt-[0px] lg:pb-[40px] w-full h-[460px] sm:h-[434px] lg:h-[410px] ${e.img} rounded-[20px] bg-cover bg-no-repeat`}
               style={{ maxWidth: "1099px" }}
             >
               <div className="w-full h-full flex justify-between flex-col lg:flex-row p-[10px] sm:p-[21px] lg:pb-[0px]">
