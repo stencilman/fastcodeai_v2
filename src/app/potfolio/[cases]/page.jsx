@@ -1,5 +1,5 @@
 import React from 'react'
-import Hero from './sections/hero'
+import Hero from './sections/Hero'
 import ClientAndInd from './sections/ClientAndInd'
 import ProjectGoals from './sections/ProjectGoals'
 import BusinessChlanges from './sections/BusinessChallenges'
