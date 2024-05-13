@@ -13,18 +13,21 @@ const CaseStudies = () => {
       title: "Mercedes Benz",
       description:
         "Enhance interaction between driver and car by detecting driver hand gesture for superior level driver experience with Mercedes Benz User Experience - MBUX System.",
+      to: "/potfolio/mbux",
     },
     {
       img: "bg-learning",
-      title: "Fitness Pose Estimation",
+      title: "Federated Learning on the Edge ",
       description:
         "Enhance interaction between driver and car by detecting driver hand gesture for superior level driver experience with Mercedes Benz User Experience - MBUX System.",
+      to: "/potfolio/federated-learning",
     },
     {
       img: "bg-fitness",
-      title: "Federated Learning on the Edge",
+      title: "Fitness Pose Estimation",
       description:
         "Enhance interaction between driver and car by detecting driver hand gesture for superior level driver experience with Mercedes Benz User Experience - MBUX System.",
+      to: "/potfolio/fitness-pose-estimation",
     },
   ];
 
@@ -78,7 +81,7 @@ const CaseStudies = () => {
                     {e.description}
                   </p>
                   <div className="w-[164px]">
-                    <Button to="/" name="Read More" />
+                    <Button to={`${e.to}`} name="Read More" />
                   </div>
                 </div>
                 <div className="w-full h-[100px] lg:h-full flex lg:w-[37%] gap-[15px] lg:gap-[39px]  items-end sm:pb-[20px]">
