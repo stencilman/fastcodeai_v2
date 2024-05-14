@@ -11,8 +11,8 @@ const LatestBlogs = () => {
       </div>
 
       <div className="grid grid-cols-3 grid-rows-3 gap-7 w-full">
-        <Link href="/blogs/why-ai">
           <div className="col-span-2">
+        <Link href="/blogs/why-ai">
             <div className="w-[833px] h-[327px] bg-no-repeat bg-blog1 relative p-[20px]">
               <div className="absolute bottom-[20px]">
                 <h3 className="text-white text-2xl font-aeonik tracking-wide mb-[15px]">
@@ -31,8 +31,8 @@ const LatestBlogs = () => {
                 </div>
               </div>
             </div>
-          </div>
         </Link>
+          </div>
 
         <Link href="/blogs/why-ai">
           <div className="col-start-3 ">
