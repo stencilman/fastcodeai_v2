@@ -1,3 +1,4 @@
+
 import React from "react";
 
 const LatestBlogs = () => {
@@ -8,6 +9,7 @@ const LatestBlogs = () => {
           Latest Blog
         </h1>
       </div>
+
       <div className="grid grid-cols-3 grid-rows-3 gap-7 w-full">
         <div className="col-span-2">
           <div className="w-[833px] h-[327px] bg-no-repeat bg-blog1 relative p-[20px]">
@@ -149,7 +151,6 @@ const LatestBlogs = () => {
             </div>
           </div>
         </div>
-       
       </div>
     </div>
   );

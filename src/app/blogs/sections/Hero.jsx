@@ -3,9 +3,9 @@ import React from "react";
 const Hero = () => {
   return (
     <div
-      className="w-full h-[100vh] bg-blogHero bg-no-repeat flex justify-center items-center relative"
-      style={{ background: "transparent url('/blogs/hero/img1-2.png')" }}
+      className="w-full h-[70vh] bg-blogHero bg-cover bg-no-repeat flex justify-center items-center relative "
     >
+        
       <div className="flex flex-col gap-[40px] ">
         <h1 className="text-[51px] text-white font-aeonik tracking-wide">
           Blogs
