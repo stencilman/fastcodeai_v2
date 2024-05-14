@@ -30,6 +30,10 @@ const navItems = [
     href: "/patents",
   },
   {
+    title: "Blogs",
+    href: "/blogs",
+  },
+  {
     title: "Team",
     href: "/team",
   },

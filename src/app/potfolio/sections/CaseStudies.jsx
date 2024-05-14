@@ -16,6 +16,13 @@ const CaseStudies = () => {
       to: "/potfolio/mbux",
     },
     {
+      img: "bg-benz",
+      title: "Bosch",
+      description:
+        "Accurate, low footprint detection with vulnerable roadside users (VRUs) and road signs covered in the Bosch-Daimler autonomous driving initiative.",
+      to: "/potfolio/bosch",
+    },
+    {
       img: "bg-learning",
       title: "Federated Learning on the Edge ",
       description:

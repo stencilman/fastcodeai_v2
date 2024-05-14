@@ -14,6 +14,12 @@ module.exports = {
         'benz': "url('/potfolio/mbenz/img1-2.png')",
         'learning': "url('/potfolio/fedLearning/img1-2.png')",
         'fitness': "url('/potfolio/fitness/img1-2.png')",
+        'blogHero': "url('/blogs/hero/img1-2.png')",
+        'blog1': "url('/blogs/latest-blog/img1.png')",
+        'blog2': "url('/blogs/latest-blog/img3.png')",
+        'blog3': "url('/blogs/latest-blog/img4.png')",
+        'blog4': "url('/blogs/latest-blog/img2.png')",
+
       },
       background: {
         cusgrad: "transparent linear-gradient(360deg, #13224F 0%, #13224F 0%, #0C1C46 51%, #020F3B 100%) 0% 0% no-repeat padding-box"
