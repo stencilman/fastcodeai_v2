@@ -15,12 +15,21 @@ module.exports = {
         'learning': "url('/potfolio/fedLearning/img1-2.png')",
         'fitness': "url('/potfolio/fitness/img1-2.png')",
         'blogHero': "url('/blogs/hero/img1-2.png')",
+        'teamHero': "url('/team/img1-2.png')",
         'blog1': "url('/blogs/latest-blog/img1.png')",
         'blog2': "url('/blogs/latest-blog/img3.png')",
         'blog3': "url('/blogs/latest-blog/img4.png')",
         'blog4': "url('/blogs/latest-blog/img2.png')",
         'whyaiHero': "url('/blogs/why-ai/hero/img1-2.png')",
-        
+        'arjun': "url('/members/arjun.png')",
+        'eshwar': "url('/members/eshwar.png')",
+        'parth': "url('/members/parth.png')",
+        'gautham': "url('/members/gautham.png')",
+        'sanjay': "url('/members/sanjay.png')",
+        'naren': "url('/members/naren.png')",
+        'dhaval': "url('/members/dhaval.png')",
+        'abdul': "url('/members/abdul.png')",
+
 
       },
       background: {
