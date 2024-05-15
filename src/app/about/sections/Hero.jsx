@@ -17,7 +17,6 @@ const Hero = () => {
 
   return (
     <div className="w-full h-[100vh] relative bg-gradient-to-br from-[#000E32] to-[#000929] opacity-83">
-      {/* <Navbar /> */}
       <div className="absolute inset-0 z-0 overflow-hidden">
         <video
           className="w-full h-full object-cover"

@@ -97,7 +97,9 @@ const Footer = () => {
                 </div>
                 <div className="w-[50%]">
                   <ul>
-                    <li className="text-[14px] font-bold text-white font-aeonik">Email</li>
+                    <li className="text-[14px] font-bold text-white font-aeonik">
+                      Email
+                    </li>
                     <li className="text-[#9EB3CF] font-bwmss01 text-2xl  pl-[4px]">
                       arjun@fastcode.ai
                     </li>
@@ -118,8 +120,12 @@ const Footer = () => {
                   </p>
                 </div>
                 <div className="flex gap-[27px]">
-                  <p className="text-[#9EB3CF] font-bwmss01 text-[12px]">Legal Notice</p>
-                  <p className="text-[#9EB3CF] font-bwmss01 text-[12px]">Privacy Policy</p>
+                  <p className="text-[#9EB3CF] font-bwmss01 text-[12px]">
+                    Legal Notice
+                  </p>
+                  <p className="text-[#9EB3CF] font-bwmss01 text-[12px]">
+                    Privacy Policy
+                  </p>
                   <p className="text-[#9EB3CF] font-bwmss01 text-[12px]">
                     Terms & Conditions
                   </p>
@@ -131,7 +137,8 @@ const Footer = () => {
 
         {/* Marque Effect */}
 
-        <Link href="/contacts"
+        <Link
+          href="/contact"
           id="marqEffCont"
           ref={container}
           // animate={active ? "open" : "close"}

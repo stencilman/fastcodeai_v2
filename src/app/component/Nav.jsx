@@ -39,7 +39,7 @@ const navItems = [
   },
   {
     title: "Contacts",
-    href: "/contacts",
+    href: "/contact",
   },
 ];
 

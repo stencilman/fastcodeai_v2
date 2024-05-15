@@ -37,7 +37,7 @@ const CtaToContacts = () => {
   }, []);
   return (
     <Link
-      href="/contacts"
+      href="/contact"
       id="marqEffCont"
       ref={container_scrl}
       onMouseEnter={() => setActive_scrl(true)}

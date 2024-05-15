@@ -7,7 +7,8 @@ const SpecializeIndustries = () => {
   const [active, setActive] = useState({
     id: 1,
     name: "Automibile",
-    description: "Fast Code AI is a leading AI adoption partner that collaborates with industry leaders to harness the power of advanced intelligence. They specialize in developing AI solutions for various domains, including computer vision, trend forecasting, and targeted consumer insights. Ipsum potenti at congue magna amet id egestas. Quisque imperdiet feugiat ac sit est vitae cras. Amet ut ornare eu at",
+    description:
+      "Fast Code AI is a leading AI adoption partner that collaborates with industry leaders to harness the power of advanced intelligence. They specialize in developing AI solutions for various domains, including computer vision, trend forecasting, and targeted consumer insights. Ipsum potenti at congue magna amet id egestas. Quisque imperdiet feugiat ac sit est vitae cras. Amet ut ornare eu at",
     icon: "icon4.svg",
     percentage: "60%",
     showPercentageBar: true,
@@ -114,7 +115,6 @@ const SpecializeIndustries = () => {
               }}
             >
               <Image
-                
                 src={`/industries/${active.icon}`}
                 alt=""
                 width="170"
@@ -123,10 +123,7 @@ const SpecializeIndustries = () => {
             </div>
           </div>
           <div>
-            <h5
-             
-              className="text-white font-aeonik font-light tracking-normal text-[30px]"
-            >
+            <h5 className="text-white font-aeonik font-light tracking-normal text-[30px]">
               {active.name}
             </h5>
             <p className="text-[#9EB3CF] font-bwmss01 text-lg mt-[20px]">
@@ -145,7 +142,7 @@ const SpecializeIndustries = () => {
           No Problem Contact Us To Find The Best Solutions!
         </p>
 
-        <Button to="/contacts" name="Contact Us" />
+        <Button to="/contact" name="Contact Us" />
       </div>
     </div>
   );
