@@ -52,7 +52,7 @@ export default function Nav() {
       exit="exit"
       className="h-[100vh]  z-[2] w-[40%] rounded-l-3xl bg-[#FFFFFF] fixed right-0 top-0 text-white"
     >
-      <div className="box-border h-full pt-[2.5rem] flex flex-col justify-between">
+      <div className="box-border h-full pt-[4.5rem] flex flex-col justify-between">
         <div
           onMouseLeave={() => {
             setSelectedIndicator(pathname);
@@ -70,7 +70,8 @@ export default function Nav() {
             );
           })}
         </div>
-        <div className="flex gap-[30px] pl-[50px] pb-[140px]">
+        {/* footer */}
+        <div className="flex gap-[30px] pl-[50px] pb-[100px]">
                 <Link href="/career" className="text-lg text-black font-aeonik font-light">Career</Link>
                 <Link href="/blogs" className="text-lg text-black font-aeonik font-light">Blog</Link>
                 <Link href="https://in.linkedin.com/company/fast-code" target="_blank" className="text-lg text-black font-aeonik font-light">Linkedin</Link>
