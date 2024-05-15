@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { usePathname } from "next/navigation";
 import { menuSlide } from "./anim";
 import LinkNav from "./LinkNav";
+import Link from "next/link";
 
 const navItems = [
   {
@@ -28,10 +29,6 @@ const navItems = [
   {
     title: "Patents",
     href: "/patents",
-  },
-  {
-    title: "Blogs",
-    href: "/blogs",
   },
   {
     title: "Team",
@@ -73,12 +70,12 @@ export default function Nav() {
             );
           })}
         </div>
-        {/* <div className={styles.footer}>
-                <a>Awwwards</a>
-                <a>Instagram</a>
-                <a>Dribble</a>
-                <a>LinkedIn</a>
-            </div> */}
+        <div className="flex gap-[30px] pl-[50px] pb-[140px]">
+                <Link href="/career" className="text-lg text-black font-aeonik font-light">Career</Link>
+                <Link href="/blogs" className="text-lg text-black font-aeonik font-light">Blog</Link>
+                <Link href="https://in.linkedin.com/company/fast-code" target="_blank" className="text-lg text-black font-aeonik font-light">Linkedin</Link>
+               
+            </div>
       </div>
     </motion.div>
   );
