@@ -41,6 +41,7 @@ module.exports = {
         'blog3': "url('/blogs/latest-blog/img4.png')",
         'blog4': "url('/blogs/latest-blog/img2.png')",
         'whyaiHero': "url('/blogs/why-ai/hero/img1-2.png')",
+
         'arjun': "url('/members/arjun.png')",
         'eshwar': "url('/members/eshwar.png')",
         'parth': "url('/members/parth.png')",
@@ -49,6 +50,7 @@ module.exports = {
         'naren': "url('/members/naren.png')",
         'dhaval': "url('/members/dhaval.png')",
         'abdul': "url('/members/abdul1.png')",
+        'prabal': "url('/members/Prabal.webp')",
 
 
       },
