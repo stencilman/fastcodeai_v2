@@ -94,7 +94,7 @@ const Clients = () => {
         <Shadow />
 
         <div className="flex flex-col lg:flex-row gap-[10vh] lg:gap-[10px]  w-full items-center z-[3]">
-          <div className="relative z-[5] h-auto lg:h-full pl-[20px] mg:pl-[50px] lg:pl-[100px] w-[100%] lg:w-[40%] ">
+          <div className="relative z-[5] h-auto lg:h-full pl-[20px] md:pl-[50px] lg:pl-[100px] w-[100%] lg:w-[40%] ">
             <div className="w-full h-full flex flex-col justify-center">
               <h1 className="text-[8vw] tracking-normal lg:text-[51px] text-white font-aeonik">Our Clients</h1>
               <p className="text-[#9EB3CF] pr-[20px] text-base md:text-lg font-light mt-[4vw] lg:mt-[30px] font-bwmss01">
