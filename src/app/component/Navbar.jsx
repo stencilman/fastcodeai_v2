@@ -12,7 +12,7 @@ const Navbar = () => {
   const { isActive, setIsActive } = useGlobalContext();
   const [scrollPosition, setScrollPosition] = useState(0);
 
-  console.log("isActive",isActive)
+  console.log("isActive", isActive);
   const handleClick = () => {
     setIsActive(!isActive);
   };
@@ -20,9 +20,9 @@ const Navbar = () => {
   const handleScroll = () => {
     setScrollPosition(window.scrollY);
   };
-  useEffect(()=>{
+  useEffect(() => {
     setIsActive(false);
-  },[])
+  }, []);
 
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
@@ -32,10 +32,7 @@ const Navbar = () => {
   }, []);
 
   const scale = scrollPosition < 450 ? 1 : 0;
-  const backdropBlur = ` blur(${Math.min(
-    scrollPosition / 4,
-    20
-  )}px)`;
+  const backdropBlur = ` blur(${Math.min(scrollPosition / 4, 20)}px)`;
   const backdropOpacity = Math.min(scrollPosition / 450, 1);
   return (
     <div
@@ -44,16 +41,28 @@ const Navbar = () => {
       // style={{
       //   background: `linear-gradient(to top, rgba(0, 0, 0, ${backdropOpacity}) 0%, rgba(0, 0, 0, 0) 100%)`
       // }}
-      style={{    background: `linear-gradient(to top, rgba(0, 8, 31, ${backdropOpacity}) 0%, rgb(0 0 0 / 57%) 100%)`,
-      backdropFilter: `${backdropBlur}`}}
+      style={{
+        background: `linear-gradient(to top, rgba(0, 8, 31, ${backdropOpacity}) 0%, rgb(0 0 0 / 57%) 100%)`,
+        backdropFilter: `${backdropBlur}`,
+      }}
     >
-      <div className="mx-[100px]  pt-[30px]  pb-[20px] flex items-center justify-between ">
+      <div className="mx-[20px] md:mx-[50px] lg:mx-[100px]  pt-[30px]  pb-[20px] flex items-center justify-between ">
         <div className="relative z-[1]">
-          <Link href="/"> <Image priority="true" src="/logo1.png" alt="logo" width="290" height="68" /></Link>
+          <Link href="/">
+            {" "}
+            <Image
+              priority="true"
+              className="w-[190px] sm:w-[290px]"
+              src="/logo1.png"
+              alt="logo"
+              width="290"
+              height="68"
+            />
+          </Link>
         </div>
-        <div className="flex items-center gap-[14px]">
+        <div className="flex items-center gaa-[0px] sm:gap-[14px]">
           <button
-            className="rounded-[28px] relative z-[1] flex items-center gap-[7px] bg-gradient-to-br from-[#2DC1C3] to-[#0268F2] text-white p-[15px] text-lg "
+            className="rounded-[28px] relative z-[1] hidden  sm:flex items-center gap-[7px] bg-gradient-to-br from-[#2DC1C3] to-[#0268F2] text-white p-[15px] text-lg "
             style={{
               transform: `scale(${scale})`,
               transition: "transform 0.5s",
@@ -73,7 +82,7 @@ const Navbar = () => {
 
           <button
             onClick={handleClick}
-            className={`w-[56px] relative z-[3] h-[56px] ${
+            className={`w-[40px] sm:w-[56px] h-[40px] sm:h-[56px] relative z-[3]  ${
               isActive ? "bg-[#0E1E49]" : "bg-[#F3F3F3]"
             }  rounded-full flex flex-col justify-center items-center`}
           >
