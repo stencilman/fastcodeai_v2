@@ -39,7 +39,7 @@ const Publications = () => {
   return (
     <div className="h-auto w-full flex flex-col gap-[70px] items-center">
       {/* catagories */}
-      <div className="flex gap-[35px] items-center flex-wrap">
+      <div className="flex gap-[15px] md:gap-[35px] items-center justify-center flex-wrap">
         <div className="border border-[#082373] rounded-[30px] bg-[#00081F] px-[21px] py-[10px] text-lg font-bwmss01 text-white">
           Catagory 1
         </div>
@@ -60,13 +60,13 @@ const Publications = () => {
       {publicationList.map((e, i) => (
         <div key={i} className="w-full px-[20px] md:px-[50px] lg:px-[100px] flex-col gap-[60px]">
           <div
-            className="flex flex-row gap-[5%] rounded-[18px] border border-[#1A2758] w-full h-auto px-[60px] py-[40px]"
+            className="flex flex-col md:flex-row gap-[30px] md:gap-[5%] rounded-[18px] border border-[#1A2758] w-full h-auto px-[60px] py-[40px]"
             style={{
               background:
                 "transparent linear-gradient(360deg, #13224F 0%, #13224F 0%, #0C1C46 51%, #020F3B 100%) 0% 0% no-repeat padding-box",
             }}
           >
-            <div className="w-[40%]">
+            <div className="w-full md:w-[40%]">
               <Image
               className="rounded-[18px]"
                 src={`/patents/publications/${e.img}`}
@@ -75,7 +75,7 @@ const Publications = () => {
                 alt=""
               />
             </div>
-            <div className="w-[55%] flex flex-col gap-[20px]">
+            <div className="w-full md:w-[55%] flex flex-col gap-[20px]">
               {/* head */}
               <div className="flex gap-[20px]">
                 <div className="border border-[#082373] rounded-[30px] bg-[#00081F] px-[21px] py-[10px] text-lg font-bwmss01 text-white">

@@ -47,12 +47,12 @@ const CaseStudies = () => {
       <div className="absolute left-[7%] top-[-7%]  w-[20%] h-[17%] blur-[50px] translate-y-[167px] scale-90  rounded-[50%] z-[3] bg-gradient-to-br from-[#1D8283] to-[#033577] bg-gradient-156deg bg-no-repeat bg-[0% 0%] opacity-49 border-0 border-opacity-0 filter blur-[100px]"></div>
       <div className="absolute left-[70%] top-[46%]  w-[27%] h-[17%] blur-[50px] translate-y-[167px] scale-90  rounded-[50%] z-[3] bg-gradient-to-br from-[#1D8283] to-[#033577] bg-gradient-156deg bg-no-repeat bg-[0% 0%] opacity-49 border-0 border-opacity-0 filter blur-[100px]"></div>
       {/* catagories */}
-      <div className="flex gap-[35px] items-center justify-center flex-wrap mt-[70px] ">
+      <div className="flex gap-[12px] md:gap-[35px] items-center justify-center flex-wrap mt-[40px] md:mt-[70px] ">
         {tabs.map((tab) => (
           <button
             key={tab}
             onClick={() => setSelected(tab)}
-            className={`min-w-[120px] ${
+            className={`min-w-[144px] ${
               selected === tab
                 ? "text-white "
                 : "text-slate-300 hover:text-slate-200 hover:bg-slate-700 border border-slate-700"
@@ -76,7 +76,7 @@ const CaseStudies = () => {
           return (
             <div
               key={i}
-              className={`p-[0] border border-[#082373] lg:px-[35px] lg:pt-[0px] lg:pb-[40px] w-full h-[460px] sm:h-[434px] lg:h-[410px] ${e.img} rounded-[20px] bg-cover bg-no-repeat`}
+              className={`p-[0] border border-[#082373] lg:px-[35px] lg:pt-[0px] lg:pb-[40px] w-full h-[512px] sm:h-[434px] lg:h-[410px] ${e.img} rounded-[20px] bg-cover bg-no-repeat`}
               style={{ maxWidth: "1099px" }}
             >
               <div className="w-full h-full flex justify-between flex-col lg:flex-row p-[10px] sm:p-[21px] lg:pb-[0px]">
