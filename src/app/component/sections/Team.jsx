@@ -53,7 +53,7 @@ const Team = () => {
     }, 2000);
 
     return () => clearInterval(interval);
-  }, []);
+  }, []); 
 
   return (
     <div className="w-full h-[100vh] bg-gradient-to-br from-[#000E32] to-[#000929] opacity-83 relative flex flex-col items-center justify-center z-[4]">

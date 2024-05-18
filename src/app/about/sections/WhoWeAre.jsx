@@ -85,13 +85,13 @@ const WhoWeAre = () => {
         className="palne w-full h-full absolute brightness-[1]"
       >
         <Image
-          className="absolute left-[50%] top-[30%]"
+          className="absolute left-[50%] top-[38%] md:top-[30%]"
           src={floating1}
           alt="image"
           width={170}
         />
         <Image
-          className="absolute left-[20%] top-[8%]"
+          className="absolute left-[2%] md:left-[20%] top-[15%] md:top-[8%]"
           src={floating2}
           alt="image"
           width={200}
@@ -102,7 +102,7 @@ const WhoWeAre = () => {
         className="palne w-full h-full absolute brightness-[1]"
       >
         <Image
-          className="absolute left-[15%] top-[68%]"
+          className="absolute w-[170px] md:w-[250px] left-[3%] md:left-[15%] top-[71%] md:top-[68%]"
           src={floating4}
           alt="image"
           width={250}
@@ -119,7 +119,7 @@ const WhoWeAre = () => {
         className="palne w-full h-full absolute brightness-[0.9]"
       >
         <Image
-          className="absolute left-[75%] top-[5.5%]"
+          className="absolute left-[45%] md:left-[75%] top-[5.5%]"
           src={floating3}
           alt="image"
           width={250}
@@ -131,7 +131,7 @@ const WhoWeAre = () => {
           width={180}
         />
       </div>
-      <div className="Title absolute top-[50%] left-[50%] transform translate-x-[-50%] translate-y-[-50%] font-[19px] w-[70%] h-auto border border-[#707070] rounded-[20px] backdrop-blur-[5px] bg-[#a0a0a02b] flex text-white py-[70px] px-[50px] gap-[40px] flex-col lg:flex-row">
+      <div className="Title absolute top-[50%] left-[50%] transform translate-x-[-50%] translate-y-[-50%] text-[19px] w-[90%] lg:w-[70%] h-auto border border-[#707070] rounded-[20px] backdrop-blur-[5px] bg-[#a0a0a02b] flex text-white py-[70px] px-[20px] md:px-[40px] lg:px-[50px] gap-[40px] flex-col lg:flex-row">
         <div className="w-[100%] flex items-center">
           <h1 className="font-aeonik tracking-normal">Who Are We ?</h1>
         </div>
