@@ -3,19 +3,19 @@ import React from "react";
 
 const Cta = ({title,quote}) => {
   return (
-    <div className="w-full h-[80vh] pl-[20px] md:pl-[50px] lg:pl-[100px] pr-[20px] md:pr-[50px] lg:pr-0 relative bg-[#00081F] flex flex-col justify-center gap-[4vw]">
-      <h1 className="text-5xl text-white font-aeonik">
+    <div className="w-full h-[60vh] pl-[20px] md:pl-[50px] lg:pl-[100px] pr-[20px] md:pr-[50px] lg:pr-0 relative bg-[#00081F] flex flex-col justify-center gap-[4vw]">
+      <h1 className="text-[8vw] md:text-[7vw] lg:text-5xl text-white font-aeonik">
         {title}
       </h1>
       <div
-        className="w-[90%] md:w-[80%] rounded-[28px] h-[60px] md:h-[80px] lg:h-[100px] flex items-center justify-between px-[20px] "
+        className="w-[100%] md:w-[100%] rounded-[28px] h-[auto] md:h-[80px] lg:h-[100px] flex items-center justify-between px-[20px] py-[10px] mt-[20px]"
         style={{
           background:
             "transparent linear-gradient(127deg, #2DC1C3 0%, #0268F2 100%) 0% 0% no-repeat padding-box",
         }}
       >
         <div>
-          <p className="text-white font-aeonik font-bold text-[26px] md:text-[32px] ">
+          <p className="text-white font-aeonik font-semibold md:font-bold text-2xl leading-[25px] md:w-[80%] md:text-2xl ">
             {quote}
           </p>
         </div>

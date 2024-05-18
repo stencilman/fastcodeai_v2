@@ -70,13 +70,13 @@ const SpecializeIndustries = () => {
 
       {/* Section 2 */}
       <div
-        className="border p-[50px] border-[#1A2758] mt-[20px] rounded-[18px] w-full h-[auto] flex gap-[5%]"
+        className="border p-[20px] md:p-[50px] border-[#1A2758] mt-[20px] rounded-[18px] w-full h-[auto] flex flex-col md:flex-row gap-[60px] md:gap-[5%]"
         style={{
           background:
             "transparent linear-gradient(360deg, #13224F 0%, #010D33 0%, #010D34 51%, #020B2A 100%) 0% 0% no-repeat padding-box",
         }}
       >
-        <div className="w-[45%] h-full flex flex-col gap-[30px]">
+        <div className="w-full md:w-[45%] h-full flex flex-col gap-[30px]">
           {specializationList.map((e, i) => (
             <div key={i}>
               <h4
@@ -105,7 +105,7 @@ const SpecializeIndustries = () => {
           ))}
         </div>
         {/* Detail Section */}
-        <div className="w-[50%] h-full flex flex-col gap-[50px]">
+        <div className="w-full md:w-[50%] h-full flex flex-col gap-[50px]">
           <div>
             <div
               className={`w-[240px] h-[240px] flex items-center justify-center border border-[#1A2758] rounded-[14px] bg-[#00081F] `}
