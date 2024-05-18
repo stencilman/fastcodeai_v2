@@ -31,11 +31,11 @@ const Hero = () => {
       <div className="w-full bottom-28 absolute z-[1] pl-[110px]">
         <h1
           ref={ref}
-          className={`text-[#F3F3F3] tracking-wide text-[8vw] leading-[9vw] lg:leading-[1] lg:text-8xl pb-[20px] font-aeonik font-normal ${
+          className={`text-[#F3F3F3] tracking-wide text-[8vw] md:text-[7vw] leading-[9vw] lg:leading-[1] lg:text-8xl pb-[20px] font-aeonik font-normal ${
             isVisible ? "translate-y-0 opacity-100" : "translate-y-20 opacity-0"
           } transition-transform duration-1000 ease-out`}
         >
-          Lead the future <br/>
+          Lead the future <br />
           with us.
         </h1>
         <p
@@ -44,8 +44,9 @@ const Hero = () => {
             isVisible ? "translate-y-0 opacity-100" : "translate-y-20 opacity-0"
           }  transition-transform delay-100 duration-1000 ease-out`}
         >
-         Unlock the intriguing possibilities of AI for innovation and creativity.<br />  Let AI be your partner in crafting captivating solutions.
-          
+          Unlock the intriguing possibilities of AI for innovation and
+          creativity.
+          <br /> Let AI be your partner in crafting captivating solutions.
         </p>
       </div>
     </div>

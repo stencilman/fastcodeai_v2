@@ -16,7 +16,7 @@ const HowWeDo = ({ pb }) => {
           How We Do It
         </h1>
       </div>
-      <div className="max-w-[900px] flex-col lg:flex-row sm:mt-[55px] flex">
+      <div className="max-w-[100%] flex-col lg:flex-row sm:mt-[55px] flex">
         {/* Accordion 1 */}
         <div
           onClick={() => handleAccordion(0)}

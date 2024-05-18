@@ -45,7 +45,7 @@ const Experties = () => {
   };
 
   return (
-    <div className="bg-[#00081F] w-full h-[100%]  relative pb-[250px]">
+    <div className="bg-[#00081F] w-full h-[100%]  relative pb-[30px] lg:pb-[250px]">
       <div className="grid grid-cols-12 gap-[0px] gap-y-[10vw] pl-[20px] mg:pl-[50px] lg:pl-[170px] pr-[20px] md:pr-[50px] lg:pr-[127px] w-full h-[100%]  justify-center pt-[100px] lg:pt-[250px]">
         {/* NAV */}
 
@@ -189,7 +189,7 @@ const Experties = () => {
           >
             <div className="flex flex-col-reverse lg:flex-row gap-[30px] md:gap-[50px] lg:gap-[5%] items-center lg:items-start">
               <div className="w-[100%] lg:w-[45%] text-center lg:text-left ">
-                <h1 className="text-[8vw] lg:text-[42px] tracking-normal text-white font-aeonik">
+                <h1 className="text-[8vw] md:text-[7vw] lg:text-[42px] tracking-normal text-white font-aeonik">
                   Artificial Intelligence
                 </h1>
                 <p className="text-[#9EB3CF] text-base md:text-lg font-light pt-[15px] md:pt-[25px] lg:pt-[15px] font-bwmss01 ">
@@ -201,10 +201,11 @@ const Experties = () => {
               </div>
               <div>
                 <Image
+                className="rounded-[18px]"
                   src="/experties/ai.png"
                   width="470"
                   height="244"
-                  alt="consultation"
+                  alt="consultation" 
                 />
               </div>
             </div>
@@ -217,7 +218,7 @@ const Experties = () => {
           >
             <div className="flex flex-col-reverse lg:flex-row gap-[30px] lg:gap-[5%] items-center lg:items-start">
               <div className="w-[100%] lg:w-[45%] text-center lg:text-left">
-                <h1 className="text-[8vw] lg:text-[42px] tracking-normal text-white font-aeonik ">
+                <h1 className="text-[8vw] md:text-[7vw] lg:text-[42px] tracking-normal text-white font-aeonik ">
                   Computer Vision
                 </h1>
                 <p className="text-[#9EB3CF] text-base md:text-lg  font-light pt-[15px] md:pt-[25px] lg:pt-[15px] font-bwmss01">
@@ -232,7 +233,7 @@ const Experties = () => {
                   src="/experties/computer_vesion.png"
                   width="470"
                   height="244"
-                  alt="consultation"
+                  alt="consultation" className="rounded-[18px]"
                 />
               </div>
             </div>
@@ -245,7 +246,7 @@ const Experties = () => {
           >
             <div className="flex flex-col-reverse lg:flex-row gap-[30px] lg:gap-[5%] items-center lg:items-start">
               <div className="w-[100%] lg:w-[45%] text-center lg:text-left">
-                <h1 className="text-[8vw] lg:text-[42px] tracking-normal text-white font-aeonik">
+                <h1 className="text-[8vw] md:text-[7vw] lg:text-[42px] tracking-normal text-white font-aeonik">
                   Machine Learning
                 </h1>
                 <p className="text-[#9EB3CF] text-base md:text-lg font-light pt-[15px] md:pt-[25px] lg:pt-[15px] font-bwmss01">
@@ -260,7 +261,7 @@ const Experties = () => {
                   src="/experties/consultation2.png"
                   width="470"
                   height="244"
-                  alt="consultation"
+                  alt="consultation" className="rounded-[18px]"
                 />
               </div>
             </div>
@@ -273,7 +274,7 @@ const Experties = () => {
           >
             <div className="flex flex-col-reverse lg:flex-row gap-[30px] lg:gap-[5%] items-center lg:items-start">
               <div className="w-[100%] lg:w-[45%] text-center lg:text-left">
-                <h1 className="text-[8vw] lg:text-[42px] tracking-normal text-white font-aeonik">
+                <h1 className="text-[8vw] md:text-[7vw] lg:text-[42px] tracking-normal text-white font-aeonik">
                   Data Science
                 </h1>
                 <p className="text-[#9EB3CF] text-base md:text-lg font-light pt-[15px] md:pt-[25px] lg:pt-[15px] font-bwmss01">
@@ -288,7 +289,7 @@ const Experties = () => {
                   src="/experties/ds.png"
                   width="470"
                   height="244"
-                  alt="consultation"
+                  alt="consultation" className="rounded-[18px]"
                 />
               </div>
             </div>

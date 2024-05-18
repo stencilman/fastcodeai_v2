@@ -32,15 +32,18 @@ const Hero = () => {
       <div className="w-full bottom-28 absolute z-[1] text-center">
         <h1
           ref={ref}
-          className={`text-[#F3F3F3] tracking-wide text-[8vw] leading-[9vw] lg:leading-[1] lg:text-8xl pb-[20px] font-aeonik font-normal ${
+          className={`text-[#F3F3F3] tracking-wide text-[8vw] md:text-[7vw] leading-[9vw] lg:leading-[1] lg:text-8xl pb-[20px] font-aeonik font-normal ${
             isVisible ? "translate-y-0 opacity-100" : "translate-y-20 opacity-0"
           } transition-transform duration-1000 ease-out`}
         >
           Accelerating Innovation
         </h1>
-        <p  ref={ref} className={`text-[#9EB3CF]  text-[0.8rem] leading-[1.2rem] px-[55px] md:px-[0px] md:leading-[1.75rem] md:text-lg items-center font-bwmss01 ${
+        <p
+          ref={ref}
+          className={`text-[#9EB3CF]  text-[0.8rem] leading-[1.2rem] px-[55px] md:px-[0px] md:leading-[1.75rem] md:text-lg items-center font-bwmss01 ${
             isVisible ? "translate-y-0 opacity-100" : "translate-y-20 opacity-0"
-          }  transition-transform delay-100 duration-1000 ease-out`}>
+          }  transition-transform delay-100 duration-1000 ease-out`}
+        >
           Expertly engineered tailored AI solutions—precision, reliability,
           <br /> and unrelenting excellence
           {/* <br /> to harness cutting edge intelligence */}

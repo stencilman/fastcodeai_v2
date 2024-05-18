@@ -8,7 +8,7 @@ const WhyChooseUs = () => {
   return (
     <div className="w-full h-auto lg:h-[120vh] pl-[20px] pr-[20px] lg:pl-[160px] lg:pr-[127px] relative bg-[#00081F] flex flex-col justify-center ">
       <div className="absolute right-[10px]  w-[169px] h-[421px] blur-[50px] translate-y-[167px] scale-90  rounded-[50%] z-[4] bg-gradient-to-br from-[#1D8283] to-[#033577] bg-gradient-156deg bg-no-repeat bg-[0% 0%] opacity-49 border-0 border-opacity-0 filter blur-[100px]"></div>
-      <h1 className="text-[8vw] lg:text-5xl  text-white font-aeonik">
+      <h1 className="text-[8vw] md:text-[7vw] lg:text-5xl  text-white font-aeonik">
         Why Choose us?
       </h1>
       <div className="reltive z-10 grid grid-col-[1fr] lg:grid-cols-[0fr] grid-rows-4 lg:grid-rows-3 grid-flow-col gap-[27px] w-full h-[auto] mt-[61px]">
@@ -37,7 +37,7 @@ const WhyChooseUs = () => {
                 height="55"
                 alt="icon"
               />
-              <h3 className="text-white tracking-normal text-[8vw] font-aeonik lg:hidden leading-[8vw]">
+              <h3 className="text-white tracking-normal text-[8vw] md:text-[7vw] font-aeonik lg:hidden leading-[8vw]">
                 Handpicked Experts
               </h3>
             </div>
@@ -64,7 +64,7 @@ const WhyChooseUs = () => {
                 height="55"
                 alt="icon"
               />
-              <h3 className="text-white tracking-normal text-[8vw] font-aeonik lg:hidden leading-[8vw]">
+              <h3 className="text-white tracking-normal text-[8vw] md:text-[7vw] font-aeonik lg:hidden leading-[8vw]">
                 Our Process & Approach
               </h3>
             </div>
@@ -91,7 +91,7 @@ const WhyChooseUs = () => {
                 height="55"
                 alt="icon"
               />
-              <h3 className="text-white tracking-normal text-[8vw] font-aeonik lg:hidden leading-[8vw]">
+              <h3 className="text-white tracking-normal text-[8vw] md:text-[7vw] font-aeonik lg:hidden leading-[8vw]">
                 Strong R & D Expertise
               </h3>
             </div>

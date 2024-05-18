@@ -40,7 +40,7 @@ const Footer = () => {
   return (
     <>
       <div className="w-full relative h-[20vh] bg-[#00081F]"></div>
-      <div className="w-full relative  h-[100vh]  ">
+      <div className="w-full relative  h-[100vh] overflow-hidden ">
         <div
           className="relative z-[5] w-full h-[70vh] border-t border-[#1A2758]"
           style={{
@@ -48,8 +48,8 @@ const Footer = () => {
               "transparent linear-gradient(360deg, #13224F 0%, #13224F 0%, #0C1C46 51%, #020F3B 100%) 0% 0% no-repeat padding-box",
           }}
         >
-          <div className="flex h-full w-full pl-[160px] pr-[73px] justify-between">
-            <div className="w-[369px] h-[407px] rounded-[18px] bg-gradient-to-br from-[#000E32] to-[#000929] flex items-center justify-center relative z-[6] top-[-120px]">
+          <div className="flex h-full w-full pl-[20px] pr-[20px] md:pl-[50px] md:pr-[50px] lg:pl-[160px] lg:pr-[73px] justify-between">
+            <div className="hidden md:flex w-[369px] h-[407px] rounded-[18px] bg-gradient-to-br from-[#000E32] to-[#000929]  items-center justify-center relative z-[6] top-[-120px]">
               <Image
                 src="/footerlogo/logo1.png"
                 height="140"

@@ -96,7 +96,9 @@ const Clients = () => {
         <div className="flex flex-col lg:flex-row gap-[10vh] lg:gap-[10px]  w-full items-center z-[3]">
           <div className="relative z-[5] h-auto lg:h-full pl-[20px] md:pl-[50px] lg:pl-[100px] w-[100%] lg:w-[40%] ">
             <div className="w-full h-full flex flex-col justify-center">
-              <h1 className="text-[8vw] tracking-normal lg:text-[51px] text-white font-aeonik">Our Clients</h1>
+              <h1 className="text-[8vw] md:text-[7vw] tracking-normal lg:text-[51px] text-white font-aeonik">
+                Our Clients
+              </h1>
               <p className="text-[#9EB3CF] pr-[20px] text-base md:text-lg font-light mt-[4vw] lg:mt-[30px] font-bwmss01">
                 {"We've "}worked with a diverse clientele - from Forbes 500
                 Enterprise firms to Sillicon Valley startups, across various
@@ -109,7 +111,13 @@ const Clients = () => {
             <div className="absolute top-[-19px] lg:top-0 left-[-60px] md:left-[] lg:left-[-65px] w-[80px] h-[107%] lg:h-[100%]  bg-gradient-to-br from-[#000a2b] to-[#000b2c] opacity-83 z-20 blur-[10px]"></div>
             <div className="absolute lg:hidden top-[-19px] lg:top-0 right-[-60px] md:right-[] lg:right-[-65px] w-[80px] h-[107%] lg:h-[100%]  bg-gradient-to-br from-[#000a2b] to-[#000b2c] opacity-83 z-20 blur-[10px]"></div>
             {/* slider */}
-            <motion.div style={{ x: x1, transition: { duration: 0.5, type: "spring", stiffness: 100 } }} className="flex relative gap-[12px] sm:gap-[20px] w-[250%]">
+            <motion.div
+              style={{
+                x: x1,
+                transition: { duration: 0.5, type: "spring", stiffness: 100 },
+              }}
+              className="flex relative gap-[12px] sm:gap-[20px] w-[250%]"
+            >
               {slider1.map((e, i) => {
                 return (
                   <div
@@ -128,7 +136,10 @@ const Clients = () => {
             </motion.div>
             {/* slider */}
             <motion.div
-              style={{ x: x2, transition: { duration: 0.5, type: "spring", stiffness: 100 } }}
+              style={{
+                x: x2,
+                transition: { duration: 0.5, type: "spring", stiffness: 100 },
+              }}
               className="flex gap-[12px] sm:gap-[20px] ml-[0px] lg:ml-[120px] w-[250%]"
             >
               {slider2.map((e, i) => {
