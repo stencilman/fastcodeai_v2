@@ -39,8 +39,8 @@ const Footer = () => {
   }, []);
   return (
     <>
-      <div className="w-full relative h-[20vh] bg-[#00081F]"></div>
-      <div className="w-full relative  h-[100vh] overflow-hidden ">
+      <div className="w-full relative h-[10vh] md:h-[20vh] bg-[#00081F]"></div>
+      <div className="w-full relative h-[100vh] lg:h-[100vh]  ">
         <div
           className="relative z-[5] w-full h-[70vh] border-t border-[#1A2758]"
           style={{
@@ -57,10 +57,10 @@ const Footer = () => {
                 alt="logo"
               />
             </div>
-            <div className="w-[58%] ml-[120px] mr-[10px] flex flex-col justify-around">
+            <div className="w-[100%] md:w-[58%] ml-0 md:ml-[80px] lg:ml-[120px] mr-0 md:mr-[10px] flex flex-col justify-around">
               {/* Nav */}
               <div className="w-full border-b border-[#AFC0FF] pb-[22px] mt-[52px]">
-                <ul className="flex justify-around w-full text-white font-aeonik text-[19px]">
+                <ul className="flex flex-wrap lg:flex-nowrap gap-[10px] lg:gap-0 justify-start md:justify-around w-full text-white font-aeonik text-[19px] pl-0">
                   <Link href="/">
                     <li>Home</li>
                   </Link>
@@ -82,21 +82,21 @@ const Footer = () => {
                 </ul>
               </div>
               {/* Address */}
-              <div className="w-full flex ">
-                <div className="w-[50%]">
-                  <ul>
+              <div className="w-full flex flex-col lg:flex-row">
+                <div className="w-full lg:w-[50%]">
+                  <ul className="pl-0">
                     <li className="text-[14px] font-bold text-white font-aeonik">
                       Head Office
                     </li>
-                    <li className="text-sm text-[#9EB3CF] font-bwmss01 mt-[19px]">
+                    <li className="text-sm text-[#9EB3CF] font-bwmss01 mt-[10px] md:mt-[19px]">
                       #78, Ex-Servicemen Layout
                       <br /> 1st Main Road, 6th Cross, RK Hegde Nagar Bengaluru,
                       Karnataka 56007
                     </li>
                   </ul>
                 </div>
-                <div className="w-[50%]">
-                  <ul>
+                <div className="w-full md:w-[50%]">
+                  <ul className="pl-0">
                     <li className="text-[14px] font-bold text-white font-aeonik">
                       Email
                     </li>
@@ -113,7 +113,7 @@ const Footer = () => {
                 </div>
               </div>
               {/* Copy R */}
-              <div className="w-full border-t border-[#AFC0FF] pt-[22px] flex justify-between">
+              <div className="w-full flex-wrap md:flex-nowrap gap-[10px] md:gap-[0] border-t border-[#AFC0FF] pt-[22px] flex justify-between">
                 <div>
                   <p className="text-[#9EB3CF] font-bwmss01 text-[12px]">
                     © Copyright Fast Code AI 2024. All Rights Reserved
@@ -144,9 +144,9 @@ const Footer = () => {
           // animate={active ? "open" : "close"}
           onMouseEnter={() => setActive(true)}
           onMouseLeave={() => setActive(false)}
-          className="sticky bottom-0 left-0 z-[3] bg-[#00081F] h-[30vh] w-full flex cursor-pointer"
+          className="sticky bottom-0 left-0 z-[3] bg-[#00081F] h-[30vh] md:h-[23vh] lg:h-[30vh] w-full flex cursor-pointer"
         >
-          <div className="flex  items-center w-full relative overflow-hidden whitespace-nowrap">
+          <div className="flex items-center w-full relative overflow-hidden whitespace-nowrap">
             <motion.h1
               initial={{ x: "0" }}
               animate={{ x: "-100%" }}
@@ -170,7 +170,7 @@ const Footer = () => {
             variants={scaleAnimation}
             initial={"initial"}
             animate={active ? "open" : "close"}
-            className="absolute pointer-events-none z-[999] w-[103px] h-[103px] cursor-pointer top-0 left-0"
+            className="absolute pointer-events-none z-[999] w-[76px] h-[76px] md:w-[103px] md:h-[103px] cursor-pointer top-0 left-0"
           >
             <div
               className={`w-[103px] h-[103px] bg-gradient-to-br absolute pointer-events-none cursor-pointer ${"from-[#1D8283] to-[#033577]"} bg-gradient-156deg bg-no-repeat bg-[0% 0%]  text-white font-aeonik flex justify-center items-center gap-[20px] flex-col`}
