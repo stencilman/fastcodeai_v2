@@ -9,7 +9,7 @@ const HowWeDo = ({ pb }) => {
   };
   return (
     <div
-      className={`w-full ${pb} h-auto lg:h-[100vh] pl-[20px] md:pl-[50px] lg:pl-[89px] xl:pl-[160px] pr-[20px] md:pr-[50px] lg:pr-[127px] relative bg-[#00081F] flex flex-col justify-center mt-[100px]`}
+      className={`w-full ${pb} h-auto lg:h-[100vh] pl-[20px] md:pl-[50px]  xl:pl-[100px] pr-[20px] md:pr-[50px]  relative bg-[#00081F] flex flex-col justify-center mt-[100px] overflow-hidden`}
     >
       <div>
         <h1 className="text-5xl text-white font-aeonik tracking-normal">

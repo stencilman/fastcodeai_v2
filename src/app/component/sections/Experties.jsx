@@ -45,7 +45,8 @@ const Experties = () => {
   };
 
   return (
-    <div className="bg-[#00081F] w-full h-[100%]  relative pb-[30px] lg:pb-[250px]">
+    <div className="bg-[#00081F] w-full h-[100%]  relative pb-[120px] lg:pb-[250px]">
+      <div className="absolute bottom-[-102px] left-0 w-full h-[150px] blur-[50px] translate-y-[30px] scale-90  rounded-[50%] z-[1] bg-gradient-to-br from-[#1D8283] to-[#033577] bg-gradient-156deg bg-no-repeat bg-[0% 0%] opacity-49 border-0 border-opacity-0 filter blur-[50px]"></div>
       <div className="grid grid-cols-12 gap-[0px] gap-y-[10vw] pl-[20px] mg:pl-[50px] lg:pl-[170px] pr-[20px] md:pr-[50px] lg:pr-[127px] w-full h-[100%]  justify-center pt-[100px] lg:pt-[250px]">
         {/* NAV */}
 
