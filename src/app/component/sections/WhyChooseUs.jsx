@@ -11,16 +11,16 @@ const WhyChooseUs = () => {
       <h1 className="text-[8vw] lg:text-5xl  text-white font-aeonik">
         Why Choose us?
       </h1>
-      <div className="reltive z-10 grid grid-rows-4 lg:grid-rows-3 grid-flow-col gap-[27px] w-full h-[auto] mt-[61px]">
+      <div className="reltive z-10 grid grid-col-[1fr] lg:grid-cols-[0fr] grid-rows-4 lg:grid-rows-3 grid-flow-col gap-[27px] w-full h-[auto] mt-[61px]">
         <div className="col-span-3 lg:row-span-3 bg-gradient-to-br from-[#000E32] to-[#000929] opacity-83 h-[auto] rounded-[18px] w-full lg:w-[413px]">
           <div className="w-full flex flex-col items-center gap-[35px] lg:gap-[125px]">
             <h3 className="text-[32px] w-[290px] text-white text-center font-aeonik pt-[60px] lg:pt-[94px]">
               <span className="font-bold ">Al</span> Adoption across diverse
               domains
             </h3>
-            <div className="w-[413px] h-[332px] relative left-[-38px]">
+            <div className="w-[300px] sm:w-[365px] md:w-[413px] h-[332px] relative left-[-29px] lg:left-[-38px]">
               <Lottie
-                style={{ width: "120%" }}
+                style={{ width: "117%" }}
                 animationData={chooseUS}
                 loop={true}
               />
@@ -37,7 +37,7 @@ const WhyChooseUs = () => {
                 height="55"
                 alt="icon"
               />
-              <h3 className="text-white tracking-normal text-[8vw] font-aeonik lg:hidden">
+              <h3 className="text-white tracking-normal text-[8vw] font-aeonik lg:hidden leading-[8vw]">
                 Handpicked Experts
               </h3>
             </div>
@@ -64,7 +64,7 @@ const WhyChooseUs = () => {
                 height="55"
                 alt="icon"
               />
-              <h3 className="text-white tracking-normal text-[8vw] font-aeonik lg:hidden">
+              <h3 className="text-white tracking-normal text-[8vw] font-aeonik lg:hidden leading-[8vw]">
                 Our Process & Approach
               </h3>
             </div>
@@ -91,7 +91,7 @@ const WhyChooseUs = () => {
                 height="55"
                 alt="icon"
               />
-              <h3 className="text-white tracking-normal text-[8vw] font-aeonik lg:hidden">
+              <h3 className="text-white tracking-normal text-[8vw] font-aeonik lg:hidden leading-[8vw]">
                 Strong R & D Expertise
               </h3>
             </div>

@@ -2,24 +2,32 @@
 import Image from "next/image";
 import React, { useState } from "react";
 
-const HowWeDo = ({pb}) => {
+const HowWeDo = ({ pb }) => {
   const [showAccordion, setShowAccordion] = useState(0);
   const handleAccordion = (accordionNumber) => {
     setShowAccordion(accordionNumber);
   };
   return (
-    <div className={`w-full ${pb} h-[100vh] pl-[160px] pr-[127px] relative bg-[#00081F] flex flex-col justify-center mt-[60px]`}>
+    <div
+      className={`w-full ${pb} h-auto lg:h-[100vh] pl-[20px] md:pl-[50px] lg:pl-[89px] xl:pl-[160px] pr-[20px] md:pr-[50px] lg:pr-[127px] relative bg-[#00081F] flex flex-col justify-center mt-[100px]`}
+    >
       <div>
-        <h1 className="text-5xl text-white font-aeonik ">How We Do It</h1>
+        <h1 className="text-5xl text-white font-aeonik tracking-normal">
+          How We Do It
+        </h1>
       </div>
-      <div className="mt-[55px] flex">
+      <div className="max-w-[900px] flex-col lg:flex-row sm:mt-[55px] flex">
         {/* Accordion 1 */}
         <div
           onClick={() => handleAccordion(0)}
-          className="group border-r-2 border-[#AFC0FF] h-[519px] w-[579px] flex cursor-pointer "
+          className={`group ${
+            showAccordion === 0
+              ? "h-[400px] sm:h-[520px] lg:h-[519px] "
+              : "h-[200px] lg:h-[519px]"
+          } lg:border-r-2 border-[#AFC0FF]  w-[100%] lg:w-[579px] flex cursor-pointer `}
         >
           {showAccordion === 0 && (
-            <div className={`w-[177px] h-[519px] `}>
+            <div className={`w-[177px] h-[519px] hidden sm:block`}>
               <Image
                 className="w-full h-full"
                 src="/accordion/accb-1.png"
@@ -38,7 +46,7 @@ const HowWeDo = ({pb}) => {
               01
             </h1>
             {showAccordion === 0 && (
-              <div className="flex flex-col w-[333px]  ">
+              <div className="flex flex-col w-full sm:w-[333px]  ">
                 <h3 className="text-4xl w-full text-white font-aeonik pt-[20px]">
                   Connect With Us
                 </h3>
@@ -54,10 +62,14 @@ const HowWeDo = ({pb}) => {
         {/* Accordion 2 */}
         <div
           onClick={() => handleAccordion(1)}
-          className="group border-r-2 border-[#AFC0FF] h-[519px] w-[579px] flex cursor-pointer "
+          className={`group ${
+            showAccordion === 1
+              ? "h-[400px] sm:h-[520px] lg:h-[519px] "
+              : "h-[200px] lg:h-[519px]"
+          } lg:border-r-2 border-[#AFC0FF]  w-[100%] lg:w-[579px] flex cursor-pointer `}
         >
           {showAccordion === 1 && (
-            <div className="w-[177px] h-[519px]">
+            <div className="w-[177px] h-[519px] hidden sm:block">
               <Image
                 className="w-full h-full"
                 src="/accordion/accb-1.png"
@@ -76,7 +88,7 @@ const HowWeDo = ({pb}) => {
               02
             </h1>
             {showAccordion === 1 && (
-              <div className="flex flex-col w-[333px]  ">
+              <div className="flex flex-col w-full sm:w-[333px]  ">
                 <h3 className="text-4xl w-full text-white font-aeonik pt-[20px]">
                   Project Feasibility Consultation
                 </h3>
@@ -92,10 +104,14 @@ const HowWeDo = ({pb}) => {
         {/* Accordion 3 */}
         <div
           onClick={() => handleAccordion(2)}
-          className="group border-r-2 border-[#AFC0FF] h-[519px] w-[579px] flex cursor-pointer "
+          className={`group ${
+            showAccordion === 2
+              ? "h-[400px] sm:h-[520px] lg:h-[519px] "
+              : "h-[200px] lg:h-[519px]"
+          } lg:border-r-2 border-[#AFC0FF]  w-[100%] lg:w-[579px] flex cursor-pointer `}
         >
           {showAccordion === 2 && (
-            <div className="w-[177px] h-[519px]">
+            <div className="w-[177px] h-[519px] hidden sm:block">
               <Image
                 className="w-full h-full"
                 src="/accordion/accb-1.png"
@@ -114,7 +130,7 @@ const HowWeDo = ({pb}) => {
               03
             </h1>
             {showAccordion === 2 && (
-              <div className="flex flex-col w-[333px]  ">
+              <div className="flex flex-col w-full sm:w-[333px]  ">
                 <h3 className="text-4xl w-full text-white font-aeonik pt-[20px]">
                   Get a Detailed Cost Estimate
                 </h3>
@@ -131,10 +147,14 @@ const HowWeDo = ({pb}) => {
         {/* Accordion 4 */}
         <div
           onClick={() => handleAccordion(3)}
-          className="group border-r-2 border-[#AFC0FF] h-[519px] w-[579px] flex cursor-pointer "
+          className={`group ${
+            showAccordion === 3
+              ? "h-[400px] sm:h-[520px] lg:h-[519px] "
+              : "h-[200px] lg:h-[519px]"
+          } lg:border-r-2 border-[#AFC0FF]  w-[100%] lg:w-[579px] flex cursor-pointer `}
         >
           {showAccordion === 3 && (
-            <div className="w-[177px] h-[519px]">
+            <div className="w-[177px] h-[519px]   hidden sm:block">
               <Image
                 className="w-full h-full"
                 src="/accordion/accb-1.png"
@@ -153,7 +173,7 @@ const HowWeDo = ({pb}) => {
               04
             </h1>
             {showAccordion === 3 && (
-              <div className="flex flex-col w-[333px]  ">
+              <div className="flex flex-col w-full sm:w-[333px]  ">
                 <h3 className="text-4xl w-full text-white font-aeonik pt-[20px]">
                   Project Kickoff
                 </h3>
