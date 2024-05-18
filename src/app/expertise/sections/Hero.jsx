@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <div className="w-full h-[100vh] bg-[#00081F] pl-[20px] md:pl-[50px] lg:pl-[100px] flex items-center">
+    <div className="w-full h-[50vh] lg:h-[80vh] bg-[#00081F] pl-[20px] md:pl-[50px] lg:pl-[100px] flex items-center">
       <div className="w-[60%]">
         <p className="text-[#9EB3CF] font-bwmss01 text-[13px] md:text-[19px]">
           Our Experties

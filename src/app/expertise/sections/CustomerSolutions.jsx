@@ -3,9 +3,9 @@ import React from "react";
 
 const CustomerSolutions = () => {
   return (
-    <div className="w-full h-[120vh] bg-gradient-to-br from-[#000E32] to-[#000929] opacity-83 relative flex flex-col items-center pt-[30vh] z-[5]">
-      <div className="w-[55%] h-[50vh]  text-center">
-        <h1 className="text-[51px] text-white font-aeonik text-center tracking-wide leading-[60px]">
+    <div className="w-full h-[60vh] sm:h-[80vh] lg:h-[100vh] bg-gradient-to-br from-[#000E32] to-[#000929] opacity-83 relative flex flex-col items-center pt-[10vh] md:pt-[20vh] lg:pt-[25vh] z-[5]">
+      <div className="w-[90%] lg:w-[65%] h-[50vh]  text-center">
+        <h1 className="text-[8vw] md:text-[7vw] lg:text-[51px] text-white font-aeonik text-center tracking-wide leading-[10vw] md:leading-[8vw] lg:leading-[60px]">
           We Deliver
           <br /> Customer Solutions As Per need
         </h1>
@@ -17,7 +17,7 @@ const CustomerSolutions = () => {
         </p>
       </div>
       {/* Cards */}
-      <div className="w-[80%] h-[30%] md:h-[50%] lg:h-[450px] relative top-[40%] z-[17]  flex justify-between gap-[30px]">
+      <div className="w-full md:w-[80%] h-[30%] md:h-[50%] lg:h-[450px] relative md:top-[16%] lg:top-[40%] z-[17] hidden  sm:flex justify-between gap-[30px]">
         <div className="h-[450px] w-[418px] flex flex-col items-center">
           <div className="w-full h-[80%]">
             <Image
