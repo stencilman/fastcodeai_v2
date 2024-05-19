@@ -7,7 +7,7 @@ const Hero = () => {
       <div className="absolute left-[-80px] top-[-10px] w-[169px] h-[321px] blur-[50px] translate-y-[167px] scale-90  rounded-[50%] z-[4] bg-gradient-to-br from-[#1D8283] to-[#033577] bg-gradient-156deg bg-no-repeat bg-[0% 0%] opacity-49 border-0 border-opacity-0 filter blur-[100px]"></div>
       <video
       style={{mixBlendMode: "screen"}}
-          className="absolute top-[20%] right-[10%]"
+          className="absolute top-[20%] right-[10%] w-[200px] h-[200px] md:w-[517px] md:h-[576px]"
           type="video/mp4" 
           autoPlay
           muted
@@ -17,9 +17,9 @@ const Hero = () => {
           src="/contact/bgVideo.mp4"
         />
       <div className="w-[60%]">
-        <h1 className="text-white font-aeonik tracking-wide text-center font-thin leading-[86px] text-[93px]">
+        <h1 className="text-white font-aeonik tracking-wide text-center font-thin lg:leading-[86px] text-[50px] leading-[52px] lg:text-[93px]">
           {"Let's"} Create <br />{" "}
-          <b className="text-white text-center leading-[86px] font-aeonik font-bold text-[93px]">
+          <b className="text-white text-center lg:leading-[86px] font-aeonik font-bold text-[50px] leading-[52px] lg:text-[93px]">
             Something Greate Together
           </b>
         </h1>

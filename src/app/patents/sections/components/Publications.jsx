@@ -60,7 +60,7 @@ const Publications = () => {
       {publicationList.map((e, i) => (
         <div key={i} className="w-full px-[20px] md:px-[50px] lg:px-[100px] flex-col gap-[60px]">
           <div
-            className="flex flex-col md:flex-row gap-[30px] md:gap-[5%] rounded-[18px] border border-[#1A2758] w-full h-auto px-[60px] py-[40px]"
+            className="flex flex-col md:flex-row gap-[30px] md:gap-[5%] rounded-[18px] border border-[#1A2758] w-full h-auto p-[20px] md:px-[60px] md:py-[40px]"
             style={{
               background:
                 "transparent linear-gradient(360deg, #13224F 0%, #13224F 0%, #0C1C46 51%, #020F3B 100%) 0% 0% no-repeat padding-box",
@@ -95,7 +95,7 @@ const Publications = () => {
               <div className="flex gap-[20px] items-center">
                 <Link href={e.linkTo}>
                 <div
-                  className="border border-[#F3F3F3] p-[12px] cursor-pointer text-white rounded-[18px] font-bwmss01 font-light pt-[15px] min-w-[120px] text-center"
+                  className="border border-[#F3F3F3] p-[12px] cursor-pointer text-white rounded-[18px] font-bwmss01 font-light min-h-[55px] pt-[15px] min-w-[120px] text-center"
                   style={{
                     background:
                       "transparent linear-gradient(360deg, #13224F 0%, #13224F 0%, #0C1C46 51%, #020F3B 100%) 0% 0% no-repeat padding-box",

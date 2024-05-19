@@ -19,13 +19,13 @@ const Form = () => {
   return (
     <div className="w-full h-[auto] flex items-center justify-center bg-[#00081F]">
       <div
-        className="w-[80%] h-[auto] relative rounded-[18px]"
+        className="w-[90%] h-[177vh] lg:w-[80%] lg:h-[auto] relative rounded-[18px]"
         style={{
           background:
             "transparent linear-gradient(125deg, #000E32 0%, #000929 100%) 0% 0% no-repeat padding-box",
         }}
       >
-        <div className="w-[40%] h-full pt-[100px] pb-[70px] justify-center flex items-center">
+        <div className="w-[100%] lg:w-[40%] h-[50%] lg:h-full pt-[100px] pb-[70px] justify-center flex items-start lg:items-center">
           <div className="flex flex-col gap-[50px]">
             <div className="flex gap-[20px]">
               <div
@@ -97,7 +97,7 @@ const Form = () => {
             </div>
             <div>
               <iframe
-                className="rounded-[20px]"
+                className="rounded-[20px] w-[300px] h-[222px] md:w-[327] md:h-[222]"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1943.9741306453273!2d77.60383063865423!3d12.975161060562723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae173fc76647c7%3A0x7d61be6db08b7c76!2sWeWork%20Church%20Street!5e0!3m2!1sen!2sin!4v1715793029835!5m2!1sen!2sin"
                 width="327"
                 height="222"
@@ -125,15 +125,15 @@ const Form = () => {
             </Link>
           </div>
         </div>
-        <div className="w-[60%] h-full absolute top-0 px-[86px] right-0 bg-[#0E1E49] rounded-[20px] flex flex-col  justify-center gap-[40px]">
-          <div className="flex items-center gap-[7px]">
+        <div className="w-[100%] lg:w-[60%] h-[89vh] lg:h-full absolute bottom-0  lg:top-0 px-[20px] md:px-[50px] lg:px-[86px] right-0 bg-[#0E1E49] rounded-[20px] flex flex-col  justify-center gap-[20px] md:gap-[30px] lg:gap-[40px]">
+          <div className="flex items-center pl-[10vw] lg:pl-0 gap-[7px]">
             <p className=" w-[5px] h-[5px] rounded-full bg-white"></p>
             <p className="text-[#9EB3CF] text-lg font-bwmss01 ">
               {"Let's"} Kick Off A Dialogue.
             </p>
           </div>
           <div>
-            <h1 className="text-white font-aeonik text-[53px] leading-[51px] tracking-normal">
+            <h1 className="text-white font-aeonik text-3xl md:text-4xl lg:text-[53px] lg:leading-[51px] tracking-normal text-center lg:text-left">
               Get In Touch For Custom-Fit Solutions.
             </h1>
           </div>
@@ -255,7 +255,7 @@ const Form = () => {
                   </div>
                 </div>
               </div>
-              <div className="flex gap-[80px] items-center mt-[25px]">
+              <div className="flex flex-col md:flex-row md:gap-[30px] lg:gap-[80px] items-center mt-[25px]">
                 <div className="relative z-0 w-full mb-5 group">
                   <textarea
                     type="text"
@@ -274,7 +274,7 @@ const Form = () => {
                 </div>
                 <button
                   type="submit"
-                  className="text-white h-[63px] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm w-full sm:w-auto px-5 py-2.5 text-center "
+                  className="text-white h-[63px] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm w-[63px] md:w-[76px] sm:w-auto px-5 py-2.5 text-center "
                   style={{
                     background:
                       "transparent linear-gradient(174deg, #2DC1C3 0%, #0268F2 100%) 0% 0% no-repeat padding-box",
