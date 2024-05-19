@@ -41,7 +41,7 @@ const Showcase = () => {
           }`}
           onClick={() => toggleTab("patents")}
         >
-          Patents
+          Patents 
         </div>
         {/* toggle publications */}
         <div
