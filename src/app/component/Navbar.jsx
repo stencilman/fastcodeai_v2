@@ -61,6 +61,7 @@ const Navbar = () => {
           </Link>
         </div>
         <div className="flex items-center gaa-[0px] sm:gap-[14px]">
+          <Link href="/contact">
           <button
             className="rounded-[28px] relative z-[1] hidden  sm:flex items-center gap-[7px] bg-gradient-to-br from-[#2DC1C3] to-[#0268F2] text-white p-[15px] text-lg "
             style={{
@@ -79,7 +80,7 @@ const Navbar = () => {
               />
             </div>
           </button>
-
+          </Link>
           <button
             onClick={handleClick}
             className={`w-[40px] sm:w-[56px] h-[40px] sm:h-[56px] relative z-[3]  ${
