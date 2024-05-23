@@ -11,6 +11,7 @@ import Clients from "../component/sections/Clients";
 import TestimonialsN from "../component/sections/TestimonialsN";
 import Footer from "../component/sections/Footer";
 import Cta from "./sections/Cta";
+import Link from "next/link";
 
 
 const Industries = () => {
@@ -30,7 +31,9 @@ const Industries = () => {
             <OurWork/>
             <Clients/>
             <TestimonialsN/>
+            <Link href="/contact">
             <Cta title="Do you Have a Project in Mind?" quote="Give us Some Detail on Your Project and Let us Help"/>
+            </Link>
             <Footer/>
         </>
     )

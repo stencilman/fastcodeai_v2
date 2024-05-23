@@ -36,22 +36,22 @@ const PearksAndBenefits = () => {
       
   ];
   return (
-    <div className="w-full px-[100px] py-[75px] bg-[#00081F]">
+    <div className="w-full px-[20px] md:px-[50px] lg:px-[100px] py-[75px] bg-[#00081F]">
       <div className="w-full text-center mb-[40px]">
-        <h1 className="text-white text-center text-5xl font-aeonik tracking-wide mb-[60px]">
+        <h1 className="text-white text-center text-[8vw] md:text-[7vw] lg:text-5xl font-aeonik tracking-wide mb-[40px] md:mb-[60px]">
           Perks and Benefits
         </h1>
       </div>
       <div className="w-full flex gap-[25px]  flex-wrap">
        {pearksBenefitList.map((e,i)=> <div key={i}
-          className=" rounded-[18px] flex items-center  w-[47%] gap-[15px] p-[15px] border border-[#1A2758]"
+          className=" rounded-[18px] flex items-center w-[100%] md:w-[47%] gap-[15px] p-[15px] border border-[#1A2758]"
           style={{
             background:
               "transparent linear-gradient(360deg, #13224F 0%, #13224F 0%, #0C1C46 51%, #020F3B 100%) 0% 0% no-repeat padding-box",
           }}
         >
           <div
-            className="flex justify-center items-center border border-[#1A2758] rounded-full p-[10px]"
+            className="flex justify-center items-center border border-[#1A2758] rounded-full p-[14px] md:p-[13px] "
             style={{
               background:
                 "transparent linear-gradient(360deg, #13224F 0%, #010D33 0%, #010D34 51%, #020B2A 100%) 0% 0% no-repeat padding-box",
@@ -62,14 +62,14 @@ const PearksAndBenefits = () => {
               src={e.icon}
               height="50"
               width="90"
-              className="w-[50px] sm:h-[50px]"
+              className="w-[55px] md:w-[85px] sm:h-[50px]"
             />
           </div>
           <div className="flex flex-col gap-[6px]">
             <b className="text-white text-[24px] pb-[7px] font-aeonik">
               {e.name}
             </b>
-            <p className="text-[#9EB3CF] w-[70%] text-lg font-bwmss01">
+            <p className="text-[#9EB3CF] w-full lg:w-[70%] text-lg font-bwmss01">
              {e.details}
             </p>
           </div>

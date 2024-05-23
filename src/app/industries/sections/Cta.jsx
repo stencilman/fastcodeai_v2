@@ -3,8 +3,8 @@ import React from "react";
 
 const Cta = ({title,quote}) => {
   return (
-    <div className="w-full h-[60vh] pl-[20px] md:pl-[50px] lg:pl-[100px] pr-[20px] md:pr-[50px] lg:pr-0 relative bg-[#00081F] flex flex-col justify-center gap-[4vw]">
-      <h1 className="text-[8vw] md:text-[7vw] lg:text-5xl text-white font-aeonik">
+    <div className="w-full h-[60vh] pl-[20px] md:pl-[50px] lg:pl-[100px] pr-[20px] md:pr-[50px] lg:pr-[100px] relative bg-[#00081F] flex flex-col justify-center gap-[4vw] ">
+      <h1 className="text-[8vw] md:text-[7vw] lg:text-5xl tracking-normal text-white font-aeonik">
         {title}
       </h1>
       <div
@@ -15,7 +15,7 @@ const Cta = ({title,quote}) => {
         }}
       >
         <div>
-          <p className="text-white font-aeonik font-semibold md:font-bold text-2xl leading-[25px] md:w-[80%] md:text-2xl ">
+          <p className="text-white font-aeonik font-semibold md:font-bold text-2xl leading-[25px] md:w-[80%] lg:w-[100%] md:text-2xl ">
             {quote}
           </p>
         </div>

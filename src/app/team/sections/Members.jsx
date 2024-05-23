@@ -66,7 +66,7 @@ const Members = () => {
     {
       name: "Easwar",
       role: "IOS Developer",
-      position: "top-[72px] lg:top-[-400px] md:left-[375px] lg:left-[450px]",
+      position: "top-[72px] lg:top-[200px] md:left-[375px] lg:left-[450px]",
       bg: "bg-eshwar",
       y: 0,
       cp: "Lead Mobile Engineer",
@@ -88,7 +88,7 @@ const Members = () => {
     {
       name: "GAUTAM ADITHYA RAVI",
       role: "Head of Engineering",
-      position: "top-[0px] left-[79px] lg:top-[-600px] lg:left-[90px]",
+      position: "top-[0px] left-[79px] lg:top-[200px] lg:left-[90px]",
       bg: "bg-gautham",
       y: md,
       cp: "Computer Science Engineering & Research",
@@ -122,7 +122,7 @@ const Members = () => {
                 </div>
               </div>
               <div
-                className="absolute my-rotate-y-180 backface-hidden w-full  justify-around rounded-[20px] border border-[#1A2758] md:px-[30px] py-[10px] px-[10px] md:py-[20px] flex flex-col  gap-[40px] h-auto min-h-[408px]"
+                className="absolute my-rotate-y-180 backface-hidden w-full  justify-around rounded-[20px] border border-[#1A2758] md:px-[30px] py-[10px] px-[10px] md:py-[20px] flex flex-col  gap-[40px] h-auto min-h-[408px] lg:min-h-[598px]"
                 style={{
                   background:
                     "transparent linear-gradient(360deg, #13224F 0%, #13224F 0%, #0C1C46 51%, #020F3B 100%) 0% 0% no-repeat padding-box",

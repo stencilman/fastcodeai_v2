@@ -10,7 +10,7 @@ import TechStack from "../about/sections/TechStack";
 import Footer from "../component/sections/Footer";
 import Cta from "../industries/sections/Cta";
 import TestimonialsN from "../component/sections/TestimonialsN";
-
+import Link from "next/link";
 
 const Patents = () => {
   const { setIsActive } = useGlobalContext();
@@ -21,14 +21,19 @@ const Patents = () => {
   return (
     <>
       <Hero />
-      <Dedication/>
-      <Showcase/>
-      <HowWeDo/>
-      <Industries/>
-      <TechStack/>
-      <TestimonialsN/>
-      <Cta title="Got a groundbreaking idea?" quote="let's turn it into a patented innovation"/>
-      <Footer/>
+      <Dedication />
+      <Showcase />
+      <HowWeDo />
+      <Industries />
+      <TechStack />
+      <TestimonialsN />
+      <Link href="/contact">
+        <Cta
+          title="Got a groundbreaking idea?"
+          quote="let's turn it into a patented innovation"
+        />
+      </Link>
+      <Footer />
     </>
   );
 };

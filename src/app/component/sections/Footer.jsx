@@ -50,12 +50,7 @@ const Footer = () => {
         >
           <div className="flex h-full w-full pl-[20px] pr-[20px] md:pl-[50px] md:pr-[50px] lg:pl-[160px] lg:pr-[73px] justify-between">
             <div className="hidden md:flex w-[369px] h-[407px] rounded-[18px] bg-gradient-to-br from-[#000E32] to-[#000929]  items-center justify-center relative z-[6] top-[-120px]">
-              <Image
-                src="/footerlogo/logo1.png"
-                height="140"
-                width="249"
-                alt="logo"
-              />
+              <Image src="/f_logo1.png" height="140" width="249" alt="logo" />
             </div>
             <div className="w-[100%] md:w-[58%] ml-0 md:ml-[80px] lg:ml-[120px] mr-0 md:mr-[10px] flex flex-col justify-around">
               {/* Nav */}
@@ -67,13 +62,13 @@ const Footer = () => {
                   <Link href="/about">
                     <li>About</li>
                   </Link>
-                  <Link href="/experties">
-                    <li>Experties</li>
+                  <Link href="/expertise">
+                    <li>Expertise</li>
                   </Link>
                   <Link href="/career">
                     <li>Career</li>
                   </Link>
-                  <Link href="/blog">
+                  <Link href="/blogs">
                     <li>Blog</li>
                   </Link>
                   <Link href="/contact-us">

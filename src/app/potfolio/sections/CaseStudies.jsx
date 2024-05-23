@@ -26,15 +26,50 @@ const CaseStudies = () => {
       img: "bg-learning",
       title: "Federated Learning on the Edge ",
       description:
-        "Enhance interaction between driver and car by detecting driver hand gesture for superior level driver experience with Mercedes Benz User Experience - MBUX System.",
+        "Revolutionizing privacy and efficiency in data processing with Federated Learning (FL) on edge devices, enabling real-time, secure analytics in several key sectors.",
       to: "/potfolio/federated-learning",
     },
     {
       img: "bg-fitness",
       title: "Fitness Pose Estimation",
       description:
-        "Enhance interaction between driver and car by detecting driver hand gesture for superior level driver experience with Mercedes Benz User Experience - MBUX System.",
+        "Empowering exercise perfection with AI-driven real-time pose estimation, providing interactive visual feedback for correct posture and effective workouts.",
       to: "/potfolio/fitness-pose-estimation",
+    },
+    {
+      img: "bg-fitness",
+      title: "Data Query Assitant",
+      description:
+        "Transforming data access with a natural language interface that converts queries into SQL, simplifying database interaction.",
+      to: "/potfolio/sqlwizard",
+    },
+    {
+      img: "bg-fitness",
+      title: "Loneliness Assistant",
+      description:
+        "Personalised assistant designed to empthatize with humans and serves as a close companion by engaging in an emotionally deep manner.",
+      to: "/potfolio/loneliness-assistant",
+    },
+     {
+      img: "bg-fitness",
+      title: "Indian Fashion insight Framework",
+      description:
+        "Pioneering deep learning in fashion with a custom Indian dataset for advanced trend forecasting and targeted consumer insights.",
+      to: "/potfolio/fashion-framework",
+    },
+    {
+      img: "bg-fitness",
+      title: "AI Banking Insights & Monitoring",
+      description:
+        "Enhancing banking with AI: Advanced data analytics for customer insights and predictive modeling, streamlined with efficient application monitoring.",
+      to: "/potfolio/banking-infra",
+    },
+     {
+      img: "bg-fitness",
+      title: "RAG based Personal Diary",
+      description:
+        "Smart, diary-like system that effortlessly organizes and retrieves your daily activities and information with cutting-edge Retrieval-Augmented Generation techniques.",
+      to: "/potfolio/rag",
     },
   ];
 

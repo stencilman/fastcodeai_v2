@@ -21,10 +21,10 @@ const Main = () => {
   return (
     <div className="w-full h-auto pt-[100px] pb-[50px] px-[35px] md:px-[45px] lg:px-[80px] flex justify-center flex-col ">
       <div>
-        <div className="flex gap-[50px] justify-center">
-          <div className="flex gap-[50px] ">
+        <div className="flex flex-col-reverse md:flex-row gap-[50px] justify-center">
+          <div className="flex flex-col md:flex-row gap-[50px] ">
             <SocialShare />
-            <div className="w-[621%] max-w-[822px] flex flex-col gap-[30px] ">
+            <div className="md:w-[621%] md:max-w-[822px] flex flex-col gap-[30px] ">
               <div className="p-[40px] bg-white rounded-[20px] shadow-[0px_3px_6px_#00000029]">
                 <Image
                   src="/blogs/why-ai/main/img1-2.png"
@@ -120,7 +120,7 @@ const Main = () => {
               </div>
               {/* end topic-2 */}
               {/* CTA */}
-              <div className="w-full py-[26px] px-[100px] flex flex-col gap-[18px] bg-[#000D2F] rounded-[20px] my-[60px]">
+              <div className="w-full py-[26px] px-[20px] md:px-[50px] lg:px-[100px] flex flex-col gap-[18px] bg-[#000D2F] rounded-[20px] my-[60px]">
                 <h4 className="text-white text-2xl font-aeonik tracking-wide">
                   Want to know more about AI ML Technology
                 </h4>
@@ -148,7 +148,7 @@ const Main = () => {
               <h6 className="text-white text-lg font-aeonik px-[23px] pt-[23px]">
                 TABLE OF CONTENTS
               </h6>
-              <div className="mt-[15px] text-lg font-bwmss01 text-[#9EB3CF]">
+              <div className="mt-[15px] max-w-[400px] text-lg font-bwmss01 text-[#9EB3CF]">
                 <a onClick={() => scrollToTopic("topic1")}>
                   <p className="pl-[20px] pb-[4px] pr-[15px] ml-[2px] mb-[4px] border-l-[3px] border-l-[#036BF0] text-[#036BF0]">
                     1. Sorting a list of integers
@@ -173,7 +173,7 @@ const Main = () => {
       {/* Read More */}
       <div>
         <div className="w-full flex justify-between items-center my-[50px]">
-          <h4 className="text-white text-[42px] font-aeonik tracking-wide">
+          <h4 className="text-white text-[7vw] md:text-[42px] font-aeonik tracking-wide">
             Read More Blogs
           </h4>
           <Link href="/blogs">
@@ -189,7 +189,7 @@ const Main = () => {
             </div>
           </Link>
         </div>
-        <div className="w-full relative flex gap-[56px] mt-[220px]">
+        <div className="w-full relative flex flex-col md:flex-row gap-[56px] mt-[90px] md:mt-[220px]">
           {/* Blog Post 1 */}
           <div className="relative">
             <div>
@@ -219,7 +219,7 @@ const Main = () => {
             </div>
           </div>
           {/* Blog Post 2 */}
-          <div className="relative top-[-70px]">
+          <div className="relative md:top-[-70px]">
             <div>
               <Image
                 src="/blogs/read-more/img3-2.png"

@@ -131,11 +131,11 @@ const WhoWeAre = () => {
           width={180}
         />
       </div>
-      <div className="Title absolute top-[50%] left-[50%] transform translate-x-[-50%] translate-y-[-50%] text-[19px] w-[90%] lg:w-[70%] h-auto border border-[#707070] rounded-[20px] backdrop-blur-[5px] bg-[#a0a0a02b] flex text-white py-[70px] px-[20px] md:px-[40px] lg:px-[50px] gap-[40px] flex-col lg:flex-row">
+      <div className="Title absolute top-[50%] left-[50%] transform translate-x-[-50%] translate-y-[-50%] text-[19px] w-[90%] lg:w-[70%] h-auto border border-[#707070] rounded-[20px] backdrop-blur-[5px] bg-[#35343481] flex text-white py-[70px] px-[20px] md:px-[40px] lg:px-[50px] gap-[40px] flex-col lg:flex-row">
         <div className="w-[100%] flex items-center">
           <h1 className="font-aeonik tracking-normal">Who Are We ?</h1>
         </div>
-        <div className="flex flex-col gap-[20px] text-[#9EB3CF] font-bwmss01 ">
+        <div className="flex flex-col gap-[20px] text-[#d6e0ee] font-bwmss01 ">
           <p>
             We are a specialized group of AI and machine learning researchers
             and practitioners. we are at the forefront of cutting-edge

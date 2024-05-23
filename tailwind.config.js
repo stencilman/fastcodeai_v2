@@ -34,8 +34,12 @@ module.exports = {
         'benz': "url('/potfolio/mbenz/img1-2.png')",
         'learning': "url('/potfolio/fedLearning/img1-2.png')",
         'fitness': "url('/potfolio/fitness/img1-2.png')",
+
+        
         'blogHero': "url('/blogs/hero/img1-2.png')",
         'teamHero': "url('/team/img1-2.png')",
+
+
         'blog1': "url('/blogs/latest-blog/img1.png')",
         'blog2': "url('/blogs/latest-blog/img3.png')",
         'blog3': "url('/blogs/latest-blog/img4.png')",
@@ -51,11 +55,12 @@ module.exports = {
         'dhaval': "url('/members/dhaval.png')",
         'abdul': "url('/members/abdul1.png')",
         'prabal': "url('/members/Prabal.webp')",
-
+        'belivegrad': "transparent linear-gradient(360deg, #13224F 0%, #010D33 0%, #010D34 51%, #020B2A 100%) 0% 0% no-repeat padding-box",
 
       },
       background: {
-        cusgrad: "transparent linear-gradient(360deg, #13224F 0%, #13224F 0%, #0C1C46 51%, #020F3B 100%) 0% 0% no-repeat padding-box"
+        cusgrad: "transparent linear-gradient(360deg, #13224F 0%, #13224F 0%, #0C1C46 51%, #020F3B 100%) 0% 0% no-repeat padding-box",
+       
       },
       fontFamily: {
         aeonik: ["var(--font-aeonik)"],

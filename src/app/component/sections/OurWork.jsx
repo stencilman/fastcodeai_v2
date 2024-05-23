@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const slides = [
@@ -7,31 +8,65 @@ const slides = [
     title: "Mercedes Benz",
     content:
       "Enhance interaction between driver and car by detecting driver hand gesture for superior level driver experience with Mercedes Benz User Experience - MBUX System..",
-    image: "/our-work/merc.png",
+    image: "/our-work/mercedes.webp",
+    url:"/potfolio/mbux"
+  },
+  {
+    title: "Federated Learning on the Edge",
+    content:
+      "Revolutionizing privacy and efficiency in data processing with Federated Learning (FL) on edge devices, enabling real-time, secure analytics in several key sectors.",
+    image: "/our-work/fl.webp",
+    url : "/potfolio/federated-learning"
   },
   {
     title: "Bosch",
     content:
       "Accurate, low footprint detection with vulnerable roadside users (VRUs) and road signs covered in the Bosch-Daimler autonomous driving initiative.",
     image: "/our-work/bosch.webp",
+    url:"/potfolio/bosch"
   },
   {
     title: "Fitness Pose Estimation",
     content:
       "Empowering exercise perfection with AI-driven real-time pose estimation, providing interactive visual feedback for correct posture and effective workouts.",
     image: "/our-work/fitness.webp",
+    url:"/potfolio/fitness-pose-estimation"
   },
   {
-    title: "AI-Assisted Dermatology",
+    title: "RAG based Personal Diary",
     content:
-      "Advancing AI-powered Dermatology solutions: Identification, insights & assistance for better skin lesion treatment outcomes and accessible dermatological care.",
-    image: "/our-work/ai_dermo.webp",
+      "Smart, diary-like system that effortlessly organizes and retrieves your daily activities and information with cutting-edge Retrieval-Augmented Generation techniques.",
+    image: "/our-work/rag_weave.webp",
+    url:"/potfolio/rag"
   },
   {
-    title: "Bosch",
+    title: "Indian Fashion insight Framework ",
     content:
-      "Accurate, low footprint detection with vulnerable roadside users (VRUs) and road signs covered in the Bosch-Daimler autonomous driving initiative.",
-    image: "/our-work/bosch.webp",
+      "Pioneering deep learning in fashion with a custom Indian dataset for advanced trend forecasting and targeted consumer insights",
+    image: "/our-work/fashion.webp",
+    url:"/potfolio/fashion-framework"
+  },
+
+  {
+    title: "AI Banking Insights & Monitoring",
+    content:
+      "Enhancing banking with AI: Advanced data analytics for customer insights and predictive modeling, streamlined with efficient application monitoring.",
+    image: "/our-work/modefin_cover.webp",
+    url:"/potfolio/banking-infra"
+  },
+  {
+    title: "Data Query Assitant",
+    content:
+      "Transforming data access with a natural language interface that converts queries into SQL, simplifying database interaction",
+    image: "/our-work/sqlwizard-logo1.png",
+    url:"/potfolio/sqlwizard"
+  },
+  {
+    title: "Loneliness Assistant",
+    content:
+      "Personalised assistant designed to empthatize with humans and serves as a close companion by engaging in an emotionally deep manner",
+    image: "/our-work/lonely_llm.webp",
+    url:"/potfolio/loneliness-assistant"
   },
   // Add more slides here as needed
 ];
@@ -113,9 +148,11 @@ const OurWork = () => {
                 <p className="text-[#9EB3CF] text-[19px] pt-[4vw] lg:pt-[22px] leading-[29px] font-bwmss01">
                   {slide.content}
                 </p>
-                <button className="rounded-[28px] mt-[6vw] lg:mt-[50px]  flex items-center gap-[7px] bg-gradient-to-br from-[#2DC1C3] to-[#0268F2] text-white p-[15px] text-lg font-bwmss01">
-                  <div>Read More</div>
-                </button>
+                <Link href={slide.url}>
+                  <button className="rounded-[28px] mt-[6vw] lg:mt-[50px]  flex items-center gap-[7px] bg-gradient-to-br from-[#2DC1C3] to-[#0268F2] text-white p-[15px] text-lg font-bwmss01">
+                    <div>Read More</div>
+                  </button>
+                </Link>
               </div>
               <div className="w-[100%] lg:w-[40%]">
                 <Image
