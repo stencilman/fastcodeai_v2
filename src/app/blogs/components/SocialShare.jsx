@@ -3,7 +3,7 @@ import React from "react";
 
 const SocialShare = () => {
   return (
-    <div className="flex md:flex-col gap-[20px] items-center">
+    <div className="flex md:flex-col gap-[20px] items-center md:sticky md:top-[120px] md:h-fit">
       <p className="text-[#9EB3CF] font-aeonik text-lg">Share</p>
       <Image
         src="/blogs/social-icons/insta.svg"

@@ -22,10 +22,10 @@ const LatestBlogs = () => {
                   <div className="border border-[#707070] rounded-full bg-white w-[50px] h-[50px]"></div>
                   <div>
                     <b className="text-white font-bold font-aeonik tracking-wide ">
-                      Waltor Gottera
+                      Arjun Jain
                     </b>
                     <p className="text-[#FFFFFF] text-lg font-bwmss01">
-                      08 April 2019
+                      04 Feb 2021
                     </p>
                   </div>
                 </div>
@@ -56,7 +56,7 @@ const LatestBlogs = () => {
             </div>
           </div>
         </Link> */}
-        <Link href="/blogs/why-ai">
+        <Link href="/blogs/unknown-classes">
           <div className="row-start-2">
             <div className="w-full bg-cover rounded-[20px] 2xl:w-[402px] h-[328px] bg-no-repeat bg-blog2 relative p-[20px]">
               <div className="absolute bottom-[20px]">
@@ -67,10 +67,10 @@ const LatestBlogs = () => {
                   <div className="border border-[#707070] rounded-full bg-white w-[50px] h-[50px]"></div>
                   <div>
                     <b className="text-white font-bold font-aeonik tracking-wide ">
-                      Waltor Gottera
+                      Arjun Jain
                     </b>
                     <p className="text-[#FFFFFF] text-lg font-bwmss01">
-                      08 April 2019
+                      01 Feb 2021
                     </p>
                   </div>
                 </div>
@@ -78,7 +78,7 @@ const LatestBlogs = () => {
             </div>
           </div>
         </Link>
-        <Link href="/blogs/why-ai">
+        <Link href="/blogs/oil-gas">
           <div className="row-start-2">
             <div className="bg-[#001D3F] w-full rounded-[20px] 2xl:w-[403px] h-[327px] relative p-[20px]">
               <div className="absolute bottom-[20px]">
@@ -89,10 +89,11 @@ const LatestBlogs = () => {
                   <div className="border border-[#707070] rounded-full bg-white w-[50px] h-[50px]"></div>
                   <div>
                     <b className="text-white font-bold font-aeonik tracking-wide ">
-                      Waltor Gottera
+                    Tarun Kumar
+
                     </b>
                     <p className="text-[#FFFFFF] text-lg font-bwmss01">
-                      08 April 2019
+                      03 June 2020
                     </p>
                   </div>
                 </div>
@@ -100,7 +101,7 @@ const LatestBlogs = () => {
             </div>
           </div>
         </Link>
-        <Link href="/blogs/why-ai">
+        <Link href="/blogs/unknown-classes">
           <div className="row-start-2">
             <div className="bg-cover rounded-[20px]  w-full 2xl:w-[402px] h-[328px] bg-no-repeat bg-blog3 relative p-[20px]">
               <div className="absolute bottom-[20px]">
@@ -111,10 +112,10 @@ const LatestBlogs = () => {
                   <div className="border border-[#707070] rounded-full bg-white w-[50px] h-[50px]"></div>
                   <div>
                     <b className="text-white font-bold font-aeonik tracking-wide ">
-                      Waltor Gottera
+                     Arjun Jain
                     </b>
                     <p className="text-[#FFFFFF] text-lg font-bwmss01">
-                      08 April 2019
+                      01 Feb 2021
                     </p>
                   </div>
                 </div>
@@ -133,10 +134,10 @@ const LatestBlogs = () => {
                   <div className="border border-[#707070] rounded-full bg-white w-[50px] h-[50px]"></div>
                   <div>
                     <b className="text-white font-bold font-aeonik tracking-wide ">
-                      Waltor Gottera
+                      Arjun Jain
                     </b>
                     <p className="text-[#FFFFFF] text-lg font-bwmss01">
-                      08 April 2019
+                      04 Feb 2021
                     </p>
                   </div>
                 </div>
@@ -144,7 +145,7 @@ const LatestBlogs = () => {
             </div>
           </div>
         </Link>
-        <Link href="/blogs/why-ai" className="lg:col-span-2 2xl:col-span-3">
+        <Link href="/blogs/unknown-classes" className="lg:col-span-2 2xl:col-span-3">
           <div>
             <div className="rounded-[20px] w-full bg-cover 2xl:w-[833px] h-[327px] bg-no-repeat bg-blog4 relative p-[20px]">
               <div className="absolute bottom-[20px]">
@@ -155,10 +156,10 @@ const LatestBlogs = () => {
                   <div className="border border-[#707070] rounded-full bg-white w-[50px] h-[50px]"></div>
                   <div>
                     <b className="text-white font-bold font-aeonik tracking-wide ">
-                      Waltor Gottera
+                      Arjun Jain
                     </b>
                     <p className="text-[#FFFFFF] text-lg font-bwmss01">
-                      08 April 2019
+                      01 Feb 2021
                     </p>
                   </div>
                 </div>

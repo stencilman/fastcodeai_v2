@@ -27,7 +27,7 @@ const Main = () => {
             <div className="md:w-[621%] md:max-w-[822px] flex flex-col gap-[30px] ">
               <div className="p-[40px] bg-white rounded-[20px] shadow-[0px_3px_6px_#00000029]">
                 <Image
-                  src="/blogs/why-ai/main/img1-2.png"
+                  src="/blogs/unknown/main/known-unknown.webp"
                   width="744"
                   height="355"
                   alt=""
@@ -37,88 +37,103 @@ const Main = () => {
               {/* topic-1 */}
               <div id="topic1" className="flex flex-col gap-[20px]">
                 <h4 className="text-white text-2xl font-aeonik tracking-wide">
-                  Task 1: Sorting a list of integers
+                  Problem
                 </h4>
                 <p className="text-[#9EB3CF] text-lg font-bwmss01">
-                  What do we do if want to sort a list of integers [6, 99, 1,
-                  108, 4, 6, 22] in ascending order?
+                  A Convolutional Neural Network (ConvNet) trained on the MNIST
+                  dataset when presented images from the Devanagari dataset will
+                  wrongly classify the Devanagari letter to one of the MNIST
+                  classes 0-9, usually with very high confidence. What can we do
+                  to fix this?
                 </p>
                 <p className="text-[#9EB3CF] text-lg font-bwmss01">
-                  Well, we could simply write a function similar to the
-                  rule-based algorithm on the left in picture above (bubble
-                  sort) and we would be done. The input to our algorithm will be
-                  the list above and the output will the be sorted list [1, 4,
-                  6, 6, 22, 99, 108].
+                  Systems trained without a background class can lead to nasty
+                  false positives when deployed in production. While most of the
+                  academic datasets such as PASCAL, MS-COCO or MNIST where
+                  algorithms are often evaluated, do not have this problem
+                  because all classes are known, it is a likely source of{" "}
+                  {"negative"} dataset bias and does not necessarily hold true
+                  in the real world where the negative space has near infinite
+                  variety of inputs that need to be rejected.
+                </p>
+                <p className="text-[#9EB3CF] text-lg font-bwmss01">
+                  For example, let us look as this image below:
+                </p>
+                <div className="flex w-full gap-[5%]">
+                  <Image
+                    className="rounded-[20px] w-[100%]"
+                    src="/blogs/unknown/content/known-unknown-plot-1.webp"
+                    width="400"
+                    height="400"
+                    alt=""
+                  />
+                </div>
+                <p className="text-[#9EB3CF] text-lg font-bwmss01">
+                  In the 3 scatter plots on the top row, the 10 different colors
+                  represent the 10 MNIST classes 0-9, and the black color
+                  represents the unknown Devanagari class. The softmax
+                  probability is plotted with the origin being zero, and the
+                  value increases to one as we go out radially along the lines.
+                  <br />
+                  In the plots on the bottom row are histograms of softmax
+                  probability values for samples of known MNIST data (Red) and
+                  unknown Devanagari data (red) with a logarithmic vertical
+                  axis.
+                  <br />
+                  As it can be clearly seen, in the plot (a), some of the
+                  samples from the Devanagari dataset have very high scores.
+                  Even when an additional unknown class is added in plot (b),
+                  some black dots falling in the 0-9 classes are still far away
+                  from the origin. In an application, a score threshold θ should
+                  be chosen to optimally to separate unknown from known samples.
+                  Unfortunately, such a threshold is difficult to find for
+                  either (a) or (b), however, a better separation is achievable
+                  with the Objectosphere loss (c) which I will describe next in
+                  this post.
                 </p>
               </div>
               {/* topic-2 */}
               <div id="topic2" className="flex flex-col gap-[20px]">
                 <h4 className="text-white text-2xl font-aeonik tracking-wide">
-                  Task 2: Reading hand-written digit{"1"}
+                  Solution
                 </h4>
                 <p className="text-[#9EB3CF] text-lg font-bwmss01">
-                  Now, let us suppose that our algorithm needs to decide if an
-                  image contains hand written digit {"1"}.
+                  The most common approach taken to deal with unknown classes to
+                  prevent false positives are by:
                 </p>
                 <p className="text-[#9EB3CF] text-lg font-bwmss01">
-                  Images can be represented using a 2D array as shown above. In
-                  an image, white is usually represented using the value 255,
-                  black with 0 and gray with a value between 0-255. The image
-                  above of size 28x28 pixels, represented using a 2D array of
-                  size 28x28.
+                  1. thresholding softmax, or<br/> 2. using an additional background,
+                  garbage or nota class.
                 </p>
                 <p className="text-[#9EB3CF] text-lg font-bwmss01">
-                  So, the input to our algorithm would be a 2D array of size
-                  28x28. The output needs to be yes it indeed consists of the
-                  hand-written digit {"1"} and no otherwise.
+                However, they still have problems as shown in the plots (a) and (b) above. Dhamija et al. in the paper <a href="https://arxiv.org/pdf/1811.04110v2.pdf" target="_blank" className="underline text-white italic">Reducing Network Agnostophobia</a> from NeurIPS 2018 present a simple yet effective approach which leads to a better solution to this unknown class problem and the results can be seen in the plot (c) above. They achieve this using the Objectosphere loss.
                 </p>
+                <b className="text-[#9EB3CF] text-lg font-bwmss01">
+                In simple words, all they say is: do no use the additional background, garbage or nota class. Instead, force the unknown classes to output a uniform distribution. And, also force the magnitude of activations for known classes to be at least a margin m and that of unknown classes to be zero. Thats it!
+                </b>
                 <p className="text-[#9EB3CF] text-lg font-bwmss01">
-                  So, how can we do this using a rule-based algorithm?
+                To understand it more formally, please check the equations (1) and (2) from their <a href="https://arxiv.org/pdf/1811.04110v2.pdf"  target="_blank" className="underline text-white italic"></a> paper.
                 </p>
-                <p className="text-[#9EB3CF] text-lg font-bwmss01">
-                  Well, perhaps we can try and fit a line (orange) over the
-                  non-white pixels and then measure the angle θ that this line
-                  makes with the vertical axis as shown below. And, if this
-                  angle θ is say between -30 to +30, then we would output yes
-                  and otherwise no.
-                </p>
-                <div className="flex w-full gap-[5%]">
-                  <Image
-                    className="rounded-[20px] w-[47%]"
-                    src="/blogs/why-ai/content/img1.jpeg"
-                    width="400"
-                    height="400"
-                    alt=""
-                  />
-                  <Image
-                    className="rounded-[20px] w-[47%]"
-                    src="/blogs/why-ai/content/img2.jpeg"
-                    width="400"
-                    height="400"
-                    alt=""
-                  />
-                </div>
-                <p className="text-[#9EB3CF] text-lg font-bwmss01">
-                  And this algorithm would even do a good job for images which
-                  look like the ones in the figure above. However, if we wanted
-                  our algorithm to be really robust, our algorithm should
-                  correctly recognize {"1"} written in different handwritings
-                  like shown below. Now, the current version of our algorithm
-                  may not work as desired on all the images below, but perhaps
-                  we can tweak it by adding more conditions, by fitting multiple
-                  lines, etc.
-                </p>
-                <div className="flex w-full gap-[5%]">
-                  <Image
-                    className="rounded-[20px] w-[100%]"
-                    src="/blogs/why-ai/content/img3.jpeg"
-                    width="400"
-                    height="400"
-                    alt=""
-                  />
-                </div>
+
+                
               </div>
+
               {/* end topic-2 */}
+              {/* topic-3 */}
+
+              <div id="topic3" className="flex flex-col gap-[20px]">
+                <h4 className="text-white text-2xl font-aeonik tracking-wide">
+                Limitations
+                </h4>
+                <p className="text-[#9EB3CF] text-lg font-bwmss01">
+                There are two kinds of unknowns - the known unknown and the unknown unknown. This method only works best for the known unknowns. E.g. in one experiment, for a MNIST classifier, they find that training with CIFAR samples as the unknowns does not provide robustness to unknowns from the samples of NIST Letters dataset. Whereas, training with NIST Letters does provide robustness against CIFAR images. This is because CIFAR images are distinctly different from the MNIST digits where as NIST letters have attributes very similar to them. This finding however is consistent with the well known importance of hard-negatives in deep network training.
+                </p>
+                
+
+                
+              </div>
+              {/* end topic-3 */}
+
               {/* CTA */}
               <div className="w-full py-[26px] px-[20px] md:px-[50px] lg:px-[100px] flex flex-col gap-[18px] bg-[#000D2F] rounded-[20px] my-[60px]">
                 <h4 className="text-white text-2xl font-aeonik tracking-wide">
@@ -151,20 +166,19 @@ const Main = () => {
               <div className="mt-[15px] max-w-[400px] text-lg font-bwmss01 text-[#9EB3CF]">
                 <a onClick={() => scrollToTopic("topic1")}>
                   <p className="pl-[20px] pb-[4px] pr-[15px] ml-[2px] mb-[4px] border-l-[3px] border-l-[#036BF0] text-[#036BF0]">
-                    1. Sorting a list of integers
+                    1. Problem
                   </p>
                 </a>
                 <a onClick={() => scrollToTopic("topic2")}>
                   <p className="pl-[20px] pb-[4px] pr-[15px] ml-[2px] mb-[4px] ">
-                    2. Reading hand-written digit {"1"}
+                    2. Solution
                   </p>
                 </a>
-                <p className="pl-[20px] pb-[4px] pr-[15px] ml-[2px] mb-[4px] ">
-                  3. Reading hand-written digit {"2"}
-                </p>
-                <p className="pl-[20px] pb-[4px] pr-[15px] ml-[2px] mb-[4px] ">
-                  4. Solution: Machine Learning or Data-Driven algorithms.
-                </p>
+                <a onClick={() => scrollToTopic("topic3")}>
+                  <p className="pl-[20px] pb-[4px] pr-[15px] ml-[2px] mb-[4px] ">
+                    3. Limitations
+                  </p>
+                </a>
               </div>
             </div>
           </div>
