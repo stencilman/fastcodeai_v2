@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -19,7 +20,15 @@ const LatestBlogs = () => {
                   The Dilemma: To ML or Not to ML?
                 </h3>
                 <div className="flex gap-[10px] items-center">
-                  <div className="border border-[#707070] rounded-full bg-white w-[50px] h-[50px]"></div>
+                  <div className="border border-[#707070] rounded-full  w-[50px] h-[50px]">
+                    <Image
+                      className="rounded-full"
+                      src="/arjun.jpg"
+                      width="50"
+                      height="50"
+                      alt=""
+                    />
+                  </div>
                   <div>
                     <b className="text-white font-bold font-aeonik tracking-wide ">
                       Arjun Jain
@@ -64,7 +73,15 @@ const LatestBlogs = () => {
                   How to deal with Unknown Classes during classification?
                 </h3>
                 <div className="flex gap-[10px] items-center">
-                  <div className="border border-[#707070] rounded-full bg-white w-[50px] h-[50px]"></div>
+                  <div className="border border-[#707070] rounded-full  w-[50px] h-[50px]">
+                    <Image
+                      className="rounded-full"
+                      src="/arjun.jpg"
+                      width="50"
+                      height="50"
+                      alt=""
+                    />
+                  </div>
                   <div>
                     <b className="text-white font-bold font-aeonik tracking-wide ">
                       Arjun Jain
@@ -89,8 +106,7 @@ const LatestBlogs = () => {
                   <div className="border border-[#707070] rounded-full bg-white w-[50px] h-[50px]"></div>
                   <div>
                     <b className="text-white font-bold font-aeonik tracking-wide ">
-                    Tarun Kumar
-
+                      Tarun Kumar
                     </b>
                     <p className="text-[#FFFFFF] text-lg font-bwmss01">
                       03 June 2020
@@ -109,10 +125,18 @@ const LatestBlogs = () => {
                   How to deal with Unknown Classes during classification?
                 </h3>
                 <div className="flex gap-[10px] items-center">
-                  <div className="border border-[#707070] rounded-full bg-white w-[50px] h-[50px]"></div>
+                  <div className="border border-[#707070] rounded-full  w-[50px] h-[50px]">
+                    <Image
+                      className="rounded-full"
+                      src="/arjun.jpg"
+                      width="50"
+                      height="50"
+                      alt=""
+                    />
+                  </div>
                   <div>
                     <b className="text-white font-bold font-aeonik tracking-wide ">
-                     Arjun Jain
+                      Arjun Jain
                     </b>
                     <p className="text-[#FFFFFF] text-lg font-bwmss01">
                       01 Feb 2021
@@ -131,7 +155,15 @@ const LatestBlogs = () => {
                   The Dilemma: To ML or Not to ML?
                 </h3>
                 <div className="flex gap-[10px] items-center">
-                  <div className="border border-[#707070] rounded-full bg-white w-[50px] h-[50px]"></div>
+                  <div className="border border-[#707070] rounded-full w-[50px] h-[50px]">
+                    <Image
+                      className="rounded-full"
+                      src="/arjun.jpg"
+                      width="50"
+                      height="50"
+                      alt=""
+                    />
+                  </div>
                   <div>
                     <b className="text-white font-bold font-aeonik tracking-wide ">
                       Arjun Jain
@@ -145,7 +177,10 @@ const LatestBlogs = () => {
             </div>
           </div>
         </Link>
-        <Link href="/blogs/unknown-classes" className="lg:col-span-2 2xl:col-span-3">
+        <Link
+          href="/blogs/unknown-classes"
+          className="lg:col-span-2 2xl:col-span-3"
+        >
           <div>
             <div className="rounded-[20px] w-full bg-cover 2xl:w-[833px] h-[327px] bg-no-repeat bg-blog4 relative p-[20px]">
               <div className="absolute bottom-[20px]">
@@ -153,7 +188,15 @@ const LatestBlogs = () => {
                   How to deal with Unknown Classes during classification?
                 </h3>
                 <div className="flex gap-[10px] items-center">
-                  <div className="border border-[#707070] rounded-full bg-white w-[50px] h-[50px]"></div>
+                  <div className="border border-[#707070] rounded-full w-[50px] h-[50px]">
+                    <Image
+                      className="rounded-full"
+                      src="/arjun.jpg"
+                      width="50"
+                      height="50"
+                      alt=""
+                    />
+                  </div>
                   <div>
                     <b className="text-white font-bold font-aeonik tracking-wide ">
                       Arjun Jain

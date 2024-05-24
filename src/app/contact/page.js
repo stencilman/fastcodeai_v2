@@ -16,12 +16,12 @@ const Contact = () => {
     }, [])
     return (
         <>
-            <Hero/>
-            <Form/>
-            <HowWeDo/>
-            <Clients/>
-            <WhyChooseUs/>
-            <Footer/>
+            <Hero />
+            <Form />
+            <HowWeDo pb="pb-[100px]" />
+            <Clients />
+            <WhyChooseUs />
+            <Footer />
         </>
     )
 }

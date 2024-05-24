@@ -114,7 +114,7 @@ const CaseStudies = () => {
               className={`p-[0] border border-[#082373] lg:px-[35px] lg:pt-[0px] lg:pb-[40px] w-full h-[512px] sm:h-[434px] lg:h-[410px] ${e.img} rounded-[20px] bg-cover bg-no-repeat`}
               style={{ maxWidth: "1099px" }}
             >
-              <div className="w-full h-full flex justify-between flex-col lg:flex-row p-[10px] sm:p-[21px] lg:pb-[0px]">
+              <div className="w-full h-full flex justify-between flex-col lg:flex-row p-[15px] sm:p-[21px] lg:pb-[0px]">
                 <div className="h-full w-full lg:w-[50%] flex flex-col gap-[4vw] md:gap-[2vw] lg:gap-[0px] justify-normal lg:justify-evenly ">
                   <h5 className="text-white font-aeonik font-light tracking-normal text-[30px]">
                     {e.title}

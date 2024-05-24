@@ -71,7 +71,7 @@ const Footer = () => {
                   <Link href="/blogs">
                     <li>Blog</li>
                   </Link>
-                  <Link href="/contact-us">
+                  <Link href="/contact">
                     <li>Conatct Us</li>
                   </Link>
                 </ul>
@@ -84,9 +84,11 @@ const Footer = () => {
                       Head Office
                     </li>
                     <li className="text-sm text-[#9EB3CF] font-bwmss01 mt-[10px] md:mt-[19px]">
-                      #78, Ex-Servicemen Layout
-                      <br /> 1st Main Road, 6th Cross, RK Hegde Nagar Bengaluru,
-                      Karnataka 56007
+                      #48, Bhive Premium Church st,
+                      <br /> Haridevpur, Shanthala Nagar,<br/> Ashok Nagar,
+                      Bengaluru - 560001
+                      <br/>
+                      Karnataka, India
                     </li>
                   </ul>
                 </div>

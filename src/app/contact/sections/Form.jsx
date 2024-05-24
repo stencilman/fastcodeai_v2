@@ -6,8 +6,15 @@ import React, { useState, useRef } from "react";
 import submitMail from "./submitMail";
 
 const Form = () => {
-  const [selectedOptions, setSelectedOptions] = useState([]);
-
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    companyName: "",
+    service: [],
+    message: "",
+  });
+  const [message, setMessage] = useState("");
   const nameRef = useRef();
   const emailRef = useRef();
   const phoneRef = useRef();
@@ -15,32 +22,44 @@ const Form = () => {
   const messageRef = useRef();
 
   const handleService = (service) => {
-    if (selectedOptions.includes(service)) {
-      setSelectedOptions(
-        selectedOptions.filter((option) => option !== service)
-      );
-    } else {
-      setSelectedOptions([...selectedOptions, service]);
-    }
+    setFormData((prevFormData) => {
+      const serviceIndex = prevFormData.service.indexOf(service);
+      const newServices =
+        serviceIndex >= 0
+          ? prevFormData.service.filter((s) => s !== service)
+          : [...prevFormData.service, service];
+      return { ...prevFormData, service: newServices };
+    });
   };
 
-  const handleSubmit =  (e) => {
-    
+  const handleChange = (ref, field) => {
+    setFormData((prevFormData) => ({
+      ...prevFormData,
+      [field]: ref.current.value,
+    }));
+  };
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    const formData = {
-      name: nameRef.current.value,
-      email: emailRef.current.value,
-      phone: phoneRef.current.value,
-      companyName: companyRef.current.value,
-      service: selectedOptions.join(","),
-      message: messageRef.current.value,
-    };
-    console.log("Form Data: ", formData);
-    // You can now send formData to your backend or perform other actions
 
-    // await sendMail({to:"abdul@fastcode.ai",body:`<h1>${formData}</h1>`})
-     submitMail(formData)
+    const response = await fetch("/api/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(formData)
+    });
 
+    const result = await response.json();
+    console.log("result",result)
+
+    if (response.ok) {
+      setMessage("Email sent successfully");
+      console.log("message",message)
+    } else {
+      setMessage("Error sending email");
+      console.log("message",message)
+    }
   };
 
   return (
@@ -116,9 +135,11 @@ const Form = () => {
               <div>
                 <h6 className="text-white text-2xl font-aeonik">Address</h6>
                 <p className=" text-[#9EB3CF] text-lg font-bwmss01">
-                  #78, Ex-Servicemen Layout <br />
-                  1st Main Road, 6th Cross, RK <br /> Hegde Nagar
-                  <br /> Bengaluru, Karnataka 56007
+                  #48, Bhive Premium Church st <br />
+                  Haridevpur, Shanthala Nagar,
+                  <br /> Ashok Nagar, Bengaluru - 560001
+                  <br />
+                  Karnataka, India
                 </p>
               </div>
             </div>
@@ -174,6 +195,7 @@ const Form = () => {
                     name="floating_name"
                     id="floating_name"
                     className="block py-2.5 px-0 w-full font-aeonik text-base text-gray-900 bg-transparent border-0 border-b-2 border-gray-400 appearance-none dark:text-white dark:border-gray-400 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                    onChange={() => handleChange(nameRef, "name")}
                     placeholder=" "
                     required
                   />
@@ -191,6 +213,7 @@ const Form = () => {
                     name="floating_email"
                     id="floating_email"
                     className="block py-2.5 px-0 w-full font-aeonik text-base text-gray-900 bg-transparent border-0 border-b-2 border-gray-400 appearance-none dark:text-white dark:border-gray-400 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                    onChange={() => handleChange(emailRef, "email")}
                     placeholder=" "
                     required
                   />
@@ -210,6 +233,7 @@ const Form = () => {
                     name="floating_phone"
                     id="floating_phone"
                     className="block py-2.5 px-0 w-full font-aeonik text-base text-gray-900 bg-transparent border-0 border-b-2 border-gray-400 appearance-none dark:text-white dark:border-gray-400 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                    onChange={() => handleChange(phoneRef, "phone")}
                     placeholder=" "
                     required
                   />
@@ -227,6 +251,7 @@ const Form = () => {
                     name="floating_company"
                     id="floating_company"
                     className="block py-2.5 px-0 w-full font-aeonik text-base text-gray-900 bg-transparent border-0 border-b-2 border-gray-400 appearance-none dark:text-white dark:border-gray-400 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                    onChange={() => handleChange(companyRef, "companyName")}
                     placeholder=" "
                     required
                   />
@@ -257,7 +282,7 @@ const Form = () => {
                         key={service}
                         type="button"
                         className={`border border-white rounded-[36px] px-[20px] py-[15px] text-[#9EB3CF] text-base font-aeonik tracking-normal cursor-pointer hover:bg-[#000D2F] transition-all duration-200 ease-in ${
-                          selectedOptions.includes(service)
+                          formData.service.includes(service)
                             ? "bg-[#000D2F] text-white"
                             : ""
                         }`}
@@ -270,23 +295,24 @@ const Form = () => {
                 </div>
               </div>
               <div className="flex flex-col md:flex-row md:gap-[30px] gap-[50px] xl:gap-[80px] items-center mt-[25px]">
-              <div className="relative z-0 w-full mb-5 group">
-                <textarea
-                  ref={messageRef}
-                  name="floating_message"
-                  id="floating_message"
-                  className="block py-2.5 px-0 w-full font-aeonik text-base text-gray-900 bg-transparent border-0 border-b-2 border-gray-400 appearance-none dark:text-white dark:border-gray-400 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
-                  placeholder=" "
-                  required
-                ></textarea>
-                <label
-                  htmlFor="floating_message"
-                  className="peer-focus:font-medium absolute font-aeonik text-base font-medium text-[#9eb3cf] dark:text-[#9eb3cf] duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:start-0 rtl:peer-placeholder-shown:translate-x-0 peer-focus:scale-75 peer-focus:-translate-y-6"
-                >
-                  Your Message
-                </label>
-              </div>
-              <button
+                <div className="relative z-0 w-full mb-5 group">
+                  <textarea
+                    ref={messageRef}
+                    name="floating_message"
+                    id="floating_message"
+                    className="block py-2.5 px-0 w-full font-aeonik text-base text-gray-900 bg-transparent border-0 border-b-2 border-gray-400 appearance-none dark:text-white dark:border-gray-400 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                    onChange={() => handleChange(messageRef, "message")}
+                    placeholder=" "
+                    required
+                  ></textarea>
+                  <label
+                    htmlFor="floating_message"
+                    className="peer-focus:font-medium absolute font-aeonik text-base font-medium text-[#9eb3cf] dark:text-[#9eb3cf] duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:start-0 rtl:peer-placeholder-shown:translate-x-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                  >
+                    Your Message
+                  </label>
+                </div>
+                <button
                   type="submit"
                   className="text-white h-[63px] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm w-[63px] md:w-[76px] sm:w-auto px-5 py-2.5 text-center "
                   style={{
@@ -296,7 +322,7 @@ const Form = () => {
                 >
                   <Image src="/arrowRight.svg" width="32" height="32" alt="" />
                 </button>
-          </div>
+              </div>
             </form>
           </div>
         </div>

@@ -50,7 +50,7 @@ export default function Nav() {
       initial="initial"
       animate="enter"
       exit="exit"
-      className="h-[100vh]  z-[2] w-[100%] md:w-[35%] rounded-l-3xl bg-[#FFFFFF] fixed right-0 top-0 text-white"
+      className="h-[100vh]  z-[2] w-[100%] md:w-[40%] lg:w-[35%] rounded-l-3xl bg-[#FFFFFF] fixed right-0 top-0 text-white"
     >
       <div className="box-border h-full pt-[4.5rem] flex flex-col justify-between">
         <div
