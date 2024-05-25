@@ -23,7 +23,7 @@ const Industries = () => {
           }}
         >
           <Image src="/industries/icon1.svg" alt="" width="38" height="19" />
-          <p className="text-white text-[19px] font-aeonik ">Automibile</p>
+          <p className="text-white text-[19px] font-aeonik ">Automobile</p>
         </div>
         <div
           className="shadow-lg border border-[#1A2758] w-[172px] h-[182px] rounded-[18px] flex flex-col items-center justify-center gap-[42px] "

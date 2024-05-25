@@ -40,25 +40,33 @@ const Form = () => {
   };
 
   const handleSubmit = async (e) => {
+    console.log("formData", formData);
     e.preventDefault();
+    setMessage("Email sending...");
 
     const response = await fetch("/api/contact", {
       method: "POST",
       headers: {
-        "Content-Type": "application/json"
+        "Content-Type": "application/json",
       },
-      body: JSON.stringify(formData)
+      body: JSON.stringify(formData),
     });
 
     const result = await response.json();
-    console.log("result",result)
+    console.log("result", result);
 
     if (response.ok) {
       setMessage("Email sent successfully");
-      console.log("message",message)
+      setTimeout(() => {
+        setMessage("");
+      }, 3000);
+      console.log("message", message);
     } else {
       setMessage("Error sending email");
-      console.log("message",message)
+      setTimeout(() => {
+        setMessage("");
+      }, 3000);
+      console.log("message", message);
     }
   };
 
@@ -323,6 +331,7 @@ const Form = () => {
                   <Image src="/arrowRight.svg" width="32" height="32" alt="" />
                 </button>
               </div>
+              <div className="text-white text-base">{message}</div>
             </form>
           </div>
         </div>

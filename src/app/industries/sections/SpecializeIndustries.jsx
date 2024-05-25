@@ -6,7 +6,7 @@ import React, { useState } from "react";
 const SpecializeIndustries = () => {
   const [active, setActive] = useState({
     id: 1,
-    name: "Automibile",
+    name: "Automobile",
     description:
       "Fast Code AI is a leading AI adoption partner that collaborates with industry leaders to harness the power of advanced intelligence. They specialize in developing AI solutions for various domains, including computer vision, trend forecasting, and targeted consumer insights. Ipsum potenti at congue magna amet id egestas. Quisque imperdiet feugiat ac sit est vitae cras. Amet ut ornare eu at",
     icon: "icon4.svg",
@@ -17,7 +17,7 @@ const SpecializeIndustries = () => {
   const specializationList = [
     {
       id: 1,
-      name: "Automibile",
+      name: "Automobile",
       description:
         "Fast Code AI is a leading AI adoption partner that collaborates with industry leaders to harness the power of advanced intelligence. They specialize in developing AI solutions for various domains, including computer vision, trend forecasting, and targeted consumer insights. Ipsum potenti at congue magna amet id egestas. Quisque imperdiet feugiat ac sit est vitae cras. Amet ut ornare eu at",
       icon: "icon4.svg",

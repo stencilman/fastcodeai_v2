@@ -12,7 +12,7 @@ const Navbar = () => {
   const { isActive, setIsActive } = useGlobalContext();
   const [scrollPosition, setScrollPosition] = useState(0);
 
-  console.log("isActive", isActive);
+  // console.log("isActive", isActive);
   const handleClick = () => {
     setIsActive(!isActive);
   };
