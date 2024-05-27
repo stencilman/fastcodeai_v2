@@ -24,6 +24,7 @@ const Team = () => {
       // '/team/Tirth.webp'
     ].map((src) => ({ src, visible: Math.random() < 0.5 })); // Randomly set some images as visible
     setImageInfo(fetchedImages);
+    // console.log("imageInfo", imageInfo);
   }, []);
 
   useEffect(() => {
@@ -50,11 +51,11 @@ const Team = () => {
 
         return newImageInfo;
       });
-    }, 2000);
+    }, 5000);
 
     return () => clearInterval(interval);
-  }, []); 
-
+  }, []);
+  // console.log("imageInfo", imageInfo);
   return (
     <div className="w-full h-[100vh] bg-gradient-to-br from-[#000E32] to-[#000929] opacity-83 relative flex flex-col items-center justify-center z-[4]">
       <div className="flex flex-col md:flex-row gap-[10vw] md:gap-[0px] w-full items-center z-[3]">

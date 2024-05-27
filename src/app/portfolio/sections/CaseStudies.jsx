@@ -13,63 +13,63 @@ const CaseStudies = () => {
       title: "Mercedes Benz",
       description:
         "Enhance interaction between driver and car by detecting driver hand gesture for superior level driver experience with Mercedes Benz User Experience - MBUX System.",
-      to: "/potfolio/mbux",
+      to: "/portfolio/mbux",
     },
     {
       img: "bg-benz",
       title: "Bosch",
       description:
         "Accurate, low footprint detection with vulnerable roadside users (VRUs) and road signs covered in the Bosch-Daimler autonomous driving initiative.",
-      to: "/potfolio/bosch",
+      to: "/portfolio/bosch",
     },
     {
       img: "bg-learning",
       title: "Federated Learning on the Edge ",
       description:
         "Revolutionizing privacy and efficiency in data processing with Federated Learning (FL) on edge devices, enabling real-time, secure analytics in several key sectors.",
-      to: "/potfolio/federated-learning",
+      to: "/portfolio/federated-learning",
     },
     {
       img: "bg-fitness",
       title: "Fitness Pose Estimation",
       description:
         "Empowering exercise perfection with AI-driven real-time pose estimation, providing interactive visual feedback for correct posture and effective workouts.",
-      to: "/potfolio/fitness-pose-estimation",
+      to: "/portfolio/fitness-pose-estimation",
     },
     {
       img: "bg-fitness",
       title: "Data Query Assitant",
       description:
         "Transforming data access with a natural language interface that converts queries into SQL, simplifying database interaction.",
-      to: "/potfolio/sqlwizard",
+      to: "/portfolio/sqlwizard",
     },
     {
       img: "bg-fitness",
       title: "Loneliness Assistant",
       description:
         "Personalised assistant designed to empthatize with humans and serves as a close companion by engaging in an emotionally deep manner.",
-      to: "/potfolio/loneliness-assistant",
+      to: "/portfolio/loneliness-assistant",
     },
      {
       img: "bg-fitness",
       title: "Indian Fashion insight Framework",
       description:
         "Pioneering deep learning in fashion with a custom Indian dataset for advanced trend forecasting and targeted consumer insights.",
-      to: "/potfolio/fashion-framework",
+      to: "/portfolio/fashion-framework",
     },
     {
       img: "bg-fitness",
       title: "AI Banking Insights & Monitoring",
       description:
         "Enhancing banking with AI: Advanced data analytics for customer insights and predictive modeling, streamlined with efficient application monitoring.",
-      to: "/potfolio/banking-infra",
+      to: "/portfolio/banking-infra",
     },
      {
       img: "bg-fitness",
       title: "RAG based Personal Diary",
       description:
         "Smart, diary-like system that effortlessly organizes and retrieves your daily activities and information with cutting-edge Retrieval-Augmented Generation techniques.",
-      to: "/potfolio/rag",
+      to: "/portfolio/rag",
     },
   ];
 

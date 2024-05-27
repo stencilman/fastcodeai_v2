@@ -9,42 +9,42 @@ const slides = [
     content:
       "Enhance interaction between driver and car by detecting driver hand gesture for superior level driver experience with Mercedes Benz User Experience - MBUX System..",
     image: "/our-work/mercedes.webp",
-    url:"/potfolio/mbux"
+    url:"/portfolio/mbux"
   },
   {
     title: "Federated Learning on the Edge",
     content:
       "Revolutionizing privacy and efficiency in data processing with Federated Learning (FL) on edge devices, enabling real-time, secure analytics in several key sectors.",
     image: "/our-work/fl.webp",
-    url : "/potfolio/federated-learning"
+    url : "/portfolio/federated-learning"
   },
   {
     title: "Bosch",
     content:
       "Accurate, low footprint detection with vulnerable roadside users (VRUs) and road signs covered in the Bosch-Daimler autonomous driving initiative.",
     image: "/our-work/bosch.webp",
-    url:"/potfolio/bosch"
+    url:"/portfolio/bosch"
   },
   {
     title: "Fitness Pose Estimation",
     content:
       "Empowering exercise perfection with AI-driven real-time pose estimation, providing interactive visual feedback for correct posture and effective workouts.",
     image: "/our-work/fitness.webp",
-    url:"/potfolio/fitness-pose-estimation"
+    url:"/portfolio/fitness-pose-estimation"
   },
   {
     title: "RAG based Personal Diary",
     content:
       "Smart, diary-like system that effortlessly organizes and retrieves your daily activities and information with cutting-edge Retrieval-Augmented Generation techniques.",
     image: "/our-work/rag_weave.webp",
-    url:"/potfolio/rag"
+    url:"/portfolio/rag"
   },
   {
     title: "Indian Fashion insight Framework ",
     content:
       "Pioneering deep learning in fashion with a custom Indian dataset for advanced trend forecasting and targeted consumer insights",
     image: "/our-work/fashion.webp",
-    url:"/potfolio/fashion-framework"
+    url:"/portfolio/fashion-framework"
   },
 
   {
@@ -52,21 +52,21 @@ const slides = [
     content:
       "Enhancing banking with AI: Advanced data analytics for customer insights and predictive modeling, streamlined with efficient application monitoring.",
     image: "/our-work/modefin_cover.webp",
-    url:"/potfolio/banking-infra"
+    url:"/portfolio/banking-infra"
   },
   {
     title: "Data Query Assitant",
     content:
       "Transforming data access with a natural language interface that converts queries into SQL, simplifying database interaction",
     image: "/our-work/sqlwizard-logo1.png",
-    url:"/potfolio/sqlwizard"
+    url:"/portfolio/sqlwizard"
   },
   {
     title: "Loneliness Assistant",
     content:
       "Personalised assistant designed to empthatize with humans and serves as a close companion by engaging in an emotionally deep manner",
     image: "/our-work/lonely_llm.webp",
-    url:"/potfolio/loneliness-assistant"
+    url:"/portfolio/loneliness-assistant"
   },
   // Add more slides here as needed
 ];

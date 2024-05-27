@@ -29,7 +29,7 @@ const Hero = () => {
         />
         <div className="absolute inset-0 bg-black opacity-[0.65]"></div>
       </div>
-      <div className="w-full bottom-28 absolute z-[1] text-center">
+      <div className="w-full bottom-[11rem] lg:bottom-28 absolute z-[1] text-center">
         <h1
           ref={ref}
           className={`text-[#F3F3F3] tracking-wide text-[8vw] md:text-[7vw] leading-[9vw] lg:leading-[1] lg:text-8xl pb-[20px] font-aeonik font-normal ${

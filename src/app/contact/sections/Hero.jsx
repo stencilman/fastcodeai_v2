@@ -20,7 +20,7 @@ const Hero = () => {
         <h1 className="text-white font-aeonik tracking-wide text-center font-thin lg:leading-[86px] text-[50px] leading-[52px] lg:text-[93px]">
           {"Let's"} Create <br />{" "}
           <b className="text-white text-center lg:leading-[86px] font-aeonik font-bold text-[50px] leading-[52px] lg:text-[93px]">
-            Something Greate Together
+            Something Great Together
           </b>
         </h1>
         <p className="text-[#9EB3CF] text-center mt-[35px] font-bwmss01 text-lg">

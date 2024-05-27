@@ -23,8 +23,8 @@ const navItems = [
     href: "/industries",
   },
   {
-    title: "Potfolio",
-    href: "/potfolio",
+    title: "Portfolio",
+    href: "/portfolio",
   },
   {
     title: "Patents",

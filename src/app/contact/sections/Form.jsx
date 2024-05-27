@@ -80,7 +80,7 @@ const Form = () => {
         }}
       >
         <div className="w-[100%] lg:w-[40%] h-[50%] md:h-[50%] lg:h-full pt-[100px] pb-[70px] justify-center flex items-start lg:items-center">
-          <div className="flex flex-col gap-[50px]">
+          <div className="flex flex-col gap-[50px] p-[20px]">
             <div className="flex gap-[20px]">
               <div
                 className="w-[50px] h-[50px] rounded-full flex justify-center items-center border border-[#1A2758]"
@@ -154,13 +154,7 @@ const Form = () => {
             <div>
               <iframe
                 className="rounded-[20px] w-[100%] h-[222px] md:w-[100%] md:h-[222]"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1943.9741306453273!2d77.60383063865423!3d12.975161060562723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae173fc76647c7%3A0x7d61be6db08b7c76!2sWeWork%20Church%20Street!5e0!3m2!1sen!2sin!4v1715793029835!5m2!1sen!2sin"
-                width="327"
-                height="222"
-                style={{ border: "0" }}
-                allowFullScreen=""
-                loading="lazy"
-                referrerPolicy="no-referrer-when-downgrade"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3596.2804360631453!2d77.59854315160881!3d12.975756198586895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae173e2de8a801%3A0x1a89454e3024974b!2sBHIVE%20Premium%20Church%20Street!5e0!3m2!1sen!2sin!4v1716794194158!5m2!1sen!2sin" width="600" height="450" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
               ></iframe>
             </div>
             <Link
@@ -182,7 +176,7 @@ const Form = () => {
           </div>
         </div>
         <div className="w-[100%] lg:w-[60%] h-[50%] md:h-[50%] lg:h-[auto] py-[50px] px-[20px] md:px-[50px] lg:px-[86px] right-0 bg-[#0E1E49] rounded-[20px] flex flex-col  justify-center gap-[20px] md:gap-[30px] lg:gap-[40px]">
-          <div className="flex items-center pl-[10vw] lg:pl-0 gap-[7px]">
+          <div className="flex items-center pl-[10vw] justify-center lg:justify-start lg:pl-0 gap-[7px]">
             <p className=" w-[5px] h-[5px] rounded-full bg-white"></p>
             <p className="text-[#9EB3CF] text-lg font-bwmss01 ">
               {"Let's"} Kick Off A Dialogue.

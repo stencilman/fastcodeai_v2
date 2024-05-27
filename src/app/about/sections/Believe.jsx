@@ -1,4 +1,6 @@
 "use client";
+import { AnimatePresence, motion } from "framer-motion";
+import Image from "next/image";
 import React, { useState, useEffect, useRef } from "react";
 
 const Believe = () => {
@@ -59,50 +61,82 @@ const Believe = () => {
             className="pb-[20px] sticky top-[120px] h-fit w-[12%] flex flex-col gap-[15px]"
             ref={navRef}
           >
-            <div
-              className="w-[65px] h-[70px] md:w-[82px] md:h-[82px] border border-[#1A2758] rounded-[14px] flex items-center justify-center "
-              // style={{
-              //   background:
-              //     "transparent linear-gradient(360deg, #13224F 0%, #010D33 0%, #010D34 51%, #020B2A 100%) 0% 0% no-repeat padding-box",
-              // }}
-            >
-              <h3 className="text-[#9EB3CF] text-[40px] md:text-[50px] font-aeonik font-thin tracking-wider">
+          {/* Number 1 */}
+            <motion.div
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className={`w-[65px] h-[70px] md:w-[82px] md:h-[82px] border border-[#1A2758] rounded-[14px] flex items-center justify-center  relative ${activeMain === "Inovation"?"beliveBg":""}`}>
+              <h3 className="text-[#9EB3CF] text-[40px] md:text-[50px] font-aeonik font-thin tracking-wider relative z-10">
                 01
               </h3>
-            </div>
-            <div
-              className="w-[65px] h-[70px] md:w-[82px] md:h-[82px] border border-[#1A2758] rounded-[14px] flex items-center justify-center"
-              //   style={{
-              //     background:
-              //       "transparent linear-gradient(360deg, #13224F 0%, #010D33 0%, #010D34 51%, #020B2A 100%) 0% 0% no-repeat padding-box",
-              //   }}
-            >
-              <h3 className="text-[#9EB3CF] text-[40px] md:text-[50px] font-aeonik font-thin tracking-wider">
+              <AnimatePresence>
+              {activeMain === "Inovation" && (
+                <motion.span
+                  className="absolute inset-0 rounded-[14px]  beliveBg z-0"
+                  initial={{ scale: 0 }}
+                  animate={{ scale: 1 }}
+                  exit={{ scale: 0 }}
+                ></motion.span>
+              )}
+            </AnimatePresence>
+            </motion.div>
+          {/* Number 2 */}
+          <motion.div
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className={`w-[65px] h-[70px] md:w-[82px] md:h-[82px] border border-[#1A2758] rounded-[14px] flex items-center justify-center  relative ${activeMain === "Excellence"?"beliveBg":""}`}>
+              <h3 className="text-[#9EB3CF] text-[40px] md:text-[50px] font-aeonik font-thin tracking-wider relative z-10">
                 02
               </h3>
-            </div>
-            <div
-              className="w-[65px] h-[70px] md:w-[82px] md:h-[82px] border border-[#1A2758] rounded-[14px] flex items-center justify-center"
-              //   style={{
-              //     background:
-              //       "transparent linear-gradient(360deg, #13224F 0%, #010D33 0%, #010D34 51%, #020B2A 100%) 0% 0% no-repeat padding-box",
-              //   }}
-            >
-              <h3 className="text-[#9EB3CF] text-[40px] md:text-[50px] font-aeonik font-thin tracking-wider">
+              <AnimatePresence>
+              {activeMain === "Excellence" && (
+                <motion.span
+                  className="absolute inset-0 rounded-[14px]  beliveBg z-0"
+                  initial={{ scale: 0 }}
+                  animate={{ scale: 1 }}
+                  exit={{ scale: 0 }}
+                ></motion.span>
+              )}
+            </AnimatePresence>
+            </motion.div>
+          {/* Number 3 */}
+          <motion.div
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className={`w-[65px] h-[70px] md:w-[82px] md:h-[82px] border border-[#1A2758] rounded-[14px] flex items-center justify-center  relative ${activeMain === "Collaboration"?"beliveBg":""}`}>
+              <h3 className="text-[#9EB3CF] text-[40px] md:text-[50px] font-aeonik font-thin tracking-wider relative z-10">
                 03
               </h3>
-            </div>
-            <div
-              className="w-[65px] h-[70px] md:w-[82px] md:h-[82px] border border-[#1A2758] rounded-[14px] flex items-center justify-center"
-              //   style={{
-              //     background:
-              //       "transparent linear-gradient(360deg, #13224F 0%, #010D33 0%, #010D34 51%, #020B2A 100%) 0% 0% no-repeat padding-box",
-              //   }}
-            >
-              <h3 className="text-[#9EB3CF] text-[40px] md:text-[50px] font-aeonik font-thin tracking-wider">
+              <AnimatePresence>
+              {activeMain === "Collaboration" && (
+                <motion.span
+                  className="absolute inset-0 rounded-[14px]  beliveBg z-0"
+                  initial={{ scale: 0 }}
+                  animate={{ scale: 1 }}
+                  exit={{ scale: 0 }}
+                ></motion.span>
+              )}
+            </AnimatePresence>
+            </motion.div>
+          {/* Number 4 */}
+          <motion.div
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className={`w-[65px] h-[70px] md:w-[82px] md:h-[82px] border border-[#1A2758] rounded-[14px] flex items-center justify-center  relative ${activeMain === "Integrity"?"beliveBg":""}`}>
+              <h3 className="text-[#9EB3CF] text-[40px] md:text-[50px] font-aeonik font-thin tracking-wider relative z-10">
                 04
               </h3>
-            </div>
+              <AnimatePresence>
+              {activeMain === "Integrity" && (
+                <motion.span
+                  className="absolute inset-0 rounded-[14px]  beliveBg z-0"
+                  initial={{ scale: 0 }}
+                  animate={{ scale: 1 }}
+                  exit={{ scale: 0 }}
+                ></motion.span>
+              )}
+            </AnimatePresence>
+            </motion.div>
           </div>
           {/* Text Content And Animation */}
           <div className="flex  w-[90%] ">
@@ -157,7 +191,7 @@ const Believe = () => {
               </div>
 
               <div
-                className="h-[auto] w-[80%] pl-[30px] pr-[20px] flex flex-col justify-center"
+                className="h-[450px] w-[80%] pl-[30px] pr-[20px] flex flex-col justify-center"
                 ref={mainRefs["Integrity"]}
                 data-main="Integrity"
               >
