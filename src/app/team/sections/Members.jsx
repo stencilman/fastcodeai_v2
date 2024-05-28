@@ -33,20 +33,10 @@ const Members = () => {
       linkedin: "https://in.linkedin.com/in/arjunjain",
     },
     {
-      name: "PRABAL PATEL",
-      role: "Head of Sales and Business Development",
-      position: "top-[450px] md:left-[375px] left-[60px] lg:left-[680px]",
-      bg: "bg-prabal",
-      y: lg,
-      cp: "Head of Sales and Business Development",
-      desciption:
-        "MBA from Indiana University. 15 years of techology services experience, delivering managed teams and projects for large clients in US and India.",
-      linkedin: "https://in.linkedin.com/",
-    },
-    {
       name: "ABDUL MUQTADIR",
       role: "Software Engineer",
-      position: "top-[500px] left-[-10px] lg:top-[150px] lg:left-[250px]",
+      position:
+        "top-[300px] left-[5vw] sm:left-[27vw] lg:top-[300px] lg:left-[250px]",
       bg: "bg-abdul",
       y: lg,
       cp: "Software Engineer",
@@ -54,19 +44,21 @@ const Members = () => {
       linkedin: "https://www.linkedin.com/in/abdul-m-699ab9256/",
     },
     {
-      name: "PARTH BASOLE",
-      role: "Generalist Engineer",
-      position: "top-[288px] left-[108px] lg:top-[50px]  lg:left-[0px]",
-      bg: "bg-parth",
-      y: md,
-      cp: "AI Tech Creator",
-      desciption: "B.Tech (IN) VIT Pune, Ex-Software Developer at InsaneAI",
-      linkedin: "https://in.linkedin.com/in/parth-basole-22844115a",
+      name: "Dhaval Taunk",
+      role: "Research Scientist",
+      position: "top-[320px] left-[2vw] sm:left-[49vw] lg:left-[47vw]",
+      bg: "bg-dhaval",
+      y: lg,
+      cp: "Research Scientist",
+      desciption:
+        "MS (CS) IIIT Hyderabad, Ex-data scientist at Yes Bank and Jio Haptik Technologies",
+      linkedin: "https://www.linkedin.com/in/dhavaltaunk08/",
     },
     {
       name: "Easwar",
       role: "IOS Developer",
-      position: "top-[72px] lg:top-[200px] md:left-[375px] lg:left-[450px]",
+      position:
+        "top-[0px] lg:top-[0px] md:left-[2vw] sm:left-[20vw] lg:left-[23vw]",
       bg: "bg-eshwar",
       y: 0,
       cp: "Lead Mobile Engineer",
@@ -75,9 +67,66 @@ const Members = () => {
       linkedin: "https://in.linkedin.com/in/eshwar-ramesh-831303ab",
     },
     {
+      name: "GAUTAM ADITHYA RAVI",
+      role: "Head of Engineering",
+      position:
+        "top-[240px] left-[0px] sm:left-[3vw] md:left-[35vw] lg:top-[250px] lg:left-[5vw]",
+      bg: "bg-gautham",
+      y: md,
+      cp: "Computer Science Engineering & Research",
+      desciption:
+        "MSc (CS) Saarland University, Ex-researcher at MPI for informatics, Ex-analyst at Cognizant tech solutions",
+      linkedin: "https://in.linkedin.com/in/gautham-adithya-ravi-8b803341",
+    },
+    {
+      name: "Narendiran Chembu",
+      role: "Senior ML engineer ",
+      position: "top-[50px] lg:top-[80px] md:left-[375px] lg:left-[450px]",
+      bg: "bg-naren",
+      y: 0,
+      cp: "Senior Machine learning Enginner",
+      desciption:
+        "B.Tech IIT Madras, MS (Artificial Intelligence) University of Amsterdam. Ex-ML Enginner at minds.ai",
+      linkedin: "https://www.linkedin.com/in/cgnarendiran/",
+    },
+    {
+      name: "PRABAL PATEL",
+      role: "Head of Sales and Business Development",
+      position:
+        "top-[660px]  left-[5vw] sm:left-[38vw] md:left-[16vw] lg:left-[0px] lg:top-[850px]",
+      bg: "bg-prabal",
+      y: lg,
+      cp: "Head of Sales and Business Development",
+      desciption:
+        "MBA from Indiana University. 15 years of techology services experience, delivering managed teams and projects for large clients in US and India.",
+      linkedin: "https://in.linkedin.com/",
+    },
+    {
+      name: "PARTH BASOLE",
+      role: "Generalist Engineer",
+      position:
+        "top-[320px] left-[0px] sm:left-[] lg:top-[380px]  lg:left-[35vw]",
+      bg: "bg-parth",
+      y: md,
+      cp: "AI Tech Creator",
+      desciption: "B.Tech (IN) VIT Pune, Ex-Software Developer at InsaneAI",
+      linkedin: "https://in.linkedin.com/in/parth-basole-22844115a",
+    },
+    {
+      name: "Rishabh Gupta",
+      role: "Machine Learning Engineer",
+      position: "top-[830px]  sm:left-[40vw] lg:top-[950px] lg:left[50vw]",
+      bg: "bg-rishabh",
+      y: lg,
+      cp: "Machine Learning Engineer",
+      desciption: "",
+      linkedin: "https://www.linkedin.com/in/rishabh-gupta-a5886712a/",
+    },
+
+    {
       name: "SANJAY SURIYAKUMAR",
       role: "Research Scientist",
-      position: "top-[-800px] left-[890px]",
+      position: "top-[870px] left-[0px] sm:top-[950px]",
       bg: "bg-sanjay",
       y: lg,
       cp: "Research Scientist",
@@ -86,15 +135,37 @@ const Members = () => {
       linkedin: "https://www.linkedin.com/in/sanjay-suriyakumar-a51aa821b/",
     },
     {
-      name: "GAUTAM ADITHYA RAVI",
-      role: "Head of Engineering",
-      position: "top-[0px] left-[79px] lg:top-[200px] lg:left-[90px]",
-      bg: "bg-gautham",
-      y: md,
-      cp: "Computer Science Engineering & Research",
+      name: "Shreyas Bhanderi",
+      role: "Senior Research Scientist",
+      position: "top-[900px] sm:top-[950px] sm:left-[20vw] lg:top-[1000px]",
+      bg: "bg-shreyas",
+      y: lg,
+      cp: "Senior Research Scientist",
+      desciption: "B.Tech (IT) DAIICT, Ex-Senior Software Enginner at Nagarro",
+      linkedin: "https://www.linkedin.com/in/shreyas-bhanderi/",
+    },
+    {
+      name: "Sughosh Patil",
+      role: "Senior Research Scientist",
+      position: "top-[950px] sm:top-[1050px] sm:left-[43vw] lg:top-[1100px]",
+      bg: "bg-sughosh",
+      y: lg,
+      cp: "Senior Research Scientist",
       desciption:
-        "MSc (CS) Saarland University, Ex-researcher at MPI for informatics, Ex-analyst at Cognizant tech solutions",
-      linkedin: "https://in.linkedin.com/in/gautham-adithya-ravi-8b803341",
+        "B.Tech (CS) IIT Kanpur, Ex-Senior Software Enginner at Samsung R&D",
+      linkedin: "https://www.linkedin.com/in/shreyas-bhanderi/",
+    },
+
+    {
+      name: "Tirth Pandit",
+      role: "Senior Research Scientist",
+      position: "top-[1000px] left-[0px] lg:top-[1200px]",
+      bg: "bg-tirth",
+      y: lg,
+      cp: "Senior Research Scientist",
+      desciption:
+        "M.Tech (CS) IIIT Hyderabad, Ex-researcher at Qualcomm R&D labs",
+      linkedin: "https://www.linkedin.com/in/tirth-pandit/",
     },
   ];
   return (

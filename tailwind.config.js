@@ -47,15 +47,20 @@ module.exports = {
         'whyaiHero': "url('/blogs/why-ai/hero/img1-2.png')",
 
         'arjun': "url('/members/arjun.png')",
-        'eshwar': "url('/members/eshwar.png')",
-        'parth': "url('/members/parth.png')",
-        'gautham': "url('/members/gautham.png')",
-        'sanjay': "url('/members/sanjay.png')",
-        'naren': "url('/members/naren.png')",
         'dhaval': "url('/members/dhaval.png')",
-        'abdul': "url('/members/abdul1.png')",
         'prabal': "url('/members/Prabal.webp')",
-        'belivegrad': "transparent linear-gradient(360deg, #13224F 0%, #010D33 0%, #010D34 51%, #020B2A 100%) 0% 0% no-repeat padding-box",
+        'abdul': "url('/members/abdul1.png')",
+        'parth': "url('/members/parth.png')",
+        'eshwar': "url('/members/eshwar.png')",
+        'naren': "url('/members/naren.png')",
+        'sanjay': "url('/members/sanjay.png')",
+        'shreyas': "url('/members/shreyas.png')",
+        'gautham': "url('/members/gautham.png')",
+        'sughosh': "url('/members/sughosh.webp')",
+        'tirth': "url('/members/tirth.webp')",
+        'rishabh': "url('/members/rishabh.jpeg')",
+
+       
 
       },
       background: {
