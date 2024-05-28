@@ -3,7 +3,7 @@ import React from "react";
 
 const Industries = () => {
   return (
-    <div className="w-full h-auto lg:h-[100vh] pt-[100px] lg:pt-0 pl-[20px] pr-[20px] md:pl-[50px] md:pr-[20px] lg:pl-[160px] lg:pr-[127px] bg-[#00081F] flex flex-col justify-center relative ">
+    <div className="w-full h-auto sm:mt-[100px] md:sm:mt-[100px] lg:mt-[0px] lg:min-h-[100vh] pt-[100px] lg:pt-0 pl-[20px] pr-[20px] md:pl-[50px] md:pr-[20px] lg:pl-[160px] lg:pr-[127px] bg-[#00081F] flex flex-col justify-center relative ">
       <div className="flex flex-col items-center">
         <h3 className="text-[8vw] md:text-[7vw] lg:text-5xl tracking-normal  text-center leading-[7.6vw] w-[90vw] lg:w-[50vw] font-bwmss01 text-white">
           Industries That Our AI Development Services Excel In

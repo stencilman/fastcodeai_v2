@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const WhyChooseUs = () => {
   return (
-    <div className="w-full h-auto lg:h-[120vh] pl-[20px] pr-[20px] lg:pl-[160px] lg:pr-[127px] relative bg-[#00081F] flex flex-col justify-center ">
+    <div className="w-full h-auto lg:min-h-[120vh] pl-[20px] pr-[20px] lg:pl-[160px] lg:pr-[127px] relative bg-[#00081F] flex flex-col justify-center ">
       <div className="absolute right-[10px]  w-[169px] h-[421px] blur-[50px] translate-y-[167px] scale-90  rounded-[50%] z-[4] bg-gradient-to-br from-[#1D8283] to-[#033577] bg-gradient-156deg bg-no-repeat bg-[0% 0%] opacity-49 border-0 border-opacity-0 filter blur-[100px]"></div>
       <h1 className="text-[8vw] md:text-[7vw] lg:text-5xl  text-white font-aeonik">
         Why Choose us?
