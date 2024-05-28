@@ -21,7 +21,7 @@ const HowWeDo = ({ pb }) => {
         ScrollTrigger.create({
           trigger: ref,
           start: "top 50%",
-          end: "top 129px",
+          end: "top 50%",
           onEnter: () => setShowAccordion(index),
           onLeaveBack: () => setShowAccordion(index),
         });
