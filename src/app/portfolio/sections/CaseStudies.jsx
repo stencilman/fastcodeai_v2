@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 
 const CaseStudies = () => {
-  const tabs = ["All", "Catagory 1", "Catagory 2", "Catagory 3"];
+  const tabs = ["All", "Category 1", "Category 2", "Category 3"];
   const [selected, setSelected] = useState(tabs[0]);
 
   const porfolioList = [
@@ -50,7 +50,7 @@ const CaseStudies = () => {
         "Personalised assistant designed to empthatize with humans and serves as a close companion by engaging in an emotionally deep manner.",
       to: "/portfolio/loneliness-assistant",
     },
-     {
+    {
       img: "bg-fitness",
       title: "Indian Fashion insight Framework",
       description:
@@ -64,7 +64,7 @@ const CaseStudies = () => {
         "Enhancing banking with AI: Advanced data analytics for customer insights and predictive modeling, streamlined with efficient application monitoring.",
       to: "/portfolio/banking-infra",
     },
-     {
+    {
       img: "bg-fitness",
       title: "RAG based Personal Diary",
       description:

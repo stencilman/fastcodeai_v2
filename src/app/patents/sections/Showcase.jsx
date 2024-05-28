@@ -13,11 +13,11 @@ const Showcase = () => {
 
   return (
     <div className="w-full h-[auto] bg-[#00081F] flex items-center justify-center relative mt-[70px] flex-col gap-[35px] md:gap-[70px]">
-      <h3 className="text-white font-aeonik tracking-wide sm:text-[8vw] md:text-[7vw] lg:text-[51]  font-light text-center w-full">
-        Our Patent Showcase
+      <h3 className="text-white font-aeonik tracking-wide sm:text-[8vw] md:text-[7vw] lg:text-[51]  font-light text-center w-full capitalize">
+        Our {activeTab} Showcase
       </h3>
 
-      <div className="w-[90vw]  md:w-[60vw] lg:w-[50vw] h-[100px] rounded-[18px] border border-[#1A2758] flex relative">
+      <div className="w-[90vw]  md:w-[60vw] lg:w-[50vw] h-[80px] md:h-[100px] rounded-[18px] border border-[#1A2758] flex relative">
         {/* toggler button */}
         <motion.div
           className={`w-[50%] h-full absolute top-0 left-0 rounded-[18px] cursor-pointer ${

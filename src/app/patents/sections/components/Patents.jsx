@@ -62,19 +62,19 @@ const Patents = () => {
       {/* catagories */}
       <div className="flex gap-[15px] md:gap-[35px] items-center justify-center flex-wrap">
         <div className="border border-[#082373] rounded-[30px] bg-[#00081F] px-[21px] py-[10px] text-lg font-bwmss01 text-white">
-          Catagory 1
+          Category 1
         </div>
         <div className="border border-[#082373] rounded-[30px] bg-[#00081F] px-[21px] py-[10px] text-lg font-bwmss01 text-white">
-          Catagory 2
+          Category 2
         </div>
         <div className="border border-[#082373] rounded-[30px] bg-[#00081F] px-[21px] py-[10px] text-lg font-bwmss01 text-white">
-          Catagory 3
+          Category 3
         </div>
         <div className="border border-[#082373] rounded-[30px] bg-[#00081F] px-[21px] py-[10px] text-lg font-bwmss01 text-white">
-          Catagory 4
+          Category 4
         </div>
         <div className="border border-[#082373] rounded-[30px] bg-[#00081F] px-[21px] py-[10px] text-lg font-bwmss01 text-white">
-          Catagory 5
+          Category 5
         </div>
       </div>
       <div className="w-full px-[20px] md:px-[50px] lg:px-[100px] flex flex-col gap-[60px]">
@@ -118,7 +118,7 @@ const Patents = () => {
               <div className="flex gap-[20px] items-center">
                 <Link href={e.linkTo}>
                   <div
-                    className="border border-[#F3F3F3] p-[12px] cursor-pointer text-white rounded-[18px] font-bwmss01 font-light min-h-[55px] pt-[17px] min-w-[120px] text-center"
+                    className="border border-[#F3F3F3] p-[12px] cursor-pointer text-white rounded-full font-bwmss01 font-light min-h-[55px] pt-[17px] min-w-[120px] text-center"
                     style={{
                       background:
                         "transparent linear-gradient(360deg, #13224F 0%, #13224F 0%, #0C1C46 51%, #020F3B 100%) 0% 0% no-repeat padding-box",

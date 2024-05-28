@@ -32,7 +32,7 @@ const Hero = () => {
       <div className="w-full bottom-[25%] flex flex-col items-center justify-center lg:bottom-[150px] absolute z-[1] text-center">
         <h1
           ref={ref}
-          className={`text-[#F3F3F3] text-[8vw] md:text-[7vw] leading-[9vw] lg:leading-[1] lg:text-8xl pb-[20px] font-aeonik font-normal ${
+          className={`text-[#F3F3F3] text-[8.5vw] md:text-[7vw] leading-[9vw] lg:leading-[1] lg:text-8xl pb-[20px] font-aeonik font-normal ${
             isVisible ? "translate-y-0 opacity-100" : "translate-y-20 opacity-0"
           } transition-transform duration-1000 ease-out tracking-wide`}
         >
