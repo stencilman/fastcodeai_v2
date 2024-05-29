@@ -22,10 +22,10 @@ const Hero = () => {
         <video
           className="w-full h-full object-cover"
           autoPlay
-          muted
+          muted 
           loop
           playsInline
-          src="/vdo4.mp4"
+          src="/industries.mp4"
         />
         <div className="absolute inset-0 bg-black opacity-[0.65]"></div>
       </div>
