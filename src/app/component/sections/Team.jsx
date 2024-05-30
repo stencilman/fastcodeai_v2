@@ -10,19 +10,21 @@ const Team = () => {
     const fetchedImages = [
       "/team/Arjun_Jain.webp",
       "/team/abdul.png",
-      "/team/darshan.webp",
+      // "/team/darshan.webp",
+      // "/team/Sughosh.png",
       "/team/Dhaval.webp",
       "/team/eshwar.webp",
       "/team/gautam.webp",
-      "/team/Jadhav.webp",
+      // "/team/Jadhav.webp",
+      "/team/rishabh.jpeg",
+
       "/team/Nanda.webp",
       "/team/parth-bw.webp",
       "/team/Prabal.webp",
-      "/team/Sanjay.webp",
-      // '/team/Shreyas.webp',
-      // '/team/Sughosh.webp',
+      "/team/Sanjay.png",
+      '/team/Shreyas.webp',
       // '/team/Tirth.webp'
-    ].map((src) => ({ src, visible: Math.random() < 0.5 })); // Randomly set some images as visible
+    ].map((src) => ({ src, visible: Math.random() < 0.7 })); // Randomly set some images as visible
     setImageInfo(fetchedImages);
     // console.log("imageInfo", imageInfo);
   }, []);
@@ -95,7 +97,7 @@ const Team = () => {
                   }`}
                 >
                   <Image
-                    className={`transform-style-preserve-3d w-full transition-opacity duration-1000  ease-cubic-bezier ${
+                    className={`transform-style-preserve-3d w-full transition-opacity duration-1000  ease-cubic-bezier grayscale ${
                       info.visible ? "" : "opacity-0"
                     }`}
                     src={info.src}

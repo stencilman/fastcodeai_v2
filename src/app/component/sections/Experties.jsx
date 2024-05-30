@@ -7,7 +7,7 @@ const Experties = () => {
   const [activeMain, setActiveMain] = useState(null);
   const navRef = useRef(null);
   const mainRefs = {
-    "Artificial Intelligence": useRef(null),
+    "Reinforcement Learning": useRef(null),
     "Computer Vision": useRef(null),
     "Machine Learning": useRef(null),
     "Data Science": useRef(null),
@@ -54,37 +54,6 @@ const Experties = () => {
           className="bg-[#00081f] col-span-12 lg:col-span-3 flex flex-row lg:flex-col justify-center lg:justify-start md:gap-[25px] gap-[15px] sticky z-[3] py-[10vw] md:py-[5vw] lg:py-0 top-[16vw] md:top-[10vw] lg:top-[10vw] h-fit"
           ref={navRef}
         >
-          {/* Artificial Intelligence */}
-          <motion.div
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className={` w-[55px] h-[55px] md:w-[77px] md:h-[77px] rounded-full flex items-center justify-center relative ${
-              activeMain === "Artificial Intelligence"
-                ? "bg-gradient-to-br from-[#2DC1C3] to-[#0268F2]"
-                : "bg-gradient-to-br from-[#13224F] to-[#13224F]"
-            }`}
-            onClick={() => handleSetActiveMain("Artificial Intelligence")}
-          >
-            <span className="block relative z-10">
-              <Image
-                src="/experties/icon1.svg"
-                className="w-[30px] md:w-[44px]"
-                width="44"
-                height="44"
-                alt=""
-              />
-            </span>
-            <AnimatePresence>
-              {activeMain === "Artificial Intelligence" && (
-                <motion.span
-                  className="absolute inset-0 rounded-full bg-gradient-to-br from-[#2DC1C3] to-[#0268F2] z-0"
-                  initial={{ scale: 0 }}
-                  animate={{ scale: 1 }}
-                  exit={{ scale: 0 }}
-                ></motion.span>
-              )}
-            </AnimatePresence>
-          </motion.div>
           {/* Computer Vision */}
           <motion.div
             whileHover={{ scale: 1.05 }}
@@ -116,8 +85,9 @@ const Experties = () => {
               )}
             </AnimatePresence>
           </motion.div>
-          {/* Machine Learning */}
-          <motion.div
+
+ {/* Machine Learning */}
+ <motion.div
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className={`w-[55px] h-[55px] md:w-[77px] md:h-[77px] rounded-full flex items-center justify-center relative ${
@@ -147,6 +117,40 @@ const Experties = () => {
               )}
             </AnimatePresence>
           </motion.div>
+
+          {/* Reinforcement Learning */}
+          <motion.div
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className={` w-[55px] h-[55px] md:w-[77px] md:h-[77px] rounded-full flex items-center justify-center relative ${
+              activeMain === "Reinforcement Learning"
+                ? "bg-gradient-to-br from-[#2DC1C3] to-[#0268F2]"
+                : "bg-gradient-to-br from-[#13224F] to-[#13224F]"
+            }`}
+            onClick={() => handleSetActiveMain("Reinforcement Learning")}
+          >
+            <span className="block relative z-10">
+              <Image
+                src="/experties/icon1.svg"
+                className="w-[30px] md:w-[44px]"
+                width="44"
+                height="44"
+                alt=""
+              />
+            </span>
+            <AnimatePresence>
+              {activeMain === "Reinforcement Learning" && (
+                <motion.span
+                  className="absolute inset-0 rounded-full bg-gradient-to-br from-[#2DC1C3] to-[#0268F2] z-0"
+                  initial={{ scale: 0 }}
+                  animate={{ scale: 1 }}
+                  exit={{ scale: 0 }}
+                ></motion.span>
+              )}
+            </AnimatePresence>
+          </motion.div>
+          
+         
           {/* Data Science */}
           <motion.div
             whileHover={{ scale: 1.05 }}
@@ -181,36 +185,7 @@ const Experties = () => {
         </div>
 
         {/* Main */}
-        <div className="col-span-12 lg:col-span-9 w-full flex flex-col gap-[10vw] relative  h-[100%]">
-          {/* Artificial Intelligence */}
-          <div
-            className="main-content mb-[10vw]"
-            ref={mainRefs["Artificial Intelligence"]}
-            data-main="Artificial Intelligence"
-          >
-            <div className="flex flex-col-reverse lg:flex-row gap-[30px] md:gap-[50px] lg:gap-[5%] items-center lg:items-start">
-              <div className="w-[100%] lg:w-[45%] text-center lg:text-left ">
-                <h1 className="text-[8vw] md:text-[7vw] lg:text-[42px] tracking-normal text-white font-aeonik">
-                  Artificial Intelligence
-                </h1>
-                <p className="text-[#9EB3CF] text-base md:text-lg font-light pt-[15px] md:pt-[25px] lg:pt-[15px] font-bwmss01 ">
-                  Develop and implement bespoke AI solutions to rapidly advance
-                  your organizational goals. We collaborate with you to identify
-                  the optimal artificial intelligence strategies, tools and
-                  technologies.
-                </p>
-              </div>
-              <div>
-                <Image
-                className="rounded-[18px]"
-                  src="/experties/ai.png"
-                  width="470"
-                  height="244"
-                  alt="consultation" 
-                />
-              </div>
-            </div>
-          </div>
+        <div className="col-span-12 lg:col-span-9 w-full flex flex-col gap-[0vw] relative  h-[100%]">
           {/* Computer Vision */}
           <div
             className="main-content mb-[10vw]"
@@ -239,6 +214,8 @@ const Experties = () => {
               </div>
             </div>
           </div>
+          
+          
           {/* Machine Learning */}
           <div
             className="main-content mb-[10vw]"
@@ -263,6 +240,35 @@ const Experties = () => {
                   width="470"
                   height="244"
                   alt="consultation" className="rounded-[18px]"
+                />
+              </div>
+            </div>
+          </div>
+          {/* Reinforcement Learning */}
+          <div
+            className="main-content mb-[10vw]"
+            ref={mainRefs["Reinforcement Learning"]}
+            data-main="Reinforcement Learning"
+          >
+            <div className="flex flex-col-reverse lg:flex-row gap-[30px] md:gap-[50px] lg:gap-[5%] items-center lg:items-start">
+              <div className="w-[100%] lg:w-[45%] text-center lg:text-left ">
+                <h1 className="text-[8vw] md:text-[7vw] lg:text-[42px] tracking-normal text-white font-aeonik">
+                  Reinforcement Learning
+                </h1>
+                <p className="text-[#9EB3CF] text-base md:text-lg font-light pt-[15px] md:pt-[25px] lg:pt-[15px] font-bwmss01 ">
+                  Develop and implement bespoke AI solutions to rapidly advance
+                  your organizational goals. We collaborate with you to identify
+                  the optimal artificial intelligence strategies, tools and
+                  technologies.
+                </p>
+              </div>
+              <div>
+                <Image
+                className="rounded-[18px]"
+                  src="/experties/ai.png"
+                  width="470"
+                  height="244"
+                  alt="consultation" 
                 />
               </div>
             </div>
