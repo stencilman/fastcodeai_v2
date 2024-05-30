@@ -21,8 +21,8 @@ export default function Home() {
   const { setIsActive } = useGlobalContext();
   
   
-  window.scrollTo(0, 0);
   useEffect(() => {
+    window.scrollTo(0, 0);
     setIsActive(false)
   }, [])
 
