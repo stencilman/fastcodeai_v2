@@ -14,7 +14,7 @@ const Team = () => {
       // "/team/Sughosh.png",
       "/team/Dhaval.webp",
       "/team/eshwar.webp",
-      "/team/gautam.webp",
+      // "/team/gautam.webp",
       // "/team/Jadhav.webp",
       "/team/rishabh.jpeg",
 
@@ -23,7 +23,7 @@ const Team = () => {
       "/team/Prabal.webp",
       "/team/Sanjay.png",
       '/team/Shreyas.webp',
-      // '/team/Tirth.webp'
+      '/team/Tirth.webp'
     ].map((src) => ({ src, visible: Math.random() < 0.7 })); // Randomly set some images as visible
     setImageInfo(fetchedImages);
     // console.log("imageInfo", imageInfo);
