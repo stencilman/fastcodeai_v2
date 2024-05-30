@@ -63,7 +63,7 @@ const Experties = () => {
                 ? "bg-gradient-to-br from-[#2DC1C3] to-[#0268F2]"
                 : "bg-gradient-to-br from-[#13224F] to-[#13224F]"
             }`}
-            onClick={() => handleSetActiveMain("Computer Vision")}
+            // onClick={() => handleSetActiveMain("Computer Vision")}
           >
             <span className="block relative z-10">
               <Image
@@ -86,8 +86,8 @@ const Experties = () => {
             </AnimatePresence>
           </motion.div>
 
- {/* Machine Learning */}
- <motion.div
+          {/* Machine Learning */}
+          <motion.div
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className={`w-[55px] h-[55px] md:w-[77px] md:h-[77px] rounded-full flex items-center justify-center relative ${
@@ -95,7 +95,7 @@ const Experties = () => {
                 ? "bg-gradient-to-br from-[#2DC1C3] to-[#0268F2]"
                 : "bg-gradient-to-br from-[#13224F] to-[#13224F]"
             }`}
-            onClick={() => handleSetActiveMain("Machine Learning")}
+            // onClick={() => handleSetActiveMain("Machine Learning")}
           >
             <span className="block relative z-10">
               <Image
@@ -127,7 +127,7 @@ const Experties = () => {
                 ? "bg-gradient-to-br from-[#2DC1C3] to-[#0268F2]"
                 : "bg-gradient-to-br from-[#13224F] to-[#13224F]"
             }`}
-            onClick={() => handleSetActiveMain("Reinforcement Learning")}
+            // onClick={() => handleSetActiveMain("Reinforcement Learning")}
           >
             <span className="block relative z-10">
               <Image
@@ -149,8 +149,7 @@ const Experties = () => {
               )}
             </AnimatePresence>
           </motion.div>
-          
-         
+
           {/* Data Science */}
           <motion.div
             whileHover={{ scale: 1.05 }}
@@ -160,7 +159,7 @@ const Experties = () => {
                 ? "bg-gradient-to-br from-[#2DC1C3] to-[#0268F2]"
                 : "bg-gradient-to-br from-[#13224F] to-[#13224F]"
             }`}
-            onClick={() => handleSetActiveMain("Data Science")}
+            // onClick={() => handleSetActiveMain("Data Science")}
           >
             <span className="block relative z-10">
               <Image
@@ -209,13 +208,13 @@ const Experties = () => {
                   src="/experties/computer_vesion.png"
                   width="470"
                   height="244"
-                  alt="consultation" className="rounded-[18px]"
+                  alt="consultation"
+                  className="rounded-[18px]"
                 />
               </div>
             </div>
           </div>
-          
-          
+
           {/* Machine Learning */}
           <div
             className="main-content mb-[10vw]"
@@ -239,7 +238,8 @@ const Experties = () => {
                   src="/experties/consultation2.png"
                   width="470"
                   height="244"
-                  alt="consultation" className="rounded-[18px]"
+                  alt="consultation"
+                  className="rounded-[18px]"
                 />
               </div>
             </div>
@@ -264,11 +264,11 @@ const Experties = () => {
               </div>
               <div>
                 <Image
-                className="rounded-[18px]"
+                  className="rounded-[18px]"
                   src="/experties/ai.png"
                   width="470"
                   height="244"
-                  alt="consultation" 
+                  alt="consultation"
                 />
               </div>
             </div>
@@ -296,7 +296,8 @@ const Experties = () => {
                   src="/experties/ds.png"
                   width="470"
                   height="244"
-                  alt="consultation" className="rounded-[18px]"
+                  alt="consultation"
+                  className="rounded-[18px]"
                 />
               </div>
             </div>
