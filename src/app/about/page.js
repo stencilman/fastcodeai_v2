@@ -15,7 +15,8 @@ import Footer from '../component/sections/Footer';
 const About = () => {
   const { setIsActive } = useGlobalContext();
 
-  useEffect(() => {
+  useEffect(() => { 
+    window.scrollTo(0, 0);
     setIsActive(false)
   }, [])
 

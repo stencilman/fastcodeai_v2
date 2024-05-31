@@ -4,7 +4,7 @@ import React from "react";
 import { useRef } from "react";
 import gsap from "gsap";
 import {
-  floating1,
+  // floating1,
   floating2,
   floating3,
   floating4,
@@ -84,12 +84,12 @@ const WhoWeAre = () => {
         ref={plane1}
         className="palne w-full h-full absolute brightness-[1]"
       >
-        <Image
+        {/* <Image
           className="absolute left-[50%] top-[38%] md:top-[30%]"
           src={floating1}
           alt="image"
           width={170}
-        />
+        /> */}
         <Image
           className="absolute left-[2%] md:left-[20%] top-[15%] md:top-[8%]"
           src={floating2}

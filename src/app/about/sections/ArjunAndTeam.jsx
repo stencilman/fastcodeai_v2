@@ -69,8 +69,8 @@ const ArjunAndTeam = () => {
             to unparalleled vision of broadening Al Adoption across diverse
             domains to realize the full potential of the technology.
           </p>
-          <div className="flex flex-wrap lg:flex-nowrap items-center gap-[40px] mt-[30px]">
-            <div className="flex gap-[13px] items-center">
+          <div className="flex flex-wrap w-full items-center gap-[40px] mt-[30px]">
+            <div className="flex gap-[13px] md:w-[40%]  items-center">
               <div className="border-[#1A2758] border rounded-full bg-[#13224F] w-[70px] h-[70px] flex items-center justify-center">
                 <Image
                   src="/about/about_arjun/icon1.svg"
@@ -83,12 +83,41 @@ const ArjunAndTeam = () => {
                 5 Patents
               </p>
             </div>
-            <div className="flex gap-[13px] items-center">
+            <div className="flex gap-[13px] md:w-[40%] items-center">
               <div className="border-[#1A2758] border rounded-full bg-[#13224F] w-[70px] h-[70px] flex items-center justify-center">
                 <Image
-                  src="/about/about_arjun/icon2.svg"
-                  width="40"
-                  height="39"
+                className="pt-[8px]"
+                  src="/about/about_arjun/scholar.png"
+                  width="60"
+                  height="60"
+                  alt=""
+                />
+              </div>
+              <p className="text-lg  lg:text-[1.5vw] lg:leading-[2vw] font-bwmss01 text-[#9EB3CF]">
+                7000+ Citations
+              </p>
+            </div>
+
+            <div className="flex gap-[13px] md:w-[40%] items-center">
+              <div className="border-[#1A2758] border rounded-full bg-[#13224F] w-[70px] h-[70px] flex items-center justify-center">
+                <Image
+                  src="/about/about_arjun/IISC.png"
+                  width="45"
+                  height="45"
+                  alt=""
+                />
+              </div>
+              <p className="text-lg  lg:text-[1.5vw] lg:leading-[2vw] font-bwmss01 text-[#9EB3CF]">
+                Adjunct Faculty,
+                <br /> IISC Bangalore
+              </p>
+            </div>
+            <div className="flex gap-[13px] md:w-[40%] items-center">
+              <div className="border-[#1A2758] border rounded-full bg-[#13224F] w-[70px] h-[70px] flex items-center justify-center">
+                <Image
+                  src="/about/about_arjun/IITB.png"
+                  width="45"
+                  height="45"
                   alt=""
                 />
               </div>
@@ -96,21 +125,9 @@ const ArjunAndTeam = () => {
                 Former Adjunct <br /> Professor, IIT Bombay
               </p>
             </div>
-            <div className="flex gap-[13px] items-center">
-              <Image
-                src="/about/about_arjun/icon3.png"
-                width="71"
-                height="71"
-                alt=""
-              />
-              <p className="text-lg  lg:text-[1.5vw] lg:leading-[2vw] font-bwmss01 text-[#9EB3CF]">
-                Adjunct Faculty,
-                <br /> IISC Bangalore
-              </p>
-            </div>
           </div>
         </div>
-        <div className=" h-full w-[100%] lg:w-[20%] relative">
+        <div className=" h-full w-[100%] lg:w-[24%] relative">
           <div className="relative w-full h-[60%] top-[-70px] lg:top-[-40px] ">
             <div className="flex justify-normal lg:block">
               <Image
@@ -122,7 +139,7 @@ const ArjunAndTeam = () => {
               />
             </div>
             <div className="">
-              <p className="text-[9vw] md:text-[7vw] lg:text-[1.6vw] lg:text-center mt-[60px] font-light leading-[10vw] md:leading-[8vw] lg:leading-[2vw] font-aeonik text-[#ffffff]">
+              <p className="text-[9vw] md:text-[6.7vw] lg:text-[1.6vw] lg:text-center mt-[60px] font-light leading-[10vw] md:leading-[8vw] lg:leading-[2vw] font-aeonik text-[#ffffff]">
                 Dr. Arjun Jain <br /> Chief Scientist
               </p>
               <div className="lg:hidden w-[220px] md:w-[25vw] mt-[20px]">

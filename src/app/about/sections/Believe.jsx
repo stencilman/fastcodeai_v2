@@ -84,7 +84,7 @@ const Believe = () => {
           <motion.div
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            className={`w-[65px] h-[70px] md:w-[82px] md:h-[82px] border border-[#1A2758] rounded-[14px] flex items-center justify-center  relative ${activeMain === "Excellence"?"beliveBg":""}`}>
+            className={`w-[65px]  h-[70px] md:w-[82px] md:h-[82px] border border-[#1A2758] rounded-[14px] flex items-center justify-center  relative ${activeMain === "Excellence"?"beliveBg":""}`}>
               <h3 className="text-[#9EB3CF] text-[40px] md:text-[50px] font-aeonik font-thin tracking-wider relative z-10">
                 02
               </h3>
@@ -140,9 +140,9 @@ const Believe = () => {
           </div>
           {/* Text Content And Animation */}
           <div className="flex  w-[90%] ">
-            <div className="pb-[20px] flex flex-col">
+            <div className="pb-[20px] flex flex-col gap-[120px] md:gap-[50px]">
               <div
-                className="h-[450px] w-[80%] pl-[30px] pr-[20px] flex flex-col justify-center"
+                className="h-[auto] md:h-[300px] mt-[70px] md:mt-0 w-[96%] sm:w-[80%] pl-[13px] sm:pl-[30px] md:pr-[20px] flex flex-col justify-center"
                 ref={mainRefs["Inovation"]}
                 data-main="Inovation"
               >
@@ -159,7 +159,7 @@ const Believe = () => {
               </div>
 
               <div
-                className="h-[450px] w-[80%] pl-[30px] pr-[20px] flex flex-col justify-center"
+                className="h-[auto] md:h-[300px] w-[98%] sm:w-[80%] pl-[13px] sm:pl-[30px] md:pr-[20px] md:pt-[50px] flex flex-col justify-center"
                 ref={mainRefs["Excellence"]}
                 data-main="Excellence"
               >
@@ -175,7 +175,7 @@ const Believe = () => {
               </div>
 
               <div
-                className="h-[450px] w-[80%] pl-[30px] pr-[20px] flex flex-col justify-center"
+                className="h-[auto] md:h-[300px] w-[98%] sm:w-[80%] pl-[13px] sm:pl-[30px] md:pr-[20px] flex flex-col justify-center"
                 ref={mainRefs["Collaboration"]}
                 data-main="Collaboration"
               >
@@ -191,7 +191,7 @@ const Believe = () => {
               </div>
 
               <div
-                className="h-[450px] w-[80%] pl-[30px] pr-[20px] flex flex-col justify-center"
+                className="h-[auto] md:h-[300px] w-[98%] sm:w-[80%] pl-[13px] sm:pl-[30px] md:pr-[20px] flex flex-col justify-center"
                 ref={mainRefs["Integrity"]}
                 data-main="Integrity"
               >
