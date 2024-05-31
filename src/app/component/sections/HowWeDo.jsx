@@ -3,7 +3,7 @@ import Image from "next/image";
 import React, { useState, useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-
+import { motion } from "framer-motion";
 gsap.registerPlugin(ScrollTrigger);
 
 const HowWeDo = ({ pb }) => {
@@ -12,6 +12,16 @@ const HowWeDo = ({ pb }) => {
 
   const handleAccordion = (accordionNumber) => {
     setShowAccordion(accordionNumber);
+  };
+
+  const titleVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0 },
+  };
+
+  const descriptionVariants = {
+    hidden: { opacity: 0 },
+    visible: { opacity: 1, transition: { delay: 0.1, duration: 0.5 } },
   };
 
   useEffect(() => {
@@ -93,20 +103,35 @@ const HowWeDo = ({ pb }) => {
             <div className=" flex flex-col mt-[60px] px-[32px] ">
               <h1
                 className={`text-7xl text-white font-aeonik transition-all duration-300 ease-in-out ${
-                  showAccordion !== index ? "group-hover:scale-[1.1]" : ""
+                  showAccordion !== index ? "lg:group-hover:scale-[1.1]" : ""
                 }`}
               >
                 {accordion.number}
               </h1>
               {showAccordion === index && (
-                <div className="flex flex-col w-full sm:w-[333px]  ">
-                  <h3 className="text-4xl w-full text-white font-aeonik pt-[20px]">
+                <motion.div
+                  initial="hidden"
+                  animate="visible"
+                  variants={descriptionVariants}
+                  className="flex flex-col w-full sm:w-[333px]  "
+                >
+                  <h3
+                    initial="hidden"
+                    animate={showAccordion === index ? "visible" : "hidden"}
+                    variants={titleVariants}
+                    className="text-4xl w-full text-white font-aeonik pt-[20px]"
+                  >
                     {accordion.title}
                   </h3>
-                  <p className="text-[#9EB3CF] font-bwmss01 text-[19px] leading-7 pt-[23px]">
+                  <p
+                    initial="hidden"
+                    animate={showAccordion === index ? "visible" : "hidden"}
+                    variants={descriptionVariants}
+                    className="text-[#9EB3CF] font-bwmss01 text-[19px] leading-7 pt-[23px]"
+                  >
                     {accordion.description}
                   </p>
-                </div>
+                </motion.div>
               )}
             </div>
           </div>
