@@ -32,8 +32,8 @@ const HowWeDo = ({ pb }) => {
           trigger: ref,
           start: "top center",
           end: "top 100%",
-          markers: true,
-          // scrub: true,
+          // markers: true,
+          scrub: true,
           onEnter: () => setShowAccordion(index),
           onLeaveBack: () => setShowAccordion(index),
         });
