@@ -21,7 +21,7 @@ const HowWeDo = ({ pb }) => {
 
   const descriptionVariants = {
     hidden: { opacity: 0 },
-    visible: { opacity: 1, transition: { delay: 0.1, duration: 0.5 } },
+    visible: { opacity: 1, transition: { delay: 0.1, duration: 1 } },
   };
 
   useEffect(() => {
