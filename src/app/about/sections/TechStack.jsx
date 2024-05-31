@@ -19,68 +19,70 @@ const TechStack = ({ z }) => {
   const x2 = useTransform(scrollYProgress, [0, 1], ["10%", "-30%"]);
 
   const slider1 = [
+   
+
     {
-      src: "/tech_stacks/icon3.svg",
+      src: "/tech_stacks/icon1.svg",w:"120"
     },
 
     {
-      src: "/tech_stacks/icon1.svg",
+      src: "/tech_stacks/icon8.svg",w:"160"
     },
 
     {
-      src: "/tech_stacks/icon4.svg",
+      src: "/tech_stacks/icon4.svg",w:"150"
     },
 
     {
-      src: "/tech_stacks/icon2.svg",
+      src: "/tech_stacks/icon2.svg",w:"150"
     },
     {
-      src: "/tech_stacks/icon6.svg",
-    },
-
-    {
-      src: "/tech_stacks/icon5.svg",
+      src: "/tech_stacks/icon6.svg",w:"140"
     },
 
     {
-      src: "/tech_stacks/icon6.svg",
+      src: "/tech_stacks/icon5.svg",w:"120"
     },
 
     {
-      src: "/tech_stacks/icon7.svg",
+      src: "/tech_stacks/icon6.svg",w:"120"
+    },
+
+    {
+      src: "/tech_stacks/icon7.svg",w:"120"
     },
   ];
 
   const slider2 = [
     {
-      src: "/tech_stacks/icon1.svg",
+      src: "/tech_stacks/icon1.svg",w:"120"
     },
 
     {
-      src: "/tech_stacks/icon7.svg",
+      src: "/tech_stacks/icon7.svg",w:"120"
     },
 
     {
-      src: "/tech_stacks/icon6.svg",
+      src: "/tech_stacks/icon10.svg",w:"120"
     },
 
     {
-      src: "/tech_stacks/icon3.svg",
+      src: "/tech_stacks/icon3.svg",w:"80"
     },
     {
-      src: "/tech_stacks/icon2.svg",
-    },
-
-    {
-      src: "/tech_stacks/icon4.svg",
+      src: "/tech_stacks/icon2.svg",w:"120"
     },
 
     {
-      src: "/tech_stacks/icon5.svg",
+      src: "/tech_stacks/icon4.svg",w:"120"
     },
 
     {
-      src: "/tech_stacks/icon2.svg",
+      src: "/tech_stacks/icon5.svg",w:"120"
+    },
+
+    {
+      src: "/tech_stacks/icon2.svg",w:"120"
     },
   ];
   return (
@@ -124,7 +126,7 @@ const TechStack = ({ z }) => {
                     key={i}
                     className="border-[#1D2B4F] cursor-pointer transition border-color duration-500 hover:border-[#ffffff92] hover:border border rounded-[18px] min-w-[150px] w-[258px] h-[122px] md:h-[182px] flex items-center justify-center"
                   >
-                    <Image src={e.src} width="88" height="70" alt="Logo" />
+                    <Image src={e.src} width={e.w} height="70" alt="Logo" />
                   </div>
                 );
               })}
@@ -143,7 +145,7 @@ const TechStack = ({ z }) => {
                     key={i}
                     className="border-[#1D2B4F] cursor-pointer transition border-color duration-500 hover:border-[#ffffff92] hover:border border rounded-[18px] min-w-[150px] w-[258px] h-[122px] md:h-[182px] flex items-center justify-center"
                   >
-                    <Image src={e.src} width="88" height="70" alt="Logo" />
+                    <Image src={e.src} width={e.w} height="70" alt="Logo" />
                   </div>
                 );
               })} 

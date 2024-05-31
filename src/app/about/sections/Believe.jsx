@@ -7,7 +7,7 @@ const Believe = () => {
   const [activeMain, setActiveMain] = useState(null);
   const navRef = useRef(null);
   const mainRefs = {
-    Inovation: useRef(null),
+    Innovation: useRef(null),
     Excellence: useRef(null),
     Collaboration: useRef(null),
     Integrity: useRef(null),
@@ -61,81 +61,93 @@ const Believe = () => {
             className="pb-[20px] sticky top-[120px] h-fit w-[12%] flex flex-col gap-[15px]"
             ref={navRef}
           >
-          {/* Number 1 */}
+            {/* Number 1 */}
             <motion.div
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className={`w-[65px] h-[70px] md:w-[82px] md:h-[82px] border border-[#1A2758] rounded-[14px] flex items-center justify-center  relative ${activeMain === "Inovation"?"beliveBg":""}`}>
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className={`w-[65px] h-[70px] md:w-[82px] md:h-[82px] border border-[#1A2758] rounded-[14px] flex items-center justify-center  relative ${
+                activeMain === "Innovation" ? "beliveBg" : ""
+              }`}
+            >
               <h3 className="text-[#9EB3CF] text-[40px] md:text-[50px] font-aeonik font-thin tracking-wider relative z-10">
                 01
               </h3>
               <AnimatePresence>
-              {activeMain === "Inovation" && (
-                <motion.span
-                  className="absolute inset-0 rounded-[14px]  beliveBg z-0"
-                  initial={{ scale: 0 }}
-                  animate={{ scale: 1 }}
-                  exit={{ scale: 0 }}
-                ></motion.span>
-              )}
-            </AnimatePresence>
+                {activeMain === "Innovation" && (
+                  <motion.span
+                    className="absolute inset-0 rounded-[14px]  beliveBg z-0"
+                    initial={{ scale: 0 }}
+                    animate={{ scale: 1 }}
+                    exit={{ scale: 0 }}
+                  ></motion.span>
+                )}
+              </AnimatePresence>
             </motion.div>
-          {/* Number 2 */}
-          <motion.div
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className={`w-[65px]  h-[70px] md:w-[82px] md:h-[82px] border border-[#1A2758] rounded-[14px] flex items-center justify-center  relative ${activeMain === "Excellence"?"beliveBg":""}`}>
+            {/* Number 2 */}
+            <motion.div
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className={`w-[65px]  h-[70px] md:w-[82px] md:h-[82px] border border-[#1A2758] rounded-[14px] flex items-center justify-center  relative ${
+                activeMain === "Excellence" ? "beliveBg" : ""
+              }`}
+            >
               <h3 className="text-[#9EB3CF] text-[40px] md:text-[50px] font-aeonik font-thin tracking-wider relative z-10">
                 02
               </h3>
               <AnimatePresence>
-              {activeMain === "Excellence" && (
-                <motion.span
-                  className="absolute inset-0 rounded-[14px]  beliveBg z-0"
-                  initial={{ scale: 0 }}
-                  animate={{ scale: 1 }}
-                  exit={{ scale: 0 }}
-                ></motion.span>
-              )}
-            </AnimatePresence>
+                {activeMain === "Excellence" && (
+                  <motion.span
+                    className="absolute inset-0 rounded-[14px]  beliveBg z-0"
+                    initial={{ scale: 0 }}
+                    animate={{ scale: 1 }}
+                    exit={{ scale: 0 }}
+                  ></motion.span>
+                )}
+              </AnimatePresence>
             </motion.div>
-          {/* Number 3 */}
-          <motion.div
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className={`w-[65px] h-[70px] md:w-[82px] md:h-[82px] border border-[#1A2758] rounded-[14px] flex items-center justify-center  relative ${activeMain === "Collaboration"?"beliveBg":""}`}>
+            {/* Number 3 */}
+            <motion.div
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className={`w-[65px] h-[70px] md:w-[82px] md:h-[82px] border border-[#1A2758] rounded-[14px] flex items-center justify-center  relative ${
+                activeMain === "Collaboration" ? "beliveBg" : ""
+              }`}
+            >
               <h3 className="text-[#9EB3CF] text-[40px] md:text-[50px] font-aeonik font-thin tracking-wider relative z-10">
                 03
               </h3>
               <AnimatePresence>
-              {activeMain === "Collaboration" && (
-                <motion.span
-                  className="absolute inset-0 rounded-[14px]  beliveBg z-0"
-                  initial={{ scale: 0 }}
-                  animate={{ scale: 1 }}
-                  exit={{ scale: 0 }}
-                ></motion.span>
-              )}
-            </AnimatePresence>
+                {activeMain === "Collaboration" && (
+                  <motion.span
+                    className="absolute inset-0 rounded-[14px]  beliveBg z-0"
+                    initial={{ scale: 0 }}
+                    animate={{ scale: 1 }}
+                    exit={{ scale: 0 }}
+                  ></motion.span>
+                )}
+              </AnimatePresence>
             </motion.div>
-          {/* Number 4 */}
-          <motion.div
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className={`w-[65px] h-[70px] md:w-[82px] md:h-[82px] border border-[#1A2758] rounded-[14px] flex items-center justify-center  relative ${activeMain === "Integrity"?"beliveBg":""}`}>
+            {/* Number 4 */}
+            <motion.div
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className={`w-[65px] h-[70px] md:w-[82px] md:h-[82px] border border-[#1A2758] rounded-[14px] flex items-center justify-center  relative ${
+                activeMain === "Integrity" ? "beliveBg" : ""
+              }`}
+            >
               <h3 className="text-[#9EB3CF] text-[40px] md:text-[50px] font-aeonik font-thin tracking-wider relative z-10">
                 04
               </h3>
               <AnimatePresence>
-              {activeMain === "Integrity" && (
-                <motion.span
-                  className="absolute inset-0 rounded-[14px]  beliveBg z-0"
-                  initial={{ scale: 0 }}
-                  animate={{ scale: 1 }}
-                  exit={{ scale: 0 }}
-                ></motion.span>
-              )}
-            </AnimatePresence>
+                {activeMain === "Integrity" && (
+                  <motion.span
+                    className="absolute inset-0 rounded-[14px]  beliveBg z-0"
+                    initial={{ scale: 0 }}
+                    animate={{ scale: 1 }}
+                    exit={{ scale: 0 }}
+                  ></motion.span>
+                )}
+              </AnimatePresence>
             </motion.div>
           </div>
           {/* Text Content And Animation */}
@@ -143,11 +155,11 @@ const Believe = () => {
             <div className="pb-[20px] flex flex-col gap-[120px] md:gap-[50px]">
               <div
                 className="h-[auto] md:h-[300px] mt-[70px] md:mt-0 w-[96%] sm:w-[80%] pl-[13px] sm:pl-[30px] md:pr-[20px] flex flex-col justify-center"
-                ref={mainRefs["Inovation"]}
-                data-main="Inovation"
+                ref={mainRefs["Innovation"]}
+                data-main="Innovation"
               >
                 <h1 className="font-aeonik text-[8vw] lg:text-[3.5vw] text-white leading-[4vw] tracking-normal font-thin">
-                  Inovation
+                  Innovation
                 </h1>
                 <p className="text-[#9EB3CF] font-bwmss01 text-base  mt-[15px]">
                   We seek original approaches for achieving our goals, taking
