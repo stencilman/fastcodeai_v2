@@ -21,7 +21,7 @@ const HowWeDo = ({ pb }) => {
 
   const descriptionVariants = {
     hidden: { opacity: 0 },
-    visible: { opacity: 1, transition: { delay: 0.1, duration: 1 } },
+    visible: { opacity: 1, transition: { delay: 0.1, duration: 2 } },
   };
 
   useEffect(() => {
@@ -30,8 +30,10 @@ const HowWeDo = ({ pb }) => {
       accordionRefs.current.forEach((ref, index) => {
         ScrollTrigger.create({
           trigger: ref,
-          start: "top 10%",
-          end: "top 50%",
+          start: "top center",
+          end: "top 100%",
+          markers: true,
+          // scrub: true,
           onEnter: () => setShowAccordion(index),
           onLeaveBack: () => setShowAccordion(index),
         });
