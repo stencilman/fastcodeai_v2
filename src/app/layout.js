@@ -55,7 +55,7 @@ export default function RootLayout({ children }) {
   return (
     <html  lang="en" >
       <body className={`${aeonik.variable} ${bwmss01.variable}`}>
-      <link rel="icon" href="/fcai.ico" sizes="any" />
+      {/* <link rel="icon" href="/fcai.ico" sizes="any" /> */}
         <GlobalProvider>
           <SmoothScroll>
             <Navbar />

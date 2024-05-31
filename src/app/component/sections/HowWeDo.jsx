@@ -75,9 +75,9 @@ const HowWeDo = ({ pb }) => {
             onClick={() => handleAccordion(index)}
             className={`group ${
               showAccordion === index
-                ? "h-[400px] sm:h-[520px] lg:h-[519px] scale-100"
-                : "h-[200px] lg:h-[519px] scale-0"
-            } lg:border-r-2 border-[#AFC0FF]  w-[100%] lg:w-[579px] flex cursor-pointer  transition-all duration-500 ease-in-out `}
+                ? "h-[400px] sm:h-[520px] lg:h-[519px] "
+                : "h-[200px] lg:h-[519px]"
+            } lg:border-r-2 border-[#AFC0FF]  w-[100%] lg:w-[579px] flex cursor-pointer `}
           >
             {showAccordion === index && (
               <div className="w-[177px] h-[519px] hidden sm:block">
