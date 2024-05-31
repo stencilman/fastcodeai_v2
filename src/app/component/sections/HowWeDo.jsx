@@ -30,7 +30,7 @@ const HowWeDo = ({ pb }) => {
       accordionRefs.current.forEach((ref, index) => {
         ScrollTrigger.create({
           trigger: ref,
-          start: "top 50%",
+          start: "top 10%",
           end: "top 50%",
           onEnter: () => setShowAccordion(index),
           onLeaveBack: () => setShowAccordion(index),
