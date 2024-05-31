@@ -132,7 +132,7 @@ const WhoWeAre = () => {
         />
       </div>
       <div className="Title absolute top-[50%] left-[50%] transform translate-x-[-50%] translate-y-[-50%] text-[19px] w-[90%] lg:w-[70%] h-auto border border-[#707070] rounded-[20px] backdrop-blur-[5px] bg-[#35343481] flex text-white py-[70px] px-[20px] md:px-[40px] lg:px-[50px] gap-[40px] flex-col lg:flex-row">
-        <div className="w-[100%] flex items-center">
+        <div className="w-[100%] lg:w-[300%] xl:w-[150%] lg:justify-center flex items-center">
           <h1 className="font-aeonik tracking-normal">Who Are We ?</h1>
         </div>
         <div className="flex flex-col gap-[20px] text-[#d6e0ee] font-bwmss01 ">
