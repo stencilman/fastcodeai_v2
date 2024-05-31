@@ -67,7 +67,7 @@ const TechStack = ({ z }) => {
     },
 
     {
-      src: "/tech_stacks/icon3.svg",w:"80",sm:"50",
+      src: "/tech_stacks/icon3.svg",w:"100",sm:"50",
     },
     {
       src: "/tech_stacks/icon2.svg",w:"120",sm:"90",
