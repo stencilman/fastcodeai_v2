@@ -19,70 +19,105 @@ const TechStack = ({ z }) => {
   const x2 = useTransform(scrollYProgress, [0, 1], ["10%", "-30%"]);
 
   const slider1 = [
+    {
+      src: "/tech_stacks/icon1.svg",
+      w: "120",
+      sm: "90",
+    },
+
+    {
+      src: "/tech_stacks/icon7.svg",
+      w: "120",
+      sm: "90",
+    },
+
+    {
+      src: "/tech_stacks/icon10.svg",
+      w: "120",
+      sm: "90",
+    },
+
+    {
+      src: "/tech_stacks/icon3.svg",
+      w: "100",
+      sm: "50",
+    },
+    {
+      src: "/tech_stacks/icon2.svg",
+      w: "120",
+      sm: "90",
+    },
+
+    {
+      src: "/tech_stacks/icon4.svg",
+      w: "120",
+      sm: "90",
+    },
+
+    {
+      src: "/tech_stacks/icon5.svg",
+      w: "120",
+      sm: "90",
+    },
+
+    {
+      src: "/tech_stacks/icon2.svg",
+      w: "120",
+      sm: "90",
+    },
+
+
    
-
-    {
-      src: "/tech_stacks/icon1.svg",w:"120",sm:"90",
-    },
-
-    {
-      src: "/tech_stacks/icon8.svg",w:"160",sm:"120",
-    },
-
-    {
-      src: "/tech_stacks/icon4.svg",w:"150",sm:"100",
-    },
-
-    {
-      src: "/tech_stacks/icon2.svg",w:"150",sm:"100",
-    },
-    {
-      src: "/tech_stacks/icon6.svg",w:"140",sm:"100",
-    },
-
-    {
-      src: "/tech_stacks/icon5.svg",w:"120",sm:"90",
-    },
-
-    {
-      src: "/tech_stacks/icon6.svg",w:"120",sm:"90",
-    },
-
-    {
-      src: "/tech_stacks/icon7.svg",w:"120",sm:"90",
-    },
   ];
 
   const slider2 = [
     {
-      src: "/tech_stacks/icon1.svg",w:"120",sm:"90",
+      src: "/tech_stacks/icon5.svg",
+      w: "120",
+      sm: "90",
+    },
+
+    
+    {
+      src: "/tech_stacks/icon6.svg",
+      w: "140",
+      sm: "100",
     },
 
     {
-      src: "/tech_stacks/icon7.svg",w:"120",sm:"90",
+      src: "/tech_stacks/icon5.svg",
+      w: "120",
+      sm: "90",
     },
 
     {
-      src: "/tech_stacks/icon10.svg",w:"120",sm:"90",
+      src: "/tech_stacks/icon6.svg",
+      w: "120",
+      sm: "90",
     },
 
     {
-      src: "/tech_stacks/icon3.svg",w:"100",sm:"50",
-    },
-    {
-      src: "/tech_stacks/icon2.svg",w:"120",sm:"90",
-    },
-
-    {
-      src: "/tech_stacks/icon4.svg",w:"120",sm:"90",
+      src: "/tech_stacks/icon8.svg",
+      w: "160",
+      sm: "100",
     },
 
     {
-      src: "/tech_stacks/icon5.svg",w:"120",sm:"90",
+      src: "/tech_stacks/icon4.svg",
+      w: "150",
+      sm: "100",
     },
 
     {
-      src: "/tech_stacks/icon2.svg",w:"120",sm:"90",
+      src: "/tech_stacks/icon2.svg",
+      w: "150",
+      sm: "100",
+    },
+
+    {
+      src: "/tech_stacks/icon7.svg",
+      w: "120",
+      sm: "90",
     },
   ];
   return (
@@ -110,7 +145,7 @@ const TechStack = ({ z }) => {
           </div>
           {/* slidingImages */}
           <div className="w-[100%] lg:w-[60%] flex flex-col gap-[4vw] md:gap-[2vw] relative z-[1] overflow-x-hidden">
-          <div className="absolute top-[-19px] lg:top-0 left-[-60px] md:left-[] lg:left-[-65px] w-[80px] h-[107%] lg:h-[100%]  bg-gradient-to-br from-[#000a2b] to-[#000b2c] opacity-83 z-20 blur-[10px]"></div>
+            <div className="absolute top-[-19px] lg:top-0 left-[-60px] md:left-[] lg:left-[-65px] w-[80px] h-[107%] lg:h-[100%]  bg-gradient-to-br from-[#000a2b] to-[#000b2c] opacity-83 z-20 blur-[10px]"></div>
             <div className="absolute lg:hidden top-[-19px] lg:top-0 right-[-60px] md:right-[] lg:right-[-65px] w-[80px] h-[107%] lg:h-[100%]  bg-gradient-to-br from-[#000a2b] to-[#000b2c] opacity-83 z-20 blur-[10px]"></div>
             {/* slider */}
             <motion.div
@@ -126,7 +161,13 @@ const TechStack = ({ z }) => {
                     key={i}
                     className="border-[#1D2B4F] cursor-pointer transition border-color duration-500 hover:border-[#ffffff92] hover:border border rounded-[18px] min-w-[150px] w-[258px] h-[122px] md:h-[182px] flex items-center justify-center"
                   >
-                    <Image className={`w-[${e.sm}px] md:w-[${e.w}px]`} src={e.src} width={e.w} height="70" alt="Logo" />
+                    <Image
+                      className={`w-[${e.sm}px] md:w-[${e.w}px]`}
+                      src={e.src}
+                      width={e.w}
+                      height="70"
+                      alt="Logo"
+                    />
                   </div>
                 );
               })}
@@ -145,10 +186,16 @@ const TechStack = ({ z }) => {
                     key={i}
                     className="border-[#1D2B4F] cursor-pointer transition border-color duration-500 hover:border-[#ffffff92] hover:border border rounded-[18px] min-w-[150px] w-[258px] h-[122px] md:h-[182px] flex items-center justify-center"
                   >
-                    <Image className={`w-[${e.sm}px] md:w-[${e.w}px]`} src={e.src} width={e.w} height="70" alt="Logo" />
+                    <Image
+                      className={`w-[${e.sm}px] md:w-[${e.w}px]`}
+                      src={e.src}
+                      width={e.w}
+                      height="70"
+                      alt="Logo"
+                    />
                   </div>
                 );
-              })} 
+              })}
             </motion.div>
           </div>
         </div>
