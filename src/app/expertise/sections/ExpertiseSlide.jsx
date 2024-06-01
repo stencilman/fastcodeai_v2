@@ -61,7 +61,7 @@ const ExpertiseSlide = () => {
             className={`w-[65px] h-[65px] md:w-[77px] md:h-[77px] rounded-full flex items-center justify-center bg-gradient-to-br from-[#13224F] to-[#13224F] border border-[#1A2758] `}
           >
             <Image src="/experties/icon3.svg" className="w-[40px] md:w-[44px]" width="44" height="44" alt="" />
-          </div>
+          </div> 
           <div
             className="main-content w-[80%]"
             data-main="Artificial Intelligence"
