@@ -135,10 +135,10 @@ const SpecializeIndustries = () => {
 
       {/* Section 3 */}
       <div className="w-full flex flex-col justify-center items-center mb-[15px] md:mb-[20px] lg:mb-[30px] mt-[50px]">
-        <h3 className="text-white font-aeonik tracking-wide sm:text-[2.5em] lg:text-[3.7em] leading-[1.2em]">
+        <h3 className="text-white font-aeonik tracking-normal text-[8vw] md:text-[7vw] lg:text-[51px] leading-[10vw] md:leading-[8vw] lg:leading-[60px]">
           Cant Find Your Industry?
         </h3>
-        <p className="text-[#9EB3CF] text-center font-bwmss01 text-[0.7em] leading-[1.4em] mt-[15px] md:mt-[20px] lg:mt-[30px] sm:text-[1.4em] w-[50%] mb-[15px] md:mb-[20px] lg:mb-[30px]">
+        <p className="text-[#9EB3CF] text-center font-bwmss01 text-lg mt-[15px] md:mt-[20px] lg:mt-[30px] w-full md:w-[50%] mb-[15px] md:mb-[20px] lg:mb-[30px]">
           No Problem Contact Us To Find The Best Solutions!
         </p>
 

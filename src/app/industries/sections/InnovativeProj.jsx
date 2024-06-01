@@ -7,10 +7,10 @@ function InnovativeProj() {
       <div className="flex w-[full] h-[auto] gap-[5%] gap-y-[40px] flex-col lg:flex-row">
         <div className="lg:w-[45%] h-full flex flex-col sm:flex-row lg:flex-col gap-[35px]">
           <div className="w-full  ">
-            <h3 className="text-white font-aeonik tracking-wide sm:text-[2.5em] lg:text-[3.7em] leading-[1.2em]">
+            <h3 className="text-white font-aeonik tracking-wide text-[8vw] md:text-[7vw] lg:text-[51px] leading-[10vw] md:leading-[8vw] lg:leading-[60px]">
               We say {`"yes"`} to innovative projects
             </h3>
-            <p className="text-[#9EB3CF] font-bwmss01 text-[0.7em] leading-[1.4em] mt-[15px] md:mt-[20px] lg:mt-[30px] sm:text-[1.4em]">
+            <p className="text-[#9EB3CF] font-bwmss01 text-lg leading-[1.4em] mt-[15px] md:mt-[20px] lg:mt-[30px] ">
               Lorem Ipsum is simply dummy text of the printing and typesetting
             </p>
           </div>
@@ -22,8 +22,8 @@ function InnovativeProj() {
             }}
           >
             <div>
-              <h4 className="text-white font-aeonik tracking-wide text-[1.5em] sm:text-[2em] lg:text-[3.2em] leading-[1em]">
-                Our Experites
+              <h4 className="text-white font-aeonik tracking-wide text-[8vw] md:text-[7vw] lg:text-[51px] leading-[1em]">
+                Our Expertise
               </h4>
             </div>
             <div className="flex flex-col gap-[20px]">
@@ -73,7 +73,7 @@ function InnovativeProj() {
         {/* right */}
         <div className="lg:w-[45%] h-full  flex gap-[5%] flex-wrap">
           <div
-            className="w-[100%] sm:w-[47.5%] h-[150px] sm:h-[331px]  rounded-[18px] mb-[30px] flex items-center sm:items-start sm:flex-col gap-[15px] p-[20px] border border-[#1A2758]"
+            className="w-[100%] sm:w-[47.5%] h-auto sm:h-[331px]  rounded-[18px] mb-[30px] flex items-center sm:items-start sm:flex-col gap-[15px] p-[20px] border border-[#1A2758]"
             style={{
               background:
                 "transparent linear-gradient(360deg, #13224F 0%, #13224F 0%, #0C1C46 51%, #020F3B 100%) 0% 0% no-repeat padding-box",
@@ -96,7 +96,7 @@ function InnovativeProj() {
             </div>
             <div>
               <b className="text-white text-[24px] pb-[7px] font-aeonik">
-                Passion for Innovartion
+                Passion for Innovation
               </b>
 
               <p className="text-[#9EB3CF] text-[19px] leading-[29px] mt-[14px] font-bwmss01">
@@ -105,7 +105,7 @@ function InnovativeProj() {
             </div>
           </div>
           <div
-            className="w-[100%] sm:w-[47.5%] h-[150px] sm:h-[331px]  rounded-[18px] mb-[30px] flex  items-center sm:items-start sm:flex-col gap-[15px] p-[20px] border border-[#1A2758]"
+            className="w-[100%] sm:w-[47.5%] h-auto sm:h-[331px]  rounded-[18px] mb-[30px] flex  items-center sm:items-start sm:flex-col gap-[15px] p-[20px] border border-[#1A2758]"
             style={{
               background:
                 "transparent linear-gradient(360deg, #13224F 0%, #13224F 0%, #0C1C46 51%, #020F3B 100%) 0% 0% no-repeat padding-box",
@@ -137,7 +137,7 @@ function InnovativeProj() {
             </div>
           </div>
           <div
-            className="w-[100%] sm:w-[47.5%] h-[150px] sm:h-[331px]  rounded-[18px] mb-[30px] flex  items-center sm:items-start sm:flex-col gap-[15px] p-[20px] border border-[#1A2758]"
+            className="w-[100%] sm:w-[47.5%] h-auto sm:h-[331px]  rounded-[18px] mb-[30px] flex  items-center sm:items-start sm:flex-col gap-[15px] p-[20px] border border-[#1A2758]"
             style={{
               background:
                 "transparent linear-gradient(360deg, #13224F 0%, #13224F 0%, #0C1C46 51%, #020F3B 100%) 0% 0% no-repeat padding-box",
@@ -169,7 +169,7 @@ function InnovativeProj() {
             </div>
           </div>
           <div
-            className="w-[100%] sm:w-[47.5%] h-[150px] sm:h-[331px]  rounded-[18px] mb-[30px] flex  items-center sm:items-start sm:flex-col gap-[15px] p-[20px] border border-[#1A2758]"
+            className="w-[100%] sm:w-[47.5%] h-auto sm:h-[331px]  rounded-[18px] mb-[30px] flex  items-center sm:items-start sm:flex-col gap-[15px] p-[20px] border border-[#1A2758]"
             style={{
               background:
                 "transparent linear-gradient(360deg, #13224F 0%, #13224F 0%, #0C1C46 51%, #020F3B 100%) 0% 0% no-repeat padding-box",
@@ -201,7 +201,7 @@ function InnovativeProj() {
             </div>
           </div>
           <div
-            className="w-[100%] sm:w-[47.5%] h-[150px] sm:h-[331px]  rounded-[18px] mb-[30px] flex items-center sm:items-start sm:flex-col gap-[15px] p-[20px] border border-[#1A2758]"
+            className="w-[100%] sm:w-[47.5%] h-auto sm:h-[331px]  rounded-[18px] mb-[30px] flex items-center sm:items-start sm:flex-col gap-[15px] p-[20px] border border-[#1A2758]"
             style={{
               background:
                 "transparent linear-gradient(360deg, #13224F 0%, #13224F 0%, #0C1C46 51%, #020F3B 100%) 0% 0% no-repeat padding-box",
@@ -233,7 +233,7 @@ function InnovativeProj() {
             </div>
           </div>
           <div
-            className="w-[100%] sm:w-[47.5%] h-[150px] sm:h-[331px]  rounded-[18px] mb-[30px] flex  items-center sm:items-start sm:flex-col gap-[15px] p-[20px] border border-[#1A2758]"
+            className="w-[100%] sm:w-[47.5%] h-auto sm:h-[331px]  rounded-[18px] mb-[30px] flex  items-center sm:items-start sm:flex-col gap-[15px] p-[20px] border border-[#1A2758]"
             style={{
               background:
                 "transparent linear-gradient(360deg, #13224F 0%, #13224F 0%, #0C1C46 51%, #020F3B 100%) 0% 0% no-repeat padding-box",
