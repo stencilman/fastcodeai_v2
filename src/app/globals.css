@@ -12836,7 +12836,8 @@ figcaption {
   }
 
   .cs-card-bottom {
-    flex-direction: column;
+    /* flex-direction: column; */
+    gap:15px;
     align-items: stretch;
   }
 

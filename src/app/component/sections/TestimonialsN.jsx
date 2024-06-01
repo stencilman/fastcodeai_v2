@@ -137,14 +137,14 @@ const TestimonialsN = () => {
                     ></div>
                     <div className="cs-card-content">
                       <Image
-                        src="/testimonials/logos/Google.png"
+                        src="/testimonials/logos/google.png"
                         alt=""
                         width="120"
                         height="50"
                         className="cs-card-logo w-auto h-auto"
                       />
                       <div className="cs-card-quote cc-embed w-embed">
-                        <blockquote className="cs-card-quote font-bwmss01" >
+                        <blockquote className="cs-card-quote font-bwmss01">
                           “Arjun is a great researcher / scientist / and
                           entrepreneur. I first learned about his research at
                           MPI on his movie-reshape work that made a big splash
@@ -161,7 +161,7 @@ const TestimonialsN = () => {
                           and strong researcher!”
                         </blockquote>
                       </div>
-                      <div className="cs-card-bottom">
+                      <div className="cs-card-bottom flex-row ">
                         <div className="cs-card-author">
                           <Image
                             src="/testimonials/chris_bregler.webp"
@@ -171,7 +171,7 @@ const TestimonialsN = () => {
                             className="cs-card-img object-cover"
                           />
                           <div>
-                            <div  className="text-color-light-2 font-aeonik">
+                            <div className="text-color-light-2 font-aeonik">
                               Chris (Christoph) Bregler
                             </div>
                             <div className=" text-block font-aeonik">
@@ -254,7 +254,7 @@ const TestimonialsN = () => {
                       />
                       <div className="cs-card-quote cc-embed w-embed">
                         <blockquote className="cs-card-quote font-bwmss01">
-                          “​I had the pleasure of working with Arjun while he
+                          “I had the pleasure of working with Arjun while he
                           was a PhD student at NYU. We co-authored a number of
                           papers together on deep unsupervised learning methods.
                           Unsupervised learning and deep learning are very
@@ -265,7 +265,7 @@ const TestimonialsN = () => {
                           networks.”
                         </blockquote>
                       </div>
-                      <div className="cs-card-bottom">
+                      <div className="cs-card-bottom flex-row">
                         <div className="cs-card-author">
                           <Image
                             src="/testimonials/Yann_lecun.webp"
@@ -275,7 +275,7 @@ const TestimonialsN = () => {
                             className="cs-card-img object-cover"
                           />
                           <div>
-                            <div  className="text-color-light-2 font-aeonik">
+                            <div className="text-color-light-2 font-aeonik">
                               Yann LeCun
                             </div>
                             <div className=" text-block font-aeonik">
@@ -369,7 +369,7 @@ const TestimonialsN = () => {
                           technology solutions.”
                         </blockquote>
                       </div>
-                      <div className="cs-card-bottom">
+                      <div className="cs-card-bottom flex-row">
                         <div className="cs-card-author">
                           <Image
                             src="/testimonials/Nitin_kumar.webp"
@@ -454,7 +454,7 @@ const TestimonialsN = () => {
                     />
                     <div className="cs-card-content">
                       <Image
-                        src="/testimonials/logos/munichuniv.png"
+                        src="/testimonials/logos/munichUniv.png"
                         alt=""
                         width="120"
                         height="50"
@@ -472,7 +472,7 @@ const TestimonialsN = () => {
                           future endeavor and highly recommend him.”
                         </blockquote>
                       </div>
-                      <div className="cs-card-bottom">
+                      <div className="cs-card-bottom flex-row">
                         <div className="cs-card-author">
                           <Image
                             src="/testimonials/Fabian.webp"
@@ -585,7 +585,7 @@ const TestimonialsN = () => {
                           with Arjun and team over the last many years.”
                         </blockquote>
                       </div>
-                      <div className="cs-card-bottom">
+                      <div className="cs-card-bottom flex-row">
                         <div className="cs-card-author">
                           <Image
                             src="/testimonials/Bindu.webp"

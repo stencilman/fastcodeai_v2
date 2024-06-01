@@ -175,7 +175,7 @@ const Believe = () => {
                   Our Process & Approach
                 </h1>
                 <p className="text-[#9EB3CF] font-bwmss01 text-base  mt-[15px]">
-                We offer flexible engagement models tailored to meet each client's specific needs. Whether it's for Web, Mobile, IoT, or Edge devices, our approach guarantees seamless execution from conception through to deployment.
+                We offer flexible engagement models tailored to meet each {"client's"} specific needs. Whether {"it's"} for Web, Mobile, IoT, or Edge devices, our approach guarantees seamless execution from conception through to deployment.
                 </p>
               </div>
 
