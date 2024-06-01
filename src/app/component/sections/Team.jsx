@@ -66,10 +66,10 @@ const Team = () => {
             Our Team
           </h1>
           <p className="text-[#9EB3CF] w-[80%] text-sm md:text-lg font-bwmss01 font-light mt-[15px] md:mt-[30px]">
-            Our team consists of seasoned professionals with extensive research
-            backgrounds, authors of influential papers, and contributors to
-            open-source initiatives. Carefully selected from top universities,
-            with a premium placed on innovative problem solvers.
+          Our team is composed of seasoned professionals, each with extensive research backgrounds. 
+We are proud authors of influential papers and active contributors to open-source initiatives. 
+Each member has been carefully selected from top universities, emphasizing our commitment
+to innovative problem solvers who excel in their fields.
           </p>
           <button className="rounded-[28px] mt-[20px] md:mt-[35px] lg:mt-[50px] flex items-center gap-[7px] bg-gradient-to-br from-[#2DC1C3] to-[#0268F2] text-white p-[15px] text-lg">
             Get Started

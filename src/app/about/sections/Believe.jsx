@@ -7,9 +7,9 @@ const Believe = () => {
   const [activeMain, setActiveMain] = useState(null);
   const navRef = useRef(null);
   const mainRefs = {
-    Innovation: useRef(null),
-    Excellence: useRef(null),
-    Collaboration: useRef(null),
+    "Handpicked Experts": useRef(null),
+    "Our Process & Approach": useRef(null),
+    "Strong R&D Expertise": useRef(null),
     Integrity: useRef(null),
   };
 
@@ -66,14 +66,14 @@ const Believe = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className={`w-[65px] h-[70px] md:w-[82px] md:h-[82px] border border-[#1A2758] rounded-[14px] flex items-center justify-center  relative ${
-                activeMain === "Innovation" ? "beliveBg" : ""
+                activeMain === "Handpicked Experts" ? "beliveBg" : ""
               }`}
             >
               <h3 className="text-[#9EB3CF] text-[40px] md:text-[50px] font-aeonik font-thin tracking-wider relative z-10">
                 01
               </h3>
               <AnimatePresence>
-                {activeMain === "Innovation" && (
+                {activeMain === "Handpicked Experts" && (
                   <motion.span
                     className="absolute inset-0 rounded-[14px]  beliveBg z-0"
                     initial={{ scale: 0 }}
@@ -88,14 +88,14 @@ const Believe = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className={`w-[65px]  h-[70px] md:w-[82px] md:h-[82px] border border-[#1A2758] rounded-[14px] flex items-center justify-center  relative ${
-                activeMain === "Excellence" ? "beliveBg" : ""
+                activeMain === "Our Process & Approach" ? "beliveBg" : ""
               }`}
             >
               <h3 className="text-[#9EB3CF] text-[40px] md:text-[50px] font-aeonik font-thin tracking-wider relative z-10">
                 02
               </h3>
               <AnimatePresence>
-                {activeMain === "Excellence" && (
+                {activeMain === "Our Process & Approach" && (
                   <motion.span
                     className="absolute inset-0 rounded-[14px]  beliveBg z-0"
                     initial={{ scale: 0 }}
@@ -110,14 +110,14 @@ const Believe = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className={`w-[65px] h-[70px] md:w-[82px] md:h-[82px] border border-[#1A2758] rounded-[14px] flex items-center justify-center  relative ${
-                activeMain === "Collaboration" ? "beliveBg" : ""
+                activeMain === "Strong R&D Expertise" ? "beliveBg" : ""
               }`}
             >
               <h3 className="text-[#9EB3CF] text-[40px] md:text-[50px] font-aeonik font-thin tracking-wider relative z-10">
                 03
               </h3>
               <AnimatePresence>
-                {activeMain === "Collaboration" && (
+                {activeMain === "Strong R&D Expertise" && (
                   <motion.span
                     className="absolute inset-0 rounded-[14px]  beliveBg z-0"
                     initial={{ scale: 0 }}
@@ -128,7 +128,7 @@ const Believe = () => {
               </AnimatePresence>
             </motion.div>
             {/* Number 4 */}
-            <motion.div
+            {/* <motion.div
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className={`w-[65px] h-[70px] md:w-[82px] md:h-[82px] border border-[#1A2758] rounded-[14px] flex items-center justify-center  relative ${
@@ -148,61 +148,51 @@ const Believe = () => {
                   ></motion.span>
                 )}
               </AnimatePresence>
-            </motion.div>
+            </motion.div> */}
           </div>
           {/* Text Content And Animation */}
           <div className="flex  w-[90%] ">
             <div className="pb-[20px] flex flex-col gap-[120px] md:gap-[50px]">
               <div
                 className="h-[auto] md:h-[300px] mt-[70px] md:mt-0 w-[96%] sm:w-[80%] pl-[13px] sm:pl-[30px] md:pr-[20px] flex flex-col justify-center"
-                ref={mainRefs["Innovation"]}
-                data-main="Innovation"
+                ref={mainRefs["Handpicked Experts"]}
+                data-main="Handpicked Experts"
               >
                 <h1 className="font-aeonik text-[8vw] lg:text-[3.5vw] text-white leading-[4vw] tracking-normal font-thin">
-                  Innovation
+                  Handpicked Experts
                 </h1>
                 <p className="text-[#9EB3CF] font-bwmss01 text-base  mt-[15px]">
-                  We seek original approaches for achieving our goals, taking
-                  advantage of creative communication for our outreach. By
-                  embracing new ideas and technologies, we continuously strive
-                  to push the boundaries of {"what's"} possible in the realm of
-                  AI and software solutions.
+                Our team comprises top-tier talent, meticulously selected from the premier academic  institutions in India. This ensures access to advanced knowledge and cutting-edge  technological skills, accelerating innovation for your organization.
                 </p>
               </div>
 
               <div
                 className="h-[auto] md:h-[300px] w-[98%] sm:w-[80%] pl-[13px] sm:pl-[30px] md:pr-[20px] md:pt-[50px] flex flex-col justify-center"
-                ref={mainRefs["Excellence"]}
-                data-main="Excellence"
+                ref={mainRefs["Our Process & Approach"]}
+                data-main="Our Process & Approach"
               >
                 <h1 className="font-aeonik text-[8vw] lg:text-[3.5vw] text-white leading-[4vw] tracking-normal font-thin">
-                  Excellence
+                  Our Process & Approach
                 </h1>
                 <p className="text-[#9EB3CF] font-bwmss01 text-base  mt-[15px]">
-                  Our commitment to excellence drives us to deliver the highest
-                  quality products and services. We ensure that every project we
-                  undertake meets the highest standards, from meticulous
-                  planning and development to rigorous testing and deployment.
+                We offer flexible engagement models tailored to meet each client's specific needs. Whether it's for Web, Mobile, IoT, or Edge devices, our approach guarantees seamless execution from conception through to deployment.
                 </p>
               </div>
 
               <div
                 className="h-[auto] md:h-[300px] w-[98%] sm:w-[80%] pl-[13px] sm:pl-[30px] md:pr-[20px] flex flex-col justify-center"
-                ref={mainRefs["Collaboration"]}
-                data-main="Collaboration"
+                ref={mainRefs["Strong R&D Expertise"]}
+                data-main="Strong R&D Expertise"
               >
                 <h1 className="font-aeonik text-[8vw] lg:text-[3.5vw] text-white leading-[4vw] tracking-normal font-thin">
-                  Collaboration
+                  Strong R&D Expertise
                 </h1>
                 <p className="text-[#9EB3CF] font-bwmss01 text-base  mt-[15px]">
-                  We believe that the best solutions come from working together.
-                  By fostering a collaborative environment, we harness the
-                  collective expertise and creativity of our team, partners, and
-                  clients, ensuring that every voice is heard and valued.
+                With over ten years of pioneering AI innovations and multiple patents, our deep research and development capabilities highlight our expertise. This proficiency enables us to tackle complex challenges and deliver superior results.
                 </p>
               </div>
 
-              <div
+              {/* <div
                 className="h-[auto] md:h-[300px] w-[98%] sm:w-[80%] pl-[13px] sm:pl-[30px] md:pr-[20px] flex flex-col justify-center"
                 ref={mainRefs["Integrity"]}
                 data-main="Integrity"
@@ -217,7 +207,7 @@ const Believe = () => {
                   us to deliver on our promises, and we are committed to
                   upholding that trust in every aspect of our work.
                 </p>
-              </div>
+              </div> */}
             </div>
             {/* Scroll */}
             <div className="pb-[20px] sticky top-[120px] h-fit w-[20%] md:w-[10%] flex flex-col justify-center">

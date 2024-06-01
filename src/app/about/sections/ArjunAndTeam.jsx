@@ -61,13 +61,14 @@ const ArjunAndTeam = () => {
       <div className="w-full h-auto lg:h-[80vh] pb-[57px] lg:pb-0  border-b border-[#FFFFFF] relative flex items-center gap-0 lg:gap-[10%] flex-col-reverse lg:flex-row justify-center">
         <div className=" h-full w-full lg:w-[70%] flex flex-col justify-start lg:justify-center gap-[20px] lg:gap-[26px]">
           <h1 className="font-aeonik text-[8vw] md:text-[7vw] lg:text-[5.5vw] text-white leading-[7.5vw] md:leading-[6.5vw] lg:leading-[5.5vw] tracking-normal font-light">
-            Powerfull People <br />
-            make places powerful
+            Guiding Excellence Through Leadership
           </h1>
           <p className="text-lg lg:text-[1.5vw] lg:leading-[2vw] font-bwmss01 text-[#9EB3CF]">
-            Dr. Arjun is a prominent machine learning industry leader dedicated
-            to unparalleled vision of broadening Al Adoption across diverse
-            domains to realize the full potential of the technology.
+            <b className="font-bold">Dr. Arjun Jain</b> is a recognized leader in machine learning. With a
+            focused commitment to enhancing AI utility across multiple
+            industries, he spearheads initiatives that leverage AI to solve
+            real-world problems. Under his leadership, Fast Code AI has emerged
+            as a hub of innovation.
           </p>
           <div className="flex flex-wrap w-full items-center gap-[40px] mt-[30px]">
             <div className="flex gap-[13px] md:w-[40%]  items-center">
@@ -86,7 +87,7 @@ const ArjunAndTeam = () => {
             <div className="flex gap-[13px] md:w-[40%] items-center">
               <div className="border-[#1A2758] border rounded-full bg-[#13224F] w-[70px] h-[70px] flex items-center justify-center">
                 <Image
-                className="pt-[8px]"
+                  className="pt-[8px]"
                   src="/about/about_arjun/scholar.png"
                   width="60"
                   height="60"
@@ -190,11 +191,10 @@ const ArjunAndTeam = () => {
               Our Team
             </h1>
             <p className="text-[#9EB3CF] w-[80%] text-lg font-bwmss01 font-light mt-[15px] md:mt-[30px]">
-              Our team consists of seasoned professionals with extensive
-              research backgrounds, authors of influential papers, and
-              contributors to open-source initiatives. Carefully selected from
-              top universities, with a premium placed on innovative problem
-              solvers.
+            Our team is composed of seasoned professionals, each with extensive research backgrounds. 
+We are proud authors of influential papers and active contributors to open-source initiatives. 
+Each member has been carefully selected from top universities, emphasizing our commitment
+to innovative problem solvers who excel in their fields.
             </p>
             <button className="rounded-[28px] mt-[50px] flex items-center gap-[7px] bg-gradient-to-br from-[#2DC1C3] to-[#0268F2] text-white p-[15px] text-lg">
               Get Started

@@ -132,22 +132,25 @@ const WhoWeAre = () => {
         />
       </div>
       <div className="Title absolute top-[50%] left-[50%] transform translate-x-[-50%] translate-y-[-50%] text-[19px] w-[90%] lg:w-[70%] h-auto border border-[#707070] rounded-[20px] backdrop-blur-[5px] bg-[#35343481] flex text-white py-[70px] px-[20px] md:px-[40px] lg:px-[50px] gap-[40px] flex-col lg:flex-row">
-        <div className="w-[100%] lg:w-[300%] xl:w-[150%] lg:justify-center flex items-center">
+        <div className="w-[100%] lg:w-[500%] xl:w-[250%] lg:justify-center flex items-center">
           <h1 className="font-aeonik tracking-normal">Who Are We ?</h1>
         </div>
         <div className="flex flex-col gap-[20px] text-[#d6e0ee] font-bwmss01 ">
           <p>
-            We are a specialized group of AI and machine learning researchers
-            and practitioners. we are at the forefront of cutting-edge
-            technology, focusing on developing innovative solutions in the field
-            of computer vision.
+          At Fast Code AI, we are a dynamic team of AI/ML researchers and 
+practitioners at the cutting edge of technology. Founded in 2020, we 
+specialize in machine learning (ML), computer vision (CV), reinforcement 
+learning (RL), and data science, innovating solutions that redefine 
+possibilities. Our commitment drives us to push the boundaries of 
+technology, making significant strides in the AI landscape and setting new
+benchmarks for excellence.
           </p>
           <p>
-            Fast Code AI was founded in 2020. Since then, we have been making
+            {/* Fast Code AI was founded in 2020. Since then, we have been making
             significant strides in the field of AI and machine learning,
             particularly in the domain of computer vision. Our team of experts
             is dedicated to pushing the boundaries of {"what’s"} possible in
-            this exciting field.
+            this exciting field. */}
           </p>
         </div>
       </div>
