@@ -3,7 +3,7 @@ import React from "react";
 
 const CustomerSolutions = () => {
   return (
-    <div className="w-full h-[60vh] sm:h-[80vh] lg:h-[100vh] bg-gradient-to-br from-[#000E32] to-[#000929] opacity-83 relative flex flex-col items-center pt-[10vh] md:pt-[20vh] lg:pt-[25vh] z-[5]">
+    <div className="w-full h-[auto] sm:h-[80vh] lg:h-[100vh] bg-gradient-to-br from-[#000E32] to-[#000929] opacity-83 relative flex flex-col items-center py-[10vh] md:pt-[20vh] lg:pt-[25vh] z-[5]">
       <div className="w-[90%] lg:w-[65%] h-[50vh]  text-center">
         <h1 className="text-[8vw] md:text-[7vw] lg:text-[51px] text-white font-aeonik text-center tracking-wide leading-[10vw] md:leading-[8vw] lg:leading-[60px]">
           We Deliver

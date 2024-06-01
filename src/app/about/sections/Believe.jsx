@@ -158,11 +158,14 @@ const Believe = () => {
                 ref={mainRefs["Handpicked Experts"]}
                 data-main="Handpicked Experts"
               >
-                <h1 className="font-aeonik text-[8vw] lg:text-[3.5vw] text-white leading-[4vw] tracking-normal font-thin">
+                <h1 className="font-aeonik text-[8vw] lg:text-[3.5vw] text-white leading-[8vw] md:leading-[4vw] tracking-normal font-thin">
                   Handpicked Experts
                 </h1>
                 <p className="text-[#9EB3CF] font-bwmss01 text-base  mt-[15px]">
-                Our team comprises top-tier talent, meticulously selected from the premier academic  institutions in India. This ensures access to advanced knowledge and cutting-edge  technological skills, accelerating innovation for your organization.
+                  Our team comprises top-tier talent, meticulously selected from
+                  the premier academic institutions in India. This ensures
+                  access to advanced knowledge and cutting-edge technological
+                  skills, accelerating innovation for your organization.
                 </p>
               </div>
 
@@ -171,11 +174,14 @@ const Believe = () => {
                 ref={mainRefs["Our Process & Approach"]}
                 data-main="Our Process & Approach"
               >
-                <h1 className="font-aeonik text-[8vw] lg:text-[3.5vw] text-white leading-[4vw] tracking-normal font-thin">
+                <h1 className="font-aeonik text-[8vw] lg:text-[3.5vw] text-white leading-[8vw] md:leading-[4vw] tracking-normal font-thin">
                   Our Process & Approach
                 </h1>
                 <p className="text-[#9EB3CF] font-bwmss01 text-base  mt-[15px]">
-                We offer flexible engagement models tailored to meet each {"client's"} specific needs. Whether {"it's"} for Web, Mobile, IoT, or Edge devices, our approach guarantees seamless execution from conception through to deployment.
+                  We offer flexible engagement models tailored to meet each{" "}
+                  {"client's"} specific needs. Whether {"it's"} for Web, Mobile,
+                  IoT, or Edge devices, our approach guarantees seamless
+                  execution from conception through to deployment.
                 </p>
               </div>
 
@@ -184,11 +190,14 @@ const Believe = () => {
                 ref={mainRefs["Strong R&D Expertise"]}
                 data-main="Strong R&D Expertise"
               >
-                <h1 className="font-aeonik text-[8vw] lg:text-[3.5vw] text-white leading-[4vw] tracking-normal font-thin">
+                <h1 className="font-aeonik text-[8vw] lg:text-[3.5vw] text-white leading-[8vw] md:leading-[4vw] tracking-normal font-thin">
                   Strong R&D Expertise
                 </h1>
                 <p className="text-[#9EB3CF] font-bwmss01 text-base  mt-[15px]">
-                With over ten years of pioneering AI innovations and multiple patents, our deep research and development capabilities highlight our expertise. This proficiency enables us to tackle complex challenges and deliver superior results.
+                  With over ten years of pioneering AI innovations and multiple
+                  patents, our deep research and development capabilities
+                  highlight our expertise. This proficiency enables us to tackle
+                  complex challenges and deliver superior results.
                 </p>
               </div>
 
@@ -197,7 +206,7 @@ const Believe = () => {
                 ref={mainRefs["Integrity"]}
                 data-main="Integrity"
               >
-                <h1 className="font-aeonik text-[8vw] lg:text-[3.5vw] text-white leading-[4vw] tracking-normal font-thin">
+                <h1 className="font-aeonik text-[8vw] lg:text-[3.5vw] text-white leading-[8vw] md:leading-[4vw] tracking-normal font-thin">
                   Integrity
                 </h1>
                 <p className="text-[#9EB3CF] font-bwmss01 text-base  mt-[15px]">

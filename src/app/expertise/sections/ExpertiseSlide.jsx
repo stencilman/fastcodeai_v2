@@ -44,6 +44,7 @@ const ExpertiseSlide = () => {
               {/* <Button name="Read More" to="/expertise" /> */}
             </div>
           </div>
+          
         </div>
         {/* slide - 3 */}
         <div className="hidden md:grid md:col-span-4 lg:col-span-5 ">
