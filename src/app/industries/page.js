@@ -19,6 +19,7 @@ const Industries = () => {
 
 
     useEffect(() => {
+        window.scrollTo(0, 0);
         setIsActive(false)
     }, [])
     return (

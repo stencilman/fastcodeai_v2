@@ -64,7 +64,7 @@ const SpecializeIndustries = () => {
         </h3>
         <p className="text-[#9EB3CF] text-center font-bwmss01 text-[0.7em] leading-[1.4em] mt-[15px] md:mt-[20px] lg:mt-[30px] sm:text-[1.4em] w-[50%]">
           We serve businesses across a range of industries, delivering designs
-          that get results Of these, We specialize in the following industriss:
+          that get results Of these, We specialize in the following industries:
         </p>
       </div>
 

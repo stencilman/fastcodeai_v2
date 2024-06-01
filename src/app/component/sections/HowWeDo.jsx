@@ -25,7 +25,7 @@ const HowWeDo = ({ pb }) => {
   };
 
   useEffect(() => {
-    if (window.innerWidth <= 1024) {
+    if (window.innerWidth <= 980) {
       // Only for mobile screens
       accordionRefs.current.forEach((ref, index) => {
         ScrollTrigger.create({
