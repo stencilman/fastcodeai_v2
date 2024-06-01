@@ -18,12 +18,12 @@ const ExpertiseSlide = () => {
             alt=""
           />
         </div>
-        <div className="col-span-8 md:col-span-8 lg:col-span-6 flex gap-[10px] justify-between">
+        <div className="col-span-8 md:col-span-8 lg:col-span-6 flex gap-[10px] md:justify-between">
           {/* Computer Vision*/}
           <div
-            className={`w-[77px] h-[77px] rounded-full flex items-center justify-center bg-gradient-to-br from-[#13224F] to-[#13224F] border border-[#1A2758] `}
+            className={`w-[65px] h-[65px] md:w-[77px] md:h-[77px] rounded-full flex items-center justify-center bg-gradient-to-br from-[#13224F] to-[#13224F] border border-[#1A2758] `}
           >
-            <Image src="/experties/icon2.svg" width="44" height="44" alt="" />
+            <Image src="/experties/icon2.svg" className="w-[40px] md:w-[44px]" width="44" height="44" alt="" />
           </div>
           <div
             className="main-content w-[80%]"
@@ -55,12 +55,12 @@ const ExpertiseSlide = () => {
             alt=""
           />
         </div>
-        <div className="col-span-8 md:col-span-8 lg:col-span-6 flex gap-[10px] justify-between">
+        <div className="col-span-8 md:col-span-8 lg:col-span-6 flex gap-[10px] md:justify-between">
           {/* Machine Learning */}
           <div
-            className={`w-[77px] h-[77px] rounded-full flex items-center justify-center bg-gradient-to-br from-[#13224F] to-[#13224F] border border-[#1A2758] `}
+            className={`w-[65px] h-[65px] md:w-[77px] md:h-[77px] rounded-full flex items-center justify-center bg-gradient-to-br from-[#13224F] to-[#13224F] border border-[#1A2758] `}
           >
-            <Image src="/experties/icon3.svg" width="44" height="44" alt="" />
+            <Image src="/experties/icon3.svg" className="w-[40px] md:w-[44px]" width="44" height="44" alt="" />
           </div>
           <div
             className="main-content w-[80%]"
@@ -99,11 +99,11 @@ const ExpertiseSlide = () => {
           />
         </div>
           {/*Reinforcement Learning */}
-        <div className="col-span-8 md:col-span-8 lg:col-span-6 flex gap-[10px] justify-between">
+        <div className="col-span-8 md:col-span-8 lg:col-span-6 flex gap-[10px] md:justify-between">
           <div
-            className={`w-[77px] h-[77px] rounded-full flex items-center justify-center bg-gradient-to-br from-[#13224F] to-[#13224F] border border-[#1A2758] `}
+            className={`w-[65px] h-[65px] md:w-[77px] md:h-[77px] rounded-full flex items-center justify-center bg-gradient-to-br from-[#13224F] to-[#13224F] border border-[#1A2758] `}
           >
-            <Image src="/experties/icon1.svg" width="44" height="44" alt="" />
+            <Image src="/experties/icon1.svg" className="w-[40px] md:w-[44px]" width="44" height="44" alt="" />
           </div>
           <div
             className="main-content w-[80%]"
@@ -140,12 +140,12 @@ const ExpertiseSlide = () => {
             alt=""
           />
         </div>
-        <div className="col-span-8 md:col-span-8 lg:col-span-6 flex gap-[10px] justify-between">
+        <div className="col-span-8 md:col-span-8 lg:col-span-6 flex gap-[10px] md:justify-between">
           {/* Data Science */}
           <div
-            className={`w-[77px] h-[77px] rounded-full flex items-center justify-center bg-gradient-to-br from-[#13224F] to-[#13224F] border border-[#1A2758] `}
+            className={`w-[65px] h-[65px] md:w-[77px] md:h-[77px] rounded-full flex items-center justify-center bg-gradient-to-br from-[#13224F] to-[#13224F] border border-[#1A2758] `}
           >
-            <Image src="/experties/icon4.svg" width="44" height="44" alt="" />
+            <Image src="/experties/icon4.svg" className="w-[40px] md:w-[44px]" width="44" height="44" alt="" />
           </div>
           <div className="main-content w-[80%]" data-main="Data Science">
             <h1 className="w-[36vw] md:w-[40vw] lg:w-full  text-[42px] text-white tracking-wide font-aeonik">
