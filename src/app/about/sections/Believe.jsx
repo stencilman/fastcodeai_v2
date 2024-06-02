@@ -128,7 +128,7 @@ const Believe = () => {
               </AnimatePresence>
             </motion.div>
             {/* Number 4 */}
-            {/* <motion.div
+             <motion.div
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className={`w-[65px] h-[70px] md:w-[82px] md:h-[82px] border border-[#1A2758] rounded-[14px] flex items-center justify-center  relative ${
@@ -148,7 +148,7 @@ const Believe = () => {
                   ></motion.span>
                 )}
               </AnimatePresence>
-            </motion.div> */}
+            </motion.div> 
           </div>
           {/* Text Content And Animation */}
           <div className="flex  w-[90%] ">
