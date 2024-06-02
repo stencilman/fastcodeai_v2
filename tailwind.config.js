@@ -47,7 +47,7 @@ module.exports = {
         'whyaiHero': "url('/blogs/why-ai/hero/img1-2.png')",
 
         'arjun': "url('/members/arjun.png')",
-        'dhaval': "url('/members/dhaval.png')",
+        'dhaval': "url('/members/dhaval1.jpg')",
         'prabal': "url('/members/Prabal.webp')",
         'abdul': "url('/members/abdul1.png')",
         'parth': "url('/members/parth.png')",
@@ -58,7 +58,7 @@ module.exports = {
         'gautham': "url('/members/gautham.png')",
         'sughosh': "url('/members/sughosh.webp')",
         'tirth': "url('/members/tirth.webp')",
-        'rishabh': "url('/members/rishabh.jpeg')",
+        'rishabh': "url('/members/rishabh2.jpg')",
 
        
 

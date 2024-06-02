@@ -12,18 +12,18 @@ const Team = () => {
       "/team/abdul.png",
       // "/team/darshan.webp",
       // "/team/Sughosh.png",
-      "/team/Dhaval.webp",
+      "/team/Dhaval2.jpg",
       "/team/eshwar.webp",
       // "/team/gautam.webp",
       // "/team/Jadhav.webp",
-      "/team/rishabh.jpeg",
+      "/team/rishabh2.jpg",
 
       "/team/Nanda.webp",
       "/team/parth-bw.webp",
       "/team/Prabal.webp",
       "/team/Sanjay.png",
-      '/team/Shreyas.webp',
-      '/team/Tirth.webp'
+      "/team/Shreyas.webp",
+      "/team/Tirth.webp",
     ].map((src) => ({ src, visible: Math.random() < 0.7 })); // Randomly set some images as visible
     setImageInfo(fetchedImages);
     // console.log("imageInfo", imageInfo);
@@ -66,10 +66,11 @@ const Team = () => {
             Our Team
           </h1>
           <p className="text-[#9EB3CF] w-[80%] text-sm md:text-lg font-bwmss01 font-light mt-[15px] md:mt-[30px]">
-          Our team is composed of seasoned professionals, each with extensive research backgrounds. 
-We are proud authors of influential papers and active contributors to open-source initiatives. 
-Each member has been carefully selected from top universities, emphasizing our commitment
-to innovative problem solvers who excel in their fields.
+            Our team is composed of seasoned professionals, each with extensive
+            research backgrounds. We are proud authors of influential papers and
+            active contributors to open-source initiatives. Each member has been
+            carefully selected from top universities, emphasizing our commitment
+            to innovative problem solvers who excel in their fields.
           </p>
           <button className="rounded-[28px] mt-[20px] md:mt-[35px] lg:mt-[50px] flex items-center gap-[7px] bg-gradient-to-br from-[#2DC1C3] to-[#0268F2] text-white p-[15px] text-lg">
             Get Started
