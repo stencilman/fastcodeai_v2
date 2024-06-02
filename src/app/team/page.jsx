@@ -17,6 +17,7 @@ const Team = () => {
   return (
     <>
       <Hero/>
+      <div className="my-[50px]"></div>
       <Members/>
       <WhyChooseUs/>
       <TestimonialsN/>
