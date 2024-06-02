@@ -14,10 +14,10 @@ const Dedication = () => {
         {/* left */}
         <div className="lg:w-[30%] h-full flex flex-col sm:flex-row lg:flex-col gap-[35px] mt-[12vw]">
           <div className="w-full  ">
-            <h3 className="text-white font-aeonik tracking-wide sm:text-[2.5em] lg:text-[3.7em] leading-[1.1em] font-light">
+            <h3 className="text-white font-aeonik tracking-normal text-[8.3vw] md:text-[7vw] lg:text-[51px] leading-[10vw] md:leading-[8vw] lg:leading-[60px] ">
               Our dedication to pioneering technology
             </h3>
-            <p className="text-[#9EB3CF] font-bwmss01 text-[0.7em] leading-[1.4em] mt-[15px] md:mt-[20px] lg:mt-[35px] sm:text-[1.4em]">
+            <p className="text-[#9EB3CF] font-bwmss01 text-lg mt-[15px] md:mt-[20px] lg:mt-[35px] sm:text-[1.4em]">
               Explore our collection of innovative patents that reflect our
               dedication to pioneering technology and transformative solutions
             </p>
@@ -25,7 +25,7 @@ const Dedication = () => {
         </div>
         {/* right */}
         <div className="lg:w-[50%] h-full  flex gap-[5%] flex-wrap">
-          <div className="w-[100%] sm:w-[47.5%] h-[150px] sm:h-[331px]  rounded-[18px] mb-[30px] flex items-center sm:items-start sm:flex-col gap-[15px] p-[20px] ">
+          <div className="w-[100%] sm:w-[47.5%] h-auto sm:h-[331px]  rounded-[18px] mb-[30px] flex flex-wrap md:flex-nowrap md:items-center sm:items-start sm:flex-col gap-[15px] p-[20px] ">
             <div
               className="flex justify-center items-center border border-[#1A2758] rounded-full p-[10px] mb-[10px]"
               style={{
@@ -46,12 +46,12 @@ const Dedication = () => {
                 Futuristic Innovations
               </b>
 
-              <p className="text-[#9EB3CF] text-[19px] leading-[29px] mt-[24px] font-bwmss01">
+              <p className="text-[#9EB3CF] text-[19px] leading-[29px] mt-[8px] sm:mt-[24px] font-bwmss01">
                 Cutting-edge technologies and solutions
               </p>
             </div>
           </div>
-          <div className="w-[100%] sm:w-[47.5%] h-[150px] sm:h-[331px]  rounded-[18px] mb-[30px] flex items-center sm:items-start sm:flex-col gap-[15px] p-[20px] ">
+          <div className="w-[100%] sm:w-[47.5%] h-auto sm:h-[331px]  rounded-[18px] mb-[30px] flex flex-wrap md:flex-nowrap md:items-center sm:items-start sm:flex-col gap-[15px] p-[20px] ">
             <div
               className="flex justify-center items-center border border-[#1A2758] rounded-full p-[10px] mb-[10px]"
               style={{
@@ -72,12 +72,12 @@ const Dedication = () => {
               Industry Impact
               </b>
 
-              <p className="text-[#9EB3CF] text-[19px] leading-[29px] mt-[24px] font-bwmss01">
+              <p className="text-[#9EB3CF] text-[19px] leading-[29px] mt-[8px] sm:mt-[24px] font-bwmss01">
               Our patented inventions are making waves in the industry
               </p>
             </div>
           </div>
-          <div className="w-[100%] sm:w-[47.5%] h-[150px] sm:h-[331px]  rounded-[18px] mb-[30px] flex items-center sm:items-start sm:flex-col gap-[15px] p-[20px] ">
+          <div className="w-[100%] sm:w-[47.5%] h-auto sm:h-[331px]  rounded-[18px] mb-[30px] flex flex-wrap md:flex-nowrap md:items-center sm:items-start sm:flex-col gap-[15px] p-[20px] ">
             <div
               className="flex justify-center items-center border border-[#1A2758] rounded-full p-[10px] mb-[10px]"
               style={{
@@ -98,12 +98,12 @@ const Dedication = () => {
               Patent Diversity
               </b>
 
-              <p className="text-[#9EB3CF] text-[19px] leading-[29px] mt-[24px] font-bwmss01">
+              <p className="text-[#9EB3CF] text-[19px] leading-[29px] mt-[8px] sm:mt-[24px] font-bwmss01">
               Range of patents covering various technological domains
               </p>
             </div>
           </div>
-          <div className="w-[100%] sm:w-[47.5%] h-[150px] sm:h-[331px]  rounded-[18px] mb-[30px] flex items-center sm:items-start sm:flex-col gap-[15px] p-[20px] ">
+          <div className="w-[100%] sm:w-[47.5%] h-auto sm:h-[331px]  rounded-[18px] mb-[30px] flex flex-wrap md:flex-nowrap items-center sm:items-start sm:flex-col gap-[15px] p-[20px] ">
             <div
               className="flex justify-center items-center border border-[#1A2758] rounded-full p-[10px] mb-[10px]"
               style={{
@@ -124,7 +124,7 @@ const Dedication = () => {
               Global Recognition
               </b>
 
-              <p className="text-[#9EB3CF] text-[19px] leading-[29px] mt-[24px] font-bwmss01">
+              <p className="text-[#9EB3CF] text-[19px] leading-[29px] mt-[8px] sm:mt-[24px] font-bwmss01">
               Our patents have gained international recognition
               </p>
             </div>

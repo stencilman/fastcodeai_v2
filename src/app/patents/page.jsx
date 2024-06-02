@@ -16,6 +16,7 @@ const Patents = () => {
   const { setIsActive } = useGlobalContext();
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     setIsActive(false);
   }, []);
   return (
@@ -25,6 +26,7 @@ const Patents = () => {
       <Showcase />
       <HowWeDo />
       <Industries />
+      <div className="mt-[40px]"></div>
       <TechStack />
       <TestimonialsN />
       <Link href="/contact">

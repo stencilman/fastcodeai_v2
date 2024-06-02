@@ -40,7 +40,7 @@ const Hero = () => {
         </h1>
         <p
           ref={ref}
-          className={`text-[#9EB3CF] text-[1rem] leading-[1.2rem] w-[90%] md:w-[70%] lg:w-[50%] px-[55px] md:px-[0px] md:leading-[1.75rem] md:text-lg items-center font-bwmss01 ${
+          className={`text-[#9EB3CF] text-[1rem] leading-[1.2rem] w-[90%] md:w-[70%] lg:w-[50%] px-[25px] md:px-[0px] md:leading-[1.75rem] md:text-lg items-center font-bwmss01 ${
             isVisible ? "translate-y-0 opacity-100" : "translate-y-20 opacity-0"
           }  transition-transform delay-100 duration-1000 ease-out `}
         >

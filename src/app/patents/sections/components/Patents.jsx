@@ -60,7 +60,7 @@ const Patents = () => {
   return (
     <div className="h-auto w-full flex flex-col gap-[70px] items-center">
       {/* catagories */}
-      <div className="flex gap-[15px] md:gap-[35px] items-center justify-center flex-wrap">
+      {/* <div className="flex gap-[15px] md:gap-[35px] items-center justify-center flex-wrap">
         <div className="border border-[#082373] rounded-[30px] bg-[#00081F] px-[21px] py-[10px] text-lg font-bwmss01 text-white">
           Category 1
         </div>
@@ -76,7 +76,7 @@ const Patents = () => {
         <div className="border border-[#082373] rounded-[30px] bg-[#00081F] px-[21px] py-[10px] text-lg font-bwmss01 text-white">
           Category 5
         </div>
-      </div>
+      </div> */}
       <div className="w-full px-[20px] md:px-[50px] lg:px-[100px] flex flex-col gap-[60px]">
         {patentsList.map((e, i) => (
           <div
@@ -89,6 +89,7 @@ const Patents = () => {
           >
             <div className="w-full md:w-[40%]">
               <Image
+                className="rounded-[18px] w-full md:w-[370px]"
                 src={`/patents/patentPage/${e.img}`}
                 height="370"
                 width="370"
@@ -97,7 +98,7 @@ const Patents = () => {
             </div>
             <div className="w-full md:w-[55%] flex flex-col gap-[20px]">
               {/* head */}
-              <div className="flex gap-[20px]">
+              <div className="flex gap-[20px] flex-wrap">
                 <div className="border border-[#082373] rounded-[30px] bg-[#00081F] px-[21px] py-[10px] text-lg font-bwmss01 text-white">
                   {e.technology}
                 </div>
@@ -115,7 +116,7 @@ const Patents = () => {
                 </p>
               </div>
               {/* footer */}
-              <div className="flex gap-[20px] items-center">
+              <div className="flex gap-[20px] items-center flex-wrap ">
                 <Link href={e.linkTo}>
                   <div
                     className="border border-[#F3F3F3] p-[12px] cursor-pointer text-white rounded-full font-bwmss01 font-light min-h-[55px] pt-[17px] min-w-[120px] text-center"

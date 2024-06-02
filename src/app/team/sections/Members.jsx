@@ -24,7 +24,7 @@ const Members = () => {
     {
       name: "DR. ARJUN JAIN",
       role: "CEO & Chief Scientist",
-      position: "top-[0px]",
+      position: "top-[-48px] md:top-[0px]",
       bg: "bg-arjun",
       y: 0,
       cp: "SENIOR RESEARCH SCIENTIST",
@@ -36,7 +36,7 @@ const Members = () => {
       name: "ABDUL MUQTADIR",
       role: "Software Engineer",
       position:
-        "top-[300px] left-[5vw] sm:left-[27vw] lg:top-[300px] lg:left-[250px]",
+        "top-[300px] sm:left-[27vw] lg:top-[300px] lg:left-[250px]",
       bg: "bg-abdul",
       y: lg,
       cp: "Software Engineer",
@@ -46,7 +46,7 @@ const Members = () => {
     {
       name: "Dhaval Taunk",
       role: "Research Scientist",
-      position: "top-[320px] left-[2vw] sm:left-[49vw] lg:left-[47vw]",
+      position: "top-[320px] sm:left-[-137px] md:left-[16px] lg:left-[47vw]",
       bg: "bg-dhaval",
       y: lg,
       cp: "Research Scientist",
@@ -81,7 +81,8 @@ const Members = () => {
     {
       name: "Narendiran Chembu",
       role: "Senior ML engineer ",
-      position: "top-[50px] lg:top-[80px] md:left-[375px] lg:left-[450px]",
+      position:
+        "top-[50px] lg:top-[80px] sm:left-[-137px] md:left-[375px] lg:left-[450px]",
       bg: "bg-naren",
       y: 0,
       cp: "Senior Machine learning Enginner",
@@ -93,7 +94,7 @@ const Members = () => {
       name: "PRABAL PATEL",
       role: "Head of Sales and Business Development",
       position:
-        "top-[660px]  left-[5vw] sm:left-[38vw] md:left-[16vw] lg:left-[0px] lg:top-[850px]",
+        "top-[660px]  left-[5vw] sm:left-[122px] md:left-[16vw] lg:left-[0px] lg:top-[850px]",
       bg: "bg-prabal",
       y: lg,
       cp: "Head of Sales and Business Development",
@@ -137,7 +138,7 @@ const Members = () => {
     {
       name: "Shreyas Bhanderi",
       role: "Senior Research Scientist",
-      position: "top-[900px] sm:top-[950px] sm:left-[20vw] lg:top-[1000px]",
+      position: "top-[900px] sm:top-[970px] sm:left-[20vw] lg:top-[1000px]",
       bg: "bg-shreyas",
       y: lg,
       cp: "Senior Research Scientist",
@@ -169,13 +170,13 @@ const Members = () => {
     },
   ];
   return (
-    <div className="w-full overflow-hidden px-[20px] pl-[20px] md:pl-[50px] lg:pl-[100px] py-[50px] md:py-[100px] lg:py-[150px]  bg-[#00081F]">
+    <div className="w-full overflow-hidden px-[20px] pl-[20px] md:pl-[50px] lg:pl-[100px] py-[50px] md:py-[70px] lg:py-[150px]  bg-[#00081F] flex flex-col justify-center items-center md:block ">
       {memebersList.map(
         ({ bg, position, name, role, y, cp, desciption, linkedin }, i) => (
           <motion.div
             style={{ y }}
             key={i}
-            className={`w-[270px] md:w-[370px] lg:w-[400px]  h-[408px] md:h-[440px] lg:h-[598px] rounded-[20px]  relative ${position} cursor-pointer group  perspective`}
+            className={`w-[270px] md:w-[370px] lg:w-[400px]  h-[408px] md:h-[490px] lg:h-[598px] rounded-[20px]  relative ${position} cursor-pointer group  perspective`}
           >
             <div
               className={`relative preserve-3d group-hover:my-rotate-y-180 w-full h-full  duration-1000  `}
@@ -193,7 +194,7 @@ const Members = () => {
                 </div>
               </div>
               <div
-                className="absolute my-rotate-y-180 backface-hidden w-full  justify-around rounded-[20px] border border-[#1A2758] md:px-[30px] py-[10px] px-[10px] md:py-[20px] flex flex-col  gap-[40px] h-auto min-h-[408px] lg:min-h-[598px]"
+                className="absolute my-rotate-y-180 backface-hidden w-full  justify-around rounded-[20px] border border-[#1A2758] md:px-[30px] py-[10px] px-[10px] md:py-[20px] flex flex-col  gap-[40px] h-auto min-h-[408px] md:min-h-[490px] lg:min-h-[598px]"
                 style={{
                   background:
                     "transparent linear-gradient(360deg, #13224F 0%, #13224F 0%, #0C1C46 51%, #020F3B 100%) 0% 0% no-repeat padding-box",
