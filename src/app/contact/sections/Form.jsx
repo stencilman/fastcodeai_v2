@@ -71,7 +71,7 @@ const Form = () => {
   };
 
   return (
-    <div className="w-full h-[auto] flex items-center justify-center bg-[#00081F]">
+    <div className="w-full h-[auto] lg:pt-[120px] flex items-center justify-center bg-[#00081F]">
       <div
         className="w-[90%] h-[auto] md:h-[auto] lg:w-[80%] lg:h-[auto] flex flex-col lg:flex-row relative rounded-[18px]"
         style={{
@@ -79,7 +79,7 @@ const Form = () => {
             "transparent linear-gradient(125deg, #000E32 0%, #000929 100%) 0% 0% no-repeat padding-box",
         }}
       >
-        <div className="w-[100%] lg:w-[40%] h-[50%] md:h-[50%] lg:h-full pt-[100px] pb-[70px] justify-center flex items-start lg:items-center">
+        <div className="w-[100%] lg:w-[40%] h-[50%] md:h-[50%] lg:h-full pt-[50px] md:pt-[100px] pb-[70px] justify-center flex items-start lg:items-center">
           <div className="flex flex-col gap-[50px] p-[20px]">
             <div className="flex gap-[20px]">
               <div
@@ -154,7 +154,13 @@ const Form = () => {
             <div>
               <iframe
                 className="rounded-[20px] w-[100%] h-[222px] md:w-[100%] md:h-[222]"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3596.2804360631453!2d77.59854315160881!3d12.975756198586895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae173e2de8a801%3A0x1a89454e3024974b!2sBHIVE%20Premium%20Church%20Street!5e0!3m2!1sen!2sin!4v1716794194158!5m2!1sen!2sin" width="600" height="450" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3596.2804360631453!2d77.59854315160881!3d12.975756198586895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae173e2de8a801%3A0x1a89454e3024974b!2sBHIVE%20Premium%20Church%20Street!5e0!3m2!1sen!2sin!4v1716794194158!5m2!1sen!2sin"
+                width="600"
+                height="450"
+                style={{ border: 0 }}
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
               ></iframe>
             </div>
             <Link
@@ -176,7 +182,7 @@ const Form = () => {
           </div>
         </div>
         <div className="w-[100%] lg:w-[60%] h-[50%] md:h-[50%] lg:h-[auto] py-[50px] px-[20px] md:px-[50px] lg:px-[86px] right-0 bg-[#0E1E49] rounded-[20px] flex flex-col  justify-center gap-[20px] md:gap-[30px] lg:gap-[40px]">
-          <div className="flex items-center pl-[10vw] justify-center lg:justify-start lg:pl-0 gap-[7px]">
+          <div className="flex items-center pl-[10vw] sm:pl-0 justify-center lg:justify-start lg:pl-0 gap-[7px]">
             <p className=" w-[5px] h-[5px] rounded-full bg-white"></p>
             <p className="text-[#9EB3CF] text-lg font-bwmss01 ">
               {"Let's"} Kick Off A Dialogue.
@@ -296,7 +302,7 @@ const Form = () => {
                   </div>
                 </div>
               </div>
-              <div className="flex flex-col md:flex-row md:gap-[30px] gap-[50px] xl:gap-[80px] items-center mt-[25px]">
+              <div className="flex flex-col md:flex-row md:gap-[30px] gap-[10px] xl:gap-[80px] items-center mt-[25px]">
                 <div className="relative z-0 w-full mb-5 group">
                   <textarea
                     ref={messageRef}
@@ -314,6 +320,10 @@ const Form = () => {
                     Your Message
                   </label>
                 </div>
+                <div className="text-white text-base block md:hidden pb-[10px]">
+                  {message}
+                </div>
+
                 <button
                   type="submit"
                   className="text-white h-[63px] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm w-[63px] md:w-[76px] sm:w-auto px-5 py-2.5 text-center "
@@ -325,7 +335,9 @@ const Form = () => {
                   <Image src="/arrowRight.svg" width="32" height="32" alt="" />
                 </button>
               </div>
-              <div className="text-white text-base">{message}</div>
+              <div className="text-white text-base hidden md:block">
+                {message}
+              </div>
             </form>
           </div>
         </div>
