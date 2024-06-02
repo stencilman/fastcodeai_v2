@@ -11,10 +11,10 @@ const QualitieCulture = () => {
   ];
 
   return (
-    <div className="w-full pt-[75px] px-[20px] md:px-[50px] lg:px-[100px] bg-[#00081F] flex flex-col items-center justify-center relative gap-[120px] mb-[120px]">
-        {/* gradient */}
+    <div className="w-full pt-[75px] px-[20px] md:px-[50px] lg:px-[100px] bg-[#00081F] flex flex-col items-center justify-center relative overflow-x-hidden gap-[120px] mb-[120px]">
+      {/* gradient */}
       <div
-        className="absolute top-[-63px] w-[120%] h-[110px]"
+        className="absolute top-[-63px] w-[120%]  h-[110px]"
         style={{
           background: "#00081f 0% 0% no-repeat padding-box",
           opacity: " 1",
@@ -69,8 +69,8 @@ const QualitieCulture = () => {
 
       {/* Culture */}
       <h1 className="text-white lg:hidden text-[8vw] md:text-[7vw] lg:text-5xl font-aeonik tracking-normal  w-full">
-            Our Culture
-          </h1>
+        Our Culture
+      </h1>
       <div className="w-full flex flex-col-reverse lg:flex-row">
         <div className="w-full lg:w-[50%]">
           <h1 className="text-white hidden lg:block text-[8vw] md:text-[7vw] lg:text-5xl font-aeonik tracking-wide mb-[60px]">
@@ -80,7 +80,7 @@ const QualitieCulture = () => {
             <div className="flex gap-[25px]  pt-[5px] md:pt-0 items-start md:items-center">
               <div>
                 <Image
-                className="w-[200px] sm:w-[120px] md:w-[120px] lg:w-[200px]"
+                  className="w-[200px] sm:w-[120px] md:w-[120px] lg:w-[200px]"
                   src="/career/culture/icon1.svg"
                   height="93"
                   width="200"
@@ -101,7 +101,7 @@ const QualitieCulture = () => {
             <div className="flex gap-[25px]  pt-[5px] md:pt-0 items-start md:items-center">
               <div>
                 <Image
-                 className="w-[184px] sm:w-[112px] md:w-[110px] lg:w-[176px]"
+                  className="w-[184px] sm:w-[112px] md:w-[110px] lg:w-[176px]"
                   src="/career/culture/icon2.svg"
                   height="93"
                   width="200"
@@ -117,11 +117,11 @@ const QualitieCulture = () => {
                   opportunities to expand your skills and knowledge
                 </p>
               </div>
-            </div> 
+            </div>
             <div className="flex gap-[25px]  pt-[5px] md:pt-0 items-start md:items-center">
               <div>
                 <Image
-                 className="w-[260px] sm:w-[165px] md:w-[155px] lg:w-[252px]"
+                  className="w-[260px] sm:w-[165px] md:w-[155px] lg:w-[252px]"
                   src="/career/culture/icon3.svg"
                   height="93"
                   width="200"
@@ -130,10 +130,12 @@ const QualitieCulture = () => {
               </div>
               <div>
                 <h3 className="text-white text-2xl md:text-3xl font-aeonik tracking-wide">
-                Diverse and Inclusive
+                  Diverse and Inclusive
                 </h3>
                 <p className="text-[#9EB3CF] text-base mt-[5px] md:text-lg font-bwmss01">
-                Be part of a diverse and inclusive workplace that celebrates differences, encourages creativity and embraces the unique perspectives of all team members.
+                  Be part of a diverse and inclusive workplace that celebrates
+                  differences, encourages creativity and embraces the unique
+                  perspectives of all team members.
                 </p>
               </div>
             </div>
@@ -148,9 +150,9 @@ const QualitieCulture = () => {
           />
         </div>
       </div>
-       {/* gradient */}
-       <div
-        className="absolute bottom-[-153px] w-[120%] h-[110px]"
+      {/* gradient */}
+      <div
+        className="absolute bottom-[-153px] w-[100%] h-[110px]"
         style={{
           background: "#00081f 0% 0% no-repeat padding-box",
           opacity: " 1",

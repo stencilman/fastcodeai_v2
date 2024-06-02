@@ -12,6 +12,8 @@ const Contact = () => {
     const { setIsActive } = useGlobalContext();
 
     useEffect(() => {
+    window.scrollTo(0, 0);
+
         setIsActive(false)
     }, [])
     return (
