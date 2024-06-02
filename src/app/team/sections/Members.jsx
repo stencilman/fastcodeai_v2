@@ -22,135 +22,117 @@ const Members = () => {
 
   const memebersList = [
     {
+      position: "top-0 md:top-[-48px] z-[1] md:top-[0px]",
+      y: 0,
       name: "DR. ARJUN JAIN",
       role: "CEO & Chief Scientist",
-      position: "top-[-48px] md:top-[0px]",
       bg: "bg-arjun",
-      y: 0,
       cp: "SENIOR RESEARCH SCIENTIST",
       desciption:
         "B.Tech (CS) IIT Kanpur, Ex-Senior Software Engineer at Samsung R&D Fast Code AI was founded in 2020. Since then, we have been making significant strides in the field of AI and machine learning, particularly in the domain of computer vision. Our team of experts is dedicated to pushing the boundaries of what’s possible in this exciting field.",
       linkedin: "https://in.linkedin.com/in/arjunjain",
     },
     {
-      name: "ABDUL MUQTADIR",
-      role: "Software Engineer",
       position:
-        "top-[300px] sm:left-[27vw] lg:top-[300px] lg:left-[250px]",
-      bg: "bg-abdul",
-      y: lg,
-      cp: "Software Engineer",
-      desciption: "B.Tech JNTUH, Ex-Software Developer at Full Stack Academy",
-      linkedin: "https://www.linkedin.com/in/abdul-m-699ab9256/",
-    },
-    {
-      name: "Dhaval Taunk",
-      role: "Research Scientist",
-      position: "top-[320px] sm:left-[-137px] md:left-[16px] lg:left-[47vw]",
-      bg: "bg-dhaval",
-      y: lg,
-      cp: "Research Scientist",
-      desciption:
-        "MS (CS) IIIT Hyderabad, Ex-data scientist at Yes Bank and Jio Haptik Technologies",
-      linkedin: "https://www.linkedin.com/in/dhavaltaunk08/",
-    },
-    {
-      name: "Eshwar Ramesh",
-      role: "IOS Developer",
-      position:
-        "top-[0px] lg:top-[0px] md:left-[2vw] sm:left-[20vw] lg:left-[23vw]",
-      bg: "bg-eshwar",
-      y: 0,
-      cp: "Lead Mobile Engineer",
-      desciption:
-        "MBA Ex-IOS Lead developer at Simplilearn. Ex- Software engineer at Medlife, Hiver, ICT Health",
-      linkedin: "https://in.linkedin.com/in/eshwar-ramesh-831303ab",
-    },
-    {
+        "top-[0px] sm:top-[39px] sm:left-[27vw] md:top-[0px] md:left-[46vw]  lg:top-[-200px] lg:left-[403px]",
+      y: sm,
       name: "GAUTAM ADITHYA RAVI",
       role: "Head of Engineering",
-      position:
-        "top-[240px] left-[0px] sm:left-[3vw] md:left-[35vw] lg:top-[250px] lg:left-[5vw]",
       bg: "bg-gautham",
-      y: md,
       cp: "Computer Science Engineering & Research",
       desciption:
         "MSc (CS) Saarland University, Ex-researcher at MPI for informatics, Ex-analyst at Cognizant tech solutions",
       linkedin: "https://in.linkedin.com/in/gautham-adithya-ravi-8b803341",
     },
     {
+      position:
+        "top-[0px] sm:left-[-137px] md:left-[16px] lg:top-[-600px] lg:left-[800px]",
+      y: sm,
+      name: "PARTH BASOLE",
+      role: "Generalist Engineer",
+      bg: "bg-parth",
+      cp: "AI Tech Creator",
+      desciption: "B.Tech (IN) VIT Pune, Ex-Software Developer at InsaneAI",
+      linkedin: "https://in.linkedin.com/in/parth-basole-22844115a",
+    },
+    {
+      position:
+        "top-[0px] lg:top-[0px] md:left-[2vw] sm:left-[20vw] lg:top-[-582px] lg:left-[564px]",
+      y: 0,
+      name: "Shreyas Bhanderi",
+      role: "Senior Research Scientist",
+      bg: "bg-shreyas",
+      cp: "Senior Research Scientist",
+      desciption: "B.Tech (IT) DAIICT, Ex-Senior Software Enginner at Nagarro",
+      linkedin: "https://www.linkedin.com/in/shreyas-bhanderi/",
+    },
+    {
+      position:
+        "top-[240px] left-[0px] sm:left-[3vw] md:left-[35vw] lg:top-[-630px] lg:left-[136px]",
+      y: md,
       name: "Narendiran Chembu",
       role: "Senior ML engineer ",
-      position:
-        "top-[50px] lg:top-[80px] sm:left-[-137px] md:left-[375px] lg:left-[450px]",
       bg: "bg-naren",
-      y: 0,
       cp: "Senior Machine learning Enginner",
       desciption:
         "B.Tech IIT Madras, MS (Artificial Intelligence) University of Amsterdam. Ex-ML Enginner at minds.ai",
       linkedin: "https://www.linkedin.com/in/cgnarendiran/",
     },
+
     {
+      position:
+        "top-[50px] lg:top-[80px] sm:left-[-137px] md:left-[375px] lg:top-[-430px] lg:left-[420px]",
+      y: 0,
+      name: "Rishabh Gupta",
+      role: "Machine Learning Engineer",
+      bg: "bg-rishabh",
+      cp: "Machine Learning Engineer",
+      desciption: "",
+      linkedin: "https://www.linkedin.com/in/rishabh-gupta-a5886712a/",
+    },
+    {
+      position:
+        "top-[660px]  sm:left-[122px] md:left-[16vw] lg:left-[0px] lg:top-[-700px]",
+      y: lg,
+      name: "ABDUL MUQTADIR",
+      role: "Software Engineer",
+      bg: "bg-abdul",
+      cp: "Software Engineer",
+      desciption: "B.Tech JNTUH, Ex-Software Developer at Full Stack Academy",
+      linkedin: "https://www.linkedin.com/in/abdul-m-699ab9256/",
+    },
+    {
+      position:
+        "top-[320px] left-[0px] sm:left-[] lg:top-[-1850px]  lg:left-[796px]",
+      y: md,
+      name: "Tirth Pandit",
+      role: "Senior Research Scientist",
+      bg: "bg-tirth",
+      cp: "Senior Research Scientist",
+      desciption:
+        "M.Tech (CS) IIIT Hyderabad, Ex-researcher at Qualcomm R&D labs",
+      linkedin: "https://www.linkedin.com/in/tirth-pandit/",
+    },
+
+    {
+      y: lg,
+      position: "top-[830px]  sm:left-[40vw] lg:top-[-600px] lg:left-[673px]",
       name: "PRABAL PATEL",
       role: "Head of Sales and Business Development",
-      position:
-        "top-[660px]   sm:left-[122px] md:left-[16vw] lg:left-[0px] lg:top-[850px]",
       bg: "bg-prabal",
-      y: lg,
       cp: "Head of Sales and Business Development",
       desciption:
         "MBA from Indiana University. 15 years of techology services experience, delivering managed teams and projects for large clients in US and India.",
       linkedin: "https://in.linkedin.com/",
     },
     {
-      name: "PARTH BASOLE",
-      role: "Generalist Engineer",
       position:
-        "top-[320px] left-[0px] sm:left-[] lg:top-[380px]  lg:left-[35vw]",
-      bg: "bg-parth",
-      y: md,
-      cp: "AI Tech Creator",
-      desciption: "B.Tech (IN) VIT Pune, Ex-Software Developer at InsaneAI",
-      linkedin: "https://in.linkedin.com/in/parth-basole-22844115a",
-    },
-    {
-      name: "Rishabh Gupta",
-      role: "Machine Learning Engineer",
-      position: "top-[830px]  sm:left-[40vw] lg:top-[950px] lg:left[50vw]",
-      bg: "bg-rishabh",
+        "top-[870px] left-[0px] sm:top-[950px] lg:top-[-1000px] lg:left-[200px]",
       y: lg,
-      cp: "Machine Learning Engineer",
-      desciption: "",
-      linkedin: "https://www.linkedin.com/in/rishabh-gupta-a5886712a/",
-    },
 
-    {
-      name: "SANJAY SURIYAKUMAR",
-      role: "Research Scientist",
-      position: "top-[870px] left-[0px] sm:top-[950px]",
-      bg: "bg-sanjay",
-      y: lg,
-      cp: "Research Scientist",
-      desciption:
-        "BS (Research) at IISc Bangalore, Ex-undergraduate researcher at Helmholtz Labs, Germany",
-      linkedin: "https://www.linkedin.com/in/sanjay-suriyakumar-a51aa821b/",
-    },
-    {
-      name: "Shreyas Bhanderi",
-      role: "Senior Research Scientist",
-      position: "top-[900px] sm:top-[970px] sm:left-[20vw] lg:top-[1000px]",
-      bg: "bg-shreyas",
-      y: lg,
-      cp: "Senior Research Scientist",
-      desciption: "B.Tech (IT) DAIICT, Ex-Senior Software Enginner at Nagarro",
-      linkedin: "https://www.linkedin.com/in/shreyas-bhanderi/",
-    },
-    {
       name: "Sughosh Patil",
       role: "Senior Research Scientist",
-      position: "top-[950px] sm:top-[1050px] sm:left-[43vw] lg:top-[1100px]",
       bg: "bg-sughosh",
-      y: lg,
       cp: "Senior Research Scientist",
       desciption:
         "B.Tech (CS) IIT Kanpur, Ex-Senior Software Enginner at Samsung R&D",
@@ -158,25 +140,49 @@ const Members = () => {
     },
 
     {
-      name: "Tirth Pandit",
-      role: "Senior Research Scientist",
-      position: "top-[1000px] left-[0px] lg:top-[1200px]",
-      bg: "bg-tirth",
+      position:
+        "top-[900px] sm:top-[970px] sm:left-[20vw] lg:top-[-784px] lg:left-[830px]",
       y: lg,
-      cp: "Senior Research Scientist",
+      name: "Eshwar Ramesh",
+      role: "IOS Developer",
+      bg: "bg-eshwar",
+      cp: "Lead Mobile Engineer",
       desciption:
-        "M.Tech (CS) IIIT Hyderabad, Ex-researcher at Qualcomm R&D labs",
-      linkedin: "https://www.linkedin.com/in/tirth-pandit/",
+        "MBA Ex-IOS Lead developer at Simplilearn. Ex- Software engineer at Medlife, Hiver, ICT Health",
+      linkedin: "https://in.linkedin.com/in/eshwar-ramesh-831303ab",
+    },
+    {
+      position:
+        "top-[950px] sm:top-[1050px] sm:left-[43vw] lg:top-[-1208px] lg:left-[421px]",
+      y: lg,
+      name: "SANJAY SURIYAKUMAR",
+      role: "Research Scientist",
+      bg: "bg-sanjay",
+      cp: "Research Scientist",
+      desciption:
+        "BS (Research) at IISc Bangalore, Ex-undergraduate researcher at Helmholtz Labs, Germany",
+      linkedin: "https://www.linkedin.com/in/sanjay-suriyakumar-a51aa821b/",
+    },
+    {
+      position: "top-[1000px] left-[0px] lg:top-[-1500px] lg:left-[0px]",
+      y: lg,
+      name: "Dhaval Taunk",
+      role: "Research Scientist",
+      bg: "bg-dhaval",
+      cp: "Research Scientist",
+      desciption:
+        "MS (CS) IIIT Hyderabad, Ex-data scientist at Yes Bank and Jio Haptik Technologies",
+      linkedin: "https://www.linkedin.com/in/dhavaltaunk08/",
     },
   ];
   return (
-    <div className="w-full overflow-hidden px-[20px] pl-[20px] md:pl-[50px] lg:pl-[100px] py-[50px] md:py-[70px] lg:py-[150px]  bg-[#00081F] flex flex-col justify-center items-center md:block ">
+    <div className="w-full overflow-hidden px-[20px] pl-[20px] md:pl-[50px] lg:pl-[100px] py-[50px] md:py-[70px] lg:py-[150px]  bg-[#00081F] flex flex-col justify-center gap-[100px] items-center md:block relative lg:h-[5280px]">
       {memebersList.map(
         ({ bg, position, name, role, y, cp, desciption, linkedin }, i) => (
           <motion.div
             style={{ y }}
             key={i}
-            className={`w-[270px] md:w-[370px] lg:w-[400px]  h-[408px] md:h-[490px] lg:h-[598px] rounded-[20px]  relative ${position} cursor-pointer group  perspective`}
+            className={`w-[270px] md:w-[370px] lg:w-[360px]  h-[408px] md:h-[490px] lg:h-[598px] rounded-[20px]  relative ${position} cursor-pointer group  perspective`}
           >
             <div
               className={`relative preserve-3d group-hover:my-rotate-y-180 w-full h-full  duration-1000  `}
