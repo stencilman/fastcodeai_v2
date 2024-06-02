@@ -159,13 +159,10 @@ const Believe = () => {
                 data-main="Handpicked Experts"
               >
                 <h1 className="font-aeonik text-[8vw] lg:text-[3.5vw] text-white leading-[8vw] md:leading-[4vw] tracking-normal font-thin">
-                  Handpicked Experts
+                Innovation
                 </h1>
                 <p className="text-[#9EB3CF] font-bwmss01 text-base  mt-[15px]">
-                  Our team comprises top-tier talent, meticulously selected from
-                  the premier academic institutions in India. This ensures
-                  access to advanced knowledge and cutting-edge technological
-                  skills, accelerating innovation for your organization.
+                We seek original approaches for achieving our goals, taking advantage of creative communication for our outreach. By embracing new ideas and technologies, we continuously strive to push the boundaries of {"what's"} possible in the realm of AI and software solutions.
                 </p>
               </div>
 
@@ -175,13 +172,10 @@ const Believe = () => {
                 data-main="Our Process & Approach"
               >
                 <h1 className="font-aeonik text-[8vw] lg:text-[3.5vw] text-white leading-[8vw] md:leading-[4vw] tracking-normal font-thin">
-                  Our Process & Approach
+                Excellence
                 </h1>
                 <p className="text-[#9EB3CF] font-bwmss01 text-base  mt-[15px]">
-                  We offer flexible engagement models tailored to meet each{" "}
-                  {"client's"} specific needs. Whether {"it's"} for Web, Mobile,
-                  IoT, or Edge devices, our approach guarantees seamless
-                  execution from conception through to deployment.
+                Our commitment to excellence drives us to deliver the highest quality products and services. We ensure that every project we undertake meets the highest standards, from meticulous planning and development to rigorous testing and deployment.
                 </p>
               </div>
 
@@ -191,17 +185,14 @@ const Believe = () => {
                 data-main="Strong R&D Expertise"
               >
                 <h1 className="font-aeonik text-[8vw] lg:text-[3.5vw] text-white leading-[8vw] md:leading-[4vw] tracking-normal font-thin">
-                  Strong R&D Expertise
+                Collaboration
                 </h1>
                 <p className="text-[#9EB3CF] font-bwmss01 text-base  mt-[15px]">
-                  With over ten years of pioneering AI innovations and multiple
-                  patents, our deep research and development capabilities
-                  highlight our expertise. This proficiency enables us to tackle
-                  complex challenges and deliver superior results.
+                We believe that the best solutions come from working together. By fostering a collaborative environment, we harness the collective expertise and creativity of our team, partners, and clients, ensuring that every voice is heard and valued.
                 </p>
               </div>
 
-              {/* <div
+               <div
                 className="h-[auto] md:h-[300px] w-[98%] sm:w-[80%] pl-[13px] sm:pl-[30px] md:pr-[20px] flex flex-col justify-center"
                 ref={mainRefs["Integrity"]}
                 data-main="Integrity"
@@ -216,7 +207,7 @@ const Believe = () => {
                   us to deliver on our promises, and we are committed to
                   upholding that trust in every aspect of our work.
                 </p>
-              </div> */}
+              </div> 
             </div>
             {/* Scroll */}
             <div className="pb-[20px] sticky top-[120px] h-fit w-[20%] md:w-[10%] flex flex-col justify-center">
