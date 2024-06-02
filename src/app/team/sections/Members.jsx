@@ -55,7 +55,7 @@ const Members = () => {
       linkedin: "https://www.linkedin.com/in/dhavaltaunk08/",
     },
     {
-      name: "Easwar",
+      name: "Eshwar Ramesh",
       role: "IOS Developer",
       position:
         "top-[0px] lg:top-[0px] md:left-[2vw] sm:left-[20vw] lg:left-[23vw]",
