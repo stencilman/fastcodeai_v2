@@ -94,7 +94,7 @@ const Members = () => {
       name: "PRABAL PATEL",
       role: "Head of Sales and Business Development",
       position:
-        "top-[660px]  left-[5vw] sm:left-[122px] md:left-[16vw] lg:left-[0px] lg:top-[850px]",
+        "top-[660px]   sm:left-[122px] md:left-[16vw] lg:left-[0px] lg:top-[850px]",
       bg: "bg-prabal",
       y: lg,
       cp: "Head of Sales and Business Development",
