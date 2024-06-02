@@ -26,12 +26,12 @@ const ScreenAbout = () => {
           About FastCodeAI
         </h1>
         <p className="text-[#9EB3CF] text-base sm:text-lg w-[100%] lg:w-[80%] px-[10vw] lg:px-0 pt-[28vw] sm:pt-[25vw] md:pt-[8vw] lg:pt-[20px] font-bwmss01">
-          As a leading AI adoption partner, we empower industry leaders to
-          harness cutting-edge intelligence, scale and execute applications, and
-          automate operations. We enhance safety, streamline experiences, and
-          provide deep insights into machinery and manufacturing through
-          advanced automation and data exchange. Our commitment to Excellence,
-          Innovation, and Integrity drives every solution.
+        FastCode AI stands at the forefront of AI adoption, equipping industry leaders with 
+the tools to implement advanced intelligence, scale solutions, and automate processes 
+effectively. We are committed to enhancing operational safety, refining user interactions, and
+unlocking deep insights into machinery and production processes through state-of-the-art 
+automation and data analytics. Guided by our core values of Excellence, Innovation, and 
+Integrity, we ensure every solution we deliver upholds the highest standards.
         </p>
       </div>
     </div>

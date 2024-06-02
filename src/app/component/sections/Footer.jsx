@@ -40,7 +40,7 @@ const Footer = () => {
   return (
     <>
       <div className="w-full relative h-[10vh] md:h-[20vh] bg-[#00081F]"></div>
-      <div className="w-full relative h-[100vh] lg:h-[100vh]  ">
+      <div className="w-full relative h-[90vh] lg:h-[100vh]  ">
         <div
           className="relative z-[5] w-full h-[70vh] border-t border-[#1A2758]"
           style={{
@@ -141,24 +141,24 @@ const Footer = () => {
           // animate={active ? "open" : "close"}
           onMouseEnter={() => setActive(true)}
           onMouseLeave={() => setActive(false)}
-          className="sticky bottom-0 left-0 z-[3] bg-[#00081F] h-[30vh] md:h-[23vh] lg:h-[30vh] w-full flex cursor-pointer"
+          className="sticky bottom-0 left-0 z-[3] bg-[#00081F] h-[20vh] md:h-[23vh] lg:h-[30vh] w-full flex cursor-pointer"
         >
-          <div className="flex items-center w-full relative overflow-hidden whitespace-nowrap">
+          <div className="flex items-center w-full relative overflow-hidden whitespace-nowrap gap-[35px]">
             <motion.h1
               initial={{ x: "0" }}
               animate={{ x: "-100%" }}
               transition={{ repeat: Infinity, ease: "linear", duration: 8 }}
-              className="text-[10vw] leading-none font-medium tracking-tight text-[#37446A]  w-full pr-[25px]"
+              className="text-[9.5vw] leading-none font-medium tracking-tight text-[#37446A]  w-full "
             >
-              {"Let's Discuss Today!"}
+              {"Get Free Consult Now!"}
             </motion.h1>
             <motion.h1
               initial={{ x: "0" }}
               animate={{ x: "-100%" }}
               transition={{ repeat: Infinity, ease: "linear", duration: 8 }}
-              className="text-[10vw] leading-none font-medium tracking-tight text-[#37446A]  w-full pr-[25px]"
+              className="text-[9.5vw] leading-none font-medium tracking-tight text-[#37446A]  w-full "
             >
-              {"Let's Discuss Today!"}
+              {"Get Free Consult Now!"}
             </motion.h1>
           </div>
           {/* custom box-cursor */}

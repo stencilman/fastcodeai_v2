@@ -100,9 +100,7 @@ const Clients = () => {
                 Our Clients
               </h1>
               <p className="text-[#9EB3CF] pr-[20px] text-base md:text-lg font-light mt-[4vw] lg:mt-[30px] font-bwmss01">
-                {"We've "}worked with a diverse clientele - from Forbes 500
-                Enterprise firms to Sillicon Valley startups, across various
-                industries.
+              We have partnered with a wide range of clients, from Forbes 500 enterprises to Silicon Valley startups, spanning multiple industries.
               </p>
             </div>
           </div>

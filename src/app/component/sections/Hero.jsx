@@ -44,8 +44,8 @@ const Hero = () => {
             isVisible ? "translate-y-0 opacity-100" : "translate-y-20 opacity-0"
           }  transition-transform delay-100 duration-1000 ease-out`}
         >
-          Expertly engineered tailored AI solutions—precision, reliability,
-          <br /> and unrelenting excellence
+          Expertly crafted AI solutions—designed for precision, built for reliability, 
+          <br /> and committed to excellence.
           {/* <br /> to harness cutting edge intelligence */}
         </p>
       </div>

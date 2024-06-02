@@ -7,7 +7,7 @@ const slides = [
   {
     title: "Mercedes Benz",
     content:
-      "Enhance interaction between driver and car by detecting driver hand gesture for superior level driver experience with Mercedes Benz User Experience - MBUX System..",
+      "Enhanced driver-car interaction through the detection of hand gestures, elevating the driving experience with the Mercedes Benz User Experience (MBUX) System.",
     image: "/our-work/mercedes.webp",
     url:"/portfolio/mbux"
   },
@@ -21,14 +21,14 @@ const slides = [
   {
     title: "Bosch",
     content:
-      "Accurate, low footprint detection with vulnerable roadside users (VRUs) and road signs covered in the Bosch-Daimler autonomous driving initiative.",
+      "Precision detection with minimal footprint for vulnerable roadside users (VRUs) and road signs, as part of the Bosch-Daimler autonomous driving initiative.",
     image: "/our-work/bosch.webp",
     url:"/portfolio/bosch"
   },
   {
     title: "Fitness Pose Estimation",
     content:
-      "Empowering exercise perfection with AI-driven real-time pose estimation, providing interactive visual feedback for correct posture and effective workouts.",
+      "Empowering exercise perfection with AI-driven real-time pose estimation, delivering interactive visual feedback to ensure correct posture and optimize exercise routines.",
     image: "/our-work/fitness.webp",
     url:"/portfolio/fitness-pose-estimation"
   },
@@ -64,7 +64,7 @@ const slides = [
   {
     title: "Loneliness Assistant",
     content:
-      "Personalised assistant designed to empthatize with humans and serves as a close companion by engaging in an emotionally deep manner",
+      "Personalised assistant designed to empathize with humans and serves as a close companion by engaging in emotionally profound interactions",
     image: "/our-work/lonely_llm.webp",
     url:"/portfolio/loneliness-assistant"
   },

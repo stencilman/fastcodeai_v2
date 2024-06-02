@@ -197,10 +197,9 @@ const Experties = () => {
                   Computer Vision
                 </h1>
                 <p className="text-[#9EB3CF] text-base md:text-lg  font-light pt-[15px] md:pt-[25px] lg:pt-[15px] font-bwmss01">
-                  We develop custom software solutions using computer vision and
-                  deep learning to analyze images, videos, LiDAR, and live
-                  streams, helping businesses identify and track objects for
-                  enhanced decision-making.
+                We craft bespoke software that harnesses computer vision and deep learning to 
+process images, videos, LiDAR, and live streams, enabling businesses to identify and monitor
+objects for improved decision-making.
                 </p>
               </div>
               <div>
@@ -227,10 +226,9 @@ const Experties = () => {
                   Machine Learning
                 </h1>
                 <p className="text-[#9EB3CF] text-base md:text-lg font-light pt-[15px] md:pt-[25px] lg:pt-[15px] font-bwmss01">
-                  Design and implement innovative ML solutions rapidly — from
-                  foundational infrastructure to customer products. Our expert
-                  engineers will partner with you to advance innovation
-                  effectively within your company.
+                We swiftly design and deploy innovative ML solutions, from infrastructure to 
+consumer products. Our expert engineers partner with you to accelerate innovation and 
+technological progress.
                 </p>
               </div>
               <div>
@@ -256,10 +254,9 @@ const Experties = () => {
                   Reinforcement Learning
                 </h1>
                 <p className="text-[#9EB3CF] text-base md:text-lg font-light pt-[15px] md:pt-[25px] lg:pt-[15px] font-bwmss01 ">
-                  Develop and implement bespoke AI solutions to rapidly advance
-                  your organizational goals. We collaborate with you to identify
-                  the optimal artificial intelligence strategies, tools and
-                  technologies.
+                We rapidly create and implement tailored AI solutions that propel your organizational 
+goals. Our team collaborates with you to pinpoint and apply the most effective AI strategies 
+and technologies.
                 </p>
               </div>
               <div>
@@ -285,10 +282,8 @@ const Experties = () => {
                   Data Science
                 </h1>
                 <p className="text-[#9EB3CF] text-base md:text-lg font-light pt-[15px] md:pt-[25px] lg:pt-[15px] font-bwmss01">
-                  Our full-stack data scientists excel in solving intricate data
-                  challenges, regardless of data volume or structure, enabling
-                  your business to significantly improve efficiency and increase
-                  profitability rapidly.
+                Our expert data scientists tackle complex data challenges across any volume or 
+structure, empowering your business to enhance efficiency and boost profitability quickly.
                 </p>
               </div>
               <div>
