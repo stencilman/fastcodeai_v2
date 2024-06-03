@@ -278,7 +278,7 @@ console.log("topicHighlight",topicHighlight)
                   <p
                     className={`pl-[20px] pb-[4px] pr-[15px] ml-[2px] mb-[4px] cursor-pointer transition-all duration-300 ease-in-out hover:text-[#3784e9]  ${
                       topicHighlight === "topic1"
-                        ? "border-l-[#036BF0] text-[#036BF0] border-l-[3px]"
+                        ? "border-l-[#036BF0] lg:text-[#036BF0] border-l-[3px]"
                         : "text-[#9EB3CF]"
                     }  `}
                   >
@@ -294,7 +294,7 @@ console.log("topicHighlight",topicHighlight)
                   <p
                     className={`pl-[20px] pb-[4px] pr-[15px] ml-[2px] mb-[4px] cursor-pointer transition-all duration-300 ease-in-out hover:text-[#3784e9]  ${
                       topicHighlight === "topic2"
-                        ? "border-l-[#036BF0] text-[#036BF0] border-l-[3px]"
+                        ? "border-l-[#036BF0] lg:text-[#036BF0] border-l-[3px]"
                         : "text-[#9EB3CF]"
                     }  `}
                   >
@@ -310,7 +310,7 @@ console.log("topicHighlight",topicHighlight)
                   <p
                     className={`pl-[20px] pb-[4px] pr-[15px] ml-[2px] mb-[4px] cursor-pointer transition-all duration-300 ease-in-out hover:text-[#3784e9]  ${
                       topicHighlight === "topic3"
-                        ? "border-l-[#036BF0] text-[#036BF0] border-l-[3px]"
+                        ? "border-l-[#036BF0] lg:text-[#036BF0] border-l-[3px]"
                         : "text-[#9EB3CF]"
                     }  `}
                   >
@@ -324,7 +324,7 @@ console.log("topicHighlight",topicHighlight)
                   }}
                 >
                   <p
-                    className={`pl-[20px] pb-[4px] pr-[15px] ml-[2px] mb-[4px] cursor-pointer transition-all duration-300 ease-in-out hover:text-[#3784e9]  ${
+                    className={`pl-[20px] pb-[4px] pr-[15px] ml-[2px] mb-[4px] cursor-pointer transition-all duration-300 ease-in-out lg:hover:text-[#3784e9]  ${
                       topicHighlight === "topic4"
                         ? "border-l-[#036BF0] text-[#036BF0] border-l-[3px]"
                         : "text-[#9EB3CF]"
