@@ -33,7 +33,7 @@ const SocialShare = () => {
       <p className="text-[#9EB3CF] font-aeonik text-lg">Share</p>
       <Image
         onClick={() => handleShare("instagram")}
-        className="cursor-pointer"
+        className="cursor-pointer hover:scale-[1.2] transition-all duration-300 ease-in-out"
         src="/blogs/social-icons/insta.svg"
         width="30"
         height="30"
@@ -41,7 +41,7 @@ const SocialShare = () => {
       />
       <Image
         onClick={() => handleShare("facebook")}
-        className="cursor-pointer"
+        className="cursor-pointer hover:scale-[1.2] transition-all duration-300 ease-in-out"
         src="/blogs/social-icons/facebook.svg"
         width="30"
         height="30"
@@ -49,7 +49,7 @@ const SocialShare = () => {
       />
       <Image
         onClick={() => handleShare("twitter")}
-        className="cursor-pointer"
+        className="cursor-pointer hover:scale-[1.2] transition-all duration-300 ease-in-out"
         src="/blogs/social-icons/x.svg"
         width="30"
         height="30"
