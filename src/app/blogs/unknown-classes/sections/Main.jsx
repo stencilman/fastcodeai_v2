@@ -1,11 +1,14 @@
 "use client";
-import React from "react";
+import React, { useEffect, useRef,useState } from "react";
 import SocialShare from "../../components/SocialShare";
 import Image from "next/image";
 import Link from "next/link";
 import Button from "@/app/component/Button";
 
 const Main = () => {
+  const [topicHighlight, setTopicHighlight] = useState("topic1");
+  const topicRefs = useRef([null, null, null]);
+
   const scrollToTopic = (id) => {
     const element = document.getElementById(id);
     if (element) {
@@ -18,13 +21,35 @@ const Main = () => {
     }
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const offset = window.scrollY + window.innerHeight / 2;
+      console.log("topicRefs",topicRefs.current)
+      topicRefs.current.forEach((ref, index) => {
+        if (ref?.offsetTop <= offset && ref.offsetTop + ref.offsetHeight > offset) {
+          console.log("topicName",ref.id)
+          setTopicHighlight(ref.id);
+        }
+      });
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    handleScroll(); // Call initially to set the active topic
+
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
   return (
     <div className="w-full h-auto pt-[100px] pb-[50px] px-[35px] md:px-[45px] lg:px-[80px] flex justify-center flex-col ">
       <div>
         <div className="flex flex-col-reverse md:flex-row gap-[50px] justify-center">
           <div className="flex flex-col md:flex-row gap-[50px] ">
             <SocialShare />
+            {/* Main */}
             <div className="md:w-[621%] md:max-w-[822px] flex flex-col gap-[30px] ">
+             
+              {/* content */}
+              {/* topic-1 */}
+              <div id="topic1" ref={(el) => (topicRefs.current[0] = el)} className="flex flex-col gap-[20px]">
               <div className="p-[40px] bg-white rounded-[20px] shadow-[0px_3px_6px_#00000029]">
                 <Image
                   src="/blogs/unknown/main/known-unknown.webp"
@@ -33,9 +58,6 @@ const Main = () => {
                   alt=""
                 />
               </div>
-              {/* content */}
-              {/* topic-1 */}
-              <div id="topic1" className="flex flex-col gap-[20px]">
                 <h4 className="text-white text-2xl font-aeonik tracking-wide">
                   Problem
                 </h4>
@@ -93,7 +115,7 @@ const Main = () => {
                 </p>
               </div>
               {/* topic-2 */}
-              <div id="topic2" className="flex flex-col gap-[20px]">
+              <div id="topic2" ref={(el) => (topicRefs.current[1] = el)} className="flex flex-col gap-[20px]">
                 <h4 className="text-white text-2xl font-aeonik tracking-wide">
                   Solution
                 </h4>
@@ -102,35 +124,64 @@ const Main = () => {
                   prevent false positives are by:
                 </p>
                 <p className="text-[#9EB3CF] text-lg font-bwmss01">
-                  1. thresholding softmax, or<br/> 2. using an additional background,
-                  garbage or nota class.
+                  1. thresholding softmax, or
+                  <br /> 2. using an additional background, garbage or nota
+                  class.
                 </p>
                 <p className="text-[#9EB3CF] text-lg font-bwmss01">
-                However, they still have problems as shown in the plots (a) and (b) above. Dhamija et al. in the paper <a href="https://arxiv.org/pdf/1811.04110v2.pdf" target="_blank" className="underline text-white italic">Reducing Network Agnostophobia</a> from NeurIPS 2018 present a simple yet effective approach which leads to a better solution to this unknown class problem and the results can be seen in the plot (c) above. They achieve this using the Objectosphere loss.
+                  However, they still have problems as shown in the plots (a)
+                  and (b) above. Dhamija et al. in the paper{" "}
+                  <a
+                    href="https://arxiv.org/pdf/1811.04110v2.pdf"
+                    target="_blank"
+                    className="underline text-white italic"
+                  >
+                    Reducing Network Agnostophobia
+                  </a>{" "}
+                  from NeurIPS 2018 present a simple yet effective approach
+                  which leads to a better solution to this unknown class problem
+                  and the results can be seen in the plot (c) above. They
+                  achieve this using the Objectosphere loss.
                 </p>
                 <b className="text-[#9EB3CF] text-lg font-bwmss01">
-                In simple words, all they say is: do no use the additional background, garbage or nota class. Instead, force the unknown classes to output a uniform distribution. And, also force the magnitude of activations for known classes to be at least a margin m and that of unknown classes to be zero. Thats it!
+                  In simple words, all they say is: do no use the additional
+                  background, garbage or nota class. Instead, force the unknown
+                  classes to output a uniform distribution. And, also force the
+                  magnitude of activations for known classes to be at least a
+                  margin m and that of unknown classes to be zero. Thats it!
                 </b>
                 <p className="text-[#9EB3CF] text-lg font-bwmss01">
-                To understand it more formally, please check the equations (1) and (2) from their <a href="https://arxiv.org/pdf/1811.04110v2.pdf"  target="_blank" className="underline text-white italic"></a> paper.
+                  To understand it more formally, please check the equations (1)
+                  and (2) from their{" "}
+                  <a
+                    href="https://arxiv.org/pdf/1811.04110v2.pdf"
+                    target="_blank"
+                    className="underline text-white italic"
+                  ></a>{" "}
+                  paper.
                 </p>
-
-                
               </div>
 
               {/* end topic-2 */}
               {/* topic-3 */}
 
-              <div id="topic3" className="flex flex-col gap-[20px]">
+              <div id="topic3" ref={(el) => (topicRefs.current[3] = el)} className="flex flex-col gap-[20px]">
                 <h4 className="text-white text-2xl font-aeonik tracking-wide">
-                Limitations
+                  Limitations
                 </h4>
                 <p className="text-[#9EB3CF] text-lg font-bwmss01">
-                There are two kinds of unknowns - the known unknown and the unknown unknown. This method only works best for the known unknowns. E.g. in one experiment, for a MNIST classifier, they find that training with CIFAR samples as the unknowns does not provide robustness to unknowns from the samples of NIST Letters dataset. Whereas, training with NIST Letters does provide robustness against CIFAR images. This is because CIFAR images are distinctly different from the MNIST digits where as NIST letters have attributes very similar to them. This finding however is consistent with the well known importance of hard-negatives in deep network training.
+                  There are two kinds of unknowns - the known unknown and the
+                  unknown unknown. This method only works best for the known
+                  unknowns. E.g. in one experiment, for a MNIST classifier, they
+                  find that training with CIFAR samples as the unknowns does not
+                  provide robustness to unknowns from the samples of NIST
+                  Letters dataset. Whereas, training with NIST Letters does
+                  provide robustness against CIFAR images. This is because CIFAR
+                  images are distinctly different from the MNIST digits where as
+                  NIST letters have attributes very similar to them. This
+                  finding however is consistent with the well known importance
+                  of hard-negatives in deep network training.
                 </p>
-                
-
-                
               </div>
               {/* end topic-3 */}
 
@@ -163,19 +214,52 @@ const Main = () => {
               <h6 className="text-white text-lg font-aeonik px-[23px] pt-[23px]">
                 TABLE OF CONTENTS
               </h6>
-              <div className="mt-[15px] max-w-[400px] text-lg font-bwmss01 text-[#9EB3CF]">
-                <a onClick={() => scrollToTopic("topic1")}>
-                  <p className="pl-[20px] pb-[4px] pr-[15px] ml-[2px] mb-[4px] border-l-[3px] border-l-[#036BF0] text-[#036BF0]">
+              <div className="mt-[15px] max-w-[400px] text-lg font-bwmss01 ">
+                <a
+                  onClick={() => {
+                    scrollToTopic("topic1");
+                    setTopicHighlight("topic1");
+                  }}
+                >
+                  <p
+                    className={`pl-[20px] pb-[4px] pr-[15px] ml-[2px] mb-[4px] cursor-pointer hover:text-[#3784e9]  ${
+                      topicHighlight === "topic1"
+                        ? "border-l-[#036BF0] text-[#036BF0] border-l-[3px]"
+                        : "text-[#9EB3CF]"
+                    }  `}
+                  >
                     1. Problem
                   </p>
                 </a>
-                <a onClick={() => scrollToTopic("topic2")}>
-                  <p className="pl-[20px] pb-[4px] pr-[15px] ml-[2px] mb-[4px] ">
+                <a
+                  onClick={() => {
+                    scrollToTopic("topic2");
+                    setTopicHighlight("topic2");
+                  }}
+                >
+                  <p
+                    className={`pl-[20px] pb-[4px] pr-[15px] cursor-pointer  hover:text-[#3784e9] ml-[2px] mb-[4px] ${
+                      topicHighlight === "topic2"
+                        ? "border-l-[#036BF0] text-[#036BF0] border-l-[3px]"
+                        : "text-[#9EB3CF]"
+                    } `}
+                  >
                     2. Solution
                   </p>
                 </a>
-                <a onClick={() => scrollToTopic("topic3")}>
-                  <p className="pl-[20px] pb-[4px] pr-[15px] ml-[2px] mb-[4px] ">
+                <a
+                  onClick={() => {
+                    scrollToTopic("topic3");
+                    setTopicHighlight("topic3");
+                  }}
+                >
+                  <p
+                    className={`pl-[20px] pb-[4px] pr-[15px] cursor-pointer hover:text-[#3784e9] ml-[2px] mb-[4px] ${
+                      topicHighlight === "topic3"
+                        ? "border-l-[#036BF0] text-[#036BF0] border-l-[3px]"
+                        : "text-[#9EB3CF]"
+                    } `}
+                  >
                     3. Limitations
                   </p>
                 </a>

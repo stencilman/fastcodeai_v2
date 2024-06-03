@@ -1,11 +1,14 @@
 "use client";
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import SocialShare from "../../components/SocialShare";
 import Image from "next/image";
 import Link from "next/link";
 import Button from "@/app/component/Button";
 
 const Main = () => {
+  const [topicHighlight, setTopicHighlight] = useState("topic1");
+  const topicRefs = useRef([null, null, null]);
+
   const scrollToTopic = (id) => {
     const element = document.getElementById(id);
     if (element) {
@@ -17,7 +20,27 @@ const Main = () => {
       });
     }
   };
+console.log("topicHighlight",topicHighlight)
+  useEffect(() => {
+    const handleScroll = () => {
+      const offset = window.scrollY + window.innerHeight / 2;
+      console.log("topicRefs", topicRefs.current);
+      topicRefs.current.forEach((ref, index) => {
+        if (
+          ref?.offsetTop <= offset &&
+          ref.offsetTop + ref.offsetHeight > offset
+        ) {
+          console.log("topicName", ref.id);
+          setTopicHighlight(ref.id);
+        }
+      });
+    };
 
+    window.addEventListener("scroll", handleScroll);
+    handleScroll(); // Call initially to set the active topic
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
   return (
     <div className="w-full h-auto pt-[100px] pb-[50px] px-[35px] md:px-[45px] lg:px-[80px] flex justify-center flex-col ">
       <div>
@@ -25,7 +48,15 @@ const Main = () => {
           <div className="flex flex-col md:flex-row gap-[50px] ">
             <SocialShare />
             <div className="md:w-[621%] md:max-w-[822px] flex flex-col gap-[30px] ">
-              <div className="p-[40px] bg-white rounded-[20px] shadow-[0px_3px_6px_#00000029]">
+              
+              {/* content */}
+              {/* topic-1 */}
+              <div
+                id="topic1"
+                ref={(el) => (topicRefs.current[0] = el)}
+                className="flex flex-col gap-[20px]"
+              >
+                <div className="p-[40px] bg-white rounded-[20px] shadow-[0px_3px_6px_#00000029]">
                 <Image
                   src="/blogs/why-ai/main/img1-2.png"
                   width="744"
@@ -33,9 +64,6 @@ const Main = () => {
                   alt=""
                 />
               </div>
-              {/* content */}
-              {/* topic-1 */}
-              <div id="topic1" className="flex flex-col gap-[20px]">
                 <h4 className="text-white text-2xl font-aeonik tracking-wide">
                   Task 1: Sorting a list of integers
                 </h4>
@@ -52,7 +80,11 @@ const Main = () => {
                 </p>
               </div>
               {/* topic-2 */}
-              <div id="topic2" className="flex flex-col gap-[20px]">
+              <div
+                id="topic2"
+                ref={(el) => (topicRefs.current[1] = el)}
+                className="flex flex-col gap-[20px]"
+              >
                 <h4 className="text-white text-2xl font-aeonik tracking-wide">
                   Task 2: Reading hand-written digit{"1"}
                 </h4>
@@ -119,6 +151,94 @@ const Main = () => {
                 </div>
               </div>
               {/* end topic-2 */}
+              {/* topic-3 */}
+              <div
+                id="topic3"
+                ref={(el) => (topicRefs.current[2] = el)}
+                className="flex flex-col gap-[20px]"
+              >
+                <h4 className="text-white text-2xl font-aeonik tracking-wide">
+                  Task 3: Reading hand-written digit {"2"}
+                </h4>
+                <p className="text-[#9EB3CF] text-lg font-bwmss01">
+                  Now, let us suppose that our algorithm needs to decide if an
+                  image contains hand written digit {"2"} like the one below.
+                </p>
+                <div className="flex w-full gap-[5%]">
+                  <Image
+                    className="rounded-[20px] w-[100%]"
+                    src="/blogs/why-ai/content/img4.jpeg"
+                    width="400"
+                    height="400"
+                    alt=""
+                  />
+                </div>
+                <p className="text-[#9EB3CF] text-lg font-bwmss01">
+                  Writing a rule-based algorithm by detecting arches and lines
+                  like we did for {"1"} becomes significantly more difficult.
+                  Note that this becomes even more difficult if we want our
+                  algorithm to generalize for different hand-writing styles as
+                  shown below.
+                </p>
+
+                <div className="flex w-full gap-[5%]">
+                  <Image
+                    className="rounded-[20px] w-[100%]"
+                    src="/blogs/why-ai/content/img5.jpeg"
+                    width="400"
+                    height="400"
+                    alt=""
+                  />
+                </div>
+                <p className="text-[#9EB3CF] text-lg font-bwmss01">
+                  And what would we do if we were to try writing a rule-based
+                  algorithm for a dog?
+                </p>
+              </div>
+              {/* end topic-3 */}
+
+              {/* topic-4 */}
+              <div
+                id="topic4"
+                ref={(el) => (topicRefs.current[3] = el)}
+                className="flex flex-col gap-[20px]"
+              >
+                <h4 className="text-white text-2xl font-aeonik tracking-wide">
+                  Solution: Machine Learning or Data-Driven algorithms
+                </h4>
+                <p className="text-[#9EB3CF] text-lg font-bwmss01">
+                  When the complexity of the algorithm becomes so high that it
+                  becomes very difficult, if not impossible to hand-code it, we
+                  resort to ML based algorithms. And though we will not discuss
+                  them in detail here, let us consider a very simple, yet a way
+                  better solution that we can achieve with rule-based algorithm
+                  for our current problem of recognizing the hand-written digit
+                  2.
+                </p>
+                <p className="text-[#9EB3CF] text-lg font-bwmss01">
+                  Let us start by collecting a few hand-written digits of the
+                  number 2 (dataset). Now, for starters, let us simply average
+                  all of them out, as shown in the image below:
+                </p>
+                <div className="flex w-full gap-[5%]">
+                  <Image
+                    className="rounded-[20px] w-[100%]"
+                    src="/blogs/why-ai/content/img6.jpeg"
+                    width="400"
+                    height="400"
+                    alt=""
+                  />
+                </div>
+                <p className="text-[#9EB3CF] text-lg font-bwmss01">
+                  Next, whenever we need to decide if the input image contains
+                  the digit 2, we can simply compare the input image with our
+                  average image. And if the image compares well with our average
+                  image then we will output yes or else no. Note that we have
+                  not defined how do we actually compare, and is a topic for
+                  another discussion.
+                </p>
+              </div>
+              {/* end topic-4 */}
               {/* CTA */}
               <div className="w-full py-[26px] px-[20px] md:px-[50px] lg:px-[100px] flex flex-col gap-[18px] bg-[#000D2F] rounded-[20px] my-[60px]">
                 <h4 className="text-white text-2xl font-aeonik tracking-wide">
@@ -149,22 +269,70 @@ const Main = () => {
                 TABLE OF CONTENTS
               </h6>
               <div className="mt-[15px] max-w-[400px] text-lg font-bwmss01 text-[#9EB3CF]">
-                <a onClick={() => scrollToTopic("topic1")}>
-                  <p className="pl-[20px] pb-[4px] pr-[15px] ml-[2px] mb-[4px] border-l-[3px] border-l-[#036BF0] text-[#036BF0]">
+                <a
+                  onClick={() => {
+                    scrollToTopic("topic1");
+                    setTopicHighlight("topic1");
+                  }}
+                >
+                  <p
+                    className={`pl-[20px] pb-[4px] pr-[15px] ml-[2px] mb-[4px] cursor-pointer hover:text-[#3784e9]  ${
+                      topicHighlight === "topic1"
+                        ? "border-l-[#036BF0] text-[#036BF0] border-l-[3px]"
+                        : "text-[#9EB3CF]"
+                    }  `}
+                  >
                     1. Sorting a list of integers
                   </p>
                 </a>
-                <a onClick={() => scrollToTopic("topic2")}>
-                  <p className="pl-[20px] pb-[4px] pr-[15px] ml-[2px] mb-[4px] ">
+                <a
+                  onClick={() => {
+                    scrollToTopic("topic2");
+                    setTopicHighlight("topic2");
+                  }}
+                >
+                  <p
+                    className={`pl-[20px] pb-[4px] pr-[15px] ml-[2px] mb-[4px] cursor-pointer hover:text-[#3784e9]  ${
+                      topicHighlight === "topic2"
+                        ? "border-l-[#036BF0] text-[#036BF0] border-l-[3px]"
+                        : "text-[#9EB3CF]"
+                    }  `}
+                  >
                     2. Reading hand-written digit {"1"}
                   </p>
                 </a>
-                <p className="pl-[20px] pb-[4px] pr-[15px] ml-[2px] mb-[4px] ">
-                  3. Reading hand-written digit {"2"}
-                </p>
-                <p className="pl-[20px] pb-[4px] pr-[15px] ml-[2px] mb-[4px] ">
-                  4. Solution: Machine Learning or Data-Driven algorithms.
-                </p>
+                <a
+                  onClick={() => {
+                    scrollToTopic("topic3");
+                    setTopicHighlight("topic3");
+                  }}
+                >
+                  <p
+                    className={`pl-[20px] pb-[4px] pr-[15px] ml-[2px] mb-[4px] cursor-pointer hover:text-[#3784e9]  ${
+                      topicHighlight === "topic3"
+                        ? "border-l-[#036BF0] text-[#036BF0] border-l-[3px]"
+                        : "text-[#9EB3CF]"
+                    }  `}
+                  >
+                    3. Reading hand-written digit {"2"}
+                  </p>
+                </a>
+                <a
+                  onClick={() => {
+                    scrollToTopic("topic4");
+                    setTopicHighlight("topic4");
+                  }}
+                >
+                  <p
+                    className={`pl-[20px] pb-[4px] pr-[15px] ml-[2px] mb-[4px] cursor-pointer hover:text-[#3784e9]  ${
+                      topicHighlight === "topic4"
+                        ? "border-l-[#036BF0] text-[#036BF0] border-l-[3px]"
+                        : "text-[#9EB3CF]"
+                    }  `}
+                  >
+                    4. Solution: Machine Learning or Data-Driven algorithms.
+                  </p>
+                </a>
               </div>
             </div>
           </div>
