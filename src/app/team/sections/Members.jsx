@@ -57,7 +57,7 @@ const Members = () => {
     },
     {
       position:
-        "top-[0px] lg:top-[0px] md:left-[2vw] sm:left-[20vw] lg:top-[-682px] lg:left-[564px]",
+        "top-[0px]  md:left-[2vw] sm:left-[20vw] lg:top-[-602px] lg:left-[564px]",
       y: 0,
       name: "Shreyas Bhanderi",
       role: "Senior Research Scientist",
@@ -81,7 +81,7 @@ const Members = () => {
 
     {
       position:
-        "top-[50px] lg:top-[80px] sm:left-[-137px] md:left-[375px] lg:top-[-400px] lg:left-[400px]",
+        "top-[50px]  sm:left-[-137px] md:left-[375px] lg:top-[-400px] lg:left-[400px]",
       y: 0,
       name: "Rishabh Gupta",
       role: "Machine Learning Engineer",
