@@ -202,7 +202,7 @@ const Form = () => {
                     type="text"
                     name="floating_name"
                     id="floating_name"
-                    className="block py-2.5 px-0 w-full font-aeonik text-base text-white bg-transparent border-0 border-b-2 border-gray-400 appearance-none dark:text-white dark:border-gray-400 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                    className="block py-2.5 px-0 w-full font-aeonik text-base text-white bg-transparent border-0 border-b-2 border-gray-400 appearance-auto dark:text-white dark:border-gray-400 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                     onChange={() => handleChange(nameRef, "name")}
                     placeholder=" "
                     required
@@ -220,7 +220,7 @@ const Form = () => {
                     type="email"
                     name="floating_email"
                     id="floating_email"
-                    className="block py-2.5 px-0 w-full font-aeonik text-base text-white bg-transparent border-0 border-b-2 border-gray-400 appearance-none dark:text-white dark:border-gray-400 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                    className="block py-2.5 px-0 w-full font-aeonik text-base text-white bg-transparent border-0 border-b-2 border-gray-400 appearance-auto dark:text-white dark:border-gray-400 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                     onChange={() => handleChange(emailRef, "email")}
                     placeholder=" "
                     required
@@ -240,7 +240,7 @@ const Form = () => {
                     type="tel"
                     name="floating_phone"
                     id="floating_phone"
-                    className="block py-2.5 px-0 w-full font-aeonik text-base text-gray-900 bg-transparent border-0 border-b-2 border-gray-400 appearance-none dark:text-white dark:border-gray-400 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                    className="block py-2.5 px-0 w-full font-aeonik text-base text-gray-900 bg-transparent border-0 border-b-2 border-gray-400 appearance-auto dark:text-white dark:border-gray-400 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                     onChange={() => handleChange(phoneRef, "phone")}
                     placeholder=" "
                     required
@@ -258,7 +258,7 @@ const Form = () => {
                     type="text"
                     name="floating_company"
                     id="floating_company"
-                    className="block py-2.5 px-0 w-full font-aeonik text-base text-gray-900 bg-transparent border-0 border-b-2 border-gray-400 appearance-none dark:text-white dark:border-gray-400 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                    className="block py-2.5 px-0 w-full font-aeonik text-base text-gray-900 bg-transparent border-0 border-b-2 border-gray-400 appearance-auto dark:text-white dark:border-gray-400 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                     onChange={() => handleChange(companyRef, "companyName")}
                     placeholder=" "
                     required
@@ -308,7 +308,7 @@ const Form = () => {
                     ref={messageRef}
                     name="floating_message"
                     id="floating_message"
-                    className="block py-2.5 px-0 w-full font-aeonik text-base text-gray-900 bg-transparent border-0 border-b-2 border-gray-400 appearance-none dark:text-white dark:border-gray-400 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                    className="block py-2.5 px-0 w-full font-aeonik text-base text-white bg-transparent border-0 border-b-2 border-gray-400 appearance-auto dark:text-white dark:border-gray-400 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                     onChange={() => handleChange(messageRef, "message")}
                     placeholder=" "
                     required
