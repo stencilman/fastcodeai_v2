@@ -57,7 +57,7 @@ const Members = () => {
     },
     {
       position:
-        "top-[0px] lg:top-[0px] md:left-[2vw] sm:left-[20vw] lg:top-[-582px] lg:left-[564px]",
+        "top-[0px] lg:top-[0px] md:left-[2vw] sm:left-[20vw] lg:top-[-682px] lg:left-[564px]",
       y: 0,
       name: "Shreyas Bhanderi",
       role: "Senior Research Scientist",
@@ -81,7 +81,7 @@ const Members = () => {
 
     {
       position:
-        "top-[50px] lg:top-[80px] sm:left-[-137px] md:left-[375px] lg:top-[-430px] lg:left-[420px]",
+        "top-[50px] lg:top-[80px] sm:left-[-137px] md:left-[375px] lg:top-[-400px] lg:left-[400px]",
       y: 0,
       name: "Rishabh Gupta",
       role: "Machine Learning Engineer",
@@ -92,7 +92,7 @@ const Members = () => {
     },
     {
       position:
-        "top-[660px]  sm:left-[122px] md:left-[16vw] lg:left-[0px] lg:top-[-700px]",
+        "top-[660px]  sm:left-[122px] md:left-[16vw] lg:left-[0px] lg:top-[-600px]",
       y: lg,
       name: "ABDUL MUQTADIR",
       role: "Software Engineer",
@@ -103,7 +103,7 @@ const Members = () => {
     },
     {
       position:
-        "top-[320px] left-[0px] sm:left-[] lg:top-[-1850px]  lg:left-[796px]",
+        "top-[320px] left-[0px] sm:left-[] lg:top-[-1550px]  lg:left-[796px]",
       y: md,
       name: "Tirth Pandit",
       role: "Senior Research Scientist",

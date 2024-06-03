@@ -11,16 +11,16 @@ const QualitieCulture = () => {
   ];
 
   return (
-    <div className="w-full pt-[75px] px-[20px] md:px-[50px] lg:px-[100px] bg-[#00081F] flex flex-col items-center justify-center relative overflow-x-hidden gap-[120px] mb-[120px]">
+    <div className="w-full pt-[75px] px-[20px] md:px-[50px] lg:px-[100px] bg-[#00081F] flex flex-col items-center justify-center  gap-[120px] mb-[120px]">
       {/* gradient */}
-      <div
+      {/* <div
         className="absolute top-[-63px] w-[120%]  h-[110px]"
         style={{
           background: "#00081f 0% 0% no-repeat padding-box",
           opacity: " 1",
           filter: "blur(23px)",
         }}
-      ></div>
+      ></div> */}
       {/* Qualities */}
       <div>
         <div className="text-center flex flex-col items-center justify-center mt-[30px] mb-[40px] md:mb-[60px]">
@@ -151,14 +151,14 @@ const QualitieCulture = () => {
         </div>
       </div>
       {/* gradient */}
-      <div
+      {/* <div
         className="absolute bottom-[-153px] w-[100%] h-[110px]"
         style={{
           background: "#00081f 0% 0% no-repeat padding-box",
           opacity: " 1",
           filter: "blur(23px)",
         }}
-      ></div>
+      ></div> */}
     </div>
   );
 };
