@@ -1,9 +1,13 @@
-import React from 'react'
+"use client"
+import React,{useEffect} from 'react'
 import Hero from './sections/Hero'
 import Main from './sections/Main'
 import Footer from '@/app/component/sections/Footer'
 
-const page = () => {
+const ClassesUnknown = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <Hero/>
@@ -13,4 +17,4 @@ const page = () => {
   )
 }
 
-export default page
+export default ClassesUnknown

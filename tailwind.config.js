@@ -45,6 +45,7 @@ module.exports = {
         'blog3': "url('/blogs/latest-blog/img4.png')",
         'blog4': "url('/blogs/latest-blog/img2.png')",
         'whyaiHero': "url('/blogs/why-ai/hero/img1-2.png')",
+        'oilGasHero': "url('/blogs/oil-gas/oilGas-Hero.webp')",
 
         'arjun': "url('/members/arjun.png')",
         'dhaval': "url('/members/dhaval1.jpg')",

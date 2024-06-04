@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useRef,useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import SocialShare from "../../components/SocialShare";
 import Image from "next/image";
 import Link from "next/link";
@@ -24,19 +24,22 @@ const Main = () => {
   useEffect(() => {
     const handleScroll = () => {
       const offset = window.scrollY + window.innerHeight / 2;
-      console.log("topicRefs",topicRefs.current)
+      console.log("topicRefs", topicRefs.current);
       topicRefs.current.forEach((ref, index) => {
-        if (ref?.offsetTop <= offset && ref.offsetTop + ref.offsetHeight > offset) {
-          console.log("topicName",ref.id)
+        if (
+          ref?.offsetTop <= offset &&
+          ref.offsetTop + ref.offsetHeight > offset
+        ) {
+          console.log("topicName", ref.id);
           setTopicHighlight(ref.id);
         }
       });
     };
 
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
     handleScroll(); // Call initially to set the active topic
 
-    return () => window.removeEventListener('scroll', handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   return (
     <div className="w-full h-auto pt-[100px] pb-[50px] px-[35px] md:px-[45px] lg:px-[80px] flex justify-center flex-col ">
@@ -46,18 +49,21 @@ const Main = () => {
             <SocialShare />
             {/* Main */}
             <div className="md:w-[621%] md:max-w-[822px] flex flex-col gap-[30px] ">
-             
               {/* content */}
               {/* topic-1 */}
-              <div id="topic1" ref={(el) => (topicRefs.current[0] = el)} className="flex flex-col gap-[20px]">
-              <div className="p-[40px] bg-white rounded-[20px] shadow-[0px_3px_6px_#00000029]">
-                <Image
-                  src="/blogs/unknown/main/known-unknown.webp"
-                  width="744"
-                  height="355"
-                  alt=""
-                />
-              </div>
+              <div
+                id="topic1"
+                ref={(el) => (topicRefs.current[0] = el)}
+                className="flex flex-col gap-[20px]"
+              >
+                <div className="p-[40px] bg-white rounded-[20px] shadow-[0px_3px_6px_#00000029]">
+                  <Image
+                    src="/blogs/unknown/main/known-unknown.webp"
+                    width="744"
+                    height="355"
+                    alt=""
+                  />
+                </div>
                 <h4 className="text-white text-2xl font-aeonik tracking-wide">
                   Problem
                 </h4>
@@ -115,7 +121,11 @@ const Main = () => {
                 </p>
               </div>
               {/* topic-2 */}
-              <div id="topic2" ref={(el) => (topicRefs.current[1] = el)} className="flex flex-col gap-[20px]">
+              <div
+                id="topic2"
+                ref={(el) => (topicRefs.current[1] = el)}
+                className="flex flex-col gap-[20px]"
+              >
                 <h4 className="text-white text-2xl font-aeonik tracking-wide">
                   Solution
                 </h4>
@@ -165,7 +175,11 @@ const Main = () => {
               {/* end topic-2 */}
               {/* topic-3 */}
 
-              <div id="topic3" ref={(el) => (topicRefs.current[3] = el)} className="flex flex-col gap-[20px]">
+              <div
+                id="topic3"
+                ref={(el) => (topicRefs.current[2] = el)}
+                className="flex flex-col gap-[20px]"
+              >
                 <h4 className="text-white text-2xl font-aeonik tracking-wide">
                   Limitations
                 </h4>
@@ -196,25 +210,25 @@ const Main = () => {
                   intelligence services.
                 </p>
                 <div className="w-[164px]">
-                  <Button to="" name="Know More" />
+                  <Button to="/contact" name="Know More" />
                 </div>
               </div>
             </div>
           </div>
           {/* nav */}
-          <div className="relative md:sticky md:top-[120px] md:h-fit">
+          <div className="relative md:sticky md:top-[120px] h-[240px] sm:h-[250px] md:h-fit">
             <Image
-              className=""
+              className="min-h-[250px] w-[300px] min-w-[267px] md:min-w-[36vw] lg:min-w-[320px] relative"
               src="/blogs/rec.svg"
-              width="400"
+              width="300"
               height="500"
               alt=""
             />
-            <div className="absolute top-0 ">
+            <div className="absolute top-[15px] ">
               <h6 className="text-white text-lg font-aeonik px-[23px] pt-[23px]">
                 TABLE OF CONTENTS
               </h6>
-              <div className="mt-[15px] max-w-[400px] text-lg font-bwmss01 ">
+              <div className="mt-[15px] max-w-[400px] text-lg font-bwmss01 h-[46vw] sm:h-[210px] md:h-[19vw] lg:h-auto overflow-auto">
                 <a
                   onClick={() => {
                     scrollToTopic("topic1");
@@ -289,89 +303,98 @@ const Main = () => {
         </div>
         <div className="w-full relative flex flex-col md:flex-row gap-[56px] mt-[90px] md:mt-[220px]">
           {/* Blog Post 1 */}
-          <div className="relative">
-            <div>
-              <Image
-                src="/blogs/read-more/img1-2.png"
-                width="376"
-                height="353"
-                alt=""
-              />
+          <Link href="/blogs/why-ai">
+            <div className="relative group">
+              <div>
+                <Image
+                  className="group-hover:scale-[0.98] transition-all duration-500 ease-in-out"
+                  src="/blogs/read-more/img1-2.png"
+                  width="376"
+                  height="353"
+                  alt=""
+                />
+              </div>
+              <div className="flex flex-col gap-[10px]">
+                <ul className="flex group-hover:text-gray-500 transition-all duration-500 ease-in-out gap-[13px] text-xs font-bwmss01 items-baseline mt-[20px] pl-[12px]">
+                  <li>Arjun Jain</li>
+                  <li className="text-[33px]">.</li>
+                  <li>04 Feb 2021</li>
+                  <li className="text-[33px]">.</li>
+                  <li>10 Comments</li>
+                </ul>
+                <b className="text-white text-2xl font-aeonik group-hover:scale-[0.98] transition-all duration-300 ease-in-out">
+                  To ML or not to ML, that is the question.
+                </b>
+                <p className="text-[#9EB3CF] text-base font-bwmss01 ">
+                  When do rule-based algorithms not work? When do we need
+                  machine learning (ML) based algorithms? Let us try and answer
+                  this question using the tasks.
+                </p>
+              </div>
             </div>
-            <div className="flex flex-col gap-[10px]">
-              <ul className="flex gap-[13px] text-xs font-bwmss01 items-baseline mt-[20px] pl-[12px]">
-                <li>Arjun Jain</li>
-                <li className="text-[33px]">.</li>
-                <li>Feb 4 2021</li>
-                <li className="text-[33px]">.</li>
-                <li>10 Comments</li>
-              </ul>
-              <b className="text-white text-2xl font-aeonik">
-                To ML or not to ML, that is the question.
-              </b>
-              <p className="text-[#9EB3CF] text-base font-bwmss01">
-                When do rule-based algorithms not work? When do we need machine
-                learning (ML) based algorithms? Let us try and answer this
-                question using the tasks.
-              </p>
-            </div>
-          </div>
+          </Link>
           {/* Blog Post 2 */}
-          <div className="relative md:top-[-70px]">
-            <div>
-              <Image
-                src="/blogs/read-more/img3-2.png"
-                width="376"
-                height="353"
-                alt=""
-              />
+          <Link href="/blogs/oil-gas">
+            <div className="relative md:top-[-70px] group">
+              <div>
+                <Image
+                  className="group-hover:scale-[0.98] transition-all duration-500 ease-in-out"
+                  src="/blogs/read-more/img3-2.png"
+                  width="376"
+                  height="353"
+                  alt=""
+                />
+              </div>
+              <div className="flex flex-col gap-[10px]">
+                <ul className="flex group-hover:text-gray-500 transition-all duration-500 ease-in-out gap-[13px] text-xs font-bwmss01 items-baseline mt-[20px] pl-[12px]">
+                  <li>Tarun Kumar</li>
+                  <li className="text-[33px]">.</li>
+                  <li>03 June 2020</li>
+                  <li className="text-[33px]">.</li>
+                  <li>8 Comments</li>
+                </ul>
+                <b className="text-white text-2xl font-aeonik group-hover:scale-[0.98] transition-all duration-300 ease-in-out">
+                  Oil & Gas EPC - Digitizing P&ID
+                </b>
+                <p className="text-[#9EB3CF] text-base font-bwmss01">
+                  When do rule-based algorithms not work? When do we need
+                  machine learning (ML) based algorithms? Let us try and answer
+                  this question using the tasks.
+                </p>
+              </div>
             </div>
-            <div className="flex flex-col gap-[10px]">
-              <ul className="flex gap-[13px] text-xs font-bwmss01 items-baseline mt-[20px] pl-[12px]">
-                <li>Arjun Jain</li>
-                <li className="text-[33px]">.</li>
-                <li>Feb 4 2021</li>
-                <li className="text-[33px]">.</li>
-                <li>10 Comments</li>
-              </ul>
-              <b className="text-white text-2xl font-aeonik">
-                Oil & Gas EPC - Digitizing P&ID
-              </b>
-              <p className="text-[#9EB3CF] text-base font-bwmss01">
-                When do rule-based algorithms not work? When do we need machine
-                learning (ML) based algorithms? Let us try and answer this
-                question using the tasks.
-              </p>
-            </div>
-          </div>
+          </Link>
           {/* Blog Post 3 */}
-          <div className="relative">
-            <div>
-              <Image
-                src="/blogs/read-more/img2-2.png"
-                width="376"
-                height="353"
-                alt=""
-              />
+          <Link href="/blogs/unknown-classes">
+            <div className="relative group">
+              <div>
+                <Image
+                  className="group-hover:scale-[0.98] transition-all duration-500 ease-in-out"
+                  src="/blogs/read-more/img2-2.png"
+                  width="376"
+                  height="353"
+                  alt=""
+                />
+              </div>
+              <div className="flex flex-col gap-[10px]">
+                <ul className="flex group-hover:text-gray-500 transition-all duration-500 ease-in-out gap-[13px] text-xs font-bwmss01 items-baseline mt-[20px] pl-[12px]">
+                  <li>Arjun Jain</li>
+                  <li className="text-[33px]">.</li>
+                  <li>01 Feb 2021</li>
+                  <li className="text-[33px]">.</li>
+                  <li>10 Comments</li>
+                </ul>
+                <b className="text-white text-2xl font-aeonik group-hover:scale-[0.98] transition-all duration-300 ease-in-out">
+                  How to deal with Unknown Classes during classification?
+                </b>
+                <p className="text-[#9EB3CF] text-base font-bwmss01">
+                  When do rule-based algorithms not work? When do we need
+                  machine learning (ML) based algorithms? Let us try and answer
+                  this question using the tasks.
+                </p>
+              </div>
             </div>
-            <div className="flex flex-col gap-[10px]">
-              <ul className="flex gap-[13px] text-xs font-bwmss01 items-baseline mt-[20px] pl-[12px]">
-                <li>Arjun Jain</li>
-                <li className="text-[33px]">.</li>
-                <li>Feb 4 2021</li>
-                <li className="text-[33px]">.</li>
-                <li>10 Comments</li>
-              </ul>
-              <b className="text-white text-2xl font-aeonik">
-                How to deal with Unknown Classes during classification?
-              </b>
-              <p className="text-[#9EB3CF] text-base font-bwmss01">
-                When do rule-based algorithms not work? When do we need machine
-                learning (ML) based algorithms? Let us try and answer this
-                question using the tasks.
-              </p>
-            </div>
-          </div>
+          </Link>
         </div>
       </div>
     </div>

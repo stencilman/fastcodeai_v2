@@ -6,17 +6,21 @@ import LatestBlogs from './sections/LatestBlogs';
 import Footer from '../component/sections/Footer';
 
 const Blogs = () => {
-    const { setIsActive } = useGlobalContext();
+  const { setIsActive } = useGlobalContext();
 
-    useEffect(() => {
-      setIsActive(false)
-    }, [])
-  
+  useEffect(() => {
+
+    window.scrollTo(0, 0);
+
+
+    setIsActive(false)
+  }, [])
+
   return (
     <>
-      <Hero/>
-      <LatestBlogs/>
-      <Footer/>
+      <Hero />
+      <LatestBlogs />
+      <Footer />
     </>
   )
 }

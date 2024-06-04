@@ -20,7 +20,7 @@ const Main = () => {
       });
     }
   };
-console.log("topicHighlight",topicHighlight)
+
   useEffect(() => {
     const handleScroll = () => {
       const offset = window.scrollY + window.innerHeight / 2;
@@ -47,8 +47,8 @@ console.log("topicHighlight",topicHighlight)
         <div className="flex flex-col-reverse md:flex-row gap-[50px] justify-center">
           <div className="flex flex-col md:flex-row gap-[50px] ">
             <SocialShare />
+            {/* Main */}
             <div className="md:w-[621%] md:max-w-[822px] flex flex-col gap-[30px] ">
-              
               {/* content */}
               {/* topic-1 */}
               <div
@@ -56,27 +56,31 @@ console.log("topicHighlight",topicHighlight)
                 ref={(el) => (topicRefs.current[0] = el)}
                 className="flex flex-col gap-[20px]"
               >
-                <div className="p-[40px] bg-white rounded-[20px] shadow-[0px_3px_6px_#00000029]">
-                <Image
-                  src="/blogs/why-ai/main/img1-2.png"
-                  width="744"
-                  height="355"
-                  alt=""
-                />
-              </div>
+                {/* <div className="p-[40px] bg-white rounded-[20px] shadow-[0px_3px_6px_#00000029]">
+                  <Image
+                    src="/blogs/unknown/main/known-unknown.webp"
+                    width="744"
+                    height="355"
+                    alt=""
+                  />
+                </div> */}
                 <h4 className="text-white text-2xl font-aeonik tracking-wide">
-                  Task 1: Sorting a list of integers
+                  About
                 </h4>
                 <p className="text-[#9EB3CF] text-lg font-bwmss01">
-                  What do we do if want to sort a list of integers [6, 99, 1,
-                  108, 4, 6, 22] in ascending order?
-                </p>
-                <p className="text-[#9EB3CF] text-lg font-bwmss01">
-                  Well, we could simply write a function similar to the
-                  rule-based algorithm on the left in picture above (bubble
-                  sort) and we would be done. The input to our algorithm will be
-                  the list above and the output will the be sorted list [1, 4,
-                  6, 6, 22, 99, 108].
+                  Oil & Gas which was once was a lucrative investment, now
+                  struggles to ensure the same level of light. A lot of things
+                  have changed in the past few years which has pushed the Oil &
+                  Gas industry into a less profitable terrain for the
+                  investments. The slump in the oil market and the resulting
+                  fall in new investments has drastically changed the Oil & Gas
+                  EPC market. This has led to fewer interests from investors and
+                  projects for EPC clients implying a low number of deals in the
+                  market. This shift has led to a reduction in the number of{" "}
+                  {"Proposals to Conversion"} ratio. In order to sustain the
+                  same order every year, EPC companies are having to respond to
+                  almost twice the number of proposals. This has put the
+                  scalability of the proposal process to test.
                 </p>
               </div>
               {/* topic-2 */}
@@ -85,160 +89,164 @@ console.log("topicHighlight",topicHighlight)
                 ref={(el) => (topicRefs.current[1] = el)}
                 className="flex flex-col gap-[20px]"
               >
-                <h4 className="text-white text-2xl font-aeonik tracking-wide">
-                  Task 2: Reading hand-written digit{"1"}
-                </h4>
-                <p className="text-[#9EB3CF] text-lg font-bwmss01">
-                  Now, let us suppose that our algorithm needs to decide if an
-                  image contains hand written digit {"1"}.
-                </p>
-                <p className="text-[#9EB3CF] text-lg font-bwmss01">
-                  Images can be represented using a 2D array as shown above. In
-                  an image, white is usually represented using the value 255,
-                  black with 0 and gray with a value between 0-255. The image
-                  above of size 28x28 pixels, represented using a 2D array of
-                  size 28x28.
-                </p>
-                <p className="text-[#9EB3CF] text-lg font-bwmss01">
-                  So, the input to our algorithm would be a 2D array of size
-                  28x28. The output needs to be yes it indeed consists of the
-                  hand-written digit {"1"} and no otherwise.
-                </p>
-                <p className="text-[#9EB3CF] text-lg font-bwmss01">
-                  So, how can we do this using a rule-based algorithm?
-                </p>
-                <p className="text-[#9EB3CF] text-lg font-bwmss01">
-                  Well, perhaps we can try and fit a line (orange) over the
-                  non-white pixels and then measure the angle θ that this line
-                  makes with the vertical axis as shown below. And, if this
-                  angle θ is say between -30 to +30, then we would output yes
-                  and otherwise no.
-                </p>
-                <div className="flex w-full gap-[5%]">
-                  <Image
-                    className="rounded-[20px] w-[47%]"
-                    src="/blogs/why-ai/content/img1.jpeg"
-                    width="400"
-                    height="400"
-                    alt=""
-                  />
-                  <Image
-                    className="rounded-[20px] w-[47%]"
-                    src="/blogs/why-ai/content/img2.jpeg"
-                    width="400"
-                    height="400"
-                    alt=""
-                  />
-                </div>
-                <p className="text-[#9EB3CF] text-lg font-bwmss01">
-                  And this algorithm would even do a good job for images which
-                  look like the ones in the figure above. However, if we wanted
-                  our algorithm to be really robust, our algorithm should
-                  correctly recognize {"1"} written in different handwritings
-                  like shown below. Now, the current version of our algorithm
-                  may not work as desired on all the images below, but perhaps
-                  we can tweak it by adding more conditions, by fitting multiple
-                  lines, etc.
-                </p>
                 <div className="flex w-full gap-[5%]">
                   <Image
                     className="rounded-[20px] w-[100%]"
-                    src="/blogs/why-ai/content/img3.jpeg"
+                    src="/blogs/oil-gas/content/pic1.webp"
                     width="400"
                     height="400"
                     alt=""
                   />
                 </div>
+                <h4 className="text-white text-2xl font-aeonik tracking-wide">
+                  Leveraging P&ID
+                </h4>
+                <p className="text-[#9EB3CF] text-lg font-bwmss01">
+                  One of the cumbersome and manual processes is to read the
+                  hundreds of P&ID diagrams and arrive at the correct MTO
+                  (Material take off). This process is highly time-consuming and
+                  incurs miscalculations due to manual errors. This could end up
+                  affecting overall profitability in the project. Also most of
+                  the times, EPC companies keep a high buffer in order to hedge
+                  the risk of last-minute change required because of incorrect
+                  MTO created manually by the engineers. This is a risky affair
+                  altogether as the process is monotonic and requires a lot of
+                  human-involvement, leaving a large room for standardization.
+                </p>
               </div>
+
               {/* end topic-2 */}
               {/* topic-3 */}
+
               <div
                 id="topic3"
                 ref={(el) => (topicRefs.current[2] = el)}
                 className="flex flex-col gap-[20px]"
               >
+                <div className="flex w-full gap-[5%]">
+                  <Image
+                    className="rounded-[20px] w-[100%]"
+                    src="/blogs/oil-gas/content/pic2.webp"
+                    width="400"
+                    height="400"
+                    alt=""
+                  />
+                </div>
                 <h4 className="text-white text-2xl font-aeonik tracking-wide">
-                  Task 3: Reading hand-written digit {"2"}
+                  Fast Code Solution
                 </h4>
                 <p className="text-[#9EB3CF] text-lg font-bwmss01">
-                  Now, let us suppose that our algorithm needs to decide if an
-                  image contains hand written digit {"2"} like the one below.
-                </p>
-                <div className="flex w-full gap-[5%]">
-                  <Image
-                    className="rounded-[20px] w-[100%]"
-                    src="/blogs/why-ai/content/img4.jpeg"
-                    width="400"
-                    height="400"
-                    alt=""
-                  />
-                </div>
-                <p className="text-[#9EB3CF] text-lg font-bwmss01">
-                  Writing a rule-based algorithm by detecting arches and lines
-                  like we did for {"1"} becomes significantly more difficult.
-                  Note that this becomes even more difficult if we want our
-                  algorithm to generalize for different hand-writing styles as
-                  shown below.
-                </p>
-
-                <div className="flex w-full gap-[5%]">
-                  <Image
-                    className="rounded-[20px] w-[100%]"
-                    src="/blogs/why-ai/content/img5.jpeg"
-                    width="400"
-                    height="400"
-                    alt=""
-                  />
-                </div>
-                <p className="text-[#9EB3CF] text-lg font-bwmss01">
-                  And what would we do if we were to try writing a rule-based
-                  algorithm for a dog?
+                  With a leading EPC Oil & Gas player, Fast Code has automated
+                  the process of developing AutoMTO, thereby saving a huge
+                  amount of time and resources for the in terms of man-hours and
+                  costs for the EPC giant. Fast Code leveraged Artificial
+                  Intelligence techniques which automatically detects all the
+                  instruments, pipes, texts and codes. This step takes less than
+                  a minute to extract all the MTO information from a P&ID.
                 </p>
               </div>
               {/* end topic-3 */}
 
               {/* topic-4 */}
+
               <div
                 id="topic4"
                 ref={(el) => (topicRefs.current[3] = el)}
                 className="flex flex-col gap-[20px]"
               >
-                <h4 className="text-white text-2xl font-aeonik tracking-wide">
-                  Solution: Machine Learning or Data-Driven algorithms
-                </h4>
-                <p className="text-[#9EB3CF] text-lg font-bwmss01">
-                  When the complexity of the algorithm becomes so high that it
-                  becomes very difficult, if not impossible to hand-code it, we
-                  resort to ML based algorithms. And though we will not discuss
-                  them in detail here, let us consider a very simple, yet a way
-                  better solution that we can achieve with rule-based algorithm
-                  for our current problem of recognizing the hand-written digit
-                  2.
-                </p>
-                <p className="text-[#9EB3CF] text-lg font-bwmss01">
-                  Let us start by collecting a few hand-written digits of the
-                  number 2 (dataset). Now, for starters, let us simply average
-                  all of them out, as shown in the image below:
-                </p>
                 <div className="flex w-full gap-[5%]">
                   <Image
                     className="rounded-[20px] w-[100%]"
-                    src="/blogs/why-ai/content/img6.jpeg"
+                    src="/blogs/oil-gas/content/pic3.webp"
                     width="400"
                     height="400"
                     alt=""
                   />
                 </div>
+                <h4 className="text-white text-2xl font-aeonik tracking-wide">
+                  Extracting P&ID from a simple PDF
+                </h4>
                 <p className="text-[#9EB3CF] text-lg font-bwmss01">
-                  Next, whenever we need to decide if the input image contains
-                  the digit 2, we can simply compare the input image with our
-                  average image. And if the image compares well with our average
-                  image then we will output yes or else no. Note that we have
-                  not defined how do we actually compare, and is a topic for
-                  another discussion.
+                  Reading of P&ID from pdf and image-based format: Computer
+                  vision techniques were employed to read P&ID files in
+                  PDF/image form and identify the text, lines and other
+                  components. Machine learning was leveraged to identify and
+                  locate all the Equipment, Instruments, and Valves. It also
+                  identifies T-joints, Spec Brakes, Reducers etc. involved in
+                  MTO generation. This complete process which takes an engineer
+                  3-4 days of work, is finished by AutoMTO in 3 steps as shown
+                  in the above figure. The components were then associated with
+                  the lines and thus preparing the Line List, Equipment List and
+                  the full MTO automatically. The process improved the overall
+                  efficiency of reading and reduced the time taken to process
+                  per P&ID sheet by a factor of 15. Provision has also been
+                  provided to bring in a human in the loop to review and make
+                  necessary modifications to ensure 100% accuracy of MTO.
                 </p>
               </div>
               {/* end topic-4 */}
+
+              {/* topic-5 */}
+
+              <div
+                id="topic5"
+                ref={(el) => (topicRefs.current[4] = el)}
+                className="flex flex-col gap-[20px]"
+              >
+                <h4 className="text-white text-2xl font-aeonik tracking-wide">
+                  Toward 100% Accuracy
+                </h4>
+                <p className="text-[#9EB3CF] text-lg font-bwmss01">
+                  AutoMTO as a state of the art system lets achieve 100%
+                  accuracy whilst preparing MTO and this accuracy is then
+                  translated into better sales, lean buffer size and
+                  competitiveness in the bidding stage. The solution achieved
+                  100% accuracy in the generation of MTO. This reduced
+                  engineering work drastically by leveraging one-shot and active
+                  learning AI techniques. The product has led to saving about
+                  90% the time taken to generate the MTO. The version tracking
+                  mechanism has allowed more efficient identification of changes
+                  made to the input P&IDs.
+                </p>
+                <p className="text-[#9EB3CF] text-lg font-bwmss01">
+                  Lean Buffer and Competitiveness: The solution ensured a more
+                  accurate MTO and thus provides a higher degree of confidence
+                  to the proposal owners. This has allowed the client to reduce
+                  the Material cost buffer, thus making the proposals more
+                  competitive. Fast Code enabled the EPC player to create MTO
+                  with leaner buffer size and in the process making the bids for
+                  EPC much more competitive.
+                </p>
+              </div>
+              {/* end topic-5 */}
+              {/* topic-6 */}
+
+              <div
+                id="topic6"
+                ref={(el) => (topicRefs.current[5] = el)}
+                className="flex flex-col gap-[20px]"
+              >
+                <h4 className="text-white text-2xl font-aeonik tracking-wide">
+                  Impact
+                </h4>
+                <p className="text-[#9EB3CF] text-lg font-bwmss01">
+                  Divisions like Sales, Proposals, Procurement get direct
+                  advantage in terms of this impact as AutoMTO ensures
+                  digitization benefits are distributed across the system
+                </p>
+                <p className="text-[#9EB3CF] text-lg font-bwmss01">
+                  1. 14x Improvement in Efficiency in reading and processing
+                  P&ID sheets
+                  <br />
+                  2. 90% Reduction in time while reading and generating an MTO
+                  <br />
+                  3. 100% Accuracy generated from the solution
+                  <br />
+                  4. {">"} $3m Cost saved per year (40 proposals/year)
+                  <br />
+                </p>
+              </div>
+              {/* end topic-6 */}
               {/* CTA */}
               <div className="w-full py-[26px] px-[20px] md:px-[50px] lg:px-[100px] flex flex-col gap-[18px] bg-[#000D2F] rounded-[20px] my-[60px]">
                 <h4 className="text-white text-2xl font-aeonik tracking-wide">
@@ -256,11 +264,11 @@ console.log("topicHighlight",topicHighlight)
             </div>
           </div>
           {/* nav */}
-          <div className="relative md:sticky md:top-[120px] h-[265px] sm:h-[300px] md:h-fit">
+          <div className="relative md:sticky md:top-[120px] h-[280px] sm:h-[300px] md:h-fit">
             <Image
-              className="min-h-[250px] w-[368px] min-w-[267px] md:min-w-[36vw] lg:min-w-[366px] relative"
+              className="min-h-[250px] min-w-[267px] md:min-w-[36vw] lg:min-w-[366px] relative"
               src="/blogs/rec.svg"
-              width="368"
+              width="400"
               height="500"
               alt=""
             />
@@ -268,7 +276,7 @@ console.log("topicHighlight",topicHighlight)
               <h6 className="text-white text-lg font-aeonik px-[23px] pt-[23px]">
                 TABLE OF CONTENTS
               </h6>
-              <div className="mt-[15px] max-w-[400px] text-lg font-bwmss01 text-[#9EB3CF] h-[46vw] sm:h-[210px] md:h-[19vw] lg:h-auto overflow-auto">
+              <div className="mt-[15px] max-w-[400px] text-lg font-bwmss01 h-[46vw] sm:h-[210px] md:h-[19vw] lg:h-auto overflow-auto">
                 <a
                   onClick={() => {
                     scrollToTopic("topic1");
@@ -276,13 +284,13 @@ console.log("topicHighlight",topicHighlight)
                   }}
                 >
                   <p
-                    className={`pl-[20px] pb-[4px] pr-[15px] ml-[2px] mb-[4px] cursor-pointer transition-all duration-300 ease-in-out hover:text-[#3784e9]  ${
+                    className={`pl-[20px] pb-[4px] pr-[15px] ml-[2px] mb-[4px] cursor-pointer transition-all duration-300 ease-in-out lg:hover:text-[#3784e9]  ${
                       topicHighlight === "topic1"
-                        ? "border-l-[#036BF0] lg:text-[#036BF0] border-l-[3px]"
+                        ? "border-l-[#036BF0] text-[#036BF0] border-l-[3px]"
                         : "text-[#9EB3CF]"
                     }  `}
                   >
-                    1. Sorting a list of integers
+                    1. About
                   </p>
                 </a>
                 <a
@@ -292,13 +300,13 @@ console.log("topicHighlight",topicHighlight)
                   }}
                 >
                   <p
-                    className={`pl-[20px] pb-[4px] pr-[15px] ml-[2px] mb-[4px] cursor-pointer transition-all duration-300 ease-in-out hover:text-[#3784e9]  ${
+                    className={`pl-[20px] pb-[4px] pr-[15px] cursor-pointer  transition-all duration-300 ease-in-out lg:hover:text-[#3784e9] ml-[2px] mb-[4px] ${
                       topicHighlight === "topic2"
-                        ? "border-l-[#036BF0] lg:text-[#036BF0] border-l-[3px]"
+                        ? "border-l-[#036BF0] text-[#036BF0] border-l-[3px]"
                         : "text-[#9EB3CF]"
-                    }  `}
+                    } `}
                   >
-                    2. Reading hand-written digit {"1"}
+                    2. Leveraging P&ID
                   </p>
                 </a>
                 <a
@@ -308,13 +316,13 @@ console.log("topicHighlight",topicHighlight)
                   }}
                 >
                   <p
-                    className={`pl-[20px] pb-[4px] pr-[15px] ml-[2px] mb-[4px] cursor-pointer transition-all duration-300 ease-in-out hover:text-[#3784e9]  ${
+                    className={`pl-[20px] pb-[4px] pr-[15px] cursor-pointer transition-all duration-300 ease-in-out lg:hover:text-[#3784e9] ml-[2px] mb-[4px] ${
                       topicHighlight === "topic3"
-                        ? "border-l-[#036BF0] lg:text-[#036BF0] border-l-[3px]"
+                        ? "border-l-[#036BF0] text-[#036BF0] border-l-[3px]"
                         : "text-[#9EB3CF]"
-                    }  `}
+                    } `}
                   >
-                    3. Reading hand-written digit {"2"}
+                    3. Solution
                   </p>
                 </a>
                 <a
@@ -324,13 +332,46 @@ console.log("topicHighlight",topicHighlight)
                   }}
                 >
                   <p
-                    className={`pl-[20px] pb-[4px] pr-[15px] ml-[2px] mb-[4px] cursor-pointer transition-all duration-300 ease-in-out lg:hover:text-[#3784e9]  ${
+                    className={`pl-[20px] pb-[4px] pr-[15px] cursor-pointer transition-all duration-300 ease-in-out lg:hover:text-[#3784e9] ml-[2px] mb-[4px] ${
                       topicHighlight === "topic4"
                         ? "border-l-[#036BF0] text-[#036BF0] border-l-[3px]"
                         : "text-[#9EB3CF]"
-                    }  `}
+                    } `}
                   >
-                    4. Solution: Machine Learning or Data-Driven algorithms.
+                    4. Extracting P&ID from a simple PDF
+                  </p>
+                </a>
+
+                <a
+                  onClick={() => {
+                    scrollToTopic("topic5");
+                    setTopicHighlight("topic5");
+                  }}
+                >
+                  <p
+                    className={`pl-[20px] pb-[4px] pr-[15px] cursor-pointer transition-all duration-300 ease-in-out lg:hover:text-[#3784e9] ml-[2px] mb-[4px] ${
+                      topicHighlight === "topic5"
+                        ? "border-l-[#036BF0] text-[#036BF0] border-l-[3px]"
+                        : "text-[#9EB3CF]"
+                    } `}
+                  >
+                    5. Toward 100% Accuracy
+                  </p>
+                </a>
+                <a
+                  onClick={() => {
+                    scrollToTopic("topic6");
+                    setTopicHighlight("topic6");
+                  }}
+                >
+                  <p
+                    className={`pl-[20px] pb-[4px] pr-[15px] cursor-pointer transition-all duration-300 ease-in-out lg:hover:text-[#3784e9] ml-[2px] mb-[4px] ${
+                      topicHighlight === "topic6"
+                        ? "border-l-[#036BF0] text-[#036BF0] border-l-[3px]"
+                        : "text-[#9EB3CF]"
+                    } `}
+                  >
+                    6. Impact
                   </p>
                 </a>
               </div>

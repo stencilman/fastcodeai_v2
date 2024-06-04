@@ -117,36 +117,6 @@ const LatestBlogs = () => {
             </div>
           </div>
         </Link>
-        <Link href="/blogs/unknown-classes">
-          <div className="row-start-2">
-            <div className="bg-cover rounded-[20px]  w-full 2xl:w-[402px] h-[328px] bg-no-repeat bg-blog3 relative p-[20px]">
-              <div className="absolute bottom-[20px]">
-                <h3 className="text-white text-2xl font-aeonik tracking-wide mb-[15px]">
-                  How to deal with Unknown Classes during classification?
-                </h3>
-                <div className="flex gap-[10px] items-center">
-                  <div className="border border-[#707070] rounded-full  w-[50px] h-[50px]">
-                    <Image
-                      className="rounded-full"
-                      src="/arjun.jpg"
-                      width="50"
-                      height="50"
-                      alt=""
-                    />
-                  </div>
-                  <div>
-                    <b className="text-white font-bold font-aeonik tracking-wide ">
-                      Arjun Jain
-                    </b>
-                    <p className="text-[#FFFFFF] text-lg font-bwmss01">
-                      01 Feb 2021
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </Link>
         <Link href="/blogs/why-ai">
           <div className="row-start-3">
             <div className="bg-[#122057] rounded-[20px] w-full 2xl:w-[403px] h-[327px] relative p-[20px]">
@@ -177,6 +147,37 @@ const LatestBlogs = () => {
             </div>
           </div>
         </Link>
+        <Link href="/blogs/oil-gas">
+          <div className="row-start-2">
+            <div className="bg-cover rounded-[20px]  w-full 2xl:w-[402px] h-[328px] bg-no-repeat bg-blog3 relative p-[20px]">
+              <div className="absolute bottom-[20px]">
+                <h3 className="text-white text-2xl font-aeonik tracking-wide mb-[15px]">
+                  Oil & Gas EPC - Digitizing P&ID
+                </h3>
+                <div className="flex gap-[10px] items-center">
+                  <div className="border border-[#707070] rounded-full bg-white w-[50px] h-[50px]">
+                    {/* <Image
+                      className="rounded-full"
+                      src="/arjun.jpg"
+                      width="50"
+                      height="50"
+                      alt=""
+                    /> */}
+                  </div>
+                  <div>
+                    <b className="text-white font-bold font-aeonik tracking-wide ">
+                      Tarun Kumar
+                    </b>
+                    <p className="text-[#FFFFFF] text-lg font-bwmss01">
+                      03 June 2020
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </Link>
+
         <Link
           href="/blogs/unknown-classes"
           className="lg:col-span-2 2xl:col-span-3"
