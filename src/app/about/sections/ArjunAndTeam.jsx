@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import Button from "@/app/component/Button";
 
 const ArjunAndTeam = () => {
   const [imageInfo, setImageInfo] = useState([]);
@@ -60,7 +61,7 @@ const ArjunAndTeam = () => {
     <div className="w-full h-full lg:h-[190vh] bg-gradient-to-br from-[#000E32] to-[#000929] opacity-83 px-[20px] md:px-[50px] lg:pr-[127px] lg:pl-[100px] relative z-[5]">
       <div className="w-full h-auto lg:h-[80vh] pb-[57px] lg:pb-0  border-b border-[#FFFFFF] relative flex items-center gap-0 lg:gap-[10%] flex-col-reverse lg:flex-row justify-center">
         <div className=" h-full w-full lg:w-[70%] flex flex-col justify-start lg:justify-center gap-[20px] lg:gap-[26px]">
-          <h1 className="font-aeonik text-[8vw] md:text-[7vw] lg:text-[5.5vw] text-white leading-[7.5vw] md:leading-[6.5vw] lg:leading-[5.5vw] tracking-normal font-light">
+          <h1 className="font-aeonik text-[8vw] md:text-[7vw] lg:text-[5.5vw] text-white leading-[8.5vw] md:leading-[7.5vw] lg:leading-[6.5vw] tracking-normal font-light">
             Guiding Excellence Through Leadership
           </h1>
           <p className="text-lg lg:text-[1.5vw] lg:leading-[2vw] font-bwmss01 text-[#9EB3CF]">
@@ -132,7 +133,7 @@ const ArjunAndTeam = () => {
           <div className="relative w-full h-[60%] top-[-70px] lg:top-[-40px] ">
             <div className="flex justify-normal lg:block">
               <Image
-                className="w-[75vw] md:w-[45vw] lg:w-[291px]"
+                className="w-[45vw] md:w-[30vw] lg:w-[291px]"
                 src="/about/about_arjun/Arjun2.png"
                 width="291"
                 height="301"
@@ -141,7 +142,7 @@ const ArjunAndTeam = () => {
             </div>
             <div className="">
               <p className="text-[9vw] md:text-[6.7vw] lg:text-[1.6vw] lg:text-center mt-[60px] font-light leading-[10vw] md:leading-[8vw] lg:leading-[2vw] font-aeonik text-[#ffffff]">
-                Dr. Arjun Jain <br /> Chief Scientist
+                Dr. Arjun Jain <br /> Founder and Chief Scientist
               </p>
               <div className="lg:hidden w-[220px] md:w-[25vw] mt-[20px]">
                 <Link
@@ -187,7 +188,7 @@ const ArjunAndTeam = () => {
       <div className="w-full h-auto py-[40px] lg:py-0 lg:h-[100vh] relative flex flex-col items-center justify-center z-[4]">
         <div className="flex flex-col md:flex-row gap-[10vw] md:gap-[0px] w-full items-center z-[3]">
           <div className=" w-[100%] md:w-[45%]">
-            <h1 className="text-[8vw] md:text-[7vw] lg:text-[51px] text-white font-aeonik">
+            <h1 className="text-[8vw] md:text-[7vw] lg:text-[51px] tracking-normal text-white font-aeonik">
               Our Team
             </h1>
             <p className="text-[#9EB3CF] w-[80%] text-lg font-bwmss01 font-light mt-[15px] md:mt-[30px]">
@@ -196,7 +197,7 @@ We are proud authors of influential papers and active contributors to open-sourc
 Each member has been carefully selected from top universities, emphasizing our commitment
 to innovative problem solvers who excel in their fields.
             </p>
-            <button className="rounded-[28px] mt-[50px] flex items-center gap-[7px] bg-gradient-to-br from-[#2DC1C3] to-[#0268F2] text-white p-[15px] text-lg">
+            {/* <Link href="/team" className="rounded-[28px] mt-[50px] flex items-center gap-[7px] bg-gradient-to-br from-[#2DC1C3] to-[#0268F2] text-white p-[15px] text-lg">
               Get Started
               <Image
                 className="inline"
@@ -205,7 +206,10 @@ to innovative problem solvers who excel in their fields.
                 width="16"
                 height="13"
               />
-            </button>
+            </Link> */}
+            <div className="max-w-[185px] mt-[30px] md:mt-[35px] lg:mt-[50px]">
+            <Button to="/team" name="More About Us"/>
+            </div>
           </div>
           <div className="columns__col mod--team is-2 w-[100%] md:w-[55%] h-full  ">
             <div className="team_grid flex flex-wrap justify-center md:justify-end">

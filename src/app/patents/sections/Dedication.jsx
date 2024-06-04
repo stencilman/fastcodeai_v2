@@ -5,14 +5,14 @@ const Dedication = () => {
   return (
     <div className="w-full h-[auto] bg-[#00081F] flex items-center justify-center relative">
       {/* Gradient */}
-      <div
+      {/* <div
         className="w-full h-[10vh] absolute top-0 blur-[30px]"
         style={{ background: "#00081F 0% 0% no-repeat padding-box" }}
-      ></div>
+      ></div> */}
 
-      <div className="flex w-[full] pl-[20px] md:pl-[50px] lg:pl-[100px] pr-[20px] md:pr-[50px] lg:pr-0 mt-[15vw] h-[auto] gap-[10%] gap-y-[40px] flex-col lg:flex-row">
+      <div className="flex w-[full] pl-[20px] md:pl-[50px] lg:pl-[100px] pr-[20px] md:pr-[50px] lg:pr-[100px] mt-[8vw] h-[auto] gap-[10%] gap-y-[40px] flex-col lg:flex-row">
         {/* left */}
-        <div className="lg:w-[30%] h-full flex flex-col sm:flex-row lg:flex-col gap-[35px] mt-[12vw]">
+        {/* <div className="lg:w-[30%] h-full flex flex-col sm:flex-row lg:flex-col gap-[35px] mt-[12vw]">
           <div className="w-full  ">
             <h3 className="text-white font-aeonik tracking-normal text-[8.3vw] md:text-[7vw] lg:text-[51px] leading-[10vw] md:leading-[8vw] lg:leading-[60px] ">
               Our dedication to pioneering technology
@@ -22,10 +22,10 @@ const Dedication = () => {
               dedication to pioneering technology and transformative solutions
             </p>
           </div>
-        </div>
+        </div> */}
         {/* right */}
-        <div className="lg:w-[50%] h-full  flex gap-[5%] flex-wrap">
-          <div className="w-[100%] sm:w-[47.5%] h-auto sm:h-[331px]  rounded-[18px] mb-[30px] flex flex-wrap md:flex-nowrap md:items-center sm:items-start sm:flex-col gap-[15px] p-[20px] ">
+        <div className="w-[100%] h-full flex sm:gap-[4%] md:gap-[5%] flex-wrap">
+          <div className="w-[100%] sm:w-[47%] md:w-[20.5%] h-auto rounded-[18px] mb-[30px] flex flex-wrap md:flex-nowrap  sm:items-start sm:flex-col gap-[15px]  ">
             <div
               className="flex justify-center items-center border border-[#1A2758] rounded-full p-[10px] mb-[10px]"
               style={{
@@ -51,7 +51,7 @@ const Dedication = () => {
               </p>
             </div>
           </div>
-          <div className="w-[100%] sm:w-[47.5%] h-auto sm:h-[331px]  rounded-[18px] mb-[30px] flex flex-wrap md:flex-nowrap md:items-center sm:items-start sm:flex-col gap-[15px] p-[20px] ">
+          <div className="w-[100%] sm:w-[47%] md:w-[20.5%] h-auto rounded-[18px] mb-[30px] flex flex-wrap md:flex-nowrap  sm:items-start sm:flex-col gap-[15px]  ">
             <div
               className="flex justify-center items-center border border-[#1A2758] rounded-full p-[10px] mb-[10px]"
               style={{
@@ -77,7 +77,7 @@ const Dedication = () => {
               </p>
             </div>
           </div>
-          <div className="w-[100%] sm:w-[47.5%] h-auto sm:h-[331px]  rounded-[18px] mb-[30px] flex flex-wrap md:flex-nowrap md:items-center sm:items-start sm:flex-col gap-[15px] p-[20px] ">
+          <div className="w-[100%] sm:w-[47%] md:w-[20.5%] h-auto rounded-[18px] mb-[30px] flex flex-wrap md:flex-nowrap  sm:items-start sm:flex-col gap-[15px]  ">
             <div
               className="flex justify-center items-center border border-[#1A2758] rounded-full p-[10px] mb-[10px]"
               style={{
@@ -103,7 +103,7 @@ const Dedication = () => {
               </p>
             </div>
           </div>
-          <div className="w-[100%] sm:w-[47.5%] h-auto sm:h-[331px]  rounded-[18px] mb-[30px] flex flex-wrap md:flex-nowrap items-center sm:items-start sm:flex-col gap-[15px] p-[20px] ">
+          <div className="w-[100%] sm:w-[47%] md:w-[20.5%] h-auto rounded-[18px] mb-[30px] flex flex-wrap md:flex-nowrap  sm:items-start sm:flex-col gap-[15px]  ">
             <div
               className="flex justify-center items-center border border-[#1A2758] rounded-full p-[10px] mb-[10px]"
               style={{

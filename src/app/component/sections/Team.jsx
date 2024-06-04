@@ -1,6 +1,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
+import Button from "../Button";
 
 const Team = () => {
   const [imageInfo, setImageInfo] = useState([]);
@@ -72,7 +73,7 @@ const Team = () => {
             carefully selected from top universities, emphasizing our commitment
             to innovative problem solvers who excel in their fields.
           </p>
-          <button className="rounded-[28px] mt-[20px] md:mt-[35px] lg:mt-[50px] flex items-center gap-[7px] bg-gradient-to-br from-[#2DC1C3] to-[#0268F2] text-white p-[15px] text-lg">
+          {/* <button className="rounded-[28px] mt-[20px] md:mt-[35px] lg:mt-[50px] flex items-center gap-[7px] bg-gradient-to-br from-[#2DC1C3] to-[#0268F2] text-white p-[15px] text-lg">
             Get Started
             <Image
               className="inline"
@@ -81,7 +82,10 @@ const Team = () => {
               width="16"
               height="13"
             />
-          </button>
+          </button> */}
+          <div className="max-w-[185px] mt-[30px] md:mt-[35px] lg:mt-[50px]">
+            <Button to="/team" name="More About Us"/>
+            </div>
         </div>
         <div className="columns__col mod--team is-2 w-[100%] md:w-[55%] h-full md:pr-[50px] lg:pr-[127px]">
           <div className="team_grid flex flex-wrap justify-center md:justify-end">

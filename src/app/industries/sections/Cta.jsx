@@ -1,10 +1,12 @@
 import Image from "next/image";
 import React from "react";
+import Link from "next/link";
 
 const Cta = ({title,quote}) => {
   return (
-    <div className="w-full h-[60vh] pl-[20px] md:pl-[50px] lg:pl-[100px] pr-[20px] md:pr-[50px] lg:pr-[100px] relative bg-[#00081F] flex flex-col justify-center gap-[4vw] ">
-      <h1 className="text-[8vw] md:text-[7vw] lg:text-5xl tracking-normal text-white font-aeonik">
+    <div className="w-full min-h-[40vh] pl-[20px] md:pl-[50px] lg:pl-[100px] pr-[20px] md:pr-[50px] lg:pr-[100px] relative bg-[#00081F]  ">
+      <Link className="flex flex-col justify-center gap-[4vw]" href="/contact">
+      <h1 className="text-[8vw] leading-[8.5vw] md:text-[7vw] md:leading-[7.5vw] lg:text-5xl tracking-normal text-white font-aeonik">
         {title}
       </h1>
       <div
@@ -33,6 +35,7 @@ const Cta = ({title,quote}) => {
           />
         </div>
       </div>
+      </Link>
     </div>
   );
 };

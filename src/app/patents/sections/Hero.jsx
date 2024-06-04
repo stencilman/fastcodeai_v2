@@ -44,8 +44,7 @@ const Hero = () => {
             isVisible ? "translate-y-0 opacity-100" : "translate-y-20 opacity-0"
           }  transition-transform delay-100 duration-1000 ease-out `}
         >
-          Explore our groundbreaking patents that demonstrate our commitment to
-          innovation and technology leadership.
+         Explore our ground-breaking patents that highlight our leadership in advancing technology and innovation.
         </p>
       </div>
     </div>
