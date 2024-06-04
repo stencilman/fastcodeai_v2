@@ -268,7 +268,7 @@ console.log("topicHighlight",topicHighlight)
               <h6 className="text-white text-lg font-aeonik px-[23px] pt-[23px]">
                 TABLE OF CONTENTS
               </h6>
-              <div className="mt-[15px] max-w-[400px] text-lg font-bwmss01 text-[#9EB3CF] h-[46vw] sm:h-[210px] md:h-[19vw] lg:h-auto overflow-auto">
+              <div className="mt-[15px] max-w-[400px] text-lg font-bwmss01  h-[46vw] sm:h-[210px] md:h-[19vw] lg:h-auto overflow-auto">
                 <a
                   onClick={() => {
                     scrollToTopic("topic1");
@@ -276,7 +276,7 @@ console.log("topicHighlight",topicHighlight)
                   }}
                 >
                   <p
-                    className={`pl-[20px] pb-[4px] pr-[15px] ml-[2px] mb-[4px] cursor-pointer transition-all duration-300 ease-in-out hover:text-[#3784e9]  ${
+                    className={`pl-[20px] pb-[4px] pr-[15px] ml-[2px] mb-[4px] cursor-pointer transition-all duration-300 ease-in-out lg:hover:text-[#3784e9]  ${
                       topicHighlight === "topic1"
                         ? "border-l-[#036BF0] lg:text-[#036BF0] border-l-[3px]"
                         : "text-[#9EB3CF]"
@@ -292,7 +292,7 @@ console.log("topicHighlight",topicHighlight)
                   }}
                 >
                   <p
-                    className={`pl-[20px] pb-[4px] pr-[15px] ml-[2px] mb-[4px] cursor-pointer transition-all duration-300 ease-in-out hover:text-[#3784e9]  ${
+                    className={`pl-[20px] pb-[4px] pr-[15px] ml-[2px] mb-[4px] cursor-pointer transition-all duration-300 ease-in-out lg:hover:text-[#3784e9]  ${
                       topicHighlight === "topic2"
                         ? "border-l-[#036BF0] lg:text-[#036BF0] border-l-[3px]"
                         : "text-[#9EB3CF]"
@@ -308,7 +308,7 @@ console.log("topicHighlight",topicHighlight)
                   }}
                 >
                   <p
-                    className={`pl-[20px] pb-[4px] pr-[15px] ml-[2px] mb-[4px] cursor-pointer transition-all duration-300 ease-in-out hover:text-[#3784e9]  ${
+                    className={`pl-[20px] pb-[4px] pr-[15px] ml-[2px] mb-[4px] cursor-pointer transition-all duration-300 ease-in-out lg:hover:text-[#3784e9]  ${
                       topicHighlight === "topic3"
                         ? "border-l-[#036BF0] lg:text-[#036BF0] border-l-[3px]"
                         : "text-[#9EB3CF]"
