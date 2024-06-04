@@ -12,6 +12,7 @@
     "@gsap/react": "^2.1.1",
     "@studio-freight/react-lenis": "^0.0.47",
     "@vercel/speed-insights": "^1.0.10",
+    "formidable": "^3.5.1",
     "framer-motion": "^11.0.28",
     "gsap": "^3.12.5",
     "lottie-react": "^2.4.0",

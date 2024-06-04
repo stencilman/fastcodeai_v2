@@ -2,6 +2,7 @@
 import Button from "@/app/component/Button";
 import React, { useState } from "react";
 import { motion } from "framer-motion";
+import HiringForm from "./HiringForm";
 
 const OpenRolesForm = () => {
   const [showAccordion, setShowAccordion] = useState();
@@ -27,11 +28,11 @@ const OpenRolesForm = () => {
         <div className="flex flex-col ">
           {/* Accordion 1 */}
           <div
-            onClick={() =>{ handleAccordion(0),setIsOpen(!isOpen)}}
             className="group border-b-2 pb-[30px] border-[#AFC0FF] cursor-pointer w-[100%] flex-col "
-          >
+            >
             <div className=" flex  flex-col mt-[30px] px-0 md:px-[32px] ">
-              <div className="flex justify-between items-center">
+            
+              <div onClick={() =>{ handleAccordion(0);setIsOpen(!isOpen)}} className="flex justify-between items-center">
                 <h1
                   className={`text-[7vw] md:text-[6vw] lg:text-4xl text-white font-aeonik transition-all duration-300 ease-in-out tracking-normal ${
                     showAccordion !== 0 ? "group-hover:scale-[1.1]" : ""
@@ -96,7 +97,7 @@ const OpenRolesForm = () => {
                       environment!
                     </p>
                     <div className="max-w-[160px] mr-[60px]">
-                      <Button name="Apply Now" to="/career" />
+                      <Button name="Apply Now" to="/contact" />
                     </div>
                   </div>
                   <div className=" mt-[25px]">
@@ -118,6 +119,10 @@ const OpenRolesForm = () => {
          
         </div>
       </div>
+
+      {/* <div className="mt-[100px]">
+        <HiringForm/>
+      </div> */}
     </div>
   );
 };

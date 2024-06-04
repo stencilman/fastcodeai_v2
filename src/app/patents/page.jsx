@@ -25,7 +25,7 @@ const Patents = () => {
       <Showcase />
       {/* <HowWeDo /> */}
       {/* <Industries /> */}
-      <div className="mt-[30vw] sm:mt-[20vw] md:mt-[20vw]"></div>
+      <div className="mt-[20vw] sm:mt-[10vw] md:mt-[10vw]"></div>
       {/* <TechStack /> */}
       {/* <TestimonialsN /> */}
       
