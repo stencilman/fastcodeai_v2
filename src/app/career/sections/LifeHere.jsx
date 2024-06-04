@@ -8,43 +8,63 @@ const LifeHere = () => {
         Life at Fast Code AI
       </h1>
       <div className="w-full">
-       
         <div className="flex flex-col gap-[30px] w-full items-center">
           <div className="flex flex-col md:flex-row gap-[30px] h-auto md:h-[270px]">
-            <div>
+            <div className="relative">
               <Image
-              className="h-full w-full md:w-[301px]"
-                src="/career/LifeHere/img1.png"
+                className="h-full grayscale w-full md:w-[301px] object-cover rounded-[24px]"
+                src="/career/LifeHere/team1.jpeg"
                 width="301"
                 height="283"
                 alt=""
               />
+              <div className="absolute inset-0 bg-[#05122da6] rounded-[24px]"></div>
             </div>
-            <div>
+            <div className="relative">
               <Image
-              className="h-full w-full md:w-[538px]"
-                src="/career/LifeHere/img2-2.png"
+                className="h-full grayscale w-full md:w-[538px] object-cover rounded-[24px]"
+                src="/career/LifeHere/team2.jpeg"
                 width="538"
                 height="283"
                 alt=""
               />
+              <div className="absolute inset-0 bg-[#05122da6] rounded-[24px]"></div>
+
             </div>
-            <div>
+            <div className="relative">
               <Image
-              className="h-full w-full md:w-[301px]"
-                src="/career/LifeHere/img3-2.png"
+                className="h-full grayscale w-full md:w-[301px] object-cover rounded-[24px]"
+                src="/career/LifeHere/team3.jpeg"
                 width="301"
                 height="283"
                 alt=""
               />
+              <div className="absolute inset-0 bg-[#05122da6] rounded-[24px]"></div>
+
             </div>
           </div>
           <div className="flex flex-col md:flex-row gap-[30px] h-auto md:h-[416px]">
-            <div>
-            <Image className="h-full w-full md:w-[630px]" src="/career/LifeHere/img4-2.png" width="630" height="283" alt=""/>
+            <div className="relative">
+              <Image
+                className="h-full grayscale w-full md:w-[630px] object-cover rounded-[24px]"
+                src="/career/LifeHere/team4.jpeg"
+                width="630"
+                height="283"
+                alt=""
+              />
+              <div className="absolute inset-0 bg-[#05122da6] rounded-[24px]"></div>
+
             </div>
-            <div>
-            <Image className="h-full w-full md:w-[538px]" src="/career/LifeHere/img5-2.png" width="538" height="283" alt=""/>
+            <div className="relative">
+              <Image
+                className="h-full grayscale w-full md:w-[538px] object-cover rounded-[24px]"
+                src="/career/LifeHere/team1.jpeg"
+                width="538"
+                height="283"
+                alt=""
+              />
+              <div className="absolute inset-0  bg-[#05122da6] rounded-[24px]"></div>
+
             </div>
           </div>
         </div>
