@@ -21,8 +21,8 @@ const Contact = () => {
             <Hero />
             <Form />
             <HowWeDo pb="pb-[100px]" />
-            <Clients />
-            <WhyChooseUs />
+            {/* <Clients /> */}
+            {/* <WhyChooseUs /> */}
             <Footer />
         </>
     )

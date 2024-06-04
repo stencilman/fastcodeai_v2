@@ -58,18 +58,14 @@ const ArjunAndTeam = () => {
   }, []);
 
   return (
-    <div className="w-full h-full lg:h-[190vh] bg-gradient-to-br from-[#000E32] to-[#000929] opacity-83 px-[20px] md:px-[50px] lg:pr-[127px] lg:pl-[100px] relative z-[5]">
-      <div className="w-full h-auto lg:h-[80vh] pb-[57px] lg:pb-0  border-b border-[#FFFFFF] relative flex items-center gap-0 lg:gap-[10%] flex-col-reverse lg:flex-row justify-center">
+    <div className="w-full h-full lg:min-h-[190vh] bg-gradient-to-br from-[#000E32] to-[#000929] opacity-83 px-[20px] md:px-[50px] lg:pr-[127px] lg:pl-[100px] relative z-[5]">
+      <div className="w-full h-auto lg:min-h-[80vh] py-[57px]   border-b border-[#FFFFFF] relative flex items-center gap-0 lg:gap-[10%] flex-col-reverse lg:flex-row justify-center">
         <div className=" h-full w-full lg:w-[70%] flex flex-col justify-start lg:justify-center gap-[20px] lg:gap-[26px]">
           <h1 className="font-aeonik text-[8vw] md:text-[7vw] lg:text-[5.5vw] text-white leading-[8.5vw] md:leading-[7.5vw] lg:leading-[6.5vw] tracking-normal font-light">
             Guiding Excellence Through Leadership
           </h1>
           <p className="text-lg lg:text-[1.5vw] lg:leading-[2vw] font-bwmss01 text-[#9EB3CF]">
-            <b className="font-bold">Dr. Arjun Jain</b> is a recognized leader in machine learning. With a
-            focused commitment to enhancing AI utility across multiple
-            industries, he spearheads initiatives that leverage AI to solve
-            real-world problems. Under his leadership, Fast Code AI has emerged
-            as a hub of innovation.
+            <b className="font-bold">Arjun Jain</b> is the Founder and CEO of Fast Code AI and holds a Ph.D. in Computer Science from the Max-Planck Institute for Informatics, Germany. His research intersects computer graphics, vision, and machine learning. Arjun also serves as an Adjunct Faculty in the CDS department at IISc, where he leads a deep learning research group. He has an extensive teaching and professional background, having taught Computer Vision at IIT Bombay and worked with companies like Yahoo!, Weta Digital, and Apple. {"Arjun's"} notable contributions include his work on Weta {"Digital's"} motion capture system, featured in films such as Steven {"Spielberg's"} {`"The Adventures of Tintin." `} His achievements have garnered coverage in major media outlets like Vogue, Wired, and The Hollywood Reporter.
           </p>
           <div className="flex flex-wrap w-full items-center gap-[40px] mt-[30px]">
             <div className="flex gap-[13px] md:w-[40%]  items-center">
@@ -130,7 +126,7 @@ const ArjunAndTeam = () => {
           </div>
         </div>
         <div className=" h-full w-[100%] lg:w-[24%] relative">
-          <div className="relative w-full h-[60%] top-[-70px] lg:top-[-40px] ">
+          <div className="relative w-full h-[60%] top-[-90px] lg:top-[-40px] ">
             <div className="flex justify-normal lg:block">
               <Image
                 className="w-[45vw] md:w-[30vw] lg:w-[291px]"
@@ -144,7 +140,7 @@ const ArjunAndTeam = () => {
               <p className="text-[9vw] md:text-[6.7vw] lg:text-[1.6vw] lg:text-center mt-[60px] font-light leading-[10vw] md:leading-[8vw] lg:leading-[2vw] font-aeonik text-[#ffffff]">
                 Dr. Arjun Jain <br /> Founder and Chief Scientist
               </p>
-              <div className="lg:hidden w-[220px] md:w-[25vw] mt-[20px]">
+              <div className="lg:hidden w-[220px] md:w-[25vw] mt-[35px]">
                 <Link
                   href="https://arjunjain.co.in/"
                   target="_blank"
