@@ -7,38 +7,38 @@ const PearksAndBenefits = () => {
       icon: "/career/perks-benefits/icon1.svg",
       name: "Be connected",
       details: "Macbook, Mobile device budget Internet and mobile plan",
-      w: "55px",
+      w: "w-[70px] md:w-[55px]",
     },
     {
       icon: "/career/perks-benefits/icon2.svg",
       name: "Go flexible",
       details:
         "Work from home, Flexible working hours Office with panorama view of Brussels",
-      w: "76px",
+      w: "w-[95px] md:w-[76px]",
     },
     {
       icon: "/career/perks-benefits/icon3.svg",
       name: "Keep learning",
       details: "Personal L&D budget each year Monthly presentations",
-      w: "55px",
+      w: "w-[70px] md:w-[55px]",
     },
     {
       icon: "/career/perks-benefits/icon4.svg",
       name: "Take holidays",
       details: "20 Legal holidays 12 ADV Holidays",
-      w: "55px",
+      w: "w-[45px] md:w-[55px]",
     },
     {
       icon: "/career/perks-benefits/icon5.svg",
       name: "Stay healthy",
       details: "Health insurance Mental health support",
-      w: "55px",
+      w: "w-[40px] md:w-[55px]",
     },
     {
       icon: "/career/perks-benefits/icon6.svg",
       name: "Get extras",
       details: "Lorem Ipsum is just dummy information regarding health.",
-      w: "55px",
+      w: "w-[70px] md:w-[55px]",
     },
   ];
   return (
@@ -70,7 +70,7 @@ const PearksAndBenefits = () => {
                 src={e.icon}
                 height="50"
                 width="90"
-                className={`w-[55px] md:w-[${e.w}] sm:h-[50px]`}
+                className={` ${e.w} sm:h-[50px]`}
               />
             </div>
             <div className="flex flex-col gap-[6px]">

@@ -1,9 +1,12 @@
 "use client";
 import Button from "@/app/component/Button";
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 
 const OpenRolesForm = () => {
-  const [showAccordion, setShowAccordion] = useState(1);
+  const [showAccordion, setShowAccordion] = useState();
+  const [isOpen, setIsOpen] = useState(false);
+
   const handleAccordion = (accordionNumber) => {
     setShowAccordion(accordionNumber);
   };
@@ -24,7 +27,7 @@ const OpenRolesForm = () => {
         <div className="flex flex-col ">
           {/* Accordion 1 */}
           <div
-            onClick={() => handleAccordion(0)}
+            onClick={() =>{ handleAccordion(0),setIsOpen(!isOpen)}}
             className="group border-b-2 pb-[30px] border-[#AFC0FF] cursor-pointer w-[100%] flex-col "
           >
             <div className=" flex  flex-col mt-[30px] px-0 md:px-[32px] ">
@@ -34,26 +37,63 @@ const OpenRolesForm = () => {
                     showAccordion !== 0 ? "group-hover:scale-[1.1]" : ""
                   }`}
                 >
-                  Director of IT
+                  ML Engineer
                 </h1>
-                {/* <div
-                 
-                  className="text-white cursor-pointer "
+                <button
+                  onClick={() => setIsOpen(!isOpen)}
+                  className=" py-3 px-4 focus:outline-none"
                 >
-                  X
-                </div> */}
+                  <motion.div
+                    animate={{
+                      rotate: showAccordion === 0 && isOpen ? 180 : 0,
+                    }}
+                    transition={{ duration: 0.3 }}
+                    className="transform"
+                  >
+                    <svg
+                      className="w-5 h-5 md:w-6 md:h-6 text-white"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={4}
+                        d="M19 9l-7 7-7-7"
+                      />
+                    </svg>
+                  </motion.div>
+                </button>
               </div>
-              {showAccordion === 0 && (
+              <motion.div
+                initial={false}
+                animate={showAccordion === 0 && isOpen ? "open" : "closed"}
+                variants={{
+                  open: { opacity: 1, height: "auto" },
+                  closed: { opacity: 0, height: 0, duration: 0.6 },
+                }}
+                transition={{ duration: 0.6 }}
+                className="overflow-hidden"
+              >
+            
                 <div className="cursor-default">
                   <div className="flex w-[100%] justify-between md:items-center flex-col md:flex-row gap-[30px] md:gap-0">
-                    <p className="text-[#9EB3CF] font-bwmss01 w-[100%] md:w-[60%] text-base md:text-lg pt-[25px]">
-                      Fast Code AI is a leading AI adoption partner that
-                      collaborates with industry leaders to harness the power of
-                      advanced intelligence. They specialize in developing AI
-                      solutions for various domains, including computer vision,
-                      trend forecasting, and targeted consumer insights. Ipsum
-                      potenti at congue magna amet id egestas. Quisque imperdiet
-                      feugiat ac sit est vitae cras. Amet ut ornare eu at
+                    <p className="text-[#9EB3CF] font-bwmss01 w-[100%] md:w-[61%] text-base md:text-lg pt-[25px]">
+                      FastcodeAI is seeking Machine Learning Engineers to
+                      innovate in AI technologies. Responsibilities include
+                      developing advanced ML algorithms with a focus on computer
+                      vision, and building robust data and ML pipelines using
+                      C++ and Python. Candidates should have a BTech, MTech, or
+                      PhD with at least one year of experience in computer
+                      vision and ML pipeline design, and be proficient in
+                      software engineering with tools like TensorFlow and
+                      PyTorch. We value strong problem-solving skills and
+                      excellent communication. Positions are open at junior,
+                      mid-level, and senior levels with competitive salaries.
+                      Join us to advance your career in a pioneering technology
+                      environment!
                     </p>
                     <div className="max-w-[160px] mr-[60px]">
                       <Button name="Apply Now" to="/career" />
@@ -67,65 +107,15 @@ const OpenRolesForm = () => {
                       <li className="text-white font-aeonik text-xl font-medium">
                         Fulltime
                       </li>
-                      <li className="text-white font-aeonik text-xl font-medium">
-                        3 Years
-                      </li>
                     </ul>
                   </div>
                 </div>
-              )}
+             
+              </motion.div>
             </div>
           </div>
 
-          {/* Accordion 2 */}
-          <div
-            onClick={() => handleAccordion(1)}
-            className="group border-b-2 pb-[30px] relative border-[#AFC0FF] cursor-pointer w-[100%] flex-col "
-          >
-            <div className={` flex  flex-col mt-[30px] px-0 md:px-[32px] `}>
-              <div className="flex justify-between items-center">
-                <h1
-                  className={`text-[7vw] md:text-[6vw] lg:text-4xl text-white font-aeonik transition-all duration-300 ease-in-out tracking-normal ${
-                    showAccordion !== 1 ? "group-hover:scale-[1.1]" : ""
-                  }`}
-                >
-                  Assistant Project Manager
-                </h1>
-                {/* <div className="text-white  ">X</div> */}
-              </div>
-              {showAccordion === 1 && (
-                <div className={`cursor-default `}>
-                  <div className="flex w-[100%] justify-between md:items-center flex-col md:flex-row gap-[30px] md:gap-0">
-                    <p className="text-[#9EB3CF] font-bwmss01 w-[100%] md:w-[60%] text-base md:text-lg pt-[25px]">
-                      Fast Code AI is a leading AI adoption partner that
-                      collaborates with industry leaders to harness the power of
-                      advanced intelligence. They specialize in developing AI
-                      solutions for various domains, including computer vision,
-                      trend forecasting, and targeted consumer insights. Ipsum
-                      potenti at congue magna amet id egestas. Quisque imperdiet
-                      feugiat ac sit est vitae cras. Amet ut ornare eu at
-                    </p>
-                    <div className="max-w-[160px] mr-[60px]">
-                      <Button name="Apply Now" to="/career" />
-                    </div>
-                  </div>
-                  <div className=" mt-[25px]">
-                    <ul className="flex pl-[0px] flex-wrap gap-[20px] md:gap-[40px]">
-                      <li className="text-white font-aeonik text-xl font-medium">
-                        Bangalore,India
-                      </li>
-                      <li className="text-white font-aeonik text-xl font-medium">
-                        Fulltime
-                      </li>
-                      <li className="text-white font-aeonik text-xl font-medium">
-                        3 Years
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              )}
-            </div>
-          </div>
+         
         </div>
       </div>
     </div>
