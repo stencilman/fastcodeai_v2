@@ -89,7 +89,7 @@ const OurWork = () => {
   console.log("currentSlide", currentSlide);
 
   return (
-    <div className="w-full h-[120vh] md:h-[100vh] pl-[20px] md:pl-[80px] lg:pl-[160px] relative bg-[#00081F] flex flex-col justify-center">
+    <div className="w-full min-h-[120vh] md:min-h-[100vh] pl-[20px] md:pl-[80px] lg:pl-[160px] relative bg-[#00081F] flex flex-col justify-center pb-[100px]">
       <div className="absolute top-[-160px] left-0 w-full h-[150px] blur-[50px] translate-y-[30px] scale-90  rounded-[50%] z-[1] bg-gradient-to-br from-[#1D8283] to-[#033577] bg-gradient-156deg bg-no-repeat bg-[0% 0%] opacity-49 border-0 border-opacity-0 filter blur-[50px]"></div>
       <div className="absolute top-[88px] right-[10px]  w-[169px] h-[421px] blur-[50px] translate-y-[167px] scale-90  rounded-[50%] z-[1] bg-gradient-to-br from-[#1D8283] to-[#033577] bg-gradient-156deg bg-no-repeat bg-[0% 0%] opacity-49 border-0 border-opacity-0 filter blur-[100px]"></div>
       {/* Titile with buttons */}

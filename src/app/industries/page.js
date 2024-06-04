@@ -32,9 +32,9 @@ const Industries = () => {
             <OurWork/>
             <Clients/>
             <TestimonialsN/>
-            <Link href="/contact">
+           
             <Cta title="Do you Have a Project in Mind?" quote="Give us Some Detail on Your Project and Let us Help"/>
-            </Link>
+            
             <Footer/>
         </>
     )
