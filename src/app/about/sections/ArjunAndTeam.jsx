@@ -73,7 +73,7 @@ useEffect(() => {
 
   return (
     <div className="w-full h-full lg:min-h-[auto] bg-gradient-to-br from-[#000E32] to-[#000929] opacity-83 px-[20px] md:px-[50px] lg:pr-[127px] lg:pl-[100px] relative z-[5]">
-      <div className="w-full h-auto lg:min-h-[80vh] py-[57px]    relative flex items-center gap-0 lg:gap-[10%] flex-col-reverse lg:flex-row justify-center">
+      <div className="w-full h-auto lg:min-h-[80vh] pt-[57px] pb-[38px] md:pb-[50px] xl:pb-[32px]   relative flex items-center gap-0 lg:gap-[10%] flex-col-reverse lg:flex-row justify-center">
         <div className=" h-full w-full lg:w-[70%] flex flex-col justify-start lg:justify-center gap-[20px] lg:gap-[26px]">
           <h1 className="font-aeonik text-[8vw] md:text-[7vw] lg:text-[5.5vw] text-white leading-[8.5vw] md:leading-[7.5vw] lg:leading-[6.5vw] tracking-normal font-light">
             Guiding Excellence Through Leadership
@@ -196,7 +196,7 @@ useEffect(() => {
       </div>
       {/* team */}
      { showTeam&&
-      <div className="w-full border-t-2 border-white h-auto py-[40px] lg:py-0 lg:h-[100vh] relative flex flex-col items-center justify-center z-[4]">
+      <div className="w-full border-t-2 border-white h-auto py-[40px]  lg:h-[auto] lg:py-[92px] relative flex flex-col items-center justify-center z-[4]">
         <div className="flex flex-col md:flex-row gap-[10vw] md:gap-[0px] w-full items-center z-[3]">
           <div className=" w-[100%] md:w-[45%]">
             <h1 className="text-[8vw] md:text-[7vw] lg:text-[51px] tracking-normal text-white font-aeonik">

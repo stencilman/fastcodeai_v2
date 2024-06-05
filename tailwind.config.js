@@ -31,7 +31,7 @@ module.exports = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-        'benz': "url('/potfolio/mbenz/img1-2.png')",
+        'benz': "url('/potfolio/mbenz/img1.webp')",
         'learning': "url('/potfolio/fedLearning/img1-2.png')",
         'fitness': "url('/potfolio/fitness/img1-2.png')",
 

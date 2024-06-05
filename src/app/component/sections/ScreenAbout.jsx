@@ -23,15 +23,17 @@ const ScreenAbout = () => {
       </div>
       <div className="mb-[100px] absolute lg:static top-[60vw] text-center lg:text-left">
         <h1 className="text-[8vw] md:text-[7vw] lg:text-[51px] text-white font-aeonik tracking-normal relative lg:static top-[-50vw] lg:top-0 ">
-        Discover FastCode AI
+          Discover FastCode AI
         </h1>
         <p className="text-[#9EB3CF] text-base sm:text-lg w-[100%] lg:w-[80%] px-[10vw] lg:px-0 pt-[28vw] sm:pt-[25vw] md:pt-[8vw] lg:pt-[20px] font-bwmss01">
-        FastCode AI stands at the forefront of AI adoption, equipping industry leaders with 
-the tools to implement advanced intelligence, scale solutions, and automate processes 
-effectively. We are committed to enhancing operational safety, refining user interactions, and
-unlocking deep insights into machinery and production processes through state-of-the-art 
-automation and data analytics. Guided by our core values of Excellence, Innovation, and 
-Integrity, we ensure every solution we deliver upholds the highest standards.
+          FastCode AI stands at the forefront of AI adoption, equipping industry
+          leaders with the tools to implement advanced intelligence, scale
+          solutions, and automate processes effectively. We are committed to
+          enhancing operational safety, refining user interactions, and
+          unlocking deep insights into machinery and production processes
+          through state-of-the-art automation and data analytics. Guided by our
+          core values of Excellence, Innovation, and Integrity, we ensure every
+          solution we deliver upholds the highest standards.
         </p>
       </div>
     </div>

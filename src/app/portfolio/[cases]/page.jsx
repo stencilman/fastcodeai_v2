@@ -17,7 +17,7 @@ const page = ({ params }) => {
   const heroDataMap = {
     mbux: [
       {
-        logo: "/potfolio/mbenz/hero/logo.png",
+        // logo: "/potfolio/mbenz/hero/logo.png",
         title: "Gesture Recognition based User Experience",
         description:
           "Enhance interaction between driver and car by detecting driver hand gesture for superior level driver experience with Mercedes Benz User Experience - MBUX System.",

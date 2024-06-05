@@ -7,7 +7,7 @@ const Hero = ({ heroData }) => {
       <div className="w-full h-[50%] md:h-[50vh]">
         <Image
           className="w-full h-full"
-          src="/potfolio/mbenz/hero/main1-2.png"
+          src="/potfolio/mbenz/hero/img1.webp"
           width="1538"
           height="598"
           alt=""

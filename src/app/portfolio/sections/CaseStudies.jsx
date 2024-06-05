@@ -10,9 +10,9 @@ const CaseStudies = () => {
   const porfolioList = [
     {
       img: "bg-benz",
-      title: "Mercedes Benz",
+      title: "Gesture Recognition based User Experience",
       description:
-        "Enhance interaction between driver and car by detecting driver hand gesture for superior level driver experience with Mercedes Benz User Experience - MBUX System.",
+        "Enhance interaction between driver and car by detecting driver hand gesture for superior level driver experience with Automotive OEM.",
       to: "/portfolio/mbux",
     },
     {
