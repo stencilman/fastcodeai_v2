@@ -14,7 +14,7 @@ const Hero = () => {
       setIsVisible(true);
     }
   }, [inView]);
-
+ 
   return (
     <div className="w-full h-[100vh] relative bg-gradient-to-br from-[#000E32] to-[#000929] opacity-83">
       {/* <Navbar /> */}
@@ -25,7 +25,7 @@ const Hero = () => {
           muted
           loop
           playsInline
-          src="/patents.mp4"
+          src="/industries.mp4"
         />
         <div className="absolute inset-0 bg-black opacity-[0.6]"></div>
       </div>

@@ -25,7 +25,7 @@ const Hero = () => {
           muted 
           loop
           playsInline
-          src="/industries.mp4"
+          src="/patents.mp4"
         />
         <div className="absolute inset-0 bg-black opacity-[0.65]"></div>
       </div>
