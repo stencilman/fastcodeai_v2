@@ -48,18 +48,18 @@ module.exports = {
         'oilGasHero': "url('/blogs/oil-gas/oilGas-Hero.webp')",
 
         'arjun': "url('/members/arjun.png')",
-        'dhaval': "url('/members/dhaval1.jpg')",
+        'dhaval': "url('/members/dhaval1.png')",
         'prabal': "url('/members/Prabal.webp')",
         'abdul': "url('/members/abdul1.png')",
         'parth': "url('/members/parth.png')",
         'eshwar': "url('/members/eshwar.png')",
         'naren': "url('/members/naren.png')",
         'sanjay': "url('/members/sanjay.png')",
-        'shreyas': "url('/members/shreyas.png')",
+        'shreyas': "url('/members/shreyas1.jpg')",
         'gautham': "url('/members/gautham.png')",
-        'sughosh': "url('/members/sughosh.webp')",
+        'sughosh': "url('/members/sughosh1.jpg')",
         'tirth': "url('/members/tirth.webp')",
-        'rishabh': "url('/members/rishabh2.jpg')",
+        'rishabh': "url('/members/rishabh2.png')",
 
        
 

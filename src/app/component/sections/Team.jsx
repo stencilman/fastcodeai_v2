@@ -18,46 +18,57 @@ const Team = () => {
       // "/team/gautam.webp",
       // "/team/Jadhav.webp",
       "/team/rishabh2.jpg",
-
-      "/team/Nanda.webp",
+      "/team/sughosh1.jpg",
       "/team/parth-bw.webp",
       "/team/Prabal.webp",
       "/team/Sanjay.png",
-      "/team/Shreyas.webp",
+      "/team/shreyas2.jpg",
       "/team/Tirth.webp",
-    ].map((src) => ({ src, visible: Math.random() < 0.7 })); // Randomly set some images as visible
-    setImageInfo(fetchedImages);
-    // console.log("imageInfo", imageInfo);
+      // '/team/Shreyas.webp',
+      // '/team/Sughosh.webp',
+      // '/team/Tirth.webp'
+    ];
+  
+    // Shuffle images
+    const shuffledImages = fetchedImages.sort(() => 0.5 - Math.random());
+    
+    
+    const visibleCount = Math.floor(Math.random() * 3) + 7; // Random number between 6 and 8
+    const initialImageInfo = shuffledImages.map((src, index) => ({
+      src,
+      visible: index < visibleCount,
+    }));
+  
+    setImageInfo(initialImageInfo);
   }, []);
-
+  
   useEffect(() => {
     const interval = setInterval(() => {
       setImageInfo((currentImageInfo) => {
         const newImageInfo = [...currentImageInfo];
         const visibleImages = newImageInfo.filter((info) => info.visible);
         const hiddenImages = newImageInfo.filter((info) => !info.visible);
-
+  
         if (hiddenImages.length > 0 && visibleImages.length > 0) {
           const randomVisibleIndex = Math.floor(
             Math.random() * visibleImages.length
           );
-          // console.log("randomVisibleIndex",randomVisibleIndex)
           const randomHiddenIndex = Math.floor(
             Math.random() * hiddenImages.length
           );
-          // console.log("randomHiddenIndex",randomHiddenIndex)
-
+  
           // Swap visibility
           visibleImages[randomVisibleIndex].visible = false;
           hiddenImages[randomHiddenIndex].visible = true;
         }
-
+  
         return newImageInfo;
       });
-    }, 5000);
-
+    }, 4000);
+  
     return () => clearInterval(interval);
   }, []);
+  
   // console.log("imageInfo", imageInfo);
   return (
     <div className="w-full h-[100vh] bg-gradient-to-br from-[#000E32] to-[#000929] opacity-83 relative flex flex-col items-center justify-center z-[4]">

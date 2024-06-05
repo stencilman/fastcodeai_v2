@@ -7,55 +7,69 @@ import Button from "@/app/component/Button";
 const ArjunAndTeam = ({showTeam}) => {
   const [imageInfo, setImageInfo] = useState([]);
 
-  useEffect(() => {
-    // Simulate fetching image data
-    const fetchedImages = [
-      "/team/Arjun_Jain.webp",
-      "/team/abdul.png",
-      "/team/darshan.webp",
-      "/team/Dhaval.webp",
-      "/team/eshwar.webp",
-      "/team/gautam.webp",
-      "/team/Jadhav.webp",
-      "/team/Nanda.webp",
-      "/team/parth-bw.webp",
-      "/team/Prabal.webp",
-      "/team/Sanjay.webp",
-      // '/team/Shreyas.webp',
-      // '/team/Sughosh.webp',
-      // '/team/Tirth.webp'
-    ].map((src) => ({ src, visible: Math.random() < 0.5 })); // Randomly set some images as visible
-    setImageInfo(fetchedImages);
-  }, []);
+useEffect(() => {
+  // Simulate fetching image data
+  const fetchedImages = [
+    "/team/Arjun_Jain.webp",
+    "/team/abdul.png",
+    // "/team/darshan.webp",
+    // "/team/Sughosh.png",
+    "/team/Dhaval2.jpg",
+    "/team/eshwar.webp",
+    // "/team/gautam.webp",
+    // "/team/Jadhav.webp",
+    "/team/rishabh2.jpg",
+    "/team/sughosh1.jpg",
+    "/team/parth-bw.webp",
+    "/team/Prabal.webp",
+    "/team/Sanjay.png",
+    "/team/shreyas2.jpg",
+    "/team/Tirth.webp",
+    // '/team/Shreyas.webp',
+    // '/team/Sughosh.webp',
+    // '/team/Tirth.webp'
+  ];
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setImageInfo((currentImageInfo) => {
-        const newImageInfo = [...currentImageInfo];
-        const visibleImages = newImageInfo.filter((info) => info.visible);
-        const hiddenImages = newImageInfo.filter((info) => !info.visible);
+  // Shuffle images
+  const shuffledImages = fetchedImages.sort(() => 0.5 - Math.random());
+  
+  
+  const visibleCount = Math.floor(Math.random() * 3) + 7; 
+  const initialImageInfo = shuffledImages.map((src, index) => ({
+    src,
+    visible: index < visibleCount,
+  }));
 
-        if (hiddenImages.length > 0 && visibleImages.length > 0) {
-          const randomVisibleIndex = Math.floor(
-            Math.random() * visibleImages.length
-          );
-          // console.log("randomVisibleIndex",randomVisibleIndex)
-          const randomHiddenIndex = Math.floor(
-            Math.random() * hiddenImages.length
-          );
-          // console.log("randomHiddenIndex",randomHiddenIndex)
+  setImageInfo(initialImageInfo);
+}, []);
 
-          // Swap visibility
-          visibleImages[randomVisibleIndex].visible = false;
-          hiddenImages[randomHiddenIndex].visible = true;
-        }
+useEffect(() => {
+  const interval = setInterval(() => {
+    setImageInfo((currentImageInfo) => {
+      const newImageInfo = [...currentImageInfo];
+      const visibleImages = newImageInfo.filter((info) => info.visible);
+      const hiddenImages = newImageInfo.filter((info) => !info.visible);
 
-        return newImageInfo;
-      });
-    }, 2000);
+      if (hiddenImages.length > 0 && visibleImages.length > 0) {
+        const randomVisibleIndex = Math.floor(
+          Math.random() * visibleImages.length
+        );
+        const randomHiddenIndex = Math.floor(
+          Math.random() * hiddenImages.length
+        );
 
-    return () => clearInterval(interval);
-  }, []);
+        // Swap visibility
+        visibleImages[randomVisibleIndex].visible = false;
+        hiddenImages[randomHiddenIndex].visible = true;
+      }
+
+      return newImageInfo;
+    });
+  }, 2000);
+
+  return () => clearInterval(interval);
+}, []);
+
 
   return (
     <div className="w-full h-full lg:min-h-[auto] bg-gradient-to-br from-[#000E32] to-[#000929] opacity-83 px-[20px] md:px-[50px] lg:pr-[127px] lg:pl-[100px] relative z-[5]">
@@ -214,7 +228,7 @@ to innovative problem solvers who excel in their fields.
                     }`}
                   >
                     <Image
-                      className={`transform-style-preserve-3d w-full transition-opacity duration-1000  ease-cubic-bezier ${
+                      className={`transform-style-preserve-3d w-full grayscale transition-opacity duration-1000  ease-cubic-bezier ${
                         info.visible ? "" : "opacity-0"
                       }`}
                       src={info.src}

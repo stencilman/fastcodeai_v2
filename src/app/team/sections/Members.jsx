@@ -4,26 +4,33 @@ import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import { useMediaQuery } from "@/app/utils/useMediaQuery";
 
 const Members = () => {
   const container = useRef(null);
 
+  const isSmall = useMediaQuery("(min-width: 640px)");
+  console.log("isSmall", isSmall);
   const { scrollYProgress } = useScroll({
     target: container,
 
     offset: ["start end", "end start"],
   });
 
-  const sm = useTransform(scrollYProgress, [0, 1], [0, -450]);
+  const sm = 0;
+  //  = useTransform(scrollYProgress, [0, 1], [0, -450]);
 
   const md = useTransform(scrollYProgress, [0, 1], [0, -750]);
 
-  const lg = useTransform(scrollYProgress, [0, 1], [0, -1850]);
+  const lg = useTransform(scrollYProgress, [0, 1], [0, -950]);
+  const xl = useTransform(scrollYProgress, [0, 1], [0, -1350]);
+  const xxl = useTransform(scrollYProgress, [0, 1], [0, -2650]);
 
   const memebersList = [
     {
-      position: "top-0 md:top-[-48px] z-[1] md:top-[0px]",
-      y: 0,
+      position: "lg:left-[-6vw] xl:left-0",
+      y: sm,
+      height: "h-[540px] md:h-[490px] lg:h-[598px]",
       name: "DR. ARJUN JAIN",
       role: "CEO & Chief Scientist",
       bg: "bg-arjun",
@@ -34,8 +41,9 @@ const Members = () => {
     },
     {
       position:
-        "top-[0px] sm:top-[39px] sm:left-[27vw] md:top-[0px] md:left-[46vw]  lg:top-[-200px] lg:left-[403px]",
-      y: sm,
+        " sm:top-[-230px] sm:left-[47vw] lg:top-[-70px] lg:left-[26vw] xl:left-[29vw]",
+      y: md,
+      height: "h-[440px] md:h-[490px] lg:h-[598px]",
       name: "GAUTAM ADITHYA RAVI",
       role: "Head of Engineering",
       bg: "bg-gautham",
@@ -46,8 +54,9 @@ const Members = () => {
     },
     {
       position:
-        "top-[0px] sm:left-[-137px] md:left-[16px] lg:top-[-600px] lg:left-[800px]",
+        " sm:left-[0px] sm:top-[-330px]  lg:top-[-1040px] lg:left-[58vw]",
       y: sm,
+      height: "h-[440px] md:h-[490px] lg:h-[598px]",
       name: "PARTH BASOLE",
       role: "Generalist Engineer",
       bg: "bg-parth",
@@ -57,8 +66,9 @@ const Members = () => {
     },
     {
       position:
-        "top-[0px]  md:left-[2vw] sm:left-[20vw] lg:top-[-602px] lg:left-[564px]",
-      y: 0,
+        " sm:top-[58px] sm:left-[47vw]   lg:top-[-302px] lg:left-[40vw]",
+      y: xl,
+      height: "h-[440px] md:h-[490px] lg:h-[598px]",
       name: "Shreyas Bhanderi",
       role: "Senior Research Scientist",
       bg: "bg-shreyas",
@@ -67,9 +77,9 @@ const Members = () => {
       linkedin: "https://www.linkedin.com/in/shreyas-bhanderi/",
     },
     {
-      position:
-        "top-[240px] left-[0px] sm:left-[3vw] md:left-[35vw] lg:top-[-630px] lg:left-[136px]",
-      y: md,
+      position: " sm:top-[-182px] sm:left-[0px]  lg:top-[-800px] lg:left-[6vw] xl:left-[10vw]",
+      y: lg,
+      height: "h-[440px] md:h-[490px] lg:h-[598px]",
       name: "Narendiran Chembu",
       role: "Senior ML engineer ",
       bg: "bg-naren",
@@ -81,8 +91,9 @@ const Members = () => {
 
     {
       position:
-        "top-[50px]  sm:left-[-137px] md:left-[375px] lg:top-[-400px] lg:left-[400px]",
-      y: 0,
+        "sm:top-[37px]  sm:left-[0px]   lg:top-[-600px] lg:left-[58vw]",
+      y: xl,
+      height: "h-[440px] md:h-[490px] lg:h-[598px]",
       name: "Rishabh Gupta",
       role: "Machine Learning Engineer",
       bg: "bg-rishabh",
@@ -91,9 +102,9 @@ const Members = () => {
       linkedin: "https://www.linkedin.com/in/rishabh-gupta-a5886712a/",
     },
     {
-      position:
-        "top-[660px]  sm:left-[122px] md:left-[16vw] lg:left-[0px] lg:top-[-600px]",
-      y: lg,
+      position: "sm:top-[500px] sm:left-[47vw]  lg:left-[-6vw] xl:left-0 lg:top-[-500px]",
+      y: xxl,
+      height: "h-[440px] md:h-[490px] lg:h-[598px]",
       name: "ABDUL MUQTADIR",
       role: "Software Engineer",
       bg: "bg-abdul",
@@ -102,9 +113,9 @@ const Members = () => {
       linkedin: "https://www.linkedin.com/in/abdul-m-699ab9256/",
     },
     {
-      position:
-        "top-[320px] left-[0px] sm:left-[] lg:top-[-1550px]  lg:left-[796px]",
-      y: md,
+      position: "sm:top-[-250px] sm:left-[0px]  lg:top-[-1410px] lg:left-[26vw] xl:left-[29vw]",
+      y: xl,
+      height: "h-[440px] md:h-[490px] lg:h-[598px]",
       name: "Tirth Pandit",
       role: "Senior Research Scientist",
       bg: "bg-tirth",
@@ -115,8 +126,9 @@ const Members = () => {
     },
 
     {
-      y: lg,
-      position: "top-[830px]  sm:left-[40vw] lg:top-[-600px] lg:left-[673px]",
+      position: "sm:top-[400px] sm:left-[47vw] lg:top-[-600px] lg:left-[58vw]",
+      y: xxl,
+      height: "h-[440px] md:h-[490px] lg:h-[598px]",
       name: "PRABAL PATEL",
       role: "Head of Sales and Business Development",
       bg: "bg-prabal",
@@ -127,9 +139,9 @@ const Members = () => {
     },
     {
       position:
-        "top-[870px] left-[0px] sm:top-[950px] lg:top-[-1000px] lg:left-[200px]",
-      y: lg,
-
+        "  sm:top-[-290px] sm:left-[23vw] lg:top-[-1800px] lg:left-[26vw] xl:left-[29vw]",
+      y: xl,
+      height: "h-[440px] md:h-[490px] lg:h-[598px]",
       name: "Sughosh Patil",
       role: "Senior Research Scientist",
       bg: "bg-sughosh",
@@ -141,8 +153,9 @@ const Members = () => {
 
     {
       position:
-        "top-[900px] sm:top-[970px] sm:left-[20vw] lg:top-[-784px] lg:left-[830px]",
-      y: lg,
+        " sm:top-[-220px] sm:left-[0px] lg:top-[-2284px] lg:left-[-6vw] xl:left-0",
+      y: xl,
+      height: "h-[530px] md:h-[490px] lg:h-[598px]",
       name: "Eshwar Ramesh",
       role: "IOS Developer",
       bg: "bg-eshwar",
@@ -153,8 +166,9 @@ const Members = () => {
     },
     {
       position:
-        "top-[950px] sm:top-[1050px] sm:left-[43vw] lg:top-[-1208px] lg:left-[421px]",
-      y: lg,
+        " sm:top-[500px] sm:left-[47vw] lg:top-[-1408px] lg:left-[40vw] ",
+      y: xxl,
+      height: "h-[440px] md:h-[490px] lg:h-[598px]",
       name: "SANJAY SURIYAKUMAR",
       role: "Research Scientist",
       bg: "bg-sanjay",
@@ -164,8 +178,9 @@ const Members = () => {
       linkedin: "https://www.linkedin.com/in/sanjay-suriyakumar-a51aa821b/",
     },
     {
-      position: "top-[1000px] left-[0px] lg:top-[-1500px] lg:left-[0px]",
-      y: lg,
+      position: "sm:left-[0px] sm:top-[-947px]  lg:top-[-3000px] lg:left-[6vw] xl:left-[10vw]",
+      height: "h-[440px] md:h-[490px] lg:h-[598px]",
+      y: md,
       name: "Dhaval Taunk",
       role: "Research Scientist",
       bg: "bg-dhaval",
@@ -176,13 +191,16 @@ const Members = () => {
     },
   ];
   return (
-    <div className="w-full overflow-hidden px-[20px] pl-[20px] md:pl-[50px] lg:pl-[100px] py-[50px] md:py-[70px] lg:py-[150px]  bg-[#00081F] flex flex-col justify-center gap-[100px] items-center md:block relative lg:h-[5280px]">
+    <div className="w-full overflow-hidden px-[20px] pl-[20px] md:pl-[50px] lg:pl-[100px] py-[50px] md:py-[70px] lg:py-[150px]  bg-[#00081F] flex flex-col justify-center gap-[50px] items-center sm:block sm:relative sm:h-[4500px] md:h-[5000px] lg:h-[4480px] ">
       {memebersList.map(
-        ({ bg, position, name, role, y, cp, desciption, linkedin }, i) => (
+        (
+          { bg, position, name, role, y, cp, desciption, linkedin, height },
+          i
+        ) => (
           <motion.div
-            style={{ y }}
+            style={isSmall ? { y } : ""}
             key={i}
-            className={`w-[270px] md:w-[370px] lg:w-[360px]  h-[408px] md:h-[490px] lg:h-[598px] rounded-[20px]  relative ${position} cursor-pointer group  perspective`}
+            className={`w-[270px] sm:w-[300px] md:w-[370px] lg:w-[320px] xl:w-[370px]  rounded-[20px] ${height}  sm:relative ${position} cursor-pointer group  perspective`}
           >
             <div
               className={`relative preserve-3d group-hover:my-rotate-y-180 w-full h-full  duration-1000  `}
@@ -191,7 +209,7 @@ const Members = () => {
                 className={`absolute backface-hidden ${bg} bg-cover bg-no-repeat rounded-[20px] flex items-end w-full h-full px-[16px] py-[32px]`}
               >
                 <div className="flex flex-col md:gap-[20px]">
-                  <h1 className="text-white text-[7vw] md:text-[6vw] lg:text-[51px] leading-[52px] font-aeonik font-light tracking-wide">
+                  <h1 className="text-white text-[7vw] sm:text-[5vw] sm:leading-[5.5vw] lg:text-[51px] leading-[52px] lg:leading-[48px] font-aeonik font-light tracking-wide">
                     {name}
                   </h1>
                   <p className="text-[#9EB3CF] font-aeonik text:lg md:text-xl lg:text-2xl font-light">
@@ -200,7 +218,7 @@ const Members = () => {
                 </div>
               </div>
               <div
-                className="absolute my-rotate-y-180 backface-hidden w-full  justify-around rounded-[20px] border border-[#1A2758] md:px-[30px] py-[10px] px-[10px] md:py-[20px] flex flex-col  gap-[40px] h-auto min-h-[408px] md:min-h-[490px] lg:min-h-[598px]"
+                className="absolute my-rotate-y-180 backface-hidden w-full  justify-around rounded-[20px] border border-[#1A2758] md:px-[30px] py-[10px] px-[10px] md:py-[20px] flex flex-col  gap-[40px] h-auto min-h-[440px] s md:min-h-[490px] lg:min-h-[598px]"
                 style={{
                   background:
                     "transparent linear-gradient(360deg, #13224F 0%, #13224F 0%, #0C1C46 51%, #020F3B 100%) 0% 0% no-repeat padding-box",
