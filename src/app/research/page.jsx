@@ -11,7 +11,7 @@ import Footer from "../component/sections/Footer";
 import Cta from "../industries/sections/Cta";
 import TestimonialsN from "../component/sections/TestimonialsN";
 
-const Patents = () => {
+const Research = () => {
   const { setIsActive } = useGlobalContext();
 
   useEffect(() => {
@@ -39,4 +39,4 @@ const Patents = () => {
   );
 };
 
-export default Patents;
+export default Research;

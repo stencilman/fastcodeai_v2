@@ -24,11 +24,11 @@ const About = () => {
     <>
       <Hero />
       <WhoWeAre />
-      <ArjunAndTeam/>
+      <ArjunAndTeam showTeam={true}/>
       <Believe/>
-      <TechStack/>
-      <WhyChooseUs/>
-      <Industries/>
+      {/* <TechStack/> */}
+      {/* <WhyChooseUs/> */}
+      {/* <Industries/> */}
       <TestimonialsN/>
       <Footer/>
     </>

@@ -26,7 +26,7 @@ const Expertise = () => {
       <CustomerSolutions/>
       <ExpertiseSlide/>
       <HowWeDo pb="pb-[250px]"/>
-      <ArjunAndTeam/>
+      <ArjunAndTeam showTeam={true}/>
       <TechStack z="z-[5]"/>
       <OurWork/>
       {/* <CtaToContacts/> */}

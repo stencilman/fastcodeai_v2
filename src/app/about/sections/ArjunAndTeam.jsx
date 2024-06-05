@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Button from "@/app/component/Button";
 
-const ArjunAndTeam = () => {
+const ArjunAndTeam = ({showTeam}) => {
   const [imageInfo, setImageInfo] = useState([]);
 
   useEffect(() => {
@@ -58,8 +58,8 @@ const ArjunAndTeam = () => {
   }, []);
 
   return (
-    <div className="w-full h-full lg:min-h-[190vh] bg-gradient-to-br from-[#000E32] to-[#000929] opacity-83 px-[20px] md:px-[50px] lg:pr-[127px] lg:pl-[100px] relative z-[5]">
-      <div className="w-full h-auto lg:min-h-[80vh] py-[57px]   border-b border-[#FFFFFF] relative flex items-center gap-0 lg:gap-[10%] flex-col-reverse lg:flex-row justify-center">
+    <div className="w-full h-full lg:min-h-[auto] bg-gradient-to-br from-[#000E32] to-[#000929] opacity-83 px-[20px] md:px-[50px] lg:pr-[127px] lg:pl-[100px] relative z-[5]">
+      <div className="w-full h-auto lg:min-h-[80vh] py-[57px]    relative flex items-center gap-0 lg:gap-[10%] flex-col-reverse lg:flex-row justify-center">
         <div className=" h-full w-full lg:w-[70%] flex flex-col justify-start lg:justify-center gap-[20px] lg:gap-[26px]">
           <h1 className="font-aeonik text-[8vw] md:text-[7vw] lg:text-[5.5vw] text-white leading-[8.5vw] md:leading-[7.5vw] lg:leading-[6.5vw] tracking-normal font-light">
             Guiding Excellence Through Leadership
@@ -181,7 +181,8 @@ const ArjunAndTeam = () => {
         </div>
       </div>
       {/* team */}
-      <div className="w-full h-auto py-[40px] lg:py-0 lg:h-[100vh] relative flex flex-col items-center justify-center z-[4]">
+     { showTeam&&
+      <div className="w-full border-t-2 border-white h-auto py-[40px] lg:py-0 lg:h-[100vh] relative flex flex-col items-center justify-center z-[4]">
         <div className="flex flex-col md:flex-row gap-[10vw] md:gap-[0px] w-full items-center z-[3]">
           <div className=" w-[100%] md:w-[45%]">
             <h1 className="text-[8vw] md:text-[7vw] lg:text-[51px] tracking-normal text-white font-aeonik">
@@ -193,16 +194,7 @@ We are proud authors of influential papers and active contributors to open-sourc
 Each member has been carefully selected from top universities, emphasizing our commitment
 to innovative problem solvers who excel in their fields.
             </p>
-            {/* <Link href="/team" className="rounded-[28px] mt-[50px] flex items-center gap-[7px] bg-gradient-to-br from-[#2DC1C3] to-[#0268F2] text-white p-[15px] text-lg">
-              Get Started
-              <Image
-                className="inline"
-                src="/arrowRight.svg"
-                alt="arrow"
-                width="16"
-                height="13"
-              />
-            </Link> */}
+           
             <div className="max-w-[185px] mt-[30px] md:mt-[35px] lg:mt-[50px]">
             <Button to="/team" name="More About Us"/>
             </div>
@@ -236,7 +228,7 @@ to innovative problem solvers who excel in their fields.
             </div>
           </div>
         </div>
-      </div>
+      </div>}
     </div>
   );
 };

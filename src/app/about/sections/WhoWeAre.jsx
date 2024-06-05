@@ -80,10 +80,7 @@ const WhoWeAre = () => {
       }}
       className="Main w-full h-[120vh] mb-[70px] bg-[#00081F] relative overflow-hidden"
     >
-      <div
-        ref={plane1}
-        className="palne w-full h-full absolute brightness-[1]"
-      >
+      <div ref={plane1} className="palne w-full h-full absolute brightness-[1]">
         {/* <Image
           className="absolute left-[50%] top-[38%] md:top-[30%]"
           src={floating1}
@@ -97,10 +94,7 @@ const WhoWeAre = () => {
           width={200}
         />
       </div>
-      <div
-        ref={plane2}
-        className="palne w-full h-full absolute brightness-[1]"
-      >
+      <div ref={plane2} className="palne w-full h-full absolute brightness-[1]">
         <Image
           className="absolute w-[170px] md:w-[250px] left-[3%] md:left-[15%] top-[71%] md:top-[68%]"
           src={floating4}
@@ -137,21 +131,9 @@ const WhoWeAre = () => {
         </div>
         <div className="flex flex-col gap-[20px] text-[#d6e0ee] font-bwmss01 ">
           <p>
-          At Fast Code AI, we are a dynamic team of AI/ML researchers and 
-practitioners at the cutting edge of technology. Founded in 2020, we 
-specialize in machine learning (ML), computer vision (CV), reinforcement 
-learning (RL), and data science, innovating solutions that redefine 
-possibilities. Our commitment drives us to push the boundaries of 
-technology, making significant strides in the AI landscape and setting new
-benchmarks for excellence.
+           At Fast Code AI, we are a dynamic team of AI/ML researchers and practitioners at the cutting edge of technology. Founded in 2020, we specialize in machine learning (ML), computer vision (CV), reinforcement learning (RL), and data science, innovating solutions that redefine possibilities. Our commitment to excellence drives us to push the boundaries of technology, making significant strides in the AI landscape and setting new benchmarks for its adoption.
           </p>
-          <p>
-            {/* Fast Code AI was founded in 2020. Since then, we have been making
-            significant strides in the field of AI and machine learning,
-            particularly in the domain of computer vision. Our team of experts
-            is dedicated to pushing the boundaries of {"what’s"} possible in
-            this exciting field. */}
-          </p>
+          
         </div>
       </div>
       {/* shadow */}

@@ -7,7 +7,7 @@ const LatestBlogs = () => {
     <div className="w-full h-auto px-[20px] md:px-[50px] lg:px-[100px] pt-[150px] pb-[200px]">
       <div className="mb-[40px]">
         <h1 className="text-[51px] text-white font-aeonik tracking-wide">
-          Latest Blog
+          Blogs
         </h1>
       </div>
 

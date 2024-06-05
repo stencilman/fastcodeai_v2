@@ -18,21 +18,22 @@ const navItems = [
     title: "Expertise",
     href: "/expertise",
   },
-  {
-    title: "Industries",
-    href: "/industries",
-  },
+ 
   {
     title: "Portfolio",
     href: "/portfolio",
   },
   {
-    title: "Patents",
-    href: "/patents",
+    title: "Research",
+    href: "/research",
   },
   {
     title: "Team",
     href: "/team",
+  },
+  {
+    title: "Career",
+    href: "/career",
   },
   {
     title: "Contact Us",
@@ -72,7 +73,7 @@ export default function Nav() {
         </div>
         {/* footer */}
         <div className="flex gap-[30px] pl-[50px] pb-[100px]">
-                <Link href="/career" className="text-lg text-black font-aeonik font-light">Career</Link>
+                {/* <Link href="/career" className="text-lg text-black font-aeonik font-light">Career</Link> */}
                 <Link href="/blogs" className="text-lg text-black font-aeonik font-light">Blog</Link>
                 <Link href="https://in.linkedin.com/company/fast-code" target="_blank" className="text-lg text-black font-aeonik font-light">Linkedin</Link>
                

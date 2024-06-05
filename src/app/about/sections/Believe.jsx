@@ -62,18 +62,20 @@ const Believe = () => {
             ref={navRef}
           >
             {/* Number 1 */}
+          
+
             <motion.div
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className={`w-[65px] h-[70px] md:w-[82px] md:h-[82px] border border-[#1A2758] rounded-[14px] flex items-center justify-center  relative ${
-                activeMain === "Handpicked Experts" ? "beliveBg" : ""
+              className={`w-[65px]  h-[70px] md:w-[82px] md:h-[82px] border border-[#1A2758] rounded-[14px] flex items-center justify-center  relative ${
+                activeMain === "Our Process & Approach" ? "beliveBg" : ""
               }`}
             >
               <h3 className="text-[#9EB3CF] text-[40px] md:text-[50px] font-aeonik font-thin tracking-wider relative z-10">
                 01
               </h3>
               <AnimatePresence>
-                {activeMain === "Handpicked Experts" && (
+                {activeMain === "Our Process & Approach" && (
                   <motion.span
                     className="absolute inset-0 rounded-[14px]  beliveBg z-0"
                     initial={{ scale: 0 }}
@@ -87,15 +89,15 @@ const Believe = () => {
             <motion.div
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className={`w-[65px]  h-[70px] md:w-[82px] md:h-[82px] border border-[#1A2758] rounded-[14px] flex items-center justify-center  relative ${
-                activeMain === "Our Process & Approach" ? "beliveBg" : ""
+              className={`w-[65px] h-[70px] md:w-[82px] md:h-[82px] border border-[#1A2758] rounded-[14px] flex items-center justify-center  relative ${
+                activeMain === "Handpicked Experts" ? "beliveBg" : ""
               }`}
             >
               <h3 className="text-[#9EB3CF] text-[40px] md:text-[50px] font-aeonik font-thin tracking-wider relative z-10">
                 02
               </h3>
               <AnimatePresence>
-                {activeMain === "Our Process & Approach" && (
+                {activeMain === "Handpicked Experts" && (
                   <motion.span
                     className="absolute inset-0 rounded-[14px]  beliveBg z-0"
                     initial={{ scale: 0 }}
@@ -153,18 +155,7 @@ const Believe = () => {
           {/* Text Content And Animation */}
           <div className="flex  w-[90%] ">
             <div className="pb-[20px] flex flex-col gap-[120px] md:gap-[50px]">
-              <div
-                className="h-[auto] md:h-[300px] mt-[70px] md:mt-0 w-[96%] sm:w-[80%] pl-[13px] sm:pl-[30px] md:pr-[20px] flex flex-col justify-center"
-                ref={mainRefs["Handpicked Experts"]}
-                data-main="Handpicked Experts"
-              >
-                <h1 className="font-aeonik text-[8vw] lg:text-[3.5vw] text-white leading-[8vw] md:leading-[4vw] tracking-normal font-thin">
-                Innovation
-                </h1>
-                <p className="text-[#9EB3CF] font-bwmss01 text-base  mt-[15px]">
-                We seek original approaches for achieving our goals, taking advantage of creative communication for our outreach. By embracing new ideas and technologies, we continuously strive to push the boundaries of {"what's"} possible in the realm of AI and software solutions.
-                </p>
-              </div>
+             
 
               <div
                 className="h-[auto] md:h-[300px] w-[98%] sm:w-[80%] pl-[13px] sm:pl-[30px] md:pr-[20px] md:pt-[50px] flex flex-col justify-center"
@@ -178,7 +169,18 @@ const Believe = () => {
                 Our commitment to excellence drives us to deliver the highest quality products and services. We ensure that every project we undertake meets the highest standards, from meticulous planning and development to rigorous testing and deployment.
                 </p>
               </div>
-
+              <div
+                className="h-[auto] md:h-[300px] mt-[70px] md:mt-0 w-[96%] sm:w-[80%] pl-[13px] sm:pl-[30px] md:pr-[20px] flex flex-col justify-center"
+                ref={mainRefs["Handpicked Experts"]}
+                data-main="Handpicked Experts"
+              >
+                <h1 className="font-aeonik text-[8vw] lg:text-[3.5vw] text-white leading-[8vw] md:leading-[4vw] tracking-normal font-thin">
+                Innovation
+                </h1>
+                <p className="text-[#9EB3CF] font-bwmss01 text-base  mt-[15px]">
+                We seek original approaches for achieving our goals, taking advantage of creative communication for our outreach. By embracing new ideas and technologies, we continuously strive to push the boundaries of {"what's"} possible in the realm of AI and software solutions.
+                </p>
+              </div>
               <div
                 className="h-[auto] md:h-[300px] w-[98%] sm:w-[80%] pl-[13px] sm:pl-[30px] md:pr-[20px] flex flex-col justify-center"
                 ref={mainRefs["Strong R&D Expertise"]}
