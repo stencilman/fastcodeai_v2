@@ -7,32 +7,6 @@ import { motion } from "framer-motion";
 const Patents = () => {
   const patentsList = [
     {
-      img: "pic1-2.png",
-      technology: "TECHNOLOGY",
-      year: "2011",
-      title:
-        "Computer-implemented method and apparatus for tracking and reshaping a human shaped figure in a digital world video",
-      desciption:
-        "The invention concerns a computer-implemented method for tracking and reshaping a human-shaped figure in a digital video comprising the steps: acquiring a body model of the figure from the digital video, adapting a shape of the body model, modifying frames of the digital video, based on the adapted body model and outputting the digital video.",
-      linkName: "View Source",
-      linkTo: "https://patents.google.com/patent/US9191579B2/en",
-      downloadName: "Download PDF",
-      downloadTo: "/",
-    },
-    {
-      img: "pic2-2.png",
-      technology: "TECHNOLOGY",
-      year: "2019",
-      title: "Method for Identifying a Hand Pose in a Vehicle",
-      desciption:
-        "A method for activating vehicle functions via hand gestures, utilizing a 3D Convolutional Neural Network (3D-CNN) and Gated Recurrent Unit (GRU) to analyze video frames and extract spatio-temporal features. A prediction module simultaneously assesses the gesture's progression and classifies it, employing predefined models to determine the gesture's type and its completion rate. Upon accurate detection and classification, a corresponding event is triggered within the vehicle.",
-      linkName: "View Source",
-      linkTo:
-        "https://patentscope.wipo.int/search/en/detail.jsf?docId=WO2020048814",
-      downloadName: "Download PDF",
-      downloadTo: "/",
-    },
-    {
       img: "pic3-2.png",
       technology: "TECHNOLOGY",
       year: "2021",
@@ -43,7 +17,7 @@ const Patents = () => {
       linkTo:
         "https://data.epo.org/publication-server/document?iDocId=6998718&iFormat=0",
       downloadName: "Download PDF",
-      downloadTo: "/",
+      downloadTo: "",
     },
     {
       img: "pic4-2.png",
@@ -55,9 +29,36 @@ const Patents = () => {
         "Advanced airbag deployment control system designed for vehicular use incorporating an image sensor unit that captures real-time images of a vehicle occupant, focusing particularly on head localization. Utilizing a processing unit equipped with Long Short Term Memory (LSTM) neural network architecture, the system analyzes images to determine and predict the future position and orientation of the occupant's head. The system dynamically adjusts the direction in which the airbag flap is removed and the airbag's inflation pressure, ensuring optimal safety by adapting the deployment to the predicted head position at the moment of impact.",
       linkName: "View Source",
       linkTo:
-        "https://ipindia.gov.in/writereaddata/Portal/IPOJournal/1_4965_1/Part-1.pdf",
+        "",
       downloadName: "Download PDF",
-      downloadTo: "/",
+      downloadTo: "https://ipindia.gov.in/writereaddata/Portal/IPOJournal/1_4965_1/Part-1.pdf",
+    },
+    
+    {
+      img: "pic2-2.png",
+      technology: "TECHNOLOGY",
+      year: "2019",
+      title: "Method for Identifying a Hand Pose in a Vehicle",
+      desciption:
+        "A method for activating vehicle functions via hand gestures, utilizing a 3D Convolutional Neural Network (3D-CNN) and Gated Recurrent Unit (GRU) to analyze video frames and extract spatio-temporal features. A prediction module simultaneously assesses the gesture's progression and classifies it, employing predefined models to determine the gesture's type and its completion rate. Upon accurate detection and classification, a corresponding event is triggered within the vehicle.",
+      linkName: "View Source",
+      linkTo:
+        "https://patentscope.wipo.int/search/en/detail.jsf?docId=WO2020048814",
+      downloadName: "Download PDF",
+      downloadTo: "",
+    },
+    {
+      img: "pic1-2.png",
+      technology: "TECHNOLOGY",
+      year: "2011",
+      title:
+        "Computer-implemented method and apparatus for tracking and reshaping a human shaped figure in a digital world video",
+      desciption:
+        "The invention concerns a computer-implemented method for tracking and reshaping a human-shaped figure in a digital video comprising the steps: acquiring a body model of the figure from the digital video, adapting a shape of the body model, modifying frames of the digital video, based on the adapted body model and outputting the digital video.",
+      linkName: "View Source",
+      linkTo: "https://patents.google.com/patent/US9191579B2/en",
+      downloadName: "Download PDF",
+      downloadTo: "https://patentimages.storage.googleapis.com/c9/b5/ee/609f573b51fa6d/US9191579.pdf",
     },
   ];
   return (
@@ -122,7 +123,7 @@ const Patents = () => {
                 </div>
                 {/* footer */}
                 <div className="flex gap-[20px] items-center flex-wrap ">
-                  {/* <Link href={e.linkTo}>
+                {e.linkTo.length>1 &&  <Link target={"_blank"} href={e.linkTo}>
                   <div
                     className="border border-[#F3F3F3] p-[12px] cursor-pointer text-white rounded-full font-bwmss01 font-light min-h-[55px] pt-[17px] min-w-[120px] text-center"
                     style={{
@@ -132,8 +133,8 @@ const Patents = () => {
                   >
                     {e.linkName}
                   </div>
-                </Link> */}
-                  <Button to={e.linkTo} name="Know More" />
+                </Link>}
+                {e.downloadTo.length>1 &&  <Button target={"_blank"} to={e.downloadTo} name={e.downloadName} />}
                 </div>
               </div>
             </div>
