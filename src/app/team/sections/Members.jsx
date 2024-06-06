@@ -34,7 +34,7 @@ const Members = () => {
       name: "DR. ARJUN JAIN",
       role: "CEO & Chief Scientist",
       bg: "bg-arjun",
-      cp: "SENIOR RESEARCH SCIENTIST",
+      cp: "CEO & Chief Scientist",
       desciption:
         "PhD  in Computer Graphics from The MPI for Informatics, Post-doc from Courant Institute, NYU, Ex Research Scientist at Apple, Ex Adjunct Assistant Professor at CSE Dept., IIT Bombay, Adjunct Faculty at the CDS Dept., IISc Bangalore, Founder of FastCode AI.",
       linkedin: "https://in.linkedin.com/in/arjunjain",
