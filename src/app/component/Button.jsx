@@ -2,9 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-const Button = ({to,name}) => {
+const Button = ({to,name,target}) => {
   return (
-    <Link href={to}
+    <Link target={target} href={to}
       className="rounded-[28px] relative z-[1] flex items-center gap-[7px] bg-gradient-to-br from-[#2DC1C3] to-[#0268F2] text-white p-[15px] text-lg justify-between"
      
     >

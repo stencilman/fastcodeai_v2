@@ -8,13 +8,13 @@ const Publications = () => {
     {
       img: "publication1.webp",
       technology: "TECHNOLOGY",
-      year: "2011",
+      year: "2018",
       desciption:
         "N. Doiphode, R. Mitra, S. Ahmed, A. Jain, “An Improved Learning Framework for Covariant Local Feature Detection” in proceedings of Asian Conference on Computer Vision (ACCV 2018), Perth, December 2018",
       linkName: "Link",
-      linkTo: "/",
+      linkTo: "https://arxiv.org/abs/1811.00438",
       downloadName: "Download PDF",
-      downloadTo: "/",
+      downloadTo: "http://arjunjain.co.in/accv2018/ACCV-2018-poster.pdf",
     },
     {
       img: "publication2.webp",
@@ -99,7 +99,7 @@ const Publications = () => {
               </div>
               {/* footer */}
               <div className="flex gap-[20px] items-center flex-wrap">
-                <Link href={e.linkTo}>
+                <Link target="_blank" href={e.linkTo}>
                   <div
                     className="border border-[#F3F3F3] p-[12px] cursor-pointer text-white rounded-full font-bwmss01 font-light min-h-[55px] pt-[17px] min-w-[120px] text-center"
                     style={{
@@ -110,7 +110,7 @@ const Publications = () => {
                     {e.linkName}
                   </div>
                 </Link>
-                <Button to={e.downloadTo} name={e.downloadName} />
+                <Button target={"_blank"} to={e.downloadTo} name={e.downloadName} />
               </div>
             </div>
           </div>
