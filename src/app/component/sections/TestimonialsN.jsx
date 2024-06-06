@@ -49,7 +49,7 @@ const TestimonialsN = () => {
     const swiper = new Swiper(swiperEl, {
       grabCursor: true,
       watchSlidesProgress: true,
-      loop: true,
+      loop: true, 
       speed: 400,
       keyboard: {
         enabled: true,

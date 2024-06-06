@@ -24,7 +24,7 @@ useEffect(() => {
     "/team/Prabal.webp",
     "/team/Sanjay.png",
     "/team/shreyas2.jpg",
-    "/team/Tirth.webp",
+    "/team/tirth1.jpg",
     // '/team/Shreyas.webp',
     // '/team/Sughosh.webp',
     // '/team/Tirth.webp'

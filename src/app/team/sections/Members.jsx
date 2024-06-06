@@ -36,7 +36,7 @@ const Members = () => {
       bg: "bg-arjun",
       cp: "SENIOR RESEARCH SCIENTIST",
       desciption:
-        "B.Tech (CS) IIT Kanpur, Ex-Senior Software Engineer at Samsung R&D Fast Code AI was founded in 2020. Since then, we have been making significant strides in the field of AI and machine learning, particularly in the domain of computer vision. Our team of experts is dedicated to pushing the boundaries of what’s possible in this exciting field.",
+        "PhD  in Computer Graphics from The MPI for Informatics, Post-doc from Courant Institute, NYU, Ex Research Scientist at Apple, Ex Adjunct Assistant Professor at CSE Dept., IIT Bombay, Adjunct Faculty at the CDS Dept., IISc Bangalore, Founder of FastCode AI.",
       linkedin: "https://in.linkedin.com/in/arjunjain",
     },
     {
