@@ -5,7 +5,7 @@ import React from "react";
 
 const slides = [
   {
-    title: "Mercedes Benz",
+    title: "Gesture Recognition based User Experience",
     content:
       "Enhanced driver-car interaction through the detection of hand gestures, elevating the driving experience with the Mercedes Benz User Experience (MBUX) System.",
     image: "/our-work/mercedes.webp",
