@@ -15,9 +15,9 @@ const Patents = () => {
         "Embodiments of present disclosure relates to method for identifying a hand pose in a vehicle, and a system for performing an event in a vehicle. A hand image for a hand in the vehicle, is extracted from a vehicle image of the vehicle for identification. Plurality of contextual images of the hand image is obtained based on the single point. A hand pose associated with the hand is identified based on the plurality of contextual features using a classifier model.",
       linkName: "View Source",
       linkTo:
-        "https://data.epo.org/publication-server/document?iDocId=6998718&iFormat=0",
+        "",
       downloadName: "Download PDF",
-      downloadTo: "",
+      downloadTo: "https://ipindia.gov.in/writereaddata/Portal/IPOJournal/1_4975_1/Part-2.pdf",
     },
     {
       img: "pic4-2.png",
