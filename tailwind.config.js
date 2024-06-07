@@ -58,7 +58,7 @@ module.exports = {
         'shreyas': "url('/members/shreyas.png')",
         'gautham': "url('/members/gautham.png')",
         'sughosh': "url('/members/sughosh.webp')",
-        'tirth': "url('/members/tirth1.jpg')",
+        'tirth': "url('/members/Tirth.webp')",
         'rishabh': "url('/members/rishabh2.png')",
 
        

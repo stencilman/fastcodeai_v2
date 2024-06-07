@@ -98,7 +98,7 @@ const Members = () => {
       role: "Machine Learning Engineer",
       bg: "bg-rishabh",
       cp: "Machine Learning Engineer",
-      desciption: "",
+      desciption: "MTech AI from IISc, MBA in Technology Management with Major in Finance (and CFA Level 1 cleared) from NMIMS,Ex Data Scientist at Couture.ai",
       linkedin: "https://www.linkedin.com/in/rishabh-gupta-a5886712a/",
     },
     {
