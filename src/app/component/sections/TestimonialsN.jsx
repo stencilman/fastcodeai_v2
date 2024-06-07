@@ -18,8 +18,6 @@ const TestimonialsN = () => {
     link.href = "https://unpkg.com/swiper@8/swiper-bundle.min.css";
     link.rel = "stylesheet";
     document.head.appendChild(link);
-    // console.log("link", link);
-    // console.log("script", script);
     return () => {
       // console.log("slider compo unmount");
       document.body.removeChild(script);
@@ -44,6 +42,8 @@ const TestimonialsN = () => {
       watchSlidesProgress: true,
       slideToClickedSlide: true,
     });
+
+    
 
     const swiperEl = document.querySelector(".cs-cards-swiper");
     const swiper = new Swiper(swiperEl, {
@@ -105,6 +105,18 @@ const TestimonialsN = () => {
         },
       },
     });
+
+
+    // Pause autoplay on hover
+    document.querySelectorAll('.cs-nav-slide').forEach((slide) => {
+      slide.addEventListener('mouseenter', () => {
+        swiper.autoplay.stop();
+      });
+      slide.addEventListener('mouseleave', () => {
+        swiper.autoplay.start();
+      });
+    });
+
     swiper.controller.control = navSwiper;
     navSwiper.controller.control = swiper;
   }, [swiperLoaded]);
