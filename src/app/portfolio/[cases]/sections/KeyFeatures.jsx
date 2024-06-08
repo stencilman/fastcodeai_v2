@@ -33,7 +33,7 @@ const KeyFeatures = ({ keyFeaturesData }) => {
         <div className="flex flex-col gap-[40px] px-[40px]">
           {keyFeaturesData[0]?.refrances && (
             <h1 className="text-white text-6xl md:text-8xl font-aeonik tracking-wide mb-[4px]">
-              Refrances
+              Refrences
             </h1>
           )}
           <div className="pr-[10%] md:pr-[25%] flex flex-col gap-[20px]">
