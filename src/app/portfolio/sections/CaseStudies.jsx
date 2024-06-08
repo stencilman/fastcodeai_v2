@@ -71,6 +71,20 @@ const CaseStudies = () => {
         "Smart, diary-like system that effortlessly organizes and retrieves your daily activities and information with cutting-edge Retrieval-Augmented Generation techniques.",
       to: "/portfolio/rag",
     },
+    {
+      img: "bg-fitness",
+      title: "AI-Assisted Skin Cancer Detection",
+      description:
+        "Enhancing skin cancer by diagnosing user’s skin images on their mobile phones, improving dermatological care's accuracy, accessibility, and efficiency.",
+      to: "/portfolio/skin-cancer-detection",
+    },
+    {
+      img: "bg-fitness",
+      title: " AutoMTO: Revolutionizing Material Takeoff in Oil & Gas EPCC",
+      description:
+        "Deploying AI to swiftly convert Process and Instrumentation Diagrams (P&IDs) in the Oil & Gas EPCC sector into accurate, digital Material Takeoff Orders, significantly boosting productivity and reducing costs.",
+      to: "/portfolio/oil-gas",
+    },
   ];
 
   return (

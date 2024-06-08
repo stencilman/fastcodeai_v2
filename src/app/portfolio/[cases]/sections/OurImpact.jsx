@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 
-const OurImpact = ({impactData}) => {
+const OurImpact = ({impactData,projectLink}) => {
   console.log("impactData",impactData)
   return (
     <div className="w-full h-auto pt-[100px] pb-[170px] bg-gradient-to-br from-[#000E32] to-[#000929] opacity-83 pl-[20px] md:pl-[50px] lg:pl-[100px] pr-[0px] relative z-[2]">
@@ -22,8 +22,12 @@ const OurImpact = ({impactData}) => {
                 {e}
                 
               </p>
-            </div>)}
-          
+            </div>)
+            
+            }
+           {projectLink&&<p className="text-[#9EB3CF] text-lg font-bwmss01 mt-[10px] ">
+           Live Demo Experience our secure Text-to-SQL interface first hand at: <a href="https://fastcode.ai/sqlwizard.html" target="_blank" className="text-blue-600"> FastCode SQL Wizard</a>
+           </p>}
           </div>
           {/* img */}
           <div className="relative right-[0px] ">
@@ -73,6 +77,7 @@ const OurImpact = ({impactData}) => {
                 </div>
                 <p className="text-center text-white text-2xl font-bwmss01">
                   Years of Experience
+                 
                 </p>
               </div>
             </div>
