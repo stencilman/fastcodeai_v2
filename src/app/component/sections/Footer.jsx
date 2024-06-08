@@ -117,15 +117,20 @@ const Footer = () => {
                   </p>
                 </div>
                 <div className="flex gap-[27px]">
-                  <p className="text-[#9EB3CF] font-bwmss01 text-[12px]">
+                <Link href="/legal-notice"><p className="text-[#9EB3CF] font-bwmss01 text-[12px]">
                     Legal Notice
                   </p>
+                  </Link>  
+                  <Link href="/privacy-policy">  
                   <p className="text-[#9EB3CF] font-bwmss01 text-[12px]">
                     Privacy Policy
                   </p>
+                  </Link>  
+                  <Link href="/terms-conditions">  
                   <p className="text-[#9EB3CF] font-bwmss01 text-[12px]">
                     Terms & Conditions
                   </p>
+                  </Link>  
                 </div>
               </div>
             </div>
