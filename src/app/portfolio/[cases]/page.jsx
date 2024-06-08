@@ -297,56 +297,60 @@ const page = ({ params }) => {
       {
         details:
           "Early Detection: Identify VRUs around the vehicle within the hazard range, alerting the driver or triggering automatic emergency braking if there is no timely response",
+      },
+      {
         details:
           "Segmentation of VRUs: Classify VRUs into categories such as school guards, police officers, construction workers, and cyclists, enhancing context-aware Advanced Driver Assistance Systems (ADAS).",
+      },
+      {
         details:
-          "Intent Estimation: Estimate the intentions of VRUs through stable pose estimates, crucial for the development of future automated driving systems, such as predicting whether a person at a crosswalk will actually cross",
+          "Intent Estimation: Estimate the intentions of VRUs through stable pose estimates, crucial for the development of future automated driving systems, such as predicting whether a person at a crosswalk will actually cross.",
       },
     ],
 
     "federated-learning": [
-      {
-        details:
-          "Model Validation: Use a public dataset to validate the model's efficacy.",
-        details:
-          "Result Reproduction: Reproduce the results within the client's specific environment using their proprietary data.",
-        details:
-          "Model Integration and Deployment: Integrate and deploy the model on test vehicles.",
-      },
+      
+       { details:
+          "Model Validation: Use a public dataset to validate the model's efficacy."},
+      {  details:
+          "Result Reproduction: Reproduce the results within the client's specific environment using their proprietary data."},
+       { details:
+          "Model Integration and Deployment: Integrate and deploy the model on test vehicles."},
+    
     ],
 
     "fitness-pose-estimation": [
       {
         details:
-          "Postural Assessment: Provide users with a straightforward, self-directed assessment to pinpoint postural irregularities.",
-        details:
-          "Enhance Exercise Effectiveness: Ensure users perform exercises with correct form and posture, maximizing exercise benefits and minimizing risk of injury. ",
-        details:
-          "Real-Time Feedback: Provide immediate, accurate feedback on posture during exercises to guide users.",
+          "Postural Assessment: Provide users with a straightforward, self-directed assessment to pinpoint postural irregularities."},
+        {details:
+          "Enhance Exercise Effectiveness: Ensure users perform exercises with correct form and posture, maximizing exercise benefits and minimizing risk of injury. "},
+      {  details:
+          "Real-Time Feedback: Provide immediate, accurate feedback on posture during exercises to guide users."},
 
-        details:
-          "Support Rehabilitation and Functional Training: Offer guidance for therapeutic routines, aiding users in rehabilitation and enhancing functional fitness.",
-      },
+       { details:
+          "Support Rehabilitation and Functional Training: Offer guidance for therapeutic routines, aiding users in rehabilitation and enhancing functional fitness."},
+      
     ],
 
     sqlwizard: [
       {
         details:
-          "Develop a Privacy-Preserving Text2SQL System: Create a system that accepts natural language queries and database schema, and outputs the corresponding SQL query.",
-        details:
-          "Automatic Query Execution: Enable the generated SQL queries to be executed automatically on the existing database to retrieve the required results.",
-        details:
-          "System Adaptability: Ensure that the system can be adapted for use with various database systems beyond MySQL to guarantee broad applicability.",
-      },
+          "Develop a Privacy-Preserving Text2SQL System: Create a system that accepts natural language queries and database schema, and outputs the corresponding SQL query."},
+      {  details:
+          "Automatic Query Execution: Enable the generated SQL queries to be executed automatically on the existing database to retrieve the required results."},
+        {details:
+          "System Adaptability: Ensure that the system can be adapted for use with various database systems beyond MySQL to guarantee broad applicability."},
+      
     ],
 
     "loneliness-assistant": [
       {
         details:
-          "Integrate Open-Source Technology: Continuously update our language learning model (LLM) with open-source innovations to enhance emotional engagement and maintain technological relevance.",
-        details:
-          "Enhance Emotional Intelligence: Refine the system's responsiveness to a diverse array of emotional cues, bolstering empathy and support.",
-        details:
+          "Integrate Open-Source Technology: Continuously update our language learning model (LLM) with open-source innovations to enhance emotional engagement and maintain technological relevance."},
+      {  details:
+          "Enhance Emotional Intelligence: Refine the system's responsiveness to a diverse array of emotional cues, bolstering empathy and support."},
+        {details:
           " Develop Personalized Interaction: Improve the LLM’s adaptive persona to customize interactions based on individual user needs, ensuring a personalized experience.",
       },
     ],
@@ -354,21 +358,21 @@ const page = ({ params }) => {
     "fashion-framework": [
       {
         details:
-          "Dataset Creation: Construct a bespoke dataset from scratch, sourcing images from social media, e-commerce sites, and various online resources.",
-        details:
-          "Data Annotation: Meticulously annotate the dataset to capture a wide range of attributes including design elements, fabric types, colours, and patterns.",
-        details:
-          "Model Development: Engineer a specialized two-stage deep learning model that integrates a detection component with a classifier model ensemble for enhanced accuracy.",
-        details:
-          " Insight Generation: Produce authentic, geographically and temporally specific fashion insights to empower the Indian textile, fashion, and retail industries in developing products tailored to the Indian market.",
-      },
+          "Dataset Creation: Construct a bespoke dataset from scratch, sourcing images from social media, e-commerce sites, and various online resources."},
+      {  details:
+          "Data Annotation: Meticulously annotate the dataset to capture a wide range of attributes including design elements, fabric types, colours, and patterns."},
+       { details:
+          "Model Development: Engineer a specialized two-stage deep learning model that integrates a detection component with a classifier model ensemble for enhanced accuracy."},
+       { details:
+          " Insight Generation: Produce authentic, geographically and temporally specific fashion insights to empower the Indian textile, fashion, and retail industries in developing products tailored to the Indian market."},
+
     ],
 
     "banking-infra": [
       {
         details:
-          "Create Monitoring Platform: Develop a comprehensive platform featuring custom dashboards for real-time log analysis, enhancing oversight of banking and finance applications.",
-        details:
+          "Create Monitoring Platform: Develop a comprehensive platform featuring custom dashboards for real-time log analysis, enhancing oversight of banking and finance applications."},
+       { details:
           " Improve Detection and Resolution: Implement advanced alerting systems to ensure timely detection and effective resolution of performance issues in applications and IT infrastructure.",
       },
     ],
@@ -376,12 +380,12 @@ const page = ({ params }) => {
     rag: [
       {
         details:
-          "Seamless Logging: Log user journal entries through voice transcription, ensuring easy and efficient documentation of daily activities and thoughts.",
-        details:
-          "Privacy and Security: Offer a fully secure service by storing all data in the user's personal cloud storage, such as Google Drive, to maintain privacy and control.",
-        details:
-          "Digital Clone Functionality: Enable users to index and search through their recorded thoughts, which may include audio clips, photos, and location data.",
-        details:
+          "Seamless Logging: Log user journal entries through voice transcription, ensuring easy and efficient documentation of daily activities and thoughts."},
+       { details:
+          "Privacy and Security: Offer a fully secure service by storing all data in the user's personal cloud storage, such as Google Drive, to maintain privacy and control."},
+        {details:
+          "Digital Clone Functionality: Enable users to index and search through their recorded thoughts, which may include audio clips, photos, and location data."},
+      {  details:
           "Generate Insights: Provide summaries of thoughts and mood indicators, and assist with tasks like drafting emails and managing to-do lists.",
       },
     ],
@@ -389,30 +393,30 @@ const page = ({ params }) => {
     "skin-cancer-detection": [
       {
         details:
-          " Accurate Diagnosis: Utilize inputs to classify skin lesions as benign or malignant and identify specific lesion types, thereby enhancing diagnostic precision.",
-        details:
-          "Instant Accessibility: Enable users to capture skin images with their mobile phones and receive immediate diagnoses within the app.",
-        details:
+          " Accurate Diagnosis: Utilize inputs to classify skin lesions as benign or malignant and identify specific lesion types, thereby enhancing diagnostic precision."},
+        {details:
+          "Instant Accessibility: Enable users to capture skin images with their mobile phones and receive immediate diagnoses within the app."},
+       { details:
           "Comprehensive Development: Develop robust machine learning models for classification and segmentation, along with a user-friendly mobile app to facilitate these capabilities.",
       },
     ],
     "oil-gas": [
       {
         details:
-          "Clarify Refinery Design: Extract and interpret early semantics from P&IDs, detailing pipelines, equipment, and symbols essential for constructing refineries.",
-        details:
-          "Enhance Symbol Recognition: Automatically identify and catalogue symbols such as gate valves, butterfly valves, and blind flanges, along with the associated equipment and instruments.",
-        details:
-          " Improve Data Association: Read and correctly associate all surrounding text with the relevant symbols, equipment, or instruments to ensure precise information mapping.",
-        details:
+          "Clarify Refinery Design: Extract and interpret early semantics from P&IDs, detailing pipelines, equipment, and symbols essential for constructing refineries."},
+      {  details:
+          "Enhance Symbol Recognition: Automatically identify and catalogue symbols such as gate valves, butterfly valves, and blind flanges, along with the associated equipment and instruments."},
+        {details:
+          " Improve Data Association: Read and correctly associate all surrounding text with the relevant symbols, equipment, or instruments to ensure precise information mapping."},
+        {details:
           " Streamline MTO Generation: Utilize advanced techniques and human oversight to produce Material Takeoff Orders more quickly and accurately, optimizing project efficiency.",
       },
     ],
     "banking-insights": [
       {
         details:
-          "Insightful Data Analysis: Extract meaningful insights from bank transaction data to provide customers with valuable forecasting and clustering information.",
-        details:
+          "Insightful Data Analysis: Extract meaningful insights from bank transaction data to provide customers with valuable forecasting and clustering information."},
+      {  details:
           "Dual-Level Forecasting: Perform forecasts at both the overall bank and individual customer levels, predicting transaction volumes within a specified future timeframe.",
       },
     ],
@@ -681,7 +685,6 @@ const page = ({ params }) => {
 
     sqlwizard: [
       "Our client successfully implemented the tool to foster an organization-wide data-centric culture for decision-making. This empowerment enables every team member to query data directly and ask meaningful questions, significantly enhancing their operational efficiency and strategic planning capabilities.",
-     
     ],
 
     "loneliness-assistant": [
@@ -736,7 +739,7 @@ const page = ({ params }) => {
       <Soltions solutionsData={solutionsData} />
       <KeyFeatures keyFeaturesData={keyFeaturesData} />
       <TechStack />
-      <OurImpact impactData={impactData}  />
+      <OurImpact impactData={impactData} />
       <OurWork />
       <TestimonialsN />
       <Footer />
