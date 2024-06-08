@@ -25,13 +25,13 @@ const page = ({ params }) => {
         year: "2021",
       },
     ],
-    bosch: [
+    vrups: [
       {
         logo: "/potfolio/bosch/hero/logo.png",
         title: "Vulnerable Roadside User Protection System",
         description:
           "Accurate, low footprint detection with vulnerable roadside users (VRUs) and road signs covered in the Automotive Tier 1 autonomous driving initiative.",
-        industry: " Automotive Tier 1",
+        industry: "Automotive Tier 1",
         year: "2022",
       },
     ],
@@ -160,7 +160,7 @@ const page = ({ params }) => {
       },
     ],
 
-    bosch: [
+    vrups: [
       {
         description:
           "A leader in the automotive industry based in Germany, renowned for its innovation, reliability, and quality. As a top global supplier, this company has significantly advanced automotive technology with its developments in fuel injection systems, safety features, and electric drives, reinforcing its essential role in the sector's progress.          ",
@@ -293,7 +293,7 @@ const page = ({ params }) => {
       },
     ],
 
-    bosch: [
+    vrups: [
       {
         details:
           "Early Detection: Identify VRUs around the vehicle within the hazard range, alerting the driver or triggering automatic emergency braking if there is no timely response",
@@ -309,48 +309,66 @@ const page = ({ params }) => {
     ],
 
     "federated-learning": [
-      
-       { details:
-          "Model Validation: Use a public dataset to validate the model's efficacy."},
-      {  details:
-          "Result Reproduction: Reproduce the results within the client's specific environment using their proprietary data."},
-       { details:
-          "Model Integration and Deployment: Integrate and deploy the model on test vehicles."},
-    
+      {
+        details:
+          "Model Validation: Use a public dataset to validate the model's efficacy.",
+      },
+      {
+        details:
+          "Result Reproduction: Reproduce the results within the client's specific environment using their proprietary data.",
+      },
+      {
+        details:
+          "Model Integration and Deployment: Integrate and deploy the model on test vehicles.",
+      },
     ],
 
     "fitness-pose-estimation": [
       {
         details:
-          "Postural Assessment: Provide users with a straightforward, self-directed assessment to pinpoint postural irregularities."},
-        {details:
-          "Enhance Exercise Effectiveness: Ensure users perform exercises with correct form and posture, maximizing exercise benefits and minimizing risk of injury. "},
-      {  details:
-          "Real-Time Feedback: Provide immediate, accurate feedback on posture during exercises to guide users."},
+          "Postural Assessment: Provide users with a straightforward, self-directed assessment to pinpoint postural irregularities.",
+      },
+      {
+        details:
+          "Enhance Exercise Effectiveness: Ensure users perform exercises with correct form and posture, maximizing exercise benefits and minimizing risk of injury. ",
+      },
+      {
+        details:
+          "Real-Time Feedback: Provide immediate, accurate feedback on posture during exercises to guide users.",
+      },
 
-       { details:
-          "Support Rehabilitation and Functional Training: Offer guidance for therapeutic routines, aiding users in rehabilitation and enhancing functional fitness."},
-      
+      {
+        details:
+          "Support Rehabilitation and Functional Training: Offer guidance for therapeutic routines, aiding users in rehabilitation and enhancing functional fitness.",
+      },
     ],
 
     sqlwizard: [
       {
         details:
-          "Develop a Privacy-Preserving Text2SQL System: Create a system that accepts natural language queries and database schema, and outputs the corresponding SQL query."},
-      {  details:
-          "Automatic Query Execution: Enable the generated SQL queries to be executed automatically on the existing database to retrieve the required results."},
-        {details:
-          "System Adaptability: Ensure that the system can be adapted for use with various database systems beyond MySQL to guarantee broad applicability."},
-      
+          "Develop a Privacy-Preserving Text2SQL System: Create a system that accepts natural language queries and database schema, and outputs the corresponding SQL query.",
+      },
+      {
+        details:
+          "Automatic Query Execution: Enable the generated SQL queries to be executed automatically on the existing database to retrieve the required results.",
+      },
+      {
+        details:
+          "System Adaptability: Ensure that the system can be adapted for use with various database systems beyond MySQL to guarantee broad applicability.",
+      },
     ],
 
     "loneliness-assistant": [
       {
         details:
-          "Integrate Open-Source Technology: Continuously update our language learning model (LLM) with open-source innovations to enhance emotional engagement and maintain technological relevance."},
-      {  details:
-          "Enhance Emotional Intelligence: Refine the system's responsiveness to a diverse array of emotional cues, bolstering empathy and support."},
-        {details:
+          "Integrate Open-Source Technology: Continuously update our language learning model (LLM) with open-source innovations to enhance emotional engagement and maintain technological relevance.",
+      },
+      {
+        details:
+          "Enhance Emotional Intelligence: Refine the system's responsiveness to a diverse array of emotional cues, bolstering empathy and support.",
+      },
+      {
+        details:
           " Develop Personalized Interaction: Improve the LLM’s adaptive persona to customize interactions based on individual user needs, ensuring a personalized experience.",
       },
     ],
@@ -358,21 +376,29 @@ const page = ({ params }) => {
     "fashion-framework": [
       {
         details:
-          "Dataset Creation: Construct a bespoke dataset from scratch, sourcing images from social media, e-commerce sites, and various online resources."},
-      {  details:
-          "Data Annotation: Meticulously annotate the dataset to capture a wide range of attributes including design elements, fabric types, colours, and patterns."},
-       { details:
-          "Model Development: Engineer a specialized two-stage deep learning model that integrates a detection component with a classifier model ensemble for enhanced accuracy."},
-       { details:
-          " Insight Generation: Produce authentic, geographically and temporally specific fashion insights to empower the Indian textile, fashion, and retail industries in developing products tailored to the Indian market."},
-
+          "Dataset Creation: Construct a bespoke dataset from scratch, sourcing images from social media, e-commerce sites, and various online resources.",
+      },
+      {
+        details:
+          "Data Annotation: Meticulously annotate the dataset to capture a wide range of attributes including design elements, fabric types, colors, and patterns.",
+      },
+      {
+        details:
+          "Model Development: Engineer a specialized two-stage deep learning model that integrates a detection component with a classifier model ensemble for enhanced accuracy.",
+      },
+      {
+        details:
+          " Insight Generation: Produce authentic, geographically and temporally specific fashion insights to empower the Indian textile, fashion, and retail industries in developing products tailored to the Indian market.",
+      },
     ],
 
     "banking-infra": [
       {
         details:
-          "Create Monitoring Platform: Develop a comprehensive platform featuring custom dashboards for real-time log analysis, enhancing oversight of banking and finance applications."},
-       { details:
+          "Create Monitoring Platform: Develop a comprehensive platform featuring custom dashboards for real-time log analysis, enhancing oversight of banking and finance applications.",
+      },
+      {
+        details:
           " Improve Detection and Resolution: Implement advanced alerting systems to ensure timely detection and effective resolution of performance issues in applications and IT infrastructure.",
       },
     ],
@@ -380,12 +406,18 @@ const page = ({ params }) => {
     rag: [
       {
         details:
-          "Seamless Logging: Log user journal entries through voice transcription, ensuring easy and efficient documentation of daily activities and thoughts."},
-       { details:
-          "Privacy and Security: Offer a fully secure service by storing all data in the user's personal cloud storage, such as Google Drive, to maintain privacy and control."},
-        {details:
-          "Digital Clone Functionality: Enable users to index and search through their recorded thoughts, which may include audio clips, photos, and location data."},
-      {  details:
+          "Seamless Logging: Log user journal entries through voice transcription, ensuring easy and efficient documentation of daily activities and thoughts.",
+      },
+      {
+        details:
+          "Privacy and Security: Offer a fully secure service by storing all data in the user's personal cloud storage, such as Google Drive, to maintain privacy and control.",
+      },
+      {
+        details:
+          "Digital Clone Functionality: Enable users to index and search through their recorded thoughts, which may include audio clips, photos, and location data.",
+      },
+      {
+        details:
           "Generate Insights: Provide summaries of thoughts and mood indicators, and assist with tasks like drafting emails and managing to-do lists.",
       },
     ],
@@ -393,30 +425,42 @@ const page = ({ params }) => {
     "skin-cancer-detection": [
       {
         details:
-          " Accurate Diagnosis: Utilize inputs to classify skin lesions as benign or malignant and identify specific lesion types, thereby enhancing diagnostic precision."},
-        {details:
-          "Instant Accessibility: Enable users to capture skin images with their mobile phones and receive immediate diagnoses within the app."},
-       { details:
+          " Accurate Diagnosis: Utilize inputs to classify skin lesions as benign or malignant and identify specific lesion types, thereby enhancing diagnostic precision.",
+      },
+      {
+        details:
+          "Instant Accessibility: Enable users to capture skin images with their mobile phones and receive immediate diagnoses within the app.",
+      },
+      {
+        details:
           "Comprehensive Development: Develop robust machine learning models for classification and segmentation, along with a user-friendly mobile app to facilitate these capabilities.",
       },
     ],
     "oil-gas": [
       {
         details:
-          "Clarify Refinery Design: Extract and interpret early semantics from P&IDs, detailing pipelines, equipment, and symbols essential for constructing refineries."},
-      {  details:
-          "Enhance Symbol Recognition: Automatically identify and catalogue symbols such as gate valves, butterfly valves, and blind flanges, along with the associated equipment and instruments."},
-        {details:
-          " Improve Data Association: Read and correctly associate all surrounding text with the relevant symbols, equipment, or instruments to ensure precise information mapping."},
-        {details:
+          "Clarify Refinery Design: Extract and interpret early semantics from P&IDs, detailing pipelines, equipment, and symbols essential for constructing refineries.",
+      },
+      {
+        details:
+          "Enhance Symbol Recognition: Automatically identify and catalogue symbols such as gate valves, butterfly valves, and blind flanges, along with the associated equipment and instruments.",
+      },
+      {
+        details:
+          " Improve Data Association: Read and correctly associate all surrounding text with the relevant symbols, equipment, or instruments to ensure precise information mapping.",
+      },
+      {
+        details:
           " Streamline MTO Generation: Utilize advanced techniques and human oversight to produce Material Takeoff Orders more quickly and accurately, optimizing project efficiency.",
       },
     ],
     "banking-insights": [
       {
         details:
-          "Insightful Data Analysis: Extract meaningful insights from bank transaction data to provide customers with valuable forecasting and clustering information."},
-      {  details:
+          "Insightful Data Analysis: Extract meaningful insights from bank transaction data to provide customers with valuable forecasting and clustering information.",
+      },
+      {
+        details:
           "Dual-Level Forecasting: Perform forecasts at both the overall bank and individual customer levels, predicting transaction volumes within a specified future timeframe.",
       },
     ],
@@ -428,7 +472,7 @@ const page = ({ params }) => {
       "The model was required to recognize a wide range of activities across diverse demographics, locations, and conditions (including driving, weather, and daylight variations) with over Six Sigma accuracy, ensuring reliability in at least 99,999 out of 100,000 instances.",
     ],
 
-    bosch: [
+    vrups: [
       "1.Given the critical importance of VRUs on the road, the system must function flawlessly at all times. Achieving accuracy 99,999 times out of 100,000 is deemed insufficient.",
       "2. The VRU detector works alongside various systems like traffic sign and light detection, using a backbone network with specialized modules designed for multi-task learning. This setup requires coordination across 15 different teams to ensure updates to the model do not adversely affect their outputs. Challenges include retraining, versioning, and testing within this complex framework.",
       "3. In high-speed scenarios, vehicles must detect VRUs from afar to allow safe deceleration and stopping. Despite using high-resolution cameras, the challenge arises because objects at great distances appear significantly smaller (less than 50px). Balancing the demands of swift detection, significant distance, and camera constraints poses a complex engineering challenge.",
@@ -490,9 +534,11 @@ const page = ({ params }) => {
     mbux: [
       `Utilizing our expertise in Computer Vision, we developed a state-of-the-art solution for multimodal human pose estimation using heatmaps. Our efforts focused on embedding this technology into vehicles, effectively bringing onboard intelligence to life. This achievement required a dramatic reduction in the model's size—compressing it by over 25,000 times—without compromising on accuracy.`,
       `The implementation of this technology has revolutionized how drivers and passengers interact with the vehicle, introducing a more intuitive way to control the car's systems, such as using gestures to navigate menus, close doors, and adjust the rear view mirrors by simply looking in the desired direction.The implementation of this technology has revolutionized how drivers and passengers interact with the vehicle, introducing a more intuitive way to control the car's systems, such as using gestures to navigate menus, close doors, and adjust the rear view mirrors by simply looking in the desired direction.`,
+      " Activating vehicle functions via hand gestures, applying a 3D Convolutional Neural Network (3D-CNN) and Gated Recurrent Unit (GRU) to analyse video frames and extract spatio-temporal features.",
+      "Advanced airbag deployment control system, utilizing a processing unit equipped with Long Short Term Memory (LSTM) neural network architecture, analyses images to determine and predict the future position and orientation of the occupant's head.",
     ],
 
-    bosch: [
+    vrups: [
       "We developed a VRU detection and protection system combining radar, ultrasonic sensors, and cameras to enable prompt braking or manoeuvring to avoid pedestrian collisions. Upon initiating evasive action, it activates steering support and alerts drivers within half a second, processing accident scenarios in just 5 milliseconds for maximum safety.",
     ],
 
@@ -543,17 +589,29 @@ const page = ({ params }) => {
     mbux: [
       {
         description: "",
-        refrances: [
-          " Activating vehicle functions via hand gestures, applying a 3D Convolutional Neural Network (3D-CNN) and Gated Recurrent Unit (GRU) to analyse video frames and extract spatio-temporal features.",
-          "Advanced airbag deployment control system, utilizing a processing unit equipped with Long Short Term Memory (LSTM) neural network architecture, analyses images to determine and predict the future position and orientation of the occupant's head.",
-          "1 -  Cholakkal Hisham , Arjun Jain, et al. Method For Identifying a Hand Pose in a Vehicle, WO2020048814, March 2020",
-          "2 - Vikram Gupta, Arjun Jain, et al. Method and System for Triggering an Event in a Vehicle, EP3895064, Jan 2023",
-          "3 - Sai Kumar Dwivedi, Arjun Jain, et al. System And Method For Deployment Of Airbag Based On Head Pose Estimation, 201911039220 A, April 2021",
+        references: [
+          {
+            description:
+              "1 -  Cholakkal Hisham , Arjun Jain, et al. Method For Identifying a Hand Pose in a Vehicle, WO2020048814, March 2020",
+              link:"/research#headPoseIdentify"
+          },
+          {
+            description:
+              "2 - Vikram Gupta, Arjun Jain, et al. Method and System for Triggering an Event in a Vehicle, EP3895064, Jan 2023",
+              link:"/research#vehicleEvent"
+
+          },
+          {
+            description:
+              "3 - Sai Kumar Dwivedi, Arjun Jain, et al. System And Method For Deployment Of Airbag Based On Head Pose Estimation, 201911039220 A, April 2021",
+              link:"/research#headPose"
+
+          },
         ],
       },
     ],
 
-    bosch: [
+    vrups: [
       {
         description: "",
         points: [
@@ -563,10 +621,10 @@ const page = ({ params }) => {
           "Robust Detection: Operates effectively in adverse weather and tracks multiple objects simultaneously, enhancing safety.",
           "NCAP Standards Compliance: Meets standards for automatic emergency braking, effectively safeguarding vulnerable road users.",
         ],
-        refrances: [
-          "Bosch Corporate Research",
-          "Bosch Corporate Research, 2015; database: USA, Japan",
-        ],
+        // references: [
+        //   "Bosch Corporate Research",
+        //   "Bosch Corporate Research, 2015; database: USA, Japan",
+        // ],
       },
     ],
 
@@ -668,7 +726,7 @@ const page = ({ params }) => {
       "This innovation inspired numerous competitors to adopt similar technologies, creating a new industry standard. The game changer was moving away from traditional button controls for rear-view mirror adjustments to adjustments based on the driver's head pose, showcasing the brand's commitment to intuitive design and functionality",
     ],
 
-    bosch: [
+    vrups: [
       `  Research Collaboration: Co-authored the research paper "VRU Pose-SSD: Multiperson Pose Estimation for Automated Driving" with Bosch, Mercedes, and the Indian Institute of Science.`,
       `NCAP Compliance: The predictive pedestrian protection system meets NCAP requirements for automatic emergency braking.`,
       `Potential of Automatic Emergency Braking: Shows significant potential in preventing or mitigating frontal collisions with pedestrians at speeds up to 60 km/h, significantly reducing injury risks, avoiding or mitigating half of the accidents with cyclists resulting in personal injury in Germany, and reducing up to 30% of relevant pedestrian accidents. `,
@@ -738,11 +796,11 @@ const page = ({ params }) => {
       <BusinessChlanges businessChallengeList={businessChallengeData} />
       <Soltions solutionsData={solutionsData} />
       <KeyFeatures keyFeaturesData={keyFeaturesData} />
-      <TechStack />
+      {/* <TechStack /> */}
       <OurImpact impactData={impactData} />
-      <OurWork />
-      <TestimonialsN />
-      <Footer />
+      {/* <OurWork /> */}
+      {/* <TestimonialsN /> */}
+      <Footer showExtraSpace={false} />
     </>
   );
 };

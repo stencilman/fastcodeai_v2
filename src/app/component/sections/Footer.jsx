@@ -6,7 +6,7 @@ import Link from "next/link";
 import React, { useState, useEffect, useRef } from "react";
 import Modal from "../Modal";
 
-const Footer = () => {
+const Footer = ({ showExtraSpace }) => {
   const [active, setActive] = useState(false);
   const scaleAnimation = {
     initial: { scale: 0, x: "0%", y: "0%" },
@@ -39,7 +39,9 @@ const Footer = () => {
   }, []);
   return (
     <>
-      <div className="w-full relative h-[10vh] md:h-[20vh] bg-[#00081F]"></div>
+      {showExtraSpace && (
+        <div className="w-full relative h-[10vh] md:h-[20vh] bg-[#00081F]"></div>
+      )}
       <div className="w-full relative h-[90vh] lg:h-[100vh]  ">
         <div
           className="relative z-[5] w-full h-[70vh] border-t border-[#1A2758]"
@@ -85,9 +87,9 @@ const Footer = () => {
                     </li>
                     <li className="text-sm text-[#9EB3CF] font-bwmss01 mt-[10px] md:mt-[19px]">
                       #48, Bhive Premium Church st,
-                      <br /> Haridevpur, Shanthala Nagar,<br/> Ashok Nagar,
-                      Bengaluru - 560001
-                      <br/>
+                      <br /> Haridevpur, Shanthala Nagar,
+                      <br /> Ashok Nagar, Bengaluru - 560001
+                      <br />
                       Karnataka, India
                     </li>
                   </ul>
@@ -117,20 +119,21 @@ const Footer = () => {
                   </p>
                 </div>
                 <div className="flex gap-[27px]">
-                <Link href="/legal-notice"><p className="text-[#9EB3CF] font-bwmss01 text-[12px]">
-                    Legal Notice
-                  </p>
-                  </Link>  
-                  <Link href="/privacy-policy">  
-                  <p className="text-[#9EB3CF] font-bwmss01 text-[12px]">
-                    Privacy Policy
-                  </p>
-                  </Link>  
-                  <Link href="/terms-conditions">  
-                  <p className="text-[#9EB3CF] font-bwmss01 text-[12px]">
-                    Terms & Conditions
-                  </p>
-                  </Link>  
+                  <Link href="/legal-notice">
+                    <p className="text-[#9EB3CF] font-bwmss01 text-[12px]">
+                      Legal Notice
+                    </p>
+                  </Link>
+                  <Link href="/privacy-policy">
+                    <p className="text-[#9EB3CF] font-bwmss01 text-[12px]">
+                      Privacy Policy
+                    </p>
+                  </Link>
+                  <Link href="/terms-conditions">
+                    <p className="text-[#9EB3CF] font-bwmss01 text-[12px]">
+                      Terms & Conditions
+                    </p>
+                  </Link>
                 </div>
               </div>
             </div>

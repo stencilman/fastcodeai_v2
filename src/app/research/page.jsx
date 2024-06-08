@@ -28,12 +28,12 @@ const Research = () => {
       <div className="mt-[20vw] sm:mt-[10vw] md:mt-[10vw]"></div>
       {/* <TechStack /> */}
       {/* <TestimonialsN /> */}
-      
-        <Cta
-          title="Got a groundbreaking idea?"
-          quote="let's turn it into a patented innovation"
-        />
-      
+
+      <Cta
+        title="Got a groundbreaking idea?"
+        quote="let's turn it into a patented innovation"
+      />
+
       <Footer />
     </>
   );

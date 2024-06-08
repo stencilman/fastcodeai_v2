@@ -1,13 +1,14 @@
-"use client"
+"use client";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import React from "react";
 
-const OurImpact = ({impactData}) => {
- const path =  usePathname()
-  console.log("path",path.includes("sqlwizard"))
+const OurImpact = ({ impactData }) => {
+  const path = usePathname();
+  const pathSql = path.includes("sqlwizard")
+  console.log("path", path.includes("sqlwizard"));
   return (
-    <div className="w-full h-auto pt-[100px] pb-[170px] bg-gradient-to-br from-[#000E32] to-[#000929] opacity-83 pl-[20px] md:pl-[50px] lg:pl-[100px] pr-[0px] relative z-[2]">
+    <div className="w-full h-auto pt-[100px] pb-[170px] bg-gradient-to-br from-[#000E32] to-[#000929] opacity-83 px-[20px] md:px-[50px] lg:px-[100px]  relative z-[2]">
       <div className="pb-[70px] px-[10px] md:px-[40px]">
         <h1 className="text-white text-6xl md:text-8xl font-aeonik tracking-wide mb-[8px]">
           Our Impact
@@ -16,24 +17,32 @@ const OurImpact = ({impactData}) => {
       <div className="flex w-full ">
         <div className="flex flex-col-reverse md:flex-row w-[100%] gap-[70px] md:gap-0 relative">
           <div className="flex flex-col gap-[50px]">
-            {impactData?.map((e,i)=><div key={i} className="flex gap-[5px]">
-              <p className="text-white font-normal font-aeonik text-3xl tracking-wide ">
-                {i < 9 ? "0" + (i + 1) : i + 1}.
-                
+            {impactData?.map((e, i) => (
+              <div key={i} className="flex gap-[5px]">
+                <p className="text-white font-normal font-aeonik text-3xl tracking-wide ">
+                  {i < 9 ? "0" + (i + 1) : i + 1}.
+                </p>
+                <p className="text-[#9EB3CF] text-lg font-bwmss01 mt-[10px]">
+                  {e}
+                </p>
+              </div>
+            ))}
+            {pathSql && (
+              <p className="text-[#9EB3CF] text-lg font-bwmss01 mt-[10px] ">
+                Live Demo Experience our secure Text-to-SQL interface first hand
+                at:{" "}
+                <a
+                  href="https://fastcode.ai/sqlwizard.html"
+                  target="_blank"
+                  className="text-blue-600"
+                >
+                  FastCode SQL Wizard
+                </a>
               </p>
-              <p className="text-[#9EB3CF] text-lg font-bwmss01 mt-[10px]">
-                {e}
-                
-              </p>
-            </div>)
-            
-            }
-           {path&&<p className="text-[#9EB3CF] text-lg font-bwmss01 mt-[10px] ">
-           Live Demo Experience our secure Text-to-SQL interface first hand at: <a href="https://fastcode.ai/sqlwizard.html" target="_blank" className="text-blue-600"> FastCode SQL Wizard</a>
-           </p>}
+            )}
           </div>
           {/* img */}
-          <div className="relative right-[0px] ">
+          {/* <div className="relative right-[0px] ">
             <Image
               className="opacity-60 mix-blend-screen"
               src="/potfolio/impact/img1-2.png"
@@ -80,11 +89,10 @@ const OurImpact = ({impactData}) => {
                 </div>
                 <p className="text-center text-white text-2xl font-bwmss01">
                   Years of Experience
-                 
                 </p>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

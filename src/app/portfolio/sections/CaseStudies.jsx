@@ -17,10 +17,9 @@ const CaseStudies = () => {
     },
     {
       img: "bg-benz",
-      title: "Bosch",
-      description:
-        "Accurate, low footprint detection with vulnerable roadside users (VRUs) and road signs covered in the Bosch-Daimler autonomous driving initiative.",
-      to: "/portfolio/bosch",
+      title: "Vulnerable Roadside User Protection System",
+      description:"Accurate, low footprint detection with vulnerable roadside users (VRUs) and road signs covered in the Automotive Tier 1 autonomous driving initiative.",
+      to: "/portfolio/vrups",
     },
     {
       img: "bg-learning",
@@ -84,6 +83,13 @@ const CaseStudies = () => {
       description:
         "Deploying AI to swiftly convert Process and Instrumentation Diagrams (P&IDs) in the Oil & Gas EPCC sector into accurate, digital Material Takeoff Orders, significantly boosting productivity and reducing costs.",
       to: "/portfolio/oil-gas",
+    },
+     {
+      img: "bg-fitness",
+      title: "AI Banking Insights",
+      description:
+        "Transforming banking datasets into actionable insights enhances customer segmentation, predictive forecasting, and strategic decision-making in the fintech industry.",
+      to: "/portfolio/banking-insights",
     },
   ];
 

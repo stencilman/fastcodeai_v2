@@ -19,11 +19,11 @@ const slides = [
     url : "/portfolio/federated-learning"
   },
   {
-    title: "Bosch",
+    title: "Vulnerable Roadside User Protection System",
     content:
-      "Precision detection with minimal footprint for vulnerable roadside users (VRUs) and road signs, as part of the Bosch-Daimler autonomous driving initiative.",
+      "Accurate, low footprint detection with vulnerable roadside users (VRUs) and road signs covered in the Automotive Tier 1 autonomous driving initiative.",
     image: "/our-work/bosch.webp",
-    url:"/portfolio/bosch"
+    url:"/portfolio/vrups"
   },
   {
     title: "Fitness Pose Estimation",
