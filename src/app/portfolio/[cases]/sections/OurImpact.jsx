@@ -1,8 +1,11 @@
+"use client"
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 import React from "react";
 
-const OurImpact = ({impactData,projectLink}) => {
-  console.log("impactData",impactData)
+const OurImpact = ({impactData}) => {
+ const path =  usePathname()
+  console.log("path",path.includes("sqlwizard"))
   return (
     <div className="w-full h-auto pt-[100px] pb-[170px] bg-gradient-to-br from-[#000E32] to-[#000929] opacity-83 pl-[20px] md:pl-[50px] lg:pl-[100px] pr-[0px] relative z-[2]">
       <div className="pb-[70px] px-[10px] md:px-[40px]">
@@ -25,7 +28,7 @@ const OurImpact = ({impactData,projectLink}) => {
             </div>)
             
             }
-           {projectLink&&<p className="text-[#9EB3CF] text-lg font-bwmss01 mt-[10px] ">
+           {path&&<p className="text-[#9EB3CF] text-lg font-bwmss01 mt-[10px] ">
            Live Demo Experience our secure Text-to-SQL interface first hand at: <a href="https://fastcode.ai/sqlwizard.html" target="_blank" className="text-blue-600"> FastCode SQL Wizard</a>
            </p>}
           </div>

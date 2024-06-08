@@ -736,7 +736,7 @@ const page = ({ params }) => {
       <Soltions solutionsData={solutionsData} />
       <KeyFeatures keyFeaturesData={keyFeaturesData} />
       <TechStack />
-      <OurImpact impactData={impactData} projectLink={true} />
+      <OurImpact impactData={impactData}  />
       <OurWork />
       <TestimonialsN />
       <Footer />
