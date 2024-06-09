@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import { useEffect, useState } from "react";
 import Hero from "./sections/Hero";
 import ClientAndInd from "./sections/ClientAndInd";
 import ProjectGoals from "./sections/ProjectGoals";
@@ -10,12 +11,19 @@ import OurImpact from "./sections/OurImpact";
 import OurWork from "@/app/component/sections/OurWork";
 import TestimonialsN from "@/app/component/sections/TestimonialsN";
 import Footer from "@/app/component/sections/Footer";
+import { useGlobalContext } from "@/app/context/GlobalContext";
 
-const page = ({ params }) => {
+const Cases = ({ params }) => {
   console.log("path", params.cases);
+  
+  const { setIsActive } = useGlobalContext();
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    setIsActive(false);
+  }, []);
   const heroDataMap = {
-    mbux: [
+    "auto-oem": [
       {
         // logo: "/potfolio/mbenz/hero/logo.png",
         title: "Gesture Recognition based User Experience",
@@ -168,7 +176,7 @@ const page = ({ params }) => {
   };
 
   const clientAndRole = {
-    mbux: [
+    "auto-oem": [
       {
         description:
           "A premier German OEM, renowned as a market leader, prioritizes quality and epitomizes luxury and innovation in the automotive sector. Known for its relentless pursuit of excellence, the brand has consistently introduced ground breaking technologies and luxurious vehicles, establishing the gold standard for safety, performance, and design.",
@@ -301,7 +309,8 @@ const page = ({ params }) => {
   };
 
   const projGoals = {
-    mbux: [
+    "auto-oem": [
+     
       {
         details:
           "Install an interior camera system behind the rear view mirror to enhance the user experience, enabling gesture-based controls for toggling reading lights and accessing favourite features through specific hand poses, improving interactions for both drivers and passengers.",
@@ -486,7 +495,7 @@ const page = ({ params }) => {
   };
 
   const businessChallenge = {
-    mbux: [
+    "auto-oem": [
       "  The system needed to be designed for low-power hardware to mitigate heat emission, as the Electronic Control Unit (ECU) was located in a part of the vehicle that could not efficiently dissipate additional heat. ",
       "The model was required to recognize a wide range of activities across diverse demographics, locations, and conditions (including driving, weather, and daylight variations) with over Six Sigma accuracy, ensuring reliability in at least 99,999 out of 100,000 instances.",
     ],
@@ -550,7 +559,7 @@ const page = ({ params }) => {
   };
 
   const solutions = {
-    mbux: [
+    "auto-oem": [
       `Utilizing our expertise in Computer Vision, we developed a state-of-the-art solution for multimodal human pose estimation using heatmaps. Our efforts focused on embedding this technology into vehicles, effectively bringing onboard intelligence to life. This achievement required a dramatic reduction in the model's size—compressing it by over 25,000 times—without compromising on accuracy.`,
       `The implementation of this technology has revolutionized how drivers and passengers interact with the vehicle, introducing a more intuitive way to control the car's systems, such as using gestures to navigate menus, close doors, and adjust the rear view mirrors by simply looking in the desired direction.The implementation of this technology has revolutionized how drivers and passengers interact with the vehicle, introducing a more intuitive way to control the car's systems, such as using gestures to navigate menus, close doors, and adjust the rear view mirrors by simply looking in the desired direction.`,
       " Activating vehicle functions via hand gestures, applying a 3D Convolutional Neural Network (3D-CNN) and Gated Recurrent Unit (GRU) to analyse video frames and extract spatio-temporal features.",
@@ -605,9 +614,10 @@ const page = ({ params }) => {
   };
 
   const keyFeatures = {
-    mbux: [
+    "auto-oem": [
       {
         description: "",
+        
         references: [
           {
             description:
@@ -738,7 +748,7 @@ const page = ({ params }) => {
   };
 
   const impact = {
-    mbux: [
+    "auto-oem": [
       `The OEM was honoured with four prestigious Automotive INNOVATIONS awards, notably for "Most Innovative Premium Brand - Interface & Connectivity." These awards, presented by PricewaterhouseCoopers (PwC) in collaboration with Prof. Dr. Stefan Bratzel and the Centre of Automotive Management (CAM), underscore the brand’s commitment to pushing boundaries in the automotive industry.`,
       "Thanks to our collaboration, the OEM developed one of the best ML teams in India",
       "The OEM integrated advanced deep learning models directly into their vehicles for the first time, setting a precedent in the industry.",
@@ -824,4 +834,4 @@ const page = ({ params }) => {
   );
 };
 
-export default page;
+export default Cases;

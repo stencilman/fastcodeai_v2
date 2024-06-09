@@ -1,13 +1,20 @@
+"use client"
 import Image from "next/image";
+import { usePathname } from "next/navigation";
 import React from "react";
 
 const Soltions = ({solutionsData}) => {
+  
+  const path = usePathname();
+  const autoOem = path.includes("auto-oem")
   
   return (
     <div className="w-full h-auto bg-[#00081F] py-[100px]  px-[20px] md:px-[50px] lg:px-[100px]  relative">
       <div className="absolute top-[-160px] left-0 w-full h-[150px] blur-[50px] translate-y-[30px] scale-90  rounded-[50%] z-[1] bg-gradient-to-br from-[#1D8283] to-[#033577] bg-gradient-156deg bg-no-repeat bg-[0% 0%] opacity-49 border-0 border-opacity-0 filter blur-[50px]"></div>
 
       <div className="flex flex-col gap-[40px] px-[10px] md:px-[40px]">
+     {autoOem && <iframe  className="embed-responsive-item h-[300px] md:h-[400px] rounded-[18px]" src="https://www.youtube.com/embed/nJArgIr63fo"
+                  allowFullScreen></iframe>}
         <h1 className="text-white text-6xl md:text-8xl font-aeonik tracking-wide mb-[8px]">
           Solution
         </h1>

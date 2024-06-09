@@ -13,7 +13,7 @@ const CaseStudies = () => {
       title: "Gesture Recognition based User Experience",
       description:
         "Enhance interaction between driver and car by detecting driver hand gesture for superior level driver experience with Automotive OEM.",
-      to: "/portfolio/mbux",
+      to: "/portfolio/auto-oem",
     },
     {
       img: "bg-vrups",

@@ -9,7 +9,7 @@ const slides = [
     content:
       "Enhance interaction between driver and car by detecting driver hand gesture for superior level driver experience with Automotive OEM.",
     image: "/our-work/mercedes.webp",
-    url: "/portfolio/mbux",
+    url: "/portfolio/auto-oem",
   },
   {
     title: "Federated Learning on the Edge",
