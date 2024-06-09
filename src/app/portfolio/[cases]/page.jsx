@@ -137,7 +137,7 @@ const Cases = ({ params }) => {
         title: "AI-Assisted Skin Cancer Detection",
         description:
           "Enhancing skin cancer by diagnosing user’s skin images on their mobile phones, improving dermatological care's accuracy, accessibility, and efficiency.",
-        industry: "Start-up",
+        industry: "Healthcare",
         year: "2020",
         heroImg: "/our-work/dermos.webp",
       },
@@ -149,7 +149,7 @@ const Cases = ({ params }) => {
         title: " AutoMTO: Revolutionizing Material Takeoff in Oil & Gas EPCC",
         description:
           "Deploying AI to swiftly convert Process and Instrumentation Diagrams (P&IDs) in the Oil & Gas EPCC sector into accurate, digital Material Takeoff Orders, significantly boosting productivity and reducing costs.",
-        industry: "Enterprise",
+        industry: "Oil & Gas",
         year: "2019",
         heroImg: "/our-work/automto.webp",
       },
@@ -640,6 +640,7 @@ const Cases = ({ params }) => {
         description: [],
         points: [
           "Benign/Malignant Classification: Our advanced ML model proficiently classifies skin lesions as benign or malignant, a critical step in determining the urgency and approach of treatment.",
+          "This innovative approach helps dermatologists by offering preliminary analyses for quicker review and confirmation, enhancing diagnostic accuracy, reducing workload, and speeding up treatment.",
           "Lesion Type Detection and Segmentation: The model excels in identifying specific types of lesions and accurately segments them, providing vital details about their size, shape, and boundaries, which are essential for treatment planning and monitoring.",
         ],
       },

@@ -62,7 +62,6 @@ const Believe = () => {
             ref={navRef}
           >
             {/* Number 1 */}
-          
 
             <motion.div
               whileHover={{ scale: 1.05 }}
@@ -112,11 +111,34 @@ const Believe = () => {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className={`w-[65px] h-[70px] md:w-[82px] md:h-[82px] border border-[#1A2758] rounded-[14px] flex items-center justify-center  relative ${
-                activeMain === "Strong R&D Expertise" ? "beliveBg" : ""
+                activeMain === "Integrity" ? "beliveBg" : ""
               }`}
             >
               <h3 className="text-[#9EB3CF] text-[40px] md:text-[50px] font-aeonik font-thin tracking-wider relative z-10">
                 03
+              </h3>
+              <AnimatePresence>
+                {activeMain === "Integrity" && (
+                  <motion.span
+                    className="absolute inset-0 rounded-[14px]  beliveBg z-0"
+                    initial={{ scale: 0 }}
+                    animate={{ scale: 1 }}
+                    exit={{ scale: 0 }}
+                  ></motion.span>
+                )}
+              </AnimatePresence>
+            </motion.div>
+            {/* Number 4 */}
+
+            <motion.div
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className={`w-[65px] h-[70px] md:w-[82px] md:h-[82px] border border-[#1A2758] rounded-[14px] flex items-center justify-center  relative ${
+                activeMain === "Strong R&D Expertise" ? "beliveBg" : ""
+              }`}
+            >
+              <h3 className="text-[#9EB3CF] text-[40px] md:text-[50px] font-aeonik font-thin tracking-wider relative z-10">
+                04
               </h3>
               <AnimatePresence>
                 {activeMain === "Strong R&D Expertise" && (
@@ -129,44 +151,23 @@ const Believe = () => {
                 )}
               </AnimatePresence>
             </motion.div>
-            {/* Number 4 */}
-             <motion.div
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className={`w-[65px] h-[70px] md:w-[82px] md:h-[82px] border border-[#1A2758] rounded-[14px] flex items-center justify-center  relative ${
-                activeMain === "Integrity" ? "beliveBg" : ""
-              }`}
-            >
-              <h3 className="text-[#9EB3CF] text-[40px] md:text-[50px] font-aeonik font-thin tracking-wider relative z-10">
-                04
-              </h3>
-              <AnimatePresence>
-                {activeMain === "Integrity" && (
-                  <motion.span
-                    className="absolute inset-0 rounded-[14px]  beliveBg z-0"
-                    initial={{ scale: 0 }}
-                    animate={{ scale: 1 }}
-                    exit={{ scale: 0 }}
-                  ></motion.span>
-                )}
-              </AnimatePresence>
-            </motion.div> 
           </div>
           {/* Text Content And Animation */}
           <div className="flex  w-[90%] ">
             <div className="pb-[20px] flex flex-col gap-[120px] md:gap-[50px]">
-             
-
               <div
                 className="h-[auto] md:h-[300px] w-[98%] sm:w-[80%] pl-[13px] sm:pl-[30px] md:pr-[20px] md:pt-[50px] flex flex-col justify-center"
                 ref={mainRefs["Our Process & Approach"]}
                 data-main="Our Process & Approach"
               >
                 <h1 className="font-aeonik text-[8vw] lg:text-[3.5vw] text-white leading-[8vw] md:leading-[4vw] tracking-normal font-thin">
-                Excellence
+                  Excellence
                 </h1>
                 <p className="text-[#9EB3CF] font-bwmss01 text-base  mt-[15px]">
-                Our commitment to excellence drives us to deliver the highest quality products and services. We ensure that every project we undertake meets the highest standards, from meticulous planning and development to rigorous testing and deployment.
+                  Our commitment to excellence drives us to deliver the highest
+                  quality products and services. We ensure that every project we
+                  undertake meets the highest standards, from meticulous
+                  planning and development to rigorous testing and deployment.
                 </p>
               </div>
               <div
@@ -175,26 +176,18 @@ const Believe = () => {
                 data-main="Handpicked Experts"
               >
                 <h1 className="font-aeonik text-[8vw] lg:text-[3.5vw] text-white leading-[8vw] md:leading-[4vw] tracking-normal font-thin">
-                Innovation
+                  Innovation
                 </h1>
                 <p className="text-[#9EB3CF] font-bwmss01 text-base  mt-[15px]">
-                We seek original approaches for achieving our goals, taking advantage of creative communication for our outreach. By embracing new ideas and technologies, we continuously strive to push the boundaries of {"what's"} possible in the realm of AI and software solutions.
-                </p>
-              </div>
-              <div
-                className="h-[auto] md:h-[300px] w-[98%] sm:w-[80%] pl-[13px] sm:pl-[30px] md:pr-[20px] flex flex-col justify-center"
-                ref={mainRefs["Strong R&D Expertise"]}
-                data-main="Strong R&D Expertise"
-              >
-                <h1 className="font-aeonik text-[8vw] lg:text-[3.5vw] text-white leading-[8vw] md:leading-[4vw] tracking-normal font-thin">
-                Collaboration
-                </h1>
-                <p className="text-[#9EB3CF] font-bwmss01 text-base  mt-[15px]">
-                We believe that the best solutions come from working together. By fostering a collaborative environment, we harness the collective expertise and creativity of our team, partners, and clients, ensuring that every voice is heard and valued.
+                  We seek original approaches for achieving our goals, taking
+                  advantage of creative communication for our outreach. By
+                  embracing new ideas and technologies, we continuously strive
+                  to push the boundaries of {"what's"} possible in the realm of
+                  AI and software solutions.
                 </p>
               </div>
 
-               <div
+              <div
                 className="h-[auto] md:h-[300px] w-[98%] sm:w-[80%] pl-[13px] sm:pl-[30px] md:pr-[20px] flex flex-col justify-center"
                 ref={mainRefs["Integrity"]}
                 data-main="Integrity"
@@ -209,7 +202,22 @@ const Believe = () => {
                   us to deliver on our promises, and we are committed to
                   upholding that trust in every aspect of our work.
                 </p>
-              </div> 
+              </div>
+              <div
+                className="h-[auto] md:h-[300px] w-[98%] sm:w-[80%] pl-[13px] sm:pl-[30px] md:pr-[20px] flex flex-col justify-center"
+                ref={mainRefs["Strong R&D Expertise"]}
+                data-main="Strong R&D Expertise"
+              >
+                <h1 className="font-aeonik text-[8vw] lg:text-[3.5vw] text-white leading-[8vw] md:leading-[4vw] tracking-normal font-thin">
+                  Collaboration
+                </h1>
+                <p className="text-[#9EB3CF] font-bwmss01 text-base  mt-[15px]">
+                  We believe that the best solutions come from working together.
+                  By fostering a collaborative environment, we harness the
+                  collective expertise and creativity of our team, partners, and
+                  clients, ensuring that every voice is heard and valued.
+                </p>
+              </div>
             </div>
             {/* Scroll */}
             <div className="pb-[20px] sticky top-[120px] h-fit w-[20%] md:w-[10%] flex flex-col justify-center">

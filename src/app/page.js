@@ -15,6 +15,7 @@ import Numbers from "./component/sections/Numbers";
 import TestimonialsN from "./component/sections/TestimonialsN";
 import { useGlobalContext } from "./context/GlobalContext";
 import { useEffect, useState } from "react";
+import JoinTeam from "./component/sections/JoinTeam";
 
 
 export default function Home() {
@@ -31,6 +32,7 @@ export default function Home() {
       <Hero />
       <ScreenAbout />
       <Clients />
+      <JoinTeam/>
       {/* <Numbers /> */}
       <Experties />
       <Team />
