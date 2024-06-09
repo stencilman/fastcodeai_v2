@@ -26,7 +26,7 @@ const TermConditions = () => {
                             1.
 
                         </p>
-                        <p className="text-[#9EB3CF] text-lg font-bwmss01 mt-[10px]">
+                        <p className="text-[#9EB3CF]  text-sm md:text-lg font-bwmss01 mt-[10px]">
                             Welcome to FastCode.ai. By accessing our website and using our services,
                             you agree to be bound by the following terms and conditions. If you do not agree with any
                             part of these terms, you must not use our website or services.AS
@@ -37,7 +37,7 @@ const TermConditions = () => {
                             2.
 
                         </p>
-                        <p className="text-[#9EB3CF] text-lg font-bwmss01 mt-[10px]">
+                        <p className="text-[#9EB3CF]  text-sm md:text-lg font-bwmss01 mt-[10px]">
                             Intellectual Property Rights The content, layout, design, data, databases and graphics on
                             this website are protected by Indian and international intellectual property laws and are
                             owned by FastCode AI Consult Pvt. Ltd. or its licensors. Unless expressly permitted, you
@@ -50,7 +50,7 @@ const TermConditions = () => {
                             3.
 
                         </p>
-                        <p className="text-[#9EB3CF] text-lg font-bwmss01 mt-[10px]">
+                        <p className="text-[#9EB3CF]  text-sm md:text-lg font-bwmss01 mt-[10px]">
                             Use of the Service FastCode AI Consult Pvt. Ltd. grants you a non-exclusive, non-
                             transferable, limited license to access and use the services strictly in accordance with these
                             terms. This license is solely for your personal and non-commercial use, unless otherwise
@@ -61,7 +61,7 @@ const TermConditions = () => {
                         <p className="text-white font-normal font-aeonik text-3xl tracking-wide ">
                             4.
                         </p>
-                        <p className="text-[#9EB3CF] text-lg font-bwmss01 mt-[10px]">
+                        <p className="text-[#9EB3CF]  text-sm md:text-lg font-bwmss01 mt-[10px]">
                             User Obligations You agree to use FastCode.ai only for lawful purposes and in a way that
                             does not infringe the rights of, restrict, or inhibit anyone {"else's"} use and enjoyment of the
                             website. Prohibited behaviour includes harassing or causing distress or inconvenience to any
@@ -74,7 +74,7 @@ const TermConditions = () => {
                         <p className="text-white font-normal font-aeonik text-3xl tracking-wide ">
                             5.
                         </p>
-                        <p className="text-[#9EB3CF] text-lg font-bwmss01 mt-[10px]">
+                        <p className="text-[#9EB3CF]  text-sm md:text-lg font-bwmss01 mt-[10px]">
 
                             Privacy Policy Our Privacy Policy, which sets out how we will use your information, can
                             be found at <Link href="/privacy-policy" className="text-blue-600">[Privacy Policy link]</Link> . By using this website, you consent to the processing
@@ -86,7 +86,7 @@ const TermConditions = () => {
                         <p className="text-white font-normal font-aeonik text-3xl tracking-wide ">
                             6.
                         </p>
-                        <p className="text-[#9EB3CF] text-lg font-bwmss01 mt-[10px]">
+                        <p className="text-[#9EB3CF]  text-sm md:text-lg font-bwmss01 mt-[10px]">
 
                             Termination FastCode AI Consult Pvt. Ltd. may terminate or suspend access to our
                             services immediately, without prior notice or liability, for any reason whatsoever, including,
@@ -97,7 +97,7 @@ const TermConditions = () => {
                         <p className="text-white font-normal font-aeonik text-3xl tracking-wide ">
                             7.
                         </p>
-                        <p className="text-[#9EB3CF] text-lg font-bwmss01 mt-[10px]">
+                        <p className="text-[#9EB3CF]  text-sm md:text-lg font-bwmss01 mt-[10px]">
                             Warranty Disclaimer Our services and all content on FastCode.ai are provided on an as
                             is and as available basis. FastCode AI Consult Pvt. Ltd. makes no representations or
                             warranties of any kind, express or implied, as to the operation of their services, or the
@@ -109,7 +109,7 @@ const TermConditions = () => {
                         <p className="text-white font-normal font-aeonik text-3xl tracking-wide ">
                             8.
                         </p>
-                        <p className="text-[#9EB3CF] text-lg font-bwmss01 mt-[10px]">
+                        <p className="text-[#9EB3CF]  text-sm md:text-lg font-bwmss01 mt-[10px]">
 
 
                             Limitation of Liability In no event shall FastCode AI Consult Pvt. Ltd., nor its directors,
@@ -125,7 +125,7 @@ const TermConditions = () => {
                         <p className="text-white font-normal font-aeonik text-3xl tracking-wide ">
                             9.
                         </p>
-                        <p className="text-[#9EB3CF] text-lg font-bwmss01 mt-[10px]">
+                        <p className="text-[#9EB3CF]  text-sm md:text-lg font-bwmss01 mt-[10px]">
 
 
                             Governing Law These terms shall be governed by and construed in accordance with the
@@ -139,7 +139,7 @@ const TermConditions = () => {
                         <p className="text-white font-normal font-aeonik text-3xl tracking-wide ">
                             10.
                         </p>
-                        <p className="text-[#9EB3CF] text-lg font-bwmss01 mt-[10px]">
+                        <p className="text-[#9EB3CF]  text-sm md:text-lg font-bwmss01 mt-[10px]">
 
 
                             Changes to Terms FastCode AI Consult Pvt. Ltd. reserves the right to amend these terms
@@ -153,7 +153,7 @@ const TermConditions = () => {
                         <p className="text-white font-normal font-aeonik text-3xl tracking-wide ">
                             12.
                         </p>
-                        <p className="text-[#9EB3CF] text-lg font-bwmss01 mt-[10px]">
+                        <p className="text-[#9EB3CF]  text-sm md:text-lg font-bwmss01 mt-[10px]">
 
 
                             Contact Us If you have any questions about these Terms and Conditions, please contact
