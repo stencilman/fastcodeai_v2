@@ -15,7 +15,7 @@ import { useGlobalContext } from "@/app/context/GlobalContext";
 
 const Cases = ({ params }) => {
   console.log("path", params.cases);
-  
+
   const { setIsActive } = useGlobalContext();
 
   useEffect(() => {
@@ -31,7 +31,7 @@ const Cases = ({ params }) => {
           "Enhance interaction between driver and car by detecting driver hand gesture for superior level driver experience with Automotive OEM.",
         industry: "Automotive OEM",
         year: "2021",
-        heroImg:"/our-work/mercedes.webp"
+        heroImg: "/our-work/mercedes.webp",
       },
     ],
     vrups: [
@@ -42,7 +42,7 @@ const Cases = ({ params }) => {
           "Accurate, low footprint detection with vulnerable roadside users (VRUs) and road signs covered in the Automotive Tier 1 autonomous driving initiative.",
         industry: "Automotive Tier 1",
         year: "2022",
-        heroImg:"/our-work/bosch.webp"
+        heroImg: "/our-work/bosch.webp",
       },
     ],
     "federated-learning": [
@@ -53,7 +53,7 @@ const Cases = ({ params }) => {
           "Revolutionizing privacy and efficiency in data processing with Federated Learning (FL) on edge devices, enabling real-time, secure analytics in several key sectors.",
         industry: " Automotive OEM",
         year: "2022",
-        heroImg:"/our-work/fl.webp"
+        heroImg: "/our-work/fl.webp",
       },
     ],
 
@@ -66,8 +66,7 @@ const Cases = ({ params }) => {
           "Empowering exercise perfection with AI-driven real-time pose estimation, providing interactive visual feedback for correct posture and effective workouts.",
         industry: "Healthcare",
         year: "2022",
-        heroImg:"/our-work/fitness.webp"
-
+        heroImg: "/our-work/fitness.webp",
       },
     ],
 
@@ -79,8 +78,7 @@ const Cases = ({ params }) => {
           "Transforming data access with a natural language interface that converts queries into SQL, simplifying database interaction.",
         industry: "FMCG Retail",
         year: "2023",
-        heroImg:"/our-work/sqlwizard-logo1.png"
-
+        heroImg: "/our-work/sqlwizard-logo1.png",
       },
     ],
 
@@ -92,8 +90,7 @@ const Cases = ({ params }) => {
           "Personalised assistant designed to empathize with humans and serves as a close companion by engaging in an emotionally deep manner.",
         industry: "Not Specific",
         year: "2021",
-        heroImg:"/our-work/lonely_llm.webp",
-
+        heroImg: "/our-work/lonely_llm.webp",
       },
     ],
 
@@ -105,8 +102,7 @@ const Cases = ({ params }) => {
           "Pioneering deep learning in fashion with a custom Indian dataset for advanced trend forecasting and targeted consumer insights.",
         industry: "Fashion Retail",
         year: "2021",
-        heroImg:"/our-work/fashion.webp",
-
+        heroImg: "/our-work/fashion.webp",
       },
     ],
 
@@ -119,8 +115,7 @@ const Cases = ({ params }) => {
         industry: "Fintech",
         year: "2020",
 
-        heroImg:"/our-work/modefin_cover.webp",
-
+        heroImg: "/our-work/modefin_cover.webp",
       },
     ],
 
@@ -132,9 +127,7 @@ const Cases = ({ params }) => {
           "Smart, diary-like system that effortlessly organizes and retrieves your daily activities and information with cutting-edge Retrieval-Augmented Generation techniques.",
         industry: "Technology",
         year: "2020",
-        heroImg:"/our-work/rag_weave.webp",
-
-        
+        heroImg: "/our-work/rag_weave.webp",
       },
     ],
 
@@ -146,8 +139,7 @@ const Cases = ({ params }) => {
           "Enhancing skin cancer by diagnosing user’s skin images on their mobile phones, improving dermatological care's accuracy, accessibility, and efficiency.",
         industry: "Start-up",
         year: "2020",
-        heroImg:"/our-work/dermos.webp",
-
+        heroImg: "/our-work/dermos.webp",
       },
     ],
 
@@ -159,7 +151,7 @@ const Cases = ({ params }) => {
           "Deploying AI to swiftly convert Process and Instrumentation Diagrams (P&IDs) in the Oil & Gas EPCC sector into accurate, digital Material Takeoff Orders, significantly boosting productivity and reducing costs.",
         industry: "Enterprise",
         year: "2020",
-        heroImg:"/our-work/automto.webp"
+        heroImg: "/our-work/automto.webp",
       },
     ],
 
@@ -312,186 +304,121 @@ const Cases = ({ params }) => {
   const projGoals = {
     "auto-oem": [
      
-      {
-        details:
           "Install an interior camera system behind the rear view mirror to enhance the user experience, enabling gesture-based controls for toggling reading lights and accessing favourite features through specific hand poses, improving interactions for both drivers and passengers.",
-      },
-      {
-        details:
+    
           "Foster the OEM's in-house expertise by starting with our consultancy, gradually building a robust 200-member team to achieve self-sufficiency within four years, before our strategic exit.",
-      },
+      
     ],
 
     vrups: [
-      {
-        details:
+    
+        
           "Early Detection: Identify VRUs around the vehicle within the hazard range, alerting the driver or triggering automatic emergency braking if there is no timely response",
-      },
-      {
-        details:
+    
           "Segmentation of VRUs: Classify VRUs into categories such as school guards, police officers, construction workers, and cyclists, enhancing context-aware Advanced Driver Assistance Systems (ADAS).",
-      },
-      {
-        details:
+    
           "Intent Estimation: Estimate the intentions of VRUs through stable pose estimates, crucial for the development of future automated driving systems, such as predicting whether a person at a crosswalk will actually cross.",
-      },
+      
     ],
 
     "federated-learning": [
-      {
-        details:
-          "Model Validation: Use a public dataset to validate the model's efficacy.",
-      },
-      {
-        details:
-          "Result Reproduction: Reproduce the results within the client's specific environment using their proprietary data.",
-      },
-      {
-        details:
-          "Model Integration and Deployment: Integrate and deploy the model on test vehicles.",
-      },
+      "Model Validation: Use a public dataset to validate the model's efficacy.",
+
+      "Result Reproduction: Reproduce the results within the client's specific environment using their proprietary data.",
+
+      "Model Integration and Deployment: Integrate and deploy the model on test vehicles.",
     ],
 
     "fitness-pose-estimation": [
-      {
-        details:
+      
           "Postural Assessment: Provide users with a straightforward, self-directed assessment to pinpoint postural irregularities.",
-      },
-      {
-        details:
+     
           "Enhance Exercise Effectiveness: Ensure users perform exercises with correct form and posture, maximizing exercise benefits and minimizing risk of injury. ",
-      },
-      {
-        details:
+     
           "Real-Time Feedback: Provide immediate, accurate feedback on posture during exercises to guide users.",
-      },
-
-      {
-        details:
+     
           "Support Rehabilitation and Functional Training: Offer guidance for therapeutic routines, aiding users in rehabilitation and enhancing functional fitness.",
-      },
+      
     ],
 
     sqlwizard: [
-      {
-        details:
+    
           "Develop a Privacy-Preserving Text2SQL System: Create a system that accepts natural language queries and database schema, and outputs the corresponding SQL query.",
-      },
-      {
-        details:
+     
           "Automatic Query Execution: Enable the generated SQL queries to be executed automatically on the existing database to retrieve the required results.",
-      },
-      {
-        details:
+     
           "System Adaptability: Ensure that the system can be adapted for use with various database systems beyond MySQL to guarantee broad applicability.",
-      },
+      
     ],
 
     "loneliness-assistant": [
-      {
-        details:
+     
           "Integrate Open-Source Technology: Continuously update our language learning model (LLM) with open-source innovations to enhance emotional engagement and maintain technological relevance.",
-      },
-      {
-        details:
+    
           "Enhance Emotional Intelligence: Refine the system's responsiveness to a diverse array of emotional cues, bolstering empathy and support.",
-      },
-      {
-        details:
+   
           " Develop Personalized Interaction: Improve the LLM’s adaptive persona to customize interactions based on individual user needs, ensuring a personalized experience.",
-      },
+      
     ],
 
     "fashion-framework": [
-      {
-        details:
+   
           "Dataset Creation: Construct a bespoke dataset from scratch, sourcing images from social media, e-commerce sites, and various online resources.",
-      },
-      {
-        details:
+    
           "Data Annotation: Meticulously annotate the dataset to capture a wide range of attributes including design elements, fabric types, colors, and patterns.",
-      },
-      {
-        details:
+  
           "Model Development: Engineer a specialized two-stage deep learning model that integrates a detection component with a classifier model ensemble for enhanced accuracy.",
-      },
-      {
-        details:
+    
           " Insight Generation: Produce authentic, geographically and temporally specific fashion insights to empower the Indian textile, fashion, and retail industries in developing products tailored to the Indian market.",
-      },
+      
     ],
 
     "banking-infra": [
-      {
-        details:
+    
           "Create Monitoring Platform: Develop a comprehensive platform featuring custom dashboards for real-time log analysis, enhancing oversight of banking and finance applications.",
-      },
-      {
-        details:
+    
           " Improve Detection and Resolution: Implement advanced alerting systems to ensure timely detection and effective resolution of performance issues in applications and IT infrastructure.",
-      },
+      
     ],
 
     rag: [
-      {
-        details:
+     
           "Seamless Logging: Log user journal entries through voice transcription, ensuring easy and efficient documentation of daily activities and thoughts.",
-      },
-      {
-        details:
+   
           "Privacy and Security: Offer a fully secure service by storing all data in the user's personal cloud storage, such as Google Drive, to maintain privacy and control.",
-      },
-      {
-        details:
+   
           "Digital Clone Functionality: Enable users to index and search through their recorded thoughts, which may include audio clips, photos, and location data.",
-      },
-      {
-        details:
+     
           "Generate Insights: Provide summaries of thoughts and mood indicators, and assist with tasks like drafting emails and managing to-do lists.",
-      },
+      
     ],
 
     "skin-cancer-detection": [
-      {
-        details:
+    
           " Accurate Diagnosis: Utilize inputs to classify skin lesions as benign or malignant and identify specific lesion types, thereby enhancing diagnostic precision.",
-      },
-      {
-        details:
+   
           "Instant Accessibility: Enable users to capture skin images with their mobile phones and receive immediate diagnoses within the app.",
-      },
-      {
-        details:
+     
           "Comprehensive Development: Develop robust machine learning models for classification and segmentation, along with a user-friendly mobile app to facilitate these capabilities.",
-      },
+      
     ],
     "auto-mto": [
-      {
-        details:
+      
           "Clarify Refinery Design: Extract and interpret early semantics from P&IDs, detailing pipelines, equipment, and symbols essential for constructing refineries.",
-      },
-      {
-        details:
+    
           "Enhance Symbol Recognition: Automatically identify and catalogue symbols such as gate valves, butterfly valves, and blind flanges, along with the associated equipment and instruments.",
-      },
-      {
-        details:
+   
           " Improve Data Association: Read and correctly associate all surrounding text with the relevant symbols, equipment, or instruments to ensure precise information mapping.",
-      },
-      {
-        details:
+   
           " Streamline MTO Generation: Utilize advanced techniques and human oversight to produce Material Takeoff Orders more quickly and accurately, optimizing project efficiency.",
-      },
+      
     ],
     "banking-insights": [
-      {
-        details:
+   
           "Insightful Data Analysis: Extract meaningful insights from bank transaction data to provide customers with valuable forecasting and clustering information.",
-      },
-      {
-        details:
+    
           "Dual-Level Forecasting: Perform forecasts at both the overall bank and individual customer levels, predicting transaction volumes within a specified future timeframe.",
-      },
+      
     ],
   };
 
@@ -502,9 +429,9 @@ const Cases = ({ params }) => {
     ],
 
     vrups: [
-      "1.Given the critical importance of VRUs on the road, the system must function flawlessly at all times. Achieving accuracy 99,999 times out of 100,000 is deemed insufficient.",
-      "2. The VRU detector works alongside various systems like traffic sign and light detection, using a backbone network with specialized modules designed for multi-task learning. This setup requires coordination across 15 different teams to ensure updates to the model do not adversely affect their outputs. Challenges include retraining, versioning, and testing within this complex framework.",
-      "3. In high-speed scenarios, vehicles must detect VRUs from afar to allow safe deceleration and stopping. Despite using high-resolution cameras, the challenge arises because objects at great distances appear significantly smaller (less than 50px). Balancing the demands of swift detection, significant distance, and camera constraints poses a complex engineering challenge.",
+      "Given the critical importance of VRUs on the road, the system must function flawlessly at all times. Achieving accuracy 99,999 times out of 100,000 is deemed insufficient.",
+      "The VRU detector works alongside various systems like traffic sign and light detection, using a backbone network with specialized modules designed for multi-task learning. This setup requires coordination across 15 different teams to ensure updates to the model do not adversely affect their outputs. Challenges include retraining, versioning, and testing within this complex framework.",
+      "In high-speed scenarios, vehicles must detect VRUs from afar to allow safe deceleration and stopping. Despite using high-resolution cameras, the challenge arises because objects at great distances appear significantly smaller (less than 50px). Balancing the demands of swift detection, significant distance, and camera constraints poses a complex engineering challenge.",
     ],
 
     "federated-learning": [
@@ -563,7 +490,7 @@ const Cases = ({ params }) => {
     "auto-oem": [
       `Utilizing our expertise in Computer Vision, we developed a state-of-the-art solution for multimodal human pose estimation using heatmaps. Our efforts focused on embedding this technology into vehicles, effectively bringing onboard intelligence to life. This achievement required a dramatic reduction in the model's size—compressing it by over 25,000 times—without compromising on accuracy.`,
       `The implementation of this technology has revolutionized how drivers and passengers interact with the vehicle, introducing a more intuitive way to control the car's systems, such as using gestures to navigate menus, close doors, and adjust the rear view mirrors by simply looking in the desired direction.`,
-    ,
+      ,
     ],
 
     vrups: [
@@ -616,25 +543,27 @@ const Cases = ({ params }) => {
   const keyFeatures = {
     "auto-oem": [
       {
-        description:[ " Our solution uniquely distinguishes between various gestures made by drivers and passengers, enhancing the overall user experience."," Activating vehicle functions via hand gestures, applying a 3D Convolutional Neural Network (3D-CNN) and Gated Recurrent Unit (GRU) to analyse video frames and extract spatio-temporal features."," Advanced airbag deployment control system, utilizing a processing unit equipped with Long Short Term Memory (LSTM) neural network architecture, analyses images to determine and predict the future position and orientation of the occupant's head.",],
-        
+        description: [
+          " Our solution uniquely distinguishes between various gestures made by drivers and passengers, enhancing the overall user experience.",
+          " Activating vehicle functions via hand gestures, applying a 3D Convolutional Neural Network (3D-CNN) and Gated Recurrent Unit (GRU) to analyse video frames and extract spatio-temporal features.",
+          " Advanced airbag deployment control system, utilizing a processing unit equipped with Long Short Term Memory (LSTM) neural network architecture, analyses images to determine and predict the future position and orientation of the occupant's head.",
+        ],
+
         references: [
           {
             description:
               "1 -  Cholakkal Hisham , Arjun Jain, et al. Method For Identifying a Hand Pose in a Vehicle, WO2020048814, March 2020",
-              link:"/research#headPoseIdentify"
+            link: "/research#headPoseIdentify",
           },
           {
             description:
               "2 - Vikram Gupta, Arjun Jain, et al. Method and System for Triggering an Event in a Vehicle, EP3895064, Jan 2023",
-              link:"/research#vehicleEvent"
-
+            link: "/research#vehicleEvent",
           },
           {
             description:
               "3 - Sai Kumar Dwivedi, Arjun Jain, et al. System And Method For Deployment Of Airbag Based On Head Pose Estimation, 201911039220 A, April 2021",
-              link:"/research#headPose"
-
+            link: "/research#headPose",
           },
         ],
       },
@@ -683,8 +612,9 @@ const Cases = ({ params }) => {
 
     "loneliness-assistant": [
       {
-        description:
-          ["Below strategies aim to provide a supportive presence that comprehends and responds to users' emotional states, improving mental well-being and diminishing feelings of isolation in our increasingly digital world.",],
+        description: [
+          "Below strategies aim to provide a supportive presence that comprehends and responds to users' emotional states, improving mental well-being and diminishing feelings of isolation in our increasingly digital world.",
+        ],
         points: [
           "Leveraging Open-Source Flexibility: Our Language Learning Model (LLM) is built on open-source technology, enabling continual updates and improvements to maintain technological leadership and deepen user connections.",
           "Fostering Genuine Emotional Connections: Programmed to recognize and react to various emotional cues, our LLM facilitates meaningful conversations that significantly enhance user engagement and emotional understanding.",
@@ -708,7 +638,7 @@ const Cases = ({ params }) => {
 
     rag: [
       {
-        description:[],
+        description: [],
         points: [
           "Effortless Recording: We designed a user-friendly interface that simplifies logging daily activities, making it as easy and familiar as writing in a personal diary.",
           "Efficient Information Organization and Retrieval: Incorporating OpenAI's API for advanced indexing and utilizing ChatGPT for superior search capabilities, our system efficiently organizes and retrieves pertinent information from user entries.",
@@ -727,8 +657,9 @@ const Cases = ({ params }) => {
     ],
     "auto-mto": [
       {
-        description:
-         [ "Our AutoMTO system not only optimized efficiency by reducing the time to process each P&ID sheet but also achieved near-perfect accuracy in MTO generation. This precision has led to more competitive bidding and substantial cost savings, proving the immense value of integrating AI into traditional EPCC processes."],
+        description: [
+          "Our AutoMTO system not only optimized efficiency by reducing the time to process each P&ID sheet but also achieved near-perfect accuracy in MTO generation. This precision has led to more competitive bidding and substantial cost savings, proving the immense value of integrating AI into traditional EPCC processes.",
+        ],
         points: [
           " Efficient Extraction: AI and computer vision enable the rapid reading of P&IDs from PDFs and images, identifying components like pipes, instruments, and texts in under a minute.",
           "Comprehensive Automation: The system processes tasks that traditionally took an engineer 3-4 days, completing them in three automated steps, enhancing productivity and accuracy.",
@@ -738,8 +669,9 @@ const Cases = ({ params }) => {
     ],
     "banking-insights": [
       {
-        description:
-          ["This approach not only improved predictive accuracy but also ensured our models remained adaptive and relevant to evolving banking trends."],
+        description: [
+          "This approach not only improved predictive accuracy but also ensured our models remained adaptive and relevant to evolving banking trends.",
+        ],
         points: [
           "Predictive Modelling: ARIMA models replaced LSTM and other neural networks for time series forecasting, significantly reducing prediction errors by up to 70% through meticulous fine-tuning.",
           "Dynamic Adaptation: Implemented an inference algorithm for forecasting various transaction metrics and provided training code to refine models with new data, maintaining accuracy and relevance.",
@@ -820,7 +752,6 @@ const Cases = ({ params }) => {
 
   return (
     <>
-   
       <Hero heroData={heroData} />
       <ClientAndInd clientAndRoleData={clientAndRoleData} />
       <ProjectGoals projectGoalList={projGoalsData} />

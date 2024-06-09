@@ -37,6 +37,11 @@ const bwmss01 = localFont({
       weight: "300", //light
       style: "normal"
     },
+    {
+      path: "../../public/fonts/BwModelica_SS01/BwModelicaSS01-Bold.woff2",
+      weight: "700", //bold
+      style: "normal"
+    },
 
 
   ],
