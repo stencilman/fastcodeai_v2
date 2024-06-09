@@ -30,7 +30,7 @@ const Cases = ({ params }) => {
         description:
           "Enhance interaction between driver and car by detecting driver hand gesture for superior level driver experience with Automotive OEM.",
         industry: "Automotive OEM",
-        year: "2021",
+        year: "2015",
         heroImg: "/our-work/mercedes.webp",
       },
     ],
@@ -41,7 +41,7 @@ const Cases = ({ params }) => {
         description:
           "Accurate, low footprint detection with vulnerable roadside users (VRUs) and road signs covered in the Automotive Tier 1 autonomous driving initiative.",
         industry: "Automotive Tier 1",
-        year: "2022",
+        year: "2018",
         heroImg: "/our-work/bosch.webp",
       },
     ],
@@ -52,7 +52,7 @@ const Cases = ({ params }) => {
         description:
           "Revolutionizing privacy and efficiency in data processing with Federated Learning (FL) on edge devices, enabling real-time, secure analytics in several key sectors.",
         industry: " Automotive OEM",
-        year: "2022",
+        year: "2023",
         heroImg: "/our-work/fl.webp",
       },
     ],
@@ -65,7 +65,7 @@ const Cases = ({ params }) => {
         description:
           "Empowering exercise perfection with AI-driven real-time pose estimation, providing interactive visual feedback for correct posture and effective workouts.",
         industry: "Healthcare",
-        year: "2022",
+        year: "2023",
         heroImg: "/our-work/fitness.webp",
       },
     ],
@@ -88,8 +88,8 @@ const Cases = ({ params }) => {
         title: "Loneliness Assistant",
         description:
           "Personalised assistant designed to empathize with humans and serves as a close companion by engaging in an emotionally deep manner.",
-        industry: "Not Specific",
-        year: "2021",
+        industry: "Healthcare",
+        year: "2024",
         heroImg: "/our-work/lonely_llm.webp",
       },
     ],
@@ -101,7 +101,7 @@ const Cases = ({ params }) => {
         description:
           "Pioneering deep learning in fashion with a custom Indian dataset for advanced trend forecasting and targeted consumer insights.",
         industry: "Fashion Retail",
-        year: "2021",
+        year: "2022",
         heroImg: "/our-work/fashion.webp",
       },
     ],
@@ -113,7 +113,7 @@ const Cases = ({ params }) => {
         description:
           "Enhancing banking with AI: Advanced data analytics for customer insights and predictive modelling, streamlined with efficient application monitoring.",
         industry: "Fintech",
-        year: "2020",
+        year: "2021",
 
         heroImg: "/our-work/modefin_cover.webp",
       },
@@ -126,7 +126,7 @@ const Cases = ({ params }) => {
         description:
           "Smart, diary-like system that effortlessly organizes and retrieves your daily activities and information with cutting-edge Retrieval-Augmented Generation techniques.",
         industry: "Technology",
-        year: "2020",
+        year: "2024",
         heroImg: "/our-work/rag_weave.webp",
       },
     ],
@@ -150,7 +150,7 @@ const Cases = ({ params }) => {
         description:
           "Deploying AI to swiftly convert Process and Instrumentation Diagrams (P&IDs) in the Oil & Gas EPCC sector into accurate, digital Material Takeoff Orders, significantly boosting productivity and reducing costs.",
         industry: "Enterprise",
-        year: "2020",
+        year: "2019",
         heroImg: "/our-work/automto.webp",
       },
     ],
@@ -162,7 +162,7 @@ const Cases = ({ params }) => {
         description:
           "Transforming banking datasets into actionable insights enhances customer segmentation, predictive forecasting, and strategic decision-making in the fintech industry.",
         industry: "Fintech",
-        year: "2020",
+        year: "2018",
       },
     ],
     // Add more paths and corresponding data as needed
@@ -303,22 +303,17 @@ const Cases = ({ params }) => {
 
   const projGoals = {
     "auto-oem": [
-     
-          "Install an interior camera system behind the rear view mirror to enhance the user experience, enabling gesture-based controls for toggling reading lights and accessing favourite features through specific hand poses, improving interactions for both drivers and passengers.",
-    
-          "Foster the OEM's in-house expertise by starting with our consultancy, gradually building a robust 200-member team to achieve self-sufficiency within four years, before our strategic exit.",
-      
+      "Install an interior camera system behind the rear view mirror to enhance the user experience, enabling gesture-based controls for toggling reading lights and accessing favourite features through specific hand poses, improving interactions for both drivers and passengers.",
+
+      "Foster the OEM's in-house expertise by starting with our consultancy, gradually building a robust 200-member team to achieve self-sufficiency within four years, before our strategic exit.",
     ],
 
     vrups: [
-    
-        
-          "Early Detection: Identify VRUs around the vehicle within the hazard range, alerting the driver or triggering automatic emergency braking if there is no timely response",
-    
-          "Segmentation of VRUs: Classify VRUs into categories such as school guards, police officers, construction workers, and cyclists, enhancing context-aware Advanced Driver Assistance Systems (ADAS).",
-    
-          "Intent Estimation: Estimate the intentions of VRUs through stable pose estimates, crucial for the development of future automated driving systems, such as predicting whether a person at a crosswalk will actually cross.",
-      
+      "Early Detection: Identify VRUs around the vehicle within the hazard range, alerting the driver or triggering automatic emergency braking if there is no timely response",
+
+      "Segmentation of VRUs: Classify VRUs into categories such as school guards, police officers, construction workers, and cyclists, enhancing context-aware Advanced Driver Assistance Systems (ADAS).",
+
+      "Intent Estimation: Estimate the intentions of VRUs through stable pose estimates, crucial for the development of future automated driving systems, such as predicting whether a person at a crosswalk will actually cross.",
     ],
 
     "federated-learning": [
@@ -330,95 +325,77 @@ const Cases = ({ params }) => {
     ],
 
     "fitness-pose-estimation": [
-      
-          "Postural Assessment: Provide users with a straightforward, self-directed assessment to pinpoint postural irregularities.",
-     
-          "Enhance Exercise Effectiveness: Ensure users perform exercises with correct form and posture, maximizing exercise benefits and minimizing risk of injury. ",
-     
-          "Real-Time Feedback: Provide immediate, accurate feedback on posture during exercises to guide users.",
-     
-          "Support Rehabilitation and Functional Training: Offer guidance for therapeutic routines, aiding users in rehabilitation and enhancing functional fitness.",
-      
+      "Postural Assessment: Provide users with a straightforward, self-directed assessment to pinpoint postural irregularities.",
+
+      "Enhance Exercise Effectiveness: Ensure users perform exercises with correct form and posture, maximizing exercise benefits and minimizing risk of injury. ",
+
+      "Real-Time Feedback: Provide immediate, accurate feedback on posture during exercises to guide users.",
+
+      "Support Rehabilitation and Functional Training: Offer guidance for therapeutic routines, aiding users in rehabilitation and enhancing functional fitness.",
     ],
 
     sqlwizard: [
-    
-          "Develop a Privacy-Preserving Text2SQL System: Create a system that accepts natural language queries and database schema, and outputs the corresponding SQL query.",
-     
-          "Automatic Query Execution: Enable the generated SQL queries to be executed automatically on the existing database to retrieve the required results.",
-     
-          "System Adaptability: Ensure that the system can be adapted for use with various database systems beyond MySQL to guarantee broad applicability.",
-      
+      "Develop a Privacy-Preserving Text2SQL System: Create a system that accepts natural language queries and database schema, and outputs the corresponding SQL query.",
+
+      "Automatic Query Execution: Enable the generated SQL queries to be executed automatically on the existing database to retrieve the required results.",
+
+      "System Adaptability: Ensure that the system can be adapted for use with various database systems beyond MySQL to guarantee broad applicability.",
     ],
 
     "loneliness-assistant": [
-     
-          "Integrate Open-Source Technology: Continuously update our language learning model (LLM) with open-source innovations to enhance emotional engagement and maintain technological relevance.",
-    
-          "Enhance Emotional Intelligence: Refine the system's responsiveness to a diverse array of emotional cues, bolstering empathy and support.",
-   
-          " Develop Personalized Interaction: Improve the LLM’s adaptive persona to customize interactions based on individual user needs, ensuring a personalized experience.",
-      
+      "Integrate Open-Source Technology: Continuously update our language learning model (LLM) with open-source innovations to enhance emotional engagement and maintain technological relevance.",
+
+      "Enhance Emotional Intelligence: Refine the system's responsiveness to a diverse array of emotional cues, bolstering empathy and support.",
+
+      " Develop Personalized Interaction: Improve the LLM’s adaptive persona to customize interactions based on individual user needs, ensuring a personalized experience.",
     ],
 
     "fashion-framework": [
-   
-          "Dataset Creation: Construct a bespoke dataset from scratch, sourcing images from social media, e-commerce sites, and various online resources.",
-    
-          "Data Annotation: Meticulously annotate the dataset to capture a wide range of attributes including design elements, fabric types, colors, and patterns.",
-  
-          "Model Development: Engineer a specialized two-stage deep learning model that integrates a detection component with a classifier model ensemble for enhanced accuracy.",
-    
-          " Insight Generation: Produce authentic, geographically and temporally specific fashion insights to empower the Indian textile, fashion, and retail industries in developing products tailored to the Indian market.",
-      
+      "Dataset Creation: Construct a bespoke dataset from scratch, sourcing images from social media, e-commerce sites, and various online resources.",
+
+      "Data Annotation: Meticulously annotate the dataset to capture a wide range of attributes including design elements, fabric types, colors, and patterns.",
+
+      "Model Development: Engineer a specialized two-stage deep learning model that integrates a detection component with a classifier model ensemble for enhanced accuracy.",
+
+      " Insight Generation: Produce authentic, geographically and temporally specific fashion insights to empower the Indian textile, fashion, and retail industries in developing products tailored to the Indian market.",
     ],
 
     "banking-infra": [
-    
-          "Create Monitoring Platform: Develop a comprehensive platform featuring custom dashboards for real-time log analysis, enhancing oversight of banking and finance applications.",
-    
-          " Improve Detection and Resolution: Implement advanced alerting systems to ensure timely detection and effective resolution of performance issues in applications and IT infrastructure.",
-      
+      "Create Monitoring Platform: Develop a comprehensive platform featuring custom dashboards for real-time log analysis, enhancing oversight of banking and finance applications.",
+
+      " Improve Detection and Resolution: Implement advanced alerting systems to ensure timely detection and effective resolution of performance issues in applications and IT infrastructure.",
     ],
 
     rag: [
-     
-          "Seamless Logging: Log user journal entries through voice transcription, ensuring easy and efficient documentation of daily activities and thoughts.",
-   
-          "Privacy and Security: Offer a fully secure service by storing all data in the user's personal cloud storage, such as Google Drive, to maintain privacy and control.",
-   
-          "Digital Clone Functionality: Enable users to index and search through their recorded thoughts, which may include audio clips, photos, and location data.",
-     
-          "Generate Insights: Provide summaries of thoughts and mood indicators, and assist with tasks like drafting emails and managing to-do lists.",
-      
+      "Seamless Logging: Log user journal entries through voice transcription, ensuring easy and efficient documentation of daily activities and thoughts.",
+
+      "Privacy and Security: Offer a fully secure service by storing all data in the user's personal cloud storage, such as Google Drive, to maintain privacy and control.",
+
+      "Digital Clone Functionality: Enable users to index and search through their recorded thoughts, which may include audio clips, photos, and location data.",
+
+      "Generate Insights: Provide summaries of thoughts and mood indicators, and assist with tasks like drafting emails and managing to-do lists.",
     ],
 
     "skin-cancer-detection": [
-    
-          " Accurate Diagnosis: Utilize inputs to classify skin lesions as benign or malignant and identify specific lesion types, thereby enhancing diagnostic precision.",
-   
-          "Instant Accessibility: Enable users to capture skin images with their mobile phones and receive immediate diagnoses within the app.",
-     
-          "Comprehensive Development: Develop robust machine learning models for classification and segmentation, along with a user-friendly mobile app to facilitate these capabilities.",
-      
+      " Accurate Diagnosis: Utilize inputs to classify skin lesions as benign or malignant and identify specific lesion types, thereby enhancing diagnostic precision.",
+
+      "Instant Accessibility: Enable users to capture skin images with their mobile phones and receive immediate diagnoses within the app.",
+
+      "Comprehensive Development: Develop robust machine learning models for classification and segmentation, along with a user-friendly mobile app to facilitate these capabilities.",
     ],
     "auto-mto": [
-      
-          "Clarify Refinery Design: Extract and interpret early semantics from P&IDs, detailing pipelines, equipment, and symbols essential for constructing refineries.",
-    
-          "Enhance Symbol Recognition: Automatically identify and catalogue symbols such as gate valves, butterfly valves, and blind flanges, along with the associated equipment and instruments.",
-   
-          " Improve Data Association: Read and correctly associate all surrounding text with the relevant symbols, equipment, or instruments to ensure precise information mapping.",
-   
-          " Streamline MTO Generation: Utilize advanced techniques and human oversight to produce Material Takeoff Orders more quickly and accurately, optimizing project efficiency.",
-      
+      "Clarify Refinery Design: Extract and interpret early semantics from P&IDs, detailing pipelines, equipment, and symbols essential for constructing refineries.",
+
+      "Enhance Symbol Recognition: Automatically identify and catalogue symbols such as gate valves, butterfly valves, and blind flanges, along with the associated equipment and instruments.",
+
+      " Improve Data Association: Read and correctly associate all surrounding text with the relevant symbols, equipment, or instruments to ensure precise information mapping.",
+
+      " Streamline MTO Generation: Utilize advanced techniques and human oversight to produce Material Takeoff Orders more quickly and accurately, optimizing project efficiency.",
     ],
     "banking-insights": [
-   
-          "Insightful Data Analysis: Extract meaningful insights from bank transaction data to provide customers with valuable forecasting and clustering information.",
-    
-          "Dual-Level Forecasting: Perform forecasts at both the overall bank and individual customer levels, predicting transaction volumes within a specified future timeframe.",
-      
+      "Insightful Data Analysis: Extract meaningful insights from bank transaction data to provide customers with valuable forecasting and clustering information.",
+
+      "Dual-Level Forecasting: Perform forecasts at both the overall bank and individual customer levels, predicting transaction volumes within a specified future timeframe.",
     ],
   };
 
@@ -498,7 +475,7 @@ const Cases = ({ params }) => {
     ],
 
     "federated-learning": [
-      "We developed a customized solution employing Federated Learning that operates within the stringent limitations of automotive edge devices. The local models were crafted to be extremely lightweight yet effective, capable of running on micro-controllers with minimal computational power. By employing a novel neural network architecture and optimization techniques, these models can train directly on devices without the need to transmit sensitive data, maintaining compliance with GDPR. The models are rigorously tested and refined to meet automotive industry standards for safety and reliability.",
+      "We developed a customized solution employing Federated Learning that operates within the stringent limitations of automotive edge devices.",
     ],
 
     "fitness-pose-estimation": [
@@ -515,11 +492,7 @@ const Cases = ({ params }) => {
     ],
 
     "fashion-framework": [
-      "  We developed a highly accurate detection model tailored for traditional Indian ethnic garments, achieving 99% accuracy in identifying sarees and one-piece outfits. This model is part of a broader high precision, low latency prediction platform that efficiently processes and interprets fashion data.",
-
-      "The system incorporates a sophisticated multihead deep learning architecture that supports concurrent training on multiple clothing attributes. This architecture uses a custom loss function to enhance model accuracy, effectively reducing the need for multiple models to just one. Additionally, a finely-tuned YoloV7 model within the data pre-processing pipeline ensures accurate detection of individuals in various attire types. The model excels in fine-grained attribute classification by incorporating localized attention through on-body key points, resulting in heightened precision in identifying clothing details.",
-
-      "For accessories, we implemented a unified accessory flagger. This single model adeptly identifies all accessories present in an image, streamlining accessory detection across various scenarios. The platform also compiles comprehensive insights from all processed and inferred data, supporting the creation of mood boards and storyboards for detailed fashion analysis.",
+      "  We developed a highly accurate detection model tailored for traditional Indian ethnic garments, achieving 99% accuracy in identifying sarees and one-piece outfits. This model is part of a broader high precision, low latency prediction platform that efficiently processes and interprets fashion data. ",
     ],
 
     "banking-infra": [
@@ -586,7 +559,16 @@ const Cases = ({ params }) => {
       },
     ],
 
-    "federated-learning": [],
+    "federated-learning": [
+      {
+        description: [],
+        points: [
+          "The local models were crafted to be extremely lightweight yet effective, capable of running on micro-controllers with minimal computational power.",
+          " By employing a novel neural network architecture and optimization techniques, these models can train directly on devices without the need to transmit sensitive data, maintaining compliance with GDPR.",
+          "The models are rigorously tested and refined to meet automotive industry standards for safety and reliability. ",
+        ],
+      },
+    ],
 
     "fitness-pose-estimation": [
       {
@@ -623,7 +605,14 @@ const Cases = ({ params }) => {
       },
     ],
 
-    "fashion-framework": [],
+    "fashion-framework": [
+      {
+        description: [],
+        points: [
+          "The system incorporates a sophisticated multihead deep learning architecture that supports concurrent training on multiple clothing attributes. This architecture uses a custom loss function to enhance model accuracy, effectively reducing the need for multiple models to just one.","A finely-tuned YoloV7 model within the data pre-processing pipeline ensures accurate detection of individuals in various attire types. The model excels in fine-grained attribute classification by incorporating localized attention through on-body key points, resulting in heightened precision in identifying clothing details.","For accessories, we implemented a unified accessory flagger. This single model adeptly identifies all accessories present in an image, streamlining accessory detection across various scenarios.  ","The platform also compiles comprehensive insights from all processed and inferred data, supporting the creation of mood boards and storyboards for detailed fashion analysis. "
+        ],
+      },
+    ],
 
     "banking-infra": [
       {
@@ -695,7 +684,8 @@ const Cases = ({ params }) => {
     ],
 
     "federated-learning": [
-      "Our innovative approach effectively balances the computational constraints of edge devices with the need for sophisticated, privacy-preserving model training. This extends the applicability of Federated Learning to resource-limited and privacy-sensitive environments. The successful implementation of this technology in predicting battery SOH not only enhances vehicle performance and longevity but also sets a new standard for deploying advanced machine learning techniques in the automotive sector.",
+      "Our innovative approach effectively balances the computational constraints of edge devices with the need for sophisticated, privacy-preserving model training. This extends the applicability of Federated Learning to resource-limited and privacy-sensitive environments.",
+      "The successful implementation of this technology in predicting battery SOH not only enhances vehicle performance and longevity but also sets a new standard for deploying advanced machine learning techniques in the automotive sector.",
     ],
 
     "fitness-pose-estimation": [
@@ -713,7 +703,7 @@ const Cases = ({ params }) => {
     ],
 
     "fashion-framework": [
-      "Our client was able to leverage the insights generated to build a comprehensive app based on the current technological framework, enhancing their capability to forecast and respond to evolving fashion trends. This has not only bolstered their position as a thought leader in the fashion education space but has also provided invaluable tools for industry professionals looking to align with the fast-paced changes in the Indian fashion landscape.",
+      "Enhanced Forecasting and Responsiveness: The insights allowed our client to develop a comprehensive app tailored to the current technological framework, enhancing their ability to predict and adapt to evolving fashion trends effectively.","Industry Leadership and Value Addition: This development bolstered their position as a thought leader in the fashion education space and provided invaluable tools for industry professionals aiming to stay aligned with the rapid changes in the Indian fashion landscape."
     ],
 
     "banking-infra": [
