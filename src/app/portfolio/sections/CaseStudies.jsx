@@ -78,11 +78,11 @@ const CaseStudies = () => {
       to: "/portfolio/skin-cancer-detection",
     },
     {
-      img: "bg-fitness",
+      img: "bg-automto",
       title: " AutoMTO: Revolutionizing Material Takeoff in Oil & Gas EPCC",
       description:
         "Deploying AI to swiftly convert Process and Instrumentation Diagrams (P&IDs) in the Oil & Gas EPCC sector into accurate, digital Material Takeoff Orders, significantly boosting productivity and reducing costs.",
-      to: "/portfolio/oil-gas",
+      to: "/portfolio/auto-mto",
     },
      {
       img: "bg-fitness",

@@ -41,6 +41,7 @@ module.exports = {
         "bankMont": "url('/portfolio/banking-infra')",
         "rag": "url('/our-work/rag_weave.webp')",
         "dermo": "url('/our-work/dermos.webp')",
+        "automto": "url('/our-work/automto.webp')",
 
 
         'blogHero': "url('/blogs/hero/img1-2.png')",

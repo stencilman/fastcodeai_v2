@@ -151,7 +151,7 @@ const Cases = ({ params }) => {
       },
     ],
 
-    "oil-gas": [
+    "auto-mto": [
       {
         // logo: "/potfolio/bosch/hero/logo.png",
         title: " AutoMTO: Revolutionizing Material Takeoff in Oil & Gas EPCC",
@@ -159,6 +159,7 @@ const Cases = ({ params }) => {
           "Deploying AI to swiftly convert Process and Instrumentation Diagrams (P&IDs) in the Oil & Gas EPCC sector into accurate, digital Material Takeoff Orders, significantly boosting productivity and reducing costs.",
         industry: "Enterprise",
         year: "2020",
+        heroImg:"/our-work/automto.webp"
       },
     ],
 
@@ -284,7 +285,7 @@ const Cases = ({ params }) => {
         role: "We developed an AI-powered dermatology diagnostic tool to enhance diagnostic accuracy and accessibility. This involved creating machine learning models for classification and segmentation and developing a mobile app that connects users with healthcare professionals.",
       },
     ],
-    "oil-gas": [
+    "auto-mto": [
       {
         description:
           "A leading Indian multinational excels in Engineering, Procurement, Construction, and Commissioning (EPCC), providing comprehensive project management services and solutions globally with unparalleled expertise.",
@@ -464,7 +465,7 @@ const Cases = ({ params }) => {
           "Comprehensive Development: Develop robust machine learning models for classification and segmentation, along with a user-friendly mobile app to facilitate these capabilities.",
       },
     ],
-    "oil-gas": [
+    "auto-mto": [
       {
         details:
           "Clarify Refinery Design: Extract and interpret early semantics from P&IDs, detailing pipelines, equipment, and symbols essential for constructing refineries.",
@@ -548,7 +549,7 @@ const Cases = ({ params }) => {
       "Data Quality Assurance: Ensure the high quality of images and their labels, which must be verified by medical professionals to maintain diagnostic accuracy. ",
       " Realistic Data Collection: Obtain and validate data captured using phone cameras to accurately reflect real-life scenarios, crucial for the app’s effectiveness on mobile devices.",
     ],
-    "oil-gas": [
+    "auto-mto": [
       "Precision vs. Speed: Balancing rapid processing speeds with the accuracy needed for identifying expensive instruments (millions of USD), posed a significant challenge.",
       "Human-Machine Synergy: Developing methods to effectively integrate human oversight with machine learning systems was crucial, especially given the time-consuming nature of correcting machine errors.",
     ],
@@ -605,7 +606,7 @@ const Cases = ({ params }) => {
     "skin-cancer-detection": [
       "We harness machine learning to boost the precision, efficiency, and accessibility of dermatological care",
     ],
-    "oil-gas": [
+    "auto-mto": [
       "We collaborated with a top EPCC player in the Oil & Gas sector to develop AutoMTO, a state-of-the-art system achieving 100% accuracy in MTO preparation. By implementing advanced AI techniques, we transformed how MTOs are derived from P&IDs, streamlining operations and significantly reducing man-hours and costs.",
     ],
     "banking-insights": [
@@ -724,7 +725,7 @@ const Cases = ({ params }) => {
         ],
       },
     ],
-    "oil-gas": [
+    "auto-mto": [
       {
         description:
           "Our AutoMTO system not only optimized efficiency by reducing the time to process each P&ID sheet but also achieved near-perfect accuracy in MTO generation. This precision has led to more competitive bidding and substantial cost savings, proving the immense value of integrating AI into traditional EPCC processes.",
@@ -797,7 +798,7 @@ const Cases = ({ params }) => {
       "Democratize Healthcare Access: Enables access to expert dermatological advice via smartphone, significantly lowering healthcare barriers.",
       "Boost Diagnostic Efficiency: Streamlines diagnosis, enhancing speed and accuracy, benefiting all stakeholders.",
     ],
-    "oil-gas": [
+    "auto-mto": [
       "Increased Bidding Capacity: The 10x faster creation of MTOs from raw P&IDs allowed the EPCC client to submit more bids, leveraging more precise material estimations.",
       "Cross-Departmental Benefits: Sales, Proposals, and Procurement divisions experienced direct benefits from AutoMTO’s digitization, achieving a 14x improvement in P&ID processing efficiency.",
       "Significant Cost Savings: AutoMTO's accuracy and efficiency saved over $3 million annually by reducing time and costs in generating 40 proposals per year.",

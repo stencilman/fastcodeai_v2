@@ -80,14 +80,14 @@ const slides = [
   //   content:
   //     "Deploying AI to swiftly convert Process and Instrumentation Diagrams (P&IDs) in the Oil & Gas EPCC sector into accurate, digital Material Takeoff Orders, significantly boosting productivity and reducing costs.",
   //   image: "",
-  //   url: "/portfolio/oil-gas",
+  //   url: "/portfolio/auto-mto",
   // },
   {
     title: " AI Banking Insights",
     content:
       "Transforming banking datasets into actionable insights enhances customer segmentation, predictive forecasting, and strategic decision-making in the fintech industry.",
     image: "",
-    url: "/portfolio/oil-gas",
+    url: "/portfolio/banking-insights",
   },
   // Add more slides here as needed
 ];
