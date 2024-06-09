@@ -75,13 +75,13 @@ const slides = [
     image: "/our-work/dermos.webp",
     url: "/portfolio/skin-cancer-detection",
   },
-  {
-    title: " AutoMTO: Revolutionizing Material Takeoff in Oil & Gas EPCC",
-    content:
-      "Deploying AI to swiftly convert Process and Instrumentation Diagrams (P&IDs) in the Oil & Gas EPCC sector into accurate, digital Material Takeoff Orders, significantly boosting productivity and reducing costs.",
-    image: "",
-    url: "/portfolio/oil-gas",
-  },
+  // {
+  //   title: " AutoMTO: Revolutionizing Material Takeoff in Oil & Gas EPCC",
+  //   content:
+  //     "Deploying AI to swiftly convert Process and Instrumentation Diagrams (P&IDs) in the Oil & Gas EPCC sector into accurate, digital Material Takeoff Orders, significantly boosting productivity and reducing costs.",
+  //   image: "",
+  //   url: "/portfolio/oil-gas",
+  // },
   {
     title: " AI Banking Insights",
     content:
@@ -110,7 +110,7 @@ const OurWork = () => {
   console.log("currentSlide", currentSlide);
 
   return (
-    <div className="w-full min-h-[120vh] md:min-h-[100vh] pl-[20px] md:pl-[80px] lg:pl-[160px] relative bg-[#00081F] flex flex-col justify-center pb-[100px]">
+    <div className="w-full min-h-[120vh] md:min-h-[100vh] pl-[20px] md:pl-[80px] lg:pl-[160px] relative bg-[#00081F] flex flex-col justify-center py-[100px]">
       <div className="absolute top-[-160px] left-0 w-full h-[150px] blur-[50px] translate-y-[30px] scale-90  rounded-[50%] z-[1] bg-gradient-to-br from-[#1D8283] to-[#033577] bg-gradient-156deg bg-no-repeat bg-[0% 0%] opacity-49 border-0 border-opacity-0 filter blur-[50px]"></div>
       <div className="absolute top-[88px] right-[10px]  w-[169px] h-[421px] blur-[50px] translate-y-[167px] scale-90  rounded-[50%] z-[1] bg-gradient-to-br from-[#1D8283] to-[#033577] bg-gradient-156deg bg-no-repeat bg-[0% 0%] opacity-49 border-0 border-opacity-0 filter blur-[100px]"></div>
       {/* Titile with buttons */}
@@ -154,7 +154,7 @@ const OurWork = () => {
           {slides.map((slide, index) => (
             <div
               key={index}
-              className=" h-auto lg:h-[444px] w-[90vw] lg:w-[77vw] relative rounded-[18px] bg-gradient-to-br from-[#000E32] to-[#000929] opacity-83 py-[42px] px-[37px] flex flex-col-reverse lg:flex-row gap-[6vw] md:gap-[5vw] lg:gap-[0px] justify-between items-center transition-transform duration-500 ease-in-out"
+              className=" h-auto lg:h-[auto] w-[90vw] lg:w-[77vw] relative rounded-[18px] bg-gradient-to-br from-[#000E32] to-[#000929] opacity-83 py-[42px] px-[37px] flex flex-col-reverse lg:flex-row gap-[6vw] md:gap-[5vw] lg:gap-[0px] justify-between items-center transition-transform duration-500 ease-in-out"
               // style={{ transform: `translateX(-${currentSlide  * 100}%)` }}
               style={{
                 transform: `translateX(-${
