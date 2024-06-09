@@ -26,7 +26,7 @@ const TechStack = ({ z }) => {
     },
 
     {
-      src: "/tech_stacks/icon7.svg",
+      src: "/tech_stacks/icon5.svg",
       w: "120",
       sm: "90",
     },
@@ -65,31 +65,23 @@ const TechStack = ({ z }) => {
       w: "120",
       sm: "90",
     },
-
-
-   
   ];
 
   const slider2 = [
     {
-      src: "/tech_stacks/icon5.svg",
+      src: "/tech_stacks/icon8.svg",
       w: "120",
       sm: "90",
     },
 
-    
     {
       src: "/tech_stacks/icon6.svg",
       w: "140",
       sm: "100",
     },
 
-   
-
-   
-
     {
-      src: "/tech_stacks/icon8.svg",
+      src: "/tech_stacks/icon7.svg",
       w: "160",
       sm: "100",
     },
@@ -101,13 +93,13 @@ const TechStack = ({ z }) => {
     },
 
     {
-      src: "/tech_stacks/icon2.svg",
+      src: "/tech_stacks/icon5.svg",
       w: "150",
       sm: "100",
     },
 
     {
-      src: "/tech_stacks/icon7.svg",
+      src: "/tech_stacks/icon1.svg",
       w: "120",
       sm: "90",
     },
@@ -117,7 +109,7 @@ const TechStack = ({ z }) => {
       sm: "90",
     },
     {
-      src: "/tech_stacks/icon5.svg",
+      src: "/tech_stacks/icon7.svg",
       w: "120",
       sm: "90",
     },

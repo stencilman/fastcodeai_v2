@@ -4,18 +4,18 @@ import React from "react";
 
 const ExpertiseSlide = () => {
   return (
-    <div className="w-full h-[auto] pt-[40%] pb-[15%]  relative overflow-hidden bg-[#00081F] flex flex-col ">
-      <div className="hidden sm:block absolute top-[-100px] left-[-150px] w-[150%] overflow-hidden h-[250px] blur-[50px] translate-y-[30px] scale-90  rounded-[50%] z-[1] bg-gradient-to-br from-[#1D8283] to-[#033577] bg-gradient-156deg bg-no-repeat bg-[0% 0%] opacity-49 border-0 border-opacity-0 filter blur-[50px] "></div>
+    <div className="w-full h-[auto] pt-[0%] pb-[15%]  relative overflow-hidden bg-[#00081F] flex flex-col ">
+      {/* <div className="hidden sm:block absolute top-[-100px] left-[-150px] w-[150%] overflow-hidden h-[250px] blur-[50px] translate-y-[30px] scale-90  rounded-[50%] z-[1] bg-gradient-to-br from-[#1D8283] to-[#033577] bg-gradient-156deg bg-no-repeat bg-[0% 0%] opacity-49 border-0 border-opacity-0 filter blur-[50px] "></div> */}
 
-      <div className="pl-[20px] pt-[150px] lg:pt-[50px] sm:pl-[60px] md:pl-[50px] lg:pl-[100px] pr-[90px] grid grid-cols-12 gap-[85px] gap-y-[60px] md:gap-y-[150px] ">
-       
+      <div className="pl-[20px] pt-[0px] lg:pt-[0px] sm:pl-[60px] md:pl-[50px] lg:pl-[100px] pr-[90px] grid grid-cols-12 gap-[85px] gap-y-[60px] md:gap-y-[150px] ">
         {/* slide - 2 */}
         <div className="hidden md:grid md:col-span-4 lg:col-span-5 ">
           <Image
-            src="/expertisePage/scroll/pic2-2.png"
+            src="/experties/computer_vesion.png"
             width="431"
             height="509"
             alt=""
+            className="rounded-[18px]"
           />
         </div>
         <div className="col-span-8 md:col-span-8 lg:col-span-6 flex gap-[10px] md:justify-between">
@@ -23,7 +23,13 @@ const ExpertiseSlide = () => {
           <div
             className={`w-[65px] h-[65px] md:w-[77px] md:h-[77px] rounded-full flex items-center justify-center bg-gradient-to-br from-[#13224F] to-[#13224F] border border-[#1A2758] `}
           >
-            <Image src="/experties/icon2.svg" className="w-[40px] md:w-[44px]" width="44" height="44" alt="" />
+            <Image
+              src="/experties/icon2.svg"
+              className="w-[40px] md:w-[44px]"
+              width="44"
+              height="44"
+              alt=""
+            />
           </div>
           <div
             className="main-content w-[80%]"
@@ -32,6 +38,7 @@ const ExpertiseSlide = () => {
             <h1 className="w-[36vw] sm:w-auto md:w-[40vw] lg:w-full  text-[9vw] sm:text-[42px] text-white tracking-wide font-aeonik">
               Computer Vision
             </h1>
+            
             <p className="text-[#9EB3CF] text-[19px] w-[60vw] md:w-[36vw] lg:w-full  font-light pt-[15px] font-bwmss01 ">
               We develop custom software solutions using computer vision and
               deep learning to analyze images, videos, LiDAR, and live streams,
@@ -44,15 +51,15 @@ const ExpertiseSlide = () => {
               {/* <Button name="Read More" to="/expertise" /> */}
             </div>
           </div>
-          
         </div>
         {/* slide - 3 */}
         <div className="hidden md:grid md:col-span-4 lg:col-span-5 ">
           <Image
-            src="/expertisePage/scroll/pic3-2.png"
-            width="431"
-            height="509"
-            alt=""
+            src="/experties/consultation2.png"
+            width="470"
+            height="244"
+            alt="consultation"
+            className="rounded-[18px]"
           />
         </div>
         <div className="col-span-8 md:col-span-8 lg:col-span-6 flex gap-[10px] md:justify-between">
@@ -60,8 +67,14 @@ const ExpertiseSlide = () => {
           <div
             className={`w-[65px] h-[65px] md:w-[77px] md:h-[77px] rounded-full flex items-center justify-center bg-gradient-to-br from-[#13224F] to-[#13224F] border border-[#1A2758] `}
           >
-            <Image src="/experties/icon3.svg" className="w-[40px] md:w-[44px]" width="44" height="44" alt="" />
-          </div> 
+            <Image
+              src="/experties/icon3.svg"
+              className="w-[40px] md:w-[44px]"
+              width="44"
+              height="44"
+              alt=""
+            />
+          </div>
           <div
             className="main-content w-[80%]"
             data-main="Artificial Intelligence"
@@ -88,29 +101,36 @@ const ExpertiseSlide = () => {
             </div>
           </div>
         </div>
-         {/* slide - 1 */}
+        {/* slide - 1 */}
 
-         <div className="hidden md:grid md:col-span-4 lg:col-span-5 ">
-          <Image
-            src="/expertisePage/scroll/pic1-2.png"
-            width="431"
-            height="509"
-            alt=""
-          />
+        <div className="hidden md:grid md:col-span-4 lg:col-span-5 ">
+        <Image
+                  className="rounded-[18px]"
+                  src="/experties/ai.png"
+                  width="470"
+                  height="244"
+                  alt="consultation"
+                />
         </div>
-          {/*Reinforcement Learning */}
+        {/*Reinforcement Learning */}
         <div className="col-span-8 md:col-span-8 lg:col-span-6 flex gap-[10px] md:justify-between">
           <div
             className={`w-[65px] h-[65px] md:w-[77px] md:h-[77px] rounded-full flex items-center justify-center bg-gradient-to-br from-[#13224F] to-[#13224F] border border-[#1A2758] `}
           >
-            <Image src="/experties/icon1.svg" className="w-[40px] md:w-[44px]" width="44" height="44" alt="" />
+            <Image
+              src="/experties/icon1.svg"
+              className="w-[40px] md:w-[44px]"
+              width="44"
+              height="44"
+              alt=""
+            />
           </div>
           <div
             className="main-content w-[80%]"
             data-main="Artificial Intelligence"
           >
             <h1 className="w-[36vw] sm:w-auto md:w-[40vw] lg:w-full  text-[9vw] sm:text-[42px] text-white tracking-wide font-aeonik">
-             Reinforcement Learning
+              Reinforcement Learning
             </h1>
             <p className="text-[#9EB3CF] text-[19px] w-[60vw] md:w-[36vw] lg:w-full  font-light pt-[15px] font-bwmss01 ">
               Develop and implement bespoke AI solutions to rapidly advance your
@@ -133,19 +153,26 @@ const ExpertiseSlide = () => {
         </div>
         {/* slide - 4 */}
         <div className="hidden md:grid md:col-span-4 lg:col-span-5 ">
-          <Image
-            src="/expertisePage/scroll/pic4-2.png"
-            width="431"
-            height="509"
-            alt=""
-          />
+        <Image
+                  src="/experties/ds.png"
+                  width="470"
+                  height="244"
+                  alt="consultation"
+                  className="rounded-[18px]"
+                />
         </div>
         <div className="col-span-8 md:col-span-8 lg:col-span-6 flex gap-[10px] md:justify-between">
           {/* Data Science */}
           <div
             className={`w-[65px] h-[65px] md:w-[77px] md:h-[77px] rounded-full flex items-center justify-center bg-gradient-to-br from-[#13224F] to-[#13224F] border border-[#1A2758] `}
           >
-            <Image src="/experties/icon4.svg" className="w-[40px] md:w-[44px]" width="44" height="44" alt="" />
+            <Image
+              src="/experties/icon4.svg"
+              className="w-[40px] md:w-[44px]"
+              width="44"
+              height="44"
+              alt=""
+            />
           </div>
           <div className="main-content w-[80%]" data-main="Data Science">
             <h1 className="w-[36vw] sm:w-auto md:w-[40vw] lg:w-full  text-[9vw] sm:text-[42px] text-white tracking-wide font-aeonik">

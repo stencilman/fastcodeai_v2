@@ -23,7 +23,7 @@ const Expertise = () => {
   return (
     <>
       <Hero/>
-      <CustomerSolutions/>
+      {/* <CustomerSolutions/> */}
       <ExpertiseSlide/>
       <HowWeDo pb="pb-[250px]"/>
       <ArjunAndTeam showTeam={true}/>

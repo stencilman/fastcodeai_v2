@@ -18,7 +18,7 @@ const Blogs = () => {
 
   return (
     <>
-      <Hero />
+      {/* <Hero /> */}
       <LatestBlogs />
       <Footer />
     </>
