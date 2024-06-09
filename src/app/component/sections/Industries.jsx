@@ -74,7 +74,7 @@ const Industries = () => {
           }}
         >
           <Image src="/industries/icon5.svg" alt="" width="38" height="19" />
-          <p className="text-white text-[19px] font-aeonik">eCommerce</p>
+          <p className="text-white text-[19px] font-aeonik">Oil & Gas</p>
         </div>
         
         

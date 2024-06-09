@@ -1,6 +1,6 @@
 import React from "react";
 
-const BusinessChallenges = ({businessChallengeList}) => {
+const BusinessChallenges = ({ businessChallengeList }) => {
   // const businessChallengeList = [
   //   "The system had to be designed to operate on low- power hardware to mitigate heat emission, as the Electronic Control Unit (ECU) was located in a part of the vehicle that could not dissipate additional heat efficiently.",
   //   "The system had to be designed to operate on low- power hardware to mitigate heat emission, as the Electronic Control Unit (ECU) was located in a part of the vehicle that could not dissipate additional heat efficiently.",
@@ -8,12 +8,11 @@ const BusinessChallenges = ({businessChallengeList}) => {
   // ];
   return (
     <div className="relative w-full py-[100px] h-auto bg-gradient-to-r from-[#000E32] to-[#000929] px-[20px] md:px-[50px] lg:px-[100px] z-[2]">
-      
       <div className="flex flex-col lg:flex-row w-full items-center gap-[80px] lg:gap-[150px]">
         <div className="">
-          <h1 className="text-white text-6xl md:text-8xl font-aeonik tracking-wide ">
-            Business <br />
-            Challenge
+          <h1 className="text-white text-[8vw] md:text-6xl lg:text-7xl font-aeonik tracking-wide ">
+            Business <br className="hidden lg:block " />
+            Challenges
           </h1>
         </div>
         <div className="flex flex-col gap-[20px]">
@@ -29,7 +28,6 @@ const BusinessChallenges = ({businessChallengeList}) => {
           ))}
         </div>
       </div>
-      
     </div>
   );
 };

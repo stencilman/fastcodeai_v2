@@ -11,7 +11,7 @@ const OurImpact = ({ impactData }) => {
     <div className="w-full h-auto pt-[100px] pb-[170px] bg-gradient-to-br from-[#000E32] to-[#000929] opacity-83 px-[20px] md:px-[50px] lg:px-[100px]  relative z-[2]">
       <div className="pb-[70px] px-[10px] md:px-[40px]">
         <h1 className="text-white text-6xl md:text-8xl font-aeonik tracking-wide mb-[8px]">
-          Our Impact
+          Impact
         </h1>
       </div>
       <div className="flex w-full ">

@@ -25,8 +25,8 @@ const Expertise = () => {
       <Hero/>
       {/* <CustomerSolutions/> */}
       <ExpertiseSlide/>
-      <HowWeDo pb="pb-[250px]"/>
-      <ArjunAndTeam showTeam={true}/>
+      {/* <HowWeDo pb="pb-[250px]"/> */}
+      {/* <ArjunAndTeam showTeam={false}/> */}
       <TechStack z="z-[5]"/>
       <OurWork/>
       {/* <CtaToContacts/> */}

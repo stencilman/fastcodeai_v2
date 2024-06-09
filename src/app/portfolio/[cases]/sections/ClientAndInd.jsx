@@ -45,7 +45,7 @@ function ClientAndInd({ clientAndRoleData }) {
       </div>
 
       <div className="flex w-full flex-col-reverse md:flex-row gap-[40px] md:gap-[37px]">
-        <div className="w-full md:w-[40%] flex flex-col gap-[20px] md:gap-[60px] ml-[10px] md:ml-[80px]">
+        {/* <div className="w-full md:w-[40%] flex flex-col gap-[20px] md:gap-[60px] ml-[10px] md:ml-[80px]">
          {clientAndRoleData[0]?.services.includes("Research") ? <div className="flex gap-[40px] items-center ">
             <div
               className="flex justify-center items-center border border-[#1A2758] rounded-full p-[10px] mb-[10px] w-[90px] h-[90px]"
@@ -108,8 +108,8 @@ function ClientAndInd({ clientAndRoleData }) {
               <p className="text-[#FFFFFF] font-bwmss01 text-2xl">Deployment</p>
             </div>
           </div>:""}
-        </div>
-        <div className="w-full md:w-[60%] flex items-center">
+        </div> */}
+        <div className="w-full  flex items-center">
           <div className="flex flex-col gap-[40px] md:gap-[80px]">
             <h1 className="text-white font-aeonik tracking-wide font-normal text-[8vw] md:text-[6vw] leading-[6vw]">
               Our Role

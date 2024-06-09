@@ -184,7 +184,7 @@ const Cases = ({ params }) => {
         industry: "Automotive OEM",
         businessType: "Enterprise",
         services: "Research, Development & Deployment",
-        role: "FastCode partnered with German Automotive OEM to redefine the way drivers interact with their vehicles, through an intelligent system that provides a deeply personalised user experience via body pose and gesture recognition.",
+        role: "FastCode partnered with A German Automotive OEM to redefine the way drivers interact with their vehicles, through an intelligent system that provides a deeply personalised user experience via body pose and gesture recognition.",
       },
     ],
 
@@ -562,9 +562,8 @@ const Cases = ({ params }) => {
   const solutions = {
     "auto-oem": [
       `Utilizing our expertise in Computer Vision, we developed a state-of-the-art solution for multimodal human pose estimation using heatmaps. Our efforts focused on embedding this technology into vehicles, effectively bringing onboard intelligence to life. This achievement required a dramatic reduction in the model's size—compressing it by over 25,000 times—without compromising on accuracy.`,
-      `The implementation of this technology has revolutionized how drivers and passengers interact with the vehicle, introducing a more intuitive way to control the car's systems, such as using gestures to navigate menus, close doors, and adjust the rear view mirrors by simply looking in the desired direction.The implementation of this technology has revolutionized how drivers and passengers interact with the vehicle, introducing a more intuitive way to control the car's systems, such as using gestures to navigate menus, close doors, and adjust the rear view mirrors by simply looking in the desired direction.`,
-      " Activating vehicle functions via hand gestures, applying a 3D Convolutional Neural Network (3D-CNN) and Gated Recurrent Unit (GRU) to analyse video frames and extract spatio-temporal features.",
-      "Advanced airbag deployment control system, utilizing a processing unit equipped with Long Short Term Memory (LSTM) neural network architecture, analyses images to determine and predict the future position and orientation of the occupant's head.",
+      `The implementation of this technology has revolutionized how drivers and passengers interact with the vehicle, introducing a more intuitive way to control the car's systems, such as using gestures to navigate menus, close doors, and adjust the rear view mirrors by simply looking in the desired direction.`,
+    ,
     ],
 
     vrups: [
@@ -617,7 +616,7 @@ const Cases = ({ params }) => {
   const keyFeatures = {
     "auto-oem": [
       {
-        description: "",
+        description:[ " Our solution uniquely distinguishes between various gestures made by drivers and passengers, enhancing the overall user experience."," Activating vehicle functions via hand gestures, applying a 3D Convolutional Neural Network (3D-CNN) and Gated Recurrent Unit (GRU) to analyse video frames and extract spatio-temporal features."," Advanced airbag deployment control system, utilizing a processing unit equipped with Long Short Term Memory (LSTM) neural network architecture, analyses images to determine and predict the future position and orientation of the occupant's head.",],
         
         references: [
           {
@@ -643,7 +642,7 @@ const Cases = ({ params }) => {
 
     vrups: [
       {
-        description: "",
+        description: [],
         points: [
           "Enhanced Radar Sensors: These sensors, with advanced signal processing, accurately detect objects like pedestrians and cyclists, even in limited visibility or adverse weather, by analysing their direction and speed relative to the vehicle.",
           "Early Detection Capability: Enables the system to alert the driver or automatically engage emergency braking to prevent collisions or significantly lower impact speeds, thus reducing serious injury risks.",
@@ -662,7 +661,7 @@ const Cases = ({ params }) => {
 
     "fitness-pose-estimation": [
       {
-        description: "",
+        description: [],
         points: [
           "Core ML Algorithms: Enable instant visual feedback, overlaying dynamic corrections on the user's image to guide proper posture and technique.",
           "Interactive Guide: Transforms exercise routines with a real-time, interactive guide, ensuring correct posture and technique.",
@@ -673,6 +672,7 @@ const Cases = ({ params }) => {
 
     sqlwizard: [
       {
+        description: [],
         points: [
           "Privacy Protection: The LLM does not access actual data, ensuring stringent privacy.",
           "Flexible Data Hosting: Data can reside on either our servers or the client’s servers. Our system functions without direct data access; only the database schema is required, addressing the challenge of handling large data sizes.",
@@ -684,7 +684,7 @@ const Cases = ({ params }) => {
     "loneliness-assistant": [
       {
         description:
-          "Below strategies aim to provide a supportive presence that comprehends and responds to users' emotional states, improving mental well-being and diminishing feelings of isolation in our increasingly digital world.",
+          ["Below strategies aim to provide a supportive presence that comprehends and responds to users' emotional states, improving mental well-being and diminishing feelings of isolation in our increasingly digital world.",],
         points: [
           "Leveraging Open-Source Flexibility: Our Language Learning Model (LLM) is built on open-source technology, enabling continual updates and improvements to maintain technological leadership and deepen user connections.",
           "Fostering Genuine Emotional Connections: Programmed to recognize and react to various emotional cues, our LLM facilitates meaningful conversations that significantly enhance user engagement and emotional understanding.",
@@ -693,11 +693,11 @@ const Cases = ({ params }) => {
       },
     ],
 
-    "fashion-framework": [{}],
+    "fashion-framework": [],
 
     "banking-infra": [
       {
-        description: "",
+        description: [],
         points: [
           "  Customizable Dashboards: Provide real-time insights and deep dives into application and infrastructure health, allowing for quick identification and analysis of potential issues.",
           "Advanced Alerting Systems: Utilize anomaly detection and trend analysis to generate alerts, helping IT teams pre-emptively address and resolve issues before they impact service quality.",
@@ -708,7 +708,7 @@ const Cases = ({ params }) => {
 
     rag: [
       {
-        description: "",
+        description:[],
         points: [
           "Effortless Recording: We designed a user-friendly interface that simplifies logging daily activities, making it as easy and familiar as writing in a personal diary.",
           "Efficient Information Organization and Retrieval: Incorporating OpenAI's API for advanced indexing and utilizing ChatGPT for superior search capabilities, our system efficiently organizes and retrieves pertinent information from user entries.",
@@ -718,7 +718,7 @@ const Cases = ({ params }) => {
     ],
     "skin-cancer-detection": [
       {
-        description: "",
+        description: [],
         points: [
           "Benign/Malignant Classification: Our advanced ML model proficiently classifies skin lesions as benign or malignant, a critical step in determining the urgency and approach of treatment.",
           "Lesion Type Detection and Segmentation: The model excels in identifying specific types of lesions and accurately segments them, providing vital details about their size, shape, and boundaries, which are essential for treatment planning and monitoring.",
@@ -728,7 +728,7 @@ const Cases = ({ params }) => {
     "auto-mto": [
       {
         description:
-          "Our AutoMTO system not only optimized efficiency by reducing the time to process each P&ID sheet but also achieved near-perfect accuracy in MTO generation. This precision has led to more competitive bidding and substantial cost savings, proving the immense value of integrating AI into traditional EPCC processes.",
+         [ "Our AutoMTO system not only optimized efficiency by reducing the time to process each P&ID sheet but also achieved near-perfect accuracy in MTO generation. This precision has led to more competitive bidding and substantial cost savings, proving the immense value of integrating AI into traditional EPCC processes."],
         points: [
           " Efficient Extraction: AI and computer vision enable the rapid reading of P&IDs from PDFs and images, identifying components like pipes, instruments, and texts in under a minute.",
           "Comprehensive Automation: The system processes tasks that traditionally took an engineer 3-4 days, completing them in three automated steps, enhancing productivity and accuracy.",
@@ -739,7 +739,7 @@ const Cases = ({ params }) => {
     "banking-insights": [
       {
         description:
-          "This approach not only improved predictive accuracy but also ensured our models remained adaptive and relevant to evolving banking trends.",
+          ["This approach not only improved predictive accuracy but also ensured our models remained adaptive and relevant to evolving banking trends."],
         points: [
           "Predictive Modelling: ARIMA models replaced LSTM and other neural networks for time series forecasting, significantly reducing prediction errors by up to 70% through meticulous fine-tuning.",
           "Dynamic Adaptation: Implemented an inference algorithm for forecasting various transaction metrics and provided training code to refine models with new data, maintaining accuracy and relevance.",

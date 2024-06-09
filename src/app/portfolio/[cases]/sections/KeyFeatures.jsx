@@ -7,14 +7,18 @@ const KeyFeatures = ({ keyFeaturesData }) => {
     keyFeaturesData.length > 0 && (
       <div className="w-full h-auto bg-[#00081F] pt-0 pb-[50px]  px-[20px] md:px-[50px] lg:px-[100px]">
         <div className="flex flex-col gap-[25px] md:gap-[40px] px-[40px] mb-[40px]">
-          {(keyFeaturesData[0]?.description || keyFeaturesData[0]?.points) && (
+          {(keyFeaturesData[0]?.description.length > 0 ||
+            keyFeaturesData[0]?.points) && (
             <h1 className="text-white text-6xl md:text-8xl font-aeonik tracking-wide mb-[4px]">
               Key Features
             </h1>
           )}
-          <p className="text-[#9EB3CF] text-lg font-bwmss01 ">
-            {keyFeaturesData[0]?.description}
-          </p>
+
+          {keyFeaturesData[0]?.description?.map((e, i) => (
+            <p className="text-[#9EB3CF] text-lg font-bwmss01 " key={i}>
+              {e}
+            </p>
+          ))}
         </div>
         {keyFeaturesData[0]?.points && (
           <div className="w-full py-[60px] h-auto flex flex-col md:flex-row  flex-wrap items-center gap-[70px] px-[40px] mt-[20px] md:my-[20px]">

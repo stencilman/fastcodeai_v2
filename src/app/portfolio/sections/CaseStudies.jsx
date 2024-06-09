@@ -146,7 +146,7 @@ const CaseStudies = () => {
                     <Button to={`${e.to}`} name="Read More" />
                   </div>
                 </div>
-                <div className="w-full h-[100%] pt-[20px] sm:pt-[0px] lg:h-full flex lg:w-[37%] gap-[15px] lg:gap-[39px]  items-end sm:pb-[20px]">
+                {/* <div className="w-full h-[100%] pt-[20px] sm:pt-[0px] lg:h-full flex lg:w-[37%] gap-[15px] lg:gap-[39px]  items-end sm:pb-[20px]">
                   <div>
                     <h5 className="text-white font-aeonik font-bold tracking-normal text-[30px]">
                       100%
@@ -164,7 +164,7 @@ const CaseStudies = () => {
                       incident
                     </p>
                   </div>
-                </div>
+                </div> */}
               </div>
             </div>
           );
