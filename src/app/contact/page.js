@@ -25,7 +25,7 @@ const Contact = () => {
             {/* <WhyChooseUs /> */}
             <Footer showExtraSpace={true}/>
         </>
-    )
+    ) 
 }
 
 export default Contact

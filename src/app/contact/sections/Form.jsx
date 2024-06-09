@@ -71,7 +71,7 @@ const Form = () => {
   };
 
   return (
-    <div className="w-full h-[auto] lg:pt-[120px] flex items-center justify-center bg-[#00081F]">
+    <div className="w-full h-[auto] pt-[120px] lg:pt-[120px] flex items-center justify-center bg-[#00081F]">
       <div
         className="w-[90%] h-[auto] md:h-[auto] lg:w-[80%] lg:h-[auto] flex flex-col lg:flex-row relative rounded-[18px]"
         style={{

@@ -1,29 +1,49 @@
+"use client";
 import Image from "next/image";
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { useInView } from "react-intersection-observer";
 
 const Hero = () => {
+  const [isVisible, setIsVisible] = useState(false);
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.5,
+  });
+
+  useEffect(() => {
+    if (inView) {
+      setIsVisible(true);
+    }
+  }, [inView]);
+
   return (
-    <div className="w-full h-[100vh] bg-[#00081F] relative flex justify-center items-center">
-      <div className="absolute left-[-80px] top-[-10px] w-[169px] h-[321px] blur-[50px] translate-y-[167px] scale-90  rounded-[50%] z-[4] bg-gradient-to-br from-[#1D8283] to-[#033577] bg-gradient-156deg bg-no-repeat bg-[0% 0%] opacity-49 border-0 border-opacity-0 filter blur-[100px]"></div>
-      <video
-      style={{mixBlendMode: "screen"}}
-          className="absolute top-[20%] right-[10%] w-[200px] h-[200px] md:w-[517px] md:h-[576px]"
-          type="video/mp4" 
+    <div className="w-full h-[100vh] relative bg-gradient-to-br from-[#000E32] to-[#000929] opacity-83">
+      <div className="absolute inset-0 z-0 overflow-hidden">
+        <video
+          className="w-full h-full object-cover"
           autoPlay
           muted
           loop
           playsInline
-          width="517" height="576"
-          src="/contact/bgVideo.mp4"
+          src="/vdo4.mp4"
         />
-      <div className="w-[60%]">
-        <h1 className="text-white font-aeonik tracking-wide text-center font-thin lg:leading-[86px] text-[50px] leading-[52px] lg:text-[93px]">
-          {"Let's"} Create <br />{" "}
-          <b className="text-white text-center lg:leading-[86px] font-aeonik font-bold text-[50px] leading-[52px] lg:text-[93px]">
-            Something Great Together
-          </b>
+        <div className="absolute inset-0 bg-black opacity-[0.65]"></div>
+      </div>
+      <div className="w-full bottom-[20rem] md:bottom-[11rem] lg:bottom-28 absolute z-[1] pl-[20px] md:pl-[50px] lg:pl-[100px]">
+        <h1
+          ref={ref}
+          className={`text-[#F3F3F3] tracking-wide text-[8vw] md:text-[7vw] leading-[9vw] lg:leading-[1] lg:text-8xl pb-[20px] font-aeonik font-normal ${
+            isVisible ? "translate-y-0 opacity-100" : "translate-y-20 opacity-0"
+          } transition-transform duration-1000 ease-out`}
+        > {"Let's"} Create <br />{" "}
+          Something Great Together
         </h1>
-        <p className="text-[#9EB3CF] text-center mt-[35px] font-bwmss01 text-lg">
+        <p
+          ref={ref}
+          className={`text-[#9EB3CF] text-[0.8rem] leading-[1.2rem]  md:leading-[1.75rem] md:text-lg items-center font-bwmss01 ${
+            isVisible ? "translate-y-0 opacity-100" : "translate-y-20 opacity-0"
+          }  transition-transform delay-100 duration-1000 ease-out`}
+        >
           Contact us and lets bring your vision to life
         </p>
       </div>
