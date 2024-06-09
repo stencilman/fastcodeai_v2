@@ -820,6 +820,7 @@ const Cases = ({ params }) => {
 
   return (
     <>
+   
       <Hero heroData={heroData} />
       <ClientAndInd clientAndRoleData={clientAndRoleData} />
       <ProjectGoals projectGoalList={projGoalsData} />
