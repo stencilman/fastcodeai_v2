@@ -32,10 +32,17 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         'benz': "url('/potfolio/mbenz/img1.webp')",
+        "vrups": "/our-work/bosch.webp",
         'learning': "url('/potfolio/fedLearning/img1-2.png')",
         'fitness': "url('/potfolio/fitness/img1-2.png')",
+        "dataQuery": "url('/our-work/sqlwizard-logo1.png')",
+        "lonelyAssist": "url('/our-work/lonely_llm.webp')",
+        "fashion": "url('/our-work/fashion.webp')",
+        "bankMont": "url('/portfolio/banking-infra')",
+        "rag": "url('/our-work/rag_weave.webp')",
+        "dermo": "url('/our-work/dermos.webp')",
 
-        
+
         'blogHero': "url('/blogs/hero/img1-2.png')",
         'teamHero': "url('/team/img1-2.png')",
 
@@ -61,12 +68,12 @@ module.exports = {
         'tirth': "url('/members/Tirth.webp')",
         'rishabh': "url('/members/rishabh2.png')",
 
-       
+
 
       },
       background: {
         cusgrad: "transparent linear-gradient(360deg, #13224F 0%, #13224F 0%, #0C1C46 51%, #020F3B 100%) 0% 0% no-repeat padding-box",
-       
+
       },
       fontFamily: {
         aeonik: ["var(--font-aeonik)"],

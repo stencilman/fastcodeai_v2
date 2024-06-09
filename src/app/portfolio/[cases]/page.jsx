@@ -23,16 +23,18 @@ const page = ({ params }) => {
           "Enhance interaction between driver and car by detecting driver hand gesture for superior level driver experience with Automotive OEM.",
         industry: "Automotive OEM",
         year: "2021",
+        heroImg:"/our-work/mercedes.webp"
       },
     ],
     vrups: [
       {
-        logo: "/potfolio/bosch/hero/logo.png",
+        // logo: "/potfolio/bosch/hero/logo.png",
         title: "Vulnerable Roadside User Protection System",
         description:
           "Accurate, low footprint detection with vulnerable roadside users (VRUs) and road signs covered in the Automotive Tier 1 autonomous driving initiative.",
         industry: "Automotive Tier 1",
         year: "2022",
+        heroImg:"/our-work/bosch.webp"
       },
     ],
     "federated-learning": [
@@ -43,6 +45,7 @@ const page = ({ params }) => {
           "Revolutionizing privacy and efficiency in data processing with Federated Learning (FL) on edge devices, enabling real-time, secure analytics in several key sectors.",
         industry: " Automotive OEM",
         year: "2022",
+        heroImg:"/our-work/fl.webp"
       },
     ],
 
@@ -55,6 +58,8 @@ const page = ({ params }) => {
           "Empowering exercise perfection with AI-driven real-time pose estimation, providing interactive visual feedback for correct posture and effective workouts.",
         industry: "Healthcare",
         year: "2022",
+        heroImg:"/our-work/fitness.webp"
+
       },
     ],
 
@@ -66,6 +71,8 @@ const page = ({ params }) => {
           "Transforming data access with a natural language interface that converts queries into SQL, simplifying database interaction.",
         industry: "FMCG Retail",
         year: "2023",
+        heroImg:"/our-work/sqlwizard-logo1.png"
+
       },
     ],
 
@@ -77,6 +84,8 @@ const page = ({ params }) => {
           "Personalised assistant designed to empathize with humans and serves as a close companion by engaging in an emotionally deep manner.",
         industry: "Not Specific",
         year: "2021",
+        heroImg:"/our-work/lonely_llm.webp",
+
       },
     ],
 
@@ -88,6 +97,8 @@ const page = ({ params }) => {
           "Pioneering deep learning in fashion with a custom Indian dataset for advanced trend forecasting and targeted consumer insights.",
         industry: "Fashion Retail",
         year: "2021",
+        heroImg:"/our-work/fashion.webp",
+
       },
     ],
 
@@ -99,6 +110,9 @@ const page = ({ params }) => {
           "Enhancing banking with AI: Advanced data analytics for customer insights and predictive modelling, streamlined with efficient application monitoring.",
         industry: "Fintech",
         year: "2020",
+
+        heroImg:"/our-work/modefin_cover.webp",
+
       },
     ],
 
@@ -110,6 +124,9 @@ const page = ({ params }) => {
           "Smart, diary-like system that effortlessly organizes and retrieves your daily activities and information with cutting-edge Retrieval-Augmented Generation techniques.",
         industry: "Technology",
         year: "2020",
+        heroImg:"/our-work/rag_weave.webp",
+
+        
       },
     ],
 
@@ -121,6 +138,8 @@ const page = ({ params }) => {
           "Enhancing skin cancer by diagnosing user’s skin images on their mobile phones, improving dermatological care's accuracy, accessibility, and efficiency.",
         industry: "Start-up",
         year: "2020",
+        heroImg:"/our-work/dermos.webp",
+
       },
     ],
 

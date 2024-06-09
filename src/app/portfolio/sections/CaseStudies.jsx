@@ -16,7 +16,7 @@ const CaseStudies = () => {
       to: "/portfolio/mbux",
     },
     {
-      img: "bg-benz",
+      img: "bg-vrups",
       title: "Vulnerable Roadside User Protection System",
       description:"Accurate, low footprint detection with vulnerable roadside users (VRUs) and road signs covered in the Automotive Tier 1 autonomous driving initiative.",
       to: "/portfolio/vrups",
@@ -36,42 +36,42 @@ const CaseStudies = () => {
       to: "/portfolio/fitness-pose-estimation",
     },
     {
-      img: "bg-fitness",
+      img: "bg-dataQuery",
       title: "Data Query Assitant",
       description:
         "Transforming data access with a natural language interface that converts queries into SQL, simplifying database interaction.",
       to: "/portfolio/sqlwizard",
     },
     {
-      img: "bg-fitness",
+      img: "bg-lonelyAssist",
       title: "Loneliness Assistant",
       description:
         "Personalised assistant designed to empthatize with humans and serves as a close companion by engaging in an emotionally deep manner.",
       to: "/portfolio/loneliness-assistant",
     },
     {
-      img: "bg-fitness",
+      img: "bg-fashion",
       title: "Indian Fashion insight Framework",
       description:
         "Pioneering deep learning in fashion with a custom Indian dataset for advanced trend forecasting and targeted consumer insights.",
       to: "/portfolio/fashion-framework",
     },
     {
-      img: "bg-fitness",
+      img: "bg-bankMont",
       title: "AI Banking Insights & Monitoring",
       description:
         "Enhancing banking with AI: Advanced data analytics for customer insights and predictive modeling, streamlined with efficient application monitoring.",
       to: "/portfolio/banking-infra",
     },
     {
-      img: "bg-fitness",
+      img: "bg-rag",
       title: "RAG based Personal Diary",
       description:
         "Smart, diary-like system that effortlessly organizes and retrieves your daily activities and information with cutting-edge Retrieval-Augmented Generation techniques.",
       to: "/portfolio/rag",
     },
     {
-      img: "bg-fitness",
+      img: "bg-dermo",
       title: "AI-Assisted Skin Cancer Detection",
       description:
         "Enhancing skin cancer by diagnosing user’s skin images on their mobile phones, improving dermatological care's accuracy, accessibility, and efficiency.",

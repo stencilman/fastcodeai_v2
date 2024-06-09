@@ -7,44 +7,44 @@ const slides = [
   {
     title: "Gesture Recognition based User Experience",
     content:
-      "Enhanced driver-car interaction through the detection of hand gestures, elevating the driving experience with the Mercedes Benz User Experience (MBUX) System.",
+      "Enhance interaction between driver and car by detecting driver hand gesture for superior level driver experience with Automotive OEM.",
     image: "/our-work/mercedes.webp",
-    url:"/portfolio/mbux"
+    url: "/portfolio/mbux",
   },
   {
     title: "Federated Learning on the Edge",
     content:
-      "Revolutionizing privacy and efficiency in data processing with Federated Learning (FL) on edge devices, enabling real-time, secure analytics in several key sectors.",
+      "Accurate, low footprint detection with vulnerable roadside users (VRUs) and road signs covered in the Automotive Tier 1 autonomous driving initiative.",
     image: "/our-work/fl.webp",
-    url : "/portfolio/federated-learning"
+    url: "/portfolio/federated-learning",
   },
   {
     title: "Vulnerable Roadside User Protection System",
     content:
       "Accurate, low footprint detection with vulnerable roadside users (VRUs) and road signs covered in the Automotive Tier 1 autonomous driving initiative.",
     image: "/our-work/bosch.webp",
-    url:"/portfolio/vrups"
+    url: "/portfolio/vrups",
   },
   {
     title: "Fitness Pose Estimation",
     content:
       "Empowering exercise perfection with AI-driven real-time pose estimation, delivering interactive visual feedback to ensure correct posture and optimize exercise routines.",
     image: "/our-work/fitness.webp",
-    url:"/portfolio/fitness-pose-estimation"
+    url: "/portfolio/fitness-pose-estimation",
   },
   {
     title: "RAG based Personal Diary",
     content:
       "Smart, diary-like system that effortlessly organizes and retrieves your daily activities and information with cutting-edge Retrieval-Augmented Generation techniques.",
     image: "/our-work/rag_weave.webp",
-    url:"/portfolio/rag"
+    url: "/portfolio/rag",
   },
   {
     title: "Indian Fashion insight Framework ",
     content:
       "Pioneering deep learning in fashion with a custom Indian dataset for advanced trend forecasting and targeted consumer insights",
     image: "/our-work/fashion.webp",
-    url:"/portfolio/fashion-framework"
+    url: "/portfolio/fashion-framework",
   },
 
   {
@@ -52,21 +52,42 @@ const slides = [
     content:
       "Enhancing banking with AI: Advanced data analytics for customer insights and predictive modeling, streamlined with efficient application monitoring.",
     image: "/our-work/modefin_cover.webp",
-    url:"/portfolio/banking-infra"
+    url: "/portfolio/banking-infra",
   },
   {
     title: "Data Query Assitant",
     content:
       "Transforming data access with a natural language interface that converts queries into SQL, simplifying database interaction",
     image: "/our-work/sqlwizard-logo1.png",
-    url:"/portfolio/sqlwizard"
+    url: "/portfolio/sqlwizard",
   },
   {
     title: "Loneliness Assistant",
     content:
       "Personalised assistant designed to empathize with humans and serves as a close companion by engaging in emotionally profound interactions",
     image: "/our-work/lonely_llm.webp",
-    url:"/portfolio/loneliness-assistant"
+    url: "/portfolio/loneliness-assistant",
+  },
+  {
+    title: "AI-Assisted Skin Cancer Detection",
+    content:
+      "Enhancing skin cancer by diagnosing user’s skin images on their mobile phones, improving dermatological care's accuracy, accessibility, and efficiency.",
+    image: "/our-work/dermos.webp",
+    url: "/portfolio/skin-cancer-detection",
+  },
+  {
+    title: " AutoMTO: Revolutionizing Material Takeoff in Oil & Gas EPCC",
+    content:
+      "Deploying AI to swiftly convert Process and Instrumentation Diagrams (P&IDs) in the Oil & Gas EPCC sector into accurate, digital Material Takeoff Orders, significantly boosting productivity and reducing costs.",
+    image: "",
+    url: "/portfolio/oil-gas",
+  },
+  {
+    title: " AI Banking Insights",
+    content:
+      "Transforming banking datasets into actionable insights enhances customer segmentation, predictive forecasting, and strategic decision-making in the fintech industry.",
+    image: "",
+    url: "/portfolio/oil-gas",
   },
   // Add more slides here as needed
 ];
@@ -142,7 +163,7 @@ const OurWork = () => {
               }}
             >
               <div className="pl-0 lg:pl-[10px] w-[100%] lg:w-[50%]">
-                <h3 className="text-[7.5vw] lg:text-[42px] tracking-normal text-white leading-[47px] font-aeonik">
+                <h3 className="text-[7.5vw] leading-[8vw] lg:text-[42px] tracking-normal text-white lg:leading-[47px] font-aeonik">
                   {slide.title}
                 </h3>
                 <p className="text-[#9EB3CF] text-[19px] pt-[4vw] lg:pt-[22px] leading-[29px] font-bwmss01">
