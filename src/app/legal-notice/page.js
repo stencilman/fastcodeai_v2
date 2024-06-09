@@ -74,7 +74,7 @@ const LegalNotice = () => {
                     <p className="text-[#9EB3CF] text-lg font-bwmss01 mt-[10px]">
 
                         Disclaimers The information and materials provided on this website are provided on an
-                        "as is" basis. FastCode AI Consult Pvt. Ltd. makes no warranties, expressed or implied, and
+                        as is basis. FastCode AI Consult Pvt. Ltd. makes no warranties, expressed or implied, and
                         hereby disclaims and negates all other warranties including, without limitation, implied
                         warranties or conditions of merchantability, fitness for a particular purpose, or non-
                         infringement of intellectual property or other violation of rights.
@@ -87,7 +87,7 @@ const LegalNotice = () => {
                     </p>
                     <p className="text-[#9EB3CF] text-lg font-bwmss01 mt-[10px]">
 
-                        Governing Law Any claim relating to FastCode AI Consult Pvt. Ltd.'s website shall be
+                        Governing Law Any claim relating to FastCode AI Consult Pvt.{" Ltd.'s"} website shall be
                         governed by the laws of India without regard to its conflict of law provisions.
 
                     </p>
