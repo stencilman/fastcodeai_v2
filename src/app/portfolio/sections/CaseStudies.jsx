@@ -58,14 +58,14 @@ const CaseStudies = () => {
     },
     {
       img: "bg-bankMont",
-      title: "AI Banking Insights & Monitoring",
+      title: "AI Banking Infrastructure Monitoring",
       description:
         "Enhancing banking with AI: Advanced data analytics for customer insights and predictive modeling, streamlined with efficient application monitoring.",
       to: "/portfolio/banking-infra",
     },
     {
       img: "bg-rag",
-      title: "RAG based Personal Diary",
+      title: "Secure Smart Journal",
       description:
         "Smart, diary-like system that effortlessly organizes and retrieves your daily activities and information with cutting-edge Retrieval-Augmented Generation techniques.",
       to: "/portfolio/rag",

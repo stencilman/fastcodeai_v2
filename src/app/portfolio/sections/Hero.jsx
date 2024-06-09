@@ -4,8 +4,8 @@ const Hero = () => {
   return (
     <div className="w-full h-auto relative bg-[#00081F]">
       <div className="pt-[40%] w-full md:pt-[30%] lg:pt-[20%] flex justify-center items-center flex-col">
-        <p className="text-[#9EB3CF] font-bwmss01 text-[22px] md:text-[32px]">
-          Portfolio
+        <p className="text-[#9EB3CF] font-bwmss01 text-[22px] md:text-[32px] text-center">
+       <b className="text-white font-bwmss01 text-[28px] md:text-[34px] "> Unlock Your Potential </b><br/> Where Vision Meets Velocity
         </p>
         <div className="px-[20px]  w-full md:px-[50px] lg:px-[100px]">
           <iframe

@@ -122,7 +122,7 @@ const Cases = ({ params }) => {
     rag: [
       {
         // logo: "/potfolio/bosch/hero/logo.png",
-        title: "RAG based Personal Diary",
+        title: "Secure Smart Journal",
         description:
           "Smart, diary-like system that effortlessly organizes and retrieves your daily activities and information with cutting-edge Retrieval-Augmented Generation techniques.",
         industry: "Technology",
@@ -282,8 +282,8 @@ const Cases = ({ params }) => {
         description:
           "A leading Indian multinational excels in Engineering, Procurement, Construction, and Commissioning (EPCC), providing comprehensive project management services and solutions globally with unparalleled expertise.",
         industry: "Oil & Gas EPCC    ",
-        businessType: "Startup",
-        services: "Development & Deployment",
+        businessType: "Enterprise",
+        services: "Research, Development & Deployment",
         role: "We utilized its machine learning expertise to efficiently extract essential information from Process and Instrumentation Diagrams (P&IDs), accelerating the generation of Material Takeoff Orders (MTO) for our EPCC client. This process transformed traditional hard copies and scanned documents into streamlined, accessible digital formats",
       },
     ],
