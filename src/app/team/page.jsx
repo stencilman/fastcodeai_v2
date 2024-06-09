@@ -21,7 +21,7 @@ const Team = () => {
       <Members/>
       {/* <WhyChooseUs/> */}
       {/* <TestimonialsN/> */}
-      <Footer/>
+      <Footer showExtraSpace={true}/>
     </>
   )
 }

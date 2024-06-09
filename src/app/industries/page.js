@@ -35,7 +35,7 @@ const Industries = () => {
            
             <Cta title="Do you Have a Project in Mind?" quote="Give us Some Detail on Your Project and Let us Help"/>
             
-            <Footer/>
+            <Footer showExtraSpace={true}/>
         </>
     )
 }

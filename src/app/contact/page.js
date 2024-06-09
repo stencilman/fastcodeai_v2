@@ -23,7 +23,7 @@ const Contact = () => {
             <HowWeDo pb="pb-[100px]" />
             {/* <Clients /> */}
             {/* <WhyChooseUs /> */}
-            <Footer />
+            <Footer showExtraSpace={true}/>
         </>
     )
 }

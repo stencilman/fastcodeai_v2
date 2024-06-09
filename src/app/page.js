@@ -39,7 +39,7 @@ export default function Home() {
       <HowWeDo />
       <Industries />
       <TestimonialsN />
-      <Footer />
+      <Footer showExtraSpace={true}/>
 
     </>
   )

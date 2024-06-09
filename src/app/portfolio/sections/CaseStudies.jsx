@@ -131,11 +131,11 @@ const CaseStudies = () => {
           return (
             <div
               key={i}
-              className={`p-[0] border border-[#082373] lg:px-[35px] lg:pt-[0px] lg:pb-[40px] w-full h-[512px] sm:h-[434px] lg:h-[410px] ${e.img} rounded-[20px] bg-cover bg-no-repeat`}
+              className={`p-[0] border border-[#082373] lg:px-[35px] lg:pt-[0px] lg:pb-[40px] w-full h-[auto] sm:h-[434px] lg:h-[410px] ${e.img} rounded-[20px] bg-cover bg-no-repeat`}
               style={{ maxWidth: "1099px" }}
             >
               <div className="w-full h-full flex justify-between flex-col lg:flex-row p-[15px] sm:p-[21px] lg:pb-[0px]">
-                <div className="h-full w-full lg:w-[50%] flex flex-col gap-[4vw] md:gap-[2vw] lg:gap-[0px] justify-normal lg:justify-evenly ">
+                <div className="h-full w-full lg:w-[50%] flex flex-col gap-[4vw] md:gap-[2vw] lg:gap-[15px] justify-normal lg:justify-evenly ">
                   <h5 className="text-white font-aeonik font-light tracking-normal text-[30px]">
                     {e.title}
                   </h5>
@@ -146,7 +146,7 @@ const CaseStudies = () => {
                     <Button to={`${e.to}`} name="Read More" />
                   </div>
                 </div>
-                <div className="w-full h-[100px] lg:h-full flex lg:w-[37%] gap-[15px] lg:gap-[39px]  items-end sm:pb-[20px]">
+                <div className="w-full h-[100%] pt-[20px] sm:pt-[0px] lg:h-full flex lg:w-[37%] gap-[15px] lg:gap-[39px]  items-end sm:pb-[20px]">
                   <div>
                     <h5 className="text-white font-aeonik font-bold tracking-normal text-[30px]">
                       100%

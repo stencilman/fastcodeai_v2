@@ -34,7 +34,7 @@ const Research = () => {
         quote="let's turn it into a patented innovation"
       />
 
-      <Footer />
+      <Footer showExtraSpace={true}/>
     </>
   );
 };

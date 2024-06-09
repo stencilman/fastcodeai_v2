@@ -12,7 +12,7 @@ const WhyAi = () => {
     <>
       <Hero/>
       <Main/>
-      <Footer/>
+      <Footer showExtraSpace={true}/>
     </>
   )
 }

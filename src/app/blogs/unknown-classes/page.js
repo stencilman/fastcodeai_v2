@@ -12,7 +12,7 @@ const ClassesUnknown = () => {
     <>
       <Hero/>
       <Main/>
-      <Footer/>
+      <Footer showExtraSpace={true}/>
     </>
   )
 }

@@ -20,7 +20,7 @@ const Blogs = () => {
     <>
       {/* <Hero /> */}
       <LatestBlogs />
-      <Footer />
+      <Footer showExtraSpace={true} />
     </>
   )
 }

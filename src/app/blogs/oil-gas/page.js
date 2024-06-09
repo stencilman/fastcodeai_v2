@@ -13,7 +13,7 @@ const OilGas = () => {
     <>
       <Hero/>
       <Main/>
-      <Footer/>
+      <Footer showExtraSpace={true}/>
     </>
   )
 }

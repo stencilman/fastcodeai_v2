@@ -30,7 +30,7 @@ const About = () => {
       {/* <WhyChooseUs/> */}
       {/* <Industries/> */}
       <TestimonialsN/>
-      <Footer/>
+      <Footer showExtraSpace={true}/>
     </>
   )
 }

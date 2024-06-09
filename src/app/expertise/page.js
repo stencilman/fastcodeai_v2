@@ -30,7 +30,7 @@ const Expertise = () => {
       <TechStack z="z-[5]"/>
       <OurWork/>
       {/* <CtaToContacts/> */}
-      <Footer/>
+      <Footer showExtraSpace={true}/>
     </>
   )
 }
