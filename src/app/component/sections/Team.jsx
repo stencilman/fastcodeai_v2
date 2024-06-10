@@ -2,6 +2,17 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Button from "../Button";
+import Arjun from "../../../../public/team/Arjun_Jain.webp";
+import Dhaval from "../../../../public/team/Dhaval2.jpg";
+import Abdul from "../../../../public/team/abdul.png";
+import Eshwar from "../../../../public/team/eshwar.webp";
+import Rishabh from "../../../../public/team/rishabh2.jpg";
+import Sughosh from "../../../../public/team/sughosh1.jpg";
+import Parth from "../../../../public/team/parth-bw.webp";
+import Prabal from "../../../../public/team/Prabal.webp";
+import Sanjay from "../../../../public/team/Sanjay.png";
+import Shreyas from "../../../../public/team/shreyas2.jpg";
+import Tirth from "../../../../public/team/tirth1.jpg";
 
 const Team = () => {
   const [imageInfo, setImageInfo] = useState([]);
@@ -9,24 +20,20 @@ const Team = () => {
   useEffect(() => {
     // Simulate fetching image data
     const fetchedImages = [
-      "/team/Arjun_Jain.webp",
-      "/team/abdul.png",
-      // "/team/darshan.webp",
-      // "/team/Sughosh.png",
-      "/team/Dhaval2.jpg",
-      "/team/eshwar.webp",
-      // "/team/gautam.webp",
-      // "/team/Jadhav.webp",
-      "/team/rishabh2.jpg",
-      "/team/sughosh1.jpg",
-      "/team/parth-bw.webp",
-      "/team/Prabal.webp",
-      "/team/Sanjay.png",
-      "/team/shreyas2.jpg",
-      "/team/tirth1.jpg",
-      // '/team/Shreyas.webp',
-      // '/team/Sughosh.webp',
-      // '/team/Tirth.webp'
+      Arjun,
+      Abdul,
+
+      Dhaval,
+      Eshwar,
+   
+      Rishabh,
+      Sughosh,
+      Parth,
+      Prabal,
+      Sanjay,
+      Shreyas,
+      Tirth,
+   
     ];
   
     // Shuffle images
@@ -118,6 +125,7 @@ const Team = () => {
                     }`}
                     src={info.src}
                     width="120"
+                    placeholder="blur"
                     height="120"
                     alt="team"
                   />

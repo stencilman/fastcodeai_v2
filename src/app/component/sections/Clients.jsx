@@ -5,6 +5,12 @@ import Shadow from "../Shadow";
 import { useRef } from "react";
 import { useScroll, useTransform, motion } from "framer-motion";
 
+import mbux from "../../../../public//our-clients/mercedes.png";
+import Bosch from "../../../../public//our-clients/Bosch.png";
+import fitlab from "../../../../public//our-clients/fitlab.png";
+import meta from "../../../../public//our-clients/Meta.png";
+import textiles from "../../../../public//our-clients/textiles.png";
+
 const Clients = () => {
   const container = useRef(null);
 
@@ -20,67 +26,67 @@ const Clients = () => {
 
   const slider1 = [
     {
-      src: "/our-clients/mercedes.png",
+      src: mbux,
     },
 
     {
-      src: "/our-clients/Bosch.png",
+      src:Bosch,
     },
 
     {
-      src: "/our-clients/fitlab.png",
+      src: fitlab,
     },
 
     {
-      src: "/our-clients/Meta.png",
+      src: meta,
     },
     {
-      src: "/our-clients/mercedes.png",
-    },
-
-    {
-      src: "/our-clients/Bosch.png",
+      src: mbux,
     },
 
     {
-      src: "/our-clients/fitlab.png",
+      src: Bosch,
     },
 
     {
-      src: "/our-clients/Meta.png",
+      src: fitlab,
+    },
+
+    {
+      src: meta,
     },
   ];
 
   const slider2 = [
     {
-      src: "/our-clients/Meta.png",
+      src: meta,
     },
 
     {
-      src: "/our-clients/textiles.png",
+      src: textiles,
     },
 
     {
-      src: "/our-clients/Bosch.png",
+      src: Bosch,
     },
 
     {
-      src: "/our-clients/mercedes.png",
+      src: mbux,
     },
     {
-      src: "/our-clients/Meta.png",
-    },
-
-    {
-      src: "/our-clients/textiles.png",
+      src: meta,
     },
 
     {
-      src: "/our-clients/Bosch.png",
+      src: textiles,
     },
 
     {
-      src: "/our-clients/mercedes.png",
+      src: Bosch,
+    },
+
+    {
+      src: mbux,
     },
   ];
   return (
@@ -151,6 +157,8 @@ const Clients = () => {
                       width="122"
                       height="70"
                       alt="mercedesLogo"
+                  placeholder="blur"
+
                     />
                   </div>
                 );

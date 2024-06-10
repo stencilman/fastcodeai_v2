@@ -3,6 +3,7 @@ import React from "react";
 import scringAnim from "../../../../public/animations/springs.json";
 import Lottie from "lottie-react";
 import Image from "next/image";
+import brain from "../../../../public/brain.svg"
 
 const ScreenAbout = () => {
   return (
@@ -14,7 +15,7 @@ const ScreenAbout = () => {
         <div className="absolute top-[21vw] md:top-[14vw] left-[39%]  lg:left-[240px] lg:top-[129px]">
           <Image
             className="w-[42vw] md:w-[32vw] lg:w-[270px]"
-            src="./brain.svg"
+            src={brain}
             width="270"
             height="200"
             alt="img"

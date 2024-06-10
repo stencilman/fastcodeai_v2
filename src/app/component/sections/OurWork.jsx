@@ -2,48 +2,58 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import gesrec from "../../../../public/our-work/gesrec.png";
+import vrups from "../../../../public/our-work/vrups.jpg";
+import fashion from "../../../../public/our-work/fashion.png";
+import bankInsMo from "../../../../public/our-work/bankInsMo.png";
+import sqlwizard from "../../../../public/our-work/sqlwizard-logo1.png";
+import dermos from "../../../../public/our-work/dermos.jpeg";
+import bnk from "../../../../public/our-work/bnk.png";
+import rag from "../../../../public/our-work/rag_weave.jpg";
+import fedLearning from "../../../../public/potfolio/fedLearning/img1-2.png";
+import fitness from "../../../../public/potfolio/fitness/img1-2.png";
 
 const slides = [
   {
     title: "Gesture Recognition based User Experience",
     content:
       "Enhance interaction between driver and car by detecting driver hand gesture for superior level driver experience with Automotive OEM.",
-    image: "/our-work/gesrec.png",
+    image: gesrec,
     url: "/portfolio/auto-oem",
   },
   {
     title: "Federated Learning on the Edge",
     content:
       "Accurate, low footprint detection with vulnerable roadside users (VRUs) and road signs covered in the Automotive Tier 1 autonomous driving initiative.",
-    image: "/potfolio/fedLearning/img1-2.png",
+    image: fedLearning,
     url: "/portfolio/federated-learning",
   },
   {
     title: "Vulnerable Roadside User Protection System",
     content:
       "Accurate, low footprint detection with vulnerable roadside users (VRUs) and road signs covered in the Automotive Tier 1 autonomous driving initiative.",
-    image: "/our-work/vrups.jpg",
+    image: vrups,
     url: "/portfolio/vrups",
   },
   {
     title: "Fitness Pose Estimation",
     content:
       "Empowering exercise perfection with AI-driven real-time pose estimation, delivering interactive visual feedback to ensure correct posture and optimize exercise routines.",
-    image: "/potfolio/fitness/img1-2.png",
+    image: fitness,
     url: "/portfolio/fitness-pose-estimation",
   },
   {
     title: "RAG based Personal Diary",
     content:
       "Smart, diary-like system that effortlessly organizes and retrieves your daily activities and information with cutting-edge Retrieval-Augmented Generation techniques.",
-    image: "/our-work/rag_weave.jpg",
+    image: rag,
     url: "/portfolio/rag",
   },
   {
     title: "Indian Fashion insight Framework ",
     content:
       "Pioneering deep learning in fashion with a custom Indian dataset for advanced trend forecasting and targeted consumer insights",
-    image: "/our-work/fashion.png",
+    image: fashion,
     url: "/portfolio/fashion-framework",
   },
 
@@ -51,14 +61,14 @@ const slides = [
     title: "AI Banking Infrastructure Monitoring",
     content:
       "Enhancing banking with AI: Advanced data analytics for customer insights and predictive modeling, streamlined with efficient application monitoring.",
-    image: "/our-work/bankInsMo.png",
+    image: bankInsMo,
     url: "/portfolio/banking-infra",
   },
   {
     title: "Secure Text-to-SQL Interface",
     content:
       "Transforming data access with a natural language interface that converts queries into SQL, simplifying database interaction",
-    image: "/our-work/sqlwizard-logo1.png",
+    image: sqlwizard,
     url: "/portfolio/sqlwizard",
   },
   // {
@@ -72,7 +82,7 @@ const slides = [
     title: "AI-Assisted Skin Cancer Detection",
     content:
       "Enhancing skin cancer by diagnosing user’s skin images on their mobile phones, improving dermatological care's accuracy, accessibility, and efficiency.",
-    image: "/our-work/dermos.jpeg",
+    image: dermos,
     url: "/portfolio/skin-cancer-detection",
   },
   // {
@@ -86,7 +96,7 @@ const slides = [
     title: " AI Banking Insights",
     content:
       "Transforming banking datasets into actionable insights enhances customer segmentation, predictive forecasting, and strategic decision-making in the fintech industry.",
-    image: "/our-work/bnk.png",
+    image: bnk,
     url: "/portfolio/banking-insights",
   },
   // Add more slides here as needed
@@ -179,6 +189,7 @@ const OurWork = () => {
                 <Image
                   className="w-[100%] h-[293px] rounded-[25px] object-cover"
                   src={slide.image}
+                  placeholder="blur"
                   width="368"
                   height="360"
                   alt=""

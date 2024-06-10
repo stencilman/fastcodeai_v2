@@ -1,8 +1,17 @@
 import Button from "@/app/component/Button";
 import Image from "next/image";
 import React from "react";
+import ds from "../../../../public/experties/ds.png"
+import rl from "../../../../public/experties/rl.png"
+import cv from "../../../../public/experties/cv.png"
+import ml from "../../../../public/experties/ml.png"
+import icon1 from "../../../../public/experties/icon1.svg";
+import icon2 from "../../../../public/experties/icon2.svg";
+import icon3 from "../../../../public/experties/icon3.svg";
+import icon4 from "../../../../public/experties/icon4.svg";
 
 const ExpertiseSlide = () => {
+  const blurDataURL = 'data:image/jpeg;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mMUVvL/DgACUQF9FxpdcgAAAABJRU5ErkJggg==';
   return (
     <div className="w-full h-[auto] pt-[0%] pb-[15%]  relative overflow-hidden bg-[#00081F] flex flex-col ">
       {/* <div className="hidden sm:block absolute top-[-100px] left-[-150px] w-[150%] overflow-hidden h-[250px] blur-[50px] translate-y-[30px] scale-90  rounded-[50%] z-[1] bg-gradient-to-br from-[#1D8283] to-[#033577] bg-gradient-156deg bg-no-repeat bg-[0% 0%] opacity-49 border-0 border-opacity-0 filter blur-[50px] "></div> */}
@@ -11,9 +20,10 @@ const ExpertiseSlide = () => {
         {/* slide - 2 */}
         <div className="hidden md:grid md:col-span-4 lg:col-span-5 ">
           <Image
-            src="/experties/computer_vesion.png"
+            src={cv}
             width="431"
             height="509"
+            blurDataURL={blurDataURL}
             alt=""
             className="rounded-[18px]"
           />
@@ -24,7 +34,7 @@ const ExpertiseSlide = () => {
             className={`w-[65px] h-[65px] md:w-[77px] md:h-[77px] rounded-full flex items-center justify-center bg-gradient-to-br from-[#13224F] to-[#13224F] border border-[#1A2758] `}
           >
             <Image
-              src="/experties/icon2.svg"
+              src={icon2}
               className="w-[40px] md:w-[44px]"
               width="44"
               height="44"
@@ -55,10 +65,11 @@ const ExpertiseSlide = () => {
         {/* slide - 3 */}
         <div className="hidden md:grid md:col-span-4 lg:col-span-5 ">
           <Image
-            src="/experties/consultation2.png"
+            src={ml}
             width="470"
             height="244"
-            alt="consultation"
+            alt="Machine Learning"
+            blurDataURL={blurDataURL}
             className="rounded-[18px]"
           />
         </div>
@@ -68,7 +79,7 @@ const ExpertiseSlide = () => {
             className={`w-[65px] h-[65px] md:w-[77px] md:h-[77px] rounded-full flex items-center justify-center bg-gradient-to-br from-[#13224F] to-[#13224F] border border-[#1A2758] `}
           >
             <Image
-              src="/experties/icon3.svg"
+              src={icon3}
               className="w-[40px] md:w-[44px]"
               width="44"
               height="44"
@@ -105,11 +116,13 @@ const ExpertiseSlide = () => {
 
         <div className="hidden md:grid md:col-span-4 lg:col-span-5 ">
         <Image
-                  className="rounded-[18px]"
-                  src="/experties/ai.png"
+                  className="rounded-[18px]" 
+                  src={rl}
+                  blurDataURL={blurDataURL}
                   width="470"
+                  
                   height="244"
-                  alt="consultation"
+                  alt="Reinforcement Learning"
                 />
         </div>
         {/*Reinforcement Learning */}
@@ -118,7 +131,7 @@ const ExpertiseSlide = () => {
             className={`w-[65px] h-[65px] md:w-[77px] md:h-[77px] rounded-full flex items-center justify-center bg-gradient-to-br from-[#13224F] to-[#13224F] border border-[#1A2758] `}
           >
             <Image
-              src="/experties/icon1.svg"
+              src={icon1}
               className="w-[40px] md:w-[44px]"
               width="44"
               height="44"
@@ -154,10 +167,12 @@ const ExpertiseSlide = () => {
         {/* slide - 4 */}
         <div className="hidden md:grid md:col-span-4 lg:col-span-5 ">
         <Image
-                  src="/experties/ds.png"
+                  src={ds}
                   width="470"
                   height="244"
-                  alt="consultation"
+                  alt="Data Science"
+                   
+                  placeholder="blur"
                   className="rounded-[18px]"
                 />
         </div>
@@ -167,7 +182,7 @@ const ExpertiseSlide = () => {
             className={`w-[65px] h-[65px] md:w-[77px] md:h-[77px] rounded-full flex items-center justify-center bg-gradient-to-br from-[#13224F] to-[#13224F] border border-[#1A2758] `}
           >
             <Image
-              src="/experties/icon4.svg"
+              src={icon4}
               className="w-[40px] md:w-[44px]"
               width="44"
               height="44"

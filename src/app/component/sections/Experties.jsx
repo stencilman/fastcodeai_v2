@@ -2,6 +2,14 @@
 import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 import React, { useState, useEffect, useRef } from "react";
+import ml from "../../../../public/experties/ml.png";
+import rl from "../../../../public/experties/rl.png";
+import ds from "../../../../public/experties/ds.png";
+import cv from "../../../../public/experties/cv.png";
+import icon1 from "../../../../public/experties/icon1.svg";
+import icon2 from "../../../../public/experties/icon2.svg";
+import icon3 from "../../../../public/experties/icon3.svg";
+import icon4 from "../../../../public/experties/icon4.svg";
 
 const Experties = () => {
   const [activeMain, setActiveMain] = useState(null);
@@ -67,7 +75,7 @@ const Experties = () => {
           >
             <span className="block relative z-10">
               <Image
-                src="/experties/icon2.svg"
+                src={icon2}
                 className="w-[30px] md:w-[44px]"
                 width="44"
                 height="44"
@@ -99,7 +107,7 @@ const Experties = () => {
           >
             <span className="block relative z-10">
               <Image
-                src="/experties/icon3.svg"
+                src={icon3}
                 className="w-[30px] md:w-[44px]"
                 width="44"
                 height="44"
@@ -131,7 +139,7 @@ const Experties = () => {
           >
             <span className="block relative z-10">
               <Image
-                src="/experties/icon1.svg"
+                src={icon1}
                 className="w-[30px] md:w-[44px]"
                 width="44"
                 height="44"
@@ -163,7 +171,7 @@ const Experties = () => {
           >
             <span className="block relative z-10">
               <Image
-                src="/experties/icon4.svg"
+                src={icon4}
                 className="w-[30px] md:w-[44px]"
                 width="44"
                 height="44"
@@ -205,10 +213,11 @@ const Experties = () => {
               </div>
               <div>
                 <Image
-                  src="/experties/computer_vesion.png"
+                  src={cv}
+                  placeholder="blur"
                   width="470"
                   height="244"
-                  alt="consultation"
+                  alt="Computer Vision"
                   className="rounded-[18px]"
                 />
               </div>
@@ -235,10 +244,11 @@ const Experties = () => {
               </div>
               <div>
                 <Image
-                  src="/experties/consultation2.png"
+                  placeholder="blur"
+                  src={ml}
                   width="470"
                   height="244"
-                  alt="consultation"
+                  alt="Machine Learning"
                   className="rounded-[18px]"
                 />
               </div>
@@ -265,10 +275,11 @@ const Experties = () => {
               <div>
                 <Image
                   className="rounded-[18px]"
-                  src="/experties/ai.png"
+                  placeholder="blur"
+                  src={rl}
                   width="470"
                   height="244"
-                  alt="consultation"
+                  alt="Reinforcement Learning"
                 />
               </div>
             </div>
@@ -292,10 +303,11 @@ const Experties = () => {
               </div>
               <div>
                 <Image
-                  src="/experties/ds.png"
+                  placeholder="blur"
+                  src={ds}
                   width="470"
                   height="244"
-                  alt="consultation"
+                  alt="Data Science"
                   className="rounded-[18px]"
                 />
               </div>
