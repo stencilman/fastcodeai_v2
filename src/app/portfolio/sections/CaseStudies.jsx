@@ -131,15 +131,16 @@ const CaseStudies = () => {
           return (
             <div
               key={i}
-              className={`p-[0] border border-[#082373] lg:px-[35px] lg:pt-[0px] lg:pb-[40px] w-full h-[auto] sm:h-[434px] lg:h-[410px] ${e.img} rounded-[20px] bg-cover bg-no-repeat`}
+              className={`p-[0] border border-[#082373] lg:px-[35px] lg:pt-[0px] lg:pb-[40px] w-full h-[auto] sm:h-[434px] lg:h-[410px] ${e.img} rounded-[20px] bg-cover bg-no-repeat relative`}
               style={{ maxWidth: "1099px" }}
             >
+              <div className="absolute inset-0 bg-[#05122da6] rounded-[10px]"></div>
               <div className="w-full h-full flex justify-between flex-col lg:flex-row p-[15px] sm:p-[21px] lg:pb-[0px]">
                 <div className="h-full w-full lg:w-[50%] flex flex-col gap-[4vw] md:gap-[2vw] lg:gap-[15px] justify-normal lg:justify-evenly ">
-                  <h5 className="text-white font-aeonik font-light tracking-normal text-[30px]">
+                  <h5 className="text-white font-aeonik font-light tracking-normal text-[30px] relative z-10">
                     {e.title}
                   </h5>
-                  <p className="text-[#9EB3CF] font-bwmss01 text-lg ">
+                  <p className="text-[#9EB3CF] font-bwmss01 text-lg  relative z-10">
                     {e.description}
                   </p>
                   <div className="w-[164px]">
