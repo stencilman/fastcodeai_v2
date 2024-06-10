@@ -52,7 +52,7 @@ export const metadata = {
   title: "Fast Code AI",
   description: "Fast Code AI - Accelerating Innovation",
   icons: {
-    icon : '../../public/fcai.ico'
+    icon : '../../public/f_logo1.png'
   }
 };
 
