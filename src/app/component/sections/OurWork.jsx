@@ -15,7 +15,7 @@ const slides = [
     title: "Federated Learning on the Edge",
     content:
       "Accurate, low footprint detection with vulnerable roadside users (VRUs) and road signs covered in the Automotive Tier 1 autonomous driving initiative.",
-    image: "/our-work/fl.webp",
+    image: "/potfolio/fedLearning/img1-2.png",
     url: "/portfolio/federated-learning",
   },
   {
@@ -29,7 +29,7 @@ const slides = [
     title: "Fitness Pose Estimation",
     content:
       "Empowering exercise perfection with AI-driven real-time pose estimation, delivering interactive visual feedback to ensure correct posture and optimize exercise routines.",
-    image: "/our-work/fitness.webp",
+    image: "/potfolio/fitness/img1-2.png",
     url: "/portfolio/fitness-pose-estimation",
   },
   {
@@ -43,7 +43,7 @@ const slides = [
     title: "Indian Fashion insight Framework ",
     content:
       "Pioneering deep learning in fashion with a custom Indian dataset for advanced trend forecasting and targeted consumer insights",
-    image: "/our-work/fashion.webp",
+    image: "/our-work/fashion.png",
     url: "/portfolio/fashion-framework",
   },
 

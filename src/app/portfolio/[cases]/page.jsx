@@ -53,7 +53,7 @@ const Cases = ({ params }) => {
           "Revolutionizing privacy and efficiency in data processing with Federated Learning (FL) on edge devices, enabling real-time, secure analytics in several key sectors.",
         industry: " Automotive OEM",
         year: "2023",
-        heroImg: "/our-work/fl.webp",
+        heroImg: "/potfolio/fedLearning/img1-2.png",
       },
     ],
 
@@ -102,7 +102,7 @@ const Cases = ({ params }) => {
           "Pioneering deep learning in fashion with a custom Indian dataset for advanced trend forecasting and targeted consumer insights.",
         industry: "Fashion Retail",
         year: "2022",
-        heroImg: "/our-work/fashion.webp",
+        heroImg: "/our-work/fashion.png",
       },
     ],
 
