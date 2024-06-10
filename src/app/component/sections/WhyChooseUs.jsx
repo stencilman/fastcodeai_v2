@@ -3,6 +3,9 @@ import Lottie from "lottie-react";
 import React from "react";
 import chooseUS from "../../../../public/animations/chooseUS.json";
 import Image from "next/image";
+import icon1 from "../../../../public/whychooseus/icon1.svg";
+import icon2 from "../../../../public/whychooseus/icon2.svg";
+import icon3 from "../../../../public/whychooseus/icon3.svg";
 
 const WhyChooseUs = () => {
   return (
@@ -32,7 +35,8 @@ const WhyChooseUs = () => {
             <div className="flex w-full gap-[25px] lg:gap-0 items-center lg:justify-center">
               <Image
                 className="w-[45px] md:w-[60px] lg:w-[70px] relative top-0 lg:top-[-20px]"
-                src="/whychooseus/icon1.svg"
+                src={icon1}
+           
                 width="40"
                 height="55"
                 alt="icon"
@@ -59,7 +63,8 @@ const WhyChooseUs = () => {
             <div className="flex w-full gap-[25px] lg:gap-0 items-center lg:justify-center">
               <Image
                 className="w-[45px] md:w-[60px] lg:w-[70px] relative top-0 lg:top-[-20px]"
-                src="/whychooseus/icon2.svg"
+                src={icon2}
+          
                 width="40"
                 height="55"
                 alt="icon"
@@ -86,7 +91,8 @@ const WhyChooseUs = () => {
             <div className="flex w-full gap-[25px] lg:gap-0 items-center lg:justify-center">
               <Image
                 className="w-[45px] md:w-[60px] lg:w-[70px] relative top-0 lg:top-[-20px]"
-                src="/whychooseus/icon3.svg"
+                src={icon3}
+               
                 width="40"
                 height="55"
                 alt="icon"

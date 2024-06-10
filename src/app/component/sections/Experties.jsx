@@ -2,10 +2,10 @@
 import { AnimatePresence, motion } from "framer-motion";
 import Image from "next/image";
 import React, { useState, useEffect, useRef } from "react";
-import ml from "../../../../public/experties/ml.png";
-import rl from "../../../../public/experties/rl.png";
-import ds from "../../../../public/experties/ds.png";
-import cv from "../../../../public/experties/cv.png";
+import ml from "../../../../public/experties/ml.webp";
+import rl from "../../../../public/experties/rl.webp";
+import ds from "../../../../public/experties/ds.webp";
+import cv from "../../../../public/experties/cv.webp";
 import icon1 from "../../../../public/experties/icon1.svg";
 import icon2 from "../../../../public/experties/icon2.svg";
 import icon3 from "../../../../public/experties/icon3.svg";

@@ -16,7 +16,7 @@ const Industries = () => {
       </div>
       <div className="flex flex-wrap pt-[64px] lg:pt-[120px] gap-[24px] lg:gap-[75px] justify-center">
       <div
-          className=" w-[172px] h-[182px] rounded-[18px] flex flex-col items-center justify-center gap-[42px] "
+          className=" w-[124px] h-[160px] sm:w-[172px] sm:h-[182px] rounded-[18px] flex flex-col items-center justify-center gap-[42px] "
           style={{
             background:
               "transparent linear-gradient(360deg, #13224F 0%, #13224F 0%, #0C1C46 51%, #020F3B 100%) 0% 0% no-repeat padding-box",
@@ -26,7 +26,7 @@ const Industries = () => {
           <p className="text-white text-[19px] font-aeonik ">Automotive</p>
         </div>
       <div
-          className=" w-[172px] h-[182px] rounded-[18px] flex flex-col items-center justify-center gap-[42px] "
+          className=" w-[124px] h-[160px] sm:w-[172px] sm:h-[182px] rounded-[18px] flex flex-col items-center justify-center gap-[42px] "
           style={{
             background:
               "transparent linear-gradient(360deg, #13224F 0%, #13224F 0%, #0C1C46 51%, #020F3B 100%) 0% 0% no-repeat padding-box",
@@ -37,7 +37,7 @@ const Industries = () => {
         </div>
        
         <div
-          className="shadow-lg border border-[#1A2758] w-[172px] h-[182px] rounded-[18px] flex flex-col items-center justify-center gap-[42px] "
+          className="shadow-lg border border-[#1A2758] w-[124px] h-[160px] sm:w-[172px] sm:h-[182px] rounded-[18px] flex flex-col items-center justify-center gap-[42px] "
           style={{
             background:
               "transparent linear-gradient(360deg, #13224F 0%, #13224F 0%, #0C1C46 51%, #020F3B 100%) 0% 0% no-repeat padding-box",
@@ -47,7 +47,7 @@ const Industries = () => {
           <p className="text-white text-[19px] font-aeonik">Finance</p>
         </div>
         <div
-          className="shadow-lg border border-[#1A2758]  w-[172px] h-[182px] rounded-[18px] flex flex-col items-center justify-center gap-[42px] "
+          className="shadow-lg border border-[#1A2758]  w-[124px] h-[160px] sm:w-[172px] sm:h-[182px] rounded-[18px] flex flex-col items-center justify-center gap-[42px] "
           style={{
             background:
               "transparent linear-gradient(360deg, #13224F 0%, #13224F 0%, #0C1C46 51%, #020F3B 100%) 0% 0% no-repeat padding-box",
@@ -57,7 +57,7 @@ const Industries = () => {
           <p className="text-white text-[19px] font-aeonik">Gaming</p>
         </div>
         <div
-          className="shadow-lg border border-[#1A2758]  w-[172px] h-[182px] rounded-[18px] flex flex-col items-center justify-center gap-[42px] "
+          className="shadow-lg border border-[#1A2758]  w-[124px] h-[160px] sm:w-[172px] sm:h-[182px] rounded-[18px] flex flex-col items-center justify-center gap-[42px] "
           style={{
             background:
               "transparent linear-gradient(360deg, #13224F 0%, #13224F 0%, #0C1C46 51%, #020F3B 100%) 0% 0% no-repeat padding-box",
@@ -67,7 +67,7 @@ const Industries = () => {
           <p className="text-white text-[19px] font-aeonik">Retail</p>
         </div>
         <div
-          className="shadow-lg border border-[#1A2758]  w-[172px] h-[182px] rounded-[18px] flex flex-col items-center justify-center gap-[42px] "
+          className="shadow-lg border border-[#1A2758]  w-[124px] h-[160px] sm:w-[172px] sm:h-[182px] rounded-[18px] flex flex-col items-center justify-center gap-[42px] "
           style={{
             background:
               "transparent linear-gradient(360deg, #13224F 0%, #13224F 0%, #0C1C46 51%, #020F3B 100%) 0% 0% no-repeat padding-box",

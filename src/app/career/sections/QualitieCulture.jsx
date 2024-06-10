@@ -6,8 +6,8 @@ const QualitieCulture = () => {
     { img: "/career/qualitiesIcons/icon1.svg", name: "Intelligence" },
     { img: "/career/qualitiesIcons/icon2.svg", name: "Curiosity" },
     { img: "/career/qualitiesIcons/icon3.svg", name: "Experience" },
-    { img: "/career/qualitiesIcons/icon4.svg", name: "Diversity" },
-    { img: "/career/qualitiesIcons/icon5.svg", name: "Challenge" },
+    { img: "/career/qualitiesIcons/icon4.svg", name: "Excellence" },
+    { img: "/career/qualitiesIcons/icon5.svg", name: "Integrity" },
   ];
 
   return (

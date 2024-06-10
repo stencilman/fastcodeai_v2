@@ -3,95 +3,117 @@ import Button from "@/app/component/Button";
 import { motion } from "framer-motion";
 import { useState } from "react";
 
-const CaseStudies = () => {
-  const tabs = ["All", "Category 1", "Category 2", "Category 3"];
-  const [selected, setSelected] = useState(tabs[0]);
+const list = [
+  {
+    category: "Automotive",
+    img: "bg-gesrec",
+    title: "Gesture Recognition based User Experience",
+    description:
+      "Enhance interaction between driver and car by detecting driver hand gesture for superior level driver experience with Automotive OEM.",
+    to: "/portfolio/auto-oem",
+  },
+  {
+    category: "Automotive",
+    img: "bg-vrups",
+    title: "Vulnerable Roadside User Protection System",
+    description:
+      "Accurate, low footprint detection with vulnerable roadside users (VRUs) and road signs covered in the Automotive Tier 1 autonomous driving initiative.",
+    to: "/portfolio/vrups",
+  },
+  {
+    category: "Automotive",
+    img: "bg-learning",
+    title: "Federated Learning on the Edge ",
+    description:
+      "Revolutionizing privacy and efficiency in data processing with Federated Learning (FL) on edge devices, enabling real-time, secure analytics in several key sectors.",
+    to: "/portfolio/federated-learning",
+  },
+  {
+    category: "Healthcare",
+    img: "bg-fitness",
+    title: "Fitness Pose Estimation",
+    description:
+      "Empowering exercise perfection with AI-driven real-time pose estimation, providing interactive visual feedback for correct posture and effective workouts.",
+    to: "/portfolio/fitness-pose-estimation",
+  },
+  {
+    category: "Retail",
+    img: "bg-dataQuery",
+    title: "Data Query Assitant",
+    description:
+      "Transforming data access with a natural language interface that converts queries into SQL, simplifying database interaction.",
+    to: "/portfolio/sqlwizard",
+  },
+  // {
+  //   img: "bg-lonelyAssist",
+  //   title: "Loneliness Assistant",
+  //   description:
+  //     "Personalised assistant designed to empthatize with humans and serves as a close companion by engaging in an emotionally deep manner.",
+  //   to: "/portfolio/loneliness-assistant",
+  // },
+  {
+    category: "Retail",
+    img: "bg-fashion",
+    title: "Indian Fashion insight Framework",
+    description:
+      "Pioneering deep learning in fashion with a custom Indian dataset for advanced trend forecasting and targeted consumer insights.",
+    to: "/portfolio/fashion-framework",
+  },
+  {
+    category: "Finance",
+    img: "bg-bankMont",
+    title: "AI Banking Infrastructure Monitoring",
+    description:
+      "Enhancing banking with AI: Advanced data analytics for customer insights and predictive modeling, streamlined with efficient application monitoring.",
+    to: "/portfolio/banking-infra",
+  },
+  {
+    category: "Healthcare",
+    img: "bg-rag",
+    title: "Secure Smart Journal",
+    description:
+      "Smart, diary-like system that effortlessly organizes and retrieves your daily activities and information with cutting-edge Retrieval-Augmented Generation techniques.",
+    to: "/portfolio/rag",
+  },
+  {
+    category: "Healthcare",
+    img: "bg-dermo",
+    title: "AI-Assisted Skin Cancer Detection",
+    description:
+      "Enhancing skin cancer by diagnosing user’s skin images on their mobile phones, improving dermatological care's accuracy, accessibility, and efficiency.",
+    to: "/portfolio/skin-cancer-detection",
+  },
+  {
+    category: "Oil & Gas",
+    img: "bg-automto",
+    title: " AutoMTO: Revolutionizing Material Takeoff in Oil & Gas EPCC",
+    description:
+      "Deploying AI to swiftly convert Process and Instrumentation Diagrams (P&IDs) in the Oil & Gas EPCC sector into accurate, digital Material Takeoff Orders, significantly boosting productivity and reducing costs.",
+    to: "/portfolio/auto-mto",
+  },
+  {
+    category: "Finance",
+    img: "bg-bnk",
+    title: "AI Banking Insights",
+    description:
+      "Transforming banking datasets into actionable insights enhances customer segmentation, predictive forecasting, and strategic decision-making in the fintech industry.",
+    to: "/portfolio/banking-insights",
+  },
+];
 
-  const porfolioList = [
-    {
-      img: "bg-gesrec",
-      title: "Gesture Recognition based User Experience",
-      description:
-        "Enhance interaction between driver and car by detecting driver hand gesture for superior level driver experience with Automotive OEM.",
-      to: "/portfolio/auto-oem",
-    },
-    {
-      img: "bg-vrups",
-      title: "Vulnerable Roadside User Protection System",
-      description:"Accurate, low footprint detection with vulnerable roadside users (VRUs) and road signs covered in the Automotive Tier 1 autonomous driving initiative.",
-      to: "/portfolio/vrups",
-    },
-    {
-      img: "bg-learning",
-      title: "Federated Learning on the Edge ",
-      description:
-        "Revolutionizing privacy and efficiency in data processing with Federated Learning (FL) on edge devices, enabling real-time, secure analytics in several key sectors.",
-      to: "/portfolio/federated-learning",
-    },
-    {
-      img: "bg-fitness",
-      title: "Fitness Pose Estimation",
-      description:
-        "Empowering exercise perfection with AI-driven real-time pose estimation, providing interactive visual feedback for correct posture and effective workouts.",
-      to: "/portfolio/fitness-pose-estimation",
-    },
-    {
-      img: "bg-dataQuery",
-      title: "Data Query Assitant",
-      description:
-        "Transforming data access with a natural language interface that converts queries into SQL, simplifying database interaction.",
-      to: "/portfolio/sqlwizard",
-    },
-    // {
-    //   img: "bg-lonelyAssist",
-    //   title: "Loneliness Assistant",
-    //   description:
-    //     "Personalised assistant designed to empthatize with humans and serves as a close companion by engaging in an emotionally deep manner.",
-    //   to: "/portfolio/loneliness-assistant",
-    // },
-    {
-      img: "bg-fashion",
-      title: "Indian Fashion insight Framework",
-      description:
-        "Pioneering deep learning in fashion with a custom Indian dataset for advanced trend forecasting and targeted consumer insights.",
-      to: "/portfolio/fashion-framework",
-    },
-    {
-      img: "bg-bankMont",
-      title: "AI Banking Infrastructure Monitoring",
-      description:
-        "Enhancing banking with AI: Advanced data analytics for customer insights and predictive modeling, streamlined with efficient application monitoring.",
-      to: "/portfolio/banking-infra",
-    },
-    {
-      img: "bg-rag",
-      title: "Secure Smart Journal",
-      description:
-        "Smart, diary-like system that effortlessly organizes and retrieves your daily activities and information with cutting-edge Retrieval-Augmented Generation techniques.",
-      to: "/portfolio/rag",
-    },
-    {
-      img: "bg-dermo",
-      title: "AI-Assisted Skin Cancer Detection",
-      description:
-        "Enhancing skin cancer by diagnosing user’s skin images on their mobile phones, improving dermatological care's accuracy, accessibility, and efficiency.",
-      to: "/portfolio/skin-cancer-detection",
-    },
-    {
-      img: "bg-automto",
-      title: " AutoMTO: Revolutionizing Material Takeoff in Oil & Gas EPCC",
-      description:
-        "Deploying AI to swiftly convert Process and Instrumentation Diagrams (P&IDs) in the Oil & Gas EPCC sector into accurate, digital Material Takeoff Orders, significantly boosting productivity and reducing costs.",
-      to: "/portfolio/auto-mto",
-    },
-     {
-      img: "bg-bnk",
-      title: "AI Banking Insights",
-      description:
-        "Transforming banking datasets into actionable insights enhances customer segmentation, predictive forecasting, and strategic decision-making in the fintech industry.",
-      to: "/portfolio/banking-insights",
-    },
+const CaseStudies = () => {
+  const tabs = [
+    "All",
+    "Automotive",
+    "Healthcare",
+    "Finance",
+    "Retail",
+    "Oil & Gas",
   ];
+  const [selected, setSelected] = useState(tabs[0]);
+  const [portfolioList, setPortfolioList] = useState(list);
+
+  console.log("selected", selected);
 
   return (
     <div
@@ -99,14 +121,20 @@ const CaseStudies = () => {
     "
     >
       {/* Shadows */}
-      <div className="absolute left-[7%] top-[-7%]  w-[20%] h-[17%] blur-[50px] translate-y-[167px] scale-90  rounded-[50%] z-[3] bg-gradient-to-br from-[#1D8283] to-[#033577] bg-gradient-156deg bg-no-repeat bg-[0% 0%] opacity-49 border-0 border-opacity-0 filter blur-[100px]"></div>
+      <div className="absolute left-[7%] top-[0%]  w-[20%] h-[17%] blur-[50px] translate-y-[167px] scale-90  rounded-[50%] z-[3] bg-gradient-to-br from-[#1D8283] to-[#033577] bg-gradient-156deg bg-no-repeat bg-[0% 0%] opacity-49 border-0 border-opacity-0 filter blur-[100px]"></div>
       <div className="absolute left-[70%] top-[46%]  w-[27%] h-[17%] blur-[50px] translate-y-[167px] scale-90  rounded-[50%] z-[3] bg-gradient-to-br from-[#1D8283] to-[#033577] bg-gradient-156deg bg-no-repeat bg-[0% 0%] opacity-49 border-0 border-opacity-0 filter blur-[100px]"></div>
       {/* catagories */}
       <div className="flex gap-[12px] md:gap-[35px] items-center justify-center flex-wrap mt-[40px] md:mt-[70px] ">
         {tabs.map((tab) => (
           <button
             key={tab}
-            onClick={() => setSelected(tab)}
+            onClick={() => {
+              setSelected(tab);
+              if (tab === "All") return setPortfolioList(list);
+              const newList = list.filter((e) => e.category === tab);
+              setPortfolioList(newList);
+              console.log("portfolioList", portfolioList);
+            }}
             className={`min-w-[144px] ${
               selected === tab
                 ? "text-white "
@@ -127,7 +155,7 @@ const CaseStudies = () => {
       </div>
 
       <div className="w-full my-[70px] px-[20px] md:px-[50px] lg:px-[100px] flex flex-col gap-[40px] items-center relative z-[5]">
-        {porfolioList.map((e, i) => {
+        {portfolioList.map((e, i) => {
           return (
             <div
               key={i}
@@ -136,7 +164,7 @@ const CaseStudies = () => {
             >
               <div className="absolute inset-0 bg-[#05122da6] rounded-[18px]"></div>
               <div className="w-full h-full flex justify-between flex-col lg:flex-row p-[15px] sm:p-[21px] lg:pb-[0px]">
-                <div className="h-full w-full lg:w-[50%] flex flex-col gap-[4vw] md:gap-[2vw] lg:gap-[15px] justify-normal lg:justify-evenly ">
+                <div className="h-full w-full lg:w-[50%] flex flex-col gap-[4vw] md:gap-[2vw] lg:gap-[30px] justify-normal lg:justify-evenly ">
                   <h5 className="text-white font-aeonik font-light tracking-normal text-[30px] relative z-10">
                     {e.title}
                   </h5>
