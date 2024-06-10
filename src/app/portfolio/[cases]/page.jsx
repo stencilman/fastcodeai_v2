@@ -151,7 +151,7 @@ const Cases = ({ params }) => {
           "Deploying AI to swiftly convert Process and Instrumentation Diagrams (P&IDs) in the Oil & Gas EPCC sector into accurate, digital Material Takeoff Orders, significantly boosting productivity and reducing costs.",
         industry: "Oil & Gas",
         year: "2019",
-        heroImg: "/our-work/automto.webp",
+        heroImg: "/our-work/automto.png",
       },
     ],
 
