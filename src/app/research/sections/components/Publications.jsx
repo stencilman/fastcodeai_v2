@@ -196,7 +196,7 @@ const Publications = () => {
       year: "2016",
       desciption:
         "A. Elhayek, E. Aguiar, A. Jain, J. Tompson, L. Pishchulin, M. Andriluka, C. Bregler, B. Schiele and C.Theobalt, “MARCOnI – ConvNet-based MARker-less Motion Capture in Outdoor and Indoor Scenes” in IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI 2016), 2016.",
-      linkName: "View Source",
+      linkName: "Link",
       linkTo: "https://dl.acm.org/doi/10.1109/TPAMI.2016.2557779",
       downloadName: "Download PDF",
       downloadTo: "",
@@ -264,7 +264,7 @@ const Publications = () => {
       year: "2014",
       desciption:
         "A. Jain, J. Tompson, Y. LeCun, C. Bregler, “Modeep: A Deep Learning Framework Using Motion Features for Human Pose Estimation” in proceedings of Asian Conference on Computer Vision (ACCV 2014), Singapore, November 2014.",
-      linkName: "Data",
+      linkName: "Link",
       linkTo: "http://arjunjain.co.in/accv2014/",
       downloadName: "Download PDF",
       downloadTo: "http://arxiv.org/pdf/1409.7963v1.pdf",
