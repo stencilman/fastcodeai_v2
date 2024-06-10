@@ -184,7 +184,7 @@ const Publications = () => {
       desciption:
         "R. Mitra, J. Zhang, S. Narayan, S. Ahmed, S. Chandran, A. Jain, “Improved Descriptors for Patch Matching and Reconstruction” in proceedings of ICCV Workshop on Compact and Efficient Feature Representation and Learning (CEFRL) (ICCV Workshop 2017), Venice, October 2017.",
       linkName: "Link",
-      linkTo: "",
+      linkTo: "https://openaccess.thecvf.com/content_ICCV_2017_workshops/w18/html/Mitra_Improved_Descriptors_for_ICCV_2017_paper.html",
       downloadName: "Download PDF",
       downloadTo: "",
       extraName: "Code",
@@ -210,7 +210,7 @@ const Publications = () => {
       desciption:
         "Theano Development Team, “Theano: A Python framework for fast computation of mathematical expressions” in (arXiv e-prints), 2016.",
       linkName: "Link",
-      linkTo: "",
+      linkTo: "https://arxiv.org/abs/1605.02688",
       downloadName: "Download PDF",
       downloadTo: "http://arxiv.org/pdf/1605.02688.pdf",
       extraName: "Code",
@@ -236,7 +236,7 @@ const Publications = () => {
       year: "2015",
       desciption:
         "A. Elhayek, E. Aguiar, A. Jain, J. Tompson, L. Pishchulin, M. Andriluka, C. Bregler, B. Schiele C. Theobalt, “Efficient ConvNet-based Marker-less Motion Capture in General Scenes with a Low Number of Cameras”, in proceedings of Conference on Computer Vision and Pattern Recognition (CVPR 2015), Boston, June 2015.",
-      linkName: "Website",
+      linkName: "Link",
       linkTo: "http://gvv.mpi-inf.mpg.de/projects/convNet_moCap/",
       downloadName: "Download PDF",
       downloadTo:
@@ -251,8 +251,8 @@ const Publications = () => {
       year: "2015",
       desciption:
         "J. Tompson, R. Goroshin, A. Jain, Y. LeCun, C. Bregler, “Efficient Object Localization Using Convolutional Networks”, in proceedings of Conference on Computer Vision and Pattern Recognition (CVPR 2015), Boston, June 2015.",
-      linkName: "Website",
-      linkTo: "",
+      linkName: "Link",
+      linkTo: "https://arxiv.org/abs/1411.4280",
       downloadName: "Download PDF",
       downloadTo: "http://arxiv.org/pdf/1411.4280.pdf",
       extraName: "Video",
@@ -303,7 +303,7 @@ const Publications = () => {
       year: "2012",
       desciption:
         "A. Jain, T. Thormählen, T. Ritschel, and H.-P. Seidel, “Material Memex: Automatic Material Suggestions for 3D Objects” in ACM Transactions on Graphics (TOG), ACM SIGGRAPH Asia 2012 papers (SIGGRAPH Asia 2012), Singapore, December 2012.",
-      linkName: "Website",
+      linkName: "Link",
       linkTo: "http://www.mpi-inf.mpg.de/resources/MaterialMemex/",
       downloadName: "Download PDF",
       downloadTo:
@@ -317,7 +317,7 @@ const Publications = () => {
       year: "2012",
       desciption:
         "L. Pishchulin, A. Jain, M. Andriluka, T. Thormählen and B. Schiele, “Articulated People Detection and Pose Estimation: Reshaping the Future” in IEEE Computer Society Conference on Computer Vision and Pattern Recognition (CVPR 2012), Rhode Island, USA, 2012.",
-      linkName: "Website",
+      linkName: "Link",
       linkTo: "http://www.d2.mpi-inf.mpg.de/articulated-data",
       downloadName: "Download PDF",
       downloadTo:
@@ -331,7 +331,7 @@ const Publications = () => {
       year: "2012",
       desciption:
         "A. Jain, T. Thormählen, T. Ritschel, H.-P. Seidel, Exploring Shape Variations by 3D-Model Decomposition and Part-based Recombination, Comput. Graph. Forum, Volume 31, Issue 2, (Eurographics 2012), Cagliari, Italy, (2012).",
-      linkName: "Website",
+      linkName: "Link",
       linkTo: "http://www.mpi-inf.mpg.de/resources/3DModelRecombination/",
       downloadName: "Download PDF",
       downloadTo:
@@ -345,7 +345,7 @@ const Publications = () => {
       year: "2011",
       desciption:
         "L. Pishchulin, A. Jain, C. Wojek, T. Thormählen and B. Schiele, In Good Shape: Robust People Detection based on Appearance and Shape in 22nd British Machine Vision Conference (BMVC 2011), Dundee, UK, (2011) (Oral).",
-      linkName: "Website",
+      linkName: "Link",
       linkTo: "http://www.d2.mpi-inf.mpg.de/content/shape4data",
       downloadName: "Download PDF",
       downloadTo: "http://www.mpi-inf.mpg.de/~thormae/paper/BMVC11.pdf",
@@ -358,7 +358,7 @@ const Publications = () => {
       year: "2011",
       desciption:
         "L. Pishchulin, A. Jain, C.Wojek, M. Andriluka, T. Thormählen, and B. Schiele, Learning people detection models from few training samples in proceedings of Computer Vision and Pattern Recognition (CVPR 2011), Colorado Springs, USA, 2011.",
-      linkName: "Website",
+      linkName: "Link",
       linkTo: "http://www.d2.mpi-inf.mpg.de/content/shape4data",
       downloadName: "Download PDF",
       downloadTo:
@@ -372,7 +372,7 @@ const Publications = () => {
       year: "2010",
       desciption:
         "A. Jain, T. Thormählen, H.-P. Seidel, and C. Theobalt, “MovieReshape: Tracking and Reshaping of Humans in Videos” in ACM Transactions on Graphics (TOG), ACM SIGGRAPH Asia 2010 papers, Volume 29, Issue 5 (SIGGRAPH Asia 2010), Seoul, South Korea, December 2010.",
-      linkName: "Website",
+      linkName: "Link",
       linkTo: "http://www.mpi-inf.mpg.de/resources/MovieReshape/",
       downloadName: "Download PDF",
       downloadTo: "http://www.mpi-inf.mpg.de/~thormae/paper/SiggraphAsia10.pdf",
@@ -386,7 +386,7 @@ const Publications = () => {
       year: "2010",
       desciption:
         "A. Jain, C. Kurz, T. Thormählen, H.-P. Seidel, “Exploiting Global Connectivity Constraints for Reconstruction of 3D Line Segment from Images” in IEEE Computer Society Conference on Computer Vision and Pattern Recognition (CVPR 2010), San Francisco, California, June 2010.",
-      linkName: "Website",
+      linkName: "Link",
       linkTo: "http://www.mpi-inf.mpg.de/resources/LineReconstruction/",
       downloadName: "Download PDF",
       downloadTo:
@@ -400,7 +400,7 @@ const Publications = () => {
       year: "2008",
       desciption:
         "L. Ballan, M. Bertini, A. Del Bimbo, and A. Jain (alphabatical order), “Automatic Trademark Detection and Recognition in Sport Videos,” in Proc. of IEEE Int.l Conference on Multimedia & Expo (ICME 2008) , Hannover, Germany, 2008.",
-      linkName: "Website",
+      linkName: "Link",
       linkTo: "http://www.lambertoballan.net/research/trademarks/",
       downloadName: "Download PDF",
       downloadTo:
@@ -414,7 +414,7 @@ const Publications = () => {
       year: "2008",
       desciption:
         "L. Ballan, M. Bertini, and A. Jain (alphabatical order), “A System for Automatic Detection and Recognition of Advertising Trademarks in Sports Videos,” in Proc. of ACM Int.l Conference on Multimedia (MM 2008), Vancouver, BC, Canada, 2008.",
-      linkName: "Website",
+      linkName: "Link",
       linkTo: "",
       downloadName: "Download PDF",
       downloadTo:
