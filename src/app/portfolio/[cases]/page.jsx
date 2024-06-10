@@ -127,7 +127,7 @@ const Cases = ({ params }) => {
           "Smart, diary-like system that effortlessly organizes and retrieves your daily activities and information with cutting-edge Retrieval-Augmented Generation techniques.",
         industry: "Technology",
         year: "2024",
-        heroImg: "/our-work/rag_weave.webp",
+        heroImg: "/our-work/rag_weave.jpg",
       },
     ],
 

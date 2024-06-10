@@ -39,7 +39,7 @@ module.exports = {
         "lonelyAssist": "url('/our-work/lonely_llm.webp')",
         "fashion": "url('/our-work/fashion.png')",
         "bankMont": "url('/our-work/bankInsMo.png')",
-        "rag": "url('/our-work/rag_weave.webp')",
+        "rag": "url('/our-work/rag_weave.jpg')",
         "dermo": "url('/our-work/dermos.jpeg')",
         "automto": "url('/our-work/automto.png')",
         "gesrec": "url('/our-work/gesrec.png')",

@@ -36,7 +36,7 @@ const slides = [
     title: "RAG based Personal Diary",
     content:
       "Smart, diary-like system that effortlessly organizes and retrieves your daily activities and information with cutting-edge Retrieval-Augmented Generation techniques.",
-    image: "/our-work/rag_weave.webp",
+    image: "/our-work/rag_weave.jpg",
     url: "/portfolio/rag",
   },
   {
