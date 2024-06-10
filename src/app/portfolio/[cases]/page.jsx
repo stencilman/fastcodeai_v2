@@ -82,17 +82,17 @@ const Cases = ({ params }) => {
       },
     ],
 
-    "loneliness-assistant": [
-      {
-        // logo: "/potfolio/bosch/hero/logo.png",
-        title: "Loneliness Assistant",
-        description:
-          "Personalised assistant designed to empathize with humans and serves as a close companion by engaging in an emotionally deep manner.",
-        industry: "Healthcare",
-        year: "2024",
-        heroImg: "/our-work/lonely_llm.webp",
-      },
-    ],
+    // "loneliness-assistant": [
+    //   {
+    //     // logo: "/potfolio/bosch/hero/logo.png",
+    //     title: "Loneliness Assistant",
+    //     description:
+    //       "Personalised assistant designed to empathize with humans and serves as a close companion by engaging in an emotionally deep manner.",
+    //     industry: "Healthcare",
+    //     year: "2024",
+    //     heroImg: "/our-work/lonely_llm.webp",
+    //   },
+    // ],
 
     "fashion-framework": [
       {
@@ -466,51 +466,114 @@ const Cases = ({ params }) => {
 
   const solutions = {
     "auto-oem": [
-      `Utilizing our expertise in Computer Vision, we developed a state-of-the-art solution for multimodal human pose estimation using heatmaps. Our efforts focused on embedding this technology into vehicles, effectively bringing onboard intelligence to life. This achievement required a dramatic reduction in the model's size—compressing it by over 25,000 times—without compromising on accuracy.`,
-      `The implementation of this technology has revolutionized how drivers and passengers interact with the vehicle, introducing a more intuitive way to control the car's systems, such as using gestures to navigate menus, close doors, and adjust the rear view mirrors by simply looking in the desired direction.`,
-      ,
+      {
+        detail: [
+          `Utilizing our expertise in Computer Vision, we developed a state-of-the-art solution for multimodal human pose estimation using heatmaps. Our efforts focused on embedding this technology into vehicles, effectively bringing onboard intelligence to life. This achievement required a dramatic reduction in the model's size—compressing it by over 25,000 times—without compromising on accuracy.`,
+          `The implementation of this technology has revolutionized how drivers and passengers interact with the vehicle, introducing a more intuitive way to control the car's systems, such as using gestures to navigate menus, close doors, and adjust the rear view mirrors by simply looking in the desired direction.`,
+        ],
+        images: [
+          "/potfolio/mbenz/solution/img1-2.png",
+          "/potfolio/mbenz/solution/img2-2.png",
+          "/potfolio/mbenz/solution/img3-2.png",
+          "/potfolio/mbenz/solution/img4-2.png",
+        ],
+      },
     ],
 
     vrups: [
-      "We developed a VRU detection and protection system combining radar, ultrasonic sensors, and cameras to enable prompt braking or manoeuvring to avoid pedestrian collisions. Upon initiating evasive action, it activates steering support and alerts drivers within half a second, processing accident scenarios in just 5 milliseconds for maximum safety.",
+      {
+        detail: [
+          "We developed a VRU detection and protection system combining radar, ultrasonic sensors, and cameras to enable prompt braking or manoeuvring to avoid pedestrian collisions. Upon initiating evasive action, it activates steering support and alerts drivers within half a second, processing accident scenarios in just 5 milliseconds for maximum safety.",
+        ],
+        images: [],
+      },
     ],
 
     "federated-learning": [
-      "We developed a customized solution employing Federated Learning that operates within the stringent limitations of automotive edge devices.",
+      {
+        detail: [
+          "We developed a customized solution employing Federated Learning that operates within the stringent limitations of automotive edge devices.",
+        ],
+        images: [],
+      },
     ],
 
     "fitness-pose-estimation": [
-      "The system utilizes machine learning, specifically temporal video analysis, to provide real-time posture corrections. Trained on an extensive dataset collected and annotated in-house, it accurately identifies human anatomical and motion details, enabling precise body landmark tracking and posture adjustments.",
-      "Interactive visual feedback is central to the system, highlighting posture accuracy and enhancing exercise techniques. This approach not only improves unsupervised workouts but also supports therapeutic routines, promoting overall health and wellness with personalized fitness coaching through cutting-edge technology.",
+      {
+        detail: [
+          "The system utilizes machine learning, specifically temporal video analysis, to provide real-time posture corrections. Trained on an extensive dataset collected and annotated in-house, it accurately identifies human anatomical and motion details, enabling precise body landmark tracking and posture adjustments.",
+          "Interactive visual feedback is central to the system, highlighting posture accuracy and enhancing exercise techniques. This approach not only improves unsupervised workouts but also supports therapeutic routines, promoting overall health and wellness with personalized fitness coaching through cutting-edge technology.",
+        ],
+        images: [],
+      },
     ],
 
     sqlwizard: [
-      "We developed a robust system that processes natural language queries and database schemas as input into an LLM, which then generates the corresponding SQL query. This query is executed in the backend to produce the desired result",
+      {
+        detail: [
+          "We developed a robust system that processes natural language queries and database schemas as input into an LLM, which then generates the corresponding SQL query. This query is executed in the backend to produce the desired result",
+        ],
+        images: [],
+      },
     ],
 
     "loneliness-assistant": [
-      "In an era marked by digital pervasiveness, genuine human connection has become a rarity, heightening the sense of loneliness and disconnection among individuals. We have embarked on creating an emotionally intelligent digital assistant designed to mitigate these feelings by providing companionship and empathetic interaction.",
+      {
+        detail: [
+          "In an era marked by digital pervasiveness, genuine human connection has become a rarity, heightening the sense of loneliness and disconnection among individuals. We have embarked on creating an emotionally intelligent digital assistant designed to mitigate these feelings by providing companionship and empathetic interaction.",],
+          images: [],
+      },
     ],
 
     "fashion-framework": [
-      "  We developed a highly accurate detection model tailored for traditional Indian ethnic garments, achieving 99% accuracy in identifying sarees and one-piece outfits. This model is part of a broader high precision, low latency prediction platform that efficiently processes and interprets fashion data. ",
+      {
+        detail: [
+          "  We developed a highly accurate detection model tailored for traditional Indian ethnic garments, achieving 99% accuracy in identifying sarees and one-piece outfits. This model is part of a broader high precision, low latency prediction platform that efficiently processes and interprets fashion data. ",
+        ],
+        images: ["/potfolio/fashion/solution/img1.png"],
+      },
     ],
 
     "banking-infra": [
-      "We developed an AI-powered monitoring solution tailored specifically for the dynamic environment of digital banking. This solution leverages machine learning algorithms to analyse patterns in vast streams of operational data, enabling predictive maintenance rather than reactive measures.",
+      {
+        detail: [
+          "We developed an AI-powered monitoring solution tailored specifically for the dynamic environment of digital banking. This solution leverages machine learning algorithms to analyse patterns in vast streams of operational data, enabling predictive maintenance rather than reactive measures.",
+        ],
+        images: [],
+      },
     ],
 
     rag: [
-      "Our team developed an innovative Retrieval-Augmented Generation system that combines the intuitive ease of a personal diary with the robust capabilities of modern AI. This system transforms traditional journaling, integrating cutting-edge technology to enhance user interaction and data management.",
+      {
+        detail: [
+          "Our team developed an innovative Retrieval-Augmented Generation system that combines the intuitive ease of a personal diary with the robust capabilities of modern AI. This system transforms traditional journaling, integrating cutting-edge technology to enhance user interaction and data management.",
+        ],
+        images: [],
+      },
     ],
     "skin-cancer-detection": [
-      "We harness machine learning to boost the precision, efficiency, and accessibility of dermatological care",
+      {
+        detail: [
+          "We harness machine learning to boost the precision, efficiency, and accessibility of dermatological care",
+        ],
+        images: [],
+      },
     ],
     "auto-mto": [
-      "We collaborated with a top EPCC player in the Oil & Gas sector to develop AutoMTO, a state-of-the-art system achieving 100% accuracy in MTO preparation. By implementing advanced AI techniques, we transformed how MTOs are derived from P&IDs, streamlining operations and significantly reducing man-hours and costs.",
+      {
+        detail: [
+          "We collaborated with a top EPCC player in the Oil & Gas sector to develop AutoMTO, a state-of-the-art system achieving 100% accuracy in MTO preparation. By implementing advanced AI techniques, we transformed how MTOs are derived from P&IDs, streamlining operations and significantly reducing man-hours and costs.",
+        ],
+        images: [],
+      },
     ],
     "banking-insights": [
-      "We applied advanced data analysis to segment customers by account types and transaction volumes and enhance personalized engagement. We used ARIMA models for accurate forecasting of banking activities at both the bank and customer levels.",
+      {
+        detail: [
+          "We applied advanced data analysis to segment customers by account types and transaction volumes and enhance personalized engagement. We used ARIMA models for accurate forecasting of banking activities at both the bank and customer levels.",
+        ],
+        images: [],
+      },
     ],
   };
 
@@ -610,7 +673,10 @@ const Cases = ({ params }) => {
       {
         description: [],
         points: [
-          "The system incorporates a sophisticated multihead deep learning architecture that supports concurrent training on multiple clothing attributes. This architecture uses a custom loss function to enhance model accuracy, effectively reducing the need for multiple models to just one.","A finely-tuned YoloV7 model within the data pre-processing pipeline ensures accurate detection of individuals in various attire types. The model excels in fine-grained attribute classification by incorporating localized attention through on-body key points, resulting in heightened precision in identifying clothing details.","For accessories, we implemented a unified accessory flagger. This single model adeptly identifies all accessories present in an image, streamlining accessory detection across various scenarios.  ","The platform also compiles comprehensive insights from all processed and inferred data, supporting the creation of mood boards and storyboards for detailed fashion analysis. "
+          "The system incorporates a sophisticated multihead deep learning architecture that supports concurrent training on multiple clothing attributes. This architecture uses a custom loss function to enhance model accuracy, effectively reducing the need for multiple models to just one.",
+          "A finely-tuned YoloV7 model within the data pre-processing pipeline ensures accurate detection of individuals in various attire types. The model excels in fine-grained attribute classification by incorporating localized attention through on-body key points, resulting in heightened precision in identifying clothing details.",
+          "For accessories, we implemented a unified accessory flagger. This single model adeptly identifies all accessories present in an image, streamlining accessory detection across various scenarios.  ",
+          "The platform also compiles comprehensive insights from all processed and inferred data, supporting the creation of mood boards and storyboards for detailed fashion analysis. ",
         ],
       },
     ],
@@ -705,7 +771,8 @@ const Cases = ({ params }) => {
     ],
 
     "fashion-framework": [
-      "Enhanced Forecasting and Responsiveness: The insights allowed our client to develop a comprehensive app tailored to the current technological framework, enhancing their ability to predict and adapt to evolving fashion trends effectively.","Industry Leadership and Value Addition: This development bolstered their position as a thought leader in the fashion education space and provided invaluable tools for industry professionals aiming to stay aligned with the rapid changes in the Indian fashion landscape."
+      "Enhanced Forecasting and Responsiveness: The insights allowed our client to develop a comprehensive app tailored to the current technological framework, enhancing their ability to predict and adapt to evolving fashion trends effectively.",
+      "Industry Leadership and Value Addition: This development bolstered their position as a thought leader in the fashion education space and provided invaluable tools for industry professionals aiming to stay aligned with the rapid changes in the Indian fashion landscape.",
     ],
 
     "banking-infra": [

@@ -61,13 +61,13 @@ const slides = [
     image: "/our-work/sqlwizard-logo1.png",
     url: "/portfolio/sqlwizard",
   },
-  {
-    title: "Loneliness Assistant",
-    content:
-      "Personalised assistant designed to empathize with humans and serves as a close companion by engaging in emotionally profound interactions",
-    image: "/our-work/lonely_llm.webp",
-    url: "/portfolio/loneliness-assistant",
-  },
+  // {
+  //   title: "Loneliness Assistant",
+  //   content:
+  //     "Personalised assistant designed to empathize with humans and serves as a close companion by engaging in emotionally profound interactions",
+  //   image: "/our-work/lonely_llm.webp",
+  //   url: "/portfolio/loneliness-assistant",
+  // },
   {
     title: "AI-Assisted Skin Cancer Detection",
     content:

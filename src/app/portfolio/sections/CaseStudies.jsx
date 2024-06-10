@@ -42,13 +42,13 @@ const CaseStudies = () => {
         "Transforming data access with a natural language interface that converts queries into SQL, simplifying database interaction.",
       to: "/portfolio/sqlwizard",
     },
-    {
-      img: "bg-lonelyAssist",
-      title: "Loneliness Assistant",
-      description:
-        "Personalised assistant designed to empthatize with humans and serves as a close companion by engaging in an emotionally deep manner.",
-      to: "/portfolio/loneliness-assistant",
-    },
+    // {
+    //   img: "bg-lonelyAssist",
+    //   title: "Loneliness Assistant",
+    //   description:
+    //     "Personalised assistant designed to empthatize with humans and serves as a close companion by engaging in an emotionally deep manner.",
+    //   to: "/portfolio/loneliness-assistant",
+    // },
     {
       img: "bg-fashion",
       title: "Indian Fashion insight Framework",

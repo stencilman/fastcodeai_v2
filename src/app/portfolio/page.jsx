@@ -19,7 +19,7 @@ const Potfolio = () => {
       <Hero />
       <CaseStudies/>
       <Clients/>
-      <TestimonialsN/>
+      {/* <TestimonialsN/> */}
       <Footer showExtraSpace={true}/>
     </>
   );

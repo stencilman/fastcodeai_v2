@@ -17,7 +17,7 @@ const KeyFeatures = ({ keyFeaturesData }) => {
   return (
     keyFeaturesData.length > 0 && (
       <div className="w-full h-auto bg-[#00081F] pt-0 pb-[50px]  px-[20px] md:px-[50px] lg:px-[100px]">
-        <div className="flex flex-col gap-[25px] md:gap-[40px] px-[40px] mb-[40px]">
+        <div className="flex flex-col gap-[25px] md:gap-[40px] md:px-[40px] mb-[40px]">
           {(keyFeaturesData[0]?.description.length > 0 ||
             keyFeaturesData[0]?.points) && (
             <h1 className="text-white text-6xl md:text-8xl font-aeonik tracking-wide mb-[4px]">
@@ -51,7 +51,7 @@ const KeyFeatures = ({ keyFeaturesData }) => {
             })}
           </div>
         )}
-        <div className="flex flex-col gap-[40px] px-[40px]">
+        <div className="flex flex-col gap-[40px] md:px-[40px]">
           {keyFeaturesData[0]?.references && (
             <h1 className="text-white text-6xl md:text-8xl font-aeonik tracking-wide mb-[4px]">
               References

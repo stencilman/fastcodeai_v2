@@ -119,7 +119,7 @@ const LegalNotice = () => {
                 </div>
                 <p className="text-[#9EB3CF]  text-sm md:text-lg  font-bwmss01 mt-[10px]">
 
-                    Email: arjun@fastcode.ai
+                    Email: admin@fastcode.ai
                 </p> <p className="text-[#9EB3CF]  text-sm md:text-lg  font-bwmss01 mt-[5px]">
 
                     Address: FastCode AI , #48, Bhive Premium Church st,Haridevpur,

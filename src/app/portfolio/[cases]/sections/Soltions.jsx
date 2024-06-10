@@ -30,51 +30,77 @@ const Soltions = ({ solutionsData }) => {
         <h1 className="text-white text-6xl md:text-8xl font-aeonik tracking-wide mb-[8px]">
           Solution
         </h1>
-        {solutionsData.map((e, i) => (
+        {solutionsData[0]?.detail?.map((e, i) => (
           <p key={i} className="text-[#9EB3CF] text-lg font-bwmss01 ">
             {e}
           </p>
         ))}
       </div>
-      <div className="mt-[40px] pl-[40px] h-auto md:h-[559px] w-full">
-        <div className="grid grid-cols-1 grid-rows-4 md:grid-cols-5 md:grid-rows-3 gap-7 h-auto md:h-[559px] w-full ">
-          <div className="h-[200px] md:h-auto md:col-span-2 md:row-span-2">
-            <Image
-              className=" w-full h-full"
-              src="/potfolio/mbenz/solution/img1-2.png"
-              width="376"
-              height="347"
-              alt=""
-            />
+      <div className="mt-[40px] md:pl-[40px] h-auto md:h-[auto]  w-full">
+        {solutionsData[0]?.images.length === 1 && (
+          <div className=" h-auto md:h-[auto]  w-full ">
+            {solutionsData[0]?.images[0] && (
+              <div className=" md:h-auto ">
+                <Image
+                  className=" w-full h-full rounded-[18px]"
+                  src={solutionsData[0]?.images[0]}
+                  width="376"
+                  height="347"
+                  alt=""
+                />
+              </div>
+            )}
           </div>
-          <div className="h-[200px] md:h-auto md:col-start-1 md:row-start-3">
-            <Image
-              className="w-full h-full"
-              src="/potfolio/mbenz/solution/img2-2.png"
-              width="166"
-              height="174"
-              alt=""
-            />
+        )}
+
+        {solutionsData[0]?.images.length === 4 && (
+          <div className="grid grid-cols-1 grid-rows-4 md:grid-cols-5 md:grid-rows-3 gap-7 h-auto md:h-[auto] md:max-h-[550px] w-full ">
+            {solutionsData[0]?.images[0] && (
+              <div className="h-[200px] md:h-auto md:col-span-2 md:row-span-2">
+                <Image
+                  className=" w-full h-full"
+                  src={solutionsData[0]?.images[0]}
+                  width="376"
+                  height="347"
+                  alt=""
+                />
+              </div>
+            )}
+            {solutionsData[0]?.images[1] && (
+              <div className="h-[200px] md:h-auto md:col-start-1 md:row-start-3">
+                <Image
+                  className="w-full h-full"
+                  src={solutionsData[0]?.images[1]}
+                  width="166"
+                  height="174"
+                  alt=""
+                />
+              </div>
+            )}
+            {solutionsData[0]?.images[2] && (
+              <div className="h-[200px] md:h-auto md:col-start-2 md:row-start-3">
+                <Image
+                  className="w-full h-full"
+                  src={solutionsData[0]?.images[2]}
+                  width="188"
+                  height="174"
+                  alt=""
+                />
+              </div>
+            )}
+            {solutionsData[0]?.images[3] && (
+              <div className="h-[200px] md:h-auto md:col-span-3 md:row-span-3 md:col-start-3 md:row-start-1">
+                <Image
+                  className="w-full h-full"
+                  src={solutionsData[0]?.images[3]}
+                  width="559"
+                  height="697"
+                  alt=""
+                />
+              </div>
+            )}
           </div>
-          <div className="h-[200px] md:h-auto md:col-start-2 md:row-start-3">
-            <Image
-              className="w-full h-full"
-              src="/potfolio/mbenz/solution/img3-2.png"
-              width="188"
-              height="174"
-              alt=""
-            />
-          </div>
-          <div className="h-[200px] md:h-auto md:col-span-3 md:row-span-3 md:col-start-3 md:row-start-1">
-            <Image
-              className="w-full h-full"
-              src="/potfolio/mbenz/solution/img4-2.png"
-              width="559"
-              height="697"
-              alt=""
-            />
-          </div>
-        </div>
+        )}
       </div>
     </div>
   );
