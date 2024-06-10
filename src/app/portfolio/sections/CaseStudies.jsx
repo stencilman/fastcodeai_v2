@@ -131,7 +131,7 @@ const CaseStudies = () => {
           return (
             <div
               key={i}
-              className={`p-[0] border border-[#082373] lg:px-[35px] lg:pt-[0px] lg:pb-[40px] w-full h-[auto] sm:h-[434px] lg:h-[410px] ${e.img} rounded-[20px] bg-cover bg-no-repeat relative`}
+              className={`p-[0] border border-[#082373] lg:px-[35px] lg:pt-[0px] lg:pb-[40px] w-full h-[auto] sm:h-[auto] lg:h-[auto] ${e.img} rounded-[20px] bg-cover bg-no-repeat relative`}
               style={{ maxWidth: "1099px" }}
             >
               <div className="absolute inset-0 bg-[#05122da6] rounded-[18px]"></div>
