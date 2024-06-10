@@ -39,7 +39,7 @@ const Publications = () => {
       desciption:
         "C. Kumar, J. Ramesh, B. Chakraborty, R. Raman, C. Weinrich, A. Mundhada, A. Jain, F. Flohr , “VRU Pose-SSD: Multiperson Pose Estimation For Automated Driving” in proceedings of Innovative Applications of Artificial Intelligence (IAAI 2021), Virtual, February 2021.",
       linkName: "Link",
-      linkTo: "",
+      linkTo: "https://ojs.aaai.org/index.php/AAAI/article/view/17800",
       downloadName: "Download PDF",
       downloadTo: "http://arjunjain.co.in/resources/iaai-2021.pdf",
       extraName: "",
@@ -117,7 +117,7 @@ const Publications = () => {
       desciption:
         "N. Jain, S. Shah, A. Sharma, A. Jain, “On the Robustness of Human Pose Estimation” in proceedings of CVPR Workshop on Augmented Human Humancentric Understanding and 2D/3D Synthesis (CVPR Workshop 2019), Long Beach, June 2019.",
       linkName: "Link",
-      linkTo: "",
+      linkTo: "https://arxiv.org/abs/1908.06401",
       downloadName: "Download PDF",
       downloadTo:
         "http://openaccess.thecvf.com/content_CVPRW_2019/papers/Augmented%20Human%20Human-centric%20Understanding%20and%202D-3D%20Synthesis/Jain_On_the_Robustness_of_Human_Pose_Estimation_CVPRW_2019_paper.pdf",
@@ -321,7 +321,7 @@ const Publications = () => {
       linkTo: "http://www.d2.mpi-inf.mpg.de/articulated-data",
       downloadName: "Download PDF",
       downloadTo:
-        "http://www.d2.mpi-inf.mpg.de/sites/default/files/pishchulin12cvpr.pdf",
+        "/patents/publications/CVPR12.pdf",
       extraName: "Video",
       extraLink: "",
     },
@@ -451,7 +451,7 @@ const Publications = () => {
           className="w-full px-[20px] md:px-[50px] lg:px-[100px] flex-col gap-[60px]"
         >
           <div
-            className="flex flex-col md:flex-row gap-[30px] md:gap-[5%] rounded-[18px] border border-[#1A2758] w-full h-auto p-[20px] md:px-[60px] md:py-[40px]"
+            className="flex flex-col md:flex-row gap-[30px] md:gap-[5%] rounded-[18px] items-center border border-[#1A2758] w-full h-auto p-[20px] md:px-[60px] md:py-[40px]"
             style={{
               background:
                 "transparent linear-gradient(360deg, #13224F 0%, #13224F 0%, #0C1C46 51%, #020F3B 100%) 0% 0% no-repeat padding-box",
