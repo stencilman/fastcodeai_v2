@@ -31,7 +31,7 @@ const Cases = ({ params }) => {
           "Enhance interaction between driver and car by detecting driver hand gesture for superior level driver experience with Automotive OEM.",
         industry: "Automotive OEM",
         year: "2015",
-        heroImg: "/our-work/mercedes.webp",
+        heroImg: "/our-work/gesrec.png",
       },
     ],
     vrups: [
@@ -42,7 +42,7 @@ const Cases = ({ params }) => {
           "Accurate, low footprint detection with vulnerable roadside users (VRUs) and road signs covered in the Automotive Tier 1 autonomous driving initiative.",
         industry: "Automotive Tier 1",
         year: "2018",
-        heroImg: "/our-work/bosch.webp",
+        heroImg: "/our-work/vrups.jpg",
       },
     ],
     "federated-learning": [
@@ -66,7 +66,7 @@ const Cases = ({ params }) => {
           "Empowering exercise perfection with AI-driven real-time pose estimation, providing interactive visual feedback for correct posture and effective workouts.",
         industry: "Healthcare",
         year: "2023",
-        heroImg: "/our-work/fitness.webp",
+        heroImg: "/potfolio/fitness/img1-2.png",
       },
     ],
 
@@ -115,7 +115,7 @@ const Cases = ({ params }) => {
         industry: "Fintech",
         year: "2021",
 
-        heroImg: "/our-work/modefin_cover.webp",
+        heroImg: "/our-work/bankInsMo.png",
       },
     ],
 
@@ -139,7 +139,7 @@ const Cases = ({ params }) => {
           "Enhancing skin cancer by diagnosing user’s skin images on their mobile phones, improving dermatological care's accuracy, accessibility, and efficiency.",
         industry: "Healthcare",
         year: "2020",
-        heroImg: "/our-work/dermos.webp",
+        heroImg: "/our-work/dermos.jpeg",
       },
     ],
 
@@ -163,6 +163,7 @@ const Cases = ({ params }) => {
           "Transforming banking datasets into actionable insights enhances customer segmentation, predictive forecasting, and strategic decision-making in the fintech industry.",
         industry: "Fintech",
         year: "2018",
+        heroImg: "/our-work/bnk.png",
       },
     ],
     // Add more paths and corresponding data as needed

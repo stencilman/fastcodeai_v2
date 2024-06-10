@@ -29,7 +29,7 @@ const PrivacyPolicy = () => {
 
                         </p>
                         <p className="text-[#9EB3CF]  text-sm md:text-lg  font-bwmss01 mt-[10px]">
-                            Introduction FastCode AI Consult Pvt Ltd respects the privacy of our users and is
+                        <b className={`text-white font-bold`}> Introduction</b> FastCode AI Consult Pvt Ltd respects the privacy of our users and is
                             committed to protecting your personal information. This Privacy Policy explains how we
                             collect, use, disclose, and safeguard your information when you visit our website.
                         </p>
@@ -40,7 +40,7 @@ const PrivacyPolicy = () => {
                             2.
                         </p>
                         <p className="text-[#9EB3CF]  text-sm md:text-lg  font-bwmss01 mt-[10px]">
-                            Information We Collect We collect information that identifies, relates to, describes, or
+                        <b className={`text-white font-bold`}>  Information We Collect</b> We collect information that identifies, relates to, describes, or
                             could reasonably be linked, directly or indirectly, with a specific individual. You may be
                             asked to provide personal information including, but not limited to:
                            
@@ -50,12 +50,12 @@ const PrivacyPolicy = () => {
 
                     </div>
                     <ul>
-                                <li className="list-disc text-[#9EB3CF]  text-sm md:text-lg  font-bwmss01 mt-[10px]">Personal Identification Information: Name, email address,
+                                <li className="list-disc text-[#9EB3CF]  text-sm md:text-lg  font-bwmss01 mt-[10px]"><b className={`text-white font-bold`}>Personal Identification Information:</b> Name, email address,
                                     phone number, etc.</li>
-                                <li className="list-disc text-[#9EB3CF]  text-sm md:text-lg  font-bwmss01 mt-[10px]">Employment Details: If you are applying for a job, details
+                                <li className="list-disc text-[#9EB3CF]  text-sm md:text-lg  font-bwmss01 mt-[10px]"><b className={`text-white font-bold`}>Employment Details:</b> If you are applying for a job, details
                                     regarding your employment history, educational background, and
                                     job qualifications.</li>
-                                <li className="list-disc text-[#9EB3CF]  text-sm md:text-lg  font-bwmss01 mt-[10px]">Technical Information: Log data, IP address, browser type, and
+                                <li className="list-disc text-[#9EB3CF]  text-sm md:text-lg  font-bwmss01 mt-[10px]"><b className={`text-white font-bold`}>Technical Information:</b> Log data, IP address, browser type, and
                                     version, and other technology on the devices you use to access our
                                     website.</li>
                             </ul>
@@ -66,7 +66,7 @@ const PrivacyPolicy = () => {
                             3.
                         </p>
                         <p className="text-[#9EB3CF]  text-sm md:text-lg  font-bwmss01 mt-[10px]">
-                            How We Use Your Information We use the information we collect in various ways,
+                        <b className={`text-white font-bold`}>  How We Use Your Information </b>We use the information we collect in various ways,
                             including to:
                             
                         </p>

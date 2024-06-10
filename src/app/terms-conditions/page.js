@@ -27,7 +27,7 @@ const TermConditions = () => {
 
                         </p>
                         <p className="text-[#9EB3CF]  text-sm md:text-lg font-bwmss01 mt-[10px]">
-                            Welcome to FastCode.ai. By accessing our website and using our services,
+                        <b className={`text-white font-bold`}>Introduction</b>  Welcome to FastCode.ai. By accessing our website and using our services,
                             you agree to be bound by the following terms and conditions. If you do not agree with any
                             part of these terms, you must not use our website or services.AS
                         </p>
@@ -38,7 +38,7 @@ const TermConditions = () => {
 
                         </p>
                         <p className="text-[#9EB3CF]  text-sm md:text-lg font-bwmss01 mt-[10px]">
-                            Intellectual Property Rights The content, layout, design, data, databases and graphics on
+                        <b className={`text-white font-bold`}>   Intellectual Property Rights</b> The content, layout, design, data, databases and graphics on
                             this website are protected by Indian and international intellectual property laws and are
                             owned by FastCode AI Consult Pvt. Ltd. or its licensors. Unless expressly permitted, you
                             must not reproduce, modify, copy, distribute, or use for commercial purposes any content
@@ -51,7 +51,7 @@ const TermConditions = () => {
 
                         </p>
                         <p className="text-[#9EB3CF]  text-sm md:text-lg font-bwmss01 mt-[10px]">
-                            Use of the Service FastCode AI Consult Pvt. Ltd. grants you a non-exclusive, non-
+                          <b className={`text-white font-bold`}>  Use of the Service </b>FastCode AI Consult Pvt. Ltd. grants you a non-exclusive, non-
                             transferable, limited license to access and use the services strictly in accordance with these
                             terms. This license is solely for your personal and non-commercial use, unless otherwise
                             agreed upon through a written agreement with FastCode AI Consult Pvt. Ltd.
@@ -62,7 +62,7 @@ const TermConditions = () => {
                             4.
                         </p>
                         <p className="text-[#9EB3CF]  text-sm md:text-lg font-bwmss01 mt-[10px]">
-                            User Obligations You agree to use FastCode.ai only for lawful purposes and in a way that
+                           <b className={`text-white font-bold`}> User Obligations </b>You agree to use FastCode.ai only for lawful purposes and in a way that
                             does not infringe the rights of, restrict, or inhibit anyone {"else's"} use and enjoyment of the
                             website. Prohibited behaviour includes harassing or causing distress or inconvenience to any
                             other user, transmitting obscene or offensive content, or disrupting the normal flow of
@@ -76,7 +76,7 @@ const TermConditions = () => {
                         </p>
                         <p className="text-[#9EB3CF]  text-sm md:text-lg font-bwmss01 mt-[10px]">
 
-                            Privacy Policy Our Privacy Policy, which sets out how we will use your information, can
+                           <b className={`text-white font-bold`}> Privacy Policy </b> Our Privacy Policy, which sets out how we will use your information, can
                             be found at <Link href="/privacy-policy" className="text-blue-600">[Privacy Policy link]</Link> . By using this website, you consent to the processing
                             described therein and warrant that all data provided by you is accurate.
 
@@ -88,7 +88,7 @@ const TermConditions = () => {
                         </p>
                         <p className="text-[#9EB3CF]  text-sm md:text-lg font-bwmss01 mt-[10px]">
 
-                            Termination FastCode AI Consult Pvt. Ltd. may terminate or suspend access to our
+                           <b className={`text-white font-bold`}> Termination </b> FastCode AI Consult Pvt. Ltd. may terminate or suspend access to our
                             services immediately, without prior notice or liability, for any reason whatsoever, including,
                             without limitation, if you breach the Terms and Conditions.
                         </p>
@@ -98,7 +98,7 @@ const TermConditions = () => {
                             7.
                         </p>
                         <p className="text-[#9EB3CF]  text-sm md:text-lg font-bwmss01 mt-[10px]">
-                            Warranty Disclaimer Our services and all content on FastCode.ai are provided on an as
+                           <b className={`text-white font-bold`}> Warranty Disclaimer</b> Our services and all content on FastCode.ai are provided on an as
                             is and as available basis. FastCode AI Consult Pvt. Ltd. makes no representations or
                             warranties of any kind, express or implied, as to the operation of their services, or the
                             information, content, or materials included therein.
@@ -112,7 +112,7 @@ const TermConditions = () => {
                         <p className="text-[#9EB3CF]  text-sm md:text-lg font-bwmss01 mt-[10px]">
 
 
-                            Limitation of Liability In no event shall FastCode AI Consult Pvt. Ltd., nor its directors,
+                           <b className={`text-white font-bold`}> Limitation of Liability </b>In no event shall FastCode AI Consult Pvt. Ltd., nor its directors,
                             employees, partners, agents, suppliers, or affiliates, be liable for any indirect, incidental,
                             special, consequential or punitive damages, including without limitation, loss of profits, data,
                             use, goodwill, or other intangible losses, resulting from your access to or use of or inability to
@@ -128,7 +128,7 @@ const TermConditions = () => {
                         <p className="text-[#9EB3CF]  text-sm md:text-lg font-bwmss01 mt-[10px]">
 
 
-                            Governing Law These terms shall be governed by and construed in accordance with the
+                            <b className={`text-white font-bold`}>Governing Law </b>These terms shall be governed by and construed in accordance with the
                             laws of India, and you submit to the non-exclusive jurisdiction of the state and federal courts
                             located in Bangalore, India, for the resolution of any disputes.
 
@@ -142,7 +142,7 @@ const TermConditions = () => {
                         <p className="text-[#9EB3CF]  text-sm md:text-lg font-bwmss01 mt-[10px]">
 
 
-                            Changes to Terms FastCode AI Consult Pvt. Ltd. reserves the right to amend these terms
+                           <b className={`text-white font-bold`}> Changes to Terms FastCode </b>AI Consult Pvt. Ltd. reserves the right to amend these terms
                             at any time. Any changes will be posted on this page, and your continued use of our website
                             or services following any changes indicates your acceptance of the new terms..
 
@@ -151,12 +151,12 @@ const TermConditions = () => {
                     </div>
                     <div className="flex gap-[5px]">
                         <p className="text-white font-normal font-aeonik text-3xl tracking-wide ">
-                            12.
+                            11.
                         </p>
                         <p className="text-[#9EB3CF]  text-sm md:text-lg font-bwmss01 mt-[10px]">
 
 
-                            Contact Us If you have any questions about these Terms and Conditions, please contact
+                           <b className={`text-white font-bold`}> Contact Us </b>If you have any questions about these Terms and Conditions, please contact
                             us at arjun@fastcode.ai
 
                         </p>

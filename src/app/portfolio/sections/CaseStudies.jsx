@@ -9,7 +9,7 @@ const CaseStudies = () => {
 
   const porfolioList = [
     {
-      img: "bg-benz",
+      img: "bg-gesrec",
       title: "Gesture Recognition based User Experience",
       description:
         "Enhance interaction between driver and car by detecting driver hand gesture for superior level driver experience with Automotive OEM.",
@@ -85,7 +85,7 @@ const CaseStudies = () => {
       to: "/portfolio/auto-mto",
     },
      {
-      img: "bg-fitness",
+      img: "bg-bnk",
       title: "AI Banking Insights",
       description:
         "Transforming banking datasets into actionable insights enhances customer segmentation, predictive forecasting, and strategic decision-making in the fintech industry.",

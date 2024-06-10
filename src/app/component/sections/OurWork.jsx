@@ -8,7 +8,7 @@ const slides = [
     title: "Gesture Recognition based User Experience",
     content:
       "Enhance interaction between driver and car by detecting driver hand gesture for superior level driver experience with Automotive OEM.",
-    image: "/our-work/mercedes.webp",
+    image: "/our-work/gesrec.png",
     url: "/portfolio/auto-oem",
   },
   {
@@ -22,7 +22,7 @@ const slides = [
     title: "Vulnerable Roadside User Protection System",
     content:
       "Accurate, low footprint detection with vulnerable roadside users (VRUs) and road signs covered in the Automotive Tier 1 autonomous driving initiative.",
-    image: "/our-work/bosch.webp",
+    image: "/our-work/vrups.jpg",
     url: "/portfolio/vrups",
   },
   {
@@ -48,14 +48,14 @@ const slides = [
   },
 
   {
-    title: "AI Banking Insights & Monitoring",
+    title: "AI Banking Infrastructure Monitoring",
     content:
       "Enhancing banking with AI: Advanced data analytics for customer insights and predictive modeling, streamlined with efficient application monitoring.",
-    image: "/our-work/modefin_cover.webp",
+    image: "/our-work/bankInsMo.png",
     url: "/portfolio/banking-infra",
   },
   {
-    title: "Data Query Assitant",
+    title: "Secure Text-to-SQL Interface",
     content:
       "Transforming data access with a natural language interface that converts queries into SQL, simplifying database interaction",
     image: "/our-work/sqlwizard-logo1.png",
@@ -72,7 +72,7 @@ const slides = [
     title: "AI-Assisted Skin Cancer Detection",
     content:
       "Enhancing skin cancer by diagnosing user’s skin images on their mobile phones, improving dermatological care's accuracy, accessibility, and efficiency.",
-    image: "/our-work/dermos.webp",
+    image: "/our-work/dermos.jpeg",
     url: "/portfolio/skin-cancer-detection",
   },
   // {
@@ -86,7 +86,7 @@ const slides = [
     title: " AI Banking Insights",
     content:
       "Transforming banking datasets into actionable insights enhances customer segmentation, predictive forecasting, and strategic decision-making in the fintech industry.",
-    image: "",
+    image: "/our-work/bnk.png",
     url: "/portfolio/banking-insights",
   },
   // Add more slides here as needed

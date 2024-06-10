@@ -6,7 +6,7 @@ const Hero = ({ heroData }) => {
     <div className="w-full h-[100%] md:h-[100vh] bg-gradient-to-br from-[#000E32] to-[#000929] opacity-83 relative">
       <div className="w-full h-[50%] md:h-[50vh]">
         <Image
-          className="w-full h-full"
+          className="w-full h-full object-cover"
           src={heroData[0]?.heroImg}
           width="1538"
           height="598"

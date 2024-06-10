@@ -32,16 +32,18 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         'benz': "url('/potfolio/mbenz/img1.webp')",
-        "vrups": "/our-work/bosch.webp",
+        "vrups": "url('/our-work//vrups.jpg')",
         'learning': "url('/potfolio/fedLearning/img1-2.png')",
         'fitness': "url('/potfolio/fitness/img1-2.png')",
         "dataQuery": "url('/our-work/sqlwizard-logo1.png')",
         "lonelyAssist": "url('/our-work/lonely_llm.webp')",
-        "fashion": "url('/our-work/fashion.webp')",
-        "bankMont": "url('/portfolio/banking-infra')",
+        "fashion": "url('/our-work/fashion.png')",
+        "bankMont": "url('/our-work/bankInsMo.png')",
         "rag": "url('/our-work/rag_weave.webp')",
-        "dermo": "url('/our-work/dermos.webp')",
-        "automto": "url('/our-work/automto.webp')",
+        "dermo": "url('/our-work/dermos.jpeg')",
+        "automto": "url('/our-work/automto.png')",
+        "gesrec": "url('/our-work/gesrec.png')",
+        "bnk": "url('/our-work/bnk.png')",
 
 
         'blogHero': "url('/blogs/hero/img1-2.png')",
