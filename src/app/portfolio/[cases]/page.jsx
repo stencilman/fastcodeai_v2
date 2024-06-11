@@ -472,10 +472,7 @@ const Cases = ({ params }) => {
           `The implementation of this technology has revolutionized how drivers and passengers interact with the vehicle, introducing a more intuitive way to control the car's systems, such as using gestures to navigate menus, close doors, and adjust the rear view mirrors by simply looking in the desired direction.`,
         ],
         images: [
-          "/potfolio/mbenz/solution/img1-2.png",
-          "/potfolio/mbenz/solution/img2-2.png",
-          "/potfolio/mbenz/solution/img3-2.png",
-          "/potfolio/mbenz/solution/img4-2.png",
+         
         ],
       },
     ],

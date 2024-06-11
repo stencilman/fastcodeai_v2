@@ -31,6 +31,7 @@ const Members = () => {
       position: "lg:left-[-6vw] xl:left-0",
       y: sm,
       height: "h-[540px] md:h-[490px] lg:h-[598px]",
+      backHeight:"min-h-[510px]",
       name: "DR. ARJUN JAIN",
       role: "Founder & Chief Scientist",
       bg: "bg-arjun",
@@ -44,6 +45,7 @@ const Members = () => {
         " sm:top-[-230px] sm:left-[47vw] lg:top-[-70px] lg:left-[26vw] xl:left-[29vw]",
       y: md,
       height: "h-[440px] md:h-[490px] lg:h-[598px]",
+      backHeight:"min-h-[440px]",
       name: "GAUTAM ADITHYA RAVI",
       role: "Head of Engineering",
       bg: "bg-gautham",
@@ -57,6 +59,7 @@ const Members = () => {
         " sm:left-[0px] sm:top-[-330px]  lg:top-[-1040px] lg:left-[58vw]",
       y: sm,
       height: "h-[440px] md:h-[490px] lg:h-[598px]",
+      backHeight:"min-h-[440px]",
       name: "PARTH BASOLE",
       role: "Generalist Engineer",
       bg: "bg-parth",
@@ -69,6 +72,7 @@ const Members = () => {
         " sm:top-[58px] sm:left-[47vw]   lg:top-[-302px] lg:left-[40vw]",
       y: xl,
       height: "h-[440px] md:h-[490px] lg:h-[598px]",
+      backHeight:"min-h-[440px]",
       name: "Shreyas Bhanderi",
       role: "Senior Research Scientist",
       bg: "bg-shreyas",
@@ -80,6 +84,7 @@ const Members = () => {
       position: " sm:top-[-182px] sm:left-[0px]  lg:top-[-800px] lg:left-[6vw] xl:left-[10vw]",
       y: lg,
       height: "h-[440px] md:h-[490px] lg:h-[598px]",
+      backHeight:"min-h-[440px]",
       name: "Narendiran Chembu",
       role: "Senior ML engineer ",
       bg: "bg-naren",
@@ -94,6 +99,7 @@ const Members = () => {
         "sm:top-[37px]  sm:left-[0px]   lg:top-[-600px] lg:left-[58vw]",
       y: xl,
       height: "h-[440px] md:h-[490px] lg:h-[598px]",
+      backHeight:"min-h-[440px]",
       name: "Rishabh Gupta",
       role: "Machine Learning Engineer",
       bg: "bg-rishabh",
@@ -105,6 +111,7 @@ const Members = () => {
       position: "sm:top-[500px] sm:left-[47vw]  lg:left-[-6vw] xl:left-0 lg:top-[-500px]",
       y: xxl,
       height: "h-[440px] md:h-[490px] lg:h-[598px]",
+      backHeight:"min-h-[440px]",
       name: "ABDUL MUQTADIR",
       role: "Software Engineer",
       bg: "bg-abdul",
@@ -116,6 +123,7 @@ const Members = () => {
       position: "sm:top-[-250px] sm:left-[0px]  lg:top-[-1410px] lg:left-[26vw] xl:left-[29vw]",
       y: xl,
       height: "h-[440px] md:h-[490px] lg:h-[598px]",
+      backHeight:"min-h-[440px]",
       name: "Tirth Pandit",
       role: "Senior Research Scientist",
       bg: "bg-tirth",
@@ -129,6 +137,7 @@ const Members = () => {
       position: "sm:top-[400px] sm:left-[47vw] lg:top-[-600px] lg:left-[58vw]",
       y: xxl,
       height: "h-[440px] md:h-[490px] lg:h-[598px]",
+      backHeight:"min-h-[440px]",
       name: "PRABAL PATEL",
       role: "Head of Sales and Business Development",
       bg: "bg-prabal",
@@ -142,6 +151,7 @@ const Members = () => {
         "  sm:top-[-290px] sm:left-[23vw] lg:top-[-1800px] lg:left-[26vw] xl:left-[29vw]",
       y: xl,
       height: "h-[440px] md:h-[490px] lg:h-[598px]",
+      backHeight:"min-h-[440px]",
       name: "Sughosh Patil",
       role: "Senior Research Scientist",
       bg: "bg-sughosh",
@@ -156,6 +166,7 @@ const Members = () => {
         " sm:top-[-220px] sm:left-[0px] lg:top-[-2284px] lg:left-[-6vw] xl:left-0",
       y: xl,
       height: "h-[530px] md:h-[490px] lg:h-[598px]",
+      backHeight:"min-h-[440px]",
       name: "Eshwar Ramesh",
       role: "IOS Developer",
       bg: "bg-eshwar",
@@ -169,6 +180,7 @@ const Members = () => {
         " sm:top-[500px] sm:left-[47vw] lg:top-[-1408px] lg:left-[40vw] ",
       y: xxl,
       height: "h-[440px] md:h-[490px] lg:h-[598px]",
+      backHeight:"min-h-[440px]",
       name: "SANJAY SURIYAKUMAR",
       role: "Research Scientist",
       bg: "bg-sanjay",
@@ -180,6 +192,7 @@ const Members = () => {
     {
       position: "sm:left-[0px] sm:top-[-947px]  lg:top-[-3000px] lg:left-[6vw] xl:left-[10vw]",
       height: "h-[440px] md:h-[490px] lg:h-[598px]",
+      backHeight:"min-h-[440px]",
       y: md,
       name: "Dhaval Taunk",
       role: "Research Scientist",
@@ -194,7 +207,7 @@ const Members = () => {
     <div className="w-full overflow-hidden px-[20px] pl-[20px] md:pl-[50px] lg:pl-[100px] py-[50px] md:py-[70px] lg:py-[150px]  bg-[#00081F] flex flex-col justify-center gap-[50px] items-center sm:block sm:relative sm:h-[4500px] md:h-[5000px] lg:h-[4480px] ">
       {memebersList.map(
         (
-          { bg, position, name, role, y, cp, desciption, linkedin, height },
+          { bg, position, name, role, y, cp, desciption, linkedin, height,backHeight },
           i
         ) => (
           <motion.div
@@ -218,7 +231,7 @@ const Members = () => {
                 </div>
               </div>
               <div
-                className="absolute my-rotate-y-180 backface-hidden w-full  justify-around rounded-[20px] border border-[#1A2758] md:px-[30px] py-[10px] px-[10px] md:py-[20px] flex flex-col  gap-[40px] h-auto min-h-[440px] s md:min-h-[490px] lg:min-h-[598px]"
+                className={`absolute my-rotate-y-180 backface-hidden w-full  justify-around rounded-[20px] border border-[#1A2758] md:px-[30px] py-[10px] px-[10px] md:py-[20px] flex flex-col  gap-[40px] ${backHeight} h-auto   md:min-h-[490px] lg:min-h-[598px]`}
                 style={{
                   background:
                     "transparent linear-gradient(360deg, #13224F 0%, #13224F 0%, #0C1C46 51%, #020F3B 100%) 0% 0% no-repeat padding-box",
