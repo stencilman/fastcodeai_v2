@@ -79,7 +79,7 @@ const WhyChooseUs = () => {
               </h3>
               <p className="text-lg text-[#9EB3CF] font-bwmss01">
                 We offer flexible engagement models tailored to each{" "}
-                {"client's"} specific needs.W hether {"it's"} for Web, Mobile,
+                {"client's"} specific needs.Whether {"it's"} for Web, Mobile,
                 IoT, or Edge devices, our approach ensures seamless execution
                 from conception to deployment.
               </p>
