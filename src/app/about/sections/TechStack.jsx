@@ -5,6 +5,7 @@ import Shadow from "../../component/Shadow";
 import { useRef } from "react";
 import { useScroll, useTransform, motion } from "framer-motion";
 
+
 const TechStack = ({ z }) => { 
   const container = useRef(null);
 
