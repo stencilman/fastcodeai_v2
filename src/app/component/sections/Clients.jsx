@@ -20,25 +20,13 @@ const Clients = () => {
     offset: ["start end", "end start"],
   });
 
-  const x1 = useTransform(scrollYProgress, [0, 1], ["-30%", "10%"]);
+  const x1 = useTransform(scrollYProgress, [0, 1], ["-80%", "30%"]);
 
-  const x2 = useTransform(scrollYProgress, [0, 1], ["10%", "-30%"]);
+  const x2 = useTransform(scrollYProgress, [0, 1], ["30%", "-80%"]);
 
   const slider1 = [
     {
-      src: mbux,
-    },
-
-    {
-      src: Bosch,
-    },
-
-    {
-      src: fitlab,
-    },
-
-    {
-      src: meta,
+      src: textiles,
     },
     {
       src: mbux,
@@ -55,6 +43,23 @@ const Clients = () => {
     {
       src: meta,
     },
+    {
+      src: mbux,
+    },
+    {
+      src: textiles,
+    },
+    // {
+    //   src: Bosch,
+    // },
+
+    // {
+    //   src: fitlab,
+    // },
+
+    // {
+    //   src: meta,
+    // },
   ];
 
   const slider2 = [
@@ -120,7 +125,7 @@ const Clients = () => {
             <motion.div
               style={{
                 x: x1,
-                transition: { duration: 0.5, type: "spring", stiffness: 100 },
+                transition: { duration: 1, type: "spring", stiffness: 100 },
               }}
               className="flex relative gap-[12px] sm:gap-[20px] w-[250%]"
             >
@@ -144,9 +149,9 @@ const Clients = () => {
             <motion.div
               style={{
                 x: x2,
-                transition: { duration: 0.5, type: "spring", stiffness: 100 },
+                transition: { duration: 0.1, type: "spring", stiffness: 100 },
               }}
-              className="flex gap-[12px] sm:gap-[20px] ml-[0px] lg:ml-[120px] w-[250%]"
+              className="flex gap-[12px] sm:gap-[20px] ml-[0px] lg:ml-[0px] w-[250%]"
             >
               {slider2.map((e, i) => {
                 return (
