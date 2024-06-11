@@ -9,7 +9,7 @@ import Eshwar from "../../../../public/team/eshwar.jpg";
 import Rishabh from "../../../../public/team/rishabh2.jpg";
 import Sughosh from "../../../../public/team/sughosh1.jpg";
 import Parth from "../../../../public/team/parth-bw.webp";
-import Prabal from "../../../../public/team/Prabal.webp";
+import Prabal from "../../../../public/team/Prabal.jpg";
 import Sanjay from "../../../../public/team/Sanjay.png";
 import Shreyas from "../../../../public/team/shreyas2.jpg";
 import Tirth from "../../../../public/team/tirth1.jpg";
