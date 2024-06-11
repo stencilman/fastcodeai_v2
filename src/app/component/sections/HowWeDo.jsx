@@ -87,7 +87,7 @@ const HowWeDo = ({ pb }) => {
             onClick={() => handleAccordion(index)}
             className={`group ${
               showAccordion === index
-                ? "max-h-[400px] sm:h-[520px] lg:h-[519px] "
+                ? "max-h-[400px] sm:h-[520px] sm:max-h-[520px] lg:h-[519px] lg:max-h-[519px] "
                 : "h-[200px] lg:h-[519px]"
             } lg:border-r-2 border-[#AFC0FF]  w-[100%] lg:w-[579px] flex cursor-pointer `}
           >

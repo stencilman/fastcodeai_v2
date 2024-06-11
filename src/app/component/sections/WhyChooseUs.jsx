@@ -79,7 +79,7 @@ const WhyChooseUs = () => {
               </h3>
               <p className="text-lg text-[#9EB3CF] font-bwmss01">
                 We offer flexible engagement models tailored to each{" "}
-                {"client's"} specific needs.Whether {"it's"} for Web, Mobile,
+                {"client's"} specific needs. Whether {"it's"} for Web, Mobile,
                 IoT, or Edge devices, our approach ensures seamless execution
                 from conception to deployment.
               </p>
@@ -87,7 +87,7 @@ const WhyChooseUs = () => {
           </div>
         </div>
         <div className="col-span-3 lg:col-span-2 bg-gradient-to-br from-[#000E32] to-[#000929] h-[auto] lg:h-[auto] rounded-[18px]">
-          <div className="flex flex-col lg:flex-row py-[29px] px-[35px] gap-[30px]  items-center justify-center lg:justify-normal w-full h-full">
+          <div className="flex flex-col lg:flex-row py-[29px] px-[35px] gap-[20px]  items-center justify-center lg:justify-normal w-full h-full">
             <div className="flex lg:w-[50%] w-full gap-[25px] lg:gap-0 items-center lg:justify-center">
               <Image
                 className="w-[45px]  md:w-[60px] lg:w-[70px] relative top-0 lg:top-[-20px]"
