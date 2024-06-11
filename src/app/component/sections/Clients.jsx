@@ -125,7 +125,7 @@ const Clients = () => {
             <motion.div
               style={{
                 x: x1,
-                transition: { duration: 1, type: "spring", stiffness: 100 },
+                transition: { duration: 0.5, type: "spring", stiffness: 100 },
               }}
               className="flex relative gap-[12px] sm:gap-[20px] w-[250%]"
             >
@@ -149,7 +149,7 @@ const Clients = () => {
             <motion.div
               style={{
                 x: x2,
-                transition: { duration: 0.1, type: "spring", stiffness: 100 },
+                transition: { duration: 0.5, type: "spring", stiffness: 100 },
               }}
               className="flex gap-[12px] sm:gap-[20px] ml-[0px] lg:ml-[0px] w-[250%]"
             >
