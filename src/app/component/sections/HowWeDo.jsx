@@ -104,7 +104,7 @@ const HowWeDo = ({ pb }) => {
             )}
             <div className=" flex flex-col mt-[60px] px-[32px] ">
               <h1
-                className={`text-7xl text-white font-aeonik transition-all duration-300 ease-in-out ${
+                className={`text-[3.5rem] sm:text-7xl text-white font-aeonik transition-all duration-300 ease-in-out ${
                   showAccordion !== index ? "lg:group-hover:scale-[1.1]" : ""
                 }`}
               >

@@ -78,7 +78,7 @@ const Team = () => {
   
   // console.log("imageInfo", imageInfo);
   return (
-    <div className="w-full h-[100vh] bg-gradient-to-br from-[#000E32] to-[#000929] opacity-83 relative flex flex-col items-center justify-center z-[4]">
+    <div className="w-full min-h-[100vh] bg-gradient-to-br from-[#000E32] to-[#000929] opacity-83 relative flex flex-col items-center justify-center z-[4]">
       <div className="flex flex-col md:flex-row gap-[10vw] md:gap-[0px] w-full items-center z-[3]">
         <div className="pl-[20px] md:pl-[50px] lg:pl-[100px] w-[100%] md:w-[45%]">
           <h1 className="text-[8vw] md:text-[7vw] lg:text-[51px] text-white font-aeonik">
