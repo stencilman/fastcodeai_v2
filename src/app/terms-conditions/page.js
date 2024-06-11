@@ -77,7 +77,7 @@ const TermConditions = () => {
                         <p className="text-[#9EB3CF]  text-sm md:text-lg font-bwmss01 mt-[10px]">
 
                            <b className={`text-white font-bold`}> Privacy Policy </b> Our Privacy Policy, which sets out how we will use your information, can
-                            be found at <Link href="/privacy-policy" className="text-blue-600">https://fastcodeai-v2-eight.vercel.app/privacy-policy</Link> . By using this website, you consent to the processing
+                            be found at <Link href="/privacy-policy" className="text-blue-600">https://fastcodeai/privacy-policy</Link> . By using this website, you consent to the processing
                             described therein and warrant that all data provided by you is accurate.
 
                         </p>

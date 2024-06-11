@@ -146,16 +146,11 @@ const ExpertiseSlide = () => {
               Reinforcement Learning
             </h1>
             <p className="text-[#9EB3CF] text-[19px] w-[60vw] md:w-[36vw] lg:w-full  font-light pt-[15px] font-bwmss01 ">
-              Develop and implement bespoke AI solutions to rapidly advance your
-              organizational goals. We collaborate with you to identify the
-              optimal artificial intelligence strategies, tools and
-              technologies.
+            Our team specializes in developing cutting-edge reinforcement learning systems that adapt and optimize in dynamic environments. We collaborate closely with clients to create solutions that continuously improve and achieve strategic goals.
+              
               <br />
               <br />
-              Develop and implement bespoke AI solutions to rapidly advance your
-              organizational goals. We collaborate with you to identify the
-              optimal artificial intelligence strategies, tools and
-              technologies.
+              Our team specializes in developing cutting-edge reinforcement learning systems that adapt and optimize in dynamic environments. We collaborate closely with clients to create solutions that continuously improve and achieve strategic goals.
             </p>
             <br />
             <br />

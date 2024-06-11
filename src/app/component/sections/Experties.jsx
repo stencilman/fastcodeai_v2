@@ -266,10 +266,7 @@ const Experties = () => {
                   Reinforcement Learning
                 </h1>
                 <p className="text-[#9EB3CF] text-base md:text-lg font-light pt-[15px] md:pt-[25px] lg:pt-[15px] font-bwmss01 ">
-                  We rapidly create and implement tailored AI solutions that
-                  propel your organizational goals. Our team collaborates with
-                  you to pinpoint and apply the most effective AI strategies and
-                  technologies.
+                Our team specializes in developing cutting-edge reinforcement learning systems that adapt and optimize in dynamic environments. We collaborate closely with clients to create solutions that continuously improve and achieve strategic goals.
                 </p>
               </div>
               <div>

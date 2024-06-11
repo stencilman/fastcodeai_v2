@@ -123,7 +123,7 @@ const LegalNotice = () => {
                 </p> <p className="text-[#9EB3CF]  text-sm md:text-lg  font-bwmss01 mt-[5px]">
 
                     Address: FastCode AI , #48, Bhive Premium Church st,Haridevpur,
-                    Shanthala Nagar,Ashok Nagar, Bengaluru - 560001Karnataka, India
+                    Shanthala Nagar,Ashok Nagar, Bengaluru - 560001 Karnataka, India
                 </p>
             </div>
         </div>
