@@ -10,7 +10,7 @@ const ScreenAbout = () => {
 
   useEffect(() => {
     const checkScreenHeight = () => {
-      if (window.innerHeight < 770) {
+      if (window.innerHeight < 800) {
         setIsShortScreen(true);
       } else {
         setIsShortScreen(false);
