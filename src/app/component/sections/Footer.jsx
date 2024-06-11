@@ -152,12 +152,12 @@ const Footer = ({ showExtraSpace }) => {
           onMouseLeave={() => setActive(false)}
           className="sticky bottom-0 left-0 z-[3] bg-[#00081F] h-[20vh] md:h-[23vh] lg:h-[30vh] w-full flex cursor-pointer"
         >
-          <div className="flex items-center w-full relative overflow-hidden whitespace-nowrap gap-[35px]">
+          <div className="flex items-center w-full relative overflow-hidden whitespace-nowrap ">
             <motion.h1
               initial={{ x: "0" }}
               animate={{ x: "-100%" }}
               transition={{ repeat: Infinity, ease: "linear", duration: 8 }}
-              className="text-[9.5vw] leading-none font-medium tracking-tight text-[#37446A]  w-full "
+              className="text-[9.5vw] leading-none font-medium  tracking-tight text-[#37446A]  w-full mr-[9px] "
             >
               {"Get Free Consult Now!"}
             </motion.h1>
