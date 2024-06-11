@@ -21,7 +21,7 @@ const Career = () => {
       <Hero />
       <QualitieCulture />
       <JoinTeam />
-      <PearksAndBenefits />
+      {/* <PearksAndBenefits /> */}
       <LifeHere />
       <OpenRolesForm />
       <Footer showExtraSpace={true}/>
