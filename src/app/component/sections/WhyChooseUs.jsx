@@ -100,7 +100,7 @@ const WhyChooseUs = () => {
               Strong R & D Expertise
               </h3>
               <p className="text-lg text-[#9EB3CF] font-bwmss01">
-              A decade of leading AI innovation, underscored by numerous patents, showcases our robust research and development prowess, equipped to resolve complex challenges and excel in delivery.
+              A decade of leading AI innovation, underscored by numerous patents and publications, showcases our robust research and development prowess, equipped to resolve complex challenges and excel in delivery.
               </p>
             </div>
           </div>
