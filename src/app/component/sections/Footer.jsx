@@ -157,7 +157,7 @@ const Footer = ({ showExtraSpace }) => {
               initial={{ x: "0" }}
               animate={{ x: "-100%" }}
               transition={{ repeat: Infinity, ease: "linear", duration: 8 }}
-              className="text-[9.5vw] leading-none font-medium  tracking-tight text-[#37446A]  w-full mr-[9px] "
+              className="text-[9.5vw] leading-none font-medium  tracking-tight text-[#37446A]  w-full mr-[8px] "
             >
               {"Get Free Consult Now!"}
             </motion.h1>
