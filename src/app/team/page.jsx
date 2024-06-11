@@ -7,7 +7,9 @@ import WhyChooseUs from '../component/sections/WhyChooseUs';
 import TestimonialsN from '../component/sections/TestimonialsN';
 import Footer from '../component/sections/Footer';
 
+
 const Team = () => {
+  
     const { setIsActive } = useGlobalContext();
 
     useEffect(() => {

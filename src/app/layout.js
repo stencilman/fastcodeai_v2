@@ -49,11 +49,12 @@ const bwmss01 = localFont({
 })
 
 export const metadata = {
-  title: "Fast Code AI",
+  title:{
+    default: "Fast Code AI",
+    template : "%s - Fast Code AI"
+  },
   description: "Fast Code AI - Accelerating Innovation",
-  icons: {
-    icon : '../../public/f_logo1.png'
-  }
+  
 };
 
 export default function RootLayout({ children }) {
