@@ -93,13 +93,13 @@ const Clients = () => {
     <>
       <div
         ref={container}
-        className="w-full h-[90vh] lg:h-[100vh] bg-gradient-to-br from-[#000E32] to-[#000929] opacity-83 relative flex flex-col items-center justify-center"
+        className="w-full min-h-[90vh] min-lg:h-[100vh] bg-gradient-to-br from-[#000E32] to-[#000929] opacity-83 relative flex flex-col items-center justify-center"
       >
         {/* shadow */}
         {/* <div className="absolute bottom-[0px] left-0 w-full h-[150px] blur-[50px] translate-y-[30px] scale-90  rounded-[50%] z-[-1] bg-gradient-to-br from-[#1D8283] to-[#033577] bg-gradient-156deg bg-no-repeat bg-[0% 0%] opacity-49 border-0 border-opacity-0 filter blur-[50px]"></div> */}
         <Shadow />
 
-        <div className="flex flex-col lg:flex-row gap-[10vh] lg:gap-[10px]  w-full items-center z-[3]">
+        <div className="flex pt-[50px] sm:pt-0 flex-col lg:flex-row gap-[10vh] lg:gap-[10px]  w-full items-center z-[3]">
           <div className="relative z-[5] h-auto lg:h-full pl-[20px] md:pl-[50px] lg:pl-[100px] w-[100%] lg:w-[40%] ">
             <div className="w-full h-full flex flex-col justify-center">
               <h1 className="text-[8vw] md:text-[7vw] tracking-normal lg:text-[51px] text-white font-aeonik">

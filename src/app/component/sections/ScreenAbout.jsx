@@ -1,13 +1,33 @@
 "use client";
-import React from "react";
+import React,{useState,useEffect} from "react";
 import scringAnim from "../../../../public/animations/springs.json";
 import Lottie from "lottie-react";
 import Image from "next/image";
 import brain from "../../../../public/brain.svg"
 
 const ScreenAbout = () => {
+  const [isShortScreen, setIsShortScreen] = useState(false);
+
+  useEffect(() => {
+    const checkScreenHeight = () => {
+      if (window.innerHeight < 770) {
+        setIsShortScreen(true);
+      } else {
+        setIsShortScreen(false);
+      }
+    };
+
+    // Initial check
+    checkScreenHeight();
+
+    // Add event listener
+    window.addEventListener('resize', checkScreenHeight);
+
+    // Clean up event listener
+    return () => window.removeEventListener('resize', checkScreenHeight);
+  }, []);
   return (
-    <div className="w-full max-h-[957px] min-h-[100vh] min-sm:h-[86vh] md:min-h-[87vh] lg:min-h-[100vh]  flex flex-col lg:flex-row relative lg:static gap-[20px] items-center bg-[#00081F]">
+    <div className={`w-full ${isShortScreen ? 'h-[700px]' : 'h-[90vh] sm:h-[86vh] md:h-[87vh] lg:h-[100vh]'}  flex flex-col lg:flex-row relative lg:static gap-[20px] items-center bg-[#00081F]`}>
       <div className="absolute lg:relative left-0 top-[20vw] sm:top-[16vw] lg:top-0">
         <div className="w-[92vw] md:w-[70vw] h-[462px] lg:w-[600px] lg:h-[600px] transform scale-x-[-1]">
           <Lottie animationData={scringAnim} loop={true} />
