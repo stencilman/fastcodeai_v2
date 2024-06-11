@@ -20,7 +20,7 @@ const Clients = () => {
     offset: ["start end", "end start"],
   });
 
-  const x1 = useTransform(scrollYProgress, [0, 1], ["-80%", "30%"]);
+  const x1 = useTransform(scrollYProgress, [0, 1], ["-80%", "50%"]);
 
   const x2 = useTransform(scrollYProgress, [0, 1], ["30%", "-80%"]);
 
