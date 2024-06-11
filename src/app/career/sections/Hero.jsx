@@ -31,21 +31,21 @@ const Hero = () => {
       <div className="w-full  pl-[20px] md:pl-[110px]">
         <h1
           ref={ref}
-          className={`text-[#F3F3F3] tracking-wide text-[8vw] md:text-[7vw] leading-[9vw] lg:leading-[1] lg:text-8xl pb-[20px] font-aeonik font-normal top-[30%] absolute z-[1] ${
+          className={`text-[#F3F3F3] tracking-wide text-[8vw] md:text-[7vw] leading-[9vw] lg:leading-[1] lg:text-8xl pb-[20px] font-aeonik font-normal top-[45%] absolute z-[1] ${
             isVisible ? "translate-y-0 opacity-100" : "translate-y-20 opacity-0"
           } transition-transform duration-1000 ease-out`}
         >
           Lead the future <br />
           with us.
         </h1>
-        <p
+        {/* <p
           ref={ref}
           className={`text-[#9EB3CF] text-[8vw] md:text-[7vw] leading-[9vw]  lg:text-6xl items-center bottom-[25%] absolute font-aeonik z-[1] right-[15%] ${
             isVisible ? "translate-y-0 opacity-100" : "translate-y-20 opacity-0"
           }  transition-transform delay-100 duration-1000 ease-out`}
         >
           We are thinkers
-        </p>
+        </p> */}
       </div>
     </div>
   );

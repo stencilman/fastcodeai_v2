@@ -50,34 +50,34 @@ const HowWeDo = ({ pb }) => {
           How We Do It
         </h1>
       </div>
-      <div className="max-w-[100%] flex-col lg:flex-row sm:mt-[55px] flex">
+      <div className="w-[115%] min-[380px]:w-[100%]  sm:max-w-[100%] flex-col lg:flex-row sm:mt-[55px] flex">
         {[
           {
             number: "01",
             title: "Connect With Us",
             description:
-              "Fill out our NDA-protected contact form, book a time on our calendar, and arrange an e-meeting with our expert team.",
+              "Share your details via our secure form, then submit your NDA for our signature or download our mutual NDA. Schedule a meeting on our calendar.",
             image: "/accordion/accb-1.png",
           },
           {
             number: "02",
             title: "Project Feasibility Consultation",
             description:
-              "Discuss your project ideas in a consultation call with our team, to assess their feasibility and potential impact.",
+              "Receive a free consultancy session with Dr. Arjun Jain, who will explore your project ideas, providing critical insights into their feasibility and potential impact.",
             image: "/accordion/accb-1.png",
           },
           {
             number: "03",
             title: "Get a Detailed Cost Estimate",
             description:
-              "We'll provide a comprehensive project proposal, including budget and timeline estimates, tailored to your specific requirements.",
+              "Receive a tailored project proposal, complete with budget and timeline estimates, designed to meet your specific needs.",
             image: "/accordion/accb-1.png",
           },
           {
             number: "04",
             title: "Project Kickoff",
             description:
-              "After finalizing the agreement, we initiate your project, committed to delivering excellence.",
+           "Upon agreement finalization, we initiate your project, committed to delivering excellence.",
             image: "/accordion/accb-1.png",
           },
         ].map((accordion, index) => (
@@ -87,7 +87,7 @@ const HowWeDo = ({ pb }) => {
             onClick={() => handleAccordion(index)}
             className={`group ${
               showAccordion === index
-                ? "h-[400px] sm:h-[520px] lg:h-[519px] "
+                ? "max-h-[400px] sm:h-[520px] lg:h-[519px] "
                 : "h-[200px] lg:h-[519px]"
             } lg:border-r-2 border-[#AFC0FF]  w-[100%] lg:w-[579px] flex cursor-pointer `}
           >
@@ -121,7 +121,7 @@ const HowWeDo = ({ pb }) => {
                     initial="hidden"
                     animate={showAccordion === index ? "visible" : "hidden"}
                     variants={titleVariants}
-                    className="text-4xl w-full text-white font-aeonik pt-[20px]"
+                    className="text-[2.1rem]  sm:text-4xl w-full text-white font-aeonik pt-[20px]"
                   >
                     {accordion.title}
                   </h3>
