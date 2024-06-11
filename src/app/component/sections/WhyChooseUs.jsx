@@ -3,9 +3,9 @@ import Lottie from "lottie-react";
 import React from "react";
 import chooseUS from "../../../../public/animations/chooseUS.json";
 import Image from "next/image";
-import icon1 from "../../../../public/whychooseus/icon1.svg";
-import icon2 from "../../../../public/whychooseus/icon2.svg";
-import icon3 from "../../../../public/whychooseus/icon3.svg";
+import icon1 from "../../../../public/whychooseus/icon1.png";
+import icon2 from "../../../../public/whychooseus/icon2.png";
+import icon3 from "../../../../public/whychooseus/icon3.png";
 
 const WhyChooseUs = () => {
   return (
@@ -32,9 +32,9 @@ const WhyChooseUs = () => {
         </div>
         <div className="col-span-3 lg:col-span-2 bg-gradient-to-br from-[#000E32] to-[#000929] h-[auto] lg:h-[auto] rounded-[18px]">
           <div className="flex flex-col lg:flex-row py-[29px] px-[35px] gap-[30px] items-center justify-center lg:justify-normal w-full h-full">
-            <div className="flex w-full lg:w-[50%] gap-[25px] lg:gap-0 items-center lg:justify-center">
+            <div className="flex w-full lg:w-[200px] gap-[25px] lg:gap-0 items-center lg:justify-center">
               <Image
-                className="w-[45px] md:w-[60px] lg:w-[70px] relative top-0 lg:top-[-20px]"
+                className="w-[45px] md:w-[60px] lg:w-[70px] lg:mt-[20px] relative top-0 lg:top-[-20px]"
                 src={icon1}
            
                 width="40"
@@ -50,19 +50,66 @@ const WhyChooseUs = () => {
                 Handpicked Experts
               </h3>
               <p className="text-lg text-[#9EB3CF] font-bwmss01">
-                Our team is composed of top-tier talent, meticulously selected
-                from the best academic institutions in India. This ensures
-                access to advanced knowledge and cutting-edge skills in
-                technology, accelerating innovation for your organization.
+              Comprised of elite professionals sourced from {"India's"} finest academic institutions, our team offers unparalleled expertise to catalyze your innovation.
               </p>
             </div>
           </div>
         </div>
         <div className="col-span-3 lg:col-span-2 bg-gradient-to-br from-[#000E32] to-[#000929] h-[auto] lg:h-[auto] rounded-[18px]">
+          <div className="flex flex-col lg:flex-row py-[29px] px-[35px] gap-[30px] items-center justify-center lg:justify-normal w-full h-full">
+            <div className="flex w-full lg:w-[200px] gap-[25px] lg:gap-0 items-center lg:justify-center">
+              <Image
+                className="w-[45px] md:w-[60px] lg:w-[70px] lg:mt-[20px] relative top-0 lg:top-[-20px]"
+                src={icon2}
+           
+                width="40"
+                height="55"
+                alt="icon"
+              />
+              <h3 className="text-white tracking-normal text-[8vw] md:text-[7vw] font-aeonik lg:hidden leading-[8vw]">
+              Our Process & Approach 
+              </h3>
+            </div>
+            <div className="text-white">
+              <h3 className="hidden tracking-normal lg:block text-3xl font-aeonik">
+              Our Process & Approach 
+              </h3>
+              <p className="text-lg text-[#9EB3CF] font-bwmss01">
+              Tailored engagement models for Web, Mobile, IoT, and Edge computing ensure fluid project progression from initial concept to full deployment.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div className="col-span-3 lg:col-span-2 bg-gradient-to-br from-[#000E32] to-[#000929] h-[auto] lg:h-[auto] rounded-[18px]">
+          <div className="flex flex-col lg:flex-row py-[29px] px-[35px] gap-[4vw] items-center justify-center lg:justify-normal w-full h-full">
+            <div className="flex w-full lg:w-[200px] gap-[25px] lg:gap-0 items-center lg:justify-center">
+              <Image
+                className="w-[45px] md:w-[60px] lg:w-[70px] lg:mt-[20px] relative top-0 lg:top-[-20px]"
+                src={icon3}
+           
+                width="40"
+                height="55"
+                alt="icon"
+              />
+              <h3 className="text-white tracking-normal text-[8vw] md:text-[7vw] font-aeonik lg:hidden leading-[8vw]">
+              Strong R & D Expertise
+              </h3>
+            </div>
+            <div className="text-white">
+              <h3 className="hidden tracking-normal lg:block text-3xl font-aeonik">
+              Strong R & D Expertise
+              </h3>
+              <p className="text-lg text-[#9EB3CF] font-bwmss01">
+              A decade of leading AI innovation, underscored by numerous patents, showcases our robust research and development prowess, equipped to resolve complex challenges and excel in delivery.
+              </p>
+            </div>
+          </div>
+        </div>
+        {/* <div className="col-span-3 lg:col-span-2 bg-gradient-to-br from-[#000E32] to-[#000929] h-[auto] lg:h-[auto] rounded-[18px]">
           <div className="flex flex-col lg:flex-row py-[29px] px-[35px] gap-[30px]  items-center justify-center lg:justify-normal w-full h-full">
             <div className="flex w-full lg:w-[50%] gap-[25px] lg:gap-0 items-center lg:justify-center">
               <Image
-                className="w-[45px] md:w-[60px] lg:w-[70px] relative top-0 lg:top-[-20px]"
+                className="w-[45px] md:w-[60px] lg:w-[70px] lg:mt-[20px] relative top-0 lg:top-[-20px]"
                 src={icon2}
           
                 width="40"
@@ -78,10 +125,7 @@ const WhyChooseUs = () => {
                 Our Process & Approach
               </h3>
               <p className="text-lg text-[#9EB3CF] font-bwmss01">
-                We offer flexible engagement models tailored to each{" "}
-                {"client's"} specific needs. Whether {"it's"} for Web, Mobile,
-                IoT, or Edge devices, our approach ensures seamless execution
-                from conception to deployment.
+              Tailored engagement models for Web, Mobile, IoT, and Edge computing ensure fluid project progression from initial concept to full deployment.
               </p>
             </div>
           </div>
@@ -90,7 +134,7 @@ const WhyChooseUs = () => {
           <div className="flex flex-col lg:flex-row py-[29px] px-[35px] gap-[20px]  items-center justify-center lg:justify-normal w-full h-full">
             <div className="flex lg:w-[50%] w-full gap-[25px] lg:gap-0 items-center lg:justify-center">
               <Image
-                className="w-[45px]  md:w-[60px] lg:w-[70px] relative top-0 lg:top-[-20px]"
+                className="w-[45px]  md:w-[60px] lg:w-[70px] lg:mt-[20px] relative top-0 lg:top-[-20px]"
                 src={icon3}
                
                 width="40"
@@ -106,14 +150,11 @@ const WhyChooseUs = () => {
                 Strong R & D Expertise
               </h3>
               <p className="text-lg text-[#9EB3CF] font-bwmss01">
-                Over ten years of pioneering AI innovations and multiple patents
-                highlight our deep research and development capabilities. This
-                expertise fuels our capacity to tackle complex challenges and
-                deliver superior results.
+              A decade of leading AI innovation, underscored by numerous patents, showcases our robust research and development prowess, equipped to resolve complex challenges and excel in delivery.
               </p>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
