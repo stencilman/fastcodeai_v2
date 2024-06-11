@@ -5,7 +5,7 @@ import Shadow from "../../component/Shadow";
 import { useRef } from "react";
 import { useScroll, useTransform, motion } from "framer-motion";
 
-const TechStack = ({ z }) => {
+const TechStack = ({ z }) => { 
   const container = useRef(null);
 
   const { scrollYProgress } = useScroll({
@@ -14,9 +14,9 @@ const TechStack = ({ z }) => {
     offset: ["start end", "end start"],
   });
 
-  const x1 = useTransform(scrollYProgress, [0, 1], ["-30%", "10%"]);
+  const x1 = useTransform(scrollYProgress, [0, 1], ["-80%", "50%"]);
 
-  const x2 = useTransform(scrollYProgress, [0, 1], ["10%", "-30%"]);
+  const x2 = useTransform(scrollYProgress, [0, 1], ["30%", "-80%"]);
 
   const slider1 = [
     {
