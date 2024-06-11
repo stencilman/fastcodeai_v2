@@ -4,6 +4,10 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useState, useRef } from "react";
 import submitMail from "./submitMail";
+import mailIcon from "../../../../public/contact/icons/mail.svg";
+import phoneIcon from "../../../../public/contact/icons/phone.svg";
+import locationIcon from "../../../../public/contact/icons/location.svg";
+import linkedinIcon from "../../../../public/contact/icons/linked.svg";
 
 const Form = () => {
   const [formData, setFormData] = useState({
@@ -90,7 +94,7 @@ const Form = () => {
                 }}
               >
                 <Image
-                  src="contact/icons/mail.svg"
+                  src={mailIcon}
                   width="23"
                   height="17"
                   alt=""
@@ -112,7 +116,7 @@ const Form = () => {
                 }}
               >
                 <Image
-                  src="contact/icons/phone.svg"
+                  src={phoneIcon}
                   width="24"
                   height="24"
                   alt=""
@@ -134,7 +138,7 @@ const Form = () => {
                 }}
               >
                 <Image
-                  src="contact/icons/location.svg"
+                  src={locationIcon}
                   width="22"
                   height="31"
                   alt=""
@@ -167,9 +171,10 @@ const Form = () => {
               href="https://in.linkedin.com/company/fast-code"
               target="_blank"
             >
-              <div className="flex gap-[5px]">
+              <div className="flex gap-[5px] group">
                 <Image
-                  src="contact/icons/linked.svg"
+                className="group-hover:scale-110 transition-all duration-300 ease-in-out"
+                  src={linkedinIcon}
                   width="28"
                   height="28"
                   alt=""

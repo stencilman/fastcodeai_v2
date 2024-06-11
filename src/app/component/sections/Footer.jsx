@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useState, useEffect, useRef } from "react";
 import Modal from "../Modal";
+import footerLogo from "../../../../public/f_logo1.png"
 
 const Footer = ({ showExtraSpace }) => {
   const [active, setActive] = useState(false);
@@ -52,7 +53,7 @@ const Footer = ({ showExtraSpace }) => {
         >
           <div className="flex h-full w-full pl-[20px] pr-[20px] md:pl-[50px] md:pr-[50px] lg:pl-[160px] lg:pr-[73px] justify-between">
             <div className="hidden md:flex w-[369px] h-[407px] rounded-[18px] bg-gradient-to-br from-[#000E32] to-[#000929]  items-center justify-center relative z-[6] top-[-120px]">
-              <Image src="/f_logo1.png" height="140" width="249" alt="logo" />
+              <Image placeholder="blur" src={footerLogo} height="140" width="249" alt="logo" />
             </div>
             <div className="w-[100%] md:w-[58%] ml-0 md:ml-[80px] lg:ml-[120px] mr-0 md:mr-[10px] flex flex-col justify-around">
               {/* Nav */}

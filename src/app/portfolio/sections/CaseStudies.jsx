@@ -3,6 +3,7 @@ import Button from "@/app/component/Button";
 import { motion } from "framer-motion";
 import { useState } from "react";
 
+
 const list = [
   {
     category: "Automotive",
@@ -113,7 +114,7 @@ const CaseStudies = () => {
   const [selected, setSelected] = useState(tabs[0]);
   const [portfolioList, setPortfolioList] = useState(list);
 
-  console.log("selected", selected);
+
 
   return (
     <div
@@ -133,7 +134,7 @@ const CaseStudies = () => {
               if (tab === "All") return setPortfolioList(list);
               const newList = list.filter((e) => e.category === tab);
               setPortfolioList(newList);
-              console.log("portfolioList", portfolioList);
+             
             }}
             className={`min-w-[144px] ${
               selected === tab

@@ -135,7 +135,7 @@ const Members = () => {
       cp: "Head of Sales and Business Development",
       desciption:
         "MBA from Indiana University. 15 years of techology services experience, delivering managed teams and projects for large clients in US and India.",
-      linkedin: "https://in.linkedin.com/",
+      linkedin: "https://www.linkedin.com/in/prabalpatel211/",
     },
     {
       position:
@@ -148,7 +148,7 @@ const Members = () => {
       cp: "Senior Research Scientist",
       desciption:
         "B.Tech (CS) IIT Kanpur, Ex-Senior Software Enginner at Samsung R&D",
-      linkedin: "https://www.linkedin.com/in/shreyas-bhanderi/",
+      linkedin: "https://www.linkedin.com/in/sughoshpatil/",
     },
 
     {

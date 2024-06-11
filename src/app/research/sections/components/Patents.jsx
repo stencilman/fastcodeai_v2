@@ -6,6 +6,10 @@ import React from "react";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { usePathname, useRouter } from "next/navigation";
+import pic3 from "../../../../../public/patents/patentPage/pic3-2.png";
+import pic4 from "../../../../../public/patents/patentPage/pic4-2.png";
+import pic2 from "../../../../../public/patents/patentPage/pic2-2.png";
+import pic1 from "../../../../../public/patents/patentPage/pic1-2.png";
 
 const Patents = () => {
   
@@ -23,7 +27,7 @@ const Patents = () => {
 
   const patentsList = [
     {
-      img: "pic3-2.png",
+      img: pic3,
       technology: "TECHNOLOGY",
       year: "2021",
       title: "Method and system for triggering an event in a vehicle",
@@ -37,7 +41,7 @@ const Patents = () => {
       idAttr: "vehicleEvent",
     },
     {
-      img: "pic4-2.png",
+      img: pic4,
       technology: "AUTOMOBILE",
       year: "2021",
       title:
@@ -53,7 +57,7 @@ const Patents = () => {
     },
 
     {
-      img: "pic2-2.png",
+      img: pic2,
       technology: "TECHNOLOGY",
       year: "2019",
       title: "Method for Identifying a Hand Pose in a Vehicle",
@@ -67,7 +71,7 @@ const Patents = () => {
       idAttr: "headPoseIdentify",
     },
     {
-      img: "pic1-2.png",
+      img: pic1,
       technology: "TECHNOLOGY",
       year: "2011",
       title:
@@ -117,8 +121,9 @@ const Patents = () => {
             <div className="w-full md:w-[40%]">
               <Image
                 className="rounded-[18px] w-full md:w-[370px]"
-                src={`/patents/patentPage/${e.img}`}
+                src={e.img}
                 height="370"
+                placeholder="blur"
                 width="370"
                 alt=""
               />

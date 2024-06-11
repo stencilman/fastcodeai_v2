@@ -67,8 +67,8 @@ module.exports = {
         'sanjay': "url('/members/sanjay.png')",
         'shreyas': "url('/members/shreyas.png')",
         'gautham': "url('/members/gautham.png')",
-        'sughosh': "url('/members/sughosh.webp')",
-        'tirth': "url('/members/Tirth.webp')",
+        'sughosh': "url('/members/sughosh.png')",
+        'tirth': "url('/members/tirth.png')",
         'rishabh': "url('/members/rishabh2.png')",
 
 

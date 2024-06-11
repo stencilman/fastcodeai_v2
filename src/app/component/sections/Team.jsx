@@ -5,7 +5,7 @@ import Button from "../Button";
 import Arjun from "../../../../public/team/Arjun_Jain.webp";
 import Dhaval from "../../../../public/team/Dhaval2.jpg";
 import Abdul from "../../../../public/team/abdul.png";
-import Eshwar from "../../../../public/team/eshwar.webp";
+import Eshwar from "../../../../public/team/eshwar.jpg";
 import Rishabh from "../../../../public/team/rishabh2.jpg";
 import Sughosh from "../../../../public/team/sughosh1.jpg";
 import Parth from "../../../../public/team/parth-bw.webp";
