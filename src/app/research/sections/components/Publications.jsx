@@ -186,7 +186,7 @@ const Publications = () => {
       linkName: "Link",
       linkTo: "https://openaccess.thecvf.com/content_ICCV_2017_workshops/w18/html/Mitra_Improved_Descriptors_for_ICCV_2017_paper.html",
       downloadName: "Download PDF",
-      downloadTo: "",
+      downloadTo: "https://openaccess.thecvf.com/content_ICCV_2017_workshops/papers/w18/Mitra_Improved_Descriptors_for_ICCV_2017_paper.pdf",
       extraName: "Code",
       extraLink: "",
     },
