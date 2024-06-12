@@ -1,10 +1,11 @@
-// import { Inter } from "next/font/google";
+
 import "./globals.css";
 import Navbar from "./component/Navbar";
 import localFont from "next/font/local"
 import { SpeedInsights } from "@vercel/speed-insights/next"
 import { GlobalProvider } from "./context/GlobalContext";
 import SmoothScroll from "./component/SmoothScroll";
+import ClientWrapper from "./component/ClientWrapper";
 
 // const inter = Inter({ subsets: ["latin"] });
 
@@ -58,15 +59,18 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  
   return (
     <html  lang="en" >
       <body className={`${aeonik.variable} ${bwmss01.variable}`}>
       <link rel="icon" href="/fcai.ico" sizes="any" />
         <GlobalProvider>
+          <ClientWrapper>
           <SmoothScroll>
             <Navbar />
             {children}
           </SmoothScroll>
+          </ClientWrapper>
           <SpeedInsights />
         </GlobalProvider>
       </body>

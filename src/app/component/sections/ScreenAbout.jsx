@@ -1,6 +1,8 @@
 "use client";
 import React,{useState,useEffect} from "react";
 import scringAnim from "../../../../public/animations/springs.json";
+import preloader1 from "../../../../public/animations/preloader/Logo_6.json";
+import preloader2 from "../../../../public/animations/preloader/Logo_8.json";
 import Lottie from "lottie-react";
 import Image from "next/image";
 import brain from "../../../../public/brain.svg"
