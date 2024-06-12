@@ -27,12 +27,16 @@ const OpenRolesForm = () => {
         </h1>
         <div className="flex flex-col ">
           {/* Accordion 1 */}
-          <div
-            className="group border-b-2 pb-[30px] border-[#AFC0FF] cursor-pointer w-[100%] flex-col "
-            >
+          <div className="group border-b-2 pb-[30px] border-[#AFC0FF] cursor-pointer w-[100%] flex-col ">
             <div className=" flex  flex-col mt-[30px] px-0 md:px-[32px] ">
-            
-              <div onClick={() =>{ handleAccordion(0);setIsOpen(!isOpen)}} className="flex justify-between items-center">
+              <div
+                onClick={() => {
+                  
+                  handleAccordion(0);
+                  setIsOpen(!isOpen);
+                }}
+                className="flex justify-between items-center"
+              >
                 <h1
                   className={`text-[7vw] md:text-[6vw] lg:text-4xl text-white font-aeonik transition-all duration-300 ease-in-out tracking-normal ${
                     showAccordion !== 0 ? "group-hover:scale-[1.1]" : ""
@@ -78,7 +82,6 @@ const OpenRolesForm = () => {
                 transition={{ duration: 0.6 }}
                 className="overflow-hidden"
               >
-            
                 <div className="cursor-default">
                   <div className="flex w-[100%] justify-between md:items-center flex-col md:flex-row gap-[30px] md:gap-0">
                     <p className="text-[#9EB3CF] font-bwmss01 w-[100%] md:w-[61%] text-base md:text-lg pt-[25px]">
@@ -111,12 +114,9 @@ const OpenRolesForm = () => {
                     </ul>
                   </div>
                 </div>
-             
               </motion.div>
             </div>
           </div>
-
-         
         </div>
       </div>
 

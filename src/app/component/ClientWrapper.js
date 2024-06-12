@@ -22,7 +22,7 @@ const ClientWrapper = ({ children }) => {
         // Listen for the window load event
         window.addEventListener('load', handleLoad);
 
-        // Forcefully trigger the load event in case the page is already loaded
+
         if (document.readyState === 'complete') {
             handleLoad();
         }
@@ -33,7 +33,7 @@ const ClientWrapper = ({ children }) => {
 
     return (
         <div className="relative">
-            <div className={`fixed inset-0 transition-opacity duration-1000 ${isLoading ? 'opacity-100 ' : 'opacity-0 '}`}>
+            <div className={` ${isLoading ? 'opacity-100 fixed inset-0 transition-opacity duration-1000' : 'opacity-0 hidden'}`}>
                 <Preloader />
             </div>
             <div className={`transition-opacity duration-1000 ${isLoading ? 'opacity-0' : 'opacity-100'}`}>
