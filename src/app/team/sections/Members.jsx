@@ -75,7 +75,7 @@ const Members = () => {
       backHeight:"min-h-[440px]",
       name: "Shreyas Bhanderi",
       role: "Senior Research Scientist",
-      bg: "bg-shreyas",
+      bg: "bg-shreyas grayscale",
       cp: "Senior Research Scientist",
       desciption: "B.Tech (IT) DAIICT, Ex-Senior Software Enginner at Nagarro",
       linkedin: "https://www.linkedin.com/in/shreyas-bhanderi/",
@@ -140,7 +140,7 @@ const Members = () => {
       backHeight:"min-h-[440px]",
       name: "PRABAL PATEL",
       role: "Head of Sales and Business Development",
-      bg: "bg-prabal",
+      bg: "bg-prabal grayscale",
       cp: "Head of Sales and Business Development",
       desciption:
         "MBA from Indiana University. 15 years of techology services experience, delivering managed teams and projects for large clients in US and India.",
@@ -154,7 +154,7 @@ const Members = () => {
       backHeight:"min-h-[440px]",
       name: "Sughosh Patil",
       role: "Senior Research Scientist",
-      bg: "bg-sughosh",
+      bg: "bg-sughosh ",
       cp: "Senior Research Scientist",
       desciption:
         "B.Tech (CS) IIT Kanpur, Ex-Senior Software Enginner at Samsung R&D",
@@ -165,11 +165,11 @@ const Members = () => {
       position:
         " sm:top-[-220px] sm:left-[0px] lg:top-[-2284px] lg:left-[-6vw] xl:left-0",
       y: xl,
-      height: "h-[530px] md:h-[490px] lg:h-[598px]",
-      backHeight:"min-h-[440px]",
+      height: "h-[530px] md:h-[490px] lg:h-[598px] ",
+      backHeight:"min-h-[536px]",
       name: "Eshwar Ramesh",
       role: "IOS Developer",
-      bg: "bg-eshwar",
+      bg: "bg-eshwar grayscale",
       cp: "Lead Mobile Engineer",
       desciption:
         "MBA Ex-IOS Lead developer at Simplilearn. Ex- Software engineer at Medlife, Hiver, ICT Health",
@@ -222,7 +222,7 @@ const Members = () => {
                 className={`absolute backface-hidden ${bg} bg-cover bg-no-repeat rounded-[20px] flex items-end w-full h-full px-[16px] py-[32px]`}
               >
                 <div className="flex flex-col md:gap-[20px]">
-                  <h1 className="text-white text-[7vw] sm:text-[5vw] sm:leading-[5.5vw] lg:text-[51px] leading-[52px] lg:leading-[48px] font-aeonik font-light tracking-wide">
+                  <h1 className="text-white text-[7vw] sm:text-[5vw] sm:leading-[5.5vw] lg:text-[51px] leading-[45px] lg:leading-[48px] font-aeonik font-light tracking-wide">
                     {name}
                   </h1>
                   <p className="text-[#9EB3CF] font-aeonik text:lg md:text-xl lg:text-2xl font-light">
