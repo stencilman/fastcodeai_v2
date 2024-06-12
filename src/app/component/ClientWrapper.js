@@ -33,7 +33,7 @@ const ClientWrapper = ({ children }) => {
 
     return (
         <div className="relative">
-            <div className={`fixed inset-0 transition-opacity duration-1000 ${isLoading ? 'opacity-100' : 'opacity-0 hidden'}`}>
+            <div className={`fixed inset-0 transition-opacity duration-1000 ${isLoading ? 'opacity-100 ' : 'opacity-0 '}`}>
                 <Preloader />
             </div>
             <div className={`transition-opacity duration-1000 ${isLoading ? 'opacity-0' : 'opacity-100'}`}>

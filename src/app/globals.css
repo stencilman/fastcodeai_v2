@@ -37,17 +37,17 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb)); */
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
-#main-content {
+/* #main-content {
   opacity: 0;
   transition: opacity 1s ease-in-out;
 }
 
 #main-content.loaded {
   opacity: 1;
-}
+} */
 
 
 .beliveBg {
