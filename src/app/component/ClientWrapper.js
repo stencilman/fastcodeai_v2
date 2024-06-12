@@ -7,7 +7,7 @@ const ClientWrapper = ({ children }) => {
     const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
-        const minimumTime = 10000; // Minimum time in milliseconds
+        const minimumTime = 6000; // Minimum time in milliseconds
         const startTime = Date.now();
 
         const handleLoad = () => {
