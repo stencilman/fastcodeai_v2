@@ -32,12 +32,13 @@ const Hero = () => {
         {/* <Navbar /> */}
         <div className="absolute inset-0 z-0 overflow-hidden">
           <video
-            //  ref={videoRef}
+            
             className="w-full h-full object-cover"
             autoPlay
             muted
             loop
             preload="auto"
+            playsInline
             src="/patents1.mp4"
           />
           <div className="absolute inset-0 bg-black opacity-[0.65]"></div>
