@@ -32,7 +32,7 @@ const Industries = () => {
               "transparent linear-gradient(360deg, #13224F 0%, #13224F 0%, #0C1C46 51%, #020F3B 100%) 0% 0% no-repeat padding-box",
           }}
         >
-          <Image src="/industries/icon1.svg" alt="" width="38" height="19" />
+          <Image src="/industries/healthcare.svg" alt="" width="38" height="19" />
           <p className="text-white text-[19px] font-aeonik ">Healthcare</p>
         </div>
        
@@ -73,7 +73,7 @@ const Industries = () => {
               "transparent linear-gradient(360deg, #13224F 0%, #13224F 0%, #0C1C46 51%, #020F3B 100%) 0% 0% no-repeat padding-box",
           }}
         >
-          <Image src="/industries/icon5.svg" alt="" width="38" height="19" />
+          <Image src="/industries/oilgas.svg" alt="" width="30" height="19" />
           <p className="text-white text-[19px] font-aeonik">Oil & Gas</p>
         </div>
         
