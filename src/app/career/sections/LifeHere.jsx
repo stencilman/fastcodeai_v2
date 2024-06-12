@@ -6,6 +6,7 @@ import img3 from "../../../../public/career/LifeHere/img3.png";
 import img4 from "../../../../public/career/LifeHere/img4.png";
 import img5 from "../../../../public/career/LifeHere/img5.png";
 import img6 from "../../../../public/career/LifeHere/img6.png";
+import img7 from "../../../../public/career/LifeHere/team1.jpeg";
 
 const LifeHere = () => {
   return (
@@ -14,9 +15,10 @@ const LifeHere = () => {
         Life at Fast Code AI
       </h1>
       <div className="w-full">
-        <div className="flex flex-col gap-[30px] w-full items-center">
-          <div className="flex flex-col md:flex-row gap-[30px] h-auto md:h-[270px]">
-            <div className="relative">
+        <div className="flex flex-col gap-[30px] w-full items-center ">
+          <div className="flex flex-col md:flex-row gap-[30px] h-auto md:h-[270px] w-full">
+            <div className="flex gap-[30px] w-full flex-col sm:flex-row">
+            <div className="relative w-full sm:w-[50%] md:w-auto">
               <Image
                 className="h-full  w-full md:w-[301px] object-cover rounded-[24px]"
                 src={img1}
@@ -25,9 +27,9 @@ const LifeHere = () => {
                 placeholder="blur"
                 alt=""
               />
-              {/*grayscale on img tag <div className="absolute inset-0 bg-[#05122da6] rounded-[24px]"></div> */}
+              {/*grayscale on img tag <div className="absolute inset-0 bg-[#23468e4f] rounded-[24px]"></div> */}
             </div>
-            <div className="relative">
+            <div className="relative w-full sm:w-[50%] md:w-auto">
               <Image
                 className="h-full w-full md:w-[538px] object-cover rounded-[24px]"
                 src={img3}
@@ -36,8 +38,9 @@ const LifeHere = () => {
                 height="283"
                 alt=""
               />
-              {/* <div className="absolute inset-0 bg-[#05122da6] rounded-[24px]"></div> */}
+              {/* <div className="absolute inset-0 bg-[#23468e4f] rounded-[24px]"></div> */}
 
+            </div>
             </div>
             <div className="relative">
               <Image
@@ -48,11 +51,11 @@ const LifeHere = () => {
                 alt=""
                 placeholder="blur"
               />
-              {/* <div className="absolute inset-0 bg-[#05122da6] rounded-[24px]"></div> */}
+              {/* <div className="absolute inset-0 bg-[#23468e4f] rounded-[24px]"></div> */}
 
             </div>
           </div>
-          <div className="flex flex-col md:flex-row gap-[30px] h-auto md:h-[416px]">
+          <div className="flex flex-col sm:flex-row gap-[30px] h-auto md:h-[416px] w-full sm:w-auto">
             <div className="relative">
               <Image
                 className="h-full  w-full md:w-[630px] object-cover rounded-[24px]"
@@ -62,19 +65,19 @@ const LifeHere = () => {
                 height="283"
                 alt=""
               />
-              {/* <div className="absolute inset-0 bg-[#05122da6] rounded-[24px]"></div> */}
+              {/* <div className="absolute inset-0 bg-[#23468e4f] rounded-[24px]"></div> */}
 
             </div>
             <div className="relative">
               <Image
-                className="h-full  w-full md:w-[538px] object-cover rounded-[24px]"
-                src={img5}
+                className="h-full grayscale w-full md:w-[538px] object-cover rounded-[24px]"
+                src={img7}
                 width="538"
                 height="283"
                 alt=""
                 placeholder="blur"
               />
-              {/* <div className="absolute inset-0  bg-[#05122da6] rounded-[24px]"></div> */}
+              <div className="absolute inset-0  bg-[#23468e4f] rounded-[24px]"></div>
 
             </div>
           </div>

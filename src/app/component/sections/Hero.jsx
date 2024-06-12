@@ -32,7 +32,6 @@ const Hero = () => {
         {/* <Navbar /> */}
         <div className="absolute inset-0 z-0 overflow-hidden">
           <video
-            
             className="w-full h-full object-cover"
             autoPlay
             muted
