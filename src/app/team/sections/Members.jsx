@@ -32,7 +32,7 @@ const Members = () => {
       y: sm,
       height: "h-[540px] md:h-[490px] lg:h-[598px]",
       backHeight: "min-h-[510px]",
-      name: "DR. ARJUN JAIN",
+      name: "Dr. Arjun Jain",
       role: "Founder & Chief Scientist",
       bg: "bg-arjun",
       cp: "Founder & Chief Scientist",
@@ -47,7 +47,7 @@ const Members = () => {
       y: md,
       height: "h-[440px] md:h-[490px] lg:h-[598px]",
       backHeight: "min-h-[440px]",
-      name: "GAUTAM ADITHYA RAVI",
+      name: "Gautam Adithya Ravi",
       role: "Head of Engineering",
       bg: "bg-gautham",
       cp: "Computer Science Engineering & Research",
@@ -79,7 +79,7 @@ const Members = () => {
 
       height: "h-[440px] md:h-[490px] lg:h-[598px]",
       backHeight: "min-h-[440px]",
-      name: "PARTH BASOLE",
+      name: "Parth Basole",
       role: "Generalist Engineer",
       bg: "bg-parth",
       cp: "AI Tech Creator",
@@ -162,7 +162,7 @@ const Members = () => {
 
       height: "h-[440px] md:h-[490px] lg:h-[598px]",
       backHeight: "min-h-[440px]",
-      name: "ABDUL MUQTADIR",
+      name: "Abdul Muqtadir",
       role: "Software Engineer",
       bg: "bg-abdul",
       cp: "Software Engineer",
@@ -198,7 +198,7 @@ const Members = () => {
 
       height: "h-[440px] md:h-[490px] lg:h-[598px]",
       backHeight: "min-h-[440px]",
-      name: "PRABAL PATEL",
+      name: "Prabal Patel",
       role: "Head of Sales and Business Development",
       bg: "bg-prabal grayscale",
       cp: "Head of Sales and Business Development",
@@ -270,7 +270,7 @@ const Members = () => {
 
       height: "h-[440px] md:h-[490px] lg:h-[598px]",
       backHeight: "min-h-[440px]",
-      name: "SANJAY SURIYAKUMAR",
+      name: "Sanjay Suriyakumar",
       role: "Research Scientist",
       bg: "bg-sanjay",
       cp: "Research Scientist",
@@ -330,7 +330,7 @@ const Members = () => {
                 className={`absolute backface-hidden ${bg} bg-cover bg-no-repeat rounded-[20px] flex items-end w-full h-full pl-[11px] pr-[16px] py-[32px]`}
               >
                 <div className="flex flex-col md:gap-[20px]">
-                  <h1 className="text-white text-[7.5vw] min-[455px]:text-[5vw] sm:text-[5vw] leading-[7.5vw] sm:leading-[5.5vw] lg:text-[3.575vw] xl:text-[48px] capitalize lg:leading-[48px] font-aeonik font-light tracking-wide">
+                  <h1 className="text-white text-[7.5vw] min-[455px]:text-[5vw] sm:text-[5vw] md:text-[6vw] leading-[7.5vw] sm:leading-[5.5vw] md:leading-[6.2vw] lg:text-[4.20vw] xl:text-[52px] capitalize lg:leading-[48px] font-aeonik font-light tracking-wide">
                     {name}
                   </h1>
                   <p className="text-[#9EB3CF] font-aeonik text:lg md:text-xl lg:text-2xl font-light">
