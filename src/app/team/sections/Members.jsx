@@ -200,7 +200,7 @@ const Members = () => {
       backHeight: "min-h-[440px]",
       name: "PRABAL PATEL",
       role: "Head of Sales and Business Development",
-      bg: "bg-prabal grayscale",
+      bg: "bg-prabal ",
       cp: "Head of Sales and Business Development",
       education: "MBA from Indiana University. ",
       desciption:

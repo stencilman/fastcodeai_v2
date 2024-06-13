@@ -51,10 +51,9 @@ const TechStack = ({ z }) => {
 
     {
       src: "/tech_stacks/icon4.svg",
-      w: "120",
-      sm: "90",
+      w: "140",
+      sm: "97",
     },
-
     {
       src: "/tech_stacks/icon5.svg",
       w: "120",
@@ -83,20 +82,20 @@ const TechStack = ({ z }) => {
 
     {
       src: "/tech_stacks/icon7.svg",
-      w: "160",
-      sm: "100",
+      w: "130",
+      sm: "95",
     },
 
-    {
+   {
       src: "/tech_stacks/icon4.svg",
-      w: "150",
-      sm: "100",
+      w: "140",
+      sm: "97",
     },
 
     {
       src: "/tech_stacks/icon5.svg",
-      w: "150",
-      sm: "100",
+      w: "120",
+      sm: "90",
     },
 
     {
@@ -111,8 +110,8 @@ const TechStack = ({ z }) => {
     },
     {
       src: "/tech_stacks/icon7.svg",
-      w: "120",
-      sm: "90",
+      w: "130",
+      sm: "95",
     },
   ];
   return (
