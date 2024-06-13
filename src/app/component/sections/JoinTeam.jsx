@@ -59,7 +59,7 @@ const JoinTeam = () => {
                 </b>
               </div>
               <p className="text-center text-white text-2xl font-bwmss01 font-bold">
-                Experience
+              Experience
               </p>
             </div>
             <div

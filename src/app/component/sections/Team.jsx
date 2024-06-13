@@ -109,7 +109,7 @@ const Team = () => {
           <div className="team_grid flex flex-wrap justify-center md:justify-end">
             {imageInfo.map((info, index) => (
               <div
-                key={info.src}
+                key={index}
                 className={`team__grid-block p-4 ${
                   index > 7 ? "hidden lg:block" : "block"
                 }`}

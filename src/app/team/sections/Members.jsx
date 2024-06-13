@@ -51,7 +51,7 @@ const Members = () => {
       bg: "bg-gautham",
       cp: "Computer Science Engineering & Research",
       desciption:
-        "MSc (CS) Saarland University, Ex-researcher at MPI for informatics, Ex-analyst at Cognizant tech solutions",
+        "",
       linkedin: "https://in.linkedin.com/in/gautham-adithya-ravi-8b803341",
     },
     {
@@ -64,7 +64,7 @@ const Members = () => {
       role: "Generalist Engineer",
       bg: "bg-parth",
       cp: "AI Tech Creator",
-      desciption: "B.Tech (IN) VIT Pune, Ex-Software Developer at InsaneAI",
+      desciption: "",
       linkedin: "https://in.linkedin.com/in/parth-basole-22844115a",
     },
     {
@@ -77,7 +77,7 @@ const Members = () => {
       role: "Senior Research Scientist",
       bg: "bg-shreyas grayscale",
       cp: "Senior Research Scientist",
-      desciption: "B.Tech (IT) DAIICT, Ex-Senior Software Enginner at Nagarro",
+      desciption: "",
       linkedin: "https://www.linkedin.com/in/shreyas-bhanderi/",
     },
     {
@@ -90,7 +90,7 @@ const Members = () => {
       bg: "bg-naren",
       cp: "Senior Machine learning Enginner",
       desciption:
-        "B.Tech IIT Madras, MS (Artificial Intelligence) University of Amsterdam. Ex-ML Enginner at minds.ai",
+        "",
       linkedin: "https://www.linkedin.com/in/cgnarendiran/",
     },
 
@@ -104,7 +104,7 @@ const Members = () => {
       role: "Machine Learning Engineer",
       bg: "bg-rishabh",
       cp: "Machine Learning Engineer",
-      desciption: "MTech AI from IISc, MBA in Technology Management with Major in Finance (and CFA Level 1 cleared) from NMIMS,Ex Data Scientist at Couture.ai",
+      desciption: "",
       linkedin: "https://www.linkedin.com/in/rishabh-gupta-a5886712a/",
     },
     {
@@ -116,7 +116,7 @@ const Members = () => {
       role: "Software Engineer",
       bg: "bg-abdul",
       cp: "Software Engineer",
-      desciption: "B.Tech JNTUH, Ex-Software Developer at Full Stack Academy",
+      desciption: "",
       linkedin: "https://www.linkedin.com/in/abdul-m-699ab9256/",
     },
     {
@@ -129,7 +129,7 @@ const Members = () => {
       bg: "bg-tirth",
       cp: "Senior Research Scientist",
       desciption:
-        "M.Tech (CS) IIIT Hyderabad, Ex-researcher at Qualcomm R&D labs",
+        "",
       linkedin: "https://www.linkedin.com/in/tirth-pandit/",
     },
 
@@ -143,7 +143,7 @@ const Members = () => {
       bg: "bg-prabal grayscale",
       cp: "Head of Sales and Business Development",
       desciption:
-        "MBA from Indiana University. 15 years of techology services experience, delivering managed teams and projects for large clients in US and India.",
+        "",
       linkedin: "https://www.linkedin.com/in/prabalpatel211/",
     },
     {
@@ -157,7 +157,7 @@ const Members = () => {
       bg: "bg-sughosh ",
       cp: "Senior Research Scientist",
       desciption:
-        "B.Tech (CS) IIT Kanpur, Ex-Senior Software Enginner at Samsung R&D",
+        "",
       linkedin: "https://www.linkedin.com/in/sughoshpatil/",
     },
 
@@ -172,7 +172,7 @@ const Members = () => {
       bg: "bg-eshwar grayscale",
       cp: "Lead Mobile Engineer",
       desciption:
-        "MBA Ex-IOS Lead developer at Simplilearn. Ex- Software engineer at Medlife, Hiver, ICT Health",
+        "",
       linkedin: "https://in.linkedin.com/in/eshwar-ramesh-831303ab",
     },
     {
@@ -186,7 +186,7 @@ const Members = () => {
       bg: "bg-sanjay",
       cp: "Research Scientist",
       desciption:
-        "BS (Research) at IISc Bangalore, Ex-undergraduate researcher at Helmholtz Labs, Germany",
+        "",
       linkedin: "https://www.linkedin.com/in/sanjay-suriyakumar-a51aa821b/",
     },
     {
@@ -199,7 +199,7 @@ const Members = () => {
       bg: "bg-dhaval",
       cp: "Research Scientist",
       desciption:
-        "MS (CS) IIIT Hyderabad, Ex-data scientist at Yes Bank and Jio Haptik Technologies",
+        "",
       linkedin: "https://www.linkedin.com/in/dhavaltaunk08/",
     },
   ];
