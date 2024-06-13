@@ -35,7 +35,7 @@ const KeyFeatures = ({ keyFeaturesData }) => {
           <div className="w-full py-[60px] h-auto flex flex-col md:flex-row  flex-wrap items-center gap-[70px] px-[40px] mt-[20px] md:my-[20px]">
             {keyFeaturesData[0]?.points?.map((e, i) => {
               const { beforeColon, afterColon } = formatSentence(e);
-              console.log("beforeColon",beforeColon)
+              console.log("beforeColon", beforeColon);
               return (
                 <div key={i} className="w-full md:w-[40%]">
                   <h3 className="text-white text-5xl font-aeonik tracking-wide">
@@ -44,7 +44,10 @@ const KeyFeatures = ({ keyFeaturesData }) => {
                   <p
                     className={`text-[#9EB3CF] text-lg font-bwmss01 pt-[22px] `}
                   >
-                     {beforeColon && <b className={`text-white font-bold`}>{beforeColon}:</b>} {afterColon}
+                    {beforeColon && (
+                      <b className={`text-white font-bold`}>{beforeColon}:</b>
+                    )}{" "}
+                    {afterColon}
                   </p>
                 </div>
               );
@@ -59,14 +62,18 @@ const KeyFeatures = ({ keyFeaturesData }) => {
           )}
           <div className="pr-[10%] md:pr-[25%] flex flex-col gap-[20px]">
             {keyFeaturesData[0]?.references?.map((e, i) => (
-              <Link key={i} href={e.link}>
-                <p
-                  key={i}
-                  className="hover:text-blue-600 transition-all duration-300 ease-in-out text-[#9EB3CF] text-lg font-bwmss01 "
-                >
-                  {e.description}
-                </p>
-              </Link>
+              <p
+                key={i}
+                className=" transition-all duration-300 ease-in-out text-[#9EB3CF] text-lg font-bwmss01 "
+              >
+                <Link key={i} href={e.link} className="">
+                  {" "}
+                  {e.description}{" "}
+                </Link>
+                <i>
+                  <Link target="_blank" className="italic underline hover:text-blue-600" href={e?.viewSourceLink}>{e?.viewSource}</Link>
+                </i>
+              </p>
             ))}
           </div>
         </div>

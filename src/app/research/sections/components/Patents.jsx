@@ -13,18 +13,7 @@ import pic1 from "../../../../../public/patents/patentPage/pic1-2.png";
 
 const Patents = () => {
   
-  const pathname = usePathname();
-
-  useEffect(() => {
-    if (pathname.includes('#')) {
-      const sectionId = pathname.split('#')[1];
-      const sectionElement = document.getElementById(sectionId);
-      if (sectionElement) {
-        sectionElement.scrollIntoView({ behavior: 'smooth' });
-      }
-    }
-  }, [pathname]);
-
+  
   const patentsList = [
     {
       img: pic3,

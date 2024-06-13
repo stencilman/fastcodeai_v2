@@ -10,9 +10,23 @@ import TechStack from "../about/sections/TechStack";
 import Footer from "../component/sections/Footer";
 import Cta from "../industries/sections/Cta";
 import TestimonialsN from "../component/sections/TestimonialsN";
+import { useSearchParams } from "next/navigation";
 
-const Research = () => {
+const Research = ({ params }) => {
   const { setIsActive } = useGlobalContext();
+  // const pathname = useSearchParams();
+  // console.log("pathname", pathname);
+
+  // useEffect(() => {
+  //   if (pathname.includes("#")) {
+  //     const sectionId = pathname.split("#")[1];
+  //     const sectionElement = document.getElementById(sectionId);
+  //     console.log("sectionId", sectionElement);
+  //     if (sectionElement) {
+  //       sectionElement.scrollIntoView({ behavior: "smooth" });
+  //     }
+  //   }
+  // }, [pathname]);
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -34,7 +48,7 @@ const Research = () => {
         quote="let's turn it into a patented innovation"
       />
 
-      <Footer showExtraSpace={true}/>
+      <Footer showExtraSpace={true} />
     </>
   );
 };

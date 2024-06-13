@@ -471,9 +471,7 @@ const Cases = ({ params }) => {
           `Utilizing our expertise in Computer Vision, we developed a state-of-the-art solution for multimodal human pose estimation using heatmaps. Our efforts focused on embedding this technology into vehicles, effectively bringing onboard intelligence to life. This achievement required a dramatic reduction in the model's size—compressing it by over 25,000 times—without compromising on accuracy.`,
           `The implementation of this technology has revolutionized how drivers and passengers interact with the vehicle, introducing a more intuitive way to control the car's systems, such as using gestures to navigate menus, close doors, and adjust the rear view mirrors by simply looking in the desired direction.`,
         ],
-        images: [
-         
-        ],
+        images: [],
       },
     ],
 
@@ -517,8 +515,9 @@ const Cases = ({ params }) => {
     "loneliness-assistant": [
       {
         detail: [
-          "In an era marked by digital pervasiveness, genuine human connection has become a rarity, heightening the sense of loneliness and disconnection among individuals. We have embarked on creating an emotionally intelligent digital assistant designed to mitigate these feelings by providing companionship and empathetic interaction.",],
-          images: [],
+          "In an era marked by digital pervasiveness, genuine human connection has become a rarity, heightening the sense of loneliness and disconnection among individuals. We have embarked on creating an emotionally intelligent digital assistant designed to mitigate these feelings by providing companionship and empathetic interaction.",
+        ],
+        images: [],
       },
     ],
 
@@ -588,16 +587,25 @@ const Cases = ({ params }) => {
             description:
               "1 -  Cholakkal Hisham , Arjun Jain, et al. Method For Identifying a Hand Pose in a Vehicle, WO2020048814, March 2020",
             link: "/research#headPoseIdentify",
+            viewSource: "View Source",
+            viewSourceLink:
+              "https://patentscope.wipo.int/search/en/detail.jsf?docId=WO2020048814",
           },
           {
             description:
               "2 - Vikram Gupta, Arjun Jain, et al. Method and System for Triggering an Event in a Vehicle, EP3895064, Jan 2023",
             link: "/research#vehicleEvent",
+            viewSource: "PDF",
+            viewSourceLink:
+              "https://ipindia.gov.in/writereaddata/Portal/IPOJournal/1_4975_1/Part-2.pdf",
           },
           {
             description:
               "3 - Sai Kumar Dwivedi, Arjun Jain, et al. System And Method For Deployment Of Airbag Based On Head Pose Estimation, 201911039220 A, April 2021",
             link: "/research#headPose",
+            viewSource: "PDF",
+            viewSourceLink:
+              "https://ipindia.gov.in/writereaddata/Portal/IPOJournal/1_4965_1/Part-1.pdf",
           },
         ],
       },
@@ -613,10 +621,15 @@ const Cases = ({ params }) => {
           "Robust Detection: Operates effectively in adverse weather and tracks multiple objects simultaneously, enhancing safety.",
           "NCAP Standards Compliance: Meets standards for automatic emergency braking, effectively safeguarding vulnerable road users.",
         ],
-        // references: [
-        //   "Bosch Corporate Research",
-        //   "Bosch Corporate Research, 2015; database: USA, Japan",
-        // ],
+        references: [
+          {
+            description:
+              "1 - C. Kumar, J. Ramesh, B. Chakraborty, R. Raman, C. Weinrich, A. Mundhada, A. Jain, F. Flohr , “VRU Pose-SSD: Multiperson Pose Estimation For Automated Driving” in proceedings of Innovative Applications of Artificial Intelligence (IAAI 2021), Virtual, February 2021.",
+              link:"/research",
+            viewSource: "PDF",
+            viewSourceLink: "http://arjunjain.co.in/resources/iaai-2021.pdf",
+          },
+        ],
       },
     ],
 
