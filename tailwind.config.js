@@ -62,7 +62,7 @@ module.exports = {
         'prabal': "url('/members/Prabal1.jpg')",
         'abdul': "url('/members/abdul1.png')",
         'parth': "url('/members/parth.png')",
-        'eshwar': "url('/members/eshwar.jpg')",
+        'eshwar': "url('/members/eshwar.png')",
         'naren': "url('/members/naren.png')",
         'sanjay': "url('/members/sanjay.png')",
         'shreyas': "url('/members/shreyas1.jpg')",
@@ -72,6 +72,7 @@ module.exports = {
         'tirth': "url('/members/tirth.png')",
         'rishabh': "url('/members/rishabh2.png')",
         'darshan': "url('/members/darshan1.png')",
+        'jadhav': "url('/members/jadhav.png')",
 
 
 
