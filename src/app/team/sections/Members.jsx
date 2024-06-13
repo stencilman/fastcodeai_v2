@@ -291,7 +291,7 @@ desciption: " Blogger, passionate about research with publications in prestigiou
                 className={`absolute backface-hidden ${bg} bg-cover bg-no-repeat rounded-[20px] flex items-end w-full h-full px-[16px] py-[32px]`}
               >
                 <div className="flex flex-col md:gap-[20px]">
-                  <h1 className="text-white text-[6.5vw] sm:text-[5vw] sm:leading-[5.5vw] lg:text-[3.5vw] xl-text-[48px] leading-[45px] lg:leading-[48px] font-aeonik font-light tracking-wide">
+                  <h1 className="text-white text-[6.5vw] sm:text-[5vw] sm:leading-[5.5vw] lg:text-[3.5vw] xl:text-[48px] leading-[45px] lg:leading-[48px] font-aeonik font-light tracking-wide">
                     {name}
                   </h1>
                   <p className="text-[#9EB3CF] font-aeonik text:lg md:text-xl lg:text-2xl font-light">
