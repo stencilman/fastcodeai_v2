@@ -157,7 +157,7 @@ const Members = () => {
     },
 
     {
-      position: "sm:top-[400px] sm:left-[47vw] lg:top-[-600px] lg:left-[58vw]",
+      position: "sm:top-[340px] sm:left-[47vw] lg:top-[-600px] lg:left-[58vw]",
       y: xxl,
 
       height: "h-[440px] md:h-[490px] lg:h-[598px]",
@@ -200,7 +200,7 @@ const Members = () => {
       backHeight: "min-h-[440px]",
       name: "PRABAL PATEL",
       role: "Head of Sales and Business Development",
-      bg: "bg-prabal ",
+      bg: "bg-prabal grayscale",
       cp: "Head of Sales and Business Development",
       education: "MBA from Indiana University. ",
       desciption:
@@ -330,7 +330,7 @@ const Members = () => {
                 className={`absolute backface-hidden ${bg} bg-cover bg-no-repeat rounded-[20px] flex items-end w-full h-full px-[16px] py-[32px]`}
               >
                 <div className="flex flex-col md:gap-[20px]">
-                  <h1 className="text-white text-[7.5vw] min-[455px]:text-[5vw] sm:text-[5vw] leading-[7.5vw] sm:leading-[5.5vw] lg:text-[3.5vw] xl:text-[48px]  lg:leading-[48px] font-aeonik font-light tracking-wide">
+                  <h1 className="text-white text-[7.5vw] min-[455px]:text-[5vw] sm:text-[5vw] leading-[7.5vw] sm:leading-[5.5vw] lg:text-[3.5vw] xl:text-[48px] uppercase lg:leading-[48px] font-aeonik font-light tracking-wide">
                     {name}
                   </h1>
                   <p className="text-[#9EB3CF] font-aeonik text:lg md:text-xl lg:text-2xl font-light">
