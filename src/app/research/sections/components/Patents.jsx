@@ -12,12 +12,10 @@ import pic2 from "../../../../../public/patents/patentPage/pic2-2.png";
 import pic1 from "../../../../../public/patents/patentPage/pic1-2.png";
 
 const Patents = () => {
-  
-  
   const patentsList = [
     {
       img: pic3,
-      technology: "TECHNOLOGY",
+      technology: "Automotive",
       year: "2021",
       title: "Method and system for triggering an event in a vehicle",
       desciption:
@@ -31,7 +29,7 @@ const Patents = () => {
     },
     {
       img: pic4,
-      technology: "AUTOMOBILE",
+      technology: "Automotive",
       year: "2021",
       title:
         "System and method for deployment of airbag based on head pose estimation",
@@ -47,7 +45,7 @@ const Patents = () => {
 
     {
       img: pic2,
-      technology: "TECHNOLOGY",
+      technology: "Automotive",
       year: "2019",
       title: "Method for Identifying a Hand Pose in a Vehicle",
       desciption:
@@ -61,7 +59,7 @@ const Patents = () => {
     },
     {
       img: pic1,
-      technology: "TECHNOLOGY",
+      technology: "Human Sensing",
       year: "2011",
       title:
         "Computer-implemented method and apparatus for tracking and reshaping a human shaped figure in a digital world video",
@@ -120,7 +118,7 @@ const Patents = () => {
             <div className="w-full md:w-[55%] flex flex-col gap-[20px]">
               {/* head */}
               <div className="flex gap-[20px] flex-wrap">
-                <div className="border border-[#082373] rounded-[30px] bg-[#00081F] px-[21px] py-[10px] text-lg font-bwmss01 text-white">
+                <div className="border border-[#082373] rounded-[30px] bg-[#00081F] uppercase px-[21px] py-[10px] text-lg font-bwmss01 text-white">
                   {e.technology}
                 </div>
                 <div className="border border-[#082373] rounded-[30px] bg-[#00081F] px-[21px] py-[10px] text-lg font-bwmss01 text-white">

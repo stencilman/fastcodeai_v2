@@ -16,8 +16,8 @@ const LifeHere = () => {
       </h1>
       <div className="w-full">
         <div className="flex flex-col gap-[30px] w-full items-center ">
-          <div className="flex flex-col md:flex-row gap-[30px] h-auto md:h-[270px] w-full">
-            <div className="flex gap-[30px] w-full flex-col sm:flex-row">
+          <div className="flex flex-col md:flex-row gap-[30px] h-auto md:h-[270px] w-full md:w-auto">
+            <div className="flex gap-[30px] w-full flex-col sm:flex-row md:w-auto">
             <div className="relative w-full sm:w-[50%] md:w-auto">
               <Image
                 className="h-full  w-full md:w-[301px] object-cover rounded-[24px]"
