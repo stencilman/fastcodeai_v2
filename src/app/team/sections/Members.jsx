@@ -31,7 +31,7 @@ const Members = () => {
       position: "lg:left-[-6vw] xl:left-0",
       y: sm,
       height: "h-[540px] md:h-[490px] lg:h-[598px]",
-      backHeight:"min-h-[510px]",
+      backHeight: "min-h-[510px]",
       name: "DR. ARJUN JAIN",
       role: "Founder & Chief Scientist",
       bg: "bg-arjun",
@@ -45,169 +45,222 @@ const Members = () => {
         " sm:top-[-230px] sm:left-[47vw] lg:top-[-70px] lg:left-[26vw] xl:left-[29vw]",
       y: md,
       height: "h-[440px] md:h-[490px] lg:h-[598px]",
-      backHeight:"min-h-[440px]",
+      backHeight: "min-h-[440px]",
       name: "GAUTAM ADITHYA RAVI",
       role: "Head of Engineering",
       bg: "bg-gautham",
       cp: "Computer Science Engineering & Research",
-      desciption:
-        "",
+      desciption: "MSc (CS) Saarland University.",
       linkedin: "https://in.linkedin.com/in/gautham-adithya-ravi-8b803341",
     },
     {
       position:
         " sm:left-[0px] sm:top-[-330px]  lg:top-[-1040px] lg:left-[58vw]",
       y: sm,
+
       height: "h-[440px] md:h-[490px] lg:h-[598px]",
-      backHeight:"min-h-[440px]",
-      name: "PARTH BASOLE",
-      role: "Generalist Engineer",
-      bg: "bg-parth",
-      cp: "AI Tech Creator",
-      desciption: "",
-      linkedin: "https://in.linkedin.com/in/parth-basole-22844115a",
+      backHeight: "min-h-[440px]",
+      name: "Yash Agarwal",
+      role: "Software Engineer",
+      bg: "bg-yash grayscale",
+      cp: "Software Engineer",
+      desciption: "Computer Science Graduate from Washington State University.",
+      linkedin: "https://www.linkedin.com/in/yash-agarwal-a99944236/",
     },
     {
       position:
         " sm:top-[58px] sm:left-[47vw]   lg:top-[-302px] lg:left-[40vw]",
       y: xl,
+
       height: "h-[440px] md:h-[490px] lg:h-[598px]",
-      backHeight:"min-h-[440px]",
+      backHeight: "min-h-[440px]",
+      name: "PARTH BASOLE",
+      role: "Generalist Engineer",
+      bg: "bg-parth",
+      cp: "AI Tech Creator",
+      desciption: "B.Tech (IN) VIT Pune.",
+      linkedin: "https://in.linkedin.com/in/parth-basole-22844115a",
+    },
+    {
+      position:
+        " sm:top-[-182px] sm:left-[0px]  lg:top-[-800px] lg:left-[6vw] xl:left-[10vw]",
+      y: lg,
+
+      height: "h-[440px] md:h-[490px] lg:h-[598px]",
+      backHeight: "min-h-[440px]",
       name: "Shreyas Bhanderi",
       role: "Senior Research Scientist",
       bg: "bg-shreyas grayscale",
       cp: "Senior Research Scientist",
-      desciption: "",
+      desciption: "B.Tech (IT) DAIICT.",
       linkedin: "https://www.linkedin.com/in/shreyas-bhanderi/",
     },
+
     {
-      position: " sm:top-[-182px] sm:left-[0px]  lg:top-[-800px] lg:left-[6vw] xl:left-[10vw]",
-      y: lg,
+      position: "sm:top-[37px]  sm:left-[0px]   lg:top-[-600px] lg:left-[58vw]",
+      y: xl,
+
       height: "h-[440px] md:h-[490px] lg:h-[598px]",
-      backHeight:"min-h-[440px]",
+      backHeight: "min-h-[440px]",
       name: "Narendiran Chembu",
       role: "Senior ML engineer ",
       bg: "bg-naren",
       cp: "Senior Machine learning Enginner",
       desciption:
-        "",
+        "B.Tech IIT Madras, MS (Artificial Intelligence) University of Amsterdam.",
       linkedin: "https://www.linkedin.com/in/cgnarendiran/",
     },
-
     {
       position:
-        "sm:top-[37px]  sm:left-[0px]   lg:top-[-600px] lg:left-[58vw]",
-      y: xl,
+        "sm:top-[500px] sm:left-[47vw]  lg:left-[-6vw] xl:left-0 lg:top-[-500px]",
+      y: xxl,
+
       height: "h-[440px] md:h-[490px] lg:h-[598px]",
-      backHeight:"min-h-[440px]",
+      backHeight: "min-h-[440px]",
       name: "Rishabh Gupta",
       role: "Machine Learning Engineer",
       bg: "bg-rishabh",
       cp: "Machine Learning Engineer",
-      desciption: "",
+      desciption:
+        "MTech AI from IISc, MBA in Technology Management with Major in Finance (and CFA Level 1 cleared) from NMIMS.",
       linkedin: "https://www.linkedin.com/in/rishabh-gupta-a5886712a/",
     },
     {
-      position: "sm:top-[500px] sm:left-[47vw]  lg:left-[-6vw] xl:left-0 lg:top-[-500px]",
-      y: xxl,
+      position:
+        "sm:top-[-250px] sm:left-[0px]  lg:top-[-1410px] lg:left-[26vw] xl:left-[29vw]",
+      y: xl,
+
       height: "h-[440px] md:h-[490px] lg:h-[598px]",
-      backHeight:"min-h-[440px]",
+      backHeight: "min-h-[440px]",
       name: "ABDUL MUQTADIR",
       role: "Software Engineer",
       bg: "bg-abdul",
       cp: "Software Engineer",
-      desciption: "",
+      desciption: "B.Tech from JNTUH.",
       linkedin: "https://www.linkedin.com/in/abdul-m-699ab9256/",
-    },
-    {
-      position: "sm:top-[-250px] sm:left-[0px]  lg:top-[-1410px] lg:left-[26vw] xl:left-[29vw]",
-      y: xl,
-      height: "h-[440px] md:h-[490px] lg:h-[598px]",
-      backHeight:"min-h-[440px]",
-      name: "Tirth Pandit",
-      role: "Senior Research Scientist",
-      bg: "bg-tirth",
-      cp: "Senior Research Scientist",
-      desciption:
-        "",
-      linkedin: "https://www.linkedin.com/in/tirth-pandit/",
     },
 
     {
       position: "sm:top-[400px] sm:left-[47vw] lg:top-[-600px] lg:left-[58vw]",
       y: xxl,
+
       height: "h-[440px] md:h-[490px] lg:h-[598px]",
-      backHeight:"min-h-[440px]",
-      name: "PRABAL PATEL",
-      role: "Head of Sales and Business Development",
-      bg: "bg-prabal grayscale",
-      cp: "Head of Sales and Business Development",
-      desciption:
-        "",
-      linkedin: "https://www.linkedin.com/in/prabalpatel211/",
+      backHeight: "min-h-[440px]",
+      name: "Tirth Pandit",
+      role: "Senior Research Scientist",
+      bg: "bg-tirth",
+      cp: "Senior Research Scientist",
+      desciption: "M.Tech (CS) IIIT Hyderabad.",
+      linkedin: "https://www.linkedin.com/in/tirth-pandit/",
     },
     {
       position:
         "  sm:top-[-290px] sm:left-[23vw] lg:top-[-1800px] lg:left-[26vw] xl:left-[29vw]",
       y: xl,
+
       height: "h-[440px] md:h-[490px] lg:h-[598px]",
-      backHeight:"min-h-[440px]",
-      name: "Sughosh Patil",
-      role: "Senior Research Scientist",
-      bg: "bg-sughosh ",
-      cp: "Senior Research Scientist",
+      backHeight: "min-h-[440px]",
+      name: "PRABAL PATEL",
+      role: "Head of Sales and Business Development",
+      bg: "bg-prabal grayscale",
+      cp: "Head of Sales and Business Development",
       desciption:
-        "",
-      linkedin: "https://www.linkedin.com/in/sughoshpatil/",
+        "MBA from Indiana University. 15 years of techology services experience, delivering managed teams and projects for large clients in US and India.",
+      linkedin: "https://www.linkedin.com/in/prabalpatel211/",
     },
 
     {
       position:
         " sm:top-[-220px] sm:left-[0px] lg:top-[-2284px] lg:left-[-6vw] xl:left-0",
       y: xl,
-      height: "h-[530px] md:h-[490px] lg:h-[598px] ",
-      backHeight:"min-h-[536px]",
-      name: "Eshwar Ramesh",
-      role: "IOS Developer",
-      bg: "bg-eshwar grayscale",
-      cp: "Lead Mobile Engineer",
-      desciption:
-        "",
-      linkedin: "https://in.linkedin.com/in/eshwar-ramesh-831303ab",
+
+      height: "h-[440px] md:h-[490px] lg:h-[598px]",
+      backHeight: "min-h-[440px]",
+      name: "Sughosh Patil",
+      role: "Senior Research Scientist",
+      bg: "bg-sughosh ",
+      cp: "Senior Research Scientist",
+      desciption: "B.Tech (CS) IIT Kanpur.",
+      linkedin: "https://www.linkedin.com/in/sughoshpatil/",
     },
     {
       position:
         " sm:top-[500px] sm:left-[47vw] lg:top-[-1408px] lg:left-[40vw] ",
       y: xxl,
+
+      height: "h-[530px] md:h-[490px] lg:h-[598px] ",
+      backHeight: "min-h-[536px]",
+      name: "Eshwar Ramesh",
+      role: "IOS Developer",
+      bg: "bg-eshwar grayscale",
+      cp: "Lead Mobile Engineer",
+      desciption: "MS (CS) from New Horizon College of Engineering",
+      linkedin: "https://in.linkedin.com/in/eshwar-ramesh-831303ab",
+    },
+    {
+      position:
+        "sm:left-[0px] sm:top-[-947px]  lg:top-[-3000px] lg:left-[6vw] xl:left-[10vw]",
+      y: md,
+
       height: "h-[440px] md:h-[490px] lg:h-[598px]",
-      backHeight:"min-h-[440px]",
+      backHeight: "min-h-[440px]",
+      name: "Darshan Singh S",
+      role: "Machine Learning Engineer",
+      bg: "bg-darshan ",
+      cp: "Machine Learning Engineer",
+      desciption:
+        "MS (CS) IIIT Hyderabad, Primarily interested in multimodal learning",
+      linkedin: "https://www.linkedin.com/in/darshansinghs/",
+
+      
+    },
+    {
+      position: " sm:top-[-747px]  lg:top-[-2800px] lg:left-[-6vw] xl:left-0",
+      y: lg,
+
+      height: "h-[440px] md:h-[490px] lg:h-[598px]",
+      backHeight: "min-h-[440px]",
       name: "SANJAY SURIYAKUMAR",
       role: "Research Scientist",
       bg: "bg-sanjay",
       cp: "Research Scientist",
-      desciption:
-        "",
+      desciption: "BS (Research) at IISc Bangalore.",
       linkedin: "https://www.linkedin.com/in/sanjay-suriyakumar-a51aa821b/",
+
+      
     },
+
     {
-      position: "sm:left-[0px] sm:top-[-947px]  lg:top-[-3000px] lg:left-[6vw] xl:left-[10vw]",
+      position:
+        " sm:left-[47vw] sm:top-[-447px] lg:top-[-2600px] lg:left-[26vw] xl:left-[29vw]",
+      y: xl,
+
       height: "h-[440px] md:h-[490px] lg:h-[598px]",
-      backHeight:"min-h-[440px]",
-      y: md,
+      backHeight: "min-h-[440px]",
       name: "Dhaval Taunk",
       role: "Research Scientist",
       bg: "bg-dhaval",
       cp: "Research Scientist",
-      desciption:
-        "",
+      desciption: "MS (CS) IIIT Hyderabad.",
       linkedin: "https://www.linkedin.com/in/dhavaltaunk08/",
     },
   ];
   return (
-    <div className="w-full overflow-hidden px-[20px] pl-[20px] md:pl-[50px] lg:pl-[100px] py-[50px] md:py-[70px] lg:py-[150px]  bg-[#00081F] flex flex-col justify-center gap-[50px] items-center sm:block sm:relative sm:h-[4500px] md:h-[5000px] lg:h-[4480px] ">
+    <div className="w-full overflow-hidden px-[20px] pl-[20px] md:pl-[50px] lg:pl-[100px] py-[50px] md:py-[70px] lg:py-[150px]  bg-[#00081F] flex flex-col justify-center gap-[50px] items-center sm:block sm:relative sm:h-[5300px] md:h-[6000px] lg:h-[5600px] ">
       {memebersList.map(
         (
-          { bg, position, name, role, y, cp, desciption, linkedin, height,backHeight },
+          {
+            bg,
+            position,
+            name,
+            role,
+            y,
+            cp,
+            desciption,
+            linkedin,
+            height,
+            backHeight,
+          },
           i
         ) => (
           <motion.div
@@ -222,7 +275,7 @@ const Members = () => {
                 className={`absolute backface-hidden ${bg} bg-cover bg-no-repeat rounded-[20px] flex items-end w-full h-full px-[16px] py-[32px]`}
               >
                 <div className="flex flex-col md:gap-[20px]">
-                  <h1 className="text-white text-[7vw] sm:text-[5vw] sm:leading-[5.5vw] lg:text-[51px] leading-[45px] lg:leading-[48px] font-aeonik font-light tracking-wide">
+                  <h1 className="text-white text-[6.5vw] sm:text-[5vw] sm:leading-[5.5vw] lg:text-[3.5vw] xl-text-[48px] leading-[45px] lg:leading-[48px] font-aeonik font-light tracking-wide">
                     {name}
                   </h1>
                   <p className="text-[#9EB3CF] font-aeonik text:lg md:text-xl lg:text-2xl font-light">

@@ -66,10 +66,12 @@ module.exports = {
         'naren': "url('/members/naren.png')",
         'sanjay': "url('/members/sanjay.png')",
         'shreyas': "url('/members/shreyas1.jpg')",
+        'yash': "url('/members/yash.jpg')",
         'gautham': "url('/members/gautham.png')",
         'sughosh': "url('/members/sughosh.png')",
         'tirth': "url('/members/tirth.png')",
         'rishabh': "url('/members/rishabh2.png')",
+        'darshan': "url('/members/darshan1.png')",
 
 
 
