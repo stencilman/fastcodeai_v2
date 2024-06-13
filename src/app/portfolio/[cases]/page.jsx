@@ -195,11 +195,11 @@ const Cases = ({ params }) => {
     "federated-learning": [
       {
         description:
-          "A premier German OEM is recognized as a market leader that prioritizes quality and epitomizes luxury and innovation in the automotive sector. Known for its relentless pursuit of excellence, the brand has consistently introduced pioneering technologies and luxurious vehicles, setting the gold standard for safety, performance, and design.",
+          "A premier German OEM, recognized as a market leader that prioritizes quality and epitomizes luxury and innovation in the automotive sector. Known for its relentless pursuit of excellence, the brand has consistently introduced pioneering technologies and luxurious vehicles, setting the gold standard for safety, performance, and design.",
         industry: "Automotive OEM",
         businessType: "Enterprise",
         services: "Research, Development & Deployment",
-        role: "We implemented Federated Learning (FL) on edge devices with limited computing capabilities by deploying efficient, lightweight local machine learning models. These models process data on-device, enhancing privacy and security, while periodically updating a central global model. This approach allows for comprehensive learning without exposing raw data and was specifically applied to predict the battery state of health (SOH) in electric vehicles, optimizing performance and longevity.       ",
+        role: "We implemented Federated Learning (FL) on edge devices with limited computing capabilities by deploying efficient, lightweight local machine learning models. These models process data on-device, enhancing privacy and security, while periodically updating a central global model. This approach allows for comprehensive learning without exposing raw data, optimizing performance and longevity.       ",
       },
     ],
 
@@ -413,10 +413,10 @@ const Cases = ({ params }) => {
     ],
 
     "federated-learning": [
-      "Data Privacy Concerns: Due to GDPR restrictions, sensitive battery data, which can be personally identifiable and could influence insurance premiums, cannot be sent to servers. This necessitates on-device training to ensure privacy.",
+      "Data Privacy Concerns: Due to GDPR restrictions, sensitive data, which can be personally identifiable and could influence insurance premiums, cannot be sent to servers. This necessitates on-device training to ensure privacy.",
       "Limited Computing Resources: The project involves using micro-controllers with constrained computational memory, requiring the development of very small neural networks with fewer than 100 trainable parameters.",
       "Software Limitations: Neural network code must be written from scratch in C, as these micro-controllers do not support many C packages.",
-      "Code Safety and Compliance: Extensive code validation, and compliance with various standards like MISRA (embedded coding in automotives), SPICE(software), and ASIL(automotive), are essential to prevent system lock-ups and ensure safety",
+      "Code Safety and Compliance: Extensive code validation, and compliance with various standards like MISRA (embedded coding in automotives), SPICE (software), and ASIL(automotive), are essential to prevent system lock-ups and ensure safety",
     ],
 
     "fitness-pose-estimation": [
@@ -763,7 +763,7 @@ const Cases = ({ params }) => {
 
     "federated-learning": [
       "Our innovative approach effectively balances the computational constraints of edge devices with the need for sophisticated, privacy-preserving model training. This extends the applicability of Federated Learning to resource-limited and privacy-sensitive environments.",
-      "The successful implementation of this technology in predicting battery SOH not only enhances vehicle performance and longevity but also sets a new standard for deploying advanced machine learning techniques in the automotive sector.",
+      "The successful implementation of this technology in predicting parameters not only enhances vehicle performance and longevity but also sets a new standard for deploying advanced machine learning techniques in the automotive sector.",
     ],
 
     "fitness-pose-estimation": [
