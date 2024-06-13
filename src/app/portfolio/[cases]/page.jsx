@@ -177,7 +177,7 @@ const Cases = ({ params }) => {
         industry: "Automotive OEM",
         businessType: "Enterprise",
         services: "Research, Development & Deployment",
-        role: "FastCode partnered with A German Automotive OEM to redefine the way drivers interact with their vehicles, through an intelligent system that provides a deeply personalised user experience via body pose and gesture recognition.",
+        role: "FastCode partnered with a German Automotive OEM to redefine the way drivers interact with their vehicles, through an intelligent system that provides a deeply personalised user experience via body pose and gesture recognition.",
       },
     ],
 

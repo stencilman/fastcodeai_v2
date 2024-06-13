@@ -4,6 +4,7 @@ import React, { useState, useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { motion } from "framer-motion";
+
 gsap.registerPlugin(ScrollTrigger);
 
 const HowWeDo = ({ pb }) => {
@@ -77,7 +78,7 @@ const HowWeDo = ({ pb }) => {
             number: "04",
             title: "Project Kickoff",
             description:
-           "Upon agreement finalization, we initiate your project, committed to delivering excellence.",
+              "Upon agreement finalization, we initiate your project, committed to delivering excellence.",
             image: "/accordion/accb-1.png",
           },
         ].map((accordion, index) => (
@@ -131,7 +132,22 @@ const HowWeDo = ({ pb }) => {
                     variants={descriptionVariants}
                     className="text-[#9EB3CF] font-bwmss01 text-[19px] leading-7 pt-[23px]"
                   >
-                    {accordion.description}
+                    {/* {accordion.description} */}
+                    {accordion.description.split(/(download)/).map((word, idx) =>
+                    
+                     ( word === "download") ? (
+                        <a
+                          key={idx}
+                          href="/Simple_Mutual_NDA_FastCode.docx"
+                          download="/Simple_Mutual_NDA_FastCode.docx"
+                          className="italic underline hover:text-blue-600"
+                        >
+                          {word}
+                        </a>
+                      ) : (
+                         word 
+                      )
+                    )}
                   </p>
                 </motion.div>
               )}
