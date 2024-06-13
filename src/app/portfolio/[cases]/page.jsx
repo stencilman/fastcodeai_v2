@@ -416,7 +416,7 @@ const Cases = ({ params }) => {
       "Data Privacy Concerns: Due to GDPR restrictions, sensitive data, which can be personally identifiable and could influence insurance premiums, cannot be sent to servers. This necessitates on-device training to ensure privacy.",
       "Limited Computing Resources: The project involves using micro-controllers with constrained computational memory, requiring the development of very small neural networks with fewer than 100 trainable parameters.",
       "Software Limitations: Neural network code must be written from scratch in C, as these micro-controllers do not support many C packages.",
-      "Code Safety and Compliance: Extensive code validation, and compliance with various standards like MISRA (embedded coding in automotives), SPICE(software), and ASIL(automotive), are essential to prevent system lock-ups and ensure safety",
+      "Code Safety and Compliance: Extensive code validation, and compliance with various standards like MISRA (embedded coding in automotives), SPICE (software), and ASIL(automotive), are essential to prevent system lock-ups and ensure safety",
     ],
 
     "fitness-pose-estimation": [
