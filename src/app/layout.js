@@ -6,7 +6,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next"
 import { GlobalProvider } from "./context/GlobalContext";
 import SmoothScroll from "./component/SmoothScroll";
 import ClientWrapper from "./component/ClientWrapper";
-
+import { GoogleAnalytics } from '@next/third-parties/google'
 // const inter = Inter({ subsets: ["latin"] });
 
 const aeonik = localFont({
@@ -74,6 +74,7 @@ export default function RootLayout({ children }) {
           <SpeedInsights />
         </GlobalProvider>
       </body>
+      <GoogleAnalytics gaId="G-8E1T2SND6G" />
     </html>
   );
 }
