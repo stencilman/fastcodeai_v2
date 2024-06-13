@@ -36,8 +36,9 @@ const Members = () => {
       role: "Founder & Chief Scientist",
       bg: "bg-arjun",
       cp: "Founder & Chief Scientist",
-      desciption:
-        "PhD  in Computer Graphics from The MPI for Informatics, Post-doc from Courant Institute, NYU, Ex Research Scientist at Apple, Ex Adjunct Assistant Professor at CSE Dept., IIT Bombay, Adjunct Faculty at the CDS Dept., IISc Bangalore, Founder of FastCode AI.",
+      education:"",
+desciption:
+        "PhD in Computer Graphics from MPI for Informatics, post-doc at Courant Institute, NYU. Former research scientist at Apple, ex adjunct assistant professor at IIT Bombay, and adjunct faculty at IISc Bangalore. Founder of FastCode AI, loves creating impactful user technologies, father of 6-year-old twins.",
       linkedin: "https://in.linkedin.com/in/arjunjain",
     },
     {
@@ -50,7 +51,8 @@ const Members = () => {
       role: "Head of Engineering",
       bg: "bg-gautham",
       cp: "Computer Science Engineering & Research",
-      desciption: "MSc (CS) Saarland University.",
+      education:"MSc (CS) Saarland University.",
+desciption: "Seasoned backend engineer, profound thinker, specializing in building secure and scalable systems.",
       linkedin: "https://in.linkedin.com/in/gautham-adithya-ravi-8b803341",
     },
     {
@@ -64,7 +66,8 @@ const Members = () => {
       role: "Software Engineer",
       bg: "bg-yash grayscale",
       cp: "Software Engineer",
-      desciption: "Computer Science Graduate from Washington State University. Passionate about app development, integrating AI into daily life, and believe that AI can enhance all sectors of life.",
+      education:"Computer Science Graduate from Washington State University. ",
+desciption: "Passionate about app development and AI, with a strong enthusiasm for sports.",
       linkedin: "https://www.linkedin.com/in/yash-agarwal-a99944236/",
     },
     {
@@ -78,7 +81,8 @@ const Members = () => {
       role: "Generalist Engineer",
       bg: "bg-parth",
       cp: "AI Tech Creator",
-      desciption: "B.Tech (IN) VIT Pune.",
+      education:"B.Tech (IN) VIT Pune. ",
+desciption: "Avid gamer. The culinary salt to the tech world. Open to all experiences.",
       linkedin: "https://in.linkedin.com/in/parth-basole-22844115a",
     },
     {
@@ -92,7 +96,8 @@ const Members = () => {
       role: "Senior Research Scientist",
       bg: "bg-shreyas grayscale",
       cp: "Senior Research Scientist",
-      desciption: "B.Tech (IT) DAIICT.",
+      education:"B.Tech (IT) DAIICT. ",
+desciption: "Passionate about engineering and machine learning, expert in developing large-scale systems.",
       linkedin: "https://www.linkedin.com/in/shreyas-bhanderi/",
     },
 
@@ -106,8 +111,9 @@ const Members = () => {
       role: "Senior ML engineer ",
       bg: "bg-naren",
       cp: "Senior Machine learning Enginner",
-      desciption:
-        "B.Tech IIT Madras, MS (Artificial Intelligence) University of Amsterdam.",
+      education:"B.Tech IIT Madras, MS (Artificial Intelligence) University of Amsterdam.",
+desciption:
+        "High on caffeine and life, fidgeting chess, rocking the uke, and lifting weights, all while barely sleeping",
       linkedin: "https://www.linkedin.com/in/cgnarendiran/",
     },
     {
@@ -121,8 +127,9 @@ const Members = () => {
       role: "Machine Learning Engineer",
       bg: "bg-rishabh",
       cp: "Machine Learning Engineer",
-      desciption:
-        "MTech AI from IISc, MBA in Technology Management with Major in Finance (and CFA Level 1 cleared) from NMIMS.",
+      education:"MTech AI from IISc, MBA in Technology Management with Major in Finance (and CFA Level 1 cleared) from NMIMS. ",
+desciption:
+        "Engineer, researcher, and avid football enthusiast.",
       linkedin: "https://www.linkedin.com/in/rishabh-gupta-a5886712a/",
     },
     {
@@ -136,7 +143,8 @@ const Members = () => {
       role: "Software Engineer",
       bg: "bg-abdul",
       cp: "Software Engineer",
-      desciption: "B.Tech from JNTUH.",
+      education:"B.Tech from JNTUH.",
+desciption: "Integrating AI with web applications, focusing on empathetic user experience design.",
       linkedin: "https://www.linkedin.com/in/abdul-m-699ab9256/",
     },
 
@@ -150,7 +158,8 @@ const Members = () => {
       role: "Senior Research Scientist",
       bg: "bg-tirth",
       cp: "Senior Research Scientist",
-      desciption: "M.Tech (CS) IIIT Hyderabad.",
+      education:"M.Tech (CS) IIIT Hyderabad. ",
+desciption: "Strong engineer, avid researcher, and kick-ass musician.",
       linkedin: "https://www.linkedin.com/in/tirth-pandit/",
     },
     {
@@ -164,8 +173,9 @@ const Members = () => {
       role: "Head of Sales and Business Development",
       bg: "bg-prabal grayscale",
       cp: "Head of Sales and Business Development",
-      desciption:
-        "MBA from Indiana University. 15 years of techology services experience, delivering managed teams and projects for large clients in US and India.",
+      education:"MBA from Indiana University. ",
+desciption:
+        "15 years of technology services experience, delivering managed teams and projects for large clients in US and India.",
       linkedin: "https://www.linkedin.com/in/prabalpatel211/",
     },
 
@@ -180,7 +190,8 @@ const Members = () => {
       role: "Senior Research Scientist",
       bg: "bg-sughosh ",
       cp: "Senior Research Scientist",
-      desciption: "B.Tech (CS) IIT Kanpur.",
+      education:"B.Tech (CS) IIT Kanpur.",
+desciption: " Seasoned researcher, strong engineer and avid wildlife photographer",
       linkedin: "https://www.linkedin.com/in/sughoshpatil/",
     },
     {
@@ -194,7 +205,8 @@ const Members = () => {
       role: "IOS Developer",
       bg: "bg-eshwar grayscale",
       cp: "Lead Mobile Engineer",
-      desciption: "MS (CS) from New Horizon College of Engineering",
+      education:"MS (CS) from New Horizon College of Engineering.",
+desciption: "Seasoned iOS Engineer with a decade of experience, exploring AI and Machine Learning. Also a poet, classical music enthusiast, and avid football critic.",
       linkedin: "https://in.linkedin.com/in/eshwar-ramesh-831303ab",
     },
     {
@@ -208,8 +220,9 @@ const Members = () => {
       role: "Machine Learning Engineer",
       bg: "bg-darshan ",
       cp: "Machine Learning Engineer",
-      desciption:
-        "MS (CS) IIIT Hyderabad, Primarily interested in multimodal learning",
+      education:"MS (CS) IIIT Hyderabad. ",
+desciption:
+        "Seasoned researcher, diving deep into multiple modal learning.",
       linkedin: "https://www.linkedin.com/in/darshansinghs/",
 
       
@@ -224,7 +237,8 @@ const Members = () => {
       role: "Research Scientist",
       bg: "bg-sanjay",
       cp: "Research Scientist",
-      desciption: "BS (Research) at IISc Bangalore.",
+      education:"BS (Research) at IISc Bangalore.",
+desciption: " Embracing a 'just do it' mentality, avid food lover, and discerning connoisseur.",
       linkedin: "https://www.linkedin.com/in/sanjay-suriyakumar-a51aa821b/",
 
       
@@ -241,7 +255,8 @@ const Members = () => {
       role: "Research Scientist",
       bg: "bg-dhaval",
       cp: "Research Scientist",
-      desciption: "MS (CS) IIIT Hyderabad.",
+      education:"MS (CS) IIIT Hyderabad.",
+desciption: " Blogger, passionate about research with publications in prestigious venues like WWW.",
       linkedin: "https://www.linkedin.com/in/dhavaltaunk08/",
     },
   ];
@@ -260,6 +275,7 @@ const Members = () => {
             linkedin,
             height,
             backHeight,
+            education
           },
           i
         ) => (
@@ -295,6 +311,8 @@ const Members = () => {
                     {cp}
                   </h3>
                   <p className="text-[#9EB3CF] text-lg  font-bwmss01 pt-[15px]">
+                    {education}
+                  </p> <p className="text-[#9EB3CF] text-lg  font-bwmss01 pt-[5px]">
                     {desciption}
                   </p>
                 </div>
