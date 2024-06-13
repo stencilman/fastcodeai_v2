@@ -29,7 +29,7 @@ const ScreenAbout = () => {
     return () => window.removeEventListener('resize', checkScreenHeight);
   }, []);
   return (
-    <div className={`w-full ${isShortScreen ? 'h-[700px]' : 'h-[90vh] sm:h-[86vh] md:h-[87vh] lg:h-[100vh]'}  flex flex-col lg:flex-row relative lg:static gap-[20px] items-center bg-[#00081F]`}>
+    <div className={`w-full ${isShortScreen ? 'h-[800px]' : 'h-[90vh] sm:h-[86vh] md:h-[82vh] lg:h-[100vh]'}  flex flex-col lg:flex-row relative lg:static gap-[20px] items-center bg-[#00081F]`}>
       <div className="absolute lg:relative left-0 top-[20vw] sm:top-[16vw] lg:top-0">
         <div className="w-[92vw] md:w-[70vw] h-[462px] lg:w-[600px] lg:h-[600px] transform scale-x-[-1]">
           <Lottie animationData={scringAnim} loop={true} />

@@ -13,6 +13,7 @@ import Prabal from "../../../../public/team/Prabal.jpg";
 import Sanjay from "../../../../public/team/Sanjay.png";
 import Shreyas from "../../../../public/team/shreyas2.jpg";
 import Tirth from "../../../../public/team/tirth1.jpg";
+import Yash from "../../../../public/team/yash.jpg";
 
 const Team = () => {
   const [imageInfo, setImageInfo] = useState([]);
@@ -30,9 +31,10 @@ const Team = () => {
       Sughosh,
       Parth,
       Prabal,
-      Sanjay,
+      // Sanjay,
       Shreyas,
       Tirth,
+      Yash,
    
     ];
   
