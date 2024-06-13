@@ -113,7 +113,7 @@ desciption: "Passionate about engineering and machine learning, expert in develo
       cp: "Senior Machine learning Enginner",
       education:"B.Tech IIT Madras, MS (Artificial Intelligence) University of Amsterdam.",
 desciption:
-        "High on caffeine and life, fidgeting chess, rocking the uke, and lifting weights, all while barely sleeping",
+        "High on caffeine and life, fidgeting chess, rocking the uke, and lifting weights, all while barely sleeping.",
       linkedin: "https://www.linkedin.com/in/cgnarendiran/",
     },
     {
@@ -191,7 +191,7 @@ desciption:
       bg: "bg-sughosh ",
       cp: "Senior Research Scientist",
       education:"B.Tech (CS) IIT Kanpur.",
-desciption: " Seasoned researcher, strong engineer and avid wildlife photographer",
+desciption: "Seasoned researcher, strong engineer with over half a decade of experience in Computer Vision, and an avid wildlife photographer whose work has been published by NatGeo.",
       linkedin: "https://www.linkedin.com/in/sughoshpatil/",
     },
     {
