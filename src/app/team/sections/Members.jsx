@@ -64,7 +64,7 @@ const Members = () => {
       role: "Software Engineer",
       bg: "bg-yash grayscale",
       cp: "Software Engineer",
-      desciption: "Computer Science Graduate from Washington State University.",
+      desciption: "Computer Science Graduate from Washington State University. Passionate about app development, integrating AI into daily life, and believe that AI can enhance all sectors of life.",
       linkedin: "https://www.linkedin.com/in/yash-agarwal-a99944236/",
     },
     {
