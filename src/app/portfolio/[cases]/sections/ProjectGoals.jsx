@@ -12,7 +12,7 @@ const ProjectGoals = ({projectGoalList}) => {
     return { beforeColon: "", afterColon: sentence };
   }
   return (
-    <div className=" relative  w-full h-auto pt-[70px] pb-[250px] bg-[#00081F] px-[20px] md:px-[50px] lg:px-[100px]">
+    <div className=" relative  w-full h-auto pt-[70px] pb-[150px] bg-[#00081F] px-[20px] md:px-[50px] lg:px-[100px]">
       <h1 className="text-white text-6xl md:text-8xl font-aeonik tracking-wide text-center">
         Project Goals
       </h1>
