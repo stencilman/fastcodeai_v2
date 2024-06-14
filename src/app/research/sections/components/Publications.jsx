@@ -2,11 +2,43 @@ import Button from "@/app/component/Button";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import publication1 from "../../../../../public/patents/publications/publication1.webp";
+import publication2 from "../../../../../public/patents/publications/publication2.webp";
+import publication3 from "../../../../../public/patents/publications/publication3.webp";
+import publication4 from "../../../../../public/patents/publications/publication4.png";
+import publication5 from "../../../../../public/patents/publications/publication5.webp";
+import publication6 from "../../../../../public/patents/publications/publication6.webp";
+import publication7 from "../../../../../public/patents/publications/publication7.webp";
+import publication8 from "../../../../../public/patents/publications/publication8.webp";
+import publication9 from "../../../../../public/patents/publications/publication9.webp";
+import publication10 from "../../../../../public/patents/publications/publication10.webp";
+import publication11 from "../../../../../public/patents/publications/publication11.webp";
+import publication12 from "../../../../../public/patents/publications/publication12.webp";
+import publication13 from "../../../../../public/patents/publications/publication13.webp";
+import publication14 from "../../../../../public/patents/publications/publication14.webp";
+import publication15 from "../../../../../public/patents/publications/publication15.webp";
+import publication16 from "../../../../../public/patents/publications/publication16.webp";
+import publication17 from "../../../../../public/patents/publications/publication17.webp";
+import publication18 from "../../../../../public/patents/publications/publication18.webp";
+import publication19 from "../../../../../public/patents/publications/publication19.webp";
+import publication20 from "../../../../../public/patents/publications/publication20.webp";
+import publication21 from "../../../../../public/patents/publications/publication21.webp";
+import publication22 from "../../../../../public/patents/publications/publication22.webp";
+import publication23 from "../../../../../public/patents/publications/publication23.webp";
+import publication24 from "../../../../../public/patents/publications/publication24.webp";
+import publication25 from "../../../../../public/patents/publications/publication25.webp";
+import publication26 from "../../../../../public/patents/publications/publication26.webp";
+import publication27 from "../../../../../public/patents/publications/publication27.webp";
+import publication28 from "../../../../../public/patents/publications/publication28.webp";
+import publication29 from "../../../../../public/patents/publications/publication29.webp";
+import publication30 from "../../../../../public/patents/publications/publication30.webp";
+import publication31 from "../../../../../public/patents/publications/publication31.webp";
+// import publication32 from "../../../../../public/patents/publications/publication32.webp"
 
 const Publications = () => {
   const publicationList = [
     {
-      img: "publication4.png",
+      img: publication4 ,
       technology: "TECHNOLOGY",
       year: "2023",
       desciption:
@@ -15,12 +47,13 @@ const Publications = () => {
       linkTo:
         "https://openaccess.thecvf.com/content/WACV2023/html/Agarwal_Skew-Robust_Human-Object_Interactions_in_Videos_WACV_2023_paper.html",
       downloadName: "Download PDF",
-      downloadTo: "https://openaccess.thecvf.com/content/WACV2023/papers/Agarwal_Skew-Robust_Human-Object_Interactions_in_Videos_WACV_2023_paper.pdf",
+      downloadTo:
+        "https://openaccess.thecvf.com/content/WACV2023/papers/Agarwal_Skew-Robust_Human-Object_Interactions_in_Videos_WACV_2023_paper.pdf",
       extraName: "",
       extraLink: "",
     },
     {
-      img: "publication5.webp",
+      img: publication5 ,
       technology: "TECHNOLOGY",
       year: "2021",
       desciption:
@@ -33,7 +66,7 @@ const Publications = () => {
       extraLink: "",
     },
     {
-      img: "publication6.webp",
+      img: publication6 ,
       technology: "TECHNOLOGY",
       year: "2021",
       desciption:
@@ -46,7 +79,7 @@ const Publications = () => {
       extraLink: "",
     },
     {
-      img: "publication7.webp",
+      img: publication7 ,
       technology: "TECHNOLOGY",
       year: "2020",
       desciption:
@@ -59,7 +92,7 @@ const Publications = () => {
       extraLink: "",
     },
     {
-      img: "publication8.webp",
+      img: publication8 ,
       technology: "TECHNOLOGY",
       year: "2019",
       desciption:
@@ -72,7 +105,7 @@ const Publications = () => {
       extraLink: "",
     },
     {
-      img: "publication9.webp",
+      img: publication9 ,
       technology: "TECHNOLOGY",
       year: "2019",
       desciption:
@@ -85,7 +118,7 @@ const Publications = () => {
       extraLink: "",
     },
     {
-      img: "publication10.webp",
+      img: publication10 ,
       technology: "TECHNOLOGY",
       year: "2019",
       desciption:
@@ -98,7 +131,7 @@ const Publications = () => {
       extraLink: "",
     },
     {
-      img: "publication11.webp",
+      img: publication11 ,
       technology: "TECHNOLOGY",
       year: "2019",
       desciption:
@@ -111,7 +144,7 @@ const Publications = () => {
       extraLink: "https://github.com/ssfootball04/generative_pose",
     },
     {
-      img: "publication12.webp",
+      img: publication12 ,
       technology: "TECHNOLOGY",
       year: "2019",
       desciption:
@@ -125,7 +158,7 @@ const Publications = () => {
       extraLink: "",
     },
     {
-      img: "publication13.webp",
+      img: publication13 ,
       technology: "TECHNOLOGY",
       year: "2019",
       desciption:
@@ -134,12 +167,13 @@ const Publications = () => {
       linkTo:
         "http://openaccess.thecvf.com/content_CVPRW_2019/html/Uncertainty_and_Robustness_in_Deep_Visual_Learning/Gundavarapu_Structured_Aleatoric_Uncertainty_in_Human_Pose_Estimation_CVPRW_2019_paper.html",
       downloadName: "Download PDF",
-      downloadTo: "https://openaccess.thecvf.com/content_CVPRW_2019/papers/Uncertainty%20and%20Robustness%20in%20Deep%20Visual%20Learning/Gundavarapu_Structured_Aleatoric_Uncertainty_in_Human_Pose_Estimation_CVPRW_2019_paper.pdf",
+      downloadTo:
+        "https://openaccess.thecvf.com/content_CVPRW_2019/papers/Uncertainty%20and%20Robustness%20in%20Deep%20Visual%20Learning/Gundavarapu_Structured_Aleatoric_Uncertainty_in_Human_Pose_Estimation_CVPRW_2019_paper.pdf",
       extraName: "",
       extraLink: "",
     },
     {
-      img: "publication1.webp",
+      img: publication1 ,
       technology: "TECHNOLOGY",
       year: "2018",
       desciption:
@@ -152,7 +186,7 @@ const Publications = () => {
       extraLink: "",
     },
     {
-      img: "publication14.webp",
+      img: publication14 ,
       technology: "TECHNOLOGY",
       year: "2018",
       desciption:
@@ -165,7 +199,7 @@ const Publications = () => {
       extraLink: "https://www.youtube.com/watch?v=FILdj0LuvjU",
     },
     {
-      img: "publication15.webp",
+      img: publication15 ,
       technology: "TECHNOLOGY",
       year: "2017",
       desciption:
@@ -178,20 +212,22 @@ const Publications = () => {
       extraLink: "https://github.com/rmitra/PS-Dataset",
     },
     {
-      img: "publication16.webp",
+      img: publication16 ,
       technology: "TECHNOLOGY",
       year: "2017",
       desciption:
         "R. Mitra, J. Zhang, S. Narayan, S. Ahmed, S. Chandran, A. Jain, “Improved Descriptors for Patch Matching and Reconstruction” in proceedings of ICCV Workshop on Compact and Efficient Feature Representation and Learning (CEFRL) (ICCV Workshop 2017), Venice, October 2017.",
       linkName: "Link",
-      linkTo: "https://openaccess.thecvf.com/content_ICCV_2017_workshops/w18/html/Mitra_Improved_Descriptors_for_ICCV_2017_paper.html",
+      linkTo:
+        "https://openaccess.thecvf.com/content_ICCV_2017_workshops/w18/html/Mitra_Improved_Descriptors_for_ICCV_2017_paper.html",
       downloadName: "Download PDF",
-      downloadTo: "https://openaccess.thecvf.com/content_ICCV_2017_workshops/papers/w18/Mitra_Improved_Descriptors_for_ICCV_2017_paper.pdf",
+      downloadTo:
+        "https://openaccess.thecvf.com/content_ICCV_2017_workshops/papers/w18/Mitra_Improved_Descriptors_for_ICCV_2017_paper.pdf",
       extraName: "Code",
       extraLink: "",
     },
     {
-      img: "publication2.webp",
+      img: publication2 ,
       technology: "TECHNOLOGY",
       year: "2016",
       desciption:
@@ -204,7 +240,7 @@ const Publications = () => {
       extraLink: "",
     },
     {
-      img: "publication17.webp",
+      img: publication17 ,
       technology: "TECHNOLOGY",
       year: "2016",
       desciption:
@@ -217,7 +253,7 @@ const Publications = () => {
       extraLink: "",
     },
     {
-      img: "publication18.webp",
+      img: publication18 ,
       technology: "TECHNOLOGY",
       year: "2015",
       desciption:
@@ -231,7 +267,7 @@ const Publications = () => {
       extraLink: "http://stencilcreator.org/",
     },
     {
-      img: "publication19.webp",
+      img: publication19 ,
       technology: "TECHNOLOGY",
       year: "2015",
       desciption:
@@ -246,7 +282,7 @@ const Publications = () => {
         "http://gvv.mpi-inf.mpg.de/projects/convNet_moCap/vids/video.mp4",
     },
     {
-      img: "publication20.webp",
+      img: publication20 ,
       technology: "TECHNOLOGY",
       year: "2015",
       desciption:
@@ -259,7 +295,7 @@ const Publications = () => {
       extraLink: "",
     },
     {
-      img: "publication3.webp",
+      img: publication3 ,
       technology: "TECHNOLOGY",
       year: "2014",
       desciption:
@@ -272,7 +308,7 @@ const Publications = () => {
       extraLink: "",
     },
     {
-      img: "publication21.webp",
+      img: publication21 ,
       technology: "TECHNOLOGY",
       year: "2014",
       desciption:
@@ -285,7 +321,7 @@ const Publications = () => {
       extraLink: "",
     },
     {
-      img: "publication22.webp",
+      img: publication22 ,
       technology: "TECHNOLOGY",
       year: "2014",
       desciption:
@@ -298,7 +334,7 @@ const Publications = () => {
       extraLink: "https://github.com/stencilman/deep_nets_iclr04",
     },
     {
-      img: "publication23.webp",
+      img: publication23 ,
       technology: "TECHNOLOGY",
       year: "2012",
       desciption:
@@ -312,7 +348,7 @@ const Publications = () => {
       extraLink: "http://cs.nyu.edu/~ajain/",
     },
     {
-      img: "publication24.webp",
+      img: publication24 ,
       technology: "TECHNOLOGY",
       year: "2012",
       desciption:
@@ -320,13 +356,12 @@ const Publications = () => {
       linkName: "Link",
       linkTo: "http://www.d2.mpi-inf.mpg.de/articulated-data",
       downloadName: "Download PDF",
-      downloadTo:
-        "/patents/publications/CVPR12.pdf",
+      downloadTo: "/patents/publications/CVPR12.pdf",
       extraName: "Video",
       extraLink: "",
     },
     {
-      img: "publication25.webp",
+      img: publication25 ,
       technology: "TECHNOLOGY",
       year: "2012",
       desciption:
@@ -340,7 +375,7 @@ const Publications = () => {
       extraLink: "http://www.youtube.com/watch?v=oHrBcyLzVzM",
     },
     {
-      img: "publication26.webp",
+      img: publication26 ,
       technology: "TECHNOLOGY",
       year: "2011",
       desciption:
@@ -353,7 +388,7 @@ const Publications = () => {
       extraLink: "",
     },
     {
-      img: "publication27.webp",
+      img: publication27 ,
       technology: "TECHNOLOGY",
       year: "2011",
       desciption:
@@ -367,7 +402,7 @@ const Publications = () => {
       extraLink: "",
     },
     {
-      img: "publication28.webp",
+      img: publication28 ,
       technology: "TECHNOLOGY",
       year: "2010",
       desciption:
@@ -381,7 +416,7 @@ const Publications = () => {
         "http://www.youtube.com/watch?v=zXSj4pcl9Ao&feature=player_embedded",
     },
     {
-      img: "publication29.webp",
+      img: publication29 ,
       technology: "TECHNOLOGY",
       year: "2010",
       desciption:
@@ -395,7 +430,7 @@ const Publications = () => {
       extraLink: "",
     },
     {
-      img: "publication30.webp",
+      img: publication30 ,
       technology: "TECHNOLOGY",
       year: "2008",
       desciption:
@@ -409,7 +444,7 @@ const Publications = () => {
       extraLink: "",
     },
     {
-      img: "publication31.webp",
+      img: publication31 ,
       technology: "TECHNOLOGY",
       year: "2008",
       desciption:
@@ -460,10 +495,11 @@ const Publications = () => {
             <div className="w-full md:w-[40%]">
               <Image
                 className="rounded-[18px] w-full md:w-[370px]"
-                src={`/patents/publications/${e.img}`}
+                src={e.img}
                 height="370"
                 width="370"
-                alt=""
+                placeholder="blur"
+                alt="publication"
               />
             </div>
             <div className="w-full md:w-[55%] flex flex-col gap-[20px]">
