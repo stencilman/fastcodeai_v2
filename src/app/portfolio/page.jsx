@@ -20,7 +20,8 @@ const Potfolio = () => {
       <CaseStudies/>
       <Clients/>
       {/* <TestimonialsN/> */}
-      <Footer showExtraSpace={true}/>
+      {/* <div className="h-[100px] md:h-[160px] lg:h-[100px] bg-[#00081F]"></div> */}
+      <Footer showExtraSpace={false}/>
     </>
   );
 };
