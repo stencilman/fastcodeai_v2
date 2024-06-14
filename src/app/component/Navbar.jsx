@@ -44,6 +44,7 @@ const Navbar = () => {
       style={{
         background: `linear-gradient(to top, rgba(0, 8, 31, ${backdropOpacity}) 0%, rgb(0 0 0 / 57%) 100%)`,
         backdropFilter: `${backdropBlur}`,
+        WebkitBackdropFilter: `${backdropBlur}`,
       }}
     >
       <div className="mx-[20px] md:mx-[50px] lg:mx-[100px]  pt-[30px]  pb-[20px] flex items-center justify-between ">
