@@ -104,7 +104,7 @@ const OpenRolesForm = () => {
                     </div>
                   </div>
                   <div className=" mt-[25px]">
-                    <ul className="flex pl-[0px] flex-wrap gap-[20px] md:gap-[40px]">
+                    <ul className="flex pl-[0px] flex-wrap gap-[15px] ">
                       <li className="text-white font-aeonik text-xl font-medium">
                         Bangalore, India
                       </li>
