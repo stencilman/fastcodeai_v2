@@ -2,38 +2,37 @@ import Button from "@/app/component/Button";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import publication1 from "../../../../../public/patents/publications/publication1.webp";
-import publication2 from "../../../../../public/patents/publications/publication2.webp";
-import publication3 from "../../../../../public/patents/publications/publication3.webp";
-import publication4 from "../../../../../public/patents/publications/publication4.png";
-import publication5 from "../../../../../public/patents/publications/publication5.webp";
-import publication6 from "../../../../../public/patents/publications/publication6.webp";
-import publication7 from "../../../../../public/patents/publications/publication7.webp";
-import publication8 from "../../../../../public/patents/publications/publication8.webp";
-import publication9 from "../../../../../public/patents/publications/publication9.webp";
-import publication10 from "../../../../../public/patents/publications/publication10.webp";
-import publication11 from "../../../../../public/patents/publications/publication11.webp";
-import publication12 from "../../../../../public/patents/publications/publication12.webp";
-import publication13 from "../../../../../public/patents/publications/publication13.webp";
-import publication14 from "../../../../../public/patents/publications/publication14.webp";
-import publication15 from "../../../../../public/patents/publications/publication15.webp";
-import publication16 from "../../../../../public/patents/publications/publication16.webp";
-import publication17 from "../../../../../public/patents/publications/publication17.webp";
-import publication18 from "../../../../../public/patents/publications/publication18.webp";
-import publication19 from "../../../../../public/patents/publications/publication19.webp";
-import publication20 from "../../../../../public/patents/publications/publication20.webp";
-import publication21 from "../../../../../public/patents/publications/publication21.webp";
-import publication22 from "../../../../../public/patents/publications/publication22.webp";
-import publication23 from "../../../../../public/patents/publications/publication23.webp";
-import publication24 from "../../../../../public/patents/publications/publication24.webp";
-import publication25 from "../../../../../public/patents/publications/publication25.webp";
-import publication26 from "../../../../../public/patents/publications/publication26.webp";
-import publication27 from "../../../../../public/patents/publications/publication27.webp";
-import publication28 from "../../../../../public/patents/publications/publication28.webp";
-import publication29 from "../../../../../public/patents/publications/publication29.webp";
-import publication30 from "../../../../../public/patents/publications/publication30.webp";
-import publication31 from "../../../../../public/patents/publications/publication31.webp";
-// import publication32 from "../../../../../public/patents/publications/publication32.webp"
+import publication1 from "../../../../../public/research/publications/publication1.webp";
+import publication2 from "../../../../../public/research/publications/publication2.webp";
+import publication3 from "../../../../../public/research/publications/publication3.webp";
+import publication4 from "../../../../../public/research/publications/publication4.png";
+import publication5 from "../../../../../public/research/publications/publication5.webp";
+import publication6 from "../../../../../public/research/publications/publication6.webp";
+import publication7 from "../../../../../public/research/publications/publication7.webp";
+import publication8 from "../../../../../public/research/publications/publication8.webp";
+import publication9 from "../../../../../public/research/publications/publication9.webp";
+import publication10 from "../../../../../public/research/publications/publication10.webp";
+import publication11 from "../../../../../public/research/publications/publication11.webp";
+import publication12 from "../../../../../public/research/publications/publication12.webp";
+import publication13 from "../../../../../public/research/publications/publication13.webp";
+import publication14 from "../../../../../public/research/publications/publication14.webp";
+import publication15 from "../../../../../public/research/publications/publication15.webp";
+import publication16 from "../../../../../public/research/publications/publication16.webp";
+import publication17 from "../../../../../public/research/publications/publication17.webp";
+import publication18 from "../../../../../public/research/publications/publication18.webp";
+import publication19 from "../../../../../public/research/publications/publication19.webp";
+import publication20 from "../../../../../public/research/publications/publication20.webp";
+import publication21 from "../../../../../public/research/publications/publication21.webp";
+import publication22 from "../../../../../public/research/publications/publication22.webp";
+import publication23 from "../../../../../public/research/publications/publication23.webp";
+import publication24 from "../../../../../public/research/publications/publication24.webp";
+import publication25 from "../../../../../public/research/publications/publication25.webp";
+import publication26 from "../../../../../public/research/publications/publication26.webp";
+import publication27 from "../../../../../public/research/publications/publication27.webp";
+import publication28 from "../../../../../public/research/publications/publication28.webp";
+import publication29 from "../../../../../public/research/publications/publication29.webp";
+import publication30 from "../../../../../public/research/publications/publication30.webp";
+import publication31 from "../../../../../public/research/publications/publication31.webp";
 
 const Publications = () => {
   const publicationList = [
@@ -48,7 +47,7 @@ const Publications = () => {
         "https://openaccess.thecvf.com/content/WACV2023/html/Agarwal_Skew-Robust_Human-Object_Interactions_in_Videos_WACV_2023_paper.html",
       downloadName: "Download PDF",
       downloadTo:
-        "https://openaccess.thecvf.com/content/WACV2023/papers/Agarwal_Skew-Robust_Human-Object_Interactions_in_Videos_WACV_2023_paper.pdf",
+        "/research/publicationsPdf/Skew-Robust_Human-Object_Interactions_in_Videos_WACV_2023_paper.pdf",
       extraName: "",
       extraLink: "",
     },
@@ -61,7 +60,7 @@ const Publications = () => {
       linkName: "Link",
       linkTo: "https://4dqv.mpi-inf.mpg.de/GraviCap/",
       downloadName: "Download PDF",
-      downloadTo: "http://arxiv.org/pdf/2108.08844",
+      downloadTo: "/research/publicationsPdf/Gravity-Aware_3D_2021.pdf",
       extraName: "",
       extraLink: "",
     },
@@ -74,7 +73,7 @@ const Publications = () => {
       linkName: "Link",
       linkTo: "https://ojs.aaai.org/index.php/AAAI/article/view/17800",
       downloadName: "Download PDF",
-      downloadTo: "http://arjunjain.co.in/resources/iaai-2021.pdf",
+      downloadTo: "/research/publicationsPdf/iaai-2021.pdf",
       extraName: "",
       extraLink: "",
     },
@@ -100,7 +99,8 @@ const Publications = () => {
       linkName: "Link",
       linkTo: "https://arxiv.org/abs/1909.07945",
       downloadName: "Download PDF",
-      downloadTo: "http://arjunjain.co.in/resources/poster_199_v2.pdf",
+      
+      downloadTo: "/research/publicationsPdf/poster_199_v2_2019.pdf",
       extraName: "",
       extraLink: "",
     },
@@ -126,7 +126,7 @@ const Publications = () => {
       linkName: "Link",
       linkTo: "https://arxiv.org/abs/1909.07945",
       downloadName: "Download PDF",
-      downloadTo: "https://arxiv.org/pdf/1909.07945",
+      downloadTo: "/research/publicationsPdf/ProtoGAN_2019.pdf",
       extraName: "",
       extraLink: "",
     },
@@ -139,7 +139,7 @@ const Publications = () => {
       linkName: "Link",
       linkTo: "https://arxiv.org/abs/1904.01324",
       downloadName: "Download PDF",
-      downloadTo: "http://arjunjain.co.in/resources/ICCV19Poster.pdf",
+      downloadTo: "/research/publicationsPdf/ICCV2019Poster.pdf",
       extraName: "Code",
       extraLink: "https://github.com/ssfootball04/generative_pose",
     },
@@ -153,7 +153,7 @@ const Publications = () => {
       linkTo: "https://arxiv.org/abs/1908.06401",
       downloadName: "Download PDF",
       downloadTo:
-        "http://openaccess.thecvf.com/content_CVPRW_2019/papers/Augmented%20Human%20Human-centric%20Understanding%20and%202D-3D%20Synthesis/Jain_On_the_Robustness_of_Human_Pose_Estimation_CVPRW_2019_paper.pdf",
+        "/research/publicationsPdf/Robustness_of_Human_Pose_Estimation_CVPRW_2019_paper.pdf",
       extraName: "",
       extraLink: "",
     },
@@ -168,7 +168,7 @@ const Publications = () => {
         "http://openaccess.thecvf.com/content_CVPRW_2019/html/Uncertainty_and_Robustness_in_Deep_Visual_Learning/Gundavarapu_Structured_Aleatoric_Uncertainty_in_Human_Pose_Estimation_CVPRW_2019_paper.html",
       downloadName: "Download PDF",
       downloadTo:
-        "https://openaccess.thecvf.com/content_CVPRW_2019/papers/Uncertainty%20and%20Robustness%20in%20Deep%20Visual%20Learning/Gundavarapu_Structured_Aleatoric_Uncertainty_in_Human_Pose_Estimation_CVPRW_2019_paper.pdf",
+        "/research/publicationsPdf/Gundavarapu_Structured_Aleatoric_Uncertainty_in_Human_Pose_Estimation_CVPRW_2019_paper.pdf",
       extraName: "",
       extraLink: "",
     },
@@ -181,7 +181,7 @@ const Publications = () => {
       linkName: "Link",
       linkTo: "https://arxiv.org/abs/1811.00438",
       downloadName: "Download PDF",
-      downloadTo: "http://arjunjain.co.in/accv2018/ACCV-2018-poster.pdf",
+      downloadTo: "/research/publicationsPdf/ACCV-2018.pdf",
       extraName: "",
       extraLink: "",
     },
@@ -194,7 +194,7 @@ const Publications = () => {
       linkName: "Project",
       linkTo: "https://www.cse.iitb.ac.in/~rdabral/3DPose/",
       downloadName: "Download PDF",
-      downloadTo: "https://arxiv.org/pdf/1711.09250v2",
+      downloadTo: "/research/publicationsPdf/Learning_3D_Human_Pose_2018.pdf",
       extraName: "Video",
       extraLink: "https://www.youtube.com/watch?v=FILdj0LuvjU",
     },
@@ -207,7 +207,7 @@ const Publications = () => {
       linkName: "Link",
       linkTo: "https://arxiv.org/abs/1801.01466",
       downloadName: "Download PDF",
-      downloadTo: "https://arxiv.org/pdf/1801.01466",
+      downloadTo: "/research/publicationsPdf/Dataset_Improving_Patch_Matching_2017.pdf",
       extraName: "Code",
       extraLink: "https://github.com/rmitra/PS-Dataset",
     },
@@ -222,7 +222,7 @@ const Publications = () => {
         "https://openaccess.thecvf.com/content_ICCV_2017_workshops/w18/html/Mitra_Improved_Descriptors_for_ICCV_2017_paper.html",
       downloadName: "Download PDF",
       downloadTo:
-        "https://openaccess.thecvf.com/content_ICCV_2017_workshops/papers/w18/Mitra_Improved_Descriptors_for_ICCV_2017_paper.pdf",
+        "/research/publicationsPdf/Mitra_Improved_Descriptors_for_ICCV_2017_paper.pdf",
       extraName: "Code",
       extraLink: "",
     },
@@ -248,7 +248,7 @@ const Publications = () => {
       linkName: "Link",
       linkTo: "https://arxiv.org/abs/1605.02688",
       downloadName: "Download PDF",
-      downloadTo: "http://arxiv.org/pdf/1605.02688.pdf",
+      downloadTo: "/research/publicationsPdf/Theano_2016.pdf",
       extraName: "Code",
       extraLink: "",
     },
@@ -276,7 +276,7 @@ const Publications = () => {
       linkTo: "http://gvv.mpi-inf.mpg.de/projects/convNet_moCap/",
       downloadName: "Download PDF",
       downloadTo:
-        "http://gvv.mpi-inf.mpg.de/projects/convNet_moCap/vids/CVPR15.pdf",
+        "/research/publicationsPdf/CVPR_2015.pdf",
       extraName: "Video",
       extraLink:
         "http://gvv.mpi-inf.mpg.de/projects/convNet_moCap/vids/video.mp4",
@@ -290,7 +290,7 @@ const Publications = () => {
       linkName: "Link",
       linkTo: "https://arxiv.org/abs/1411.4280",
       downloadName: "Download PDF",
-      downloadTo: "http://arxiv.org/pdf/1411.4280.pdf",
+      downloadTo: "/research/publicationsPdf/Efficient_Object_Localization_Using_Convolutional_Networks_2015.pdf",
       extraName: "Video",
       extraLink: "",
     },
@@ -303,7 +303,7 @@ const Publications = () => {
       linkName: "Link",
       linkTo: "http://arjunjain.co.in/accv2014/",
       downloadName: "Download PDF",
-      downloadTo: "http://arxiv.org/pdf/1409.7963v1.pdf",
+      downloadTo: "/research/publicationsPdf/ACCV_2014.pdf",
       extraName: "",
       extraLink: "",
     },
@@ -316,7 +316,7 @@ const Publications = () => {
       linkName: "Link",
       linkTo: "http://arxiv.org/abs/1406.2984",
       downloadName: "Download PDF",
-      downloadTo: "https://arxiv.org/pdf/1406.2984",
+      downloadTo: "/research/publicationsPdf/NIPS_2014.pdf",
       extraName: "Video",
       extraLink: "",
     },
@@ -343,7 +343,7 @@ const Publications = () => {
       linkTo: "http://www.mpi-inf.mpg.de/resources/MaterialMemex/",
       downloadName: "Download PDF",
       downloadTo:
-        "http://www.mpi-inf.mpg.de/resources/MaterialMemex/MaterialMemex.pdf",
+        "/research/publicationsPdf/MaterialMemex_2012.pdf",
       extraName: "Video",
       extraLink: "http://cs.nyu.edu/~ajain/",
     },
@@ -356,7 +356,7 @@ const Publications = () => {
       linkName: "Link",
       linkTo: "http://www.d2.mpi-inf.mpg.de/articulated-data",
       downloadName: "Download PDF",
-      downloadTo: "/patents/publications/CVPR12.pdf",
+      downloadTo: "/research/publicationsPdf/CVPR_2012.pdf",
       extraName: "Video",
       extraLink: "",
     },
@@ -370,7 +370,7 @@ const Publications = () => {
       linkTo: "http://www.mpi-inf.mpg.de/resources/3DModelRecombination/",
       downloadName: "Download PDF",
       downloadTo:
-        "http://www.mpi-inf.mpg.de/resources/3DModelRecombination/3DModelRecombination.pdf",
+        "/research/publicationsPdf/3DModelRecombination_2012.pdf",
       extraName: "Video",
       extraLink: "http://www.youtube.com/watch?v=oHrBcyLzVzM",
     },
@@ -397,7 +397,7 @@ const Publications = () => {
       linkTo: "http://www.d2.mpi-inf.mpg.de/content/shape4data",
       downloadName: "Download PDF",
       downloadTo:
-        "http://www.d2.mpi-inf.mpg.de/sites/default/files/pishchulin2011cvpr.pdf",
+        "/research/publicationsPdf/CVPR_2011.pdf",
       extraName: "Website",
       extraLink: "",
     },
@@ -425,7 +425,7 @@ const Publications = () => {
       linkTo: "http://www.mpi-inf.mpg.de/resources/LineReconstruction/",
       downloadName: "Download PDF",
       downloadTo:
-        "http://www.mpi-inf.mpg.de/resources/LineReconstruction/paper/cvpr2010.pdf",
+        "/research/publicationsPdf/cvpr_2010.pdf",
       extraName: "Video",
       extraLink: "",
     },

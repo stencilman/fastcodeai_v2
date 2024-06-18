@@ -34,7 +34,7 @@ const Dedication = () => {
               }}
             >
               <Image
-                src="/patents/icon1.svg"
+                src="/research/icon1.svg"
                 height="50"
                 width="50"
                 className=""
@@ -60,7 +60,7 @@ const Dedication = () => {
               }}
             >
               <Image
-                src="/patents/icon2.svg"
+                src="/research/icon2.svg"
                 height="50"
                 width="50"
                 className=""
@@ -86,7 +86,7 @@ const Dedication = () => {
               }}
             >
               <Image
-                src="/patents/icon3.svg"
+                src="/research/icon3.svg"
                 height="50"
                 width="50"
                 className=""
@@ -112,7 +112,7 @@ const Dedication = () => {
               }}
             >
               <Image
-                src="/patents/icon4.svg"
+                src="/research/icon4.svg"
                 height="50"
                 width="50"
                 className=""

@@ -41,7 +41,7 @@ const OurImpact = ({ impactData }) => {
                 </p>
               </div>
             )})}
-            {pathSql && (
+            {/* {pathSql && (
               <p className="text-[#9EB3CF] text-lg font-bwmss01 mt-[10px] ">
                 Live Demo Experience our secure Text-to-SQL interface first hand
                 at:{" "}
@@ -53,7 +53,7 @@ const OurImpact = ({ impactData }) => {
                   FastCode SQL Wizard
                 </a>
               </p>
-            )}
+            )} */}
           </div>
           {/* img */}
           {/* <div className="relative right-[0px] ">

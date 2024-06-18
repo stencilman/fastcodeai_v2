@@ -6,10 +6,10 @@ import React from "react";
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { usePathname, useRouter } from "next/navigation";
-import pic3 from "../../../../../public/patents/patentPage/pic3-2.png";
-import pic4 from "../../../../../public/patents/patentPage/pic4-2.png";
-import pic2 from "../../../../../public/patents/patentPage/pic2-2.png";
-import pic1 from "../../../../../public/patents/patentPage/pic1-2.png";
+import pic3 from "../../../../../public/research/patentPage/pic3-2.png";
+import pic4 from "../../../../../public/research/patentPage/pic4-2.png";
+import pic2 from "../../../../../public/research/patentPage/pic2-2.png";
+import pic1 from "../../../../../public/research/patentPage/pic1-2.png";
 
 const Patents = () => {
   const patentsList = [
@@ -24,7 +24,7 @@ const Patents = () => {
       linkTo: "",
       downloadName: "Download PDF",
       downloadTo:
-        "https://ipindia.gov.in/writereaddata/Portal/IPOJournal/1_4975_1/Part-2.pdf",
+        "/research/patentsPdf/Triggering_event_in_vehicle.pdf",
       idAttr: "vehicleEvent",
     },
     {
@@ -39,7 +39,7 @@ const Patents = () => {
       linkTo: "",
       downloadName: "Download PDF",
       downloadTo:
-        "https://ipindia.gov.in/writereaddata/Portal/IPOJournal/1_4965_1/Part-1.pdf",
+        "/research/patentsPdf/Deploying_airbag.pdf",
       idAttr: "headPose",
     },
 
@@ -69,7 +69,7 @@ const Patents = () => {
       linkTo: "https://patents.google.com/patent/US9191579B2/en",
       downloadName: "Download PDF",
       downloadTo:
-        "https://patentimages.storage.googleapis.com/c9/b5/ee/609f573b51fa6d/US9191579.pdf",
+        "/research/patentsPdf/Human_sensing.pdf",
       idAttr: "humanShapeTrack",
     },
   ];
