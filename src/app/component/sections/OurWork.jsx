@@ -243,6 +243,7 @@ const OurWork = () => {
                 <Image
                   className="w-[100%] h-[293px] rounded-[25px] object-cover select-none"
                   src={slide.image}
+                  draggable="false"
                   placeholder="blur"
                   width="368"
                   height="360"
