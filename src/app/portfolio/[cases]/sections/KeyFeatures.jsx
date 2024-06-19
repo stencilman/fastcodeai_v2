@@ -66,12 +66,17 @@ const KeyFeatures = ({ keyFeaturesData }) => {
                 key={i}
                 className=" transition-all duration-300 ease-in-out text-[#9EB3CF] text-lg font-bwmss01 "
               >
-                <Link key={i} href={e.link} className="">
+                <Link key={i} href={e?.link} className="">
                   {" "}
-                  {e.description}{" "}
+                  {e?.description}{" "}
                 </Link>
                 <i>
-                  <Link target="_blank" className="italic underline hover:text-blue-600" href={e?.viewSourceLink}>{e?.viewSource}</Link>
+                  <Link
+                    className="italic underline hover:text-blue-600"
+                    href={e?.link}
+                  >
+                    {e?.viewSource}
+                  </Link>
                 </i>
               </p>
             ))}

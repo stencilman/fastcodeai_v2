@@ -586,7 +586,7 @@ const Cases = ({ params }) => {
           {
             description:
               "1 -  Cholakkal Hisham , Arjun Jain, et al. Method For Identifying a Hand Pose in a Vehicle, WO2020048814, March 2020",
-            link: "/research#headPoseIdentify",
+            link: "/research?q=headPoseIdentify",
             viewSource: "View Source",
             viewSourceLink:
               "https://patentscope.wipo.int/search/en/detail.jsf?docId=WO2020048814",
@@ -594,7 +594,7 @@ const Cases = ({ params }) => {
           {
             description:
               "2 - Vikram Gupta, Arjun Jain, et al. Method and System for Triggering an Event in a Vehicle, EP3895064, Jan 2023",
-            link: "/research#vehicleEvent",
+            link: "/research?q=vehicleEvent",
             viewSource: "PDF",
             viewSourceLink:
               "https://ipindia.gov.in/writereaddata/Portal/IPOJournal/1_4975_1/Part-2.pdf",
@@ -602,7 +602,7 @@ const Cases = ({ params }) => {
           {
             description:
               "3 - Sai Kumar Dwivedi, Arjun Jain, et al. System And Method For Deployment Of Airbag Based On Head Pose Estimation, 201911039220 A, April 2021",
-            link: "/research#headPose",
+            link: "/research?q=headPose",
             viewSource: "PDF",
             viewSourceLink:
               "https://ipindia.gov.in/writereaddata/Portal/IPOJournal/1_4965_1/Part-1.pdf",
@@ -625,7 +625,7 @@ const Cases = ({ params }) => {
           {
             description:
               "1 - C. Kumar, J. Ramesh, B. Chakraborty, R. Raman, C. Weinrich, A. Mundhada, A. Jain, F. Flohr , “VRU Pose-SSD: Multiperson Pose Estimation For Automated Driving” in proceedings of Innovative Applications of Artificial Intelligence (IAAI 2021), Virtual, February 2021.",
-              link:"/research",
+              link:"/research?q_public=IAAI2021",
             viewSource: "PDF",
             viewSourceLink: "http://arjunjain.co.in/resources/iaai-2021.pdf",
           },

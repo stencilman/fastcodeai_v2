@@ -63,6 +63,7 @@ const Publications = () => {
       downloadTo: "/research/publicationsPdf/Gravity-Aware_3D_2021.pdf",
       extraName: "",
       extraLink: "",
+     
     },
     {
       img: publication6 ,
@@ -76,6 +77,7 @@ const Publications = () => {
       downloadTo: "/research/publicationsPdf/iaai-2021.pdf",
       extraName: "",
       extraLink: "",
+      idAttr : "IAAI2021",
     },
     {
       img: publication7 ,
@@ -483,6 +485,7 @@ const Publications = () => {
       {publicationList.map((e, i) => (
         <div
           key={i}
+          id={e?.idAttr}
           className="w-full px-[20px] md:px-[50px] lg:px-[100px] flex-col gap-[60px]"
         >
           <div

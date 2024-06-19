@@ -1,12 +1,55 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import Patents from "./components/Patents";
 import Publications from "./components/Publications";
 import { motion } from "framer-motion";
+import {  useSearchParams } from "next/navigation";
 
 const Showcase = () => {
   const [activeTab, setActiveTab] = useState("patents"); // Track active tab
 
+  const searchParams = useSearchParams();
+  const query = searchParams.get('q');
+  const query_publications = searchParams.get('q_public');
+
+ 
+
+  useEffect(() => {
+    if(query_publications){
+      setActiveTab("publications")
+    }
+    const scrollToElement = () => {
+      if (query || query_publications) {
+        const element = document.getElementById(query || query_publications);
+        if (element) {
+          const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+          if(screen.width<=767){
+
+            const offsetPosition = elementPosition - 50; 
+            window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth',
+          });
+          }else{
+            const offsetPosition = elementPosition - 150;
+            window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth',
+          });
+
+          }
+
+          
+        }
+      }
+    };
+
+    // Run the scroll function after a short delay to ensure elements are rendered
+    const timeoutId = setTimeout(scrollToElement, 100);
+
+    // Cleanup function to clear the timeout if the component unmounts
+    return () => clearTimeout(timeoutId);
+  }, [query]);
   const toggleTab = (tab) => {
     setActiveTab(tab);
   };
