@@ -3,14 +3,14 @@ import React, { useState,useEffect } from "react";
 import Patents from "./components/Patents";
 import Publications from "./components/Publications";
 import { motion } from "framer-motion";
-import {  useSearchParams } from "next/navigation";
+// import {  useSearchParams } from "next/navigation";
 
-const Showcase = () => {
-  const [activeTab, setActiveTab] = useState("patents"); // Track active tab
-
-  const searchParams = useSearchParams();
-  const query = searchParams.get('q');
-  const query_publications = searchParams.get('q_public');
+const Showcase = ({searchParams}) => {
+  const [activeTab, setActiveTab] = useState("patents"); 
+console.log("searchParams",searchParams)
+  // const searchParams = useSearchParams();
+  const query = searchParams.q;
+  const query_publications = searchParams.q_public;
 
  
 
@@ -49,7 +49,7 @@ const Showcase = () => {
 
     // Cleanup function to clear the timeout if the component unmounts
     return () => clearTimeout(timeoutId);
-  }, [query]);
+  }, [query,query_publications]);
   const toggleTab = (tab) => {
     setActiveTab(tab);
   };

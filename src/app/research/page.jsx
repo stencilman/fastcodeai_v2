@@ -11,7 +11,7 @@ import Footer from "../component/sections/Footer";
 import Cta from "../industries/sections/Cta";
 import TestimonialsN from "../component/sections/TestimonialsN";
 
-const Research = ({ params }) => {
+const Research = ({ params,searchParams }) => {
   const { setIsActive } = useGlobalContext();
   
  
@@ -23,7 +23,7 @@ const Research = ({ params }) => {
     <>
       <Hero />
       <Dedication />
-      <Showcase />
+      <Showcase searchParams={searchParams}/>
       {/* <HowWeDo /> */}
       {/* <Industries /> */}
       <div className="mt-[20vw] sm:mt-[10vw] md:mt-[10vw]"></div>
