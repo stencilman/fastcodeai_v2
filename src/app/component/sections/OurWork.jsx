@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import gesrec from "../../../../public/our-work/gesrec.png";
 import vrups from "../../../../public/our-work/vrups.jpg";
 import fashion from "../../../../public/our-work/fashion.png";
@@ -12,6 +12,7 @@ import bnk from "../../../../public/our-work/bnk.png";
 import rag from "../../../../public/our-work/rag_weave.jpg";
 import fedLearning from "../../../../public/potfolio/fedLearning/img1-2.png";
 import fitness from "../../../../public/potfolio/fitness/img1-2.png";
+import { motion, useMotionValue } from "framer-motion";
 
 const slides = [
   {
@@ -103,7 +104,12 @@ const slides = [
 ];
 
 const OurWork = () => {
-  const [currentSlide, setCurrentSlide] = React.useState(0);
+  const DRAG_BUFFER = 10;
+
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const [dragging, setDragging] = useState(false);
+
+  const dragX = useMotionValue();
 
   const nextSlide = () => {
     setCurrentSlide((prevSlide) =>
@@ -118,6 +124,27 @@ const OurWork = () => {
   };
 
   console.log("currentSlide", currentSlide);
+
+  const onDragStart = () => {
+    setDragging(true);
+    // console.log("start",dragX.get())
+  };
+
+  const onDragEnd = () => {
+    setDragging(false);
+    // console.log("end",dragX.get())
+    const x = dragX.get();
+
+    if (x <= -DRAG_BUFFER) {
+      setCurrentSlide((prevSlide) =>
+        prevSlide === slides.length - 1 ? 0 : prevSlide + 1
+      );
+    } else if (x >= DRAG_BUFFER) {
+      setCurrentSlide((prevSlide) =>
+        prevSlide === 0 ? slides.length - 1 : prevSlide - 1
+      );
+    }
+  };
 
   return (
     <div className="w-full min-h-[120vh] md:min-h-[100vh] pl-[20px] md:pl-[80px] lg:pl-[160px] relative bg-[#00081F] flex flex-col justify-center py-[100px]">
@@ -160,9 +187,38 @@ const OurWork = () => {
       </div>
       {/* Carousel  */}
       <div className="w-full relative z-[1] flex overflow-x-hidden mt-[67px]">
-        <div className="flex relative gap-[10vw] lg:gap-[8vw] ">
+        <motion.div
+          drag="x"
+          dragConstraints={{
+            left: 0,
+            right: 0,
+          }}
+          onDragStart={onDragStart}
+          onDragEnd={onDragEnd}
+          style={{
+            x: dragX,
+          }}
+          animate={
+            {
+              // translateX : "-9%"
+            }
+          }
+          transition={{
+            type: "spring",
+            mass: 3,
+            stiffness: 400,
+            damping: 50,
+          }}
+          className="flex  gap-[10vw] lg:gap-[8vw] cursor-grab active:cursor-grabbing"
+        >
           {slides.map((slide, index) => (
-            <div
+            <motion.div
+              transition={{
+                type: "spring",
+                mass: 3,
+                stiffness: 400,
+                damping: 50,
+              }}
               key={index}
               className=" h-auto lg:h-[auto] w-[90vw] lg:w-[77vw] relative rounded-[18px] bg-gradient-to-br from-[#000E32] to-[#000929] opacity-83 py-[42px] px-[37px] flex flex-col-reverse lg:flex-row gap-[6vw] md:gap-[5vw] lg:gap-[0px] justify-between items-center transition-transform duration-500 ease-in-out"
               // style={{ transform: `translateX(-${currentSlide  * 100}%)` }}
@@ -179,15 +235,13 @@ const OurWork = () => {
                 <p className="text-[#9EB3CF] text-[19px] pt-[4vw] lg:pt-[22px] leading-[29px] font-bwmss01">
                   {slide.content}
                 </p>
-                <Link href={slide.url}>
-                  <button className="rounded-[28px] mt-[6vw] lg:mt-[50px]  flex items-center gap-[7px] bg-gradient-to-br from-[#2DC1C3] to-[#0268F2] text-white p-[15px] text-lg font-bwmss01">
-                    <div>Read More</div>
-                  </button>
-                </Link>
+                <button className="rounded-[28px] mt-[6vw] lg:mt-[50px]  flex items-center gap-[7px] bg-gradient-to-br from-[#2DC1C3] to-[#0268F2] text-white p-[15px] text-lg font-bwmss01">
+                  <Link href={slide.url}>Read More</Link>
+                </button>
               </div>
               <div className="w-[100%] lg:w-[40%]">
                 <Image
-                  className="w-[100%] h-[293px] rounded-[25px] object-cover"
+                  className="w-[100%] h-[293px] rounded-[25px] object-cover select-none"
                   src={slide.image}
                   placeholder="blur"
                   width="368"
@@ -195,9 +249,9 @@ const OurWork = () => {
                   alt=""
                 />
               </div>
-            </div>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </div>
   );
