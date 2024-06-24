@@ -55,7 +55,7 @@ const Hero = () => {
           </h1>
           <p
             ref={ref}
-            className={`text-[#9EB3CF]  text-[0.8rem] leading-[1.2rem] px-[55px] md:px-[0px] md:leading-[1.75rem] md:text-lg items-center font-bwmss01 ${
+            className={`text-[#9EB3CF]  text-[1rem] leading-[1.2rem] px-[55px] md:px-[0px] md:leading-[1.75rem] md:text-lg items-center font-bwmss01 ${
               isVisible
                 ? "translate-y-0 opacity-100"
                 : "translate-y-20 opacity-0"
@@ -63,7 +63,7 @@ const Hero = () => {
           >
             Expertly crafted AI solutions—designed with precision, built for
             reliability,
-            <br /> and committed to excellence.
+            <br className="hidden md:block"/> and committed to excellence.
             {/* <br /> to harness cutting edge intelligence */}
           </p>
         </div>

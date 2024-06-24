@@ -101,7 +101,7 @@ const Team = () => {
               alt="arrow"
               width="16"
               height="13"
-            />
+            /> 
           </button> */}
           <div className="max-w-[185px] mt-[30px] md:mt-[35px] lg:mt-[50px]">
             <Button to="/team" name="More About Us"/>

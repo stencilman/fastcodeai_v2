@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import gesrec from "../../../../public/our-work/gesrec.png";
 import vrups from "../../../../public/our-work/vrups.jpg";
 import fashion from "../../../../public/our-work/fashion.png";
@@ -13,6 +13,8 @@ import rag from "../../../../public/our-work/rag_weave.jpg";
 import fedLearning from "../../../../public/potfolio/fedLearning/img1-2.png";
 import fitness from "../../../../public/potfolio/fitness/img1-2.png";
 import { motion, useMotionValue } from "framer-motion";
+import gsap from "gsap";
+import RoundedHover from "../RoundedHover";
 
 const slides = [
   {
@@ -123,8 +125,6 @@ const OurWork = () => {
     );
   };
 
-  console.log("currentSlide", currentSlide);
-
   const onDragStart = () => {
     setDragging(true);
     // console.log("start",dragX.get())
@@ -146,42 +146,53 @@ const OurWork = () => {
     }
   };
 
+
   return (
     <div className="w-full min-h-[120vh] md:min-h-[100vh] pl-[20px] md:pl-[80px] lg:pl-[160px] relative bg-[#00081F] flex flex-col justify-center py-[100px]">
       <div className="absolute top-[-160px] left-0 w-full h-[150px] blur-[50px] translate-y-[30px] scale-90  rounded-[50%] z-[1] bg-gradient-to-br from-[#1D8283] to-[#033577] bg-gradient-156deg bg-no-repeat bg-[0% 0%] opacity-49 border-0 border-opacity-0 filter blur-[50px]"></div>
       <div className="absolute top-[88px] right-[10px]  w-[169px] h-[421px] blur-[50px] translate-y-[167px] scale-90  rounded-[50%] z-[1] bg-gradient-to-br from-[#1D8283] to-[#033577] bg-gradient-156deg bg-no-repeat bg-[0% 0%] opacity-49 border-0 border-opacity-0 filter blur-[100px]"></div>
       {/* Titile with buttons */}
       <div className="flex justify-between items-center pr-[10px] md:pr-[60px] lg:pr-[127px]">
-        <h1 className="text-[8vw] md:text-[7vw]  lg:text-5xl text-white font-aeonik">
+        <h1 className="text-[8vw] md:text-[7vw] lg:text-5xl text-white font-aeonik">
           Check Out Our Work
         </h1>
         {/* Buttons */}
         <div className="flex gap-[10px] md:gap-[15px]">
           {/* Left Button */}
           <div
-            className="w-[8vw] h-[8vw] md:w-[49px] md:h-[49px] border border-white rounded-full flex justify-center items-center cursor-pointer duration-500 hover:border-[#ffffff92] hover:border"
+            className="w-[8vw] h-[8vw] md:w-[49px] md:h-[49px] border border-white rounded-full flex justify-center items-center cursor-pointer duration-500  hover:border relative fill-[#fff] hover:fill-black"
+            
+            style={{ overflow: "hidden" }}
             onClick={prevSlide}
           >
-            <Image
-              className="w-[20px] md:w-[30px] transform scale-x-[-1] "
-              src="/arrowRight.svg"
-              width="30"
-              height="30"
-              alt=""
-            />
+            <RoundedHover>
+            <svg
+              className="w-[20px] md:w-[30px] transform scale-x-[-1] relative z-10 "
+              viewBox="0 0 46 40"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M46 20.038c0-.7-.3-1.5-.8-2.1l-16-17c-1.1-1-3.2-1.4-4.4-.3-1.2 1.1-1.2 3.3 0 4.4l11.3 11.9H3c-1.7 0-3 1.3-3 3s1.3 3 3 3h33.1l-11.3 11.9c-1 1-1.2 3.3 0 4.4 1.2 1.1 3.3.8 4.4-.3l16-17c.5-.5.8-1.1.8-1.9z"></path>
+            </svg>
+            </RoundedHover>
           </div>
+         
           {/* Right Button */}
           <div
-            className="w-[8vw] h-[8vw] md:w-[49px] md:h-[49px] border border-white rounded-full flex justify-center items-center cursor-pointer duration-500 hover:border-[#ffffff92] hover:border"
+            className="w-[8vw] h-[8vw] md:w-[49px] md:h-[49px] border border-white rounded-full flex justify-center items-center cursor-pointer duration-500  hover:border relative fill-[#fff] hover:fill-black"
+            
+            style={{ overflow: "hidden" }}
             onClick={nextSlide}
           >
-            <Image
-              src="/arrowRight.svg"
-              className="w-[20px] md:w-[30px]"
-              width="30"
-              height="30"
-              alt=""
-            />
+            
+            <RoundedHover>
+            <svg
+              className="w-[20px] md:w-[30px]  relative z-10 "
+              viewBox="0 0 46 40"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M46 20.038c0-.7-.3-1.5-.8-2.1l-16-17c-1.1-1-3.2-1.4-4.4-.3-1.2 1.1-1.2 3.3 0 4.4l11.3 11.9H3c-1.7 0-3 1.3-3 3s1.3 3 3 3h33.1l-11.3 11.9c-1 1-1.2 3.3 0 4.4 1.2 1.1 3.3.8 4.4-.3l16-17c.5-.5.8-1.1.8-1.9z"></path>
+            </svg>
+            </RoundedHover>
           </div>
         </div>
       </div>
@@ -235,8 +246,10 @@ const OurWork = () => {
                 <p className="text-[#9EB3CF] text-[19px] pt-[4vw] lg:pt-[22px] leading-[29px] font-bwmss01">
                   {slide.content}
                 </p>
-                <button className="rounded-[28px] mt-[6vw] lg:mt-[50px]  flex items-center gap-[7px] bg-gradient-to-br from-[#2DC1C3] to-[#0268F2] text-white p-[15px] text-lg font-bwmss01">
-                  <Link href={slide.url}>Read More</Link>
+                <button className="rounded-[28px] mt-[6vw] lg:mt-[50px]  flex items-center gap-[7px] bg-gradient-to-br from-[#2DC1C3] to-[#0268F2] text-white  text-lg font-bwmss01 relative hover:text-[#00092A] duration-500 transition-all ease-linear" style={{ overflow: "hidden" }}>
+                  <RoundedHover>
+                  <Link className="p-[15px] relative z-10" href={slide.url}>Read More</Link>
+                  </RoundedHover>
                 </button>
               </div>
               <div className="w-[100%] lg:w-[40%]">

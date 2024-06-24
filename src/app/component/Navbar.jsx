@@ -6,6 +6,7 @@ import { useState, useEffect } from "react";
 import Nav from "./Nav";
 import { useGlobalContext } from "../context/GlobalContext";
 import Link from "next/link";
+import Button from "./Button";
 
 const Navbar = () => {
   // const [isActive, setIsActive] = useState(false);
@@ -62,7 +63,19 @@ const Navbar = () => {
           </Link>
         </div>
         <div className="flex items-center gaa-[0px] sm:gap-[14px]">
-          <Link href="/contact">
+          <div style={{
+              transform: `scale(${scale})`,
+              transition: "transform 0.5s",
+            }}
+            className="relative z-[1] hidden  sm:block  ">
+
+          <Button
+            to="/contact"
+            name="Get Started"
+            
+            />
+            </div>
+          {/* <Link href="/contact">
           <button
             className="rounded-[28px] relative z-[1] hidden  sm:flex items-center gap-[7px] bg-gradient-to-br from-[#2DC1C3] to-[#0268F2] text-white p-[15px] text-lg "
             style={{
@@ -81,7 +94,7 @@ const Navbar = () => {
               />
             </div>
           </button>
-          </Link>
+          </Link> */}
           <button
             onClick={handleClick}
             className={`w-[40px] sm:w-[56px] h-[40px] sm:h-[56px] relative z-[3]  ${

@@ -19,13 +19,13 @@
 /* input auto suggestion  */
 
 input:-webkit-autofill,
-input:-webkit-autofill:hover, 
-input:-webkit-autofill:focus, 
-input:-webkit-autofill:active{
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: #ffffff;
-    transition: background-color 5000s ease-in-out 0s;
-    box-shadow: inset 0 0 20px 20px #23232329;
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #ffffff;
+  transition: background-color 5000s ease-in-out 0s;
+  box-shadow: inset 0 0 20px 20px #23232329;
 }
 
 body {
@@ -37,14 +37,86 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb)); */
-    /* overflow: hidden; */
+  /* overflow: hidden; */
+}
+
+/* main_cta_button */
+
+.main_cta_button {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: background-color .3s;
+}
+
+.button__icon-wrapper {
+  flex-shrink: 0;
+  width: 25px;
+  height: 25px;
+  position: relative;
+  color: #000b2d;
+  background-color: #fff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
 }
 
 
 
+.main_cta_button:hover .button__icon-wrapper {
+  color: #000;
+}
+
+.button__icon-svg--copy {
+  position: absolute;
+  transform: translate(-150%, 150%);
+}
+
+
+.main_cta_button:hover .button__icon-svg:first-child {
+  transition: transform .3s ease-in-out;
+  transform: translate(150%, -150%);
+}
+
+.main_cta_button:hover .button__icon-svg--copy {
+  transition: transform .3s ease-in-out .1s;
+  transform: translate(0);
+}
+
+
+/* end-main_cta_button */
+
+
+/* footer hover effect */
+.hover-underline-animation {
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 1.5px;
+  bottom: 0;
+  left: 0;
+  background-color: #ffffff;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.flink:hover .hover-underline-animation:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* end-footer hover effect */
+
 
 .beliveBg {
-  background:transparent linear-gradient(360deg, #05133E 0%, #37446a 0%, #122153 51%, #020B2A 100%) 0% 0% no-repeat padding-box;
+  background: transparent linear-gradient(360deg, #05133E 0%, #37446a 0%, #122153 51%, #020B2A 100%) 0% 0% no-repeat padding-box;
 }
 
 
@@ -14781,7 +14853,3 @@ figcaption {
   font-display: fallback;
 
 }
-
-
-
-

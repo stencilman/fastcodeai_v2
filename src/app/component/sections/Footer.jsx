@@ -5,7 +5,8 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useState, useEffect, useRef } from "react";
 import Modal from "../Modal";
-import footerLogo from "../../../../public/f_logo1.png"
+import footerLogo from "../../../../public/f_logo1.png";
+import MagneticEffect from "../MagneticEffect";
 
 const Footer = ({ showExtraSpace }) => {
   const [active, setActive] = useState(false);
@@ -53,30 +54,60 @@ const Footer = ({ showExtraSpace }) => {
         >
           <div className="flex h-full w-full pl-[20px] pr-[20px] md:pl-[50px] md:pr-[50px] lg:pl-[160px] lg:pr-[73px] justify-between">
             <div className="hidden md:flex w-[369px] h-[407px] rounded-[18px] bg-gradient-to-br from-[#000E32] to-[#000929]  items-center justify-center relative z-[6] top-[-120px]">
-              <Image placeholder="blur" src={footerLogo} height="140" width="249" alt="logo" />
+              <Image
+                placeholder="blur"
+                src={footerLogo}
+                height="140"
+                width="249"
+                alt="logo"
+              />
             </div>
             <div className="w-[100%] md:w-[58%] ml-0 md:ml-[80px] lg:ml-[120px] mr-0 md:mr-[10px] flex flex-col justify-around">
               {/* Nav */}
               <div className="w-full border-b border-[#AFC0FF] pb-[22px] mt-[52px]">
                 <ul className="flex flex-wrap lg:flex-nowrap gap-[10px] lg:gap-0 justify-start md:justify-around w-full text-white font-aeonik text-[19px] pl-0">
-                  <Link href="/">
-                    <li>Home</li>
+                    <MagneticEffect>
+                  <Link href="/" className="flink">
+                      <li className="hover-underline-animation active:scale-90 transition-all duration-300 ease-in-out">
+                        Home
+                      </li>
                   </Link>
-                  <Link href="/about">
-                    <li>About</li>
+                    </MagneticEffect>
+                    <MagneticEffect>
+                  <Link href="/about" className="flink">
+                      <li className="hover-underline-animation active:scale-90 transition-all duration-300 ease-in-out">
+                        About
+                      </li>
                   </Link>
-                  <Link href="/expertise">
-                    <li>Expertise</li>
+                    </MagneticEffect>
+                    <MagneticEffect>
+                  <Link href="/expertise" className="flink">
+                      <li className="hover-underline-animation active:scale-90 transition-all duration-300 ease-in-out">
+                        Expertise
+                      </li>
                   </Link>
-                  <Link href="/career">
-                    <li>Career</li>
+                    </MagneticEffect>
+                    <MagneticEffect>
+                  <Link href="/career" className="flink">
+                      <li className="hover-underline-animation active:scale-90 transition-all duration-300 ease-in-out">
+                        Career
+                      </li>
                   </Link>
-                  <Link href="/blogs">
-                    <li>Blog</li>
+                    </MagneticEffect>
+                    <MagneticEffect>
+                  <Link href="/blogs" className="flink">
+                      <li className="hover-underline-animation active:scale-90 transition-all duration-300 ease-in-out">
+                        Blog
+                      </li>
                   </Link>
-                  <Link href="/contact">
-                    <li>Contact Us</li>
+                    </MagneticEffect>
+                    <MagneticEffect>
+                  <Link href="/contact" className="flink">
+                      <li className="hover-underline-animation active:scale-90 transition-all duration-300 ease-in-out">
+                        Contact Us
+                      </li>
                   </Link>
+                    </MagneticEffect>
                 </ul>
               </div>
               {/* Address */}
@@ -121,17 +152,17 @@ const Footer = ({ showExtraSpace }) => {
                 </div>
                 <div className="flex gap-[27px]">
                   <Link href="/legal-notice">
-                    <p className="text-[#9EB3CF] font-bwmss01 text-[12px]">
+                    <p className="text-[#9EB3CF] hover:text-white transition-all duration-300 font-bwmss01 text-[12px]">
                       Legal Notice
                     </p>
                   </Link>
                   <Link href="/privacy-policy">
-                    <p className="text-[#9EB3CF] font-bwmss01 text-[12px]">
+                    <p className="text-[#9EB3CF] hover:text-white transition-all duration-300 font-bwmss01 text-[12px]">
                       Privacy Policy
                     </p>
                   </Link>
                   <Link href="/terms-conditions">
-                    <p className="text-[#9EB3CF] font-bwmss01 text-[12px]">
+                    <p className="text-[#9EB3CF] hover:text-white transition-all duration-300 font-bwmss01 text-[12px] cursor-pointer">
                       Terms & Conditions
                     </p>
                   </Link>
@@ -178,23 +209,25 @@ const Footer = ({ showExtraSpace }) => {
             animate={active ? "open" : "close"}
             className="absolute pointer-events-none z-[999] w-[76px] h-[76px] md:w-[103px] md:h-[103px] cursor-pointer top-0 left-0"
           >
-            <div
-              className={`w-[103px] h-[103px] bg-gradient-to-br absolute pointer-events-none cursor-pointer ${"from-[#1D8283] to-[#033577]"} bg-gradient-156deg bg-no-repeat bg-[0% 0%]  text-white font-aeonik flex justify-center items-center gap-[20px] flex-col`}
-            >
-              <div className="font-bold text-[18px]">Say Hi!</div>
-              <div className="pr-[24px]">
-                <Image
-                  className="transform scale-x-[-1.5] "
-                  src="/arrowRight.svg"
-                  width="25"
-                  height="25"
-                  alt=""
-                  style={{
-                    transform: "matrix(0.71, -0.71, 0.71, 0.71, 0, 0)",
-                  }}
-                />
+            <MagneticEffect>
+              <div
+                className={`w-[103px] h-[103px] bg-gradient-to-br absolute pointer-events-none cursor-pointer ${"from-[#1D8283] to-[#033577]"} bg-gradient-156deg bg-no-repeat bg-[0% 0%]  text-white font-aeonik flex justify-center items-center gap-[20px] flex-col`}
+              >
+                <div className="font-bold text-[18px]">Say Hi!</div>
+                <div className="pr-[24px]">
+                  <Image
+                    className="transform scale-x-[-1.5] "
+                    src="/arrowRight.svg"
+                    width="25"
+                    height="25"
+                    alt=""
+                    style={{
+                      transform: "matrix(0.71, -0.71, 0.71, 0.71, 0, 0)",
+                    }}
+                  />
+                </div>
               </div>
-            </div>
+            </MagneticEffect>
           </motion.div>
         </Link>
       </div>
