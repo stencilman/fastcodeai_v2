@@ -40,9 +40,28 @@ body {
   /* overflow: hidden; */
 }
 
-/* main_cta_button */
+/* MOVING BORDER  */
+.moving-border-wrapper {
+  background: #1A2758;
+  position: relative;
+  overflow: hidden;
+}
 
-.main_cta_button {
+.moving-border-wrapper::before {
+  background: transparent linear-gradient(360deg, #385ABF 0%, #13224F 0%, #6586DC 51%, #020F3B 100%) 0% 0% no-repeat padding-box;
+
+  @apply absolute h-[150%] w-[150%] left-[-25%] top-[-25%] content-[''] animate-border-spin;
+}
+
+.moving-border-content {
+  
+  @apply absolute w-[calc(100%-2px)] h-[calc(100%-2px)] top-[1px] left-[1px] rounded-[18px];
+}
+
+/* END-MOVING  BORDER  */
+
+/* main_cta_button */
+.main_cta_button { 
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -62,8 +81,6 @@ body {
   overflow: hidden;
 }
 
-
-
 .main_cta_button:hover .button__icon-wrapper {
   color: #000;
 }
@@ -72,7 +89,6 @@ body {
   position: absolute;
   transform: translate(-150%, 150%);
 }
-
 
 .main_cta_button:hover .button__icon-svg:first-child {
   transition: transform .3s ease-in-out;
@@ -83,7 +99,6 @@ body {
   transition: transform .3s ease-in-out .1s;
   transform: translate(0);
 }
-
 
 /* end-main_cta_button */
 
