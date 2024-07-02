@@ -10,6 +10,7 @@ import pic3 from "../../../../../public/research/patentPage/pic3-2.png";
 import pic4 from "../../../../../public/research/patentPage/pic4-2.png";
 import pic2 from "../../../../../public/research/patentPage/pic2-2.png";
 import pic1 from "../../../../../public/research/patentPage/pic1-2.png";
+import RevealY from "@/app/component/RevealY";
 
 const Patents = () => {
   const patentsList = [
@@ -96,8 +97,9 @@ const Patents = () => {
 
       <div className="w-full px-[20px] md:px-[50px] lg:px-[100px] flex flex-col gap-[60px]">
         {patentsList.map((e, i) => (
+          <RevealY   key={i}>
           <div
-            key={i}
+          
             id={e.idAttr}
             className="flex flex-col md:flex-row gap-[30px] md:gap-[5%] rounded-[18px] items-center border border-[#1A2758] w-full h-auto p-[20px] md:px-[60px] md:py-[40px]"
             style={{
@@ -159,6 +161,7 @@ const Patents = () => {
               </div>
             </div>
           </div>
+          </RevealY>
         ))}
       </div>
     </div>

@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { motion, useInView, useAnimation } from "framer-motion";
 
-const RevealY = ({children}) => {
+const RevealY = ({children,extraClasses}) => {
     const ref = useRef(null);
     const isInView = useInView(ref, { once: true });
   
@@ -14,7 +14,7 @@ const RevealY = ({children}) => {
       }
     }, [isInView]);
   return (
-    <div ref={ref} className="relative overflow-hidden w-full h-[auto]">
+    <div ref={ref} className={`relative overflow-hidden w-full h-[auto] ${extraClasses}`}>
     <motion.div
       variants={{
         hidden: { opacity: 0, y: 75 },

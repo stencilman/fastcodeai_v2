@@ -1,8 +1,9 @@
 "use client";
 import Button from "@/app/component/Button";
+import RevealX from "@/app/component/RevealX";
+import RevealY from "@/app/component/RevealY";
 import { motion } from "framer-motion";
 import { useState } from "react";
-
 
 const list = [
   {
@@ -114,8 +115,6 @@ const CaseStudies = () => {
   const [selected, setSelected] = useState(tabs[0]);
   const [portfolioList, setPortfolioList] = useState(list);
 
-
-
   return (
     <div
       className="w-full h-auto relative bg-[#00081F]
@@ -125,16 +124,16 @@ const CaseStudies = () => {
       <div className="absolute left-[7%] top-[0%]  w-[20%] h-[17%] blur-[50px] translate-y-[167px] scale-90  rounded-[50%] z-[3] bg-gradient-to-br from-[#1D8283] to-[#033577] bg-gradient-156deg bg-no-repeat bg-[0% 0%] opacity-49 border-0 border-opacity-0 filter blur-[100px]"></div>
       <div className="absolute left-[70%] top-[46%]  w-[27%] h-[17%] blur-[50px] translate-y-[167px] scale-90  rounded-[50%] z-[3] bg-gradient-to-br from-[#1D8283] to-[#033577] bg-gradient-156deg bg-no-repeat bg-[0% 0%] opacity-49 border-0 border-opacity-0 filter blur-[100px]"></div>
       {/* catagories */}
+        {/* <RevealX > */}
       <div className="flex gap-[12px] md:gap-[35px] items-center justify-center flex-wrap mt-[40px] md:mt-[70px] ">
         {tabs.map((tab) => (
           <button
-            key={tab}
+          key={tab}
             onClick={() => {
               setSelected(tab);
               if (tab === "All") return setPortfolioList(list);
               const newList = list.filter((e) => e.category === tab);
               setPortfolioList(newList);
-             
             }}
             className={`min-w-[144px] ${
               selected === tab
@@ -154,29 +153,31 @@ const CaseStudies = () => {
           </button>
         ))}
       </div>
+        {/* </RevealX> */}
 
       <div className="w-full my-[70px] px-[20px] md:px-[50px] lg:px-[100px] flex flex-col gap-[40px] items-center relative z-[5]">
         {portfolioList.map((e, i) => {
           return (
-            <div
-              key={i}
-              className={`p-[0] border border-[#082373] lg:px-[35px] lg:pt-[0px] lg:pb-[40px] w-full h-[auto] sm:h-[auto] lg:h-[auto] ${e.img} rounded-[20px] bg-cover bg-no-repeat relative`}
-              style={{ maxWidth: "1099px" }}
-            >
-              <div className="absolute inset-0 bg-[#05122da6] rounded-[18px]"></div>
-              <div className="w-full h-full flex justify-between flex-col lg:flex-row p-[15px] sm:p-[21px] lg:pb-[0px]">
-                <div className="h-full w-full lg:w-[50%] flex flex-col gap-[4vw] md:gap-[2vw] lg:gap-[30px] justify-normal lg:justify-evenly ">
-                  <h5 className="text-white font-aeonik font-light tracking-normal text-[30px] relative z-10">
-                    {e.title}
-                  </h5>
-                  <p className="text-[#9EB3CF] font-bwmss01 text-lg  relative z-10">
-                    {e.description}
-                  </p>
-                  <div className="w-[164px]">
-                    <Button to={`${e.to}`} name="Read More" />
-                  </div>
-                </div>
-                {/* <div className="w-full h-[100%] pt-[20px] sm:pt-[0px] lg:h-full flex lg:w-[37%] gap-[15px] lg:gap-[39px]  items-end sm:pb-[20px]">
+            <RevealY key={i}>
+              <div className="flex justify-center">
+                <div
+                  className={`p-[0] border border-[#082373] lg:px-[35px] lg:pt-[0px] lg:pb-[40px] w-full h-[auto] sm:h-[auto] lg:h-[auto] ${e.img} rounded-[20px] bg-cover bg-no-repeat relative`}
+                  style={{ maxWidth: "1099px" }}
+                >
+                  <div className="absolute inset-0 bg-[#05122da6] rounded-[18px]"></div>
+                  <div className="w-full h-full flex justify-between flex-col lg:flex-row p-[15px] sm:p-[21px] lg:pb-[0px]">
+                    <div className="h-full w-full lg:w-[50%] flex flex-col gap-[4vw] md:gap-[2vw] lg:gap-[30px] justify-normal lg:justify-evenly ">
+                      <h5 className="text-white font-aeonik font-light tracking-normal text-[30px] relative z-10">
+                        {e.title}
+                      </h5>
+                      <p className="text-[#9EB3CF] font-bwmss01 text-lg  relative z-10">
+                        {e.description}
+                      </p>
+                      <div className="w-[164px]">
+                        <Button to={`${e.to}`} name="Read More" />
+                      </div>
+                    </div>
+                    {/* <div className="w-full h-[100%] pt-[20px] sm:pt-[0px] lg:h-full flex lg:w-[37%] gap-[15px] lg:gap-[39px]  items-end sm:pb-[20px]">
                   <div>
                     <h5 className="text-white font-aeonik font-bold tracking-normal text-[30px]">
                       100%
@@ -195,8 +196,10 @@ const CaseStudies = () => {
                     </p>
                   </div>
                 </div> */}
+                  </div>
+                </div>
               </div>
-            </div>
+            </RevealY>
           );
         })}
       </div>

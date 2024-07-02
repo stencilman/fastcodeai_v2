@@ -1,3 +1,4 @@
+import RevealY from "@/app/component/RevealY";
 import React from "react";
 
 const Hero = () => {
@@ -16,9 +17,14 @@ const Hero = () => {
         src="/contact/bgVideo.mp4"
       /> */}
       <div className="w-full pb-[7%] pt-[40%]  md:pt-[30%] lg:pt-[20%] flex justify-center items-center flex-col">
-        <p className="text-[#9EB3CF] font-bwmss01 text-[19px] md:text-[28px] text-center">
-       <b className="text-white font-aeonik font-medium text-[8vw] md:text-[7vw] text-5xl "> Unlock Your Potential </b><br/> Where Vision Meets Velocity
-        </p>
+        <RevealY>
+          <p className="text-[#9EB3CF] font-bwmss01 text-[19px] md:text-[28px] text-center">
+            <b className="text-white font-aeonik font-medium text-[8vw] md:text-[7vw] text-5xl ">
+              Unlock Your Potential
+            </b>
+            <br /> Where Vision Meets Velocity
+          </p>
+        </RevealY>
         {/* <div className="px-[20px]  w-full md:px-[50px] lg:px-[100px]">
           <iframe
             className="embed-responsive-item w-full h-[300px] my-[50px] md:h-[600px] rounded-[18px]"

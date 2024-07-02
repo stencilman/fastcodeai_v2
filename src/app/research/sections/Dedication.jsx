@@ -1,3 +1,5 @@
+import RevealX from "@/app/component/RevealX";
+import RevealY from "@/app/component/RevealY";
 import Image from "next/image";
 import React from "react";
 
@@ -42,13 +44,16 @@ const Dedication = () => {
               />
             </div>
             <div>
-              <b className="text-white text-[24px] pb-[7px] font-aeonik">
-                Futuristic Innovations
-              </b>
-
-              <p className="text-[#9EB3CF] text-[19px] leading-[29px] mt-[8px] sm:mt-[24px] font-bwmss01">
-                Cutting-edge technologies and solutions
-              </p>
+              <RevealX>
+                <b className="text-white text-[24px] pb-[7px] font-aeonik">
+                  Futuristic Innovations
+                </b>
+              </RevealX>
+              <RevealY>
+                <p className="text-[#9EB3CF] text-[19px] leading-[29px] mt-[8px] sm:mt-[24px] font-bwmss01">
+                  Cutting-edge technologies and solutions
+                </p>
+              </RevealY>
             </div>
           </div>
           <div className="w-[100%] sm:w-[47%] md:w-[20.5%] h-auto rounded-[18px] mb-[30px] flex flex-wrap md:flex-nowrap  sm:items-start sm:flex-col gap-[15px]  ">
@@ -68,13 +73,16 @@ const Dedication = () => {
               />
             </div>
             <div>
-              <b className="text-white text-[24px] pb-[7px] font-aeonik">
-              Industry Impact
-              </b>
-
-              <p className="text-[#9EB3CF] text-[19px] leading-[29px] mt-[8px] sm:mt-[24px] font-bwmss01">
-              Our patented inventions are making waves in the industry
-              </p>
+              <RevealX>
+                <b className="text-white text-[24px] pb-[7px] font-aeonik">
+                  Industry Impact
+                </b>
+              </RevealX>
+              <RevealY>
+                <p className="text-[#9EB3CF] text-[19px] leading-[29px] mt-[8px] sm:mt-[24px] font-bwmss01">
+                  Our patented inventions are making waves in the industry
+                </p>
+              </RevealY>
             </div>
           </div>
           <div className="w-[100%] sm:w-[47%] md:w-[20.5%] h-auto rounded-[18px] mb-[30px] flex flex-wrap md:flex-nowrap  sm:items-start sm:flex-col gap-[15px]  ">
@@ -94,13 +102,16 @@ const Dedication = () => {
               />
             </div>
             <div>
-              <b className="text-white text-[24px] pb-[7px] font-aeonik">
-              Patent Diversity
-              </b>
-
-              <p className="text-[#9EB3CF] text-[19px] leading-[29px] mt-[8px] sm:mt-[24px] font-bwmss01">
-              Range of patents covering various technological domains
-              </p>
+              <RevealX>
+                <b className="text-white text-[24px] pb-[7px] font-aeonik">
+                  Patent Diversity
+                </b>
+              </RevealX>
+              <RevealY>
+                <p className="text-[#9EB3CF] text-[19px] leading-[29px] mt-[8px] sm:mt-[24px] font-bwmss01">
+                  Range of patents covering various technological domains
+                </p>
+              </RevealY>
             </div>
           </div>
           <div className="w-[100%] sm:w-[47%] md:w-[20.5%] h-auto rounded-[18px] mb-[30px] flex flex-wrap md:flex-nowrap  sm:items-start sm:flex-col gap-[15px]  ">
@@ -120,13 +131,16 @@ const Dedication = () => {
               />
             </div>
             <div>
-              <b className="text-white text-[24px] pb-[7px] font-aeonik">
-              Global Recognition
-              </b>
-
-              <p className="text-[#9EB3CF] text-[19px] leading-[29px] mt-[8px] sm:mt-[24px] font-bwmss01">
-              Our patents have gained international recognition
-              </p>
+              <RevealX>
+                <b className="text-white text-[24px] pb-[7px] font-aeonik">
+                  Global Recognition
+                </b>
+              </RevealX>
+              <RevealY>
+                <p className="text-[#9EB3CF] text-[19px] leading-[29px] mt-[8px] sm:mt-[24px] font-bwmss01">
+                  Our patents have gained international recognition
+                </p>
+              </RevealY>
             </div>
           </div>
         </div>

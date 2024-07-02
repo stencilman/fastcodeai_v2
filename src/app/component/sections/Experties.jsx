@@ -10,6 +10,8 @@ import icon1 from "../../../../public/experties/icon1.svg";
 import icon2 from "../../../../public/experties/icon2.svg";
 import icon3 from "../../../../public/experties/icon3.svg";
 import icon4 from "../../../../public/experties/icon4.svg";
+import RevealY from "../RevealY";
+import RevealX from "../RevealX";
 
 const Experties = () => {
   const [activeMain, setActiveMain] = useState(null);
@@ -63,6 +65,7 @@ const Experties = () => {
           ref={navRef}
         >
           {/* Computer Vision */}
+
           <motion.div
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
@@ -201,25 +204,29 @@ const Experties = () => {
           >
             <div className="flex flex-col-reverse lg:flex-row gap-[30px] lg:gap-[5%] items-center lg:items-start">
               <div className="w-[100%] lg:w-[45%] text-center lg:text-left">
-                <h1 className="text-[8vw] md:text-[7vw] lg:text-[42px] tracking-normal text-white font-aeonik ">
-                  Computer Vision
-                </h1>
-                <p className="text-[#9EB3CF] text-base md:text-lg  font-light pt-[15px] md:pt-[25px] lg:pt-[15px] font-bwmss01">
-                  We craft bespoke software that harnesses computer vision and
-                  deep learning to process images, videos, LiDAR, and live
-                  streams, enabling businesses to identify and monitor objects
-                  for improved decision-making.
-                </p>
+                <RevealY>
+                  <h1 className="text-[8vw] md:text-[7vw] lg:text-[42px] tracking-normal text-white font-aeonik ">
+                    Computer Vision
+                  </h1>
+                  <p className="text-[#9EB3CF] text-base md:text-lg  font-light pt-[15px] md:pt-[25px] lg:pt-[15px] font-bwmss01">
+                    We craft bespoke software that harnesses computer vision and
+                    deep learning to process images, videos, LiDAR, and live
+                    streams, enabling businesses to identify and monitor objects
+                    for improved decision-making.
+                  </p>
+                </RevealY>
               </div>
               <div>
-                <Image
-                  src={cv}
-                  placeholder="blur"
-                  width="470"
-                  height="244"
-                  alt="Computer Vision"
-                  className="rounded-[18px]"
-                />
+                <RevealX>
+                  <Image
+                    src={cv}
+                    placeholder="blur"
+                    width="470"
+                    height="244"
+                    alt="Computer Vision"
+                    className="rounded-[18px]"
+                  />
+                </RevealX>
               </div>
             </div>
           </div>
@@ -232,25 +239,29 @@ const Experties = () => {
           >
             <div className="flex flex-col-reverse lg:flex-row gap-[30px] lg:gap-[5%] items-center lg:items-start">
               <div className="w-[100%] lg:w-[45%] text-center lg:text-left">
-                <h1 className="text-[8vw] md:text-[7vw] lg:text-[42px] tracking-normal text-white font-aeonik">
-                  Machine Learning
-                </h1>
-                <p className="text-[#9EB3CF] text-base md:text-lg font-light pt-[15px] md:pt-[25px] lg:pt-[15px] font-bwmss01">
-                  We swiftly design and deploy innovative ML solutions, from
-                  infrastructure to consumer products. Our expert engineers
-                  partner with you to accelerate innovation and technological
-                  progress.
-                </p>
+                <RevealY>
+                  <h1 className="text-[8vw] md:text-[7vw] lg:text-[42px] tracking-normal text-white font-aeonik">
+                    Machine Learning
+                  </h1>
+                  <p className="text-[#9EB3CF] text-base md:text-lg font-light pt-[15px] md:pt-[25px] lg:pt-[15px] font-bwmss01">
+                    We swiftly design and deploy innovative ML solutions, from
+                    infrastructure to consumer products. Our expert engineers
+                    partner with you to accelerate innovation and technological
+                    progress.
+                  </p>
+                </RevealY>
               </div>
               <div>
-                <Image
-                  placeholder="blur"
-                  src={ml}
-                  width="470"
-                  height="244"
-                  alt="Machine Learning"
-                  className="rounded-[18px]"
-                />
+                <RevealX>
+                  <Image
+                    placeholder="blur"
+                    src={ml}
+                    width="470"
+                    height="244"
+                    alt="Machine Learning"
+                    className="rounded-[18px]"
+                  />
+                </RevealX>
               </div>
             </div>
           </div>
@@ -262,22 +273,30 @@ const Experties = () => {
           >
             <div className="flex flex-col-reverse lg:flex-row gap-[30px] md:gap-[50px] lg:gap-[5%] items-center lg:items-start">
               <div className="w-[100%] lg:w-[45%] text-center lg:text-left ">
-                <h1 className="text-[8vw] md:text-[7vw] lg:text-[42px] tracking-normal text-white font-aeonik">
-                  Reinforcement Learning
-                </h1>
-                <p className="text-[#9EB3CF] text-base md:text-lg font-light pt-[15px] md:pt-[25px] lg:pt-[15px] font-bwmss01 ">
-                Our team specializes in developing cutting-edge reinforcement learning systems that adapt and optimize in dynamic environments. We collaborate closely with clients to create solutions that continuously improve and achieve strategic goals.
-                </p>
+                <RevealY>
+                  <h1 className="text-[8vw] md:text-[7vw] lg:text-[42px] tracking-normal text-white font-aeonik">
+                    Reinforcement Learning
+                  </h1>
+                  <p className="text-[#9EB3CF] text-base md:text-lg font-light pt-[15px] md:pt-[25px] lg:pt-[15px] font-bwmss01 ">
+                    Our team specializes in developing cutting-edge
+                    reinforcement learning systems that adapt and optimize in
+                    dynamic environments. We collaborate closely with clients to
+                    create solutions that continuously improve and achieve
+                    strategic goals.
+                  </p>
+                </RevealY>
               </div>
               <div>
-                <Image
-                  className="rounded-[18px]"
-                  placeholder="blur"
-                  src={rl}
-                  width="470"
-                  height="244"
-                  alt="Reinforcement Learning"
-                />
+                <RevealX>
+                  <Image
+                    className="rounded-[18px]"
+                    placeholder="blur"
+                    src={rl}
+                    width="470"
+                    height="244"
+                    alt="Reinforcement Learning"
+                  />
+                </RevealX>
               </div>
             </div>
           </div>
@@ -289,24 +308,28 @@ const Experties = () => {
           >
             <div className="flex flex-col-reverse lg:flex-row gap-[30px] lg:gap-[5%] items-center lg:items-start">
               <div className="w-[100%] lg:w-[45%] text-center lg:text-left">
-                <h1 className="text-[8vw] md:text-[7vw] lg:text-[42px] tracking-normal text-white font-aeonik">
-                  Data Science
-                </h1>
-                <p className="text-[#9EB3CF] text-base md:text-lg font-light pt-[15px] md:pt-[25px] lg:pt-[15px] font-bwmss01">
-                  Our expert data scientists tackle complex data challenges
-                  across any volume or structure, empowering your business to
-                  enhance efficiency and boost profitability quickly.
-                </p>
+                <RevealY>
+                  <h1 className="text-[8vw] md:text-[7vw] lg:text-[42px] tracking-normal text-white font-aeonik">
+                    Data Science
+                  </h1>
+                  <p className="text-[#9EB3CF] text-base md:text-lg font-light pt-[15px] md:pt-[25px] lg:pt-[15px] font-bwmss01">
+                    Our expert data scientists tackle complex data challenges
+                    across any volume or structure, empowering your business to
+                    enhance efficiency and boost profitability quickly.
+                  </p>
+                </RevealY>
               </div>
               <div>
-                <Image
-                  placeholder="blur"
-                  src={ds}
-                  width="470"
-                  height="244"
-                  alt="Data Science"
-                  className="rounded-[18px]"
-                />
+                <RevealX>
+                  <Image
+                    placeholder="blur"
+                    src={ds}
+                    width="470"
+                    height="244"
+                    alt="Data Science"
+                    className="rounded-[18px]"
+                  />
+                </RevealX>
               </div>
             </div>
           </div>

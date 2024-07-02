@@ -33,11 +33,12 @@ import publication28 from "../../../../../public/research/publications/publicati
 import publication29 from "../../../../../public/research/publications/publication29.webp";
 import publication30 from "../../../../../public/research/publications/publication30.webp";
 import publication31 from "../../../../../public/research/publications/publication31.webp";
+import RevealY from "@/app/component/RevealY";
 
 const Publications = () => {
   const publicationList = [
     {
-      img: publication4 ,
+      img: publication4,
       technology: "TECHNOLOGY",
       year: "2023",
       desciption:
@@ -52,7 +53,7 @@ const Publications = () => {
       extraLink: "",
     },
     {
-      img: publication5 ,
+      img: publication5,
       technology: "TECHNOLOGY",
       year: "2021",
       desciption:
@@ -63,10 +64,9 @@ const Publications = () => {
       downloadTo: "/research/publicationsPdf/Gravity-Aware_3D_2021.pdf",
       extraName: "",
       extraLink: "",
-     
     },
     {
-      img: publication6 ,
+      img: publication6,
       technology: "TECHNOLOGY",
       year: "2021",
       desciption:
@@ -77,10 +77,10 @@ const Publications = () => {
       downloadTo: "/research/publicationsPdf/iaai-2021.pdf",
       extraName: "",
       extraLink: "",
-      idAttr : "IAAI2021",
+      idAttr: "IAAI2021",
     },
     {
-      img: publication7 ,
+      img: publication7,
       technology: "TECHNOLOGY",
       year: "2020",
       desciption:
@@ -93,7 +93,7 @@ const Publications = () => {
       extraLink: "",
     },
     {
-      img: publication8 ,
+      img: publication8,
       technology: "TECHNOLOGY",
       year: "2019",
       desciption:
@@ -101,13 +101,13 @@ const Publications = () => {
       linkName: "Link",
       linkTo: "https://arxiv.org/abs/1909.07945",
       downloadName: "Download PDF",
-      
+
       downloadTo: "/research/publicationsPdf/poster_199_v2_2019.pdf",
       extraName: "",
       extraLink: "",
     },
     {
-      img: publication9 ,
+      img: publication9,
       technology: "TECHNOLOGY",
       year: "2019",
       desciption:
@@ -120,7 +120,7 @@ const Publications = () => {
       extraLink: "",
     },
     {
-      img: publication10 ,
+      img: publication10,
       technology: "TECHNOLOGY",
       year: "2019",
       desciption:
@@ -133,7 +133,7 @@ const Publications = () => {
       extraLink: "",
     },
     {
-      img: publication11 ,
+      img: publication11,
       technology: "TECHNOLOGY",
       year: "2019",
       desciption:
@@ -146,7 +146,7 @@ const Publications = () => {
       extraLink: "https://github.com/ssfootball04/generative_pose",
     },
     {
-      img: publication12 ,
+      img: publication12,
       technology: "TECHNOLOGY",
       year: "2019",
       desciption:
@@ -160,7 +160,7 @@ const Publications = () => {
       extraLink: "",
     },
     {
-      img: publication13 ,
+      img: publication13,
       technology: "TECHNOLOGY",
       year: "2019",
       desciption:
@@ -175,7 +175,7 @@ const Publications = () => {
       extraLink: "",
     },
     {
-      img: publication1 ,
+      img: publication1,
       technology: "TECHNOLOGY",
       year: "2018",
       desciption:
@@ -188,7 +188,7 @@ const Publications = () => {
       extraLink: "",
     },
     {
-      img: publication14 ,
+      img: publication14,
       technology: "TECHNOLOGY",
       year: "2018",
       desciption:
@@ -201,7 +201,7 @@ const Publications = () => {
       extraLink: "https://www.youtube.com/watch?v=FILdj0LuvjU",
     },
     {
-      img: publication15 ,
+      img: publication15,
       technology: "TECHNOLOGY",
       year: "2017",
       desciption:
@@ -209,12 +209,13 @@ const Publications = () => {
       linkName: "Link",
       linkTo: "https://arxiv.org/abs/1801.01466",
       downloadName: "Download PDF",
-      downloadTo: "/research/publicationsPdf/Dataset_Improving_Patch_Matching_2017.pdf",
+      downloadTo:
+        "/research/publicationsPdf/Dataset_Improving_Patch_Matching_2017.pdf",
       extraName: "Code",
       extraLink: "https://github.com/rmitra/PS-Dataset",
     },
     {
-      img: publication16 ,
+      img: publication16,
       technology: "TECHNOLOGY",
       year: "2017",
       desciption:
@@ -229,7 +230,7 @@ const Publications = () => {
       extraLink: "",
     },
     {
-      img: publication2 ,
+      img: publication2,
       technology: "TECHNOLOGY",
       year: "2016",
       desciption:
@@ -242,7 +243,7 @@ const Publications = () => {
       extraLink: "",
     },
     {
-      img: publication17 ,
+      img: publication17,
       technology: "TECHNOLOGY",
       year: "2016",
       desciption:
@@ -255,7 +256,7 @@ const Publications = () => {
       extraLink: "",
     },
     {
-      img: publication18 ,
+      img: publication18,
       technology: "TECHNOLOGY",
       year: "2015",
       desciption:
@@ -269,7 +270,7 @@ const Publications = () => {
       extraLink: "http://stencilcreator.org/",
     },
     {
-      img: publication19 ,
+      img: publication19,
       technology: "TECHNOLOGY",
       year: "2015",
       desciption:
@@ -277,14 +278,13 @@ const Publications = () => {
       linkName: "Link",
       linkTo: "http://gvv.mpi-inf.mpg.de/projects/convNet_moCap/",
       downloadName: "Download PDF",
-      downloadTo:
-        "/research/publicationsPdf/CVPR_2015.pdf",
+      downloadTo: "/research/publicationsPdf/CVPR_2015.pdf",
       extraName: "Video",
       extraLink:
         "http://gvv.mpi-inf.mpg.de/projects/convNet_moCap/vids/video.mp4",
     },
     {
-      img: publication20 ,
+      img: publication20,
       technology: "TECHNOLOGY",
       year: "2015",
       desciption:
@@ -292,12 +292,13 @@ const Publications = () => {
       linkName: "Link",
       linkTo: "https://arxiv.org/abs/1411.4280",
       downloadName: "Download PDF",
-      downloadTo: "/research/publicationsPdf/Efficient_Object_Localization_Using_Convolutional_Networks_2015.pdf",
+      downloadTo:
+        "/research/publicationsPdf/Efficient_Object_Localization_Using_Convolutional_Networks_2015.pdf",
       extraName: "Video",
       extraLink: "",
     },
     {
-      img: publication3 ,
+      img: publication3,
       technology: "TECHNOLOGY",
       year: "2014",
       desciption:
@@ -310,7 +311,7 @@ const Publications = () => {
       extraLink: "",
     },
     {
-      img: publication21 ,
+      img: publication21,
       technology: "TECHNOLOGY",
       year: "2014",
       desciption:
@@ -323,7 +324,7 @@ const Publications = () => {
       extraLink: "",
     },
     {
-      img: publication22 ,
+      img: publication22,
       technology: "TECHNOLOGY",
       year: "2014",
       desciption:
@@ -336,7 +337,7 @@ const Publications = () => {
       extraLink: "https://github.com/stencilman/deep_nets_iclr04",
     },
     {
-      img: publication23 ,
+      img: publication23,
       technology: "TECHNOLOGY",
       year: "2012",
       desciption:
@@ -344,13 +345,12 @@ const Publications = () => {
       linkName: "Link",
       linkTo: "http://www.mpi-inf.mpg.de/resources/MaterialMemex/",
       downloadName: "Download PDF",
-      downloadTo:
-        "/research/publicationsPdf/MaterialMemex_2012.pdf",
+      downloadTo: "/research/publicationsPdf/MaterialMemex_2012.pdf",
       extraName: "Video",
       extraLink: "http://cs.nyu.edu/~ajain/",
     },
     {
-      img: publication24 ,
+      img: publication24,
       technology: "TECHNOLOGY",
       year: "2012",
       desciption:
@@ -363,7 +363,7 @@ const Publications = () => {
       extraLink: "",
     },
     {
-      img: publication25 ,
+      img: publication25,
       technology: "TECHNOLOGY",
       year: "2012",
       desciption:
@@ -371,13 +371,12 @@ const Publications = () => {
       linkName: "Link",
       linkTo: "http://www.mpi-inf.mpg.de/resources/3DModelRecombination/",
       downloadName: "Download PDF",
-      downloadTo:
-        "/research/publicationsPdf/3DModelRecombination_2012.pdf",
+      downloadTo: "/research/publicationsPdf/3DModelRecombination_2012.pdf",
       extraName: "Video",
       extraLink: "http://www.youtube.com/watch?v=oHrBcyLzVzM",
     },
     {
-      img: publication26 ,
+      img: publication26,
       technology: "TECHNOLOGY",
       year: "2011",
       desciption:
@@ -390,7 +389,7 @@ const Publications = () => {
       extraLink: "",
     },
     {
-      img: publication27 ,
+      img: publication27,
       technology: "TECHNOLOGY",
       year: "2011",
       desciption:
@@ -398,13 +397,12 @@ const Publications = () => {
       linkName: "Link",
       linkTo: "http://www.d2.mpi-inf.mpg.de/content/shape4data",
       downloadName: "Download PDF",
-      downloadTo:
-        "/research/publicationsPdf/CVPR_2011.pdf",
+      downloadTo: "/research/publicationsPdf/CVPR_2011.pdf",
       extraName: "Website",
       extraLink: "",
     },
     {
-      img: publication28 ,
+      img: publication28,
       technology: "TECHNOLOGY",
       year: "2010",
       desciption:
@@ -418,7 +416,7 @@ const Publications = () => {
         "http://www.youtube.com/watch?v=zXSj4pcl9Ao&feature=player_embedded",
     },
     {
-      img: publication29 ,
+      img: publication29,
       technology: "TECHNOLOGY",
       year: "2010",
       desciption:
@@ -426,13 +424,12 @@ const Publications = () => {
       linkName: "Link",
       linkTo: "http://www.mpi-inf.mpg.de/resources/LineReconstruction/",
       downloadName: "Download PDF",
-      downloadTo:
-        "/research/publicationsPdf/cvpr_2010.pdf",
+      downloadTo: "/research/publicationsPdf/cvpr_2010.pdf",
       extraName: "Video",
       extraLink: "",
     },
     {
-      img: publication30 ,
+      img: publication30,
       technology: "TECHNOLOGY",
       year: "2008",
       desciption:
@@ -446,7 +443,7 @@ const Publications = () => {
       extraLink: "",
     },
     {
-      img: publication31 ,
+      img: publication31,
       technology: "TECHNOLOGY",
       year: "2008",
       desciption:
@@ -483,83 +480,84 @@ const Publications = () => {
       </div> */}
       {/* details */}
       {publicationList.map((e, i) => (
-        <div
-          key={i}
-          id={e?.idAttr}
-          className="w-full px-[20px] md:px-[50px] lg:px-[100px] flex-col gap-[60px]"
-        >
+        <RevealY key={i}>
           <div
-            className="flex flex-col md:flex-row gap-[30px] md:gap-[5%] rounded-[18px] items-center border border-[#1A2758] w-full h-auto p-[20px] md:px-[60px] md:py-[40px]"
-            style={{
-              background:
-                "transparent linear-gradient(360deg, #13224F 0%, #13224F 0%, #0C1C46 51%, #020F3B 100%) 0% 0% no-repeat padding-box",
-            }}
+            id={e?.idAttr}
+            className="w-full px-[20px] md:px-[50px] lg:px-[100px] flex-col gap-[60px]"
           >
-            <div className="w-full md:w-[40%]">
-              <Image
-                className="rounded-[18px] w-full md:w-[370px]"
-                src={e.img}
-                height="370"
-                width="370"
-                placeholder="blur"
-                alt="publication"
-              />
-            </div>
-            <div className="w-full md:w-[55%] flex flex-col gap-[20px]">
-              {/* head */}
-              <div className="flex gap-[20px] flex-wrap">
-                <div className="border border-[#082373] rounded-[30px] bg-[#00081F] px-[21px] py-[10px] text-lg font-bwmss01 text-white">
-                  {e.technology}
-                </div>
-                <div className="border border-[#082373] rounded-[30px] bg-[#00081F] px-[21px] py-[10px] text-lg font-bwmss01 text-white">
-                  {e.year}
-                </div>
+            <div
+              className="flex flex-col md:flex-row gap-[30px] md:gap-[5%] rounded-[18px] items-center border border-[#1A2758] w-full h-auto p-[20px] md:px-[60px] md:py-[40px]"
+              style={{
+                background:
+                  "transparent linear-gradient(360deg, #13224F 0%, #13224F 0%, #0C1C46 51%, #020F3B 100%) 0% 0% no-repeat padding-box",
+              }}
+            >
+              <div className="w-full md:w-[40%]">
+                <Image
+                  className="rounded-[18px] w-full md:w-[370px]"
+                  src={e.img}
+                  height="370"
+                  width="370"
+                  placeholder="blur"
+                  alt="publication"
+                />
               </div>
-              {/* body */}
-              <div>
-                <h5 className="text-white font-aeonik font-light tracking-normal text-[30px]">
-                  {e.desciption}
-                </h5>
-              </div>
-              {/* footer */}
-              <div className="flex gap-[20px] items-center flex-wrap">
-                {e?.linkTo.length > 1 && (
-                  <Link target="_blank" href={e.linkTo}>
-                    <div
-                      className="border border-[#F3F3F3] p-[12px] cursor-pointer text-white rounded-full font-bwmss01 font-light min-h-[55px] pt-[17px] min-w-[120px] text-center"
-                      style={{
-                        background:
-                          "transparent linear-gradient(360deg, #13224F 0%, #13224F 0%, #0C1C46 51%, #020F3B 100%) 0% 0% no-repeat padding-box",
-                      }}
-                    >
-                      {e.linkName}
-                    </div>
-                  </Link>
-                )}
-                {e?.extraLink.length > 1 && (
-                  <Link target="_blank" href={e.extraLink}>
-                    <div
-                      className="border border-[#F3F3F3] p-[12px] cursor-pointer text-white rounded-full font-bwmss01 font-light min-h-[55px] pt-[17px] min-w-[120px] text-center"
-                      style={{
-                        background:
-                          "transparent linear-gradient(360deg, #13224F 0%, #13224F 0%, #0C1C46 51%, #020F3B 100%) 0% 0% no-repeat padding-box",
-                      }}
-                    >
-                      {e.extraName}
-                    </div>
-                  </Link>
-                )}
-                {e?.downloadTo.length > 1 && (
-                  <Button
-                    target={"_blank"}
-                    to={e.downloadTo}
-                    name={e.downloadName}
-                  />
-                )}
+              <div className="w-full md:w-[55%] flex flex-col gap-[20px]">
+                {/* head */}
+                <div className="flex gap-[20px] flex-wrap">
+                  <div className="border border-[#082373] rounded-[30px] bg-[#00081F] px-[21px] py-[10px] text-lg font-bwmss01 text-white">
+                    {e.technology}
+                  </div>
+                  <div className="border border-[#082373] rounded-[30px] bg-[#00081F] px-[21px] py-[10px] text-lg font-bwmss01 text-white">
+                    {e.year}
+                  </div>
+                </div>
+                {/* body */}
+                <div>
+                  <h5 className="text-white font-aeonik font-light tracking-normal text-[30px]">
+                    {e.desciption}
+                  </h5>
+                </div>
+                {/* footer */}
+                <div className="flex gap-[20px] items-center flex-wrap">
+                  {e?.linkTo.length > 1 && (
+                    <Link target="_blank" href={e.linkTo}>
+                      <div
+                        className="border border-[#F3F3F3] p-[12px] cursor-pointer text-white rounded-full font-bwmss01 font-light min-h-[55px] pt-[17px] min-w-[120px] text-center"
+                        style={{
+                          background:
+                            "transparent linear-gradient(360deg, #13224F 0%, #13224F 0%, #0C1C46 51%, #020F3B 100%) 0% 0% no-repeat padding-box",
+                        }}
+                      >
+                        {e.linkName}
+                      </div>
+                    </Link>
+                  )}
+                  {e?.extraLink.length > 1 && (
+                    <Link target="_blank" href={e.extraLink}>
+                      <div
+                        className="border border-[#F3F3F3] p-[12px] cursor-pointer text-white rounded-full font-bwmss01 font-light min-h-[55px] pt-[17px] min-w-[120px] text-center"
+                        style={{
+                          background:
+                            "transparent linear-gradient(360deg, #13224F 0%, #13224F 0%, #0C1C46 51%, #020F3B 100%) 0% 0% no-repeat padding-box",
+                        }}
+                      >
+                        {e.extraName}
+                      </div>
+                    </Link>
+                  )}
+                  {e?.downloadTo.length > 1 && (
+                    <Button
+                      target={"_blank"}
+                      to={e.downloadTo}
+                      name={e.downloadName}
+                    />
+                  )}
+                </div>
               </div>
             </div>
           </div>
-        </div>
+        </RevealY>
       ))}
     </div>
   );

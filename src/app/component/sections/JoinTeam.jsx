@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import RoundedHover from "../RoundedHover";
+import RevealX from "../RevealX";
 
 const JoinTeam = () => {
   return ( 
@@ -22,6 +23,7 @@ const JoinTeam = () => {
           </p>
 
           {/* <div className=" "> */}
+      
           <div
             className="rounded-[28px] relative z-[1] bg-gradient-to-br from-[#2DC1C3] to-[#0268F2] group  text-lg justify-between cursor-pointer max-w-[200px] fill-[#fff] hover:fill-[#00092A] text-white hover:text-[#00092A] duration-500 transition-all ease-linear"
             style={{ overflow: "hidden" }}

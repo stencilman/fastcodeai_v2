@@ -1,4 +1,6 @@
 "use client";
+import RevealX from "@/app/component/RevealX";
+import RevealY from "@/app/component/RevealY";
 import React, { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
 
@@ -19,18 +21,21 @@ const Hero = () => {
         src="/contact/bgVideo.mp4"
       />
       <div className="w-[60%]">
-        <h1 className="text-white font-aeonik tracking-wide text-center font-thin lg:leading-[86px] text-[50px] leading-[52px] lg:text-[93px]">
-         
-          <b className="text-white text-center lg:leading-[86px] font-aeonik font-bold text-[50px] leading-[52px] lg:text-[93px]">
-            Unleash {"AI's"}
-            <br /> Creative Potential
-          </b>
-        </h1>
-        <p className="text-[#9EB3CF] text-center mt-[35px] font-bwmss01 text-lg">
-          Unlock the intriguing possibilities of AI for innovation and
-          creativity.
-          <br /> Let AI be your partner in crafting captivating solutions.
-        </p>
+        <RevealY>
+          <h1 className="text-white font-aeonik tracking-wide text-center font-thin lg:leading-[86px] text-[50px] leading-[52px] lg:text-[93px]">
+            <b className="text-white text-center lg:leading-[86px] font-aeonik font-bold text-[50px] leading-[52px] lg:text-[93px]">
+              Unleash {"AI's"}
+              <br /> Creative Potential
+            </b>
+          </h1>
+        </RevealY>
+        <RevealX>
+          <p className="text-[#9EB3CF] text-center mt-[35px] font-bwmss01 text-lg">
+            Unlock the intriguing possibilities of AI for innovation and
+            creativity.
+            <br /> Let AI be your partner in crafting captivating solutions.
+          </p>
+        </RevealX>
       </div>
     </div>
   );

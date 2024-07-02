@@ -79,7 +79,7 @@ console.log("searchParams",searchParams)
         ></motion.div>
         {/* toggle patents */}
         <div
-          className={`w-[50%] flex items-center justify-center font-bold text-[26px] md:text-[32px] text-[#9EB3CF] font-aeonik relative cursor-pointer ${
+          className={`w-[50%] flex items-center justify-center font-bold text-[26px] select-none md:text-[32px] text-[#9EB3CF] font-aeonik relative cursor-pointer ${
             activeTab === "patents" ? "text-white" : ""
           }`}
           onClick={() => toggleTab("patents")}
@@ -88,7 +88,7 @@ console.log("searchParams",searchParams)
         </div>
         {/* toggle publications */}
         <div
-          className={`w-[50%] flex items-center justify-center font-bold text-[26px] md:text-[32px] text-[#9EB3CF] font-aeonik relative cursor-pointer ${
+          className={`w-[50%] flex items-center justify-center font-bold text-[26px] select-none md:text-[32px] text-[#9EB3CF] font-aeonik relative cursor-pointer ${
             activeTab === "publications" ? "text-white" : ""
           }`}
           onClick={() => toggleTab("publications")}

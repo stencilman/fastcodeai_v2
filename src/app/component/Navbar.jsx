@@ -36,6 +36,7 @@ const Navbar = () => {
   const backdropBlur = ` blur(${Math.min(scrollPosition / 4, 20)}px)`;
   const backdropOpacity = Math.min(scrollPosition / 450, 1);
   return (
+    
     <div
       className="bg-transparent w-full fixed z-20"
       // style={{ background: 'linear-gradient(to top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%)' }}

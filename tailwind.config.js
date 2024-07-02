@@ -91,6 +91,9 @@ module.exports = {
         cusgrad: "transparent linear-gradient(360deg, #13224F 0%, #13224F 0%, #0C1C46 51%, #020F3B 100%) 0% 0% no-repeat padding-box",
 
       },
+      backgroundSize:{
+        '110' : '110%'
+      },
       fontFamily: {
         aeonik: ["var(--font-aeonik)"],
         bwmss01: ["var(--font-bwmss01)"],

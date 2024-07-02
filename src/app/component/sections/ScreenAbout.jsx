@@ -6,6 +6,8 @@ import preloader2 from "../../../../public/animations/preloader/Logo_8.json";
 import Lottie from "lottie-react";
 import Image from "next/image";
 import brain from "../../../../public/brain.svg"
+import RevealX from "../RevealX";
+import RevealY from "../RevealY";
 
 const ScreenAbout = () => {
   const [isShortScreen, setIsShortScreen] = useState(false);
@@ -31,6 +33,7 @@ const ScreenAbout = () => {
   return (
     <div className={`w-full ${isShortScreen ? 'h-[800px]' : 'h-[90vh] sm:h-[86vh] md:h-[82vh] lg:h-[100vh]'}  flex flex-col lg:flex-row relative lg:static gap-[20px] items-center bg-[#00081F]`}>
       <div className="absolute lg:relative left-0 top-[20vw] sm:top-[16vw] lg:top-0">
+      <RevealX>
         <div className="w-[92vw] md:w-[70vw] h-[462px] lg:w-[600px] lg:h-[600px] transform scale-x-[-1]">
           <Lottie animationData={scringAnim} loop={true} />
         </div>
@@ -43,12 +46,16 @@ const ScreenAbout = () => {
             alt="img"
           />
         </div>
+        </RevealX>
       </div>
       <div className="mb-[100px] absolute lg:static top-[60vw] text-center lg:text-left">
         <h1 className="text-[8vw] md:text-[7vw] lg:text-[51px] text-white font-aeonik tracking-normal relative lg:static top-[-50vw] lg:top-0 ">
+         
           Discover FastCode AI
+          
         </h1>
         <p className="text-[#9EB3CF] text-base sm:text-lg w-[100%] lg:w-[80%] px-[10vw] lg:px-0 pt-[28vw] sm:pt-[25vw] md:pt-[8vw] lg:pt-[20px] font-bwmss01">
+        
           FastCode AI stands at the forefront of AI adoption, equipping industry
           leaders with the tools to implement advanced intelligence, scale
           solutions, and automate processes effectively. We are committed to
