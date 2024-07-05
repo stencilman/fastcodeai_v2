@@ -27,15 +27,15 @@ module.exports = {
   ],
   theme: {
     extend: {
-      keyframes:{
-        "border-spin":{
-          "100%":{
+      keyframes: {
+        "border-spin": {
+          "100%": {
             transform: "rotate(-360deg)"
           }
         }
       },
-      animation :{
-        "border-spin":'border-spin 7s linear infinite'
+      animation: {
+        "border-spin": 'border-spin 7s linear infinite'
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
@@ -83,6 +83,8 @@ module.exports = {
         'rishabh': "url('/members/rishabh2.png')",
         'darshan': "url('/members/darshan1.png')",
         'jadhav': "url('/members/jadhav.png')",
+        'surya': "url('/members/surya.jpg')",
+        'sridhar': "url('/members/sridhar.jpg')",
 
 
 
@@ -91,8 +93,8 @@ module.exports = {
         cusgrad: "transparent linear-gradient(360deg, #13224F 0%, #13224F 0%, #0C1C46 51%, #020F3B 100%) 0% 0% no-repeat padding-box",
 
       },
-      backgroundSize:{
-        '110' : '110%'
+      backgroundSize: {
+        '110': '110%'
       },
       fontFamily: {
         aeonik: ["var(--font-aeonik)"],
