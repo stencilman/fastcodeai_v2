@@ -175,9 +175,9 @@ const Members = () => {
       height: "h-[440px] md:h-[490px] lg:h-[598px]",
       backHeight: "min-h-[440px]",
       name: "Sridhar Kamath",
-      role: "Machine Learning Engineer",
+      role: "Research Intern",
       bg: "bg-sridhar grayscale",
-      cp: "Machine Learning Engineer",
+      cp: "Research Intern",
       education: "M.Sc. (Mathematics) + B.Tech (ENI) from BITS Pilani (Hyderabad).",
       desciption:
         "Amateur researcher, active learner, passionate about Computer Vision and Reinforcement Learning.",
