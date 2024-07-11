@@ -55,7 +55,16 @@ export const metadata = {
     template : "%s - Fast Code AI"
   },
   description: "Fast Code AI - Accelerating Innovation",
-  
+  openGraph: {
+    images: [
+      {
+        url: '/public/logo1.png', // Relative path or absolute URL to your image
+        width: 800, // Width of the image
+        height: 600, // Height of the image
+        alt: 'FastCode AI', // Alt text for the image
+      }
+    ],
+  }
 };
 
 export default function RootLayout({ children }) {
