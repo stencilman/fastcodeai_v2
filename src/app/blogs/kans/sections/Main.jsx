@@ -67,6 +67,19 @@ const Main = () => {
                 <h4 className="text-white text-2xl font-aeonik tracking-wide">
                   What are KANs and what can they do?
                 </h4>
+                <div className="flex w-full gap-[5%]">
+                  <Image
+                    className="rounded-[20px] w-[100%]"
+                    src="/blogs/kans/hero/blog-kans.png"
+                    width="400"
+                    height="400"
+                    alt=""
+                  />
+                </div>
+                <p className="text-[#9eb3cfcb] text-center text-base font-bwmss01">
+                Figure 2.1 in the KAN paper from Ziming Liu et al.
+
+                </p>
                 <p className="text-[#9EB3CF] text-lg font-bwmss01">
                   KANs are based on the Kolmogorov-Arnold representation
                   theorem, which says that if 𝑓 is a multivariate continuous
