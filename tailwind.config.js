@@ -59,14 +59,16 @@ module.exports = {
         'blogHero': "url('/blogs/hero/img1-2.png')",
         'teamHero': "url('/team/img1-2.png')",
 
-
+        // *** Blogs ***
         'blog1': "url('/blogs/latest-blog/img1.png')",
         'blog2': "url('/blogs/latest-blog/img3.png')",
         'blog3': "url('/blogs/latest-blog/img4.png')",
         'blog4': "url('/blogs/latest-blog/img2.png')",
+        'kans': "url('/blogs/latest-blog/blog-kans.png')",
         'whyaiHero': "url('/blogs/why-ai/hero/img1-2.png')",
         'oilGasHero': "url('/blogs/oil-gas/oilGas-Hero.webp')",
 
+        // *** Team Members ***
         'arjun': "url('/members/arjun.png')",
         'dhaval': "url('/members/dhaval1.png')",
         'prabal': "url('/members/Prabal1.jpg')",

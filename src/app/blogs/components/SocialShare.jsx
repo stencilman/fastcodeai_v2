@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 const SocialShare = () => {
   let path = usePathname();
   let blogName = path.split("/").pop();
-  const currentUrl = `https://fastcodeai-v2-eight.vercel.app/blogs/${blogName}`;
+  const currentUrl = `https://www.fastcode.ai/blogs${blogName}`;
   console.log("currentUrl", currentUrl);
 
   const handleShare = (platform) => {
@@ -18,8 +18,8 @@ const SocialShare = () => {
       case "twitter":
         shareUrl = `https://twitter.com/intent/tweet?url=${currentUrl}`;
         break;
-      case "instagram":
-        shareUrl = `https://www.instagram.com/?url=${currentUrl}`;
+      case "linkedin":
+        shareUrl = `https://www.linkedin.com/shareArticle?mini=true&url=${currentUrl}`;
         break;
       default:
         return;
@@ -32,9 +32,9 @@ const SocialShare = () => {
     <div className="flex md:flex-col gap-[20px] items-center md:sticky md:top-[120px] md:h-fit">
       <p className="text-[#9EB3CF] font-aeonik text-lg">Share</p>
       <Image
-        onClick={() => handleShare("instagram")}
+        onClick={() => handleShare("linkedin")}
         className="cursor-pointer hover:scale-[1.2] transition-all duration-300 ease-in-out"
-        src="/blogs/social-icons/insta.svg"
+        src="/blogs/social-icons/linkedin.svg"
         width="30"
         height="30"
         alt=""

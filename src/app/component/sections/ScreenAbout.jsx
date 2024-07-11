@@ -8,6 +8,7 @@ import Image from "next/image";
 import brain from "../../../../public/brain.svg"
 import RevealX from "../RevealX";
 import RevealY from "../RevealY";
+import AboutSectionAnimation from "@/app/utils/AboutSectionAnimation";
 
 const ScreenAbout = () => {
   const [isShortScreen, setIsShortScreen] = useState(false);
@@ -36,6 +37,7 @@ const ScreenAbout = () => {
       <RevealX>
         <div className="w-[92vw] md:w-[70vw] h-[462px] lg:w-[600px] lg:h-[600px] transform scale-x-[-1]">
           <Lottie animationData={scringAnim} loop={true} />
+          {/* <AboutSectionAnimation/> */}
         </div>
         <div className="absolute top-[21vw] md:top-[14vw] left-[39%]  lg:left-[240px] lg:top-[129px]">
           <Image

@@ -3,6 +3,40 @@ import Link from "next/link";
 import React from "react";
 
 const LatestBlogs = () => {
+  const dataArray = [
+    {
+      title: "The Dilemma: To ML or Not to ML?",
+      href: "/blogs/why-ai",
+      authorName: "Arjun Jain",
+      authorImg: "/arjun.jpg",
+      publicationDate: "04 Feb 2021",
+      background: "bg-blog1",
+    },
+    {
+      title: "  Oil & Gas EPC - Digitizing P&ID",
+      href: "/blogs/oil-gas",
+      authorName: "Tarun Kumar",
+      authorImg: "",
+      publicationDate: "  03 June 2020",
+      background: "bg-blog3",
+    },
+    {
+      title: "How to deal with Unknown Classes during classification?",
+      href: "/blogs/unknown-classes",
+      authorName: "Arjun Jain",
+      authorImg: "/arjun.jpg",
+      publicationDate: "01 Feb 2021",
+      background: "bg-blog4",
+    }, 
+    {
+      title: "De-Mystifying Kolmogorov-Arnold Networks (KANs)",
+      href: "/blogs/kans",
+      authorName: "Rishabh Gupta",
+      authorImg: "/team/rishabh2.jpg",
+      publicationDate: "07 May 2024",
+      background: "bg-kans",
+    },
+  ];
   return (
     <div className="w-full h-auto px-[20px] md:px-[50px] lg:px-[100px] pt-[150px] pb-[200px]">
       <div className="mb-[40px]">
@@ -11,7 +45,7 @@ const LatestBlogs = () => {
         </h1>
       </div>
 
-      <div className="grid grid-cols-1 grid-rows-2 md:grid-cols-2 md:grid-rows-2 lg:grid-rows-2 2xl:grid-cols-3 2xl:grid-rows-2 gap-[30px] w-full">
+      {/* <div className="grid grid-cols-1 grid-rows-2 md:grid-cols-2 md:grid-rows-2 lg:grid-rows-2 2xl:grid-cols-3 2xl:grid-rows-2 gap-[30px] w-full">
         <div className=" lg:col-span-2">
           <Link href="/blogs/why-ai">
             <div className="rounded-[60px] w-full bg-cover 2xl:w-[833px] h-[327px] bg-no-repeat bg-blog1 relative p-[20px]">
@@ -43,113 +77,7 @@ const LatestBlogs = () => {
           </Link>
         </div>
 
-{/* first commented */}
-        {/* <Link href="/blogs/why-ai">
-          <div className=" lg:col-start-3 ">
-            <div className="bg-[#104E62] rounded-[20px] lg:w-[403px] h-[327px] relative p-[20px]">
-              <div className="absolute bottom-[20px]">
-                <h3 className="text-white text-2xl font-aeonik tracking-wide mb-[15px]">
-                  Oil & Gas EPC - Digitizing P&ID
-                </h3>
-                <div className="flex gap-[10px] items-center">
-                  <div className="border border-[#707070] rounded-full bg-white w-[50px] h-[50px]"></div>
-                  <div>
-                    <b className="text-white font-bold font-aeonik tracking-wide ">
-                      Waltor Gottera
-                    </b>
-                    <p className="text-[#FFFFFF] text-lg font-bwmss01">
-                      08 April 2019
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </Link> */}
 
-
-        {/* <Link href="/blogs/unknown-classes">
-          <div className="row-start-2">
-            <div className="w-full bg-cover rounded-[20px] 2xl:w-[402px] h-[328px] bg-no-repeat bg-blog2 relative p-[20px]">
-              <div className="absolute bottom-[20px]">
-                <h3 className="text-white text-2xl font-aeonik tracking-wide mb-[15px]">
-                  How to deal with Unknown Classes during classification?
-                </h3>
-                <div className="flex gap-[10px] items-center">
-                  <div className="border border-[#707070] rounded-full  w-[50px] h-[50px]">
-                    <Image
-                      className="rounded-full"
-                      src="/arjun.jpg"
-                      width="50"
-                      height="50"
-                      alt=""
-                    />
-                  </div>
-                  <div>
-                    <b className="text-white font-bold font-aeonik tracking-wide ">
-                      Arjun Jain
-                    </b>
-                    <p className="text-[#FFFFFF] text-lg font-bwmss01">
-                      01 Feb 2021
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </Link> */}
-        {/* <Link href="/blogs/oil-gas">
-          <div className="row-start-2">
-            <div className="bg-[#001D3F] w-full rounded-[20px] 2xl:w-[403px] h-[327px] relative p-[20px]">
-              <div className="absolute bottom-[20px]">
-                <h3 className="text-white text-2xl font-aeonik tracking-wide mb-[15px]">
-                  Oil & Gas EPC - Digitizing P&ID
-                </h3>
-                <div className="flex gap-[10px] items-center">
-                  <div className="border border-[#707070] rounded-full bg-white w-[50px] h-[50px]"></div>
-                  <div>
-                    <b className="text-white font-bold font-aeonik tracking-wide ">
-                      Tarun Kumar
-                    </b>
-                    <p className="text-[#FFFFFF] text-lg font-bwmss01">
-                      03 June 2020
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </Link> */}
-        {/* <Link href="/blogs/why-ai">
-          <div className="row-start-3">
-            <div className="bg-[#122057] rounded-[20px] w-full 2xl:w-[403px] h-[327px] relative p-[20px]">
-              <div className="absolute bottom-[20px]">
-                <h3 className="text-white text-2xl font-aeonik tracking-wide mb-[15px]">
-                  The Dilemma: To ML or Not to ML?
-                </h3>
-                <div className="flex gap-[10px] items-center">
-                  <div className="border border-[#707070] rounded-full w-[50px] h-[50px]">
-                    <Image
-                      className="rounded-full"
-                      src="/arjun.jpg"
-                      width="50"
-                      height="50"
-                      alt=""
-                    />
-                  </div>
-                  <div>
-                    <b className="text-white font-bold font-aeonik tracking-wide ">
-                      Arjun Jain
-                    </b>
-                    <p className="text-[#FFFFFF] text-lg font-bwmss01">
-                      04 Feb 2021
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </Link> */}
         <div className="lg:col-span-2 2xl:col-span-3">
         <Link href="/blogs/oil-gas">
           <div className="">
@@ -160,13 +88,7 @@ const LatestBlogs = () => {
                 </h3>
                 <div className="flex gap-[10px] items-center">
                   <div className="border border-[#707070] rounded-full bg-white w-[50px] h-[50px]">
-                    {/* <Image
-                      className="rounded-full"
-                      src="/arjun.jpg"
-                      width="50"
-                      height="50"
-                      alt=""
-                    /> */}
+                    
                   </div>
                   <div>
                     <b className="text-white font-bold font-aeonik tracking-wide ">
@@ -216,6 +138,98 @@ const LatestBlogs = () => {
             </div>
           </div>
         </Link>
+      </div> */}
+
+      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
+        {/* Map over dataArray for first row */}
+        {dataArray.slice(0, 2).map((e, index) => (
+          <div
+            key={index}
+            className={`col-span-1 ${
+              index === 0
+                ? "sm:col-span-1 md:col-span-2"
+                : "sm:col-span-1 md:col-span-1"
+            }`}
+          >
+            <Link href={e.href}>
+              <div
+                className={`card-zoom w-full h-[327px] relative  overflow-hidden group rounded-3xl`}
+              >
+                <div
+                  className={`card-zoom-image absolute w-full h-full transition-all duration-500 ease-in-out transform bg-center bg-cover ${e.background} group-hover:scale-150`}
+                ></div>
+                <div className="absolute inset-0  bg-[#23478e8a] rounded-[24px]"></div>
+                <div className="absolute bottom-[20px] m-[20px]">
+                  <h3 className="text-white text-2xl font-aeonik tracking-wide mb-[15px]">
+                    {e.title}
+                  </h3>
+                  <div className="flex gap-[10px] items-center">
+                    {e?.authorImg && (
+                      <div className="border border-[#707070] rounded-full  w-[50px] h-[50px] relative overflow-hidden">
+                        <Image
+                          className="rounded-full"
+                          src={e?.authorImg}
+                          width="50"
+                          height="50"
+                          alt=""
+                        />
+                      </div>
+                    )}
+                    <div>
+                      <b className="text-white font-bold font-aeonik tracking-wide ">
+                        {e.authorName}
+                      </b>
+                      <p className="text-[#FFFFFF] text-lg font-bwmss01">
+                        {e.publicationDate}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Link>
+          </div>
+        ))}
+        {/* Map over dataArray for second row */}
+        {dataArray.slice(2, 5).map((e, index) => (
+          <div key={index} className="col-span-1 sm:col-span-1 md:col-span-1">
+            <Link href={e.href}>
+              <div
+                className={`card-zoom w-full h-[327px] relative  overflow-hidden group rounded-3xl`}
+              >
+                <div
+                  className={`card-zoom-image absolute w-full h-full transition-all duration-500 ease-in-out transform bg-center bg-cover ${e.background} group-hover:scale-150`}
+                ></div>
+                <div className="absolute inset-0  bg-[#23478e8a] rounded-[24px]"></div>
+                <div className="absolute bottom-[20px] m-[20px]">
+                  <h3 className="text-white text-2xl font-aeonik tracking-wide mb-[15px]">
+                    {e.title}
+                  </h3>
+                  <div className="flex gap-[10px] items-center">
+                    {e?.authorImg && (
+                      <div className="border border-[#707070] rounded-full  w-[50px] h-[50px] relative overflow-hidden">
+                        <Image
+                          className="rounded-full"
+                          src={e?.authorImg}
+                          width="50"
+                          height="50"
+                          alt=""
+                        />
+                      </div>
+                    )}
+                    <div>
+                      <b className="text-white font-bold font-aeonik tracking-wide ">
+                        {e.authorName}
+                      </b>
+                      <p className="text-[#FFFFFF] text-lg font-bwmss01">
+                        {e.publicationDate}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Link>
+          </div>
+        ))}
       </div>
     </div>
   );
