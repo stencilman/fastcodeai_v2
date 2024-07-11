@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 const SocialShare = () => {
   let path = usePathname();
   let blogName = path.split("/").pop();
-  const currentUrl = `https://www.fastcode.ai/blogs${blogName}`;
+  const currentUrl = `https://www.fastcode.ai/blogs/${blogName}`;
   console.log("currentUrl", currentUrl);
 
   const handleShare = (platform) => {
