@@ -259,7 +259,7 @@ const Main = () => {
                         : "text-[#9EB3CF]"
                     } `}
                   >
-                    2. PINNs application using 2D Heat equation
+                    2. Application using 2D Heat equation
                   </p>
                 </a>
                 <a
