@@ -4,38 +4,8 @@ import React from "react";
 
 const LatestBlogs = () => {
   const dataArray = [
-    {
-      title: "The Dilemma: To ML or Not to ML?",
-      href: "/blogs/why-ai",
-      authorName: "Arjun Jain",
-      authorImg: "/arjun.jpg",
-      publicationDate: "04 Feb 2021",
-      background: "bg-blog1",
-    },
-    {
-      title: "  Oil & Gas EPC - Digitizing P&ID",
-      href: "/blogs/oil-gas",
-      authorName: "Tarun Kumar",
-      authorImg: "",
-      publicationDate: "  03 June 2020",
-      background: "bg-blog3",
-    },
-    {
-      title: "How to deal with Unknown Classes during classification?",
-      href: "/blogs/unknown-classes",
-      authorName: "Arjun Jain",
-      authorImg: "/arjun.jpg",
-      publicationDate: "01 Feb 2021",
-      background: "bg-blog4",
-    },
-    {
-      title: "De-Mystifying Kolmogorov-Arnold Networks (KANs)",
-      href: "/blogs/kans",
-      authorName: "Rishabh Gupta",
-      authorImg: "/team/rishabh2.jpg",
-      publicationDate: "07 May 2024",
-      background: "bg-kans",
-    },
+   
+   
     {
       title: "Physics Informed Neural Networks (PINNs)",
       href: "/blogs/pinns",
@@ -53,6 +23,49 @@ const LatestBlogs = () => {
       publicationDate: "22 March 2024",
       background: "bg-pinns2d",
     },
+    {
+      title:
+        "Applying Physics-Informed Neural Networks (PINNs): Hands-On Modeling of Lid Driven Cavity",
+      href: "/blogs/pinns-hom-lid",
+      authorName: "Dhaval Taunk ",
+      authorImg: "/team/Dhaval.webp",
+      publicationDate: "03 May 2024",
+      background: "bg-pinnslid",
+    },
+    {
+      title: "De-Mystifying Kolmogorov-Arnold Networks (KANs)",
+      href: "/blogs/kans",
+      authorName: "Rishabh Gupta",
+      authorImg: "/team/rishabh2.jpg",
+      publicationDate: "07 May 2024",
+      background: "bg-kans",
+    },
+    {
+      title: "The Dilemma: To ML or Not to ML?",
+      href: "/blogs/why-ai",
+      authorName: "Arjun Jain",
+      authorImg: "/arjun.jpg",
+      publicationDate: "04 Feb 2021",
+      background: "bg-blog1",
+    },
+    {
+      title: "How to deal with Unknown Classes during classification?",
+      href: "/blogs/unknown-classes",
+      authorName: "Arjun Jain",
+      authorImg: "/arjun.jpg",
+      publicationDate: "01 Feb 2021",
+      background: "bg-blog4",
+    },
+
+    {
+      title: "  Oil & Gas EPC - Digitizing P&ID",
+      href: "/blogs/oil-gas",
+      authorName: "Tarun Kumar",
+      authorImg: "",
+      publicationDate: "03 June 2020",
+      background: "bg-blog3",
+    },
+   
   ];
   return (
     <div className="w-full h-auto px-[20px] md:px-[50px] lg:px-[100px] pt-[150px] pb-[200px]">

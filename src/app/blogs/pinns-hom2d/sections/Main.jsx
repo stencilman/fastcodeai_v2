@@ -190,7 +190,7 @@ const Main = () => {
                       internal points.
                     </li>
                   </ul>
-                  <p className="bg-[#293138] text-white p-[12px] rounded-2xl mt-[15px]">
+                  <p className="bg-[#293138] text-white p-[12px] rounded-2xl mt-[15px] break-words">
                     import numpy as np <br /> import matplotlib.pyplot as plt
                     <br /> from scipy.stats.qmc import LatinHypercube
                     <br />
@@ -211,7 +211,7 @@ const Main = () => {
                       select 25 points from each edge.
                     </li>
                   </ul>
-                  <p className="bg-[#293138] text-white p-[12px] rounded-2xl mt-[15px]">
+                  <p className="bg-[#293138] text-white p-[12px] rounded-2xl mt-[15px] break-words">
                     {" vertex1 = np.array([0, 0])"} <br />
                     {" vertex2 = np.array([1, 2])"} <br />
                     {" vertex3 = np.array([3, 2])"} <br />
@@ -223,7 +223,7 @@ const Main = () => {
                     {" right_edge = np.array([vertex3, vertex4])"} <br />
                     {" bottom_edge = np.array([vertex4, vertex1])"}
                   </p>
-                  <p className="bg-[#293138] text-white p-[12px] rounded-2xl mt-[15px]">
+                  <p className="bg-[#293138] text-white p-[12px] rounded-2xl mt-[15px] break-words">
                     {" lhc = LatinHypercube(d=1)"}
                     <br />
                     <br />
@@ -262,7 +262,7 @@ const Main = () => {
                 </div>
                 <div className="text-[#9EB3CF] text-lg font-bwmss01">
                   Let’s now visualize the generated boundary data points.
-                  <p className="bg-[#293138] text-white p-[12px] rounded-2xl mt-[15px]">
+                  <p className="bg-[#293138] text-white p-[12px] rounded-2xl mt-[15px] break-words">
                     import matplotlib.pyplot as plt
                     <br />
                     <br />
@@ -323,7 +323,7 @@ const Main = () => {
                       serve as the internal points of the rhombus.
                     </li>
                   </ul>
-                  <p className="bg-[#293138] text-white p-[12px] rounded-2xl mt-[15px]">
+                  <p className="bg-[#293138] text-white p-[12px] rounded-2xl mt-[15px] break-words">
                     def random_point_in_triangle(v1, v2, v3):
                     <br />
                     weights = np.random.rand(3)
@@ -356,7 +356,7 @@ const Main = () => {
                     return np.array(points)
                     <br />
                   </p>
-                  <p className="bg-[#293138] text-white p-[12px] rounded-2xl mt-[15px]">
+                  <p className="bg-[#293138] text-white p-[12px] rounded-2xl mt-[15px] break-words">
                   {"internal_points = generate_random_points_in_ rhombus (vertex1, vertex2, vertex3, vertex4, 10000)"}
                   </p>
                 </div>
@@ -367,7 +367,7 @@ const Main = () => {
                       Next, we will create a Dataset class based on PyTorch.
                     </li>
                   </ul>
-                  <p className="bg-[#293138] text-white p-[12px] rounded-2xl mt-[15px]">
+                  <p className="bg-[#293138] text-white p-[12px] rounded-2xl mt-[15px] break-words">
                     {" class EdgePointsDataset(Dataset): "}
                     <br />
                     {" def __init__(self, points)"}: <br />
@@ -383,7 +383,7 @@ const Main = () => {
                     {"def __getitem__(self, idx):"} <br />
                     {" return self.X[idx], self.y[idx]"}
                   </p>
-                  <p className="bg-[#293138] text-white p-[12px] rounded-2xl mt-[15px]">
+                  <p className="bg-[#293138] text-white p-[12px] rounded-2xl mt-[15px] break-words">
                     {"class InternalPointsDataset(Dataset):"}
                     <br />
                     {" def __init__(self, X):"}
@@ -412,7 +412,7 @@ const Main = () => {
                       we established in the previous step.
                     </li>
                   </ul>
-                  <p className="bg-[#293138] text-white p-[12px] rounded-2xl mt-[15px]">
+                  <p className="bg-[#293138] text-white p-[12px] rounded-2xl mt-[15px] break-words">
                     # Creating points list <br />
                     {
                       "edge_points_X = np.array(top_points + bottom_points + left_points + right_points) edge_points_y = np.array([[1.0]]*len(top_points) + [[0.0]]*len(bottom_points) + [[0.0]]*len(left_points) + [[0.0]]*len(right_points)) edge_points = [edge_points_X, edge_points_y]"
@@ -445,7 +445,7 @@ const Main = () => {
                       two hidden layers, one input layer, and one output layer.
                     </li>
                   </ul>
-                  <p className="bg-[#293138] text-white p-[12px] rounded-2xl mt-[15px]">
+                  <p className="bg-[#293138] text-white p-[12px] rounded-2xl mt-[15px] break-words">
                     {"  class NeuralNet(nn.Module):"} <br />
                     {
                       " def __init__(self, input_neurons, hidden_neurons, output_neurons):"
@@ -506,7 +506,7 @@ const Main = () => {
                       parameters.
                     </li>
                   </ul>
-                  <p className="bg-[#293138] text-white p-[12px] rounded-2xl mt-[15px]">
+                  <p className="bg-[#293138] text-white p-[12px] rounded-2xl mt-[15px] break-words">
                     {" device = 'cuda' if torch.cuda.is_available() else 'cpu'"}
                     <br />
                     {"model = NeuralNet(2,6,1).to(device)"}
@@ -540,7 +540,7 @@ const Main = () => {
                       derivative is then integrated into the loss function.
                     </li>
                   </ul>
-                  <p className="bg-[#293138] text-white p-[12px] rounded-2xl mt-[15px]">
+                  <p className="bg-[#293138] text-white p-[12px] rounded-2xl mt-[15px] break-words">
                     {"loss_values = [] "}
                     <br />
                     {"epoch = 10000 "}

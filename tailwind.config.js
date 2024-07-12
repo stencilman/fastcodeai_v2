@@ -67,6 +67,7 @@ module.exports = {
         'kans': "url('/blogs/latest-blog/blog-kans.png')",
         'pinns': "url('/blogs/latest-blog/pinns-hero.png')",
         'pinns2d': "url('/blogs/latest-blog/pinns2d-hero.png')",
+        'pinnslid': "url('/blogs/latest-blog/pinns-lid-hero.png')",
         'whyaiHero': "url('/blogs/why-ai/hero/img1-2.png')",
         'oilGasHero': "url('/blogs/oil-gas/oilGas-Hero.webp')",
 
