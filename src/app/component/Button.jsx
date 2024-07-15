@@ -21,7 +21,7 @@ const Button = ({ to, name, target }) => {
         <span className="button__icon-wrapper ">
           <svg
             width="10"
-            class="button__icon-svg"
+            className="button__icon-svg"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 14 15"
@@ -33,7 +33,7 @@ const Button = ({ to, name, target }) => {
           </svg>
 
           <svg
-            class="button__icon-svg  button__icon-svg--copy"
+            className="button__icon-svg  button__icon-svg--copy"
             xmlns="http://www.w3.org/2000/svg"
             width="10"
             fill="none"

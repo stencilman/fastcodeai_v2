@@ -69,6 +69,7 @@ module.exports = {
         'pinns2d': "url('/blogs/latest-blog/pinns2d-hero.png')",
         'pinnslid': "url('/blogs/latest-blog/pinns-lid-hero.png')",
         'whyaiHero': "url('/blogs/why-ai/hero/img1-2.png')",
+        'rlhf': "url('/blogs/rlhf/hero/rlhf.jpeg')",
         'oilGasHero': "url('/blogs/oil-gas/oilGas-Hero.webp')",
 
         // *** Team Members ***
