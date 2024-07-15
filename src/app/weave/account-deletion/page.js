@@ -82,7 +82,7 @@ const AccountDeletion = () => {
                     <div className="form-group">
                     <label id="label" htmlFor="email" className="form-label text-white">Email</label>
                         <input
-                            className="form-control"
+                            className="form-control p-[10px] rounded-md w-[70%] md:w-[350px]"
                             name="email"
                             id="email"
                             required
