@@ -7,6 +7,7 @@ const Soltions = ({ solutionsData }) => {
   const path = usePathname();
   const autoOem = path.includes("auto-oem");
   const autoMto = path.includes("auto-mto");
+  const bankingInfra = path.includes("banking-infra");
 
   return (
     <div className="w-full h-auto bg-[#00081F] py-[100px]  px-[20px] md:px-[50px] lg:px-[100px]  relative">
@@ -26,6 +27,56 @@ const Soltions = ({ solutionsData }) => {
             src="https://www.youtube.com/embed/dfMoVsvqaZI"
             allowFullScreen
           ></iframe>
+        )}
+        {bankingInfra && (
+          <>
+            <h1 className="text-white text-6xl md:text-8xl font-aeonik tracking-wide mb-[8px]">
+              Financial Transaction Monitoring
+            </h1>
+            <div className=" w-full">
+              <div className="w-full flex flex-col gap-[30px]">
+                <div className="w-full  ">
+                  <Image
+                    className="w-full border-r border-solid border-r-[#b0b2b6]"
+                    src="/potfolio/bankingInfra/FinancMonitor-1.png"
+                    width="400"
+                    height="300"
+                    alt="FinanceMonitor"
+                  />
+                </div>
+                <div className="w-full  ">
+                  <Image
+                    className="w-full border-b-2 border-solid border-b-[#b0b2b6]"
+                    src="/potfolio/bankingInfra/FinancMonitor-3.png"
+                    width="400"
+                    height="300"
+                    alt="FinanceMonitor"
+                  />
+                </div>
+              </div>
+            </div>
+            <div className={`text-[#9EB3CF] text-lg font-bwmss01  `}>
+             
+              <ul>
+                <li className="list-disc">
+                Low or no licensing / subscription fee
+                </li><li className="list-disc">
+                  Flexibility to customise panels functionally
+                </li>
+                <li className="list-disc">
+                  Flexibility to customise look and feel of dashboard
+                </li>
+                <li className="list-disc">
+                  Flexibility to integrate 3rd party plugins into dashboard
+                </li>
+                <li className="list-disc">
+                  Managed / on premise / cloud options for the infra setup based
+                  on your data privacy / reliability/ cost preferences
+                </li>
+                <li className="list-disc">Support for upgrads and migration</li>
+              </ul>
+            </div>
+          </>
         )}
         <h1 className="text-white text-6xl md:text-8xl font-aeonik tracking-wide mb-[8px]">
           Solution
