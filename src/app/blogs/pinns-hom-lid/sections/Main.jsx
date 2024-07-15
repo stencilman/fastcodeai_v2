@@ -1049,7 +1049,7 @@ const Main = () => {
               <h6 className="text-white text-lg font-aeonik px-[23px] pt-[23px]">
                 TABLE OF CONTENTS
               </h6>
-              <div className="mt-[15px] max-w-[400px] text-lg font-bwmss01 h-[46vw] sm:h-[210px] md:h-[19vw] lg:h-auto overflow-auto">
+              <div className="mt-[15px] max-w-[270px] md:max-w-[400px] text-lg font-bwmss01 h-[46vw] sm:h-[210px] md:h-[19vw] lg:h-auto overflow-auto">
                 <a
                   onClick={() => {
                     scrollToTopic("topic1");
