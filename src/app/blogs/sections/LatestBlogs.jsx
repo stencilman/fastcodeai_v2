@@ -74,6 +74,14 @@ const LatestBlogs = () => {
       publicationDate: "01 Nov 2020",
       background: "bg-[#122057]",
     },
+    {
+      title: "Deepfakes, AI-imagery, and the Race for Authenticity ",
+      href: "/blogs/authenticity-race",
+      authorName: "Arjun Jain",
+      authorImg: "/arjun.jpg",
+      publicationDate: "01 Dec 2020",
+      background: "bg-authRace",
+    },
    
   ];
   return (
