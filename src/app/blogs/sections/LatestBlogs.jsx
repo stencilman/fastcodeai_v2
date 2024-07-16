@@ -64,7 +64,7 @@ const LatestBlogs = () => {
       authorName: "Arjun Jain",
       authorImg: "/arjun.jpg",
       publicationDate: "01 Dec 2023",
-      background: "bg-[#122057]",
+      background: "bg-rlhf",
     },
     {
       title: "Crafting Visions: The Magic of DALL-E 3 ",
@@ -363,7 +363,7 @@ const LatestBlogs = () => {
                 <div
                   className={`card-zoom-image absolute w-full h-full transition-all duration-500 ease-in-out transform bg-center bg-cover ${e.background} group-hover:scale-150`}
                 ></div>
-                <div className="absolute inset-0  bg-[#23478e8a] rounded-[24px]"></div>
+                <div className="absolute inset-0  bg-[#23478e44] rounded-[24px]"></div>
                 <div className="absolute bottom-[20px] m-[20px]">
                   <h3 className="text-white text-2xl font-aeonik tracking-wide mb-[15px]">
                     {e.title}
