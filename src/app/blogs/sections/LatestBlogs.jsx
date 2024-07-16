@@ -71,7 +71,7 @@ const LatestBlogs = () => {
       href: "/blogs/rlhf",
       authorName: "Arjun Jain",
       authorImg: "/arjun.jpg",
-      publicationDate: "01 Nov 2020",
+      publicationDate: "01 Dec 2020",
       background: "bg-[#122057]",
     },
     {
@@ -87,8 +87,16 @@ const LatestBlogs = () => {
       href: "/blogs/crafting-visions",
       authorName: "Arjun Jain",
       authorImg: "/arjun.jpg",
-      publicationDate: "01 Dec 2020",
+      publicationDate: "01 Nov 2020",
       background: "bg-[#104E62]",
+    }, 
+    {
+      title: "Federated Learning: A Game-Changer for Data Privacy and Machine Learning ",
+      href: "/blogs/federated-learning",
+      authorName: "Arjun Jain",
+      authorImg: "/arjun.jpg",
+      publicationDate: "01 Oct 2020",
+      background: "bg-[#001D3F]",
     },
    
   ];
@@ -336,6 +344,54 @@ const LatestBlogs = () => {
         {/* Map over dataArray for fourth row */}
         {dataArray.slice(7, 10).map((e, index) => (
           <div key={index} className="col-span-1 sm:col-span-1 md:col-span-1">
+            <Link href={e.href}>
+              <div
+                className={`card-zoom w-full h-[327px] relative  overflow-hidden group rounded-3xl`}
+              >
+                <div
+                  className={`card-zoom-image absolute w-full h-full transition-all duration-500 ease-in-out transform bg-center bg-cover ${e.background} group-hover:scale-150`}
+                ></div>
+                <div className="absolute inset-0  bg-[#23478e8a] rounded-[24px]"></div>
+                <div className="absolute bottom-[20px] m-[20px]">
+                  <h3 className="text-white text-2xl font-aeonik tracking-wide mb-[15px]">
+                    {e.title}
+                  </h3>
+                  <div className="flex gap-[10px] items-center">
+                    {e?.authorImg && (
+                      <div className="border border-[#707070] rounded-full  w-[50px] h-[50px] relative overflow-hidden">
+                        <Image
+                          className="rounded-full"
+                          src={e?.authorImg}
+                          width="50"
+                          height="50"
+                          alt=""
+                        />
+                      </div>
+                    )}
+                    <div>
+                      <b className="text-white font-bold font-aeonik tracking-wide ">
+                        {e.authorName}
+                      </b>
+                      <p className="text-[#FFFFFF] text-lg font-bwmss01">
+                        {e.publicationDate}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Link>
+          </div>
+        ))}
+         {/* Map over dataArray for fifth row */}
+         {dataArray.slice(10, 12).map((e, index) => (
+          <div
+            key={index}
+            className={`col-span-1 ${
+              index === 0
+                ? "sm:col-span-1 md:col-span-2"
+                : "sm:col-span-1 md:col-span-1"
+            }`}
+          >
             <Link href={e.href}>
               <div
                 className={`card-zoom w-full h-[327px] relative  overflow-hidden group rounded-3xl`}
