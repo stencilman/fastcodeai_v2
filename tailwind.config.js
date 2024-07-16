@@ -71,6 +71,7 @@ module.exports = {
         'whyaiHero': "url('/blogs/why-ai/hero/img1-2.png')",
         'rlhf': "url('/blogs/rlhf/hero/rlhf.jpeg')",
         'authRace': "url('/blogs/authenticity-race/hero/hero.jpeg')",
+        'dvdb': "url('/blogs/dvdb/hero/img1.jpeg')",
         'oilGasHero': "url('/blogs/oil-gas/oilGas-Hero.webp')",
 
         // *** Team Members ***
