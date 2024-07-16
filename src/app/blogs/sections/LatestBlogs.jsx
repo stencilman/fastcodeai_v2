@@ -79,8 +79,16 @@ const LatestBlogs = () => {
       href: "/blogs/authenticity-race",
       authorName: "Arjun Jain",
       authorImg: "/arjun.jpg",
-      publicationDate: "01 Dec 2020",
+      publicationDate: "21 Dec 2020",
       background: "bg-authRace",
+    },
+     {
+      title: "Crafting Visions: The Magic of DALL-E 3 ",
+      href: "/blogs/crafting-visions",
+      authorName: "Arjun Jain",
+      authorImg: "/arjun.jpg",
+      publicationDate: "01 Dec 2020",
+      background: "bg-[#104E62]",
     },
    
   ];

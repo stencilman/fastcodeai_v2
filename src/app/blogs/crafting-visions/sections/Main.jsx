@@ -24,13 +24,13 @@ const Main = () => {
   useEffect(() => {
     const handleScroll = () => {
       const offset = window.scrollY + window.innerHeight / 2;
-      // console.log("topicRefs", topicRefs.current);
+      console.log("topicRefs", topicRefs.current);
       topicRefs.current.forEach((ref, index) => {
         if (
           ref?.offsetTop <= offset &&
           ref.offsetTop + ref.offsetHeight > offset
         ) {
-          // console.log("topicName", ref.id);
+          console.log("topicName", ref.id);
           setTopicHighlight(ref.id);
         }
       });
@@ -50,24 +50,33 @@ const Main = () => {
             {/* Main */}
             <div className="md:w-[621%] md:max-w-[822px] flex flex-col gap-[30px] ">
               {/* content */}
-
               {/* topic-1 */}
               <div
                 id="topic1"
                 ref={(el) => (topicRefs.current[0] = el)}
                 className="flex flex-col gap-[20px]"
               >
+                <div className="flex w-full gap-[5%]">
+                  <Image
+                    className="rounded-[20px] w-[100%]"
+                    src="/blogs/crafting-visions/content/img1.jpeg"
+                    width="400"
+                    height="400"
+                    alt=""
+                  />
+                </div>
                 <h4 className="text-white text-2xl font-aeonik tracking-wide">
-                  Deepfakes, AI-imagery, and the Race for Authenticity
+                  Democratizing Visual Creativity:
                 </h4>
+
                 <p className="text-[#9EB3CF] text-lg font-bwmss01">
-                  {"We're"} living in a digital age where discerning reality
-                  from fiction has never been more critical. In an era abundant
-                  with deepfakes and AI-crafted visuals, watermarking {"isn't"}{" "}
-                  just about branding anymore; {"it's"} about truth and ethics.
+                  DALL-E 3 is a groundbreaking advancement, enabling users to
+                  translate intricate ideas into highly accurate images
+                  effortlessly. It has democratized visual creativity, making it
+                  accessible to a wider audience without the need for deep
+                  prompt engineering expertise.
                 </p>
               </div>
-
               {/* topic-2 */}
               <div
                 id="topic2"
@@ -75,14 +84,27 @@ const Main = () => {
                 className="flex flex-col gap-[20px]"
               >
                 <h4 className="text-white text-2xl font-aeonik tracking-wide">
-                  Vanguards of the Digital Frontier
+                  Overcoming Limitations:
                 </h4>
-
                 <p className="text-[#9EB3CF] text-lg font-bwmss01">
-                  When giants like Google, Facebook, Microsoft, and OpenAI step
-                  up, you know {"it's"} a big deal. {"They're"} leading the
-                  watermarking revolution, aiming to leave an unmistakable
-                  digital footprint.
+                  Previous models like Midjourney and Stable Diffusion excelled
+                  in generating high-quality images of solitary characters and
+                  objects but struggled with scenes involving specific
+                  relationships and interactions between multiple objects.
+                  DALL-E 3 has made significant strides in generating images
+                  that represent intricate scenes with multiple objects
+                  maintaining specific spatial and interactive relationships, a
+                  challenge that predecessors like Midjourney and Stable
+                  Diffusion found formidable. For instance:
+                </p>
+                <p className="text-[#9EB3CF] text-lg font-bwmss01">
+                  <b>Prompt:</b>{" "}
+                  {` "A bustling city street at night with people walking, neon signs glowing, cars parked on the side, and a full moon visible between the skyscrapers."`}
+                  <br />
+                  <b>Complexity:</b> The model has to generate a lively and
+                  dynamic scene, placing multiple elements like people, cars,
+                  and buildings accurately, and managing light and shadow to
+                  reflect the nighttime setting and glowing neon signs.
                 </p>
               </div>
 
@@ -95,21 +117,18 @@ const Main = () => {
                 className="flex flex-col gap-[20px]"
               >
                 <h4 className="text-white text-2xl font-aeonik tracking-wide">
-                  Invisible Yet Omnipresent
+                  Integration with ChatGPT:
                 </h4>
 
                 <p className="text-[#9EB3CF] text-lg font-bwmss01">
-                  Dive into Google {"DeepMind's"} SynthID or the genius collab
-                  between Microsoft & OpenAI with DALL-E 3. They embed covert
-                  patterns into images, ensuring that no matter how you tweak
-                  them, the watermark stands firm. {"Don't"} miss Meta {"AI's"}{" "}
-                  Stable Signature; {"it's"} a neural dance in two steps, but
-                  with a twist!
+                  OpenAI has seamlessly integrated DALL-E 3 with ChatGPT,
+                  reducing the friction in transitioning from an idea to an
+                  image and allowing ChatGPT to act as a creative partner.
                 </p>
               </div>
               {/* end topic-3 */}
 
-              {/* topic-4*/}
+              {/* topic-4 */}
 
               <div
                 id="topic4"
@@ -117,19 +136,31 @@ const Main = () => {
                 className="flex flex-col gap-[20px]"
               >
                 <h4 className="text-white text-2xl font-aeonik tracking-wide">
-                  Decoding the Code
+                  Ethical and Legal Foresight:
                 </h4>
 
                 <p className="text-[#9EB3CF] text-lg font-bwmss01">
-                  To our coder community - Unravelling these watermarks might
-                  feel like a quest. But with specialized algorithms and tools
-                  from these tech behemoths, {"we're"} stepping into a world of
-                  digital forensics and image authenticity.
+                  OpenAI has implemented measures to respect and protect the
+                  creative rights of artists, addressing potential legal and
+                  ethical disputes by allowing artists to opt out their work
+                  from training datasets and refusing to replicate the styles of
+                  living artists.
+                </p>
+
+                <p className="text-[#9EB3CF] text-lg font-bwmss01">
+                  DALL-E 3 opens up new horizons in AI-driven art creation,
+                  posing intriguing questions about the implications on
+                  traditional art forms and offering unprecedented opportunities
+                  for exploring visual creativity. It stands as a testament to
+                  the potential of AI to revolutionize visual representation and
+                  creativity.
                 </p>
                 <p className="text-[#9EB3CF] text-lg font-bwmss01">
-                  AI, too, can paint a thousand words!
-                  <br />
-                  (DALL-E 3 generated art)
+                  Currently in research preview, DALL-E 3 ]will be available to
+                  ChatGPT Plus and Enterprise customers in October, via the API
+                  and in Labs later this fall, with images created being the
+                  property of the creator without needing permission to reprint,
+                  sell or merchandise them.
                 </p>
               </div>
               {/* end topic-4 */}
@@ -151,15 +182,15 @@ const Main = () => {
             </div>
           </div>
           {/* nav */}
-          <div className="relative md:sticky md:top-[120px] h-[240px] sm:h-[250px] md:h-fit">
+          <div className="relative md:sticky md:top-[120px] h-[280px] sm:h-[300px] md:h-fit">
             <Image
-              className="min-h-[250px] w-[300px] min-w-[267px] md:min-w-[36vw] lg:min-w-[320px] relative"
+              className="min-h-[250px] min-w-[267px] md:min-w-[36vw] lg:min-w-[366px] relative"
               src="/blogs/rec.svg"
-              width="300"
+              width="400"
               height="500"
               alt=""
             />
-            <div className="absolute top-[15px] ">
+            <div className="absolute top-0 ">
               <h6 className="text-white text-lg font-aeonik px-[23px] pt-[23px]">
                 TABLE OF CONTENTS
               </h6>
@@ -177,7 +208,7 @@ const Main = () => {
                         : "text-[#9EB3CF]"
                     }  `}
                   >
-                    1. About
+                    1. Democratizing Visual Creativity
                   </p>
                 </a>
                 <a
@@ -193,7 +224,7 @@ const Main = () => {
                         : "text-[#9EB3CF]"
                     } `}
                   >
-                    2. Vanguards
+                    2. Overcoming Limitations
                   </p>
                 </a>
                 <a
@@ -209,10 +240,9 @@ const Main = () => {
                         : "text-[#9EB3CF]"
                     } `}
                   >
-                    3. Invisible Yet Omnipresent
+                    3. Integration with ChatGPT
                   </p>
                 </a>
-
                 <a
                   onClick={() => {
                     scrollToTopic("topic4");
@@ -226,7 +256,7 @@ const Main = () => {
                         : "text-[#9EB3CF]"
                     } `}
                   >
-                    4. Decoding the Code
+                    4. Ethical and Legal Foresight
                   </p>
                 </a>
               </div>
