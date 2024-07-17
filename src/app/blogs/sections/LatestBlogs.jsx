@@ -68,6 +68,14 @@ const LatestBlogs = () => {
       background: "bg-[#001D3F]",
     },
     {
+      title: "Reflecting on a Journey Through Computer Graphics",
+      href: "/blogs/animated-drawings",
+      authorName: "Arjun Jain",
+      authorImg: "/arjun.jpg",
+      publicationDate: "03 Dec 2023",
+      background: "bg-[#104E62]",
+    },
+    {
       title: "Deepfakes, AI-imagery, and the Race for Authenticity ",
       href: "/blogs/authenticity-race",
       authorName: "Arjun Jain",
@@ -122,13 +130,14 @@ const LatestBlogs = () => {
     },
 
     {
-      title: "  Oil & Gas EPC - Digitizing P&ID",
+      title: "Oil & Gas EPC - Digitizing P&ID",
       href: "/blogs/oil-gas",
       authorName: "Tarun Kumar",
       authorImg: "",
       publicationDate: "03 June 2020",
       background: "bg-blog3",
     },
+   
     
   ];
   return (

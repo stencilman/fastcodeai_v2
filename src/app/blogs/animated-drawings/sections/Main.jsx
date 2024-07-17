@@ -57,71 +57,93 @@ const Main = () => {
                 ref={(el) => (topicRefs.current[0] = el)}
                 className="flex flex-col gap-[20px]"
               >
-                 
-                <h4 className="text-white text-2xl font-aeonik tracking-wide">
-                Dart Vector DB
-                </h4>
                 <div className="flex w-full gap-[5%]">
-                  <Image
+                  <video
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    src="/blogs/animated-drawings/content/video.mp4"
                     className="rounded-[20px] w-[100%]"
-                    src="/blogs/dvdb/hero/img1.jpeg"
                     width="400"
                     height="400"
                     alt=""
                   />
                 </div>
-               
+                <h4 className="text-white text-2xl font-aeonik tracking-wide">
+                  Reflecting on a Journey Through Computer Graphics: Curiosity
+                  and Fun
+                </h4>
+
                 <p className="text-[#9EB3CF] text-lg font-bwmss01">
-                DVDB, an optimised, cross-platform on-device vector DB {"that's"} set to redefine industry standards. Check it out on GitHub:
-                 <a   href="https://github.com/FastCodeAI/DVDB"
+                  As I recently browsed the exceptional papers presented at
+                  Siggraph 2023{" "}
+                  <a
+                    href="https://lnkd.in/g2Ax66i5"
                     className="text-blue-600 hover:underline"
-                    target="_blank">https://lnkd.in/grYTc4YY</a>
+                    target="_blank"
+                  >
+                    https://lnkd.in/g2Ax66i5
+                  </a>{" "}
+                  – ranging from{" "}
+                  {`"3D Gaussian Splatting for Real-time Radiance Field Rendering"`}{" "}
+                  to{" "}
+                  {`"GestureDiffuCLIP: Gesture Diffusion Model With CLIP Latents"`}{" "}
+                  – a wave of nostalgia hit me, taking me back to my PhD days at
+                  the Max Planck Institute for Informatics.
                 </p>
-               
-              </div>
-
-              {/* topic-2 */}
-              <div
-                id="topic2"
-                ref={(el) => (topicRefs.current[1] = el)}
-                className="flex flex-col gap-[20px]"
-              >
-                <h4 className="text-white text-2xl font-aeonik tracking-wide">
-                Why did we create this?
-                </h4>
 
                 <p className="text-[#9EB3CF] text-lg font-bwmss01">
-                We were working on a use case that required us to create privacy-preserving, on-device vector databases, ensuring that private user information never left their devices. So, we started searching for suitable on-device vector databases on the internet. We found SVDB, which provides on-device vector database support for iOS-based applications, and it worked well for our iOS application. However, we also needed one for Android. Alas, to the best of our knowledge, no such vector database existed for Android.
+                  Those years were a paradise for someone like me, driven by
+                  curiosity. A PhD is more than a degree; {"it's"} a journey of
+                  creation, of delving into the unknown and, hopefully pushing
+                  the envelope a bit. My mission was to tread paths not taken,
+                  to innovate in unexplored territories. Projects like
+                  MovieReshape{" "}
+                  <a
+                    href="https://lnkd.in/gQNxRP-j"
+                    className="text-blue-600 hover:underline"
+                    target="_blank"
+                  >
+                    https://lnkd.in/gQNxRP-j
+                  </a>{" "}
+                  and{" "}
+                  <a
+                    href="http://www.stencilcreator.org/"
+                    className="text-blue-600 hover:underline"
+                    target="_blank"
+                  >
+                    www.stencilcreator.org
+                  </a>{" "}
+                  were more than academic tasks; they were my playgrounds, where
+                  I combined serious research with the sheer fun of creation.
                 </p>
-               
+                <p className="text-[#9EB3CF] text-lg font-bwmss01">
+                  And now, as I gear up to try the Animated Drawings{" "}
+                  <a
+                    href="https://lnkd.in/gW4gKTE9"
+                    className="text-blue-600 hover:underline"
+                    target="_blank"
+                  >
+                    https://lnkd.in/gW4gKTE9
+                  </a>{" "}
+                  project with my {"kids'"} artwork, {"I'm"} reminded of the
+                  importance of that fun, creative spirit. {"It’s"} projects
+                  like these that illustrate how our field is not just about
+                  technical prowess but also about enjoying the journey, about
+                  bringing smiles and wonder through technology.
+                </p>
+                
+                 <p className="text-[#9EB3CF] text-lg font-bwmss01">
+                 Looking back, I realize that the fusion of challenge, innovation, and fun during my PhD {"didn't"} just lay the foundation for my career; it also led to some of the most rewarding experiences of my life.
+                </p>
+                <p className="text-[#9EB3CF] text-lg font-bwmss01">
+                To all my mentors, colleagues, and the dynamic world of Graphics and Vision: Thank you for not just shaping my career but for instilling in me the joy of discovery and the pleasure of having fun while pushing the boundaries of {"what's"} possible.
+                </p> 
+                <p className="text-[#9EB3CF] text-lg font-bwmss01">
+                Stay tuned for an exciting showcase of what happens when Animated Drawings meets the imagination of a child!
+                </p>
               </div>
-
-              {/* end topic-2 */}
-               {/* topic-3 */}
-              <div
-                id="topic3"
-                ref={(el) => (topicRefs.current[2] = el)}
-                className="flex flex-col gap-[20px]"
-              >
-                <h4 className="text-white text-2xl font-aeonik tracking-wide">
-                DVDB Highlights
-                </h4>
-
-                <div className="text-[#9EB3CF] text-lg font-bwmss01">
-                  <ul>
-                    <li className="list-disc">Privacy First: Private user data never leaves their device, and do not reside on our services. You own your data and your embeddings.</li>
-                    <li className="list-disc">No Server, No Cry: DVDB runs locally on device. Thus, zero latency and no hassle of server upkeep!</li>
-                    <li className="list-disc">{"OpenAI's"} Embeddings Support: Add OpenAI Embeddings in DVDB in few lines of code.</li>
-                    <li className="list-disc">Custom Embeddings: Create your own embeddings and add it in DVDB instead of OpenAI embeddings.</li>
-                    <li className="list-disc">Multi-platform Support: Whether {"you're"} team Android or squad iOS, DVDB works on both, making app development a breezy affair.</li>
-                  </ul>
-               
-                </div>
-               
-              </div>
-
-              {/* end topic-3 */}
-             
 
               {/* CTA */}
               <div className="w-full py-[26px] px-[20px] md:px-[50px] lg:px-[100px] flex flex-col gap-[18px] bg-[#000D2F] rounded-[20px] my-[60px]">
@@ -140,7 +162,7 @@ const Main = () => {
             </div>
           </div>
           {/* nav */}
-          <div className="relative md:sticky md:top-[120px] h-[240px] sm:h-[250px] md:h-fit">
+          {/* <div className="relative md:sticky md:top-[120px] h-[240px] sm:h-[250px] md:h-fit">
             <Image
               className="min-h-[250px] w-[300px] min-w-[267px] md:min-w-[36vw] lg:min-w-[320px] relative"
               src="/blogs/rec.svg"
@@ -152,7 +174,7 @@ const Main = () => {
               <h6 className="text-white text-lg font-aeonik px-[23px] pt-[23px]">
                 TABLE OF CONTENTS
               </h6>
-              <div className="mt-[15px] max-w-[380px] sm:max-w-[300px] lg:max-w-[400px] text-lg font-bwmss01 h-[46vw] sm:h-[210px] md:h-[19vw] lg:h-auto overflow-auto">
+              <div className="mt-[15px] max-w-[350px] sm:max-w-[300px] lg:max-w-[400px] text-lg font-bwmss01 h-[46vw] sm:h-[210px] md:h-[19vw] lg:h-auto overflow-auto">
                 <a
                   onClick={() => {
                     scrollToTopic("topic1");
@@ -166,7 +188,7 @@ const Main = () => {
                         : "text-[#9EB3CF]"
                     }  `}
                   >
-                    1. About
+                    1. Vision Transformers Need Registers
                   </p>
                 </a>
                 <a
@@ -182,29 +204,13 @@ const Main = () => {
                         : "text-[#9EB3CF]"
                     } `}
                   >
-                    2. Why did we create this?
-                  </p>
-                </a>
-                 <a
-                  onClick={() => {
-                    scrollToTopic("topic3");
-                    setTopicHighlight("topic3");
-                  }}
-                >
-                  <p
-                    className={`pl-[20px] pb-[4px] pr-[15px] cursor-pointer  transition-all duration-300 ease-in-out lg:hover:text-[#3784e9] ml-[2px] mb-[4px] ${
-                      topicHighlight === "topic3"
-                        ? "border-l-[#036BF0] text-[#036BF0] border-l-[3px]"
-                        : "text-[#9EB3CF]"
-                    } `}
-                  >
-                    3. Highlights
+                    2. Solution
                   </p>
                 </a>
                
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
       {/* Read More */}
