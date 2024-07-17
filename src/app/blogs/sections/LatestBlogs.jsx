@@ -29,7 +29,7 @@ const LatestBlogs = () => {
       publicationDate: "03 May 2024",
       background: "bg-pinnslid",
     },
-   
+
     {
       title:
         "Applying Physics-Informed Neural Networks (PINNs): Hands-On Modeling of 2D Plates",
@@ -47,7 +47,7 @@ const LatestBlogs = () => {
       publicationDate: "13 March 2024",
       background: "bg-pinns",
     },
-   
+
     {
       title:
         "Mobile-First DVDB (Dart Vector DB): The Pocket-Sized Powerhouse for Your Apps ",
@@ -57,10 +57,10 @@ const LatestBlogs = () => {
       publicationDate: "11 March 2024",
       background: "bg-[#122057]",
     },
-    
-   
+
     {
-      title: "The Key to Counterbalancing AI's Dangers and Preventing Monopolization by Large Corporations",
+      title:
+        "The Key to Counterbalancing AI's Dangers and Preventing Monopolization by Large Corporations",
       href: "/blogs/ai-dangers-and-preventing-monopolization",
       authorName: "Arjun Jain",
       authorImg: "/arjun.jpg",
@@ -83,7 +83,7 @@ const LatestBlogs = () => {
       publicationDate: "21 Nov 2023",
       background: "bg-authRace",
     },
-  
+
     {
       title: "Crafting Visions: The Magic of DALL-E 3 ",
       href: "/blogs/crafting-visions",
@@ -117,8 +117,14 @@ const LatestBlogs = () => {
       publicationDate: "13 July 2023",
       background: "bg-nasHero",
     },
-
-   
+    {
+      title: "Vision Transformers (ViTs)",
+      href: "/blogs/vits",
+      authorName: "Arjun Jain",
+      authorImg: "/arjun.jpg",
+      publicationDate: "18 June 2023",
+      background: "bg-vitsHero",
+    },
     {
       title: "The Dilemma: To ML or Not to ML?",
       href: "/blogs/why-ai",
@@ -144,9 +150,6 @@ const LatestBlogs = () => {
       publicationDate: "03 June 2020",
       background: "bg-blog3",
     },
-   
-   
-    
   ];
   return (
     <div className="w-full h-auto px-[20px] md:px-[50px] lg:px-[100px] pt-[150px] pb-[100px]">
@@ -519,8 +522,8 @@ const LatestBlogs = () => {
             </Link>
           </div>
         ))}
-         {/* Map over dataArray for seventh row */}
-         {dataArray.slice(15, 17).map((e, index) => (
+        {/* Map over dataArray for seventh row */}
+        {dataArray.slice(15, 17).map((e, index) => (
           <div
             key={index}
             className={`col-span-1 ${
