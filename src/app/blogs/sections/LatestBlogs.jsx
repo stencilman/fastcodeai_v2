@@ -109,7 +109,14 @@ const LatestBlogs = () => {
       publicationDate: "01 Sept 2023",
       background: "bg-[#001D3F]",
     },
- 
+    {
+      title: "Neural Architecture Search (NAS) ",
+      href: "/blogs/nas",
+      authorName: "Arjun Jain",
+      authorImg: "/arjun.jpg",
+      publicationDate: "13 July 2023",
+      background: "bg-nasHero",
+    },
 
    
     {
@@ -137,6 +144,7 @@ const LatestBlogs = () => {
       publicationDate: "03 June 2020",
       background: "bg-blog3",
     },
+   
    
     
   ];
@@ -473,6 +481,54 @@ const LatestBlogs = () => {
         {/* Map over dataArray for sixth row */}
         {dataArray.slice(12, 15).map((e, index) => (
           <div key={index} className="col-span-1 sm:col-span-1 md:col-span-1">
+            <Link href={e.href}>
+              <div
+                className={`card-zoom w-full h-[327px] relative  overflow-hidden group rounded-3xl`}
+              >
+                <div
+                  className={`card-zoom-image absolute w-full h-full transition-all duration-500 ease-in-out transform bg-center bg-cover ${e.background} group-hover:scale-150`}
+                ></div>
+                <div className="absolute inset-0  bg-[#23478e8a] rounded-[24px]"></div>
+                <div className="absolute bottom-[20px] m-[20px]">
+                  <h3 className="text-white text-2xl font-aeonik tracking-wide mb-[15px]">
+                    {e.title}
+                  </h3>
+                  <div className="flex gap-[10px] items-center">
+                    {e?.authorImg && (
+                      <div className="border border-[#707070] rounded-full  w-[50px] h-[50px] relative overflow-hidden">
+                        <Image
+                          className="rounded-full"
+                          src={e?.authorImg}
+                          width="50"
+                          height="50"
+                          alt=""
+                        />
+                      </div>
+                    )}
+                    <div>
+                      <b className="text-white font-bold font-aeonik tracking-wide ">
+                        {e.authorName}
+                      </b>
+                      <p className="text-[#FFFFFF] text-lg font-bwmss01">
+                        {e.publicationDate}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Link>
+          </div>
+        ))}
+         {/* Map over dataArray for seventh row */}
+         {dataArray.slice(15, 17).map((e, index) => (
+          <div
+            key={index}
+            className={`col-span-1 ${
+              index === 0
+                ? "sm:col-span-1 md:col-span-1"
+                : "sm:col-span-1 md:col-span-2"
+            }`}
+          >
             <Link href={e.href}>
               <div
                 className={`card-zoom w-full h-[327px] relative  overflow-hidden group rounded-3xl`}

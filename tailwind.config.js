@@ -72,6 +72,7 @@ module.exports = {
         'rlhf': "url('/blogs/rlhf/hero/rlhf.jpeg')",
         'authRace': "url('/blogs/authenticity-race/hero/hero.jpeg')",
         'dvdb': "url('/blogs/dvdb/hero/img1.jpeg')",
+        'nasHero': "url('/blogs/nas/hero/img1.jpeg')",
         'visionTransformers': "url('/blogs/vision-transformers/hero/img1.jpeg')",
         'oilGasHero': "url('/blogs/oil-gas/oilGas-Hero.webp')",
 
