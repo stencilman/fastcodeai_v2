@@ -57,7 +57,14 @@ const LatestBlogs = () => {
       publicationDate: "11 March 2024",
       background: "bg-[#122057]",
     },
-
+    {
+      title: "Approach to solve complex problems",
+      href: "/blogs/solving-complex-problem",
+      authorName: "Arjun Jain",
+      authorImg: "/arjun.jpg",
+      publicationDate: "03 March 2024",
+      background: "bg-[#001D3F]",
+    },
     {
       title:
         "The Key to Counterbalancing AI's Dangers and Preventing Monopolization by Large Corporations",
@@ -150,6 +157,15 @@ const LatestBlogs = () => {
       publicationDate: "03 June 2020",
       background: "bg-blog3",
     },
+    // {
+    //   title: "Generative Adversarial Networks",
+    //   href: "/blogs/oil-gas",
+    //   authorName: "Arjun Jain",
+    //   authorImg: "/arjun.jpg",
+    //   publicationDate: "03 June 2020",
+    //   background: "bg-[#001D3F]",
+    // },
+   
   ];
   return (
     <div className="w-full h-auto px-[20px] md:px-[50px] lg:px-[100px] pt-[150px] pb-[100px]">
@@ -255,7 +271,7 @@ const LatestBlogs = () => {
       </div> */}
 
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
-        {/* Map over dataArray for first row */}
+        {/* Map over dataArray for 1 row */}
         {dataArray.slice(0, 2).map((e, index) => (
           <div
             key={index}
@@ -303,7 +319,7 @@ const LatestBlogs = () => {
             </Link>
           </div>
         ))}
-        {/* Map over dataArray for second row */}
+        {/* Map over dataArray for 2 row */}
         {dataArray.slice(2, 5).map((e, index) => (
           <div key={index} className="col-span-1 sm:col-span-1 md:col-span-1">
             <Link href={e.href}>
@@ -344,7 +360,7 @@ const LatestBlogs = () => {
             </Link>
           </div>
         ))}
-        {/* Map over dataArray for third row */}
+        {/* Map over dataArray for 3 row */}
         {dataArray.slice(5, 7).map((e, index) => (
           <div
             key={index}
@@ -392,7 +408,7 @@ const LatestBlogs = () => {
             </Link>
           </div>
         ))}
-        {/* Map over dataArray for fourth row */}
+        {/* Map over dataArray for 4 row */}
         {dataArray.slice(7, 10).map((e, index) => (
           <div key={index} className="col-span-1 sm:col-span-1 md:col-span-1">
             <Link href={e.href}>
@@ -433,7 +449,7 @@ const LatestBlogs = () => {
             </Link>
           </div>
         ))}
-        {/* Map over dataArray for fifth row */}
+        {/* Map over dataArray for 5 row */}
         {dataArray.slice(10, 12).map((e, index) => (
           <div
             key={index}
@@ -481,7 +497,7 @@ const LatestBlogs = () => {
             </Link>
           </div>
         ))}
-        {/* Map over dataArray for sixth row */}
+        {/* Map over dataArray for 6 row */}
         {dataArray.slice(12, 15).map((e, index) => (
           <div key={index} className="col-span-1 sm:col-span-1 md:col-span-1">
             <Link href={e.href}>
@@ -522,7 +538,7 @@ const LatestBlogs = () => {
             </Link>
           </div>
         ))}
-        {/* Map over dataArray for seventh row */}
+        {/* Map over dataArray for 7 row */}
         {dataArray.slice(15, 17).map((e, index) => (
           <div
             key={index}
@@ -540,6 +556,47 @@ const LatestBlogs = () => {
                   className={`card-zoom-image absolute w-full h-full transition-all duration-500 ease-in-out transform bg-center bg-cover ${e.background} group-hover:scale-150`}
                 ></div>
                 <div className="absolute inset-0  bg-[#23478e8a] rounded-[24px]"></div>
+                <div className="absolute bottom-[20px] m-[20px]">
+                  <h3 className="text-white text-2xl font-aeonik tracking-wide mb-[15px]">
+                    {e.title}
+                  </h3>
+                  <div className="flex gap-[10px] items-center">
+                    {e?.authorImg && (
+                      <div className="border border-[#707070] rounded-full  w-[50px] h-[50px] relative overflow-hidden">
+                        <Image
+                          className="rounded-full"
+                          src={e?.authorImg}
+                          width="50"
+                          height="50"
+                          alt=""
+                        />
+                      </div>
+                    )}
+                    <div>
+                      <b className="text-white font-bold font-aeonik tracking-wide ">
+                        {e.authorName}
+                      </b>
+                      <p className="text-[#FFFFFF] text-lg font-bwmss01">
+                        {e.publicationDate}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Link>
+          </div>
+        ))}
+        {/* Map over dataArray for 8 row */}
+        {dataArray.slice(17, 20).map((e, index) => (
+          <div key={index} className="col-span-1 sm:col-span-1 md:col-span-1">
+            <Link href={e.href}>
+              <div
+                className={`card-zoom w-full h-[327px] relative  overflow-hidden group rounded-3xl`}
+              >
+                <div
+                  className={`card-zoom-image absolute w-full h-full transition-all duration-500 ease-in-out transform bg-center bg-cover ${e.background} group-hover:scale-150`}
+                ></div>
+                <div className="absolute inset-0  bg-[#23478e44] rounded-[24px]"></div>
                 <div className="absolute bottom-[20px] m-[20px]">
                   <h3 className="text-white text-2xl font-aeonik tracking-wide mb-[15px]">
                     {e.title}
