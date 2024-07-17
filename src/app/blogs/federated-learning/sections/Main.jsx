@@ -57,7 +57,7 @@ const Main = () => {
                 ref={(el) => (topicRefs.current[0] = el)}
                 className="flex flex-col gap-[20px]"
               >
-                 <div className="flex w-full gap-[5%]">
+                <div className="flex w-full gap-[5%]">
                   <Image
                     className="rounded-[20px] w-[100%]"
                     src="/blogs/federated-learning/content/img1.jpeg"
@@ -67,14 +67,27 @@ const Main = () => {
                   />
                 </div>
                 <h4 className="text-white text-2xl font-aeonik tracking-wide">
-                Federated Learning (FL)
+                  Federated Learning (FL)
                 </h4>
-               
+
                 <p className="text-[#9EB3CF] text-lg font-bwmss01">
-                Federated Learning (FL) is a decentralised machine learning approach that enables model training across multiple devices while keeping the data localised. Unlike traditional machine learning, where data is sent to a central server for training, FL sends the model to each device, performs local training, and aggregates the model updates on the server. This approach preserves data privacy and security, as raw data never leaves the device. FL offers a unique blend of privacy and real-time insights. But {"it's"} true potential lies in specific use cases.
+                  Federated Learning (FL) is a decentralised machine learning
+                  approach that enables model training across multiple devices
+                  while keeping the data localised. Unlike traditional machine
+                  learning, where data is sent to a central server for training,
+                  FL sends the model to each device, performs local training,
+                  and aggregates the model updates on the server. This approach
+                  preserves data privacy and security, as raw data never leaves
+                  the device. FL offers a unique blend of privacy and real-time
+                  insights. But {"it's"} true potential lies in specific use
+                  cases.
                 </p>
-                 <p className="text-[#9EB3CF] text-lg font-bwmss01">
-                 FL {"isn't"} just a buzzword; {"it's"} a transformative approach for sectors like healthcare, finance, and automotive, where data privacy is non-negotiable. With techniques like Secure Aggregation and Differential Privacy, FL ensures data remains at its source, addressing genuine privacy concerns.
+                <p className="text-[#9EB3CF] text-lg font-bwmss01">
+                  FL {"isn't"} just a buzzword; {"it's"} a transformative
+                  approach for sectors like healthcare, finance, and automotive,
+                  where data privacy is non-negotiable. With techniques like
+                  Secure Aggregation and Differential Privacy, FL ensures data
+                  remains at its source, addressing genuine privacy concerns.
                 </p>
               </div>
 
@@ -85,19 +98,44 @@ const Main = () => {
                 className="flex flex-col gap-[20px]"
               >
                 <h4 className="text-white text-2xl font-aeonik tracking-wide">
-                Electric Vehicles (EVs) & FL: A Glimpse of the Future?
+                  Electric Vehicles (EVs) & FL: A Glimpse of the Future?
                 </h4>
 
                 <p className="text-[#9EB3CF] text-lg font-bwmss01">
-                Consider EVs. Here, each {"car's"} data remains onboard, providing insights into battery health without compromising user privacy. FL shines by enabling on-board sensors to train machine learning models locally, predicting battery health in real-time. These local models are aggregated on a central server using various aggregation algorithms like FedAvg, FedProx, FedSCG, etc, refined, and then redistributed, ensuring adaptability to each {"car's"} unique conditions. With techniques like Secure Aggregation and Differential Privacy, FL ensures robust data privacy. The result? EV owners get real-time battery insights without compromising data, and the system scales seamlessly across numerous vehicles. However, {"it's"} worth noting that the real-world variability and the non-IID nature of data across vehicles present their own set of challenges.
+                  Consider EVs. Here, each {"car's"} data remains onboard,
+                  providing insights into battery health without compromising
+                  user privacy. FL shines by enabling on-board sensors to train
+                  machine learning models locally, predicting battery health in
+                  real-time. These local models are aggregated on a central
+                  server using various aggregation algorithms like FedAvg,
+                  FedProx, FedSCG, etc, refined, and then redistributed,
+                  ensuring adaptability to each {"car's"} unique conditions.
+                  With techniques like Secure Aggregation and Differential
+                  Privacy, FL ensures robust data privacy. The result? EV owners
+                  get real-time battery insights without compromising data, and
+                  the system scales seamlessly across numerous vehicles.
+                  However, {"it's"} worth noting that the real-world variability
+                  and the non-IID nature of data across vehicles present their
+                  own set of challenges.
                 </p>
                 <p className="text-[#9EB3CF] text-lg font-bwmss01">
-                While Federated Learning (FL) shines in scenarios like Electric Vehicles (EVs), Healthcare, etc by prioritising data privacy, {"it's"} not a catch-all solution. Its design, which decentralises machine learning, can sometimes introduce communication overheads, especially with bandwidth constraints or geographically dispersed devices. The non-IID nature of data across devices can pose challenges in model aggregation and may lead to suboptimal model performance. Also, sometimes it might happen that some devices are not available due to connectivity issues, device failure etc. which poses an additional challenge. In essence, FL is a potent tool in the machine learning arsenal, but its efficacy hinges on the specific problem {"it's"} applied to.
+                  While Federated Learning (FL) shines in scenarios like
+                  Electric Vehicles (EVs), Healthcare, etc by prioritising data
+                  privacy, {"it's"} not a catch-all solution. Its design, which
+                  decentralises machine learning, can sometimes introduce
+                  communication overheads, especially with bandwidth constraints
+                  or geographically dispersed devices. The non-IID nature of
+                  data across devices can pose challenges in model aggregation
+                  and may lead to suboptimal model performance. Also, sometimes
+                  it might happen that some devices are not available due to
+                  connectivity issues, device failure etc. which poses an
+                  additional challenge. In essence, FL is a potent tool in the
+                  machine learning arsenal, but its efficacy hinges on the
+                  specific problem {"it's"} applied to.
                 </p>
               </div>
 
               {/* end topic-2 */}
-             
 
               {/* CTA */}
               <div className="w-full py-[26px] px-[20px] md:px-[50px] lg:px-[100px] flex flex-col gap-[18px] bg-[#000D2F] rounded-[20px] my-[60px]">
@@ -161,7 +199,6 @@ const Main = () => {
                     2. Electric Vehicles (EVs) & FL: A Glimpse of the Future?
                   </p>
                 </a>
-               
               </div>
             </div>
           </div>
@@ -186,9 +223,9 @@ const Main = () => {
             </div>
           </Link>
         </div>
-        <div className="w-full relative flex flex-col md:flex-row gap-[56px] mt-[90px] md:mt-[220px]">
+        <div className="w-full relative flex flex-col md:flex-row gap-[56px] md:gap-[5%] mt-[90px] md:mt-[220px] ">
           {/* Blog Post 1 */}
-          <Link href="/blogs/why-ai">
+          <Link className="md:w-[30%]" href="/blogs/why-ai">
             <div className="relative group">
               <div>
                 <Image
@@ -213,13 +250,13 @@ const Main = () => {
                 <p className="text-[#9EB3CF] text-base font-bwmss01 ">
                   When do rule-based algorithms not work? When do we need
                   machine learning (ML) based algorithms? Let us try and answer
-                  this question using the tasks.
+                  this question using the tasks below:
                 </p>
               </div>
             </div>
           </Link>
           {/* Blog Post 2 */}
-          <Link href="/blogs/oil-gas">
+          <Link className="md:w-[30%]" href="/blogs/oil-gas">
             <div className="relative md:top-[-70px] group">
               <div>
                 <Image
@@ -242,15 +279,16 @@ const Main = () => {
                   Oil & Gas EPC - Digitizing P&ID
                 </b>
                 <p className="text-[#9EB3CF] text-base font-bwmss01">
-                  When do rule-based algorithms not work? When do we need
-                  machine learning (ML) based algorithms? Let us try and answer
-                  this question using the tasks.
+                  Oil & Gas which was once was a lucrative investment, now
+                  struggles to ensure the same level of light. A lot of things
+                  have changed in the past few years which has pushed the Oil &
+                  Gas.
                 </p>
               </div>
             </div>
           </Link>
           {/* Blog Post 3 */}
-          <Link href="/blogs/unknown-classes">
+          <Link className="md:w-[30%]" href="/blogs/unknown-classes">
             <div className="relative group">
               <div>
                 <Image
@@ -273,9 +311,11 @@ const Main = () => {
                   How to deal with Unknown Classes during classification?
                 </b>
                 <p className="text-[#9EB3CF] text-base font-bwmss01">
-                  When do rule-based algorithms not work? When do we need
-                  machine learning (ML) based algorithms? Let us try and answer
-                  this question using the tasks.
+                  A Convolutional Neural Network trained on the MNIST dataset
+                  when presented images from the Devanagari dataset will wrongly
+                  classify the Devanagari letter to one of the MNIST classes
+                  0-9, usually with very high confidence. What can we do to fix
+                  this?
                 </p>
               </div>
             </div>

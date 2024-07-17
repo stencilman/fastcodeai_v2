@@ -133,15 +133,23 @@ const Main = () => {
                   technical prowess but also about enjoying the journey, about
                   bringing smiles and wonder through technology.
                 </p>
-                
-                 <p className="text-[#9EB3CF] text-lg font-bwmss01">
-                 Looking back, I realize that the fusion of challenge, innovation, and fun during my PhD {"didn't"} just lay the foundation for my career; it also led to some of the most rewarding experiences of my life.
+
+                <p className="text-[#9EB3CF] text-lg font-bwmss01">
+                  Looking back, I realize that the fusion of challenge,
+                  innovation, and fun during my PhD {"didn't"} just lay the
+                  foundation for my career; it also led to some of the most
+                  rewarding experiences of my life.
                 </p>
                 <p className="text-[#9EB3CF] text-lg font-bwmss01">
-                To all my mentors, colleagues, and the dynamic world of Graphics and Vision: Thank you for not just shaping my career but for instilling in me the joy of discovery and the pleasure of having fun while pushing the boundaries of {"what's"} possible.
-                </p> 
+                  To all my mentors, colleagues, and the dynamic world of
+                  Graphics and Vision: Thank you for not just shaping my career
+                  but for instilling in me the joy of discovery and the pleasure
+                  of having fun while pushing the boundaries of {"what's"}{" "}
+                  possible.
+                </p>
                 <p className="text-[#9EB3CF] text-lg font-bwmss01">
-                Stay tuned for an exciting showcase of what happens when Animated Drawings meets the imagination of a child!
+                  Stay tuned for an exciting showcase of what happens when
+                  Animated Drawings meets the imagination of a child!
                 </p>
               </div>
 
@@ -232,9 +240,9 @@ const Main = () => {
             </div>
           </Link>
         </div>
-        <div className="w-full relative flex flex-col md:flex-row gap-[56px] mt-[90px] md:mt-[220px]">
+        <div className="w-full relative flex flex-col md:flex-row gap-[56px] md:gap-[5%] mt-[90px] md:mt-[220px] ">
           {/* Blog Post 1 */}
-          <Link href="/blogs/why-ai">
+          <Link className="md:w-[30%]" href="/blogs/why-ai">
             <div className="relative group">
               <div>
                 <Image
@@ -259,13 +267,13 @@ const Main = () => {
                 <p className="text-[#9EB3CF] text-base font-bwmss01 ">
                   When do rule-based algorithms not work? When do we need
                   machine learning (ML) based algorithms? Let us try and answer
-                  this question using the tasks.
+                  this question using the tasks below:
                 </p>
               </div>
             </div>
           </Link>
           {/* Blog Post 2 */}
-          <Link href="/blogs/oil-gas">
+          <Link className="md:w-[30%]" href="/blogs/oil-gas">
             <div className="relative md:top-[-70px] group">
               <div>
                 <Image
@@ -288,15 +296,16 @@ const Main = () => {
                   Oil & Gas EPC - Digitizing P&ID
                 </b>
                 <p className="text-[#9EB3CF] text-base font-bwmss01">
-                  When do rule-based algorithms not work? When do we need
-                  machine learning (ML) based algorithms? Let us try and answer
-                  this question using the tasks.
+                  Oil & Gas which was once was a lucrative investment, now
+                  struggles to ensure the same level of light. A lot of things
+                  have changed in the past few years which has pushed the Oil &
+                  Gas.
                 </p>
               </div>
             </div>
           </Link>
           {/* Blog Post 3 */}
-          <Link href="/blogs/unknown-classes">
+          <Link className="md:w-[30%]" href="/blogs/unknown-classes">
             <div className="relative group">
               <div>
                 <Image
@@ -319,9 +328,11 @@ const Main = () => {
                   How to deal with Unknown Classes during classification?
                 </b>
                 <p className="text-[#9EB3CF] text-base font-bwmss01">
-                  When do rule-based algorithms not work? When do we need
-                  machine learning (ML) based algorithms? Let us try and answer
-                  this question using the tasks.
+                  A Convolutional Neural Network trained on the MNIST dataset
+                  when presented images from the Devanagari dataset will wrongly
+                  classify the Devanagari letter to one of the MNIST classes
+                  0-9, usually with very high confidence. What can we do to fix
+                  this?
                 </p>
               </div>
             </div>

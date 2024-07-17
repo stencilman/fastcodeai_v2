@@ -57,30 +57,31 @@ const Main = () => {
                 ref={(el) => (topicRefs.current[0] = el)}
                 className="flex flex-col gap-[20px]"
               >
-               
                 <h4 className="text-white text-2xl font-aeonik tracking-wide">
-                Generative Adversarial Networks (GANs)
+                  Generative Adversarial Networks (GANs)
                 </h4>
 
                 <p className="text-[#9EB3CF] text-lg font-bwmss01">
-                A short, ~2-minute video that explains in a simple and intuitive way how I think about training GANs.
+                  A short, ~2-minute video that explains in a simple and
+                  intuitive way how I think about training GANs.
                 </p>
 
                 <p className="text-[#9EB3CF] text-lg font-bwmss01">
-                From my class yesterday in the DLCV course at Indian Institute of Science (IISc).
+                  From my class yesterday in the DLCV course at Indian Institute
+                  of Science (IISc).
                 </p>
                 <div className="flex w-full gap-[5%]">
-                <video
-                  loop
-                  controls
-                  playsInline
-                  src="/blogs/gan/content/video.mp4"
-                  className="rounded-[20px] w-[100%]"
-                  width="400"
-                  height="400"
-                  alt=""
-                />
-              </div>
+                  <video
+                    loop
+                    controls
+                    playsInline
+                    src="/blogs/gan/content/video.mp4"
+                    className="rounded-[20px] w-[100%]"
+                    width="400"
+                    height="400"
+                    alt=""
+                  />
+                </div>
               </div>
 
               {/* CTA */}
@@ -170,9 +171,9 @@ const Main = () => {
             </div>
           </Link>
         </div>
-        <div className="w-full relative flex flex-col md:flex-row gap-[56px] mt-[90px] md:mt-[220px]">
+        <div className="w-full relative flex flex-col md:flex-row gap-[56px] md:gap-[5%] mt-[90px] md:mt-[220px] ">
           {/* Blog Post 1 */}
-          <Link href="/blogs/why-ai">
+          <Link className="md:w-[30%]" href="/blogs/why-ai">
             <div className="relative group">
               <div>
                 <Image
@@ -197,13 +198,13 @@ const Main = () => {
                 <p className="text-[#9EB3CF] text-base font-bwmss01 ">
                   When do rule-based algorithms not work? When do we need
                   machine learning (ML) based algorithms? Let us try and answer
-                  this question using the tasks.
+                  this question using the tasks below:
                 </p>
               </div>
             </div>
           </Link>
           {/* Blog Post 2 */}
-          <Link href="/blogs/oil-gas">
+          <Link className="md:w-[30%]" href="/blogs/oil-gas">
             <div className="relative md:top-[-70px] group">
               <div>
                 <Image
@@ -226,15 +227,16 @@ const Main = () => {
                   Oil & Gas EPC - Digitizing P&ID
                 </b>
                 <p className="text-[#9EB3CF] text-base font-bwmss01">
-                  When do rule-based algorithms not work? When do we need
-                  machine learning (ML) based algorithms? Let us try and answer
-                  this question using the tasks.
+                  Oil & Gas which was once was a lucrative investment, now
+                  struggles to ensure the same level of light. A lot of things
+                  have changed in the past few years which has pushed the Oil &
+                  Gas.
                 </p>
               </div>
             </div>
           </Link>
           {/* Blog Post 3 */}
-          <Link href="/blogs/unknown-classes">
+          <Link className="md:w-[30%]" href="/blogs/unknown-classes">
             <div className="relative group">
               <div>
                 <Image
@@ -257,9 +259,11 @@ const Main = () => {
                   How to deal with Unknown Classes during classification?
                 </b>
                 <p className="text-[#9EB3CF] text-base font-bwmss01">
-                  When do rule-based algorithms not work? When do we need
-                  machine learning (ML) based algorithms? Let us try and answer
-                  this question using the tasks.
+                  A Convolutional Neural Network trained on the MNIST dataset
+                  when presented images from the Devanagari dataset will wrongly
+                  classify the Devanagari letter to one of the MNIST classes
+                  0-9, usually with very high confidence. What can we do to fix
+                  this?
                 </p>
               </div>
             </div>

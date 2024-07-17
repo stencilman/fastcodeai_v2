@@ -67,36 +67,62 @@ const Main = () => {
                   />
                 </div>
                 <h4 className="text-white text-2xl font-aeonik tracking-wide">
-                The Key to Counterbalancing {"AI's"} Dangers and Preventing Monopolization by Large Corporations
+                  The Key to Counterbalancing {"AI's"} Dangers and Preventing
+                  Monopolization by Large Corporations
                 </h4>
-                
 
                 <p className="text-[#9EB3CF] text-lg font-bwmss01">
-                Today, I want to highlight Yann LeCun, a Turing Award-winning computer scientist and VP and Chief Scientist at #Meta, who exemplifies this drive.
-                 
+                  Today, I want to highlight Yann LeCun, a Turing Award-winning
+                  computer scientist and VP and Chief Scientist at #Meta, who
+                  exemplifies this drive.
                 </p>
                 <p className="text-[#9EB3CF] text-lg font-bwmss01">
-                When I was a post-doc at NYU Courant Institute of Mathematical Sciences, I had the privilege of being his office neighbor and collaborating on four research papers. The most notable was our #NeurIPS 2014 paper, co-authored with the brilliant Jonathan and Chris, SciTech Oscar winner and the best mentor ever, now cited nearly 2000 times. It marked a breakthrough in heatmap-based human pose estimation using deep learning. 
-                </p> 
-                <p className="text-[#9EB3CF] text-lg font-bwmss01">
-                A personal anecdote that stands out from our collaboration involves a challenge we faced while working on this paper. We needed non-negative outputs for a particular computation, but the commonly used ReLUs were problematic. Without hesitation, he suggested SoftPlus — a function I {"hadn't"} even heard of at the time. His intuition and depth of knowledge were not just impressive but transformative for our research.
+                  When I was a post-doc at NYU Courant Institute of Mathematical
+                  Sciences, I had the privilege of being his office neighbor and
+                  collaborating on four research papers. The most notable was
+                  our #NeurIPS 2014 paper, co-authored with the brilliant
+                  Jonathan and Chris, SciTech Oscar winner and the best mentor
+                  ever, now cited nearly 2000 times. It marked a breakthrough in
+                  heatmap-based human pose estimation using deep learning.
                 </p>
                 <p className="text-[#9EB3CF] text-lg font-bwmss01">
-                His relentless advocacy for #opensource #AI at #Meta is a beacon in an industry where many giants, like #Google and #OpenAI, are increasingly becoming more closed. His approach not only fosters innovation but also builds a collaborative and inclusive AI community and accelerates research. 
+                  A personal anecdote that stands out from our collaboration
+                  involves a challenge we faced while working on this paper. We
+                  needed non-negative outputs for a particular computation, but
+                  the commonly used ReLUs were problematic. Without hesitation,
+                  he suggested SoftPlus — a function I {"hadn't"} even heard of
+                  at the time. His intuition and depth of knowledge were not
+                  just impressive but transformative for our research.
                 </p>
-                  <p className="text-[#9EB3CF] text-lg font-bwmss01">
-                  This aligns perfectly with our ethos at Fast Code AI , where we believe in the power of sharing knowledge.The advancement in creating large language models (#LLMs) for regional languages, propelled by open-source frameworks, is pivotal. {"It's"} key to integrating the next billion users from linguistically diverse regions like India into the digital world.
-                </p> 
                 <p className="text-[#9EB3CF] text-lg font-bwmss01">
-                In an industry that evolves by the minute, leaders like him, who champion open-source, are indispensable. They pave the way towards a future where collaboration and openness in AI are norms, not exceptions.
-                </p> 
-                  <p className="text-[#9EB3CF] text-lg font-bwmss01">
-                  What are your experiences with open-source AI? {"Let's"} share and grow together. Thank you for your dedication and for being an exemplary figure in the tech community, reminding us that when knowledge is shared, everyone wins!
+                  His relentless advocacy for #opensource #AI at #Meta is a
+                  beacon in an industry where many giants, like #Google and
+                  #OpenAI, are increasingly becoming more closed. His approach
+                  not only fosters innovation but also builds a collaborative
+                  and inclusive AI community and accelerates research.
+                </p>
+                <p className="text-[#9EB3CF] text-lg font-bwmss01">
+                  This aligns perfectly with our ethos at Fast Code AI , where
+                  we believe in the power of sharing knowledge.The advancement
+                  in creating large language models (#LLMs) for regional
+                  languages, propelled by open-source frameworks, is pivotal.{" "}
+                  {"It's"} key to integrating the next billion users from
+                  linguistically diverse regions like India into the digital
+                  world.
+                </p>
+                <p className="text-[#9EB3CF] text-lg font-bwmss01">
+                  In an industry that evolves by the minute, leaders like him,
+                  who champion open-source, are indispensable. They pave the way
+                  towards a future where collaboration and openness in AI are
+                  norms, not exceptions.
+                </p>
+                <p className="text-[#9EB3CF] text-lg font-bwmss01">
+                  What are your experiences with open-source AI? {"Let's"} share
+                  and grow together. Thank you for your dedication and for being
+                  an exemplary figure in the tech community, reminding us that
+                  when knowledge is shared, everyone wins!
                 </p>
               </div>
-
-           
-             
 
               {/* CTA */}
               <div className="w-full py-[26px] px-[20px] md:px-[50px] lg:px-[100px] flex flex-col gap-[18px] bg-[#000D2F] rounded-[20px] my-[60px]">
@@ -185,9 +211,9 @@ const Main = () => {
             </div>
           </Link>
         </div>
-        <div className="w-full relative flex flex-col md:flex-row gap-[56px] mt-[90px] md:mt-[220px]">
+        <div className="w-full relative flex flex-col md:flex-row gap-[56px] md:gap-[5%] mt-[90px] md:mt-[220px] ">
           {/* Blog Post 1 */}
-          <Link href="/blogs/why-ai">
+          <Link className="md:w-[30%]" href="/blogs/why-ai">
             <div className="relative group">
               <div>
                 <Image
@@ -212,13 +238,13 @@ const Main = () => {
                 <p className="text-[#9EB3CF] text-base font-bwmss01 ">
                   When do rule-based algorithms not work? When do we need
                   machine learning (ML) based algorithms? Let us try and answer
-                  this question using the tasks.
+                  this question using the tasks below:
                 </p>
               </div>
             </div>
           </Link>
           {/* Blog Post 2 */}
-          <Link href="/blogs/oil-gas">
+          <Link className="md:w-[30%]" href="/blogs/oil-gas">
             <div className="relative md:top-[-70px] group">
               <div>
                 <Image
@@ -241,15 +267,16 @@ const Main = () => {
                   Oil & Gas EPC - Digitizing P&ID
                 </b>
                 <p className="text-[#9EB3CF] text-base font-bwmss01">
-                  When do rule-based algorithms not work? When do we need
-                  machine learning (ML) based algorithms? Let us try and answer
-                  this question using the tasks.
+                  Oil & Gas which was once was a lucrative investment, now
+                  struggles to ensure the same level of light. A lot of things
+                  have changed in the past few years which has pushed the Oil &
+                  Gas.
                 </p>
               </div>
             </div>
           </Link>
           {/* Blog Post 3 */}
-          <Link href="/blogs/unknown-classes">
+          <Link className="md:w-[30%]" href="/blogs/unknown-classes">
             <div className="relative group">
               <div>
                 <Image
@@ -272,9 +299,11 @@ const Main = () => {
                   How to deal with Unknown Classes during classification?
                 </b>
                 <p className="text-[#9EB3CF] text-base font-bwmss01">
-                  When do rule-based algorithms not work? When do we need
-                  machine learning (ML) based algorithms? Let us try and answer
-                  this question using the tasks.
+                  A Convolutional Neural Network trained on the MNIST dataset
+                  when presented images from the Devanagari dataset will wrongly
+                  classify the Devanagari letter to one of the MNIST classes
+                  0-9, usually with very high confidence. What can we do to fix
+                  this?
                 </p>
               </div>
             </div>
