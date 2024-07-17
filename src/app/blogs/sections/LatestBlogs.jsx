@@ -62,7 +62,15 @@ const LatestBlogs = () => {
       href: "/blogs/solving-complex-problem",
       authorName: "Arjun Jain",
       authorImg: "/arjun.jpg",
-      publicationDate: "03 March 2024",
+      publicationDate: "25 March 2024",
+      background: "bg-[#001D3F]",
+    },
+    {
+      title: "Generative Adversarial Networks (GANs)",
+      href: "/blogs/gan",
+      authorName: "Arjun Jain",
+      authorImg: "/arjun.jpg",
+      publicationDate: "09 June 2020",
       background: "bg-[#001D3F]",
     },
     {
@@ -157,14 +165,7 @@ const LatestBlogs = () => {
       publicationDate: "03 June 2020",
       background: "bg-blog3",
     },
-    // {
-    //   title: "Generative Adversarial Networks",
-    //   href: "/blogs/oil-gas",
-    //   authorName: "Arjun Jain",
-    //   authorImg: "/arjun.jpg",
-    //   publicationDate: "03 June 2020",
-    //   background: "bg-[#001D3F]",
-    // },
+   
    
   ];
   return (
