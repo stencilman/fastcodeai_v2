@@ -83,6 +83,14 @@ const LatestBlogs = () => {
       background: "bg-[#001D3F]",
     },
     {
+      title: "Basics of Deep Learning",
+      href: "/blogs/deep-learning",
+      authorName: "Arjun Jain",
+      authorImg: "/arjun.jpg",
+      publicationDate: "10 Dec 2023",
+      background: "bg-deepLearning",
+    },
+    {
       title: "Reflecting on a Journey Through Computer Graphics",
       href: "/blogs/animated-drawings",
       authorName: "Arjun Jain",
@@ -165,8 +173,8 @@ const LatestBlogs = () => {
       publicationDate: "03 June 2020",
       background: "bg-blog3",
     },
-   
-   
+
+    
   ];
   return (
     <div className="w-full h-auto px-[20px] md:px-[50px] lg:px-[100px] pt-[150px] pb-[100px]">

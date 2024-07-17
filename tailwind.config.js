@@ -68,6 +68,7 @@ module.exports = {
         'pinns': "url('/blogs/latest-blog/pinns-hero.png')",
         'pinns2d': "url('/blogs/latest-blog/pinns2d-hero.png')",
         'pinnslid': "url('/blogs/latest-blog/pinns-lid-hero.png')",
+        'deepLearning': "url('/blogs/latest-blog/img3.png')",
         'whyaiHero': "url('/blogs/why-ai/hero/img1-2.png')",
         'rlhf': "url('/blogs/rlhf/hero/rlhf.jpeg')",
         'authRace': "url('/blogs/authenticity-race/hero/hero.jpeg')",
