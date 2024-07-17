@@ -54,33 +54,43 @@ const LatestBlogs = () => {
       href: "/blogs/dvdb",
       authorName: "Dhaval Taunk",
       authorImg: "/team/Dhaval.webp",
-      publicationDate: "11 March 2023",
+      publicationDate: "11 March 2024",
       background: "bg-[#122057]",
     },
     
+   
+    {
+      title: "The Key to Counterbalancing AI's Dangers and Preventing Monopolization by Large Corporations",
+      href: "/blogs/ai-dangers-and-preventing-monopolization",
+      authorName: "Arjun Jain",
+      authorImg: "/arjun.jpg",
+      publicationDate: "15 Dec 2023",
+      background: "bg-[#001D3F]",
+    },
     {
       title: "Deepfakes, AI-imagery, and the Race for Authenticity ",
       href: "/blogs/authenticity-race",
       authorName: "Arjun Jain",
       authorImg: "/arjun.jpg",
-      publicationDate: "21 Dec 2023",
+      publicationDate: "21 Nov 2023",
       background: "bg-authRace",
+    },
+  
+    {
+      title: "Crafting Visions: The Magic of DALL-E 3 ",
+      href: "/blogs/crafting-visions",
+      authorName: "Arjun Jain",
+      authorImg: "/arjun.jpg",
+      publicationDate: "08 Oct 2023",
+      background: "bg-[#104E62]",
     },
     {
       title: "RLHF: Shaping Language Models with Human Wisdom ",
       href: "/blogs/rlhf",
       authorName: "Arjun Jain",
       authorImg: "/arjun.jpg",
-      publicationDate: "01 Dec 2023",
+      publicationDate: "01 Oct 2023",
       background: "bg-rlhf",
-    },
-    {
-      title: "Crafting Visions: The Magic of DALL-E 3 ",
-      href: "/blogs/crafting-visions",
-      authorName: "Arjun Jain",
-      authorImg: "/arjun.jpg",
-      publicationDate: "08 Nov 2023",
-      background: "bg-[#104E62]",
     },
     {
       title:
@@ -88,7 +98,7 @@ const LatestBlogs = () => {
       href: "/blogs/federated-learning",
       authorName: "Arjun Jain",
       authorImg: "/arjun.jpg",
-      publicationDate: "01 Oct 2023",
+      publicationDate: "01 Sept 2023",
       background: "bg-[#001D3F]",
     },
  
@@ -119,7 +129,7 @@ const LatestBlogs = () => {
       publicationDate: "03 June 2020",
       background: "bg-blog3",
     },
-   
+    
   ];
   return (
     <div className="w-full h-auto px-[20px] md:px-[50px] lg:px-[100px] pt-[150px] pb-[100px]">
