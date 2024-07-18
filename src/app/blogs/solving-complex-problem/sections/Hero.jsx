@@ -3,7 +3,7 @@ import React from "react";
 const Hero = () => {
   return (
     <div className="w-full h-[70vh] flex justify-center items-center relative ">
-      <div className="bg-[#001D3F] bg-cover bg-no-repeat absolute w-full h-full"></div>
+      <div className="bg-complexProbHero bg-cover bg-no-repeat absolute w-full h-full"></div>
       <div className="absolute inset-0  bg-[#2429338a] "></div>
       <div className="flex flex-col gap-[10px] md:gap-[40px] absolute">
         <h1 className="text-3xl md:text-5xl px-[20px] md:px-[50px] lg:px-[100px] text-white text-center font-aeonik tracking-wide">

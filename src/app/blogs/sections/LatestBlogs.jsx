@@ -62,7 +62,7 @@ const LatestBlogs = () => {
       authorName: "Dhaval Taunk",
       authorImg: "/team/Dhaval.webp",
       publicationDate: "11 March 2024",
-      background: "bg-[#122057]",
+      background: "bg-dvdb",
     },
     {
       title: "Approach to solve complex problems",
@@ -70,7 +70,7 @@ const LatestBlogs = () => {
       authorName: "Arjun Jain",
       authorImg: "/arjun.jpg",
       publicationDate: "25 March 2024",
-      background: "bg-[#001D3F]",
+      background: "bg-complexProbHero",
     },
     {
       title: "Generative Adversarial Networks (GANs)",
@@ -78,7 +78,7 @@ const LatestBlogs = () => {
       authorName: "Arjun Jain",
       authorImg: "/arjun.jpg",
       publicationDate: "09 March 2024",
-      background: "bg-[#001D3F]",
+      background: "bg-gansHero",
     },
     {
       title:
@@ -87,7 +87,7 @@ const LatestBlogs = () => {
       authorName: "Arjun Jain",
       authorImg: "/arjun.jpg",
       publicationDate: "15 Dec 2023",
-      background: "bg-[#001D3F]",
+      background: "bg-aiDangers",
     },
     {
       title: "Basics of Deep Learning",
@@ -95,7 +95,7 @@ const LatestBlogs = () => {
       authorName: "Arjun Jain",
       authorImg: "/arjun.jpg",
       publicationDate: "10 Dec 2023",
-      background: "bg-deepLearning",
+      background: "bg-deepLearningHero",
     },
     {
       title: "Reflecting on a Journey Through Computer Graphics",
@@ -103,7 +103,7 @@ const LatestBlogs = () => {
       authorName: "Arjun Jain",
       authorImg: "/arjun.jpg",
       publicationDate: "03 Dec 2023",
-      background: "bg-[#104E62]",
+      background: "bg-animatedHero",
     },
     {
       title: "Deepfakes, AI-imagery, and the Race for Authenticity ",
@@ -120,7 +120,7 @@ const LatestBlogs = () => {
       authorName: "Arjun Jain",
       authorImg: "/arjun.jpg",
       publicationDate: "08 Oct 2023",
-      background: "bg-[#104E62]",
+      background: "bg-craftingHero",
     },
     {
       title: "RLHF: Shaping Language Models with Human Wisdom ",
@@ -137,7 +137,7 @@ const LatestBlogs = () => {
       authorName: "Arjun Jain",
       authorImg: "/arjun.jpg",
       publicationDate: "01 Sept 2023",
-      background: "bg-[#001D3F]",
+      background: "bg-federatedHero",
     },
     {
       title: "Neural Architecture Search (NAS) ",
@@ -435,7 +435,7 @@ const LatestBlogs = () => {
                 <div
                   className={`card-zoom-image absolute w-full h-full transition-all duration-500 ease-in-out transform bg-center bg-cover ${e.background} group-hover:scale-150`}
                 ></div>
-                <div className="absolute inset-0  bg-[#23478e44] rounded-[24px]"></div>
+                <div className="absolute inset-0  bg-[#23478e8a] rounded-[24px]"></div>
                 <div className="absolute bottom-[20px] m-[20px]">
                   <h3 className="text-white text-2xl font-aeonik tracking-wide mb-[15px]">
                     {e.title}
@@ -613,7 +613,7 @@ const LatestBlogs = () => {
                 <div
                   className={`card-zoom-image absolute w-full h-full transition-all duration-500 ease-in-out transform bg-center bg-cover ${e.background} group-hover:scale-150`}
                 ></div>
-                <div className="absolute inset-0  bg-[#23478e44] rounded-[24px]"></div>
+                <div className="absolute inset-0  bg-[#23478e8a] rounded-[24px]"></div>
                 <div className="absolute bottom-[20px] m-[20px]">
                   <h3 className="text-white text-2xl font-aeonik tracking-wide mb-[15px]">
                     {e.title}
