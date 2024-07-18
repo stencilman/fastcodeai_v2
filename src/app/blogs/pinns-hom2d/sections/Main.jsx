@@ -10,7 +10,7 @@ import RecommendBlogSection from "../../sections/RecommendBlogSection";
 const Main = () => {
   const {
     5: recommendBlog1,
-    4: recommendBlog2,
+    2: recommendBlog2,
     1: recommendBlog3,
   } = recommendBlogsDataList;
 
