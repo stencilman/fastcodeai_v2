@@ -4,10 +4,17 @@ import SocialShare from "../../components/SocialShare";
 import Image from "next/image";
 import Link from "next/link";
 import Button from "@/app/component/Button";
+import { recommendBlogsDataList } from "@/app/utils/recommendBlogsDataList";
+import RecommendBlogSection from "../../sections/RecommendBlogSection";
 
 const Main = () => {
-  const [topicHighlight, setTopicHighlight] = useState("topic1");
-  const topicRefs = useRef([null, null, null]);
+ const {
+    1: recommendBlog1,
+    11: recommendBlog2,
+    12: recommendBlog3,
+  } = recommendBlogsDataList;
+
+  const [topicHighlight, setTopicHighlight] = useState("topic1");  const topicRefs = useRef([null, null, null]);
 
   const scrollToTopic = (id) => {
     const element = document.getElementById(id);
@@ -554,102 +561,11 @@ const Main = () => {
           </Link>
         </div>
         <div className="w-full relative flex flex-col md:flex-row gap-[56px] md:gap-[5%] mt-[90px] md:mt-[220px] ">
-          {/* Blog Post 1 */}
-          <Link className="md:w-[30%]" href="/blogs/why-ai">
-            <div className="relative group">
-              <div>
-                <Image
-                  className="group-hover:scale-[0.98] transition-all duration-500 ease-in-out"
-                  src="/blogs/read-more/img1-2.png"
-                  width="376"
-                  height="353"
-                  alt=""
-                />
-              </div>
-              <div className="flex flex-col gap-[10px]">
-                <ul className="flex group-hover:text-gray-500 transition-all duration-500 ease-in-out gap-[13px] text-xs font-bwmss01 items-baseline mt-[20px] pl-[12px]">
-                  <li>Arjun Jain</li>
-                  <li className="text-[33px]">.</li>
-                  <li>04 Feb 2021</li>
-                  <li className="text-[33px]">.</li>
-                  <li>10 Comments</li>
-                </ul>
-                <b className="text-white text-2xl font-aeonik group-hover:scale-[0.98] transition-all duration-300 ease-in-out">
-                  To ML or not to ML, that is the question.
-                </b>
-                <p className="text-[#9EB3CF] text-base font-bwmss01 ">
-                  When do rule-based algorithms not work? When do we need
-                  machine learning (ML) based algorithms? Let us try and answer
-                  this question using the tasks below:
-                </p>
-              </div>
-            </div>
-          </Link>
-          {/* Blog Post 2 */}
-          <Link className="md:w-[30%]" href="/blogs/oil-gas">
-            <div className="relative md:top-[-70px] group">
-              <div>
-                <Image
-                  className="group-hover:scale-[0.98] transition-all duration-500 ease-in-out"
-                  src="/blogs/read-more/img3-2.png"
-                  width="376"
-                  height="353"
-                  alt=""
-                />
-              </div>
-              <div className="flex flex-col gap-[10px]">
-                <ul className="flex group-hover:text-gray-500 transition-all duration-500 ease-in-out gap-[13px] text-xs font-bwmss01 items-baseline mt-[20px] pl-[12px]">
-                  <li>Tarun Kumar</li>
-                  <li className="text-[33px]">.</li>
-                  <li>03 June 2020</li>
-                  <li className="text-[33px]">.</li>
-                  <li>8 Comments</li>
-                </ul>
-                <b className="text-white text-2xl font-aeonik group-hover:scale-[0.98] transition-all duration-300 ease-in-out">
-                  Oil & Gas EPC - Digitizing P&ID
-                </b>
-                <p className="text-[#9EB3CF] text-base font-bwmss01">
-                  Oil & Gas which was once was a lucrative investment, now
-                  struggles to ensure the same level of light. A lot of things
-                  have changed in the past few years which has pushed the Oil &
-                  Gas.
-                </p>
-              </div>
-            </div>
-          </Link>
-          {/* Blog Post 3 */}
-          <Link className="md:w-[30%]" href="/blogs/unknown-classes">
-            <div className="relative group">
-              <div>
-                <Image
-                  className="group-hover:scale-[0.98] transition-all duration-500 ease-in-out"
-                  src="/blogs/read-more/img2-2.png"
-                  width="376"
-                  height="353"
-                  alt=""
-                />
-              </div>
-              <div className="flex flex-col gap-[10px]">
-                <ul className="flex group-hover:text-gray-500 transition-all duration-500 ease-in-out gap-[13px] text-xs font-bwmss01 items-baseline mt-[20px] pl-[12px]">
-                  <li>Arjun Jain</li>
-                  <li className="text-[33px]">.</li>
-                  <li>01 Feb 2021</li>
-                  <li className="text-[33px]">.</li>
-                  <li>10 Comments</li>
-                </ul>
-                <b className="text-white text-2xl font-aeonik group-hover:scale-[0.98] transition-all duration-300 ease-in-out">
-                  How to deal with Unknown Classes during classification?
-                </b>
-                <p className="text-[#9EB3CF] text-base font-bwmss01">
-                  A Convolutional Neural Network trained on the MNIST dataset
-                  when presented images from the Devanagari dataset will wrongly
-                  classify the Devanagari letter to one of the MNIST classes
-                  0-9, usually with very high confidence. What can we do to fix
-                  this?
-                </p>
-              </div>
-            </div>
-          </Link>
+          <RecommendBlogSection
+            recommendBlog1={recommendBlog1}
+            recommendBlog2={recommendBlog2}
+            recommendBlog3={recommendBlog3}
+          />
         </div>
       </div>
     </div>

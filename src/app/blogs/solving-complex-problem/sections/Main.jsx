@@ -4,8 +4,16 @@ import SocialShare from "../../components/SocialShare";
 import Image from "next/image";
 import Link from "next/link";
 import Button from "@/app/component/Button";
+import { recommendBlogsDataList } from "@/app/utils/recommendBlogsDataList";
+import RecommendBlogSection from "../../sections/RecommendBlogSection";
 
 const Main = () => {
+  const {
+    17: recommendBlog1,
+    8: recommendBlog2,
+    4: recommendBlog3,
+  } = recommendBlogsDataList;
+
   const [topicHighlight, setTopicHighlight] = useState("topic1");
   const topicRefs = useRef([null, null, null]);
 
@@ -57,30 +65,37 @@ const Main = () => {
                 ref={(el) => (topicRefs.current[0] = el)}
                 className="flex flex-col gap-[20px]"
               >
-               
                 <h4 className="text-white text-2xl font-aeonik tracking-wide">
-                Approach to solve complex problems
+                  Approach to solve complex problems
                 </h4>
 
                 <p className="text-[#9EB3CF] text-lg font-bwmss01">
-                My strategy for tackling complex problems: start simple. Though it might sound trivial, {"I’ve"} frequently noticed that many {"don't"} apply this approach.
+                  My strategy for tackling complex problems: start simple.
+                  Though it might sound trivial, {"I’ve"} frequently noticed
+                  that many {"don't"} apply this approach.
                 </p>
 
                 <p className="text-[#9EB3CF] text-lg font-bwmss01">
-                In a recent discussion during my class, we explored the intricacies of debugging neural networks—taking the example of an object detector that outputs both the class and the bounding box coordinates. The approach I advocate is to start with simplicity: E.g. initially focus on the class output alone before tackling the regression of bounding box coordinates.
+                  In a recent discussion during my class, we explored the
+                  intricacies of debugging neural networks—taking the example of
+                  an object detector that outputs both the class and the
+                  bounding box coordinates. The approach I advocate is to start
+                  with simplicity: E.g. initially focus on the class output
+                  alone before tackling the regression of bounding box
+                  coordinates.
                 </p>
                 <div className="flex w-full gap-[5%]">
-                <video
-                  loop
-                  controls
-                  playsInline
-                  src="/blogs/solving-complex-problem/content/video.mp4"
-                  className="rounded-[20px] w-[100%]"
-                  width="400"
-                  height="400"
-                  alt=""
-                />
-              </div>
+                  <video
+                    loop
+                    controls
+                    playsInline
+                    src="/blogs/solving-complex-problem/content/video.mp4"
+                    className="rounded-[20px] w-[100%]"
+                    width="400"
+                    height="400"
+                    alt=""
+                  />
+                </div>
               </div>
 
               {/* CTA */}
@@ -171,102 +186,11 @@ const Main = () => {
           </Link>
         </div>
         <div className="w-full relative flex flex-col md:flex-row gap-[56px] md:gap-[5%] mt-[90px] md:mt-[220px] ">
-          {/* Blog Post 1 */}
-          <Link className="md:w-[30%]" href="/blogs/why-ai">
-            <div className="relative group">
-              <div>
-                <Image
-                  className="group-hover:scale-[0.98] transition-all duration-500 ease-in-out"
-                  src="/blogs/read-more/img1-2.png"
-                  width="376"
-                  height="353"
-                  alt=""
-                />
-              </div>
-              <div className="flex flex-col gap-[10px]">
-                <ul className="flex group-hover:text-gray-500 transition-all duration-500 ease-in-out gap-[13px] text-xs font-bwmss01 items-baseline mt-[20px] pl-[12px]">
-                  <li>Arjun Jain</li>
-                  <li className="text-[33px]">.</li>
-                  <li>04 Feb 2021</li>
-                  <li className="text-[33px]">.</li>
-                  <li>10 Comments</li>
-                </ul>
-                <b className="text-white text-2xl font-aeonik group-hover:scale-[0.98] transition-all duration-300 ease-in-out">
-                  To ML or not to ML, that is the question.
-                </b>
-                <p className="text-[#9EB3CF] text-base font-bwmss01 ">
-                  When do rule-based algorithms not work? When do we need
-                  machine learning (ML) based algorithms? Let us try and answer
-                  this question using the tasks below:
-                </p>
-              </div>
-            </div>
-          </Link>
-          {/* Blog Post 2 */}
-          <Link className="md:w-[30%]" href="/blogs/oil-gas">
-            <div className="relative md:top-[-70px] group">
-              <div>
-                <Image
-                  className="group-hover:scale-[0.98] transition-all duration-500 ease-in-out"
-                  src="/blogs/read-more/img3-2.png"
-                  width="376"
-                  height="353"
-                  alt=""
-                />
-              </div>
-              <div className="flex flex-col gap-[10px]">
-                <ul className="flex group-hover:text-gray-500 transition-all duration-500 ease-in-out gap-[13px] text-xs font-bwmss01 items-baseline mt-[20px] pl-[12px]">
-                  <li>Tarun Kumar</li>
-                  <li className="text-[33px]">.</li>
-                  <li>03 June 2020</li>
-                  <li className="text-[33px]">.</li>
-                  <li>8 Comments</li>
-                </ul>
-                <b className="text-white text-2xl font-aeonik group-hover:scale-[0.98] transition-all duration-300 ease-in-out">
-                  Oil & Gas EPC - Digitizing P&ID
-                </b>
-                <p className="text-[#9EB3CF] text-base font-bwmss01">
-                  Oil & Gas which was once was a lucrative investment, now
-                  struggles to ensure the same level of light. A lot of things
-                  have changed in the past few years which has pushed the Oil &
-                  Gas.
-                </p>
-              </div>
-            </div>
-          </Link>
-          {/* Blog Post 3 */}
-          <Link className="md:w-[30%]" href="/blogs/unknown-classes">
-            <div className="relative group">
-              <div>
-                <Image
-                  className="group-hover:scale-[0.98] transition-all duration-500 ease-in-out"
-                  src="/blogs/read-more/img2-2.png"
-                  width="376"
-                  height="353"
-                  alt=""
-                />
-              </div>
-              <div className="flex flex-col gap-[10px]">
-                <ul className="flex group-hover:text-gray-500 transition-all duration-500 ease-in-out gap-[13px] text-xs font-bwmss01 items-baseline mt-[20px] pl-[12px]">
-                  <li>Arjun Jain</li>
-                  <li className="text-[33px]">.</li>
-                  <li>01 Feb 2021</li>
-                  <li className="text-[33px]">.</li>
-                  <li>10 Comments</li>
-                </ul>
-                <b className="text-white text-2xl font-aeonik group-hover:scale-[0.98] transition-all duration-300 ease-in-out">
-                  How to deal with Unknown Classes during classification?
-                </b>
-                <p className="text-[#9EB3CF] text-base font-bwmss01">
-                  A Convolutional Neural Network trained on the MNIST dataset
-                  when presented images from the Devanagari dataset will wrongly
-                  classify the Devanagari letter to one of the MNIST classes
-                  0-9, usually with very high confidence. What can we do to fix
-                  this?
-                </p>
-              </div>
-            </div>
-          </Link>
+          <RecommendBlogSection
+            recommendBlog1={recommendBlog1}
+            recommendBlog2={recommendBlog2}
+            recommendBlog3={recommendBlog3}
+          />
         </div>
       </div>
     </div>

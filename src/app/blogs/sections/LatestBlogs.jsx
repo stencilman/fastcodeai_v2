@@ -183,8 +183,6 @@ const LatestBlogs = () => {
       background: "bg-blog3",
     }, 
    
-
-    
   ];
   return (
     <div className="w-full h-auto px-[20px] md:px-[50px] lg:px-[100px] pt-[150px] pb-[100px]">
