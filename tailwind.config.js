@@ -73,6 +73,7 @@ module.exports = {
         'rlhf': "url('/blogs/rlhf/hero/rlhf.jpeg')",
         'authRace': "url('/blogs/authenticity-race/hero/hero.jpeg')",
         'dvdb': "url('/blogs/dvdb/hero/img1.jpeg')",
+        'thesis': "url('/blogs/thesis-reality/hero/img1.jpeg')",
         'nasHero': "url('/blogs/nas/hero/img1.jpeg')",
         'vitsHero': "url('/blogs/vits/hero/img1.jpeg')",
         'visionTransformers': "url('/blogs/vision-transformers/hero/img1.jpeg')",

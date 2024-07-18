@@ -29,7 +29,14 @@ const LatestBlogs = () => {
       publicationDate: "03 May 2024",
       background: "bg-pinnslid",
     },
-
+    {
+      title: "From Thesis to Reality: The Evolution of GenAI in Creative Content",
+      href: "/blogs/thesis-reality",
+      authorName: "Arjun Jain",
+      authorImg: "/arjun.jpg",
+      publicationDate: "01 April 2024",
+      background: "bg-thesis",
+    },
     {
       title:
         "Applying Physics-Informed Neural Networks (PINNs): Hands-On Modeling of 2D Plates",
@@ -70,7 +77,7 @@ const LatestBlogs = () => {
       href: "/blogs/gan",
       authorName: "Arjun Jain",
       authorImg: "/arjun.jpg",
-      publicationDate: "09 June 2020",
+      publicationDate: "09 March 2024",
       background: "bg-[#001D3F]",
     },
     {
@@ -172,7 +179,8 @@ const LatestBlogs = () => {
       authorImg: "",
       publicationDate: "03 June 2020",
       background: "bg-blog3",
-    },
+    }, 
+   
 
     
   ];
@@ -606,6 +614,54 @@ const LatestBlogs = () => {
                   className={`card-zoom-image absolute w-full h-full transition-all duration-500 ease-in-out transform bg-center bg-cover ${e.background} group-hover:scale-150`}
                 ></div>
                 <div className="absolute inset-0  bg-[#23478e44] rounded-[24px]"></div>
+                <div className="absolute bottom-[20px] m-[20px]">
+                  <h3 className="text-white text-2xl font-aeonik tracking-wide mb-[15px]">
+                    {e.title}
+                  </h3>
+                  <div className="flex gap-[10px] items-center">
+                    {e?.authorImg && (
+                      <div className="border border-[#707070] rounded-full  w-[50px] h-[50px] relative overflow-hidden">
+                        <Image
+                          className="rounded-full"
+                          src={e?.authorImg}
+                          width="50"
+                          height="50"
+                          alt=""
+                        />
+                      </div>
+                    )}
+                    <div>
+                      <b className="text-white font-bold font-aeonik tracking-wide ">
+                        {e.authorName}
+                      </b>
+                      <p className="text-[#FFFFFF] text-lg font-bwmss01">
+                        {e.publicationDate}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Link>
+          </div>
+        ))}
+        {/* Map over dataArray for 9 row */}
+        {dataArray.slice(20, 22).map((e, index) => (
+          <div
+            key={index}
+            className={`col-span-1 ${
+              index === 0
+                ? "sm:col-span-1 md:col-span-2"
+                : "sm:col-span-1 md:col-span-1"
+            }`}
+          >
+            <Link href={e.href}>
+              <div
+                className={`card-zoom w-full h-[327px] relative  overflow-hidden group rounded-3xl`}
+              >
+                <div
+                  className={`card-zoom-image absolute w-full h-full transition-all duration-500 ease-in-out transform bg-center bg-cover ${e.background} group-hover:scale-150`}
+                ></div>
+                <div className="absolute inset-0  bg-[#23478e8a] rounded-[24px]"></div>
                 <div className="absolute bottom-[20px] m-[20px]">
                   <h3 className="text-white text-2xl font-aeonik tracking-wide mb-[15px]">
                     {e.title}
