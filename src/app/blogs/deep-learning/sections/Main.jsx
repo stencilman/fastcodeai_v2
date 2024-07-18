@@ -57,9 +57,9 @@ const Main = () => {
                 ref={(el) => (topicRefs.current[0] = el)}
                 className="flex flex-col gap-[20px]"
               >
-                <h4 className="text-white text-2xl font-aeonik tracking-wide">
+                {/* <h4 className="text-white text-2xl font-aeonik tracking-wide">
                   Basics of Deep Learning
-                </h4>
+                </h4> */}
 
                 <p className="text-[#9EB3CF] text-lg font-bwmss01">
                   Excited to share a glimpse of my recent session at IISc in

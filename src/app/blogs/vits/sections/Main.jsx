@@ -66,9 +66,9 @@ const Main = () => {
                     alt=""
                   />
                 </div>
-                <h4 className="text-white text-2xl font-aeonik tracking-wide">
+                {/* <h4 className="text-white text-2xl font-aeonik tracking-wide">
                   Vision Transformers (ViTs)
-                </h4>
+                </h4> */}
                 <p className="text-[#9EB3CF] text-lg font-bwmss01">
                   Recently, the paper{" "}
                   {`"What Do Self-Supervised Vision

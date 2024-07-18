@@ -7,7 +7,7 @@ const Hero = () => {
       <div className="absolute inset-0  bg-[#2429338a] "></div>
       <div className="flex flex-col gap-[10px] md:gap-[40px] absolute">
         <h1 className="text-3xl md:text-5xl px-[20px] md:px-[50px] lg:px-[100px] text-white text-center font-aeonik tracking-wide">
-        Approach to solve complex problems
+        Breaking Down Complexity: Focus on Simplicity First
         </h1>
         {/* <p className="text-base md:text-lg text-[#9EB3CF] text-center font-bwmss01 px-[20vw]">
           A Convolutional Neural Network trained on the MNIST dataset when

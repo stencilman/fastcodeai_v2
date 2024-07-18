@@ -13,7 +13,7 @@ const LatestBlogs = () => {
       background: "bg-kans",
     },
     {
-      title: "Vision Transformers Need Registers",
+      title: "Mitigating Background Noise in ViTs: Insights from 'Vision Transformers Need Registers'",
       href: "/blogs/vision-transformers",
       authorName: "Arjun Jain",
       authorImg: "/arjun.jpg",
@@ -65,7 +65,7 @@ const LatestBlogs = () => {
       background: "bg-dvdb",
     },
     {
-      title: "Approach to solve complex problems",
+      title: "Breaking Down Complexity: Focus on Simplicity First",
       href: "/blogs/solving-complex-problem",
       authorName: "Arjun Jain",
       authorImg: "/arjun.jpg",
@@ -73,7 +73,7 @@ const LatestBlogs = () => {
       background: "bg-complexProbHero",
     },
     {
-      title: "Generative Adversarial Networks (GANs)",
+      title: "GANs Simplified: A Quick Guide to Training Generative Adversarial Networks",
       href: "/blogs/gan",
       authorName: "Arjun Jain",
       authorImg: "/arjun.jpg",
@@ -82,7 +82,7 @@ const LatestBlogs = () => {
     },
     {
       title:
-        "The Key to Counterbalancing AI's Dangers and Preventing Monopolization by Large Corporations",
+        "Empowering the AI Community: The Role of Open Source in Preventing Monopolies",
       href: "/blogs/ai-dangers-and-preventing-monopolization",
       authorName: "Arjun Jain",
       authorImg: "/arjun.jpg",
@@ -90,23 +90,24 @@ const LatestBlogs = () => {
       background: "bg-aiDangers",
     },
     {
-      title: "Basics of Deep Learning",
-      href: "/blogs/deep-learning",
-      authorName: "Arjun Jain",
-      authorImg: "/arjun.jpg",
-      publicationDate: "10 Dec 2023",
-      background: "bg-deepLearningHero",
-    },
-    {
-      title: "Reflecting on a Journey Through Computer Graphics",
+      title: "Reflecting on a Journey Through Computer Graphics: Curiosity and Fun",
       href: "/blogs/animated-drawings",
       authorName: "Arjun Jain",
       authorImg: "/arjun.jpg",
-      publicationDate: "03 Dec 2023",
+      publicationDate: "10 Dec 2023",
       background: "bg-animatedHero",
     },
     {
-      title: "Deepfakes, AI-imagery, and the Race for Authenticity ",
+      title: "Understanding Neural Network Training: Highlights from My IISc Lecture",
+      href: "/blogs/deep-learning",
+      authorName: "Arjun Jain",
+      authorImg: "/arjun.jpg",
+      publicationDate: "3 Dec 2023",
+      background: "bg-deepLearningHero",
+    },
+    
+    {
+      title: "The Evolution of Watermarking: Battling Deepfakes and AI-Generated Imagery ",
       href: "/blogs/authenticity-race",
       authorName: "Arjun Jain",
       authorImg: "/arjun.jpg",
@@ -114,21 +115,22 @@ const LatestBlogs = () => {
       background: "bg-authRace",
     },
 
-    {
-      title: "Crafting Visions: The Magic of DALL-E 3 ",
-      href: "/blogs/crafting-visions",
-      authorName: "Arjun Jain",
-      authorImg: "/arjun.jpg",
-      publicationDate: "08 Oct 2023",
-      background: "bg-craftingHero",
-    },
+   
     {
       title: "RLHF: Shaping Language Models with Human Wisdom ",
       href: "/blogs/rlhf",
       authorName: "Arjun Jain",
       authorImg: "/arjun.jpg",
-      publicationDate: "01 Oct 2023",
+      publicationDate: "08 Oct 2023",
       background: "bg-rlhf",
+    },
+    {
+      title: "Crafting Visions: The Magic of DALL-E 3 ",
+      href: "/blogs/crafting-visions",
+      authorName: "Arjun Jain",
+      authorImg: "/arjun.jpg",
+      publicationDate: "01 Oct 2023",
+      background: "bg-craftingHero",
     },
     {
       title:
@@ -140,7 +142,7 @@ const LatestBlogs = () => {
       background: "bg-federatedHero",
     },
     {
-      title: "Neural Architecture Search (NAS) ",
+      title: "Overcoming NAS Computational Challenges: Practical Solutions for Researchers ",
       href: "/blogs/nas",
       authorName: "Arjun Jain",
       authorImg: "/arjun.jpg",
@@ -148,7 +150,7 @@ const LatestBlogs = () => {
       background: "bg-nasHero",
     },
     {
-      title: "Vision Transformers (ViTs)",
+      title: "Understanding CL and MIM in Vision Transformers: A Comparative Analysis",
       href: "/blogs/vits",
       authorName: "Arjun Jain",
       authorImg: "/arjun.jpg",
