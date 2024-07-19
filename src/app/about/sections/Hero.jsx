@@ -13,7 +13,7 @@ const Hero = () => {
         className="absolute top-[20%] right-[10%] w-[200px] h-[200px] md:w-[517px] md:h-[576px]"
         type="video/mp4"
         autoPlay
-        muted
+        muted 
         loop
         playsInline
         width="517"

@@ -81,6 +81,7 @@ const Main = () => {
                 <div className="flex w-full gap-[5%]">
                   <video
                     loop
+                    type="video/mp4"
                     controls
                     playsInline
                     src="/blogs/gan/content/video.mp4"

@@ -67,7 +67,8 @@ const Main = () => {
               >
                 <div className="flex w-full gap-[5%]">
                   <video
-                    autoPlay
+type="video/mp4"
+autoPlay
                     muted
                     loop
                     playsInline

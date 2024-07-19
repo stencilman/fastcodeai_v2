@@ -86,6 +86,8 @@ const Main = () => {
                 </p>
                 <div className="flex w-full gap-[5%]">
                   <video
+                  type="video/mp4"
+                  // style={{ mixBlendMode: "screen" }}
                     loop
                     controls
                     playsInline
