@@ -87,7 +87,7 @@ const Main = () => {
                     className="text-blue-600 hover:underline"
                     target="_blank"
                   >
-                    https://lnkd.in/grYTc4YY
+                    https://github.com/FastCodeAI/DVDB
                   </a>
                 </p>
               </div>

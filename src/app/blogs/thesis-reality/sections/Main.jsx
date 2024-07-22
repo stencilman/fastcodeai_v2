@@ -86,11 +86,11 @@ const Main = () => {
                   reflecting on my journey from over a decade ago. I was
                   pursuing my #PhD at the Max Planck Institute for Informatics{" "}
                   <a
-                    href="https://lnkd.in/gjkESHsn"
+                    href="https://www.mpi-inf.mpg.de/home/"
                     className="text-blue-600 hover:underline"
                     target="_blank"
                   >
-                    https://lnkd.in/gjkESHsn
+                    https://www.mpi-inf.mpg.de/home/
                   </a>{" "}
                   and my thesis titled{" "}
                   {`"Data-driven methods for interactive visual content creation and manipulation"`}{" "}
@@ -131,22 +131,22 @@ const Main = () => {
                 <p className="text-[#9EB3CF] text-lg font-bwmss01">
                   Link to my PhD thesis:{" "}
                   <a
-                    href="https://lnkd.in/gazeZX8k"
+                    href="https://www.researchgate.net/publication/298070734_Data-driven_methods_for_interactive_visual_content_creation_and_manipulation"
                     className="text-blue-600 hover:underline"
                     target="_blank"
                   >
-                    https://lnkd.in/gazeZX8k
+                    https://www.researchgate.net/publication/
                   </a>
                 </p>
                 <p className="text-[#9EB3CF] text-lg font-bwmss01">
                   My work on GenAI for automatically assigning materials to 3D
                   Objects (from 2012) -{" "}
                   <a
-                    href="https://lnkd.in/giCPPV5p"
+                    href="https://resources.mpi-inf.mpg.de/MaterialMemex/"
                     className="text-blue-600 hover:underline"
                     target="_blank"
                   >
-                    https://lnkd.in/giCPPV5p
+                    https://resources.mpi-inf.mpg.de/MaterialMemex/
                   </a>
                 </p>
               </div>

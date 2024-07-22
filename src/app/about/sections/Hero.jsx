@@ -16,7 +16,7 @@ const Hero = () => {
         muted 
         loop
         playsInline
-        width="517"
+        width="517" 
         height="576"
         src="/contact/bgVideo.mp4"
       />

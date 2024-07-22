@@ -5,6 +5,14 @@ import React from "react";
 const LatestBlogs = () => {
   const dataArray = [
     {
+      title: "Celebrating Team India’s Success at IMO 2024!",
+      href: "/blogs/imo-2024",
+      authorName: "Arjun Jain",
+      authorImg: "/arjun.jpg",
+      publicationDate: "22 July 2024",
+      background: "bg-[#fff]",
+    },
+    {
       title: "De-Mystifying Kolmogorov-Arnold Networks (KANs)",
       href: "/blogs/kans",
       authorName: "Rishabh Gupta",

@@ -105,11 +105,11 @@ const Main = () => {
                   The paper{" "}
                   {`"What Do Self-Supervised Vision Transformers Learn?"`}{" "}
                   <a
-                    href="https://lnkd.in/gBbwjwFK"
+                    href="https://arxiv.org/abs/2305.00729"
                     className="text-blue-600 hover:underline"
                     target="_blank"
                   >
-                    https://lnkd.in/gBbwjwFK
+                    https://arxiv.org/abs/2305.00729
                   </a>{" "}
                   by Park et al. studies CL and MIM trained transformers in
                   detail and finds:

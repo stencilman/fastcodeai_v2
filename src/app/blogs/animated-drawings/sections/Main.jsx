@@ -88,11 +88,11 @@ autoPlay
                   As I recently browsed the exceptional papers presented at
                   Siggraph 2023{" "}
                   <a
-                    href="https://lnkd.in/g2Ax66i5"
+                    href="https://kesen.realtimerendering.com/sig2023.html"
                     className="text-blue-600 hover:underline"
                     target="_blank"
                   >
-                    https://lnkd.in/g2Ax66i5
+                    https://kesen.realtimerendering.com/sig2023.html
                   </a>{" "}
                   – ranging from{" "}
                   {`"3D Gaussian Splatting for Real-time Radiance Field Rendering"`}{" "}
@@ -110,11 +110,11 @@ autoPlay
                   to innovate in unexplored territories. Projects like
                   MovieReshape{" "}
                   <a
-                    href="https://lnkd.in/gQNxRP-j"
+                    href="https://resources.mpi-inf.mpg.de/MovieReshape/"
                     className="text-blue-600 hover:underline"
                     target="_blank"
                   >
-                    https://lnkd.in/gQNxRP-j
+                    https://resources.mpi-inf.mpg.de/MovieReshape/
                   </a>{" "}
                   and{" "}
                   <a
@@ -130,11 +130,11 @@ autoPlay
                 <p className="text-[#9EB3CF] text-lg font-bwmss01">
                   And now, as I gear up to try the Animated Drawings{" "}
                   <a
-                    href="https://lnkd.in/gW4gKTE9"
+                    href="https://github.com/facebookresearch/AnimatedDrawings"
                     className="text-blue-600 hover:underline"
                     target="_blank"
                   >
-                    https://lnkd.in/gW4gKTE9
+                    https://github.com/facebookresearch/AnimatedDrawings
                   </a>{" "}
                   project with my {"kids'"} artwork, {"I'm"} reminded of the
                   importance of that fun, creative spirit. {"It’s"} projects
