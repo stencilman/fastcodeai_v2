@@ -10,7 +10,7 @@ const LatestBlogs = () => {
       authorName: "Arjun Jain",
       authorImg: "/arjun.jpg",
       publicationDate: "22 July 2024",
-      background: "bg-[#00081f]",
+      background: "bg-imoHero",
     },
     {
       title: "De-Mystifying Kolmogorov-Arnold Networks (KANs)",
