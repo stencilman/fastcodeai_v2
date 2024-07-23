@@ -10,7 +10,7 @@ const LatestBlogs = () => {
       authorName: "Arjun Jain",
       authorImg: "/arjun.jpg",
       publicationDate: "22 July 2024",
-      background: "bg-[#fff]",
+      background: "bg-[#00081f]",
     },
     {
       title: "De-Mystifying Kolmogorov-Arnold Networks (KANs)",
@@ -21,7 +21,8 @@ const LatestBlogs = () => {
       background: "bg-kans",
     },
     {
-      title: "Mitigating Background Noise in ViTs: Insights from 'Vision Transformers Need Registers'",
+      title:
+        "Mitigating Background Noise in ViTs: Insights from 'Vision Transformers Need Registers'",
       href: "/blogs/vision-transformers",
       authorName: "Arjun Jain",
       authorImg: "/arjun.jpg",
@@ -38,7 +39,8 @@ const LatestBlogs = () => {
       background: "bg-pinnslid",
     },
     {
-      title: "From Thesis to Reality: The Evolution of GenAI in Creative Content",
+      title:
+        "From Thesis to Reality: The Evolution of GenAI in Creative Content",
       href: "/blogs/thesis-reality",
       authorName: "Arjun Jain",
       authorImg: "/arjun.jpg",
@@ -81,7 +83,8 @@ const LatestBlogs = () => {
       background: "bg-complexProbHero",
     },
     {
-      title: "GANs Simplified: A Quick Guide to Training Generative Adversarial Networks",
+      title:
+        "GANs Simplified: A Quick Guide to Training Generative Adversarial Networks",
       href: "/blogs/gan",
       authorName: "Arjun Jain",
       authorImg: "/arjun.jpg",
@@ -98,7 +101,8 @@ const LatestBlogs = () => {
       background: "bg-aiDangers",
     },
     {
-      title: "Reflecting on a Journey Through Computer Graphics: Curiosity and Fun",
+      title:
+        "Reflecting on a Journey Through Computer Graphics: Curiosity and Fun",
       href: "/blogs/animated-drawings",
       authorName: "Arjun Jain",
       authorImg: "/arjun.jpg",
@@ -106,16 +110,18 @@ const LatestBlogs = () => {
       background: "bg-animatedHero",
     },
     {
-      title: "Understanding Neural Network Training: Highlights from My IISc Lecture",
+      title:
+        "Understanding Neural Network Training: Highlights from My IISc Lecture",
       href: "/blogs/deep-learning",
       authorName: "Arjun Jain",
       authorImg: "/arjun.jpg",
       publicationDate: "3 Dec 2023",
       background: "bg-deepLearningHero",
     },
-    
+
     {
-      title: "The Evolution of Watermarking: Battling Deepfakes and AI-Generated Imagery ",
+      title:
+        "The Evolution of Watermarking: Battling Deepfakes and AI-Generated Imagery ",
       href: "/blogs/authenticity-race",
       authorName: "Arjun Jain",
       authorImg: "/arjun.jpg",
@@ -123,7 +129,6 @@ const LatestBlogs = () => {
       background: "bg-authRace",
     },
 
-   
     {
       title: "RLHF: Shaping Language Models with Human Wisdom ",
       href: "/blogs/rlhf",
@@ -150,7 +155,8 @@ const LatestBlogs = () => {
       background: "bg-federatedHero",
     },
     {
-      title: "Overcoming NAS Computational Challenges: Practical Solutions for Researchers ",
+      title:
+        "Overcoming NAS Computational Challenges: Practical Solutions for Researchers ",
       href: "/blogs/nas",
       authorName: "Arjun Jain",
       authorImg: "/arjun.jpg",
@@ -158,7 +164,8 @@ const LatestBlogs = () => {
       background: "bg-nasHero",
     },
     {
-      title: "Understanding CL and MIM in Vision Transformers: A Comparative Analysis",
+      title:
+        "Understanding CL and MIM in Vision Transformers: A Comparative Analysis",
       href: "/blogs/vits",
       authorName: "Arjun Jain",
       authorImg: "/arjun.jpg",
@@ -189,8 +196,7 @@ const LatestBlogs = () => {
       authorImg: "",
       publicationDate: "03 June 2020",
       background: "bg-blog3",
-    }, 
-   
+    },
   ];
   return (
     <div className="w-full h-auto px-[20px] md:px-[50px] lg:px-[100px] pt-[150px] pb-[100px]">

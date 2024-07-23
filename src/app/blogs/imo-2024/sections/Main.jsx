@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useRef, useState,lazy, Suspense } from "react";
+import React, { useEffect, useRef, useState, lazy, Suspense } from "react";
 import SocialShare from "../../components/SocialShare";
 import Image from "next/image";
 import Link from "next/link";
@@ -102,36 +102,36 @@ const Main = () => {
                     https://www.imo-official.org/problems.aspx
                   </a>
                 </p>
-                <div className="flex w-full gap-[5%]">
-                  {/* <Image
-                    className="rounded-[20px] w-[100%]"
-                    src="/blogs/federated-learning/content/img1.jpeg"
+                <div className="flex w-full flex-col md:flex-row gap-[25px] md:gap-[5%]">
+                  <Image
+                    className="rounded-[20px] block lg:hidden w-[100%]"
+                    src="/blogs/imo-2024/content/set1.png"
                     width="400"
                     height="400"
                     alt=""
-                  /> */}
+                  />
+                  <Image
+                    className="rounded-[20px] block lg:hidden w-[100%]"
+                    src="/blogs/imo-2024/content/set2.png"
+                    width="400"
+                    height="400"
+                    alt=""
+                  />
 
-                  {/* <embed className="rounded-[20px] w-[100%]" src="/blogs/imo-2024/content/2024_eng.pdf" width="400"
-                    height="400" type="application/pdf" >
-                      
-                    </embed> */}
                   <object
-                  type="application/pdf"
-                    className="rounded-[20px] w-[100%] h-[auto] lg:h-[400px]"
+                    type="application/pdf"
+                    className="rounded-[20px] w-[100%] h-[auto] hidden lg:block lg:h-[600px]"
                     data="/blogs/imo-2024/content/2024_eng.pdf"
                     // width="400"
                     // height="400"
                   >
-                     
-          <div className="h-[auto]">
-                      <Button  to="/blogs/imo-2024/content/2024_eng.pdf" name="Download PDF"/>
-                      </div>
+                    <div className="h-[auto]">
+                      <Button
+                        to="/blogs/imo-2024/content/2024_eng.pdf"
+                        name="Download Mathematical Olympiad 2024 PDF"
+                      />
+                    </div>
                   </object>
-
-                  {/* <Suspense className="rounded-[20px] w-[400px] h-[400px]" fallback={<div>Loading PDF...</div>}>
-                    <LazyPDFViewer url="/blogs/imo-2024/content/2024_eng.pdf" />
-                  </Suspense> */}
-                  {/* <iframe  type="application/pdf" width="400" height="400" src="../../../../../public/blogs/imo-2024/content/2024_eng.pdf"></iframe> */}
                 </div>
               </div>
 
