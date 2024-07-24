@@ -81,6 +81,7 @@ module.exports = {
         'craftingHero': "url('/blogs/crafting-visions/content/img1.jpeg')",
         'federatedHero': "url('/blogs/federated-learning/content/img1.jpeg')",
         'imoHero': "url('/blogs/imo-2024/content/IMO_logo.png')",
+        'cyphyssHero': "url('/blogs/cyphyss-2024/content/banner.png')",
         'complexProbHero': "url('/blogs/solving-complex-problem/hero/img1.jpeg')",
         'nasHero': "url('/blogs/nas/hero/img1.jpeg')",
         'vitsHero': "url('/blogs/vits/hero/img1.jpeg')",

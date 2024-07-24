@@ -5,6 +5,14 @@ import React from "react";
 const LatestBlogs = () => {
   const dataArray = [
     {
+      title: "Join Me at CyPhySS 2024: Exploring the Future of Autonomous Vehicles",
+      href: "/blogs/cyphyss-2024",
+      authorName: "Arjun Jain",
+      authorImg: "/arjun.jpg",
+      publicationDate: "24 July 2024",
+      background: "bg-cyphyssHero",
+    },
+     {
       title: "Celebrating Team India’s Success at IMO 2024!",
       href: "/blogs/imo-2024",
       authorName: "Arjun Jain",
@@ -668,6 +676,47 @@ const LatestBlogs = () => {
                 : "sm:col-span-1 md:col-span-1"
             }`}
           >
+            <Link href={e.href}>
+              <div
+                className={`card-zoom w-full h-[327px] relative  overflow-hidden group rounded-3xl`}
+              >
+                <div
+                  className={`card-zoom-image absolute w-full h-full transition-all duration-500 ease-in-out transform bg-center bg-cover ${e.background} group-hover:scale-150`}
+                ></div>
+                <div className="absolute inset-0  bg-[#23478e8a] rounded-[24px]"></div>
+                <div className="absolute bottom-[20px] m-[20px]">
+                  <h3 className="text-white text-2xl font-aeonik tracking-wide mb-[15px]">
+                    {e.title}
+                  </h3>
+                  <div className="flex gap-[10px] items-center">
+                    {e?.authorImg && (
+                      <div className="border border-[#707070] rounded-full  w-[50px] h-[50px] relative overflow-hidden">
+                        <Image
+                          className="rounded-full"
+                          src={e?.authorImg}
+                          width="50"
+                          height="50"
+                          alt=""
+                        />
+                      </div>
+                    )}
+                    <div>
+                      <b className="text-white font-bold font-aeonik tracking-wide ">
+                        {e.authorName}
+                      </b>
+                      <p className="text-[#FFFFFF] text-lg font-bwmss01">
+                        {e.publicationDate}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Link>
+          </div>
+        ))}
+         {/* Map over dataArray for 10 row */}
+         {dataArray.slice(22, 25).map((e, index) => (
+          <div key={index} className="col-span-1 sm:col-span-1 md:col-span-1">
             <Link href={e.href}>
               <div
                 className={`card-zoom w-full h-[327px] relative  overflow-hidden group rounded-3xl`}
