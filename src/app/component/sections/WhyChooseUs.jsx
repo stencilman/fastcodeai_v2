@@ -44,7 +44,7 @@ const WhyChooseUs = () => {
             <div className="flex-1 bg-gradient-to-br from-[#000E32] to-[#000929] opacity-83 h-[auto] rounded-[18px] w-full ">
               <div className="w-full flex flex-col items-center gap-[35px] lg:gap-[125px]">
                 <h3 className="text-[32px]  w-[290px] text-white text-center font-aeonik pt-[60px] lg:pt-[94px]">
-                  <span className="font-bold ">Al</span> Adoption across diverse
+                  <span className="font-bold font-bwmss01">Al</span> Adoption across diverse
                   domains
                 </h3>
                 <div className="w-[300px] sm:w-[365px] md:w-[413px] h-[250px] md:h-[332px] relative left-[-29px] lg:left-[-38px]">

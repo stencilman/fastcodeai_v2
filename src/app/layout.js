@@ -21,11 +21,11 @@ const aeonik = localFont({
       weight: "400", //regular
       style: "normal"
     },
-    { 
-      path: "../../public/fonts/aeonik/AeonikTRIAL-Bold.woff2",
-      weight: "700", //bold
-      style: "normal"
-    },
+    // { 
+    //   path: "../../public/fonts/aeonik/AeonikTRIAL-Bold.woff2",
+    //   weight: "700", //bold
+    //   style: "normal"
+    // },
 
   ],
   variable: "--font-aeonik"
@@ -50,9 +50,9 @@ const bwmss01 = localFont({
 })
 
 export const metadata = {
-  title:{
+  title: {
     default: "Fast Code AI",
-    template : "%s - Fast Code AI"
+    template: "%s - Fast Code AI"
   },
   description: "Fast Code AI - Accelerating Innovation",
   openGraph: {
@@ -68,17 +68,17 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-  
+
   return (
-    <html  lang="en" >
+    <html lang="en" >
       <body className={`${aeonik.variable} ${bwmss01.variable}`}>
-      <link rel="icon" href="/fcai.ico" sizes="any" />
+        <link rel="icon" href="/fcai.ico" sizes="any" />
         <GlobalProvider>
           <ClientWrapper>
-          <SmoothScroll>
-            <Navbar />
-            {children}
-          </SmoothScroll>
+            <SmoothScroll>
+              <Navbar />
+              {children}
+            </SmoothScroll>
           </ClientWrapper>
           <SpeedInsights />
         </GlobalProvider>

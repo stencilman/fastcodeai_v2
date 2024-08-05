@@ -345,7 +345,7 @@ const LatestBlogs = () => {
                       </div>
                     )}
                     <div>
-                      <b className="text-white font-bold font-aeonik tracking-wide ">
+                      <b className="text-white  font-aeonik tracking-wide ">
                         {e.authorName}
                       </b>
                       <p className="text-[#FFFFFF] text-lg font-bwmss01">
@@ -386,7 +386,7 @@ const LatestBlogs = () => {
                       </div>
                     )}
                     <div>
-                      <b className="text-white font-bold font-aeonik tracking-wide ">
+                      <b className="text-white  font-aeonik tracking-wide ">
                         {e.authorName}
                       </b>
                       <p className="text-[#FFFFFF] text-lg font-bwmss01">
@@ -434,7 +434,7 @@ const LatestBlogs = () => {
                       </div>
                     )}
                     <div>
-                      <b className="text-white font-bold font-aeonik tracking-wide ">
+                      <b className="text-white  font-aeonik tracking-wide ">
                         {e.authorName}
                       </b>
                       <p className="text-[#FFFFFF] text-lg font-bwmss01">
@@ -475,7 +475,7 @@ const LatestBlogs = () => {
                       </div>
                     )}
                     <div>
-                      <b className="text-white font-bold font-aeonik tracking-wide ">
+                      <b className="text-white  font-aeonik tracking-wide ">
                         {e.authorName}
                       </b>
                       <p className="text-[#FFFFFF] text-lg font-bwmss01">
@@ -523,7 +523,7 @@ const LatestBlogs = () => {
                       </div>
                     )}
                     <div>
-                      <b className="text-white font-bold font-aeonik tracking-wide ">
+                      <b className="text-white  font-aeonik tracking-wide ">
                         {e.authorName}
                       </b>
                       <p className="text-[#FFFFFF] text-lg font-bwmss01">
@@ -564,7 +564,7 @@ const LatestBlogs = () => {
                       </div>
                     )}
                     <div>
-                      <b className="text-white font-bold font-aeonik tracking-wide ">
+                      <b className="text-white  font-aeonik tracking-wide ">
                         {e.authorName}
                       </b>
                       <p className="text-[#FFFFFF] text-lg font-bwmss01">
@@ -612,7 +612,7 @@ const LatestBlogs = () => {
                       </div>
                     )}
                     <div>
-                      <b className="text-white font-bold font-aeonik tracking-wide ">
+                      <b className="text-white  font-aeonik tracking-wide ">
                         {e.authorName}
                       </b>
                       <p className="text-[#FFFFFF] text-lg font-bwmss01">
@@ -653,7 +653,7 @@ const LatestBlogs = () => {
                       </div>
                     )}
                     <div>
-                      <b className="text-white font-bold font-aeonik tracking-wide ">
+                      <b className="text-white  font-aeonik tracking-wide ">
                         {e.authorName}
                       </b>
                       <p className="text-[#FFFFFF] text-lg font-bwmss01">
@@ -701,7 +701,7 @@ const LatestBlogs = () => {
                       </div>
                     )}
                     <div>
-                      <b className="text-white font-bold font-aeonik tracking-wide ">
+                      <b className="text-white  font-aeonik tracking-wide ">
                         {e.authorName}
                       </b>
                       <p className="text-[#FFFFFF] text-lg font-bwmss01">
@@ -742,7 +742,7 @@ const LatestBlogs = () => {
                       </div>
                     )}
                     <div>
-                      <b className="text-white font-bold font-aeonik tracking-wide ">
+                      <b className="text-white  font-aeonik tracking-wide ">
                         {e.authorName}
                       </b>
                       <p className="text-[#FFFFFF] text-lg font-bwmss01">

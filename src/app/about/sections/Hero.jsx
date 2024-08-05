@@ -23,7 +23,7 @@ const Hero = () => {
       <div className="w-[60%]">
         <RevealY>
           <h1 className="text-white font-aeonik tracking-wide text-center font-thin lg:leading-[86px] text-[50px] leading-[52px] lg:text-[93px]">
-            <b className="text-white text-center lg:leading-[86px] font-aeonik font-bold text-[50px] leading-[52px] lg:text-[93px]">
+            <b className="text-white text-center lg:leading-[86px] font-aeonik  text-[50px] leading-[52px] lg:text-[93px]">
               Unleash {"AI's"}
               <br /> Creative Potential
             </b>

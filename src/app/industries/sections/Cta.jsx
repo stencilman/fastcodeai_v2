@@ -17,7 +17,7 @@ const Cta = ({title,quote}) => {
         }}
       >
         <div>
-          <p className="text-white font-aeonik font-semibold md:font-bold text-2xl leading-[25px] md:w-[80%] lg:w-[100%] md:text-2xl ">
+          <p className="text-white font-bwmss01 font-bold text-2xl leading-[25px] md:w-[80%] lg:w-[100%] md:text-2xl ">
             {quote}
           </p>
         </div>

@@ -25,13 +25,13 @@ const PrivacyPolicyWeave = () => {
                 <div className="flex flex-col gap-[20px] mt-[50px]">
                     <div className="flex gap-[5px]">
                         <p className="text-[#9EB3CF]  text-sm md:text-lg  font-bwmss01 mt-[10px]">
-                            <b className={`text-white font-bold text-base text-xl `}>Effective Date: February 6, 2024</b> <br />Thank you for choosing Weave. Weave values the trust of its users and is committed to protecting their privacy. This Privacy Policy outlines how Weave {`("we", "our", or "us")`} collects, uses, stores, and shares information when users {`("you" or "your")`} use our mobile application {`("App")`}. By using Weave, users consent to the practices described in this Privacy Policy.
+                            <b className={`text-white font-bold  text-xl `}>Effective Date: February 6, 2024</b> <br />Thank you for choosing Weave. Weave values the trust of its users and is committed to protecting their privacy. This Privacy Policy outlines how Weave {`("we", "our", or "us")`} collects, uses, stores, and shares information when users {`("you" or "your")`} use our mobile application {`("App")`}. By using Weave, users consent to the practices described in this Privacy Policy.
                         </p>
                     </div>
                     <div>
                         <div className="flex gap-[5px]">
                             <p className="text-[#9EB3CF]  text-sm md:text-lg  font-bwmss01 mt-[10px]">
-                                <b className={`text-white font-bold text-base text-xl`}>Information We Collect:</b> <br />
+                                <b className={`text-white font-bold  text-xl`}>Information We Collect:</b> <br />
                                 Audio Recordings: Weave records and processes audio recordings of {"users'"} vocal entries. These recordings are stored locally on their devices and, if users choose, can be uploaded to their Google Drive accounts. User-Provided Information: We may collect information that users provide voluntarily, such as feedback, preferences, or other information they choose to share with us. Usage Data: We may collect information about {"users'"} usage of the App, including interactions with features, performance data, and crash logs.
                             </p>
                         </div>
@@ -39,7 +39,7 @@ const PrivacyPolicyWeave = () => {
                     <div>
                         <div className="flex gap-[5px]">
                             <p className="text-[#9EB3CF]  text-sm md:text-lg  font-bwmss01 mt-[10px]">
-                                <b className={`text-white font-bold text-base text-xl`}>How We Use Your Information:</b> <br />
+                                <b className={`text-white font-bold  text-xl`}>How We Use Your Information:</b> <br />
                                 Audio Processing: We use the audio recordings to analyze and process {"users'"} vocal entries, providing insights or personalized recommendations based on the content. Improving Our Services: We use the information collected to improve the functionality and user experience of Weave. Customer Support: We may use {"users'"} information to respond to inquiries, provide technical support, or address user feedback.
                             </p>
                         </div>
@@ -47,7 +47,7 @@ const PrivacyPolicyWeave = () => {
                     <div>
                         <div className="flex gap-[5px]">
                             <p className="text-[#9EB3CF]  text-sm md:text-lg  font-bwmss01 mt-[10px]">
-                                <b className={`text-white font-bold text-base text-xl`}>Data Storage:</b> <br />
+                                <b className={`text-white font-bold  text-xl`}>Data Storage:</b> <br />
                                 Local Storage: Audio recordings are stored locally on {"users'"} devices to enable offline access and processing. Google Drive: With {"users'"} consent, we may upload audio recordings to their Google Drive accounts. Recordings stored on Google Drive are subject to {"Google's"} Privacy Policy.
                             </p>
                         </div>
@@ -55,7 +55,7 @@ const PrivacyPolicyWeave = () => {
                     <div>
                         <div className="flex gap-[5px]">
                             <p className="text-[#9EB3CF]  text-sm md:text-lg  font-bwmss01 mt-[10px]">
-                                <b className={`text-white font-bold text-base text-xl`}>Third-Party Services:</b> <br />
+                                <b className={`text-white font-bold  text-xl`}>Third-Party Services:</b> <br />
                                 APIs: We may use third-party APIs to assist in processing audio recordings. These third-party services are governed by their respective privacy policies. Google Drive: If users choose to store their recordings on Google Drive, their data will be subject to {"Google's"} terms and policies.
                             </p>
                         </div>
@@ -63,7 +63,7 @@ const PrivacyPolicyWeave = () => {
                     <div>
                         <div className="flex gap-[5px]">
                             <p className="text-[#9EB3CF]  text-sm md:text-lg  font-bwmss01 mt-[10px]">
-                                <b className={`text-white font-bold text-base text-xl`}>Data Security:
+                                <b className={`text-white font-bold  text-xl`}>Data Security:
                                 </b> <br />
                                 Weave takes appropriate measures to safeguard {"users'"} information against unauthorized access, alteration, disclosure, or destruction. However, no method of transmission over the internet or electronic storage is 100% secure. Therefore, we cannot guarantee absolute security of {"users'"} data.
                             </p>
@@ -72,7 +72,7 @@ const PrivacyPolicyWeave = () => {
                     <div>
                         <div className="flex gap-[5px]">
                             <p className="text-[#9EB3CF]  text-sm md:text-lg  font-bwmss01 mt-[10px]">
-                                <b className={`text-white font-bold text-base text-xl`}>Your Choices:
+                                <b className={`text-white font-bold  text-xl`}>Your Choices:
                                 </b> <br />
                                 Google Drive Integration: Users have the option to opt out of backing up their data with Google Drive by disabling the feature in the App settings. Data Deletion: Users can delete audio recordings stored on their devices at any time. If they choose to store recordings on Google Drive, they can manage and delete them through their Google accounts.
                             </p>
@@ -81,7 +81,7 @@ const PrivacyPolicyWeave = () => {
                     <div>
                         <div className="flex gap-[5px]">
                             <p className="text-[#9EB3CF]  text-sm md:text-lg  font-bwmss01 mt-[10px]">
-                                <b className={`text-white font-bold text-base text-xl`}> {"Children's"} Privacy:
+                                <b className={`text-white  font-bold text-xl`}> {"Children's"} Privacy:
                                 </b> <br />
 
                                 Weave does not knowingly collect personally identifiable information from children under the age of 13. If users believe that we may have collected information from a child under 13, they should contact us immediately.
@@ -91,7 +91,7 @@ const PrivacyPolicyWeave = () => {
                     <div>
                         <div className="flex gap-[5px]">
                             <p className="text-[#9EB3CF]  text-sm md:text-lg  font-bwmss01 mt-[10px]">
-                                <b className={`text-white font-bold text-base text-xl`}> Changes to this Privacy Policy:
+                                <b className={`text-white  font-bold text-xl`}> Changes to this Privacy Policy:
                                 </b> <br />
 
                                 We reserve the right to update or modify this Privacy Policy at any time. We will notify users of any changes by posting the new Privacy Policy on this page.
@@ -101,7 +101,7 @@ const PrivacyPolicyWeave = () => {
                     <div>
                         <div className="flex gap-[5px]">
                             <p className="text-[#9EB3CF]  text-sm md:text-lg  font-bwmss01 mt-[10px]">
-                                <b className={`text-white font-bold text-base text-xl`}> Contact Us:
+                                <b className={`text-white font-bold  text-xl`}> Contact Us:
                                 </b> <br />
 
 

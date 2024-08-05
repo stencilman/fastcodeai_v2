@@ -114,7 +114,7 @@ const Footer = ({ showExtraSpace }) => {
               <div className="w-full flex flex-col lg:flex-row">
                 <div className="w-full lg:w-[50%]">
                   <ul className="pl-0">
-                    <li className="text-[14px] font-bold text-white font-aeonik">
+                    <li className="text-[14px]  text-white font-bwss01 font-bold">
                       Head Office
                     </li>
                     <li className="text-sm text-[#9EB3CF] font-bwmss01 mt-[10px] md:mt-[19px]">
@@ -128,13 +128,13 @@ const Footer = ({ showExtraSpace }) => {
                 </div>
                 <div className="w-full md:w-[50%]">
                   <ul className="pl-0">
-                    <li className="text-[14px] font-bold text-white font-aeonik">
+                    <li className="text-[14px]  text-white font-bwss01 font-bold">
                       Email
                     </li>
                     <li className="text-[#9EB3CF] font-bwmss01 text-2xl  pl-[4px]">
                       arjun@fastcode.ai
                     </li>
-                    <li className="text-[14px] font-bold text-white font-aeonik mt-[8px]">
+                    <li className="text-[14px]  text-white font-bwss01 font-bold mt-[8px]">
                       Phone
                     </li>
                     <li className="text-[#9EB3CF] font-bwmss01 text-2xl  pl-[4px]">
@@ -213,7 +213,7 @@ const Footer = ({ showExtraSpace }) => {
               <div
                 className={`w-[103px] h-[103px] bg-gradient-to-br absolute pointer-events-none cursor-pointer ${"from-[#1D8283] to-[#033577]"} bg-gradient-156deg bg-no-repeat bg-[0% 0%]  text-white font-aeonik flex justify-center items-center gap-[20px] flex-col`}
               >
-                <div className="font-bold text-[18px]">Say Hi!</div>
+                <div className=" text-[18px]">Say Hi!</div>
                 <div className="pr-[24px]">
                   <Image
                     className="transform scale-x-[-1.5] "
