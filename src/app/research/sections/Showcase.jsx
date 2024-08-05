@@ -56,7 +56,7 @@ console.log("searchParams",searchParams)
 
   return (
     <div className="w-full h-[auto] bg-[#00081F] flex items-center justify-center relative mt-[70px] flex-col gap-[35px] md:gap-[70px]">
-      <h3 className="text-white font-aeonik tracking-wide text-[8vw] md:text-[7vw] lg:text-[51px]  font-light text-center w-full capitalize">
+      <h3 className="text-white font-aeonik tracking-wide text-[8vw] md:text-[7vw] lg:text-[51px]   text-center w-full capitalize">
         Our {activeTab} Showcase
       </h3>
 

@@ -21,7 +21,7 @@ const aeonik = localFont({
       weight: "400", //regular
       style: "normal"
     },
-    {
+    { 
       path: "../../public/fonts/aeonik/AeonikTRIAL-Bold.woff2",
       weight: "700", //bold
       style: "normal"

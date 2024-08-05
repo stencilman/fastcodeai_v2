@@ -108,7 +108,7 @@ module.exports = {
         'surya': "url('/members/surya.jpg')",
         'sridhar': "url('/members/sridhar.jpg')",
 
-
+ 
 
       },
       background: {

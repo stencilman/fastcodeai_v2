@@ -26,7 +26,7 @@ const Hero = ({ heroData }) => {
             </div>
           )}
           <div className="w-auto md:w-[500px] flex flex-col gap-[25px] justify-center items-center">
-            <h3 className="text-white text-center font-aeonik font-light tracking-normal text-[30px]">
+            <h3 className="text-white text-center font-aeonik  tracking-normal text-[30px]">
               {heroData[0]?.title}
             </h3>
             <p className="text-[#9EB3CF] font-bwmss01 text-lg text-center">

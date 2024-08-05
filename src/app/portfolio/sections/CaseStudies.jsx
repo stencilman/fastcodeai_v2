@@ -167,7 +167,7 @@ const CaseStudies = () => {
                   <div className="absolute inset-0 bg-[#05122da6] rounded-[18px]"></div>
                   <div className="w-full h-full flex justify-between flex-col lg:flex-row p-[15px] sm:p-[21px] lg:pb-[0px]">
                     <div className="h-full w-full lg:w-[50%] flex flex-col gap-[4vw] md:gap-[2vw] lg:gap-[30px] justify-normal lg:justify-evenly ">
-                      <h5 className="text-white font-aeonik font-light tracking-normal text-[30px] relative z-10">
+                      <h5 className="text-white font-aeonik  tracking-normal text-[30px] relative z-10">
                         {e.title}
                       </h5>
                       <p className="text-[#9EB3CF] font-bwmss01 text-lg  relative z-10">

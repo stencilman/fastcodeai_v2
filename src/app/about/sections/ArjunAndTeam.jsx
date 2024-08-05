@@ -82,7 +82,7 @@ useEffect(() => {
     <div className="w-full h-full lg:min-h-[auto] bg-gradient-to-br from-[#000E32] to-[#000929] opacity-83 px-[20px] md:px-[50px] lg:pr-[127px] lg:pl-[100px] relative z-[5]">
       <div className="w-full h-auto lg:min-h-[80vh] pt-[57px] pb-[38px] md:pb-[50px] xl:pb-[95px]   relative flex items-center gap-0 lg:gap-[10%] flex-col-reverse lg:flex-row justify-center">
         <div className=" h-full w-full lg:w-[70%] flex flex-col justify-start lg:justify-center gap-[20px] lg:gap-[26px]">
-          <h1 className="font-aeonik text-[8vw] md:text-[7vw] lg:text-[5.5vw] text-white leading-[8.5vw] md:leading-[7.5vw] lg:leading-[6.5vw] tracking-normal font-light">
+          <h1 className="font-aeonik text-[8vw] md:text-[7vw] lg:text-[5.5vw] text-white leading-[8.5vw] md:leading-[7.5vw] lg:leading-[6.5vw] tracking-normal ">
             Guiding Excellence Through Leadership
           </h1>
           <p className="text-lg lg:text-[1.5vw] lg:leading-[2vw] font-bwmss01 text-[#9EB3CF]">
@@ -158,7 +158,7 @@ useEffect(() => {
               />
             </div>
             <div className="">
-              <p className="text-[9vw] md:text-[6.7vw] lg:text-[1.6vw] lg:text-center mt-[60px] font-light leading-[10vw] md:leading-[8vw] lg:leading-[2vw] font-aeonik text-[#ffffff]">
+              <p className="text-[9vw] md:text-[6.7vw] lg:text-[1.6vw] lg:text-center mt-[60px] font-light leading-[10vw] md:leading-[8vw] lg:leading-[2vw] font-bwmss01 text-[#ffffff]">
                 Dr. Arjun Jain <br /> Founder and Chief Scientist
               </p>
               <div className="lg:hidden w-[220px] md:w-[25vw] mt-[35px]">

@@ -123,7 +123,7 @@ const SpecializeIndustries = () => {
             </div>
           </div>
           <div>
-            <h5 className="text-white font-aeonik font-light tracking-normal text-[30px]">
+            <h5 className="text-white font-aeonik tracking-normal text-[30px]">
               {active.name}
             </h5>
             <p className="text-[#9EB3CF] font-bwmss01 text-lg mt-[20px]">

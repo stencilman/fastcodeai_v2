@@ -514,7 +514,7 @@ const Publications = () => {
                 </div>
                 {/* body */}
                 <div>
-                  <h5 className="text-white font-aeonik font-light tracking-normal text-[30px]">
+                  <h5 className="text-white font-aeonik  tracking-normal text-[30px]">
                     {e.desciption}
                   </h5>
                 </div>

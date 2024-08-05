@@ -50,7 +50,7 @@ const Believe = () => {
       <div className="absolute top-[-160px] left-0 w-full h-[150px] blur-[50px] translate-y-[30px] scale-90  rounded-[50%] z-[1] bg-gradient-to-br from-[#1D8283] to-[#033577] bg-gradient-156deg bg-no-repeat bg-[0% 0%] opacity-49 border-0 border-opacity-0 filter blur-[50px]"></div>
       <div className="flex flex-col justify-center items-center gap-[50px]">
         <div className="">
-          <h1 className="font-aeonik text-[8vw] md:text-[7vw] lg:text-[5.5vw] text-white leading-[5.5vw] tracking-wide font-light">
+          <h1 className="font-aeonik text-[8vw] md:text-[7vw] lg:text-[5.5vw] text-white leading-[5.5vw] tracking-wide ">
             We Believe In
           </h1>
         </div>
