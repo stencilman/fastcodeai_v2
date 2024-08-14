@@ -89,7 +89,7 @@ export const recommendBlogsDataList = [
             "Empowering the AI Community: The Role of Open Source in Preventing Monopolies",
         href: "/blogs/ai-dangers-and-preventing-monopolization",
         authorName: "Arjun Jain",
-        comments: "/arjun.jpg",
+        comments: "20",
         publicationDate: "15 Dec 2023",
         thumbnail: "bg-aiDangers",
         description: "",
