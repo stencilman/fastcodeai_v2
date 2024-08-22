@@ -98,10 +98,20 @@ const Main = () => {
                 </p>
 
                 <p className="text-[#9EB3CF] text-lg font-bwmss01">
-                Arjun Jain says that he remembers, back in 2008, in the very early days of CUDA, you {"couldn’t"} even write a printf inside a kernel and had to transfer memory back to the CPU just to debug and print {"it—we’ve"} definitely come a long way!
+                <a
+                    href="https://www.linkedin.com/in/arjunjain/"
+                    className="text-blue-600 hover:underline"
+                    target="_blank"
+                  >
+                  Arjun Jain
+                  </a>  {" "} says that he remembers, back in 2008, in the very early days of CUDA, you {"couldn’t"} even write a printf inside a kernel and had to transfer memory back to the CPU just to debug and print {"it—we’ve"} definitely come a long way!
                 </p>
                 <p className="text-[#9EB3CF] text-lg font-bwmss01">
-                At Fast Code AI , we specialize in solving such tough challenges, continually pushing the boundaries of {"what's"} possible in computational performance and innovation with #excellence and #integrity.
+                At  <a
+                    href="https://www.fastcode.ai/"
+                    className="text-blue-600 hover:underline"
+                    target="_blank"
+                  >Fast Code AI</a>, we specialize in solving such tough challenges, continually pushing the boundaries of {"what's"} possible in computational performance and innovation with #excellence and #integrity.
                 </p>
                 
               </div>
