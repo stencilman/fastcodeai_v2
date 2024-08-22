@@ -5,6 +5,14 @@ import React from "react";
 const LatestBlogs = () => {
   const dataArray = [
     {
+      title: "Matrix Multiplication Mastery: Reaching 93% of NVIDIA’s cuBLAS Speed",
+      href: "/blogs/nvdias-cublas",
+      authorName: "Arjun Jain",
+      authorImg: "/arjun.jpg",
+      publicationDate: "20 Aug 2024",
+      background: "bg-nvdiaHero",
+    },
+    {
       title: "Efficient Multi-Hop SSH Configuration in VS Code",
       href: "/blogs/ssh-vscode",
       authorName: "Sridhar Kamath ",
@@ -723,15 +731,8 @@ const LatestBlogs = () => {
           </div>
         ))}
          {/* Map over dataArray for 10 row */}
-         {dataArray.slice(22, 24).map((e, index) => (
-          <div
-            key={index}
-            className={`col-span-1 ${
-              index === 0
-                ? "sm:col-span-1 md:col-span-1"
-                : "sm:col-span-1 md:col-span-2"
-            }`}
-          >
+         {dataArray.slice(22, 25).map((e, index) => (
+          <div key={index} className="col-span-1 sm:col-span-1 md:col-span-1">
             <Link href={e.href}>
               <div
                 className={`card-zoom w-full h-[327px] relative  overflow-hidden group rounded-3xl`}

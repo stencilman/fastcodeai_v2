@@ -88,6 +88,7 @@ module.exports = {
         'vitsHero': "url('/blogs/vits/hero/img1.jpeg')",
         'visionTransformers': "url('/blogs/vision-transformers/hero/img1.jpeg')",
         'oilGasHero': "url('/blogs/oil-gas/oilGas-Hero.webp')",
+        'nvdiaHero': "url('/blogs/nvdia/hero/nvdia.jpg')",
 
         // *** Team Members ***
         'arjun': "url('/members/arjun.png')",
