@@ -109,9 +109,6 @@ module.exports = {
         'jadhav': "url('/members/jadhav.png')",
         'surya': "url('/members/surya.jpg')",
         'sridhar': "url('/members/sridhar.jpg')",
-
- 
-
       },
       background: {
         cusgrad: "transparent linear-gradient(360deg, #13224F 0%, #13224F 0%, #0C1C46 51%, #020F3B 100%) 0% 0% no-repeat padding-box",
