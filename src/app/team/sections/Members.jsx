@@ -43,7 +43,7 @@ const Members = () => {
     },
     {
       position:
-        " sm:top-[-230px] sm:left-[47vw] lg:top-[-70px] lg:left-[26vw] xl:left-[29vw]",
+        " sm:top-[-230px] lg:top-[-70px] sm:left-[47vw]  lg:left-[26vw] xl:left-[29vw]",
       y: md,
       height: "h-[440px] md:h-[490px] lg:h-[598px]",
       backHeight: "min-h-[440px]",
@@ -128,6 +128,21 @@ const Members = () => {
 
       height: "h-[440px] md:h-[490px] lg:h-[598px]",
       backHeight: "min-h-[440px]",
+      name: "Prayag Biswas",
+      role: "Software Engineer",
+      bg: "bg-prayag grayscale",
+      cp: "Software Engineer",
+      education: "B.Tech in CSE from IIIT Kalyani.",
+      desciption: "Just keep rolling with everything I love—whether it's wrestling with Flutter bugs, designing random things, leveling up in games, bingeing anime, or pretending my guitar skills are concert-worthy!",
+      linkedin: "https://www.linkedin.com/in/prayag-x/",
+    },
+    {
+      position:
+        "sm:top-[-250px] sm:left-[0px]  lg:top-[-1410px] lg:left-[26vw] xl:left-[29vw]",
+      y: xl,
+
+      height: "h-[440px] md:h-[490px] lg:h-[598px]",
+      backHeight: "min-h-[440px]",
       name: "Surya Ganesh",
       role: "Intern",
       bg: "bg-surya grayscale",
@@ -135,11 +150,13 @@ const Members = () => {
       education: "Currently pursuing a B.Tech (CS) at PES University.",
       desciption: "Looks for uncharted territories and unanswered questions.",
       linkedin: "https://www.linkedin.com/in/surya-ganesh-7b16862b9",
+
+     
     },
+
     {
-      position:
-        "sm:top-[-250px] sm:left-[0px]  lg:top-[-1410px] lg:left-[26vw] xl:left-[29vw]",
-      y: xl,
+      position: "sm:top-[260px] sm:left-[47vw] lg:top-[-600px] lg:left-[58vw]",
+      y: xxl,
 
       height: "h-[440px] md:h-[490px] lg:h-[598px]",
       backHeight: "min-h-[440px]",
@@ -151,12 +168,12 @@ const Members = () => {
         "MTech AI from IISc, MBA in Technology Management with Major in Finance (and CFA Level 1 cleared) from NMIMS. ",
       desciption: "Engineer, researcher, and avid football enthusiast.",
       linkedin: "https://www.linkedin.com/in/rishabh-gupta-a5886712a/",
+      
     },
-
     {
-      position: "sm:top-[260px] sm:left-[47vw] lg:top-[-600px] lg:left-[58vw]",
-      y: xxl,
-
+      position:
+        "  sm:top-[-290px] sm:left-[23vw] lg:top-[-1800px] lg:left-[26vw] xl:left-[29vw]",
+      y: xl,
       height: "h-[440px] md:h-[490px] lg:h-[598px]",
       backHeight: "min-h-[440px]",
       name: "Hrishikesh Jadhav",
@@ -166,10 +183,12 @@ const Members = () => {
       education: "MTech (CS) IIS.",
       desciption: "Engineer, researcher, and avid football enthusiast.",
       linkedin: "https://www.linkedin.com/in/hrishikesh-jadhav-34595a167/",
+     
     },
+
     {
       position:
-        "  sm:top-[-290px] sm:left-[23vw] lg:top-[-1800px] lg:left-[26vw] xl:left-[29vw]",
+        " sm:top-[-220px] sm:left-[0px] lg:top-[-2284px] lg:left-[-6vw] xl:left-0",
       y: xl,
 
       height: "h-[440px] md:h-[490px] lg:h-[598px]",
@@ -182,12 +201,12 @@ const Members = () => {
       desciption:
         "Amateur researcher, active learner, passionate about Computer Vision and Reinforcement Learning.",
       linkedin: "https://www.linkedin.com/in/sridhar-kamath-605a44205/",
+     
     },
-
     {
       position:
-        " sm:top-[-220px] sm:left-[0px] lg:top-[-2284px] lg:left-[-6vw] xl:left-0",
-      y: xl,
+        " sm:top-[500px] sm:left-[47vw] lg:top-[-1408px] lg:left-[40vw] ",
+      y: xxl,
 
       height: "h-[440px] md:h-[490px] lg:h-[598px]",
       backHeight: "min-h-[440px]",
@@ -199,11 +218,12 @@ const Members = () => {
       desciption:
         "Integrating AI with web applications, focusing on empathetic user experience design.",
       linkedin: "https://www.linkedin.com/in/abdul-muqtadir-dev/",
+     
     },
     {
       position:
-        " sm:top-[500px] sm:left-[47vw] lg:top-[-1408px] lg:left-[40vw] ",
-      y: xxl,
+        "sm:left-[0px] sm:top-[-947px]  lg:top-[-3000px] lg:left-[6vw] xl:left-[10vw]",
+      y: md,
 
       height: "h-[440px] md:h-[490px] lg:h-[598px]",
       backHeight: "min-h-[440px]",
@@ -214,11 +234,11 @@ const Members = () => {
       education: "M.Tech (CS) IIIT Hyderabad. ",
       desciption: "Strong engineer, avid researcher, and kick-ass musician.",
       linkedin: "https://www.linkedin.com/in/tirth-pandit/",
+      
     },
     {
-      position:
-        "sm:left-[0px] sm:top-[-947px]  lg:top-[-3000px] lg:left-[6vw] xl:left-[10vw]",
-      y: md,
+      position: " sm:top-[-747px]  lg:top-[-2800px] lg:left-[-6vw] xl:left-0",
+      y: lg,
 
       height: "h-[440px] md:h-[490px] lg:h-[598px]",
       backHeight: "min-h-[440px]",
@@ -230,10 +250,33 @@ const Members = () => {
       desciption:
         "15 years of technology services experience, delivering managed teams and projects for large clients in US and India.",
       linkedin: "https://www.linkedin.com/in/prabalpatel211/",
+      
     },
+    
+
     {
-      position: " sm:top-[-747px]  lg:top-[-2800px] lg:left-[-6vw] xl:left-0",
-      y: lg,
+      position:
+        " sm:left-[47vw] sm:top-[-447px] lg:top-[-2800px] lg:left-[26vw] xl:left-[29vw]",
+      y: xl,
+
+      height: "h-[440px] md:h-[490px] lg:h-[598px]",
+      backHeight: "min-h-[440px]",
+      name: "Akash Parua",
+      role: "Machine Learning Engineer",
+      bg: "bg-akash grayscale",
+      cp: "Machine Learning Engineer",
+      education: "B.Tech (CS) IIIT Kalyani.",
+      desciption:
+        "Love building innovative AI solutions.",
+      linkedin: "https://www.linkedin.com/in/akash-parua-76b2531b7/",
+      
+      
+    },
+
+    {
+      position:
+        " sm:left-[0px] sm:top-[-1447px]  lg:top-[-4449px] lg:left-[58vw]",
+      y: sm,
 
       height: "h-[440px] md:h-[490px] lg:h-[598px]",
       backHeight: "min-h-[440px]",
@@ -245,12 +288,13 @@ const Members = () => {
       desciption:
         "Seasoned researcher, strong engineer with over half a decade of experience in Computer Vision, and an avid wildlife photographer whose work has been published by NatGeo.",
       linkedin: "https://www.linkedin.com/in/sughoshpatil/",
+     
+      
     },
-
     {
       position:
-        " sm:left-[47vw] sm:top-[-447px] lg:top-[-2600px] lg:left-[26vw] xl:left-[29vw]",
-      y: xl,
+        " sm:left-[0px] sm:top-[1154px] lg:top-[-1784px] lg:left-[6vw] xl:left-[10vw]",
+      y: xxl,
 
       height: "h-[530px] md:h-[490px] lg:h-[598px] ",
       backHeight: "min-h-[536px]",
@@ -262,12 +306,13 @@ const Members = () => {
       desciption:
         "Seasoned iOS Engineer with a decade of experience, exploring AI and Machine Learning. Also a poet, classical music enthusiast, and avid football critic.",
       linkedin: "https://in.linkedin.com/in/eshwar-ramesh-831303ab",
+     
+     
     },
-
     {
       position:
-        " sm:left-[0px] sm:top-[-1447px]  lg:top-[-4449px] lg:left-[58vw]",
-      y: sm,
+        " sm:top-[-800px] sm:left-[47vw]   lg:top-[-3717px] lg:left-[40vw]",
+      y: xl,
 
       height: "h-[440px] md:h-[490px] lg:h-[598px]",
       backHeight: "min-h-[440px]",
@@ -279,11 +324,13 @@ const Members = () => {
       desciption:
         "Seasoned researcher, diving deep into multiple modal learning.",
       linkedin: "https://www.linkedin.com/in/darshansinghs/",
+     
+      
     },
     {
       position:
-        " sm:left-[0px] sm:top-[1154px] lg:top-[-1784px] lg:left-[6vw] xl:left-[10vw]",
-      y: xxl,
+        " sm:top-[-250px] lg:top-[-3217px] lg:left-[-6vw] xl:left-0",
+      y: xl,
 
       height: "h-[440px] md:h-[490px] lg:h-[598px]",
       backHeight: "min-h-[440px]",
@@ -295,12 +342,12 @@ const Members = () => {
       desciption:
         " Embracing a 'just do it' mentality, avid food lover, and discerning connoisseur.",
       linkedin: "https://www.linkedin.com/in/sanjay-suriyakumar-a51aa821b/",
+      
     },
     {
       position:
-        " sm:top-[-800px] sm:left-[47vw]   lg:top-[-3717px] lg:left-[40vw]",
-      y: xl,
-
+        " sm:top-[600px] lg:top-[-2517px] sm:left-[47vw]  lg:left-[26vw] xl:left-[29vw]",
+      y: xxl,
       height: "h-[440px] md:h-[490px] lg:h-[598px]",
       backHeight: "min-h-[440px]",
       name: "Dhaval Taunk",
@@ -312,9 +359,10 @@ const Members = () => {
         " Blogger, passionate about research with publications in prestigious venues like WWW.",
       linkedin: "https://www.linkedin.com/in/dhavaltaunk08/",
     },
+    
   ];
   return (
-    <div className="w-full overflow-hidden px-[20px] pl-[20px] md:pl-[50px] lg:pl-[100px] py-[50px] md:py-[70px] lg:py-[150px]  bg-[#00081F] flex flex-col justify-center gap-[50px] items-center sm:block sm:relative sm:h-[6667px] md:h-[7350px] lg:h-[6409px] ">
+    <div className="w-full overflow-hidden px-[20px] pl-[20px] md:pl-[50px] lg:pl-[100px] py-[50px] md:py-[70px] lg:py-[150px]  bg-[#00081F] flex flex-col justify-center gap-[50px] items-center sm:block sm:relative sm:h-[7407px] md:h-[8250px] lg:h-[7509px] ">
       {memebersList.map(
         (
           {
