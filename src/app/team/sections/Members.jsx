@@ -58,7 +58,7 @@ const Members = () => {
     },
     {
       position:
-        " sm:left-[0px] sm:top-[-330px]  lg:top-[-1040px] lg:left-[58vw]",
+        "  sm:top-[-330px] lg:top-[-1040px] sm:left-[0px] lg:left-[58vw]",
       y: sm,
 
       height: "h-[440px] md:h-[490px] lg:h-[598px]",
@@ -334,6 +334,23 @@ const Members = () => {
 
       height: "h-[440px] md:h-[490px] lg:h-[598px]",
       backHeight: "min-h-[440px]",
+      name: "Paranjit Singh",
+      role: "Sales Navigator",
+      bg: "bg-paranjit grayscale",
+      cp: "Sales Navigator",
+      education: "MBA from Lovely Professional University (LPU).",
+      desciption:
+        "I focus on being productive rather than being busy.",
+      linkedin: "http://linkedin.com/in/paranjit-singh-94153231a",
+      
+    },
+    {
+      position:
+        " sm:top-[600px] lg:top-[-2517px] sm:left-[47vw]  lg:left-[26vw] xl:left-[29vw]",
+      y: xxl,
+
+      height: "h-[440px] md:h-[490px] lg:h-[598px]",
+      backHeight: "min-h-[440px]",
       name: "Sanjay Suriyakumar",
       role: "Research Scientist",
       bg: "bg-sanjay",
@@ -342,12 +359,12 @@ const Members = () => {
       desciption:
         " Embracing a 'just do it' mentality, avid food lover, and discerning connoisseur.",
       linkedin: "https://www.linkedin.com/in/sanjay-suriyakumar-a51aa821b/",
-      
     },
     {
       position:
-        " sm:top-[600px] lg:top-[-2517px] sm:left-[47vw]  lg:left-[26vw] xl:left-[29vw]",
-      y: xxl,
+        " sm:top-[-500px] lg:top-[-4300px] sm:left-[0px] lg:left-[58vw]",
+      y: xl,
+
       height: "h-[440px] md:h-[490px] lg:h-[598px]",
       backHeight: "min-h-[440px]",
       name: "Dhaval Taunk",
@@ -362,7 +379,7 @@ const Members = () => {
     
   ];
   return (
-    <div className="w-full overflow-hidden px-[20px] pl-[20px] md:pl-[50px] lg:pl-[100px] py-[50px] md:py-[70px] lg:py-[150px]  bg-[#00081F] flex flex-col justify-center gap-[50px] items-center sm:block sm:relative sm:h-[7407px] md:h-[8250px] lg:h-[7509px] ">
+    <div className="w-full overflow-hidden px-[20px] pl-[20px] md:pl-[50px] lg:pl-[100px] py-[50px] md:py-[70px] lg:py-[150px]  bg-[#00081F] flex flex-col justify-center gap-[50px] items-center sm:block sm:relative sm:h-[7907px] md:h-[8850px] lg:h-[7509px] ">
       {memebersList.map(
         (
           {
@@ -411,7 +428,7 @@ const Members = () => {
                   <h3 className="text-white text-[2xl] md:text-3xl font-aeonik tracking-normal uppercase">
                     {cp}
                   </h3>
-                  <p className="text-[#9EB3CF] text-lg  font-bwmss01 pt-[15px]">
+                  <p className="text-[#c0c7d0] text-lg  font-bwmss01 pt-[15px]">
                     {education}
                   </p>{" "}
                   <p className="text-[#9EB3CF] text-lg  font-bwmss01 pt-[5px]">
