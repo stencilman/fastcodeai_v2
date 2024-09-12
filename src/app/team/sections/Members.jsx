@@ -74,7 +74,7 @@ const Members = () => {
     },
     {
       position:
-        " sm:top-[58px] sm:left-[47vw]   lg:top-[-302px] lg:left-[40vw]",
+        " sm:top-[58px] lg:top-[-302px] sm:left-[47vw] lg:left-[40vw]",
       y: xl,
 
       height: "h-[440px] md:h-[490px] lg:h-[598px]",
@@ -227,13 +227,13 @@ const Members = () => {
 
       height: "h-[440px] md:h-[490px] lg:h-[598px]",
       backHeight: "min-h-[440px]",
-      name: "Tirth Pandit",
-      role: "Senior Research Scientist",
-      bg: "bg-tirth",
-      cp: "Senior Research Scientist",
-      education: "M.Tech (CS) IIIT Hyderabad. ",
-      desciption: "Strong engineer, avid researcher, and kick-ass musician.",
-      linkedin: "https://www.linkedin.com/in/tirth-pandit/",
+      name: "Shubham Kumar",
+      role: "Software Developer Engineer",
+      bg: "bg-subham1 grayscale",
+      cp: "Software Developer Engineer",
+      education: "B.Tech (CS) IIIT Kalyani. ",
+      desciption: "Love gaming and figuring out how things work. Always learning and trying new experiences.",
+      linkedin: "https://www.linkedin.com/in/shubham-kumar1337/",
       
     },
     {
@@ -242,14 +242,15 @@ const Members = () => {
 
       height: "h-[440px] md:h-[490px] lg:h-[598px]",
       backHeight: "min-h-[440px]",
-      name: "Prabal Patel",
-      role: "Head of Sales and Business Development",
-      bg: "bg-prabal grayscale",
-      cp: "Head of Sales and Business Development",
-      education: "MBA from Indiana University. ",
-      desciption:
-        "15 years of technology services experience, delivering managed teams and projects for large clients in US and India.",
-      linkedin: "https://www.linkedin.com/in/prabalpatel211/",
+      name: "Tirth Pandit",
+      role: "Senior Research Scientist",
+      bg: "bg-tirth",
+      cp: "Senior Research Scientist",
+      education: "M.Tech (CS) IIIT Hyderabad. ",
+      desciption: "Strong engineer, avid researcher, and kick-ass musician.",
+      linkedin: "https://www.linkedin.com/in/tirth-pandit/",
+
+    
       
     },
     
@@ -261,14 +262,16 @@ const Members = () => {
 
       height: "h-[440px] md:h-[490px] lg:h-[598px]",
       backHeight: "min-h-[440px]",
-      name: "Akash Parua",
-      role: "Machine Learning Engineer",
-      bg: "bg-akash grayscale",
-      cp: "Machine Learning Engineer",
-      education: "B.Tech (CS) IIIT Kalyani.",
+      name: "Prabal Patel",
+      role: "Head of Sales and Business Development",
+      bg: "bg-prabal grayscale",
+      cp: "Head of Sales and Business Development",
+      education: "MBA from Indiana University. ",
       desciption:
-        "Love building innovative AI solutions.",
-      linkedin: "https://www.linkedin.com/in/akash-parua-76b2531b7/",
+        "15 years of technology services experience, delivering managed teams and projects for large clients in US and India.",
+      linkedin: "https://www.linkedin.com/in/prabalpatel211/",
+
+    
       
       
     },
@@ -280,6 +283,25 @@ const Members = () => {
 
       height: "h-[440px] md:h-[490px] lg:h-[598px]",
       backHeight: "min-h-[440px]",
+      name: "Akash Parua",
+      role: "Machine Learning Engineer",
+      bg: "bg-akash grayscale",
+      cp: "Machine Learning Engineer",
+      education: "B.Tech (CS) IIIT Kalyani.",
+      desciption:
+        "Love building innovative AI solutions.",
+      linkedin: "https://www.linkedin.com/in/akash-parua-76b2531b7/",
+     
+     
+      
+    },
+    {
+      position:
+        " sm:left-[0px] sm:top-[1154px] lg:top-[-1784px] lg:left-[6vw] xl:left-[10vw]",
+      y: xxl,
+
+      height: "h-[440px] md:h-[490px] lg:h-[598px]",
+      backHeight: "min-h-[440px]",
       name: "Sughosh Patil",
       role: "Senior Research Scientist",
       bg: "bg-sughosh ",
@@ -288,13 +310,14 @@ const Members = () => {
       desciption:
         "Seasoned researcher, strong engineer with over half a decade of experience in Computer Vision, and an avid wildlife photographer whose work has been published by NatGeo.",
       linkedin: "https://www.linkedin.com/in/sughoshpatil/",
+
+    
      
-      
     },
     {
       position:
-        " sm:left-[0px] sm:top-[1154px] lg:top-[-1784px] lg:left-[6vw] xl:left-[10vw]",
-      y: xxl,
+        " sm:top-[-800px] sm:left-[47vw]   lg:top-[-3717px] lg:left-[40vw]",
+      y: xl,
 
       height: "h-[530px] md:h-[490px] lg:h-[598px] ",
       backHeight: "min-h-[536px]",
@@ -307,11 +330,11 @@ const Members = () => {
         "Seasoned iOS Engineer with a decade of experience, exploring AI and Machine Learning. Also a poet, classical music enthusiast, and avid football critic.",
       linkedin: "https://in.linkedin.com/in/eshwar-ramesh-831303ab",
      
-     
+      
     },
     {
       position:
-        " sm:top-[-800px] sm:left-[47vw]   lg:top-[-3717px] lg:left-[40vw]",
+        " sm:top-[-250px] lg:top-[-3217px] lg:left-[-6vw] xl:left-0",
       y: xl,
 
       height: "h-[440px] md:h-[490px] lg:h-[598px]",
@@ -329,9 +352,10 @@ const Members = () => {
     },
     {
       position:
-        " sm:top-[-250px] lg:top-[-3217px] lg:left-[-6vw] xl:left-0",
-      y: xl,
+        " sm:top-[600px] lg:top-[-2517px] sm:left-[47vw]  lg:left-[26vw] xl:left-[29vw]",
+      y: xxl,
 
+       
       height: "h-[440px] md:h-[490px] lg:h-[598px]",
       backHeight: "min-h-[440px]",
       name: "Paranjit Singh",
@@ -346,8 +370,9 @@ const Members = () => {
     },
     {
       position:
-        " sm:top-[600px] lg:top-[-2517px] sm:left-[47vw]  lg:left-[26vw] xl:left-[29vw]",
-      y: xxl,
+        " sm:top-[-500px] lg:top-[-4300px] sm:left-[0px] lg:left-[58vw]",
+      y: xl,
+
 
       height: "h-[440px] md:h-[490px] lg:h-[598px]",
       backHeight: "min-h-[440px]",
@@ -359,11 +384,13 @@ const Members = () => {
       desciption:
         " Embracing a 'just do it' mentality, avid food lover, and discerning connoisseur.",
       linkedin: "https://www.linkedin.com/in/sanjay-suriyakumar-a51aa821b/",
+      
     },
     {
       position:
-        " sm:top-[-500px] lg:top-[-4300px] sm:left-[0px] lg:left-[58vw]",
+        " sm:top-[-500px] lg:top-[-4000px] sm:left-[47vw] lg:left-[40vw]",
       y: xl,
+
 
       height: "h-[440px] md:h-[490px] lg:h-[598px]",
       backHeight: "min-h-[440px]",
@@ -375,11 +402,12 @@ const Members = () => {
       desciption:
         " Blogger, passionate about research with publications in prestigious venues like WWW.",
       linkedin: "https://www.linkedin.com/in/dhavaltaunk08/",
+      
     },
     
   ];
   return (
-    <div className="w-full overflow-hidden px-[20px] pl-[20px] md:pl-[50px] lg:pl-[100px] py-[50px] md:py-[70px] lg:py-[150px]  bg-[#00081F] flex flex-col justify-center gap-[50px] items-center sm:block sm:relative sm:h-[7907px] md:h-[8850px] lg:h-[7509px] ">
+    <div className="w-full overflow-hidden px-[20px] pl-[20px] md:pl-[50px] lg:pl-[100px] py-[50px] md:py-[70px] lg:py-[150px]  bg-[#00081F] flex flex-col justify-center gap-[50px] items-center sm:block sm:relative sm:h-[8307px] md:h-[9250px] lg:h-[8189px] ">
       {memebersList.map(
         (
           {
