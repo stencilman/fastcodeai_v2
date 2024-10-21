@@ -5,6 +5,30 @@ import React from "react";
 const LatestBlogs = () => {
   const dataArray = [
     {
+      title: "Beyond Data and Model Parallelism: Sequence Parallelism with Scatter and Gather Patterns",
+      href: "/blogs/sequence-parallelism",
+      authorName: "Baharat Singh ",
+      authorImg: "",
+      publicationDate: "15 Oct 2024",
+      background: "bg-sequence",
+    },
+    {
+      title: "AlphaFold2: AI at the Forefront of Biochemistry Breakthroughs",
+      href: "/blogs/structural-biology",
+      authorName: "Arjun Jain",
+      authorImg: "/arjun.jpg",
+      publicationDate: "14 Oct 2024",
+      background: "bg-structural_biology",
+    },
+    {
+      title: "Our Journey of Growth: Building a Team Ready to Shape the Future",
+      href: "/blogs/growth-journey",
+      authorName: "Arjun Jain",
+      authorImg: "/arjun.jpg",
+      publicationDate: "11 Oct 2024",
+      background: "bg-journey",
+    },
+    {
       title: "Matrix Multiplication Mastery: Reaching 93% of NVIDIA’s cuBLAS Speed",
       href: "/blogs/nvdias-cublas",
       authorName: "Arjun Jain",
@@ -733,6 +757,53 @@ const LatestBlogs = () => {
          {/* Map over dataArray for 10 row */}
          {dataArray.slice(22, 25).map((e, index) => (
           <div key={index} className="col-span-1 sm:col-span-1 md:col-span-1">
+            <Link href={e.href}>
+              <div
+                className={`card-zoom w-full h-[327px] relative  overflow-hidden group rounded-3xl`}
+              >
+                <div
+                  className={`card-zoom-image absolute w-full h-full transition-all duration-500 ease-in-out transform bg-center bg-cover ${e.background} group-hover:scale-150`}
+                ></div>
+                <div className="absolute inset-0  bg-[#23478e8a] rounded-[24px]"></div>
+                <div className="absolute bottom-[20px] m-[20px]">
+                  <h3 className="text-white text-2xl font-aeonik tracking-wide mb-[15px]">
+                    {e.title}
+                  </h3>
+                  <div className="flex gap-[10px] items-center">
+                    {e?.authorImg && (
+                      <div className="border border-[#707070] rounded-full  w-[50px] h-[50px] relative overflow-hidden">
+                        <Image
+                          className="rounded-full"
+                          src={e?.authorImg}
+                          width="50"
+                          height="50"
+                          alt=""
+                        />
+                      </div>
+                    )}
+                    <div>
+                      <b className="text-white  font-aeonik tracking-wide ">
+                        {e.authorName}
+                      </b>
+                      <p className="text-[#FFFFFF] text-lg font-bwmss01">
+                        {e.publicationDate}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Link>
+          </div>
+        ))}
+        {dataArray.slice(25, 27).map((e, index) => (
+          <div
+            key={index}
+            className={`col-span-1 ${
+              index === 0
+                ? "sm:col-span-1 md:col-span-1"
+                : "sm:col-span-1 md:col-span-2"
+            }`}
+          >
             <Link href={e.href}>
               <div
                 className={`card-zoom w-full h-[327px] relative  overflow-hidden group rounded-3xl`}

@@ -89,7 +89,11 @@ module.exports = {
         'visionTransformers': "url('/blogs/vision-transformers/hero/img1.jpeg')",
         'oilGasHero': "url('/blogs/oil-gas/oilGas-Hero.webp')",
         'nvdiaHero': "url('/blogs/nvdia/hero/nvdia.jpg')",
-
+        'journey': "url('/blogs/journey/growth-journey.jpeg')",
+        'sequence': "url('/blogs/sequence/main.png')",
+        'sequence_conc': "url('/blogs/sequence/concept.png')",
+        'structural_biology': "url('/blogs/structural-biology/main.jpeg')",
+        
         // *** Team Members ***
         'arjun': "url('/members/arjun.png')",
         'dhaval': "url('/members/dhaval1.png')",
