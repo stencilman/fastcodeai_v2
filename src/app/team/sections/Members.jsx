@@ -90,7 +90,7 @@ const Members = () => {
     },
     {
       position:
-        " sm:top-[-182px] sm:left-[0px]  lg:top-[-800px] lg:left-[6vw] xl:left-[10vw]",
+        " sm:top-[-182px]  lg:top-[-800px] sm:left-[0px]  lg:left-[6vw] xl:left-[10vw]",
       y: lg,
 
       height: "h-[440px] md:h-[490px] lg:h-[598px]",
@@ -396,7 +396,7 @@ const Members = () => {
       backHeight: "min-h-[440px]",
       name: "Dhaval Taunk",
       role: "Research Scientist",
-      bg: "bg-dhaval",
+      bg: "bg-dhaval ",
       cp: "Research Scientist",
       education: "MS (CS) IIIT Hyderabad.",
       desciption:
@@ -404,10 +404,28 @@ const Members = () => {
       linkedin: "https://www.linkedin.com/in/dhavaltaunk08/",
       
     },
+    {
+      position:
+        " sm:top-[-500px] lg:top-[-4300px] sm:left-[0px]  lg:left-[6vw] xl:left-[10vw]",
+      y: xl,
+
+
+      height: "h-[440px] md:h-[490px] lg:h-[598px]",
+      backHeight: "min-h-[440px]",
+      name: "Saket Tiwari",
+      role: "Software Developer Engineer",
+      bg: "bg-saket grayscale",
+      cp: "Software Developer Engineer",
+      education: "B.Tech (CS) IIIT Alhabad.",
+      desciption:
+        "",
+      linkedin: "https://www.linkedin.com/in/saket2401/",
+      
+    },
     
   ];
   return (
-    <div className="w-full overflow-hidden px-[20px] pl-[20px] md:pl-[50px] lg:pl-[100px] py-[50px] md:py-[70px] lg:py-[150px]  bg-[#00081F] flex flex-col justify-center gap-[50px] items-center sm:block sm:relative sm:h-[8307px] md:h-[9250px] lg:h-[8189px] ">
+    <div className="w-full overflow-hidden px-[20px] pl-[20px] md:pl-[50px] lg:pl-[100px] py-[50px] md:py-[70px] lg:py-[150px]  bg-[#00081F] flex flex-col justify-center gap-[50px] items-center sm:block sm:relative sm:h-[8807px] md:h-[9750px] lg:h-[8609px] ">
       {memebersList.map(
         (
           {

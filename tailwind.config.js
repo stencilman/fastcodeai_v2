@@ -119,6 +119,7 @@ module.exports = {
         'subham1': "url('/members/subham1.png')",
         'paranjit': "url('/members/paranjit.png')",
         'akash': "url('/members/akash.jpg')",
+        'saket': "url('/members/saket.png')",
       },
       background: {
         cusgrad: "transparent linear-gradient(360deg, #13224F 0%, #13224F 0%, #0C1C46 51%, #020F3B 100%) 0% 0% no-repeat padding-box",
