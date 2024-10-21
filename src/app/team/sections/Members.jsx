@@ -416,7 +416,7 @@ const Members = () => {
       role: "Software Developer Engineer",
       bg: "bg-saket grayscale",
       cp: "Software Developer Engineer",
-      education: "B.Tech (CS) IIIT Alhabad.",
+      education: "B.Tech (CS) IIIT Allahabad.",
       desciption:
         "",
       linkedin: "https://www.linkedin.com/in/saket2401/",
