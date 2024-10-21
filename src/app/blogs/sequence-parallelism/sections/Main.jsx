@@ -136,11 +136,22 @@ const Main = () => {
                 <p className="text-[#9EB3CF] text-lg font-bwmss01">
                   <b className="text-white">How Sequence Parallelism Works</b>
                   <br />
-                  Utilizing this command within the VSCode Remote-SSH extension,
-                  accessed via the Connect to Host option, presented the
-                  password prompt directly. However, frequent password entries
-                  for each new VSCode folder proved inefficient.
+                  In sequence parallelism, an input sequence is divided into
+                  segments, each assigned to a different GPU. For instance, if
+                  you have a sequence of 1,000 tokens and four GPUs, each GPU
+                  processes 250 tokens. This approach keeps GPUs busy and
+                  optimizes training in the following way:
                 </p>
+
+                <p className="text-[#9EB3CF] text-lg font-bwmss01">
+                  <b className="text-white">Local Computations</b>
+                  <br />
+                  Each GPU independently computes the embeddings and initial
+                  layers for its segment of the sequence. This ensures that all
+                  GPUs are actively processing data without waiting on others,
+                  maximizing parallel efficiency.
+                </p>
+
                 <p className="text-[#9EB3CF] text-lg font-bwmss01">
                   <b className="text-white">
                     Attention Mechanism with Communication
@@ -148,11 +159,6 @@ const Main = () => {
                   <br />
                   Transformers and similar models rely on attention mechanisms
                   that require access to the entire sequence. To handle this:
-                  Each GPU computes the key and value tensors for its segment.
-                  GPUs then scatter these tensors, exchanging them so that every
-                  GPU has access to the full set of keys and values. While this
-                  exchange happens, GPUs continue computing the query tensors
-                  for their segments, keeping them busy during communication.
                 </p>
                 <div className="text-[#9EB3CF] text-lg font-bwmss01">
                   <ul className="mb-0">
