@@ -73,8 +73,7 @@ const Members = () => {
       linkedin: "https://www.linkedin.com/in/yash-agarwal-a99944236/",
     },
     {
-      position:
-        " sm:top-[58px] lg:top-[-302px] sm:left-[47vw] lg:left-[40vw]",
+      position: " sm:top-[58px] lg:top-[-302px] sm:left-[47vw] lg:left-[40vw]",
       y: xl,
 
       height: "h-[440px] md:h-[490px] lg:h-[598px]",
@@ -133,7 +132,8 @@ const Members = () => {
       bg: "bg-prayag grayscale",
       cp: "Software Engineer",
       education: "B.Tech in CSE from IIIT Kalyani.",
-      desciption: "Just keep rolling with everything I love—whether it's wrestling with Flutter bugs, designing random things, leveling up in games, bingeing anime, or pretending my guitar skills are concert-worthy!",
+      desciption:
+        "Just keep rolling with everything I love—whether it's wrestling with Flutter bugs, designing random things, leveling up in games, bingeing anime, or pretending my guitar skills are concert-worthy!",
       linkedin: "https://www.linkedin.com/in/prayag-x/",
     },
     {
@@ -150,12 +150,10 @@ const Members = () => {
       education: "Currently pursuing a B.Tech (CS) at PES University.",
       desciption: "Looks for uncharted territories and unanswered questions.",
       linkedin: "https://www.linkedin.com/in/surya-ganesh-7b16862b9",
-
-     
     },
 
     {
-      position: "sm:top-[260px] sm:left-[47vw] lg:top-[-600px] lg:left-[58vw]",
+      position: "sm:top-[260px] lg:top-[-600px] sm:left-[47vw] lg:left-[58vw]",
       y: xxl,
 
       height: "h-[440px] md:h-[490px] lg:h-[598px]",
@@ -168,7 +166,6 @@ const Members = () => {
         "MTech AI from IISc, MBA in Technology Management with Major in Finance (and CFA Level 1 cleared) from NMIMS. ",
       desciption: "Engineer, researcher, and avid football enthusiast.",
       linkedin: "https://www.linkedin.com/in/rishabh-gupta-a5886712a/",
-      
     },
     {
       position:
@@ -183,7 +180,6 @@ const Members = () => {
       education: "MTech (CS) IIS.",
       desciption: "Engineer, researcher, and avid football enthusiast.",
       linkedin: "https://www.linkedin.com/in/hrishikesh-jadhav-34595a167/",
-     
     },
 
     {
@@ -197,16 +193,47 @@ const Members = () => {
       role: "Research Intern",
       bg: "bg-sridhar grayscale",
       cp: "Research Intern",
-      education: "M.Sc. (Mathematics) + B.Tech (ENI) from BITS Pilani (Hyderabad).",
+      education:
+        "M.Sc. (Mathematics) + B.Tech (ENI) from BITS Pilani (Hyderabad).",
       desciption:
         "Amateur researcher, active learner, passionate about Computer Vision and Reinforcement Learning.",
       linkedin: "https://www.linkedin.com/in/sridhar-kamath-605a44205/",
-     
     },
     {
       position:
         " sm:top-[500px] sm:left-[47vw] lg:top-[-1408px] lg:left-[40vw] ",
       y: xxl,
+
+      height: "h-[440px] md:h-[490px] lg:h-[598px]",
+      backHeight: "min-h-[440px]",
+      name: "Shubham Kumar",
+      role: "Software Developer Engineer",
+      bg: "bg-subham1 grayscale",
+      cp: "Software Developer Engineer",
+      education: "B.Tech (CS) IIIT Kalyani. ",
+      desciption:
+        "Love gaming and figuring out how things work. Always learning and trying new experiences.",
+      linkedin: "https://www.linkedin.com/in/shubham-kumar1337/",
+    },
+    {
+      position:
+        "sm:left-[0px] sm:top-[-947px]  lg:top-[-3000px] lg:left-[6vw] xl:left-[10vw]",
+      y: md,
+
+      height: "h-[440px] md:h-[490px] lg:h-[598px]",
+      backHeight: "min-h-[440px]",
+      name: "Siddharth Khandelwal",
+      role: "Associate Researcher",
+      bg: "bg-siddharth grayscale",
+      cp: "Associate Researcher",
+      education: "B.Tech from IIIT Bombay.",
+      desciption:
+        "",
+      linkedin: "https://www.linkedin.com/in/siddharth-khandelwal-711370193/",
+    },
+    {
+      position: " sm:top-[-747px]  lg:top-[-2800px] lg:left-[-6vw] xl:left-0",
+      y: lg,
 
       height: "h-[440px] md:h-[490px] lg:h-[598px]",
       backHeight: "min-h-[440px]",
@@ -218,27 +245,14 @@ const Members = () => {
       desciption:
         "Integrating AI with web applications, focusing on empathetic user experience design.",
       linkedin: "https://www.linkedin.com/in/abdul-muqtadir-dev/",
+
      
     },
+
     {
       position:
-        "sm:left-[0px] sm:top-[-947px]  lg:top-[-3000px] lg:left-[6vw] xl:left-[10vw]",
-      y: md,
-
-      height: "h-[440px] md:h-[490px] lg:h-[598px]",
-      backHeight: "min-h-[440px]",
-      name: "Shubham Kumar",
-      role: "Software Developer Engineer",
-      bg: "bg-subham1 grayscale",
-      cp: "Software Developer Engineer",
-      education: "B.Tech (CS) IIIT Kalyani. ",
-      desciption: "Love gaming and figuring out how things work. Always learning and trying new experiences.",
-      linkedin: "https://www.linkedin.com/in/shubham-kumar1337/",
-      
-    },
-    {
-      position: " sm:top-[-747px]  lg:top-[-2800px] lg:left-[-6vw] xl:left-0",
-      y: lg,
+        " sm:left-[47vw] sm:top-[-447px] lg:top-[-2800px] lg:left-[26vw] xl:left-[29vw]",
+      y: xl,
 
       height: "h-[440px] md:h-[490px] lg:h-[598px]",
       backHeight: "min-h-[440px]",
@@ -250,15 +264,13 @@ const Members = () => {
       desciption: "Strong engineer, avid researcher, and kick-ass musician.",
       linkedin: "https://www.linkedin.com/in/tirth-pandit/",
 
-    
-      
     },
-    
 
     {
       position:
-        " sm:left-[47vw] sm:top-[-447px] lg:top-[-2800px] lg:left-[26vw] xl:left-[29vw]",
-      y: xl,
+        " sm:left-[0px] sm:top-[-1447px]  lg:top-[-4449px] lg:left-[58vw]",
+      y: sm,
+
 
       height: "h-[440px] md:h-[490px] lg:h-[598px]",
       backHeight: "min-h-[440px]",
@@ -271,15 +283,12 @@ const Members = () => {
         "15 years of technology services experience, delivering managed teams and projects for large clients in US and India.",
       linkedin: "https://www.linkedin.com/in/prabalpatel211/",
 
-    
-      
-      
+     
     },
-
     {
       position:
-        " sm:left-[0px] sm:top-[-1447px]  lg:top-[-4449px] lg:left-[58vw]",
-      y: sm,
+        " sm:left-[0px] sm:top-[1154px] lg:top-[-1784px] lg:left-[6vw] xl:left-[10vw]",
+      y: xxl,
 
       height: "h-[440px] md:h-[490px] lg:h-[598px]",
       backHeight: "min-h-[440px]",
@@ -288,17 +297,15 @@ const Members = () => {
       bg: "bg-akash grayscale",
       cp: "Machine Learning Engineer",
       education: "B.Tech (CS) IIIT Kalyani.",
-      desciption:
-        "Love building innovative AI solutions.",
+      desciption: "Love building innovative AI solutions.",
       linkedin: "https://www.linkedin.com/in/akash-parua-76b2531b7/",
-     
-     
-      
+
     },
     {
       position:
-        " sm:left-[0px] sm:top-[1154px] lg:top-[-1784px] lg:left-[6vw] xl:left-[10vw]",
-      y: xxl,
+        " sm:top-[-800px] sm:left-[47vw]   lg:top-[-3717px] lg:left-[40vw]",
+      y: xl,
+
 
       height: "h-[440px] md:h-[490px] lg:h-[598px]",
       backHeight: "min-h-[440px]",
@@ -311,13 +318,11 @@ const Members = () => {
         "Seasoned researcher, strong engineer with over half a decade of experience in Computer Vision, and an avid wildlife photographer whose work has been published by NatGeo.",
       linkedin: "https://www.linkedin.com/in/sughoshpatil/",
 
-    
-     
     },
     {
-      position:
-        " sm:top-[-800px] sm:left-[47vw]   lg:top-[-3717px] lg:left-[40vw]",
+      position: " sm:top-[-250px] lg:top-[-3217px] lg:left-[-6vw] xl:left-0",
       y: xl,
+
 
       height: "h-[530px] md:h-[490px] lg:h-[598px] ",
       backHeight: "min-h-[536px]",
@@ -329,13 +334,13 @@ const Members = () => {
       desciption:
         "Seasoned iOS Engineer with a decade of experience, exploring AI and Machine Learning. Also a poet, classical music enthusiast, and avid football critic.",
       linkedin: "https://in.linkedin.com/in/eshwar-ramesh-831303ab",
-     
-      
+
     },
     {
       position:
-        " sm:top-[-250px] lg:top-[-3217px] lg:left-[-6vw] xl:left-0",
-      y: xl,
+        " sm:top-[600px] lg:top-[-2517px] sm:left-[47vw]  lg:left-[26vw] xl:left-[29vw]",
+      y: xxl,
+
 
       height: "h-[440px] md:h-[490px] lg:h-[598px]",
       backHeight: "min-h-[440px]",
@@ -347,15 +352,14 @@ const Members = () => {
       desciption:
         "Seasoned researcher, diving deep into multiple modal learning.",
       linkedin: "https://www.linkedin.com/in/darshansinghs/",
-     
-      
+
     },
     {
       position:
-        " sm:top-[600px] lg:top-[-2517px] sm:left-[47vw]  lg:left-[26vw] xl:left-[29vw]",
-      y: xxl,
+        " sm:top-[-500px] lg:top-[-4300px] sm:left-[0px] lg:left-[58vw]",
+      y: xl,
 
-       
+
       height: "h-[440px] md:h-[490px] lg:h-[598px]",
       backHeight: "min-h-[440px]",
       name: "Paranjit Singh",
@@ -363,16 +367,15 @@ const Members = () => {
       bg: "bg-paranjit grayscale",
       cp: "Sales Navigator",
       education: "MBA from Lovely Professional University (LPU).",
-      desciption:
-        "I focus on being productive rather than being busy.",
+      desciption: "I focus on being productive rather than being busy.",
       linkedin: "http://linkedin.com/in/paranjit-singh-94153231a",
-      
+
+   
     },
     {
       position:
-        " sm:top-[-500px] lg:top-[-4300px] sm:left-[0px] lg:left-[58vw]",
+        " sm:top-[-500px] lg:top-[-4000px] sm:left-[47vw] lg:left-[40vw]",
       y: xl,
-
 
       height: "h-[440px] md:h-[490px] lg:h-[598px]",
       backHeight: "min-h-[440px]",
@@ -384,11 +387,11 @@ const Members = () => {
       desciption:
         " Embracing a 'just do it' mentality, avid food lover, and discerning connoisseur.",
       linkedin: "https://www.linkedin.com/in/sanjay-suriyakumar-a51aa821b/",
-      
+
     },
     {
       position:
-        " sm:top-[-500px] lg:top-[-4000px] sm:left-[47vw] lg:left-[40vw]",
+        "sm:top-[-500px] lg:top-[-4300px] sm:left-[0px]  lg:left-[6vw] xl:left-[10vw]",
       y: xl,
 
 
@@ -400,15 +403,14 @@ const Members = () => {
       cp: "Research Scientist",
       education: "MS (CS) IIIT Hyderabad.",
       desciption:
-        " Blogger, passionate about research with publications in prestigious venues like WWW.",
+        "Blogger, passionate about research with publications in prestigious venues like WWW.",
       linkedin: "https://www.linkedin.com/in/dhavaltaunk08/",
-      
+
     },
     {
       position:
-        " sm:top-[-500px] lg:top-[-4300px] sm:left-[0px]  lg:left-[6vw] xl:left-[10vw]",
+        "sm:top-[-500px] lg:top-[-4300px] sm:left-[47vw] lg:left-[58vw]",
       y: xl,
-
 
       height: "h-[440px] md:h-[490px] lg:h-[598px]",
       backHeight: "min-h-[440px]",
@@ -418,14 +420,12 @@ const Members = () => {
       cp: "Software Developer Engineer",
       education: "B.Tech (CS) IIIT Allahabad.",
       desciption:
-        "",
+        "Cool under pressure and sharp in action, I turn challenges into opportunities.",
       linkedin: "https://www.linkedin.com/in/saket2401/",
-      
     },
-    
   ];
   return (
-    <div className="w-full overflow-hidden px-[20px] pl-[20px] md:pl-[50px] lg:pl-[100px] py-[50px] md:py-[70px] lg:py-[150px]  bg-[#00081F] flex flex-col justify-center gap-[50px] items-center sm:block sm:relative sm:h-[8807px] md:h-[9750px] lg:h-[8609px] ">
+    <div className="w-full overflow-hidden px-[20px] pl-[20px] md:pl-[50px] lg:pl-[100px] py-[50px] md:py-[70px] lg:py-[150px]  bg-[#00081F] flex flex-col justify-center gap-[50px] items-center sm:block sm:relative sm:h-[9197px] md:h-[10150px] lg:h-[9119px] ">
       {memebersList.map(
         (
           {

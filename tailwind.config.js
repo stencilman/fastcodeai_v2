@@ -93,6 +93,10 @@ module.exports = {
         'sequence': "url('/blogs/sequence/main.png')",
         'sequence_conc': "url('/blogs/sequence/concept.png')",
         'structural_biology': "url('/blogs/structural-biology/main.jpeg')",
+        'omat': "url('/blogs/omat-2024/content.jpeg')",
+        'aiMilestone': "url('/blogs/ai-milestone/main.jpg')",
+        'claude': "url('/blogs/claude/main.png')",
+        'claude-cont': "url('/blogs/claude/content.jpeg')",
         
         // *** Team Members ***
         'arjun': "url('/members/arjun.png')",
@@ -119,7 +123,8 @@ module.exports = {
         'subham1': "url('/members/subham1.png')",
         'paranjit': "url('/members/paranjit.png')",
         'akash': "url('/members/akash.jpg')",
-        'saket': "url('/members/saket.png')",
+        'saket': "url('/members/saket.jpg')",
+        'siddharth': "url('/members/siddharth.jpeg')",
       },
       background: {
         cusgrad: "transparent linear-gradient(360deg, #13224F 0%, #13224F 0%, #0C1C46 51%, #020F3B 100%) 0% 0% no-repeat padding-box",

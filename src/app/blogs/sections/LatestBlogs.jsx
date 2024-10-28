@@ -3,9 +3,47 @@ import Link from "next/link";
 import React from "react";
 
 const LatestBlogs = () => {
+  
   const dataArray = [
+
     {
-      title: "Beyond Data and Model Parallelism: Sequence Parallelism with Scatter and Gather Patterns",
+      title: "Yann LeCun in Delhi: A Vision for the Future Beyond Large Language Models",
+      href: "/blogs/yann-lecun-delhi",
+      authorName: "Arjun Jain ",
+      authorImg: "/arjun.jpg",
+      publicationDate: "26 Oct 2024",
+      background: "",
+    },
+    {
+      title: "Behind the Screen with Claude: AI’s Next Big Leap into Autonomy",
+      href: "/blogs/claude",
+      authorName: "Arjun Jain ",
+      authorImg: "/arjun.jpg",
+      publicationDate: "24 Oct 2024",
+      background: "bg-claude",
+    },
+
+    {
+      title: "OMat24: Meta’s Bold Step Towards AI-Driven Materials Discovery",
+      href: "/blogs/omat-2024",
+      authorName: "Arjun Jain ",
+      authorImg: "/arjun.jpg",
+      publicationDate: "21 Oct 2024",
+      background: "bg-omat",
+    },
+
+    {
+      title:
+        "Celebrating AI’s Milestone: Neural Networks Receive Nobel Recognition",
+      href: "/blogs/ai-milestone",
+      authorName: "Arjun Jain ",
+      authorImg: "/arjun.jpg",
+      publicationDate: "18 Oct 2024",
+      background: "bg-aiMilestone",
+    },
+    {
+      title:
+        "Beyond Data and Model Parallelism: Sequence Parallelism with Scatter and Gather Patterns",
       href: "/blogs/sequence-parallelism",
       authorName: "Baharat Singh ",
       authorImg: "",
@@ -29,7 +67,8 @@ const LatestBlogs = () => {
       background: "bg-journey",
     },
     {
-      title: "Matrix Multiplication Mastery: Reaching 93% of NVIDIA’s cuBLAS Speed",
+      title:
+        "Matrix Multiplication Mastery: Reaching 93% of NVIDIA’s cuBLAS Speed",
       href: "/blogs/nvdias-cublas",
       authorName: "Arjun Jain",
       authorImg: "/arjun.jpg",
@@ -45,14 +84,15 @@ const LatestBlogs = () => {
       background: "bg-multiHopHero",
     },
     {
-      title: "Join Me at CyPhySS 2024: Exploring the Future of Autonomous Vehicles",
+      title:
+        "Join Me at CyPhySS 2024: Exploring the Future of Autonomous Vehicles",
       href: "/blogs/cyphyss-2024",
       authorName: "Arjun Jain",
       authorImg: "/arjun.jpg",
       publicationDate: "24 July 2024",
       background: "bg-cyphyssHero",
     },
-     {
+    {
       title: "Celebrating Team India’s Success at IMO 2024!",
       href: "/blogs/imo-2024",
       authorName: "Arjun Jain",
@@ -754,8 +794,8 @@ const LatestBlogs = () => {
             </Link>
           </div>
         ))}
-         {/* Map over dataArray for 10 row */}
-         {dataArray.slice(22, 25).map((e, index) => (
+        {/* Map over dataArray for 10 row */}
+        {dataArray.slice(22, 25).map((e, index) => (
           <div key={index} className="col-span-1 sm:col-span-1 md:col-span-1">
             <Link href={e.href}>
               <div
@@ -795,6 +835,7 @@ const LatestBlogs = () => {
             </Link>
           </div>
         ))}
+        {/* Map over dataArray for 11 row */}
         {dataArray.slice(25, 27).map((e, index) => (
           <div
             key={index}
@@ -804,6 +845,88 @@ const LatestBlogs = () => {
                 : "sm:col-span-1 md:col-span-2"
             }`}
           >
+            <Link href={e.href}>
+              <div
+                className={`card-zoom w-full h-[327px] relative  overflow-hidden group rounded-3xl`}
+              >
+                <div
+                  className={`card-zoom-image absolute w-full h-full transition-all duration-500 ease-in-out transform bg-center bg-cover ${e.background} group-hover:scale-150`}
+                ></div>
+                <div className="absolute inset-0  bg-[#23478e8a] rounded-[24px]"></div>
+                <div className="absolute bottom-[20px] m-[20px]">
+                  <h3 className="text-white text-2xl font-aeonik tracking-wide mb-[15px]">
+                    {e.title}
+                  </h3>
+                  <div className="flex gap-[10px] items-center">
+                    {e?.authorImg && (
+                      <div className="border border-[#707070] rounded-full  w-[50px] h-[50px] relative overflow-hidden">
+                        <Image
+                          className="rounded-full"
+                          src={e?.authorImg}
+                          width="50"
+                          height="50"
+                          alt=""
+                        />
+                      </div>
+                    )}
+                    <div>
+                      <b className="text-white  font-aeonik tracking-wide ">
+                        {e.authorName}
+                      </b>
+                      <p className="text-[#FFFFFF] text-lg font-bwmss01">
+                        {e.publicationDate}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Link>
+          </div>
+        ))}
+        {/* Map over dataArray for 12 row */}
+        {dataArray.slice(27, 30).map((e, index) => (
+          <div key={index} className="col-span-1 sm:col-span-1 md:col-span-1">
+            <Link href={e.href}>
+              <div
+                className={`card-zoom w-full h-[327px] relative  overflow-hidden group rounded-3xl`}
+              >
+                <div
+                  className={`card-zoom-image absolute w-full h-full transition-all duration-500 ease-in-out transform bg-center bg-cover ${e.background} group-hover:scale-150`}
+                ></div>
+                <div className="absolute inset-0  bg-[#23478e8a] rounded-[24px]"></div>
+                <div className="absolute bottom-[20px] m-[20px]">
+                  <h3 className="text-white text-2xl font-aeonik tracking-wide mb-[15px]">
+                    {e.title}
+                  </h3>
+                  <div className="flex gap-[10px] items-center">
+                    {e?.authorImg && (
+                      <div className="border border-[#707070] rounded-full  w-[50px] h-[50px] relative overflow-hidden">
+                        <Image
+                          className="rounded-full"
+                          src={e?.authorImg}
+                          width="50"
+                          height="50"
+                          alt=""
+                        />
+                      </div>
+                    )}
+                    <div>
+                      <b className="text-white  font-aeonik tracking-wide ">
+                        {e.authorName}
+                      </b>
+                      <p className="text-[#FFFFFF] text-lg font-bwmss01">
+                        {e.publicationDate}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </Link>
+          </div>
+        ))}
+        {/* Map over dataArray for 13 row */}
+        {dataArray.slice(30, 32).map((e, index) => (
+          <div key={index} className="col-span-1 sm:col-span-1 md:col-span-1">
             <Link href={e.href}>
               <div
                 className={`card-zoom w-full h-[327px] relative  overflow-hidden group rounded-3xl`}
