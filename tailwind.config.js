@@ -97,6 +97,8 @@ module.exports = {
         'aiMilestone': "url('/blogs/ai-milestone/main.jpg')",
         'claude': "url('/blogs/claude/main.png')",
         'claude-cont': "url('/blogs/claude/content.jpeg')",
+        'dd-neural-network': "url('/blogs/dd-neural-network/main.jpeg')",
+        'hardware-limitation': "url('/blogs/hardware-limitation/main.png')",
         
         // *** Team Members ***
         'arjun': "url('/members/arjun.png')",
