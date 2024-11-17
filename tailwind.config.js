@@ -99,6 +99,7 @@ module.exports = {
         'claude-cont': "url('/blogs/claude/content.jpeg')",
         'dd-neural-network': "url('/blogs/dd-neural-network/main.jpeg')",
         'hardware-limitation': "url('/blogs/hardware-limitation/main.png')",
+        'silu': "url('/blogs/silu/main.jpeg')",
         
         // *** Team Members ***
         'arjun': "url('/members/arjun.png')",

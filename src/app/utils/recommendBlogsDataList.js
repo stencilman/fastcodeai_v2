@@ -1,5 +1,23 @@
 export const recommendBlogsDataList = [
     {
+        title: "SwiGLU: The Activation Function Powering Modern LLMs",
+        href: "/blogs/swiglu",
+        authorName: "Arjun Jain",
+        comments: "10",
+        publicationDate: "12 Nov 2024",
+        thumbnail: "bg-[#122A5B]",
+        description: "",
+    },
+    {
+        title: "Why SiLU Matters: Smooth Activations for Advanced AI Models",
+        href: "/blogs/silu",
+        authorName: "Arjun Jain",
+        comments: "13",
+        publicationDate: "10 Nov 2024",
+        thumbnail: "bg-silu",
+        description: "",
+    },
+    {
         title: "De-Mystifying Kolmogorov-Arnold Networks (KANs)",
         href: "/blogs/kans",
         authorName: "Rishabh Gupta",
