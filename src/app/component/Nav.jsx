@@ -18,7 +18,7 @@ const navItems = [
     title: "Expertise",
     href: "/expertise",
   },
- 
+
   {
     title: "Portfolio",
     href: "/portfolio",
@@ -28,16 +28,16 @@ const navItems = [
     href: "/research",
   },
   {
+    title: "Contact Us",
+    href: "/contact",
+  },
+  {
     title: "Team",
     href: "/team",
   },
   {
     title: "Career",
     href: "/career",
-  },
-  {
-    title: "Contact Us",
-    href: "/contact",
   },
 ];
 
@@ -51,14 +51,14 @@ export default function Nav() {
       initial="initial"
       animate="enter"
       exit="exit"
-      className="h-[100dvh]  z-[2] w-[100%] md:w-[40%] lg:w-[35%] rounded-l-3xl bg-[#FFFFFF] fixed right-0 top-0 text-white"
+      className="h-[100dvh]  z-[2] w-[100%] sm:w-[50%] md:w-[55%] lg:w-[35%] rounded-l-3xl bg-[#FFFFFF] fixed right-0 top-0 text-white"
     >
-      <div className="box-border h-full pt-[4.5rem] flex flex-col justify-between">
+      <div className="box-border h-full pt-[3rem] md:pt-[6rem] lg:pt-[3rem] flex flex-col justify-between">
         <div
           onMouseLeave={() => {
             setSelectedIndicator(pathname);
           }}
-          className="flex flex-col text-[55px] text-[#A4A4A4] leading-[4.4rem]    "
+          className="flex flex-col  text-[#A4A4A4] text-[7vh] leading-[9.5vh] md:text-[5.5vh] md:leading-[7.5vh] lg:text-[7vh] lg:leading-[9vh] "
         >
           {navItems.map((data, index) => {
             return (
@@ -72,12 +72,22 @@ export default function Nav() {
           })}
         </div>
         {/* footer */}
-        <div className="flex gap-[30px] pl-[50px] pb-[100px]">
-                {/* <Link href="/career" className="text-lg text-black font-aeonik font-light">Career</Link> */}
-                <Link href="/blogs" className="text-lg text-black font-aeonik font-light">Blog</Link>
-                <Link href="https://in.linkedin.com/company/fast-code" target="_blank" className="text-lg text-black font-aeonik font-light">Linkedin</Link>
-               
-            </div>
+        <div className="flex gap-[30px] pl-[50px] pb-[60px] md:pb-[100px] lg:pb-[60px]">
+          {/* <Link href="/career" className="text-lg text-black font-aeonik font-light">Career</Link> */}
+          <Link
+            href="/blogs"
+            className="text-lg text-black font-aeonik font-light"
+          >
+            Blog
+          </Link>
+          <Link
+            href="https://in.linkedin.com/company/fast-code"
+            target="_blank"
+            className="text-lg text-black font-aeonik font-light"
+          >
+            Linkedin
+          </Link>
+        </div>
       </div>
     </motion.div>
   );
