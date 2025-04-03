@@ -33,13 +33,23 @@ const aeonik = localFont({
 
 const bwmss01 = localFont({
   src: [
+    // {
+    //   path: "../../public/fonts/BwModelica_SS01/BwModelicaSS01-Regular.woff2",
+    //   weight: "300", //light
+    //   style: "normal"
+    // },
+    // {
+    //   path: "../../public/fonts/BwModelica_SS01/BwModelicaSS01-Bold.woff2",
+    //   weight: "700", //bold
+    //   style: "normal"
+    // },
     {
-      path: "../../public/fonts/BwModelica_SS01/BwModelicaSS01-Regular.woff2",
+      path: "../../public/fonts/Plus_Jakarta_Sans/static/PlusJakartaSans-Regular.ttf",
       weight: "300", //light
       style: "normal"
     },
     {
-      path: "../../public/fonts/BwModelica_SS01/BwModelicaSS01-Bold.woff2",
+      path: "../../public/fonts/Plus_Jakarta_Sans/static/PlusJakartaSans-Bold.ttf",
       weight: "700", //bold
       style: "normal"
     },
