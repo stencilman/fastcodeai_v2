@@ -94,9 +94,10 @@ body {
 .button__icon-svg--copy {
   position: absolute;
   transform: translate(-150%, 150%);
+  opacity: 0;
 }
 
-.main_cta_button:hover .button__icon-svg:first-child {
+/* .main_cta_button:hover .button__icon-svg:first-child {
   transition: transform .3s ease-in-out;
   transform: translate(150%, -150%);
 }
@@ -104,10 +105,78 @@ body {
 .main_cta_button:hover .button__icon-svg--copy {
   transition: transform .3s ease-in-out .1s;
   transform: translate(0);
+} */
+
+
+.main_cta_button:hover .button__icon-svg {
+  transform: translateX(5px);
+}
+
+.secondary_cta_button:hover .button__icon-svg {
+  transform: translateX(5px);
 }
 
 /* end-main_cta_button */
 
+/* secondary_cta_button */
+
+.secondary_cta_button {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: background-color .3s;
+  background-color: transparent;
+  position: relative;
+  background: linear-gradient(113.03deg, #225AEB 14.91%, #37B8B9 85.09%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.secondary_cta_button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(90deg, #225AEB 0%, #38B8B9 100%);
+  -webkit-mask: 
+    linear-gradient(#fff 0 0) content-box, 
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  z-index: -1;
+}
+
+.secondary_cta_button .button__icon-wrapper {
+  flex-shrink: 0;
+  width: 25px;
+  height: 25px;
+  position: relative;
+  color: #000b2d;
+  background-color: #fff;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+/* .secondary_cta_button:hover .button__icon-wrapper {
+  color: #000;
+}
+
+.secondary_cta_button:hover .button__icon-svg:first-child {
+  transition: transform .3s ease-in-out;
+  transform: translate(150%, -150%);
+}
+
+.secondary_cta_button:hover .button__icon-svg--copy {
+  transition: transform .3s ease-in-out .1s;
+  transform: translate(0);
+} */
+.secondary_cta_button:hover {
+  opacity: 0.9;
+}
+/* end-secondary_cta_button */
 
 /* footer hover effect */
 .hover-underline-animation {

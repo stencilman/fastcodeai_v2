@@ -1,5 +1,14 @@
 "use client";
 import React, { useEffect, useState, useRef } from "react";
+import Lottie from "lottie-react";
+import preloader1 from "../../../../public/animations/preloader/Logo_6.json";
+import RevealX from "../RevealX";
+import RevealY from "../RevealY";
+import Image from "next/image";
+import scringAnim from "../../../../public/animations/springs.json";
+import brain from "../../../../public/brain.svg";
+import arrowRight from "../../../../public/arrowRight.svg";
+import Button from "../Button";
 
 import { useInView } from "react-intersection-observer";
 import Head from "next/head";
@@ -10,8 +19,6 @@ const Hero = () => {
     threshold: 0.5,
   });
 
-
-
   useEffect(() => {
     if (inView) {
       setIsVisible(true);
@@ -21,16 +28,16 @@ const Hero = () => {
   return (
     <>
       <Head>
-        <link
-          rel="preload"
-          href="/patents1.mp4"
-          as="video"
-          type="video/mp4"
-        />
+        <link rel="preload" href="/patents1.mp4" as="video" type="video/mp4" />
       </Head>
-      <div className="w-full h-[100vh] relative bg-gradient-to-br from-[#000E32] to-[#000929] opacity-83">
+      <div
+        className="w-full h-auto md:h-[100vh] relative pl-[20px] md:pl-[50px] lg:pl-[100px] flex flex-col md:flex-row items-center"
+        style={{
+          background: "linear-gradient(270deg, #000000 0%, #272A56 100%)",
+        }}
+      >
         {/* <Navbar /> */}
-        <div className="absolute inset-0 z-0 overflow-hidden">
+        {/* <div className="absolute inset-0 z-0 overflow-hidden">
           <video
             className="w-full h-full object-cover"
             autoPlay
@@ -63,9 +70,69 @@ const Hero = () => {
           >
             Expertly crafted AI solutions—designed with precision, built for
             reliability,
-            <br className="hidden md:block"/> and committed to excellence.
-            {/* <br /> to harness cutting edge intelligence */}
+            <br className="hidden md:block" /> and committed to excellence.
           </p>
+        </div> */}
+        {/* <div className="w-full h-[50vh] lg:h-[80vh] "> */}
+        <div className="w-full md:w-[60%] mt-[100px] pr-[20px] md:pr-[0px] md:mt-[0px] ">
+          <h1 className="text-white mt-[10px] font-aeonik tracking-wide font-normal text-[40px] leading-[40px] md:text-[50px] md:leading-[50px] ">
+            <RevealY>
+              <span className="text-[#58DEE4]">Research-as-a-Service</span>
+            </RevealY>
+            for innovation teams
+          </h1>
+          <p className="text-[#9EB3CF] font-bwmss01 text-[12px] md:text-[18px] mt-[10px] md:mt-[20px] w-3/4">
+            <RevealX>
+              We partner with innovation teams on novel Computer Vision,
+              diffusion models, LLM post-training, and RL co-authoring papers
+              and patents.
+            </RevealX>
+          </p>
+
+          <div className="mt-[30px] md:mt-[40px] w-fit">
+            <Button
+              to="/contact"
+              name="Pitch a Research Problem"
+              icon={arrowRight}
+            />
+          </div>
+
+          <div className="flex gap-[10px] md:gap-[15px] items-center flex-wrap mt-[30px] md:mt-[40px]">
+            <div className="border border-[#58DEE4] rounded-[30px] bg-[#00081F] px-[21px] py-[10px] text-base font-bwmss01 text-[#58DEE4]">
+              8000+ citations
+            </div>
+            <div className="border border-[#58DEE4] rounded-[30px] bg-[#00081F] px-[21px] py-[10px] text-base font-bwmss01 text-[#58DEE4]">
+              5 patents
+            </div>
+            <div className="border border-[#58DEE4] rounded-[30px] bg-[#00081F] px-[21px] py-[10px] text-base font-bwmss01 text-[#58DEE4]">
+              18 research papers
+            </div>
+          </div>
+
+          <p className="text-[#9EB3CF] font-bwmss01 text-[12px] md:text-[18px] mt-[30px] md:mt-[40px]">
+            <RevealX>
+              Research lineage:
+              <br /> Max Planck • NYU (Yann LeCun&apos;s lab) • Apple Project
+              Titan • Mercedes-Benz
+            </RevealX>
+          </p>
+        </div>
+        <div className="w-full md:w-[40%] ">
+          <div className="w-[100%] relative  ">
+            {/* <RevealY> */}
+            <Lottie animationData={scringAnim} loop={true} />
+            <div className="absolute top-[26%] left-[17.5%] md:top-[24%]  lg:left-[12%] xl:left-[16%]">
+              <Image
+                src="./brain.svg"
+                className="sm:w-[220px] md:w-[140px] lg:w-[220px] xl:w-[18vw]"
+                width="160"
+                height="200"
+                alt="img"
+              />
+            </div>
+            {/* </RevealY> */}
+          </div>
+          {/* </div> */}
         </div>
       </div>
     </>
