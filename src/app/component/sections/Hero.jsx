@@ -109,9 +109,8 @@ const Hero = () => {
 
           <p className="text-[#9EB3CF] font-bwmss01 text-[12px] md:text-[18px] mt-[30px] md:mt-[40px]">
             <RevealX>
-              Research lineage:
-              <br /> Max Planck • NYU (Yann LeCun&apos;s lab) • Apple Project
-              Titan • Mercedes-Benz
+              Research Lineage:
+              <br />  MPII → NYU (Yann LeCun) → Apple Project Titan → IIT Bombay → IISc
             </RevealX>
           </p>
         </div>
