@@ -108,7 +108,7 @@ const ScreenAbout = () => {
           </div>
 
           <div className="w-full md:w-[45%] flex flex-col gap-[20px] mb-[30px] md:mb-0">
-            <h3 className="text-[#FD7870] font-bwmss01 text-[22px] md:text-[25px] tracking-normal">
+            <h3 className="text-[#58DEE4] font-bwmss01 text-[22px] md:text-[25px] tracking-normal">
               Not <span className="text-white">a fit if you need:</span>
             </h3>
             <ul className="text-white font-bwmss01 text-[16px] md:text-[18px] list-disc pl-[20px] flex flex-col gap-[10px]">
