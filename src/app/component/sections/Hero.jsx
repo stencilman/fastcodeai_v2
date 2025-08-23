@@ -83,9 +83,7 @@ const Hero = () => {
           </h1>
           <p className="text-[#9EB3CF] font-bwmss01 text-[12px] md:text-[18px] mt-[10px] md:mt-[20px] w-3/4">
             <RevealX>
-              We partner with innovation teams on novel Computer Vision,
-              diffusion models, LLM post-training, and RL co-authoring papers
-              and patents.
+            We partner with innovation teams to push the frontier in computer vision, diffusion models, LLM post-training, and reinforcement learning—co-authoring papers and patents.
             </RevealX>
           </p>
 
