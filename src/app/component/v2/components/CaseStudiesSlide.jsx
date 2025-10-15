@@ -98,13 +98,11 @@ const CaseStudiesSlide = () => {
     <div className="relative bg-[#030B17] py-16">
       <div className="container mx-auto px-4">
         {/* Top Pagination Section */}
-        <div className="grid grid-cols-7 gap-3 mb-12">
+        <div className="flex gap-3 mb-12">
           {caseStudies.slice(0, 7).map((study, index) => (
             <div
               key={study.id}
-              className={`group cursor-pointer relative bg-[#1B2534] rounded-lg p-4 transition-all duration-300 overflow-hidden ${
-                index === activeIndex ? "ring-1 ring-blue-500" : ""
-              }`}
+              className={`group cursor-pointer relative bg-[rgba(255,255,255,0.05)] backdrop-blur-[3px] rounded-full px-6 py-3 transition-all duration-300 overflow-hidden `}
               onClick={() => mainSwiperRef.current?.swiper.slideToLoop(index)}
             >
               {/* Progress animation pseudo-element only, no width progress logic */}
@@ -115,16 +113,16 @@ const CaseStudiesSlide = () => {
                 style={{
                   zIndex: 1,
                   backgroundColor:
-                    index === activeIndex ? "#dbdbdb" : "transparent",
+                    index === activeIndex
+                      ? "rgba(255, 255, 255, 0.15)"
+                      : "transparent",
                   opacity: index === activeIndex ? 1 : 0,
                 }}
               ></span>
               <div className="relative z-10">
                 <div
                   className={`text-sm transition-colors duration-300 ${
-                    index === activeIndex
-                      ? "text-white font-medium"
-                      : "text-gray-400"
+                    index === activeIndex ? "text-white " : "text-[#FFFFFF80]"
                   }`}
                 >
                   {study.title}
