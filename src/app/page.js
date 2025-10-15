@@ -1,6 +1,6 @@
-"use client"
+"use client";
 import Image from "next/image";
-import Hero from "./component/sections/Hero";
+// import Hero from "./component/sections/Hero";
 import ScreenAbout from "./component/sections/ScreenAbout";
 import Clients from "./component/sections/Clients";
 import WhyChooseUs from "./component/sections/WhyChooseUs";
@@ -17,23 +17,28 @@ import { useGlobalContext } from "./context/GlobalContext";
 import { useEffect, useState } from "react";
 import JoinTeam from "./component/sections/JoinTeam";
 
+// V2
+import Hero from "./component/v2/sections/Hero";
+import IndustryLeaders from "./component/v2/sections/IndustryLeaders";
+import CaseStudies from "./component/v2/sections/CaseStudies";
 
 export default function Home() {
   const { setIsActive } = useGlobalContext();
-  
-  
+
   useEffect(() => {
     window.scrollTo(0, 0);
-    setIsActive(false)
-  }, [])
+    setIsActive(false);
+  }, []);
 
   return (
     <>
+      {/* V1/}
+      {/*
       <Hero />
       <ScreenAbout />
       <Clients />
       <JoinTeam/>
-      {/* <Numbers /> */}
+      <Numbers /> // circle
       <Experties />
       <Team />
       <OurWork />
@@ -41,8 +46,12 @@ export default function Home() {
       <HowWeDo />
       <Industries />
       <TestimonialsN />
-      <Footer showExtraSpace={true}/>
-
+      <Footer showExtraSpace={true}/> */}
+      <Hero />
+      <IndustryLeaders />
+      <CaseStudies />
+      <TestimonialsN />
+      <Footer showExtraSpace={true} />
     </>
-  )
+  );
 }
