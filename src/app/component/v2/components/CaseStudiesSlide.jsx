@@ -105,7 +105,7 @@ const CaseStudiesSlide = () => {
               className={`group cursor-pointer relative bg-[#1B2534] rounded-lg p-4 transition-all duration-300 overflow-hidden ${
                 index === activeIndex ? "ring-1 ring-blue-500" : ""
               }`}
-              onClick={() => mainSwiperRef.current?.swiper.slideTo(index)}
+              onClick={() => mainSwiperRef.current?.swiper.slideToLoop(index)}
             >
               {/* Progress animation pseudo-element only, no width progress logic */}
               <span
@@ -137,11 +137,11 @@ const CaseStudiesSlide = () => {
         {/* Main */}
         <div className="relative">
           <Swiper
-           loop={true}
+            loop={true}
             ref={mainSwiperRef}
             modules={[Autoplay, Navigation, Controller]}
             spaceBetween={20}
-            slidesPerView={1}
+            slidesPerView={1.1}
             centeredSlides={true}
             navigation={{
               prevEl: ".prev-button",
