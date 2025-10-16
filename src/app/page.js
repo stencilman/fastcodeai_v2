@@ -21,6 +21,7 @@ import JoinTeam from "./component/sections/JoinTeam";
 import Hero from "./component/v2/sections/Hero";
 import IndustryLeaders from "./component/v2/sections/IndustryLeaders";
 import CaseStudies from "./component/v2/sections/CaseStudies";
+import CeoDesk from "./component/v2/sections/CeoDesk";
 
 export default function Home() {
   const { setIsActive } = useGlobalContext();
@@ -50,6 +51,7 @@ export default function Home() {
       <Hero />
       <IndustryLeaders />
       <CaseStudies />
+      <CeoDesk/>
       <TestimonialsN />
       <Footer showExtraSpace={true} />
     </>
