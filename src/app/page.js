@@ -22,6 +22,7 @@ import Hero from "./component/v2/sections/Hero";
 import IndustryLeaders from "./component/v2/sections/IndustryLeaders";
 import CaseStudies from "./component/v2/sections/CaseStudies";
 import CeoDesk from "./component/v2/sections/CeoDesk";
+import Features from "./component/v2/sections/Features";
 
 export default function Home() {
   const { setIsActive } = useGlobalContext();
@@ -51,6 +52,7 @@ export default function Home() {
       <Hero />
       <IndustryLeaders />
       <CaseStudies />
+      <Features/>
       <CeoDesk/>
       <TestimonialsN />
       <Footer showExtraSpace={true} />
