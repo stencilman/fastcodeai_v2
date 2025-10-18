@@ -211,78 +211,49 @@ const CaseStudiesSlide = () => {
                       </div>
                     </div>
                   </div>
-
-                  {/* Content Section - Dark Glass Effect (desktop/tablet) */}
-                  <div className="hidden md:block absolute z-50 px-4 bottom-11 w-full ">
-                    <div className="backdrop-blur-[15px] bg-[rgba(255,255,255,0.10)] py-6 px-8 rounded-2xl">
-                      <div className="max-w-[1200px] mx-auto flex items-center justify-between">
-                        <div className="max-w-xl">
-                          <p className="text-[#9EB3CF] text-lg">
-                            {study.description}
-                          </p>
-                        </div>
-
-                        <Link
-                          href={study.link}
-                          target="_blank"
-                          className={`relative rounded-full z-[1] flex items-center gap-[7px] p-[15px] text-lg justify-between main_cta_button bg-gradient-to-br from-[#2DC1C3] to-[#0268F2]  text-white`}
-                        >
-                          <div className={``}>{study.ctaText}</div>
-                          <div className="flex items-center justify-center relative">
-                            <>
-                              <Image
-                                className="button__icon-svg transition-transform duration-300"
-                                src="/rightArrow.svg"
-                                alt="arrow"
-                                width="25"
-                                height="25"
-                              />
-                              <Image
-                                className="button__icon-svg--copy absolute"
-                                src="/rightArrow.svg"
-                                alt="arrow"
-                                width="25"
-                                height="25"
-                              />
-                            </>
-
-                            {/* <span className="button__icon-wrapper ">
-          <svg
-            width="10"
-            className="button__icon-svg"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 14 15"
-          >
-            <path
-              fill="currentColor"
-              d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
-            ></path>
-          </svg>
-
-          <svg
-            className="button__icon-svg  button__icon-svg--copy"
-            xmlns="http://www.w3.org/2000/svg"
-            width="10"
-            fill="none"
-            viewBox="0 0 14 15"
-          >
-            <path
-              fill="currentColor"
-              d="M13.376 11.552l-.264-10.44-10.44-.24.024 2.28 6.96-.048L.2 12.56l1.488 1.488 9.432-9.432-.048 6.912 2.304.024z"
-            ></path>
-          </svg>
-        </span> */}
-                            {/* <Image src="/rightArrow.svg" alt="arrow" width="16" height="13" /> */}
-                          </div>
-                        </Link>
-                      </div>
-                    </div>
-                  </div>
                 </div>
               </SwiperSlide>
             ))}
           </Swiper>
+          {/* Desktop/Tablet text/CTA overlay synced with active slide */}
+          <div className="hidden md:block absolute z-50 px-4 bottom-11 w-full ">
+            <div className="backdrop-blur-[15px] bg-[rgba(255,255,255,0.10)] py-6 px-8 rounded-2xl">
+              <div className="max-w-[1200px] mx-auto flex items-center justify-between">
+                <div className="max-w-xl">
+                  <p className="text-[#9EB3CF] text-lg">
+                    {activeStudy?.description}
+                  </p>
+                </div>
+                {activeStudy?.ctaText && (
+                  <Link
+                    href={activeStudy?.link || "#"}
+                    target={activeStudy?.link ? "_blank" : undefined}
+                    className={`relative rounded-full z-[1] flex items-center gap-[7px] p-[15px] text-lg justify-between main_cta_button bg-gradient-to-br from-[#2DC1C3] to-[#0268F2]  text-white`}
+                  >
+                    <div className={``}>{activeStudy.ctaText}</div>
+                    <div className="flex items-center justify-center relative">
+                      <>
+                        <Image
+                          className="button__icon-svg transition-transform duration-300"
+                          src="/rightArrow.svg"
+                          alt="arrow"
+                          width="25"
+                          height="25"
+                        />
+                        <Image
+                          className="button__icon-svg--copy absolute"
+                          src="/rightArrow.svg"
+                          alt="arrow"
+                          width="25"
+                          height="25"
+                        />
+                      </>
+                    </div>
+                  </Link>
+                )}
+              </div>
+            </div>
+          </div>
           {/* Mobile-only text/CTA card below the slider */}
           <div className="md:hidden mt-6">
             <div className="relative mx-auto w-full rounded-2xl border border-white/10 backdrop-blur-md bg-[rgba(255,255,255,0.06)] px-5 py-6">
