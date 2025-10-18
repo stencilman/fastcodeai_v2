@@ -2,8 +2,8 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectFade, Autoplay, Pagination } from "swiper/modules";
-import Image from "next/image";
 import Link from "next/link";
+import HoverDetailDialog from "./HoverDetailDialog";
 
 // Import Swiper styles
 import "swiper/css";
@@ -14,48 +14,84 @@ const HeroSlider = () => {
   const slides = [
     {
       id: 1,
-      bgImage: "/research/patentPage/pic1-2.png",
-      title: "Empowering R&D Teams",
-      subtitle: "With Cutting-Edge AI\nResearch Solutions",
-      ctaText: "Tell Us Your Biggest Challenge",
+      bgVideo: "/v2/hero/odo.mp4",
+      title: "Frontier AI. Enterprise Scale. Delivered.",
+      subtitle:
+        "We help organisations harness AI to transform how they innovate, operate, and compete - from research to real-world deployment.",
+      ctaText: "Discuss your AI Roadmap",
       ctaLink: "/contact",
       category: "ODO Research Paper",
+      detail: {
+        title: "Our latest breakthrough in AI-powered body reshaping:",
+        description:
+          "Fastcode AI introduces Odo, a cutting-edge diffusion model that transforms human body shapes while perfectly preserving identity, clothing, and background. Built on the first large-scale dataset of 18K+ images, achieving 45% lower reconstruction error than existing methods.",
+        ctaText: "Experience the demo",
+        ctaLink: "https://research.fastcode.ai/odo",
+      },
     },
     {
       id: 2,
-      bgImage: "/research/patentPage/pic2-2.png",
-      title: "Advanced AI Solutions",
-      subtitle: "Transforming Research\nThrough Innovation",
-      ctaText: "Tell Us Your Biggest Challenge",
+      bgVideo: "/v2/hero/roadside-assist.mp4",
+      title: "Frontier AI. Enterprise Scale. Delivered.",
+      // subtitle: "With Cutting-Edge AI\nResearch Solutions",
+      subtitle:
+        "We help organisations harness AI to transform how they innovate, operate, and compete - from research to real-world deployment.",
+      ctaText: "Discuss your AI Roadmap",
       ctaLink: "/contact",
-      category: "ODO Research Paper",
+      category: "Roadside User Handling",
+      detail: {
+        title: "Advanced AI for safer roads:",
+        description:
+          "Our lane assist and vulnerable road user detection system for Bosch enhanced traffic sign recognition for Level 2-3 autonomy. This project sparked long-term partnerships with Mercedes and Bosch, leading to multiple breakthrough collaborations in autonomous driving technology.",
+        ctaText: "View Documentation",
+        ctaLink: "#",
+      },
     },
     {
       id: 3,
-      bgImage: "/research/patentPage/pic3-2.png",
-      title: "AI-Driven Insights",
-      subtitle: "Unlocking the Future of Research",
-      ctaText: "Tell Us Your Biggest Challenge",
+      bgVideo: "/v2/hero/mbux.mp4",
+      title: "Frontier AI. Enterprise Scale. Delivered.",
+      subtitle:
+        "We help organisations harness AI to transform how they innovate, operate, and compete - from research to real-world deployment.",
+      ctaText: "Discuss your AI Roadmap",
       ctaLink: "/contact",
-      category: "ODO Research Paper",
+      category: "MBUX Case Study",
+      detail: {
+        title: "Transforming luxury driving with AI:",
+        description:
+          "We developed MBUX Vision, Mercedes-Benz's revolutionary gesture and occupant monitoring system, processing 10TB+ of cabin data for intuitive in-car experiences. This flagship project cemented our long-term partnerships with Mercedes and Bosch, leading to continuous innovation in automotive AI.",
+        ctaText: "Watch demo video",
+        ctaLink: "https://www.youtube.com/watch?v=cjM_oYk_Fqg",
+      },
     },
     {
       id: 4,
-      bgImage: "/research/patentPage/pic4-2.png",
-      title: "AI-Driven Insights",
-      subtitle: "Unlocking the Future of Research",
-      ctaText: "Tell Us Your Biggest Challenge",
+      bgVideo: "/v2/hero/pose-estimation.mp4",
+      title: "Frontier AI. Enterprise Scale. Delivered.",
+      subtitle:
+        "We help organisations harness AI to transform how they innovate, operate, and compete - from research to real-world deployment.",
+      ctaText: "Discuss your AI Roadmap",
       ctaLink: "/contact",
-      category: "ODO Research Paper",
+      category: "Post Estimation",
+      detail: {
+        title:
+          "Discover the pioneering research that transformed computer vision:",
+        description:
+          "This landmark paper by Arjun Jain (Fastcode AI's CEO) and collaborators introduced the revolutionary hybrid CNN-MRF architecture for human pose estimation, garnering 2149+ citations and establishing new benchmarks in the field.",
+        ctaText: "Read the full paper",
+        ctaLink:
+          "https://proceedings.neurips.cc/paper_files/paper/2014/hash/893643e2dcd4b25212defd18141d58c4-Abstract.html",
+      },
     },
   ];
 
   return (
-    <div className="relative w-full h-screen">
+    <div className="relative w-full h-auto md:h-screen">
       <Swiper
         modules={[EffectFade, Autoplay, Pagination]}
         effect="fade"
         speed={1500}
+        autoHeight={true}
         autoplay={{
           delay: 5000,
           disableOnInteraction: false,
@@ -76,26 +112,27 @@ const HeroSlider = () => {
       >
         {slides.map((slide) => (
           <SwiperSlide key={slide.id} className="relative">
-            {/* Background Image */}
+            {/* Background video (desktop/tablet only) */}
             <div className="absolute inset-0">
-              <Image
-                src={slide.bgImage}
-                alt={slide.title}
-                fill
-                style={{ objectFit: "cover" }}
-                priority={slide.id === 1}
+              <video
+                src={slide.bgVideo}
+                autoPlay
+                muted
+                loop
+                playsInline
+                className="hidden md:block w-full h-full object-cover"
               />
               {/* Gradient Overlay */}
               <div className="absolute inset-0 bg-gradient-to-r from-[#00081F] via-[#00081F]/80 to-transparent" />
             </div>
 
             {/* Content */}
-            <div className="relative z-10 flex flex-col justify-center h-full max-w-[1440px] mx-auto px-4 md:px-8 lg:px-16">
+            <div className="relative z-10 flex flex-col justify-center h-[100vh]   max-w-[1440px] mx-auto px-4 md:px-8 lg:px-16">
               <div className="max-w-[700px]">
-                <h1 className="text-4xl md:text-6xl lg:text-7xl text-white font-bold mb-6 font-aeonik leading-tight">
+                <h1 className="text-3xl md:text-5xl text-white font-bold mb-6 font-aeonik tracking-wide ">
                   {slide.title}
                 </h1>
-                <p className="text-2xl md:text-3xl lg:text-4xl text-white mb-8 font-bwmss01 whitespace-pre-line">
+                <p className="text-lg text-white mb-8 font-bwmss01 whitespace-pre-line">
                   {slide.subtitle}
                 </p>
                 <Link
@@ -104,14 +141,34 @@ const HeroSlider = () => {
                 >
                   {slide.ctaText}
                 </Link>
+
+                {/* Mobile: render video as a separate section below CTA */}
+                <div className="md:hidden mt-8">
+                  <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden border border-white/10">
+                    <video
+                      src={slide.bgVideo}
+                      autoPlay
+                      muted
+                      loop
+                      playsInline
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                </div>
+
+                {/* Mobile: inline category pill and details */}
+                <div className="md:hidden mt-6">
+                  <HoverDetailDialog
+                    label={slide.category}
+                    detail={slide.detail}
+                  />
+                </div>
               </div>
             </div>
 
-            {/* Category Tag */}
-            <div className="absolute bottom-12 left-4 md:left-8 lg:left-16 z-20">
-              <div className="bg-[#1A2758] text-white px-6 py-3 rounded-lg font-medium">
-                {slide.category}
-              </div>
+            {/* Category Tag + Hover Dialog */}
+            <div className="hidden md:block absolute bottom-12 left-4 md:left-8 lg:left-16 z-20">
+              <HoverDetailDialog label={slide.category} detail={slide.detail} />
             </div>
           </SwiperSlide>
         ))}
@@ -130,6 +187,14 @@ const HeroSlider = () => {
           gap: 0.5rem !important;
           align-items: center !important;
           z-index: 20 !important;
+        }
+
+        @media (max-width: 767px) {
+          .swiper .swiper-pagination.swiper-pagination-bullets {
+            bottom: 16px !important;
+            left: 1rem !important;
+            right: auto !important;
+          }
         }
 
         .swiper .swiper-pagination-bullet {

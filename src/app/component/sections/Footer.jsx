@@ -7,6 +7,8 @@ import React, { useState, useEffect, useRef } from "react";
 import Modal from "../Modal";
 import footerLogo from "../../../../public/f_logo1.png";
 import MagneticEffect from "../MagneticEffect";
+import { FaXTwitter } from "react-icons/fa6";
+import { FaInstagram, FaLinkedinIn, FaYoutube } from "react-icons/fa";
 
 const Footer = ({ showExtraSpace }) => {
   const [active, setActive] = useState(false);
@@ -53,7 +55,7 @@ const Footer = ({ showExtraSpace }) => {
           }}
         >
           <div className="flex h-full w-full pl-[20px] pr-[20px] md:pl-[50px] md:pr-[50px] lg:pl-[160px] lg:pr-[73px] justify-between">
-            <div className="hidden md:flex w-[369px] h-[407px] rounded-[18px] bg-gradient-to-br from-[#000E32] to-[#000929]  items-center justify-center relative z-[6] top-[-120px]">
+            <div className="hidden md:flex w-[369px] h-[407px] rounded-[18px] bg-gradient-to-br from-[#000E32] to-[#000929]  items-center justify-center relative z-[6] top-[-120px] ">
               <Image
                 placeholder="blur"
                 src={footerLogo}
@@ -61,57 +63,100 @@ const Footer = ({ showExtraSpace }) => {
                 width="249"
                 alt="logo"
               />
+              {/* Social icons row positioned just below the card */}
+              <div className="absolute -bottom-[72px] left-1/2 -translate-x-1/2 flex justify-around w-full gap-[18px] z-[7]">
+                <Link
+                  href="https://x.com/FastCodeAI"
+                  aria-label="X (Twitter)"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <div className="w-[56px] h-[56px] rounded-[10px] bg-gradient-to-b from-[#0B1B3F] to-[#081533] border border-[#243A6A] flex items-center justify-center text-white hover:scale-95 active:scale-90 transition-all duration-200 ease-out">
+                    <FaXTwitter size={22} />
+                  </div>
+                </Link>
+                <Link
+                  href="https://www.instagram.com/fastcodeai/"
+                  aria-label="Instagram"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <div className="w-[56px] h-[56px] rounded-[10px] bg-gradient-to-b from-[#0B1B3F] to-[#081533] border border-[#243A6A] flex items-center justify-center text-white hover:scale-95 active:scale-90 transition-all duration-200 ease-out">
+                    <FaInstagram size={22} />
+                  </div>
+                </Link>
+                <Link
+                  href="https://www.linkedin.com/company/fast-code/"
+                  aria-label="LinkedIn"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <div className="w-[56px] h-[56px] rounded-[10px] bg-gradient-to-b from-[#0B1B3F] to-[#081533] border border-[#243A6A] flex items-center justify-center text-white hover:scale-95 active:scale-90 transition-all duration-200 ease-out">
+                    <FaLinkedinIn size={22} />
+                  </div>
+                </Link>
+                <Link
+                  href="https://www.youtube.com/@fastcodeai"
+                  aria-label="YouTube"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <div className="w-[56px] h-[56px] rounded-[10px] bg-gradient-to-b from-[#0B1B3F] to-[#081533] border border-[#243A6A] flex items-center justify-center text-white hover:scale-95 active:scale-90 transition-all duration-200 ease-out">
+                    <FaYoutube size={22} />
+                  </div>
+                </Link>
+              </div>
             </div>
             <div className="w-[100%] md:w-[58%] ml-0 md:ml-[80px] lg:ml-[120px] mr-0 md:mr-[10px] flex flex-col justify-around">
               {/* Nav */}
               <div className="w-full border-b border-[#AFC0FF] pb-[22px] mt-[52px]">
                 <ul className="flex flex-wrap lg:flex-nowrap gap-[10px] lg:gap-0 justify-start md:justify-around w-full text-white font-aeonik text-[19px] pl-0">
-                    <MagneticEffect>
-                  <Link href="/" className="flink">
+                  <MagneticEffect>
+                    <Link href="/" className="flink">
                       <li className="hover-underline-animation active:scale-90 transition-all duration-300 ease-in-out">
                         Home
                       </li>
-                  </Link>
-                    </MagneticEffect>
-                    <MagneticEffect>
-                  <Link href="/about" className="flink">
+                    </Link>
+                  </MagneticEffect>
+                  <MagneticEffect>
+                    <Link href="/about" className="flink">
                       <li className="hover-underline-animation active:scale-90 transition-all duration-300 ease-in-out">
                         About
                       </li>
-                  </Link>
-                    </MagneticEffect>
-                    <MagneticEffect>
-                  <Link href="/expertise" className="flink">
+                    </Link>
+                  </MagneticEffect>
+                  <MagneticEffect>
+                    <Link href="/expertise" className="flink">
                       <li className="hover-underline-animation active:scale-90 transition-all duration-300 ease-in-out">
                         Expertise
                       </li>
-                  </Link>
-                    </MagneticEffect>
-                    <MagneticEffect>
-                  <Link href="/career" className="flink">
+                    </Link>
+                  </MagneticEffect>
+                  <MagneticEffect>
+                    <Link href="/career" className="flink">
                       <li className="hover-underline-animation active:scale-90 transition-all duration-300 ease-in-out">
                         Career
                       </li>
-                  </Link>
-                    </MagneticEffect>
-                    <MagneticEffect>
-                  <Link href="/blogs" className="flink">
+                    </Link>
+                  </MagneticEffect>
+                  <MagneticEffect>
+                    <Link href="/blogs" className="flink">
                       <li className="hover-underline-animation active:scale-90 transition-all duration-300 ease-in-out">
                         Blog
                       </li>
-                  </Link>
-                    </MagneticEffect>
-                    <MagneticEffect>
-                  <Link href="/contact" className="flink">
+                    </Link>
+                  </MagneticEffect>
+                  <MagneticEffect>
+                    <Link href="/contact" className="flink">
                       <li className="hover-underline-animation active:scale-90 transition-all duration-300 ease-in-out">
                         Contact Us
                       </li>
-                  </Link>
-                    </MagneticEffect>
+                    </Link>
+                  </MagneticEffect>
                 </ul>
               </div>
               {/* Address */}
-              <div className="w-full flex flex-col lg:flex-row">
+              <div className="w-full flex flex-col lg:flex-row my-[10px] md:my-[0px] ">
                 <div className="w-full lg:w-[50%]">
                   <ul className="pl-0">
                     <li className="text-[14px]  text-white font-bwss01 font-bold">
@@ -141,6 +186,49 @@ const Footer = ({ showExtraSpace }) => {
                       +91 85530 38132
                     </li>
                   </ul>
+                  {/* Mobile-only social icons below phone number */}
+                  <div className="md:hidden flex justify-center gap-[16px] mt-[20px]">
+                    <Link
+                      href="https://x.com/FastCodeAI"
+                      aria-label="X (Twitter)"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <div className="w-[48px] h-[48px] rounded-[10px] bg-gradient-to-b from-[#0B1B3F] to-[#081533] border border-[#243A6A] flex items-center justify-center text-white active:scale-90 hover:scale-95 transition-all duration-200 ease-out">
+                        <FaXTwitter size={20} />
+                      </div>
+                    </Link>
+                    <Link
+                      href="https://www.instagram.com/fastcodeai/"
+                      aria-label="Instagram"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <div className="w-[48px] h-[48px] rounded-[10px] bg-gradient-to-b from-[#0B1B3F] to-[#081533] border border-[#243A6A] flex items-center justify-center text-white active:scale-90 hover:scale-95 transition-all duration-200 ease-out">
+                        <FaInstagram size={20} />
+                      </div>
+                    </Link>
+                    <Link
+                      href="https://www.linkedin.com/company/fast-code/"
+                      aria-label="LinkedIn"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <div className="w-[48px] h-[48px] rounded-[10px] bg-gradient-to-b from-[#0B1B3F] to-[#081533] border border-[#243A6A] flex items-center justify-center text-white active:scale-90 hover:scale-95 transition-all duration-200 ease-out">
+                        <FaLinkedinIn size={20} />
+                      </div>
+                    </Link>
+                    <Link
+                      href="https://www.youtube.com/@fastcodeai"
+                      aria-label="YouTube"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <div className="w-[48px] h-[48px] rounded-[10px] bg-gradient-to-b from-[#0B1B3F] to-[#081533] border border-[#243A6A] flex items-center justify-center text-white active:scale-90 hover:scale-95 transition-all duration-200 ease-out">
+                        <FaYoutube size={20} />
+                      </div>
+                    </Link>
+                  </div>
                 </div>
               </div>
               {/* Copy R */}
@@ -150,7 +238,7 @@ const Footer = ({ showExtraSpace }) => {
                     © Copyright Fast Code AI 2024. All Rights Reserved
                   </p>
                 </div>
-                <div className="flex gap-[27px]">
+                <div className="flex gap-[27px] mb-[10px] md:mb-0">
                   <Link href="/legal-notice">
                     <p className="text-[#9EB3CF] hover:text-white transition-all duration-300 font-bwmss01 text-[12px]">
                       Legal Notice

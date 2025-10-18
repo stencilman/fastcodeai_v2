@@ -147,7 +147,7 @@ const CeoDeskSlide = () => {
         loop={true}
         centeredSlides={true}
         slidesPerView={"auto"}
-        spaceBetween={30}
+        spaceBetween={16}
         grabCursor={true}
         autoplay={{
           delay: 3000,
@@ -156,7 +156,10 @@ const CeoDeskSlide = () => {
         className="!py-12"
       >
         {mockPosts.map((post, index) => (
-          <SwiperSlide key={post.id} className="!w-[380px] !h-auto">
+          <SwiperSlide
+            key={post.id}
+            className="!w-[80vw] sm:!w-[320px] md:!w-[360px] lg:!w-[380px] !h-auto"
+          >
             {({ isActive }) => (
               <div
                 className={`transition-all duration-500 ease-in-out transform h-full ${
