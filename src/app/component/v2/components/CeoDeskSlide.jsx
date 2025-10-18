@@ -12,72 +12,86 @@ import {
   SendIcon,
 } from "./icons";
 import Image from "next/image";
+import Link from "next/link";
 
 const mockPostsData = [
   {
     id: 1,
-    author: {
-      name: "Arjun Jain",
-      handle: "Your Global R&D Team for Hire | Found...",
-      avatarUrl: "/team/Arjun_Jain.webp",
-    },
-    timestamp: "1d",
-    content:
-      "Incredible energy from 50+ AI founders at yesterday's Antler #India #AI Residency - the best part of building in AI isn't the technology...",
-    media: { type: "image", urls: ["/v2/case-studies/driplab.jpg"] },
-    stats: { likes: 61, comments: 3, reposts: 1 },
+    imageUrl: "/linkedin/post-1.jpg",
+
+    postUrl:
+      "https://www.linkedin.com/posts/arjunjain_ai-artificialintelligence-machinelearning-activity-7384912566902296576-12Ut?utm_source=share&utm_medium=member_desktop&rcm=ACoAADHmvN4B9Ag4Zt7aPOR4tw61YwfRUctAS0c",
   },
   {
     id: 2,
-    author: {
-      name: "Arjun Jain",
-      handle: "Your Global R&D Team for Hire | Found...",
-      avatarUrl: "/team/Arjun_Jain.webp",
-    },
-    timestamp: "4d",
-    content:
-      "Remember when we used to just... play with stuff? No metrics, no KPIs, no evals, just pure...",
-    media: { type: "image", urls: ["/v2/case-studies/driplab.jpg"] },
-    stats: { likes: 83, comments: 3, reposts: 3 },
+    imageUrl: "/linkedin/post-2.jpg",
+
+    postUrl:
+      "https://www.linkedin.com/posts/arjunjain_%F0%9D%97%9C-%F0%9D%97%B7%F0%9D%98%82%F0%9D%98%80%F0%9D%98%81-%F0%9D%98%84%F0%9D%97%AE%F0%9D%98%81%F0%9D%97%B0%F0%9D%97%B5%F0%9D%97%B2%F0%9D%97%B1-yann-lecun-%F0%9D%97%B1%F0%9D%97%B2%F0%9D%98%80%F0%9D%98%81%F0%9D%97%BF%F0%9D%97%BC%F0%9D%98%86-activity-7362017774090510336-l5PL?utm_source=share&utm_medium=member_android&rcm=ACoAADHmvN4B9Ag4Zt7aPOR4tw61YwfRUctAS0c",
   },
   {
     id: 3,
-    author: {
-      name: "Arjun Jain",
-      handle: "Your Global R&D Team for Hire | Found...",
-      avatarUrl: "/team/Arjun_Jain.webp",
-    },
-    timestamp: "1d",
-    content:
-      '2008: "Please let me know if you might have something for me..."\nThat\'s what I wrote to my professor in...',
-    media: { type: "image", urls: ["/v2/case-studies/driplab.jpg"] },
-    stats: { likes: 250, comments: 20, reposts: 4 },
+    imageUrl: "/linkedin/post-3.jpg",
+
+    postUrl:
+      "https://www.linkedin.com/posts/arjunjain_teaching-programming-machinelearning-activity-7302664455593607168-ljhs?utm_source=share&utm_medium=member_android&rcm=ACoAADHmvN4B9Ag4Zt7aPOR4tw61YwfRUctAS0c",
   },
   {
     id: 4,
-    author: {
-      name: "Arjun Jain",
-      handle: "Your Global R&D Team for Hire | Found...",
-      avatarUrl: "/team/Arjun_Jain.webp",
-    },
-    timestamp: "5d",
-    content:
-      "A massive thank you to Arjun Jain (Founder, Fast Code AI) and Gaurav Aggarwal (VP & Chief AI Scientist, Reliance Jio)...",
-    media: { type: "image", urls: ["/v2/case-studies/driplab.jpg"] },
-    stats: { likes: 120, comments: 15, reposts: 9 },
+    imageUrl: "/linkedin/post-4.jpg",
+
+    postUrl:
+      "https://www.linkedin.com/posts/arjunjain_%F0%9D%97%9C-%F0%9D%97%A7%F0%9D%97%B2%F0%9D%97%AE%F0%9D%97%B0%F0%9D%97%B5-%F0%9D%97%A9%F0%9D%97%94%F0%9D%97%98%F0%9D%98%80-%F0%9D%97%B6%F0%9D%97%BB-%F0%9D%9F%AD%F0%9D%9F%AC-%F0%9D%97%A0%F0%9D%97%B6%F0%9D%97%BB%F0%9D%98%82-activity-7373537548981354496-YX4J?utm_source=share&utm_medium=member_android&rcm=ACoAADHmvN4B9Ag4Zt7aPOR4tw61YwfRUctAS0c",
   },
   {
     id: 5,
-    author: {
-      name: "Arjun Jain",
-      handle: "Your Global R&D Team for Hire | Found...",
-      avatarUrl: "/team/Arjun_Jain.webp",
-    },
-    timestamp: "6d",
-    content:
-      "Building a startup is a marathon, not a sprint. Every day brings new challenges and new opportunities for growth. Stay focused, stay resilient.",
-    media: null,
-    stats: { likes: 300, comments: 45, reposts: 22 },
+    imageUrl: "/linkedin/post-5.jpg",
+
+    postUrl:
+      "https://www.linkedin.com/posts/arjunjain_%F0%9D%97%A7%F0%9D%97%B5%F0%9D%97%B2-%F0%9D%97%BD%F0%9D%97%AE%F0%9D%97%BF%F0%9D%98%81%F0%9D%98%86%F0%9D%98%80-%F0%9D%98%84%F0%9D%97%B6%F0%9D%97%BB%F0%9D%97%B1%F0%9D%97%B6%F0%9D%97%BB%F0%9D%97%B4-%F0%9D%97%B1%F0%9D%97%BC%F0%9D%98%84%F0%9D%97%BB-activity-7369260596908720129-EzdX?utm_source=share&utm_medium=member_android&rcm=ACoAADHmvN4B9Ag4Zt7aPOR4tw61YwfRUctAS0c",
+  },
+  {
+    id: 6,
+    imageUrl: "/linkedin/post-6.jpg",
+    postUrl:
+      "https://www.linkedin.com/posts/arjunjain_theano-deeplearning-machinelearning-activity-7356493464483606529-aJg1?utm_source=share&utm_medium=member_android&rcm=ACoAADHmvN4B9Ag4Zt7aPOR4tw61YwfRUctAS0c",
+  },
+  {
+    id: 7,
+    imageUrl: "/linkedin/post-7.jpg",
+    postUrl:
+      "https://www.linkedin.com/posts/arjunjain_ml-activity-7333441984910475264-3f1B?utm_source=share&utm_medium=member_android&rcm=ACoAADHmvN4B9Ag4Zt7aPOR4tw61YwfRUctAS0c",
+  },
+  {
+    id: 8,
+    imageUrl: "/linkedin/post-8.jpg",
+    postUrl:
+      "https://www.linkedin.com/posts/arjunjain_companies-pay-me-500hr-to-tell-them-not-activity-7375709242067968000-1qbr?utm_source=share&utm_medium=member_android&rcm=ACoAADHmvN4B9Ag4Zt7aPOR4tw61YwfRUctAS0c",
+  },
+  {
+    id: 9,
+    imageUrl: "/linkedin/post-9.jpg",
+    postUrl:
+      "https://www.linkedin.com/posts/arjunjain_titan-cupertino-bangalore-activity-7353304222727098369-FF4r?utm_source=share&utm_medium=member_android&rcm=ACoAADHmvN4B9Ag4Zt7aPOR4tw61YwfRUctAS0c",
+  },
+  {
+    id: 10,
+    imageUrl: "/linkedin/post-10.jpg",
+
+    postUrl:
+      "https://www.linkedin.com/posts/arjunjain_machinelearning-ai-hiring-activity-7363409219791814656-yxwY?utm_source=share&utm_medium=member_android&rcm=ACoAADHmvN4B9Ag4Zt7aPOR4tw61YwfRUctAS0c",
+  },
+  {
+    id: 11,
+    imageUrl: "/linkedin/post-11.jpg",
+    postUrl:
+      "https://www.linkedin.com/posts/arjunjain_executionmatters-getitdone-activity-7381493862307061760-zX45?utm_source=share&utm_medium=member_android&rcm=ACoAADHmvN4B9Ag4Zt7aPOR4tw61YwfRUctAS0c",
+  },
+  {
+    id: 12,
+    imageUrl: "/linkedin/post-12.jpg",
+    postUrl:
+      "https://www.linkedin.com/posts/arjunjain_mpii-epfl-meta-activity-7374272477025193984-cKsH?utm_source=share&utm_medium=member_android&rcm=ACoAADHmvN4B9Ag4Zt7aPOR4tw61YwfRUctAS0c",
   },
 ];
 
@@ -99,90 +113,29 @@ const ActionButton = ({ icon, label }) => (
 
 const PostCard = ({ post, isActive }) => {
   return (
-    <div
+    <Link
+      href={post.postUrl}
+      target="_blank"
+      rel="noopener noreferrer"
       className={`
             bg-[#1d2232] rounded-xl flex flex-col h-full
-            border transition-all duration-300
-            ${isActive ? "border-sky-400/50" : "border-slate-700/80"}
+            border transition-all duration-300 
+            ${
+              isActive
+                ? "border-sky-400/50 cursor-pointer"
+                : "border-slate-700/80 cursor-pointer"
+            }
         `}
     >
-      <div className="p-4 flex-grow">
-        <div className="flex items-start justify-between">
-          <div className="flex items-start gap-3">
-            <Image
-              src={post.author.avatarUrl}
-              alt={post.author.name}
-              width={48}
-              height={48}
-              className="w-12 h-12 rounded-full"
-            />
-            <div>
-              <div className="flex items-center gap-1">
-                <h3 className="font-bold text-white">{post.author.name}</h3>
-                <LinkedInIcon className="w-4 h-4 text-sky-400" />
-                <span className="text-slate-400 text-sm">· You</span>
-              </div>
-              <p className="text-xs text-slate-400 leading-tight">
-                {post.author.handle}
-              </p>
-              <div className="flex items-center gap-1 text-xs text-slate-400 mt-1">
-                <span>{post.timestamp}</span>
-                <span>·</span>
-                <GlobeIcon className="w-4 h-4" />
-              </div>
-            </div>
-          </div>
-          <button className="text-slate-400 hover:text-white">
-            <MoreIcon className="w-6 h-6" />
-          </button>
-        </div>
-        <p className="text-slate-200 text-sm my-4 whitespace-pre-wrap">
-          {post.content}
-        </p>
+      <div className="relative w-full h-full p-[10px] flex items-center justify-center">
+        <Image
+          src={post.imageUrl}
+          alt="LinkedIn Post"
+          width={380}
+          height={380}
+        />
       </div>
-      {post.media && (
-        <div className="relative w-full aspect-video mt-auto">
-          <Image
-            src={post.media.urls[0]}
-            alt="Post media"
-            width={320}
-            height={200}
-            className="w-full h-[200px]"
-          />
-          {post.media.type === "gallery" && (
-            <div className="absolute top-2 right-2 bg-black/60 text-white text-xs px-2 py-1 rounded-full">
-              1/{post.media.urls.length}
-            </div>
-          )}
-        </div>
-      )}
-      <div className="p-4">
-        <div className="flex items-center gap-4 text-xs text-slate-400 mb-3">
-          <div className="flex items-center">
-            <span className="bg-blue-500 w-4 h-4 rounded-full border-2 border-[#1d2232]"></span>
-            <span className="bg-red-500 w-4 h-4 rounded-full border-2 border-[#1d2232] -ml-2"></span>
-            <span className="bg-green-500 w-4 h-4 rounded-full border-2 border-[#1d2232] -ml-2"></span>
-            <span className="ml-2">{post.stats.likes}</span>
-          </div>
-          <span>·</span>
-          <span>{post.stats.comments} comments</span>
-          <span>·</span>
-          <span>{post.stats.reposts} reposts</span>
-        </div>
-        <div className="border-t border-slate-700 pt-2 flex justify-around">
-          <ActionButton icon={<LikeIcon className="w-6 h-6" />} label="Like" />
-          <ActionButton
-            icon={<CommentIcon className="w-6 h-6" />}
-            label="Comment"
-          />
-          <ActionButton
-            icon={<RepostIcon className="w-6 h-6" />}
-            label="Repost"
-          />
-          <ActionButton icon={<SendIcon className="w-6 h-6" />} label="Send" />
-        </div>
-      </div>
-    </div>
+    </Link>
   );
 };
 
