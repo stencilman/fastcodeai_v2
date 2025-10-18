@@ -89,7 +89,7 @@ const HeroSlider = () => {
     <div className="relative w-full h-auto md:h-screen">
       <Swiper
         modules={[EffectFade, Autoplay, Pagination]}
-        effect="fade"
+        // effect="fade"
         speed={1500}
         autoHeight={true}
         autoplay={{

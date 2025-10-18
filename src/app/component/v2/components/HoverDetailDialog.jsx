@@ -38,7 +38,7 @@ const HoverDetailDialog = ({ label, detail }) => {
             animate={{ opacity: 1, x: 0, scale: 1 }}
             exit={{ opacity: 0, x: 6, scale: 0.98 }}
             transition={{ duration: 0.25, ease: [0.2, 0.8, 0.2, 1] }}
-            className="absolute top-[-300px] left-full ml-3 -translate-y-[50%] z-50 "
+            className="fixed inset-0 z-50 flex items-center justify-center p-4 md:absolute md:inset-auto md:top-[-300px] md:left-full md:ml-3 md:-translate-y-[50%]"
           >
             <div
               className="relative w-[360px] max-w-[80vw] rounded-2xl border border-white/10 bg-[rgba(3,11,23,0.85)] backdrop-blur-md p-6 shadow-xl"
@@ -49,10 +49,10 @@ const HoverDetailDialog = ({ label, detail }) => {
               }}
               onMouseLeave={closeWithDelay}
             >
-              {/* caret */}
-              <div className="absolute left-[-7px] top-1/2 -translate-y-1/2 w-4 h-4 rotate-45 bg-[rgba(3,11,23,0.85)] border-l border-t border-white/10"></div>
+              {/* caret (desktop only) */}
+              <div className="hidden md:block absolute left-[-7px] top-1/2 -translate-y-1/2 w-4 h-4 rotate-45 bg-[rgba(3,11,23,0.85)] border-l border-t border-white/10"></div>
 
-              <h3 className="text-white text-2xl font-bold font-aeonik mb-3 leading-snug">
+              <h3 className="text-white text-2xl font-bold font-aeonik mb-3 leading-snug tracking-wide">
                 {detail?.title}
               </h3>
               <p className="text-[#9EB3CF] text-[15px] leading-6 font-bwmss01 mb-5 relative max-h-[300px] overflow-y-auto">
