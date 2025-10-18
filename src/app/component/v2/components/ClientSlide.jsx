@@ -129,7 +129,7 @@ const ClientSlide = () => {
       <div className="flex pt-[50px] sm:pt-0 flex-col gap-[60px] w-full items-center ">
         <div className=" h-auto w-[100%] text-center  ">
           <div className="w-full h-full flex flex-col justify-center">
-            <h1 className="text-[8vw] md:text-[7vw] tracking-normal lg:text-[51px] text-white font-aeonik">
+            <h1 className="text-3xl md:text-5xl text-white font-bold  font-aeonik tracking-wide w-full px-[20px] text-center">
               Trusted by Industry Leaders
             </h1>
           </div>

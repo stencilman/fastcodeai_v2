@@ -8,8 +8,8 @@ const CeoDesk = () => {
   return (
     <div className="w-full">
       <div className="w-full h-full flex flex-col justify-center">
-        <h1 className="text-[8vw] md:text-[7vw] tracking-normal lg:text-[51px] text-white font-aeonik w-full text-center ">
-          Trusted by Industry Leaders
+        <h1 className="text-3xl md:text-5xl text-white font-bold  font-aeonik tracking-wide w-full px-[20px] text-center ">
+          From the CEO&apos;s Desk
         </h1>
       </div>
       <CeoDeskSlide />

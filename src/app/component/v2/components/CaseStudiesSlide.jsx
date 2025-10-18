@@ -57,7 +57,7 @@ const CaseStudiesSlide = () => {
       description:
         "Seikor revolutionizes HR with AI that streamlines entire hiring workflows, from job posting to candidate management, making recruitment faster and smarter.",
       image: "/v2/case-studies/case-5.jpg",
-      link: "https://seikor.ai/",
+      link: "https://seikor.com/",
       ctaText: "View the product",
     },
     {
@@ -129,7 +129,7 @@ const CaseStudiesSlide = () => {
   const activeStudy = caseStudies[activeIndex] || {};
 
   return (
-    <div className="relative bg-[#030B17] py-16">
+    <div className="relative bg-[#00081F] py-16">
       <div className="container mx-auto px-4">
         {/* Top Pagination Section */}
         <div className="flex gap-3 mb-12 flex-wrap -mx-4 px-4 md:mx-0 md:px-0">
@@ -218,9 +218,7 @@ const CaseStudiesSlide = () => {
                       <div className="max-w-[1200px] mx-auto flex items-center justify-between">
                         <div className="max-w-xl">
                           <p className="text-[#9EB3CF] text-lg">
-                            AI-powered photoshoots and Virtual Try-ons,
-                            delivering on-brand creatives at half the cost of
-                            traditional shoots.
+                            {study.description}
                           </p>
                         </div>
 

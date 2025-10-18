@@ -129,7 +129,7 @@ const HeroSlider = () => {
             {/* Content */}
             <div className="relative z-10 flex flex-col justify-center h-[100vh]   max-w-[1440px] mx-auto px-4 md:px-8 lg:px-16">
               <div className="max-w-[700px]">
-                <h1 className="text-3xl md:text-5xl text-white font-bold mb-6 font-aeonik tracking-wide ">
+                <h1 className="text-3xl md:text-5xl text-white font-bold  font-aeonik tracking-wide mb-6 ">
                   {slide.title}
                 </h1>
                 <p className="text-lg text-white mb-8 font-bwmss01 whitespace-pre-line">
