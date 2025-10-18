@@ -51,7 +51,15 @@ const ClientSlide = () => {
     {
       src: Bosch,
     },
-
+    {
+      src: fitlab,
+    },
+    {
+      src: textiles,
+    },
+    {
+      src: mbux,
+    },
     // {
     //   src: fitlab,
     // },
@@ -95,6 +103,18 @@ const ClientSlide = () => {
     {
       src: textiles,
     },
+    {
+      src: meta,
+    },
+
+    {
+      src: fitlab,
+    },
+
+    {
+      src: Bosch,
+    },
+
   ];
 
   return (
