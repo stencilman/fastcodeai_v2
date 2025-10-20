@@ -84,12 +84,12 @@ export default function RootLayout({ children }) {
       <body className={`${aeonik.variable} ${bwmss01.variable}`}>
         <link rel="icon" href="/fcai.ico" sizes="any" />
         <GlobalProvider>
-          <ClientWrapper>
+          {/* <ClientWrapper> */}
             <SmoothScroll>
               <Navbar />
               {children}
             </SmoothScroll>
-          </ClientWrapper>
+          {/* </ClientWrapper> */}
           <SpeedInsights />
         </GlobalProvider>
       </body>
