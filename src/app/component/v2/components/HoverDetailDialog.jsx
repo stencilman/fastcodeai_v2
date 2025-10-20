@@ -38,10 +38,10 @@ const HoverDetailDialog = ({ label, detail }) => {
             animate={{ opacity: 1, x: 0, scale: 1 }}
             exit={{ opacity: 0, x: 6, scale: 0.98 }}
             transition={{ duration: 0.25, ease: [0.2, 0.8, 0.2, 1] }}
-            className="fixed inset-0 z-50 flex items-center justify-center p-4 md:absolute md:inset-auto md:top-[-300px] md:left-full md:ml-3 md:-translate-y-[50%]"
+            className="fixed inset-0 z-50 flex items-center justify-center p-4 md:absolute md:inset-auto md:top-[-253px] md:left-0 md:ml-0 md:-translate-y-[50%]"
           >
             <div
-              className="relative w-[360px] max-w-[80vw] rounded-2xl border border-white/10 bg-[rgba(3,11,23,0.85)] backdrop-blur-md p-6 shadow-xl"
+              className="relative w-[360px] md:w-[550px] max-w-[80vw] rounded-2xl border border-white/10 bg-[rgba(3,11,23,0.85)] backdrop-blur-md p-6 shadow-xl"
               onMouseEnter={() => {
                 if (hoverTimeoutRef.current)
                   clearTimeout(hoverTimeoutRef.current);

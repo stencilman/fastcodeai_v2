@@ -211,49 +211,43 @@ const CaseStudiesSlide = () => {
                       </div>
                     </div>
                   </div>
+                  {/* Desktop/Tablet text/CTA overlay synced with active slide */}
+                  <div className="hidden md:block absolute z-50 px-4 bottom-11 w-full ">
+                    <div className="backdrop-blur-[75px] bg-[#00000040] py-6 px-8 rounded-2xl">
+                      <div className="max-w-[1200px] mx-auto flex items-center justify-between">
+                        <div className="max-w-xl">
+                          <p className="text-[#fff] text-lg">
+                            {activeStudy?.description}
+                          </p>
+                        </div>
+                        {activeStudy?.ctaText && (
+                          <Link
+                            href={activeStudy?.link || "#"}
+                            target={activeStudy?.link ? "_blank" : undefined}
+                            className={`relative rounded-full z-[1] flex items-center gap-[7px] p-[15px] text-lg justify-between main_cta_button bg-gradient-to-br from-[#2DC1C3] to-[#0268F2]  text-white font-bwmss01 capitalize`}
+                          >
+                            <div className={``}>{activeStudy.ctaText}</div>
+                            <div className="flex items-center justify-center relative">
+                              <>
+                                <Image
+                                  className=" "
+                                  src="/cta_arrow.svg"
+                                  alt="arrow"
+                                  width="30"
+                                  height="30"
+                                />
+                              </>
+                            </div>
+                          </Link>
+                        )}
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </SwiperSlide>
             ))}
           </Swiper>
-          {/* Desktop/Tablet text/CTA overlay synced with active slide */}
-          <div className="hidden md:block absolute z-50 px-4 bottom-11 w-full ">
-            <div className="backdrop-blur-[15px] bg-[rgba(255,255,255,0.10)] py-6 px-8 rounded-2xl">
-              <div className="max-w-[1200px] mx-auto flex items-center justify-between">
-                <div className="max-w-xl">
-                  <p className="text-[#9EB3CF] text-lg">
-                    {activeStudy?.description}
-                  </p>
-                </div>
-                {activeStudy?.ctaText && (
-                  <Link
-                    href={activeStudy?.link || "#"}
-                    target={activeStudy?.link ? "_blank" : undefined}
-                    className={`relative rounded-full z-[1] flex items-center gap-[7px] p-[15px] text-lg justify-between main_cta_button bg-gradient-to-br from-[#2DC1C3] to-[#0268F2]  text-white`}
-                  >
-                    <div className={``}>{activeStudy.ctaText}</div>
-                    <div className="flex items-center justify-center relative">
-                      <>
-                        <Image
-                          className="button__icon-svg transition-transform duration-300"
-                          src="/rightArrow.svg"
-                          alt="arrow"
-                          width="25"
-                          height="25"
-                        />
-                        <Image
-                          className="button__icon-svg--copy absolute"
-                          src="/rightArrow.svg"
-                          alt="arrow"
-                          width="25"
-                          height="25"
-                        />
-                      </>
-                    </div>
-                  </Link>
-                )}
-              </div>
-            </div>
-          </div>
+
           {/* Mobile-only text/CTA card below the slider */}
           <div className="md:hidden mt-6">
             <div className="relative mx-auto w-full rounded-2xl border border-white/10 backdrop-blur-md bg-[rgba(255,255,255,0.06)] px-5 py-6">
@@ -267,15 +261,16 @@ const CaseStudiesSlide = () => {
                 <Link
                   href={activeStudy?.link || "#"}
                   target={activeStudy?.link ? "_blank" : undefined}
-                  className="relative block text-center rounded-[14px] px-6 py-4 text-white text-base font-medium bg-gradient-to-br from-[#2DC1C3] to-[#0268F2]"
+                  className="relative block text-center rounded-[14px] px-4 py-2 text-white text-base font-medium bg-gradient-to-br from-[#2DC1C3] to-[#0268F2] font-bwmss01 capitalize"
                 >
                   {activeStudy.ctaText}
                   <span className="align-middle inline-block ml-2">
                     <Image
-                      src="/rightArrow.svg"
+                      className=" "
+                      src="/cta_arrow.svg"
                       alt="arrow"
-                      width="20"
-                      height="20"
+                      width="25"
+                      height="25"
                     />
                   </span>
                 </Link>
