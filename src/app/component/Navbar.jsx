@@ -56,7 +56,7 @@ const Navbar = () => {
             <Image
               priority="true"
               className="w-[190px] sm:w-[290px]"
-              src="/logo1.png"
+              src="/logo1.svg"
               alt="logo"
               width="290"
               height="68"
