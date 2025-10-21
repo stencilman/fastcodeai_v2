@@ -1,6 +1,6 @@
 "use client";
-import React from 'react';
-import HeroSlider from '../components/HeroSlider';
+import React from "react";
+import HeroSlider from "../components/HeroSlider";
 
 const Hero = () => {
   return (
@@ -8,6 +8,6 @@ const Hero = () => {
       <HeroSlider />
     </section>
   );
-}
+};
 
-export default Hero
+export default Hero;
