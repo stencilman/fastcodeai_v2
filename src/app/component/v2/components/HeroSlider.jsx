@@ -15,6 +15,7 @@ const HeroSlider = () => {
     {
       id: 1,
       bgVideo: "/v2/hero/odo.mp4",
+      mobileVideo: "/v2/hero/mobile/odo.mp4",
       title: "Frontier AI. Enterprise Scale. Delivered.",
       subtitle:
         "We help organisations harness AI to transform how they innovate, operate, and compete - from research to real-world deployment.",
@@ -32,6 +33,7 @@ const HeroSlider = () => {
     {
       id: 2,
       bgVideo: "/v2/hero/roadside-assist.mp4",
+      mobileVideo: "/v2/hero/mobile/roadside-assist.mp4",
       title: "Frontier AI. Enterprise Scale. Delivered.",
       // subtitle: "With Cutting-Edge AI\nResearch Solutions",
       subtitle:
@@ -50,6 +52,7 @@ const HeroSlider = () => {
     {
       id: 3,
       bgVideo: "/v2/hero/mbux.mp4",
+      mobileVideo: "/v2/hero/mobile/pose-estimation.mp4",
       title: "Frontier AI. Enterprise Scale. Delivered.",
       subtitle:
         "We help organisations harness AI to transform how they innovate, operate, and compete - from research to real-world deployment.",
@@ -67,6 +70,7 @@ const HeroSlider = () => {
     {
       id: 4,
       bgVideo: "/v2/hero/pose-estimation.mp4",
+      mobileVideo: "/v2/hero/mobile/pose-estimation.mp4",
       title: "Frontier AI. Enterprise Scale. Delivered.",
       subtitle:
         "We help organisations harness AI to transform how they innovate, operate, and compete - from research to real-world deployment.",
@@ -93,7 +97,7 @@ const HeroSlider = () => {
         // speed={1500}
         autoHeight={true}
         autoplay={{
-          delay: 5000,
+          delay: 7000,
           disableOnInteraction: false,
         }}
         loop={true}
@@ -146,7 +150,7 @@ const HeroSlider = () => {
                 <div className="md:hidden mt-8">
                   <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden border border-white/10">
                     <video
-                      src={slide.bgVideo}
+                      src={slide.mobileVideo}
                       autoPlay
                       muted
                       loop

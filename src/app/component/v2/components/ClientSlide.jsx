@@ -124,7 +124,7 @@ const ClientSlide = () => {
   return (
     <div
       ref={container}
-      className="w-full min-h-[90vh] min-lg:h-[100vh] bg-[#00081F]  relative flex flex-col items-center justify-center"
+      className="w-full min-h-[70vh] min-lg:h-[100vh] bg-[#00081F]  relative flex flex-col items-center justify-center"
     >
       {/* shadow */}
       {/* <div className="absolute bottom-[0px] left-0 w-full h-[150px] blur-[50px] translate-y-[30px] scale-90  rounded-[50%] z-[-1] bg-gradient-to-br from-[#1D8283] to-[#033577] bg-gradient-156deg bg-no-repeat bg-[0% 0%] opacity-49 border-0 border-opacity-0 filter blur-[50px]"></div> */}
