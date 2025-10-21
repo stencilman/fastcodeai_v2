@@ -5,11 +5,25 @@ import Shadow from "../Shadow";
 import { useRef } from "react";
 import { useScroll, useTransform, motion } from "framer-motion";
 
-import mbux from "../../../../public//our-clients/mercedes.png";
-import Bosch from "../../../../public//our-clients/Bosch.png";
-import fitlab from "../../../../public//our-clients/fitlab.png";
-import meta from "../../../../public//our-clients/Meta.png";
-import textiles from "../../../../public//our-clients/textiles.png";
+import aramco from "../../../../public/v2/our-clients/aramco.svg";
+import bosch from "../../../../public/v2/our-clients/bosch.svg";
+import dubaiExpo from "../../../../public/v2/our-clients/dubai-expo.svg";
+import embitel from "../../../../public/v2/our-clients/embitel.svg";
+import iis from "../../../../public/v2/our-clients/iis.svg";
+import jetapult from "../../../../public/v2/our-clients/jetapult.svg";
+import liftlab from "../../../../public/v2/our-clients/liftlab.svg";
+import mercedes from "../../../../public/v2/our-clients/mercedes.svg";
+import miai from "../../../../public/v2/our-clients/miai.svg";
+import petrofac from "../../../../public/v2/our-clients/petrofac.svg";
+import seikor from "../../../../public/v2/our-clients/seikor.svg";
+import textiles from "../../../../public/v2/our-clients/textiles.svg";
+import zen from "../../../../public/v2/our-clients/zen.svg";
+
+// import mbux from "../../../../public//our-clients/mercedes.png";
+// import Bosch from "../../../../public//our-clients/Bosch.png";
+// import fitlab from "../../../../public//our-clients/fitlab.png";
+// import meta from "../../../../public//our-clients/Meta.png";
+// import textiles from "../../../../public//our-clients/textiles.png";
 
 const Clients = () => {
   const container = useRef(null);
@@ -26,72 +40,85 @@ const Clients = () => {
 
   const slider1 = [
     {
-      src: textiles,
+      src: aramco,
     },
     {
-      src: mbux,
-    },
-
-    {
-      src: Bosch,
-    },
-
-    {
-      src: fitlab,
-    },
-
-    {
-      src: meta,
+      src: bosch,
     },
     {
-      src: mbux,
+      src: dubaiExpo,
     },
     {
-      src: textiles,
+      src: embitel,
     },
-    // {
-    //   src: Bosch,
-    // },
-
-    // {
-    //   src: fitlab,
-    // },
-
-    // {
-    //   src: meta,
-    // },
+    {
+      src: iis,
+    },
+    {
+      src: jetapult,
+    },
+    {
+      src: liftlab,
+    },
+    {
+      src: aramco,
+    },
+    {
+      src: bosch,
+    },
+    {
+      src: dubaiExpo,
+    },
+    {
+      src: embitel,
+    },
+    {
+      src: iis,
+    },
+    {
+      src: jetapult,
+    },
+    {
+      src: liftlab,
+    },
   ];
 
   const slider2 = [
     {
-      src: meta,
+      src: mercedes,
     },
-
+    {
+      src: miai,
+    },
+    {
+      src: petrofac,
+    },
+    {
+      src: seikor,
+    },
     {
       src: textiles,
     },
-
     {
-      src: Bosch,
-    },
-
-    {
-      src: mbux,
+      src: zen,
     },
     {
-      src: meta,
+      src: mercedes,
     },
-
+    {
+      src: miai,
+    },
+    {
+      src: petrofac,
+    },
+    {
+      src: seikor,
+    },
     {
       src: textiles,
     },
-
     {
-      src: Bosch,
-    },
-
-    {
-      src: mbux,
+      src: zen,
     },
   ];
   return (
@@ -133,12 +160,13 @@ const Clients = () => {
                     key={i}
                     className="border-[#1D2B4F] cursor-pointer transition border-color duration-500 hover:border-[#ffffff92] hover:border border rounded-[18px] min-w-[150px] w-[258px] h-[122px] md:h-[182px] flex items-center justify-center"
                   >
-                    <Image
+                    {/* <Image
                       src={e.src}
                       width="122"
                       height="70"
                       alt="mercedesLogo"
-                    />
+                    /> */}
+                       <Image src={e.src} width="122" height="70" alt="clientLogo" />
                   </div>
                 );
               })}
@@ -157,13 +185,14 @@ const Clients = () => {
                     key={i}
                     className="border-[#1D2B4F] cursor-pointer transition border-color duration-500 hover:border-[#ffffff92] hover:border border rounded-[18px] min-w-[150px] w-[258px] h-[122px] md:h-[182px] flex items-center justify-center"
                   >
-                    <Image
+                    {/* <Image
                       src={e.src}
                       width="122"
                       height="70"
                       alt="mercedesLogo"
                       placeholder="blur"
-                    />
+                    /> */}
+                       <Image src={e.src} width="122" height="70" alt="clientLogo" />
                   </div>
                 );
               })}

@@ -72,7 +72,7 @@ const HeroSlider = () => {
         "We help organisations harness AI to transform how they innovate, operate, and compete - from research to real-world deployment.",
       ctaText: "Discuss your AI Roadmap",
       ctaLink: "/contact",
-      category: "Post Estimation",
+      category: "Pose Estimation",
       detail: {
         title:
           "Discover the pioneering research that transformed computer vision:",

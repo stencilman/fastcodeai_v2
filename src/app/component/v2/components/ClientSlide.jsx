@@ -44,15 +44,12 @@ const ClientSlide = () => {
     {
       src: bosch,
     },
-
     {
       src: dubaiExpo,
     },
-
     {
       src: embitel,
     },
-
     {
       src: iis,
     },
@@ -60,33 +57,8 @@ const ClientSlide = () => {
       src: jetapult,
     },
     {
-      src: textiles,
-    },
-    {
       src: liftlab,
     },
-    {
-      src: mercedes,
-    },
-    {
-      src: miai,
-    },
-    {
-      src: petrofac,
-    },
-    {
-      src: seikor,
-    },
-
-    {
-      src: textiles,
-    },
-    {
-      src: zen,
-    },
-  ];
-
-  const slider2 = [
     {
       src: aramco,
     },
@@ -107,6 +79,27 @@ const ClientSlide = () => {
     },
     {
       src: liftlab,
+    },
+  ];
+
+  const slider2 = [
+    {
+      src: mercedes,
+    },
+    {
+      src: miai,
+    },
+    {
+      src: petrofac,
+    },
+    {
+      src: seikor,
+    },
+    {
+      src: textiles,
+    },
+    {
+      src: zen,
     },
     {
       src: mercedes,
@@ -187,12 +180,7 @@ const ClientSlide = () => {
                   key={i}
                   className="border-[#1D2B4F] cursor-pointer transition border-color duration-500 hover:border-[#ffffff92] hover:border border rounded-[18px] min-w-[150px] w-[258px] h-[122px] md:h-[182px] flex items-center justify-center"
                 >
-                  <Image
-                    src={e.src}
-                    width="122"
-                    height="70"
-                    alt="mercedesLogo"
-                  />
+                  <Image src={e.src} width="122" height="70" alt="clientLogo" />
                 </div>
               );
             })}
