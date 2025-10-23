@@ -124,11 +124,11 @@ const CaseStudies = () => {
       <div className="absolute left-[7%] top-[0%]  w-[20%] h-[17%] blur-[50px] translate-y-[167px] scale-90  rounded-[50%] z-[3] bg-gradient-to-br from-[#1D8283] to-[#033577] bg-gradient-156deg bg-no-repeat bg-[0% 0%] opacity-49 border-0 border-opacity-0 filter blur-[100px]"></div>
       <div className="absolute left-[70%] top-[46%]  w-[27%] h-[17%] blur-[50px] translate-y-[167px] scale-90  rounded-[50%] z-[3] bg-gradient-to-br from-[#1D8283] to-[#033577] bg-gradient-156deg bg-no-repeat bg-[0% 0%] opacity-49 border-0 border-opacity-0 filter blur-[100px]"></div>
       {/* catagories */}
-        {/* <RevealX > */}
+      {/* <RevealX > */}
       <div className="flex gap-[12px] md:gap-[35px] items-center justify-center flex-wrap mt-[40px] md:mt-[70px] ">
         {tabs.map((tab) => (
           <button
-          key={tab}
+            key={tab}
             onClick={() => {
               setSelected(tab);
               if (tab === "All") return setPortfolioList(list);
@@ -139,7 +139,7 @@ const CaseStudies = () => {
               selected === tab
                 ? "text-white "
                 : "text-slate-300 hover:text-slate-200 hover:bg-slate-700 border border-slate-700"
-            }  transition-colors   rounded-[30px]  px-[21px] py-[10px] text-lg font-bwmss01 text-white relative`}
+            }  transition-colors   rounded-[4px]  px-[25px] py-[10px] text-lg font-bwmss01 text-white relative`}
             style={{ border: "1px solid #082373" }}
           >
             <span className="relative z-10">{tab}</span>
@@ -147,13 +147,13 @@ const CaseStudies = () => {
               <motion.span
                 layoutId="pill-tab"
                 transition={{ type: "spring", duration: 0.5 }}
-                className="absolute inset-0 z-0 bg-gradient-to-r from-[#2DC1C3] to-[#0268F2] rounded-[30px]"
+                className="absolute inset-0 z-0 bg-gradient-to-r from-[#2DC1C3] to-[#0268F2] rounded-[4px]"
               ></motion.span>
             )}
           </button>
         ))}
       </div>
-        {/* </RevealX> */}
+      {/* </RevealX> */}
 
       <div className="w-full my-[70px] px-[20px] md:px-[50px] lg:px-[100px] flex flex-col gap-[40px] items-center relative z-[5]">
         {portfolioList.map((e, i) => {
@@ -173,7 +173,7 @@ const CaseStudies = () => {
                       <p className="text-[#9EB3CF] font-bwmss01 text-lg  relative z-10">
                         {e.description}
                       </p>
-                      <div className="w-[164px]">
+                      <div className="w-fit">
                         <Button to={`${e.to}`} name="Read More" />
                       </div>
                     </div>

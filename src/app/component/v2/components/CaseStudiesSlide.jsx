@@ -136,7 +136,7 @@ const CaseStudiesSlide = () => {
           {caseStudies.map((study, index) => (
             <div
               key={study.id}
-              className={`shrink-0 group cursor-pointer relative bg-[rgba(255,255,255,0.05)] backdrop-blur-[3px] rounded-full px-4 py-2 md:px-6 md:py-3 transition-all duration-300 overflow-hidden `}
+              className={`shrink-0 group cursor-pointer relative bg-[rgba(255,255,255,0.05)] backdrop-blur-[3px] rounded-[4px] px-4 py-2 md:px-6 md:py-3 transition-all duration-300 overflow-hidden `}
               onClick={() => mainSwiperRef.current?.swiper.slideToLoop(index)}
             >
               {/* Progress animation pseudo-element only, no width progress logic */}
@@ -224,7 +224,7 @@ const CaseStudiesSlide = () => {
                           <Link
                             href={activeStudy?.link || "#"}
                             target={activeStudy?.link ? "_blank" : undefined}
-                            className={`relative rounded-full z-[1] flex items-center gap-[7px] p-[15px] text-lg justify-between main_cta_button bg-gradient-to-br from-[#2DC1C3] to-[#0268F2]  text-white font-bwmss01 capitalize`}
+                            className={`relative rounded-[4px] z-[1] flex items-center gap-[7px] px-[25px] py-[10px] text-lg justify-between main_cta_button bg-gradient-to-br from-[#2DC1C3] to-[#0268F2]  text-white font-bwmss01 capitalize`}
                           >
                             <div className={``}>{activeStudy.ctaText}</div>
                             <div className="flex items-center justify-center relative">
@@ -261,7 +261,7 @@ const CaseStudiesSlide = () => {
                 <Link
                   href={activeStudy?.link || "#"}
                   target={activeStudy?.link ? "_blank" : undefined}
-                  className="relative block text-center rounded-[14px] px-4 py-2 text-white text-base font-medium bg-gradient-to-br from-[#2DC1C3] to-[#0268F2] font-bwmss01 capitalize"
+                  className="relative block text-center rounded-[4px] px-4 py-2 text-white text-base font-medium bg-gradient-to-br from-[#2DC1C3] to-[#0268F2] font-bwmss01 capitalize"
                 >
                   {activeStudy.ctaText}
                   <span className="align-middle inline-block ml-2">

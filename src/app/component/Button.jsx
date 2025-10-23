@@ -7,7 +7,7 @@ const Button = ({ to, name, target, type = "primary" }) => {
     <Link
       target={target}
       href={to}
-      className={`relative rounded-full z-[1] flex items-center gap-[7px] p-[15px] text-lg justify-between ${
+      className={`relative rounded-[4px] z-[1] flex items-center gap-[7px] px-[25px] py-[10px] text-lg justify-between ${
         type === "secondary"
           ? "secondary_cta_button"
           : "main_cta_button bg-gradient-to-br from-[#2DC1C3] to-[#0268F2] "
@@ -44,15 +44,15 @@ const Button = ({ to, name, target, type = "primary" }) => {
               className="button__icon-svg transition-transform duration-300"
               src="/rightArrow.svg"
               alt="arrow"
-              width="25"
-              height="25"
+              width="20"
+              height="20"
             />
             <Image
               className="button__icon-svg--copy absolute"
               src="/rightArrow.svg"
               alt="arrow"
-              width="25"
-              height="25"
+              width="20"
+              height="20"
             />
           </>
         )}

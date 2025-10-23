@@ -113,7 +113,7 @@ In February 2023, we were a small but mighty group of 8. Fast forward to today, 
                   accuracy, and productivity. Discover our artificial
                   intelligence services.
                 </p>
-                <div className="w-[164px]">
+                <div className="w-fit">
                   <Button to="/contact" name="Know More" />
                 </div>
               </div>

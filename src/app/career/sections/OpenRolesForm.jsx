@@ -98,7 +98,7 @@ const OpenRolesForm = () => {
                       Join us to advance your career in a pioneering technology
                       environment!
                     </p>
-                    <div className="max-w-[160px] mr-[60px]">
+                    <div className="max-w-fit mr-[60px]">
                       <Button name="Apply Now" to="/contact" />
                     </div>
                   </div>

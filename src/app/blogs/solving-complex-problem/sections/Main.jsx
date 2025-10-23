@@ -86,8 +86,8 @@ const Main = () => {
                 </p>
                 <div className="flex w-full gap-[5%]">
                   <video
-                  type="video/mp4"
-                  // style={{ mixBlendMode: "screen" }}
+                    type="video/mp4"
+                    // style={{ mixBlendMode: "screen" }}
                     loop
                     controls
                     playsInline
@@ -110,7 +110,7 @@ const Main = () => {
                   accuracy, and productivity. Discover our artificial
                   intelligence services.
                 </p>
-                <div className="w-[164px]">
+                <div className="w-fit">
                   <Button to="/contact" name="Know More" />
                 </div>
               </div>

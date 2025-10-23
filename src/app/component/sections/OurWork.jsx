@@ -146,7 +146,6 @@ const OurWork = () => {
     }
   };
 
-
   return (
     <div className="w-full min-h-[120vh] md:min-h-[100vh] pl-[20px] md:pl-[80px] lg:pl-[160px] relative bg-[#00081F] flex flex-col justify-center py-[100px]">
       <div className="absolute top-[-160px] left-0 w-full h-[150px] blur-[50px] translate-y-[30px] scale-90  rounded-[50%] z-[1] bg-gradient-to-br from-[#1D8283] to-[#033577] bg-gradient-156deg bg-no-repeat bg-[0% 0%] opacity-49 border-0 border-opacity-0 filter blur-[50px]"></div>
@@ -160,38 +159,35 @@ const OurWork = () => {
         <div className="flex gap-[10px] md:gap-[15px]">
           {/* Left Button */}
           <div
-            className="w-[8vw] h-[8vw] md:w-[49px] md:h-[49px] border border-white rounded-full flex justify-center items-center cursor-pointer duration-500  hover:border relative fill-[#fff] hover:fill-black"
-            
+            className="w-[8vw] h-[8vw] md:w-[49px] md:h-[49px] border border-white rounded-[4px] flex justify-center items-center cursor-pointer duration-500  hover:border relative fill-[#fff] hover:fill-black"
             style={{ overflow: "hidden" }}
             onClick={prevSlide}
           >
             <RoundedHover>
-            <svg
-              className="w-[20px] md:w-[30px] transform scale-x-[-1] relative z-10 "
-              viewBox="0 0 46 40"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M46 20.038c0-.7-.3-1.5-.8-2.1l-16-17c-1.1-1-3.2-1.4-4.4-.3-1.2 1.1-1.2 3.3 0 4.4l11.3 11.9H3c-1.7 0-3 1.3-3 3s1.3 3 3 3h33.1l-11.3 11.9c-1 1-1.2 3.3 0 4.4 1.2 1.1 3.3.8 4.4-.3l16-17c.5-.5.8-1.1.8-1.9z"></path>
-            </svg>
+              <svg
+                className="w-[20px] md:w-[30px] transform scale-x-[-1] relative z-10 "
+                viewBox="0 0 46 40"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M46 20.038c0-.7-.3-1.5-.8-2.1l-16-17c-1.1-1-3.2-1.4-4.4-.3-1.2 1.1-1.2 3.3 0 4.4l11.3 11.9H3c-1.7 0-3 1.3-3 3s1.3 3 3 3h33.1l-11.3 11.9c-1 1-1.2 3.3 0 4.4 1.2 1.1 3.3.8 4.4-.3l16-17c.5-.5.8-1.1.8-1.9z"></path>
+              </svg>
             </RoundedHover>
           </div>
-         
+
           {/* Right Button */}
           <div
-            className="w-[8vw] h-[8vw] md:w-[49px] md:h-[49px] border border-white rounded-full flex justify-center items-center cursor-pointer duration-500  hover:border relative fill-[#fff] hover:fill-black"
-            
+            className="w-[8vw] h-[8vw] md:w-[49px] md:h-[49px] border border-white rounded-[4px] flex justify-center items-center cursor-pointer duration-500  hover:border relative fill-[#fff] hover:fill-black"
             style={{ overflow: "hidden" }}
             onClick={nextSlide}
           >
-            
             <RoundedHover>
-            <svg
-              className="w-[20px] md:w-[30px]  relative z-10 "
-              viewBox="0 0 46 40"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path d="M46 20.038c0-.7-.3-1.5-.8-2.1l-16-17c-1.1-1-3.2-1.4-4.4-.3-1.2 1.1-1.2 3.3 0 4.4l11.3 11.9H3c-1.7 0-3 1.3-3 3s1.3 3 3 3h33.1l-11.3 11.9c-1 1-1.2 3.3 0 4.4 1.2 1.1 3.3.8 4.4-.3l16-17c.5-.5.8-1.1.8-1.9z"></path>
-            </svg>
+              <svg
+                className="w-[20px] md:w-[30px]  relative z-10 "
+                viewBox="0 0 46 40"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M46 20.038c0-.7-.3-1.5-.8-2.1l-16-17c-1.1-1-3.2-1.4-4.4-.3-1.2 1.1-1.2 3.3 0 4.4l11.3 11.9H3c-1.7 0-3 1.3-3 3s1.3 3 3 3h33.1l-11.3 11.9c-1 1-1.2 3.3 0 4.4 1.2 1.1 3.3.8 4.4-.3l16-17c.5-.5.8-1.1.8-1.9z"></path>
+              </svg>
             </RoundedHover>
           </div>
         </div>
@@ -246,9 +242,17 @@ const OurWork = () => {
                 <p className="text-[#9EB3CF] text-[19px] pt-[4vw] lg:pt-[22px] leading-[29px] font-bwmss01">
                   {slide.content}
                 </p>
-                <button className="rounded-[28px] mt-[6vw] lg:mt-[50px]  flex items-center gap-[7px] bg-gradient-to-br from-[#2DC1C3] to-[#0268F2] text-white  text-lg font-bwmss01 relative hover:text-[#00092A] duration-500 transition-all ease-linear" style={{ overflow: "hidden" }}>
+                <button
+                  className="rounded-[4px] mt-[6vw] lg:mt-[50px]  flex items-center gap-[7px] bg-gradient-to-br from-[#2DC1C3] to-[#0268F2] text-white  text-lg font-bwmss01 relative hover:text-[#00092A] duration-500 transition-all ease-linear"
+                  style={{ overflow: "hidden" }}
+                >
                   <RoundedHover>
-                  <Link className="p-[15px] relative z-10" href={slide.url}>Read More</Link>
+                    <Link
+                      className="px-[25px] py-[10px] relative z-10"
+                      href={slide.url}
+                    >
+                      Read More
+                    </Link>
                   </RoundedHover>
                 </button>
               </div>

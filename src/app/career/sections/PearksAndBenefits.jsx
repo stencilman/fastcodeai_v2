@@ -59,7 +59,7 @@ const PearksAndBenefits = () => {
             }}
           >
             <div
-              className="flex justify-center items-center border border-[#1A2758] rounded-full p-[14px] md:p-[16px] "
+              className="flex justify-center items-center border border-[#1A2758] rounded-[4px] p-[14px] md:p-[16px] "
               style={{
                 background:
                   "transparent linear-gradient(360deg, #13224F 0%, #010D33 0%, #010D34 51%, #020B2A 100%) 0% 0% no-repeat padding-box",

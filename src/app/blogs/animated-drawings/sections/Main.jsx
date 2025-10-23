@@ -172,7 +172,7 @@ autoPlay
                   accuracy, and productivity. Discover our artificial
                   intelligence services.
                 </p>
-                <div className="w-[164px]">
+                <div className="w-fit">
                   <Button to="/contact" name="Know More" />
                 </div>
               </div>

@@ -84,7 +84,6 @@ const Main = () => {
                   which tackles the challenge in vision transformers (#ViTs) of
                   high-norm tokens skewing attention towards uninformative
                   background regions.
-                
                 </p>
                 <p className="text-[#9EB3CF] text-lg font-bwmss01">
                   In traditional ViTs, each image patch is treated like a
@@ -145,7 +144,7 @@ const Main = () => {
                   accuracy, and productivity. Discover our artificial
                   intelligence services.
                 </p>
-                <div className="w-[164px]">
+                <div className="w-fit">
                   <Button to="/contact" name="Know More" />
                 </div>
               </div>

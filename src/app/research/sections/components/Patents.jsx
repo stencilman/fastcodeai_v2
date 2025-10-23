@@ -24,8 +24,7 @@ const Patents = () => {
       linkName: "View Source",
       linkTo: "",
       downloadName: "Download PDF",
-      downloadTo:
-        "/research/patentsPdf/Triggering_event_in_vehicle.pdf",
+      downloadTo: "/research/patentsPdf/Triggering_event_in_vehicle.pdf",
       idAttr: "vehicleEvent",
     },
     {
@@ -39,8 +38,7 @@ const Patents = () => {
       linkName: "View Source",
       linkTo: "",
       downloadName: "Download PDF",
-      downloadTo:
-        "/research/patentsPdf/Deploying_airbag.pdf",
+      downloadTo: "/research/patentsPdf/Deploying_airbag.pdf",
       idAttr: "headPose",
     },
 
@@ -69,8 +67,7 @@ const Patents = () => {
       linkName: "View Source",
       linkTo: "https://patents.google.com/patent/US9191579B2/en",
       downloadName: "Download PDF",
-      downloadTo:
-        "/research/patentsPdf/Human_sensing.pdf",
+      downloadTo: "/research/patentsPdf/Human_sensing.pdf",
       idAttr: "humanShapeTrack",
     },
   ];
@@ -97,70 +94,69 @@ const Patents = () => {
 
       <div className="w-full px-[20px] md:px-[50px] lg:px-[100px] flex flex-col gap-[60px]">
         {patentsList.map((e, i) => (
-          <RevealY   key={i}>
-          <div
-          
-            id={e.idAttr}
-            className="flex flex-col md:flex-row gap-[30px] md:gap-[5%] rounded-[18px] items-center border border-[#1A2758] w-full h-auto p-[20px] md:px-[60px] md:py-[40px]"
-            style={{
-              background:
-                "transparent linear-gradient(360deg, #13224F 0%, #13224F 0%, #0C1C46 51%, #020F3B 100%) 0% 0% no-repeat padding-box",
-            }}
-          >
-            <div className="w-full md:w-[40%]">
-              <Image
-                className="rounded-[18px] w-full md:w-[370px]"
-                src={e.img}
-                height="370"
-                placeholder="blur"
-                width="370"
-                alt=""
-              />
-            </div>
-            <div className="w-full md:w-[55%] flex flex-col gap-[20px]">
-              {/* head */}
-              <div className="flex gap-[20px] flex-wrap">
-                <div className="border border-[#082373] rounded-[30px] bg-[#00081F] uppercase px-[21px] py-[10px] text-lg font-bwmss01 text-white">
-                  {e.technology}
+          <RevealY key={i}>
+            <div
+              id={e.idAttr}
+              className="flex flex-col md:flex-row gap-[30px] md:gap-[5%] rounded-[18px] items-center border border-[#1A2758] w-full h-auto p-[20px] md:px-[60px] md:py-[40px]"
+              style={{
+                background:
+                  "transparent linear-gradient(360deg, #13224F 0%, #13224F 0%, #0C1C46 51%, #020F3B 100%) 0% 0% no-repeat padding-box",
+              }}
+            >
+              <div className="w-full md:w-[40%]">
+                <Image
+                  className="rounded-[18px] w-full md:w-[370px]"
+                  src={e.img}
+                  height="370"
+                  placeholder="blur"
+                  width="370"
+                  alt=""
+                />
+              </div>
+              <div className="w-full md:w-[55%] flex flex-col gap-[20px]">
+                {/* head */}
+                <div className="flex gap-[20px] flex-wrap">
+                  <div className="border border-[#082373] rounded-[30px] bg-[#00081F] uppercase px-[21px] py-[10px] text-lg font-bwmss01 text-white">
+                    {e.technology}
+                  </div>
+                  <div className="border border-[#082373] rounded-[30px] bg-[#00081F] px-[21px] py-[10px] text-lg font-bwmss01 text-white">
+                    {e.year}
+                  </div>
                 </div>
-                <div className="border border-[#082373] rounded-[30px] bg-[#00081F] px-[21px] py-[10px] text-lg font-bwmss01 text-white">
-                  {e.year}
+                {/* body */}
+                <div>
+                  <h5 className="text-white font-aeonik  tracking-normal text-[30px]">
+                    {e.title}
+                  </h5>
+                  <p className="text-[#9EB3CF] font-bwmss01 text-lg mt-[20px]">
+                    {e.desciption}
+                  </p>
+                </div>
+                {/* footer */}
+                <div className="flex gap-[20px] items-center flex-wrap ">
+                  {e.linkTo.length > 1 && (
+                    <Link target={"_blank"} href={e.linkTo}>
+                      <div
+                        className="border border-[#F3F3F3] cursor-pointer text-white rounded-[4px] font-bwmss01 font-light  px-[25px] py-[13px] text-center"
+                        style={{
+                          background:
+                            "transparent linear-gradient(360deg, #13224F 0%, #13224F 0%, #0C1C46 51%, #020F3B 100%) 0% 0% no-repeat padding-box",
+                        }}
+                      >
+                        {e.linkName}
+                      </div>
+                    </Link>
+                  )}
+                  {e.downloadTo.length > 1 && (
+                    <Button
+                      target={"_blank"}
+                      to={e.downloadTo}
+                      name={e.downloadName}
+                    />
+                  )}
                 </div>
               </div>
-              {/* body */}
-              <div>
-                <h5 className="text-white font-aeonik  tracking-normal text-[30px]">
-                  {e.title}
-                </h5>
-                <p className="text-[#9EB3CF] font-bwmss01 text-lg mt-[20px]">
-                  {e.desciption}
-                </p>
-              </div>
-              {/* footer */}
-              <div className="flex gap-[20px] items-center flex-wrap ">
-                {e.linkTo.length > 1 && (
-                  <Link target={"_blank"} href={e.linkTo}>
-                    <div
-                      className="border border-[#F3F3F3] p-[12px] cursor-pointer text-white rounded-full font-bwmss01 font-light min-h-[55px] pt-[17px] min-w-[120px] text-center"
-                      style={{
-                        background:
-                          "transparent linear-gradient(360deg, #13224F 0%, #13224F 0%, #0C1C46 51%, #020F3B 100%) 0% 0% no-repeat padding-box",
-                      }}
-                    >
-                      {e.linkName}
-                    </div>
-                  </Link>
-                )}
-                {e.downloadTo.length > 1 && (
-                  <Button
-                    target={"_blank"}
-                    to={e.downloadTo}
-                    name={e.downloadName}
-                  />
-                )}
-              </div>
             </div>
-          </div>
           </RevealY>
         ))}
       </div>

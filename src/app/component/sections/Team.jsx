@@ -26,7 +26,7 @@ const Team = () => {
 
       Dhaval,
       Eshwar,
-   
+
       Rishabh,
       Sughosh,
       Parth,
@@ -35,29 +35,27 @@ const Team = () => {
       Shreyas,
       Tirth,
       Yash,
-   
     ];
-  
+
     // Shuffle images
     const shuffledImages = fetchedImages.sort(() => 0.5 - Math.random());
-    
-    
+
     const visibleCount = Math.floor(Math.random() * 3) + 7; // Random number between 6 and 8
     const initialImageInfo = shuffledImages.map((src, index) => ({
       src,
       visible: index < visibleCount,
     }));
-  
+
     setImageInfo(initialImageInfo);
   }, []);
-  
+
   useEffect(() => {
     const interval = setInterval(() => {
       setImageInfo((currentImageInfo) => {
         const newImageInfo = [...currentImageInfo];
         const visibleImages = newImageInfo.filter((info) => info.visible);
         const hiddenImages = newImageInfo.filter((info) => !info.visible);
-  
+
         if (hiddenImages.length > 0 && visibleImages.length > 0) {
           const randomVisibleIndex = Math.floor(
             Math.random() * visibleImages.length
@@ -65,19 +63,19 @@ const Team = () => {
           const randomHiddenIndex = Math.floor(
             Math.random() * hiddenImages.length
           );
-  
+
           // Swap visibility
           visibleImages[randomVisibleIndex].visible = false;
           hiddenImages[randomHiddenIndex].visible = true;
         }
-  
+
         return newImageInfo;
       });
     }, 4000);
-  
+
     return () => clearInterval(interval);
   }, []);
-  
+
   // console.log("imageInfo", imageInfo);
   return (
     <div className="w-full min-h-[100vh] bg-gradient-to-br from-[#000E32] to-[#000929] opacity-83 relative flex flex-col items-center justify-center z-[4]">
@@ -103,9 +101,9 @@ const Team = () => {
               height="13"
             /> 
           </button> */}
-          <div className="max-w-[185px] mt-[30px] md:mt-[35px] lg:mt-[50px]">
-            <Button to="/team" name="More About Us"/>
-            </div>
+          <div className="w-fit mt-[30px] md:mt-[35px] lg:mt-[50px]">
+            <Button to="/team" name="More About Us" />
+          </div>
         </div>
         <div className="columns__col mod--team is-2 w-[100%] md:w-[55%] h-full md:pr-[50px] lg:pr-[127px]">
           <div className="team_grid flex flex-wrap justify-center md:justify-end">

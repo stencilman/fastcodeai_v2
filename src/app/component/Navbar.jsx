@@ -36,7 +36,6 @@ const Navbar = () => {
   const backdropBlur = ` blur(${Math.min(scrollPosition / 4, 20)}px)`;
   const backdropOpacity = Math.min(scrollPosition / 450, 1);
   return (
-    
     <div
       className="bg-transparent w-full fixed z-20"
       // style={{ background: 'linear-gradient(to top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%)' }}
@@ -64,18 +63,15 @@ const Navbar = () => {
           </Link>
         </div>
         <div className="flex items-center gaa-[0px] sm:gap-[14px]">
-          <div style={{
+          <div
+            style={{
               transform: `scale(${scale})`,
               transition: "transform 0.5s",
             }}
-            className="relative z-[1] hidden  sm:block  ">
-
-          <Button
-            to="/contact"
-            name="Get Started"
-            
-            />
-            </div>
+            className="relative z-[1] hidden  sm:block  "
+          >
+            <Button to="/contact" name="Get Started" />
+          </div>
           {/* <Link href="/contact">
           <button
             className="rounded-[28px] relative z-[1] hidden  sm:flex items-center gap-[7px] bg-gradient-to-br from-[#2DC1C3] to-[#0268F2] text-white p-[15px] text-lg "
@@ -98,9 +94,9 @@ const Navbar = () => {
           </Link> */}
           <button
             onClick={handleClick}
-            className={`w-[40px] sm:w-[56px] h-[40px] sm:h-[56px] relative z-[3]  ${
+            className={`w-[40px] sm:w-[47px] h-[40px] sm:h-[47px] relative z-[3]  ${
               isActive ? "bg-[#0E1E49]" : "bg-[#F3F3F3]"
-            }  rounded-full flex flex-col justify-center items-center`}
+            }  rounded-[4px] flex flex-col justify-center items-center`}
           >
             <span
               className={` block transition-all duration-300 ease-out 

@@ -8,13 +8,14 @@ import { recommendBlogsDataList } from "@/app/utils/recommendBlogsDataList";
 import RecommendBlogSection from "../../sections/RecommendBlogSection";
 
 const Main = () => {
- const {
+  const {
     16: recommendBlog1,
     13: recommendBlog2,
     10: recommendBlog3,
   } = recommendBlogsDataList;
 
-  const [topicHighlight, setTopicHighlight] = useState("topic1");  const topicRefs = useRef([null, null, null]);
+  const [topicHighlight, setTopicHighlight] = useState("topic1");
+  const topicRefs = useRef([null, null, null]);
 
   const scrollToTopic = (id) => {
     const element = document.getElementById(id);
@@ -216,7 +217,7 @@ const Main = () => {
                   accuracy, and productivity. Discover our artificial
                   intelligence services.
                 </p>
-                <div className="w-[164px]">
+                <div className="w-fit">
                   <Button to="/contact" name="Know More" />
                 </div>
               </div>
