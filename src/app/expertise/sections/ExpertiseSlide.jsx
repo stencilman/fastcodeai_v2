@@ -63,7 +63,7 @@ const ExpertiseSlide = () => {
               </p>
               <br />
               <br />
-              <div className="w-[164px]">
+              <div className="w-[165px]">
                 {/* <Button name="Read More" to="/expertise" /> */}
               </div>
             </RevealY>
@@ -117,7 +117,7 @@ const ExpertiseSlide = () => {
               </p>
               <br />
               <br />
-              <div className="w-[164px]">
+              <div className="w-[165px]">
                 {/* <Button name="Read More" to="/expertise" /> */}
               </div>
             </RevealY>
@@ -172,7 +172,7 @@ const ExpertiseSlide = () => {
               </p>
               <br />
               <br />
-              <div className="w-[164px]">
+              <div className="w-[165px]">
                 {/* <Button name="Read More" to="/expertise" /> */}
               </div>
             </RevealY>
@@ -223,7 +223,7 @@ const ExpertiseSlide = () => {
               </p>
               <br />
               <br />
-              <div className="w-[164px]">
+              <div className="w-[165px]">
                 {/* <Button name="Read More" to="/expertise" /> */}
               </div>
             </RevealY>

@@ -66,19 +66,17 @@ const Main = () => {
                 className="flex flex-col gap-[20px]"
               >
                 <h4 className="text-white text-2xl font-aeonik tracking-wide">
-                Exciting breakthrough from FAIR at Meta!
+                  Exciting breakthrough from FAIR at Meta!
                 </h4>
 
                 <p className="text-[#9EB3CF] text-lg font-bwmss01">
                   {`Introducing the "Open Materials 2024 (OMat24)" dataset and models, a game-changing resource in materials science with over 110 million data points. This initiative aims to accelerate the discovery of innovative materials through AI, similar to how AlphaFold transformed protein modeling.`}
                 </p>
 
-              
-
                 <p className="text-[#9EB3CF] text-lg font-bwmss01">
-                Will OMat24 be as transformative as AlphaFold2 in its field? Only time will tell, but the potential is huge!
+                  Will OMat24 be as transformative as AlphaFold2 in its field?
+                  Only time will tell, but the potential is huge!
                 </p>
-               
 
                 <div className="p-[40px] bg-white rounded-[20px] shadow-[0px_3px_6px_#00000029]">
                   <Image
@@ -100,7 +98,7 @@ const Main = () => {
                   accuracy, and productivity. Discover our artificial
                   intelligence services.
                 </p>
-                <div className="w-[164px]">
+                <div className="w-fit">
                   <Button to="/contact" name="Know More" />
                 </div>
               </div>

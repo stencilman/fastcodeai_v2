@@ -17,7 +17,7 @@ const CeoDesk = () => {
         <Link
           target="_blank"
           href={"https://www.linkedin.com/in/arjunjain/"}
-          className={`relative rounded-full z-[1] flex items-center gap-[7px] px-[25px] py-[10px] text-lg justify-between main_cta_button bg-gradient-to-br from-[#2DC1C3] to-[#0268F2] cursor-pointer text-white`}
+          className={`relative rounded-[4px] z-[1] flex items-center gap-[7px] px-[25px] py-[10px] text-lg justify-between main_cta_button bg-gradient-to-br from-[#2DC1C3] to-[#0268F2] cursor-pointer text-white`}
         >
           <div className={``}>Connect With Dr.Arjun</div>
           <div className="flex items-center justify-center relative">

@@ -71,7 +71,7 @@ const Footer = ({ showExtraSpace }) => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <div className="w-[56px] h-[56px] rounded-[10px] bg-gradient-to-b from-[#0B1B3F] to-[#081533] border border-[#243A6A] flex items-center justify-center text-white hover:scale-95 active:scale-90 transition-all duration-200 ease-out">
+                  <div className="w-[56px] h-[56px] rounded-[4px] bg-gradient-to-b from-[#0B1B3F] to-[#081533] border border-[#243A6A] flex items-center justify-center text-white hover:scale-95 active:scale-90 transition-all duration-200 ease-out">
                     <FaXTwitter size={22} />
                   </div>
                 </Link>
@@ -81,7 +81,7 @@ const Footer = ({ showExtraSpace }) => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <div className="w-[56px] h-[56px] rounded-[10px] bg-gradient-to-b from-[#0B1B3F] to-[#081533] border border-[#243A6A] flex items-center justify-center text-white hover:scale-95 active:scale-90 transition-all duration-200 ease-out">
+                  <div className="w-[56px] h-[56px] rounded-[4px] bg-gradient-to-b from-[#0B1B3F] to-[#081533] border border-[#243A6A] flex items-center justify-center text-white hover:scale-95 active:scale-90 transition-all duration-200 ease-out">
                     <FaInstagram size={22} />
                   </div>
                 </Link>
@@ -91,7 +91,7 @@ const Footer = ({ showExtraSpace }) => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <div className="w-[56px] h-[56px] rounded-[10px] bg-gradient-to-b from-[#0B1B3F] to-[#081533] border border-[#243A6A] flex items-center justify-center text-white hover:scale-95 active:scale-90 transition-all duration-200 ease-out">
+                  <div className="w-[56px] h-[56px] rounded-[4px] bg-gradient-to-b from-[#0B1B3F] to-[#081533] border border-[#243A6A] flex items-center justify-center text-white hover:scale-95 active:scale-90 transition-all duration-200 ease-out">
                     <FaLinkedinIn size={22} />
                   </div>
                 </Link>
@@ -101,7 +101,7 @@ const Footer = ({ showExtraSpace }) => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <div className="w-[56px] h-[56px] rounded-[10px] bg-gradient-to-b from-[#0B1B3F] to-[#081533] border border-[#243A6A] flex items-center justify-center text-white hover:scale-95 active:scale-90 transition-all duration-200 ease-out">
+                  <div className="w-[56px] h-[56px] rounded-[4px] bg-gradient-to-b from-[#0B1B3F] to-[#081533] border border-[#243A6A] flex items-center justify-center text-white hover:scale-95 active:scale-90 transition-all duration-200 ease-out">
                     <FaYoutube size={22} />
                   </div>
                 </Link>
@@ -194,7 +194,7 @@ const Footer = ({ showExtraSpace }) => {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <div className="w-[48px] h-[48px] rounded-[10px] bg-gradient-to-b from-[#0B1B3F] to-[#081533] border border-[#243A6A] flex items-center justify-center text-white active:scale-90 hover:scale-95 transition-all duration-200 ease-out">
+                      <div className="w-[48px] h-[48px] rounded-[4px] bg-gradient-to-b from-[#0B1B3F] to-[#081533] border border-[#243A6A] flex items-center justify-center text-white active:scale-90 hover:scale-95 transition-all duration-200 ease-out">
                         <FaXTwitter size={20} />
                       </div>
                     </Link>
@@ -204,7 +204,7 @@ const Footer = ({ showExtraSpace }) => {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <div className="w-[48px] h-[48px] rounded-[10px] bg-gradient-to-b from-[#0B1B3F] to-[#081533] border border-[#243A6A] flex items-center justify-center text-white active:scale-90 hover:scale-95 transition-all duration-200 ease-out">
+                      <div className="w-[48px] h-[48px] rounded-[4px] bg-gradient-to-b from-[#0B1B3F] to-[#081533] border border-[#243A6A] flex items-center justify-center text-white active:scale-90 hover:scale-95 transition-all duration-200 ease-out">
                         <FaInstagram size={20} />
                       </div>
                     </Link>
@@ -214,7 +214,7 @@ const Footer = ({ showExtraSpace }) => {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <div className="w-[48px] h-[48px] rounded-[10px] bg-gradient-to-b from-[#0B1B3F] to-[#081533] border border-[#243A6A] flex items-center justify-center text-white active:scale-90 hover:scale-95 transition-all duration-200 ease-out">
+                      <div className="w-[48px] h-[48px] rounded-[4px] bg-gradient-to-b from-[#0B1B3F] to-[#081533] border border-[#243A6A] flex items-center justify-center text-white active:scale-90 hover:scale-95 transition-all duration-200 ease-out">
                         <FaLinkedinIn size={20} />
                       </div>
                     </Link>
@@ -224,7 +224,7 @@ const Footer = ({ showExtraSpace }) => {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <div className="w-[48px] h-[48px] rounded-[10px] bg-gradient-to-b from-[#0B1B3F] to-[#081533] border border-[#243A6A] flex items-center justify-center text-white active:scale-90 hover:scale-95 transition-all duration-200 ease-out">
+                      <div className="w-[48px] h-[48px] rounded-[4px] bg-gradient-to-b from-[#0B1B3F] to-[#081533] border border-[#243A6A] flex items-center justify-center text-white active:scale-90 hover:scale-95 transition-all duration-200 ease-out">
                         <FaYoutube size={20} />
                       </div>
                     </Link>

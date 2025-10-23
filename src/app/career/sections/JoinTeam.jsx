@@ -35,7 +35,7 @@ const JoinTeam = () => {
           <div className="max-w-[200px]">
           
             <div
-              className="rounded-[28px] relative z-[1] bg-gradient-to-br from-[#2DC1C3] to-[#0268F2] group  text-lg justify-between cursor-pointer max-w-[200px] fill-[#fff] hover:fill-[#00092A] text-white hover:text-[#00092A] duration-500 transition-all ease-linear"
+              className="rounded-[4px] relative z-[1] bg-gradient-to-br from-[#2DC1C3] to-[#0268F2] group  text-lg justify-between cursor-pointer max-w-[200px] fill-[#fff] hover:fill-[#00092A] text-white hover:text-[#00092A] duration-500 transition-all ease-linear"
               style={{ overflow: "hidden" }}
               onClick={() => scrollToPositions("positions")}
             >

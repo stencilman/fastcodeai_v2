@@ -179,7 +179,10 @@ const Believe = () => {
                   Innovation
                 </h1>
                 <p className="text-[#9EB3CF] font-bwmss01 text-base  mt-[15px]">
-                We seek original approaches for achieving our goals. By embracing new ideas and technologies, we continuously strive to push the boundaries of {"what's"} possible in the realm of AI and software solutions.
+                  We seek original approaches for achieving our goals. By
+                  embracing new ideas and technologies, we continuously strive
+                  to push the boundaries of {"what's"} possible in the realm of
+                  AI and software solutions.
                 </p>
               </div>
 

@@ -141,7 +141,7 @@ const HeroSlider = () => {
                 </p>
                 <Link
                   href={slide.ctaLink}
-                  className="inline-flex bg-gradient-to-r from-[#00D1FF] to-[#0029FF] text-white px-[25px] py-[10px] rounded-full text-lg font-aeonik font-medium transition-transform hover:scale-105"
+                  className="inline-flex bg-gradient-to-r from-[#00D1FF] to-[#0029FF] text-white px-[25px] py-[10px] rounded-[4px] text-lg font-aeonik font-medium transition-transform hover:scale-105"
                 >
                   {slide.ctaText}
                 </Link>

@@ -523,7 +523,7 @@ const Publications = () => {
                   {e?.linkTo.length > 1 && (
                     <Link target="_blank" href={e.linkTo}>
                       <div
-                        className="border border-[#F3F3F3] p-[12px] cursor-pointer text-white rounded-full font-bwmss01 font-light min-h-[55px] pt-[17px] min-w-[120px] text-center"
+                        className="border border-[#F3F3F3] cursor-pointer text-white rounded-[4px] font-bwmss01 font-light  px-[25px] py-[13px] text-center"
                         style={{
                           background:
                             "transparent linear-gradient(360deg, #13224F 0%, #13224F 0%, #0C1C46 51%, #020F3B 100%) 0% 0% no-repeat padding-box",
@@ -536,7 +536,7 @@ const Publications = () => {
                   {e?.extraLink.length > 1 && (
                     <Link target="_blank" href={e.extraLink}>
                       <div
-                        className="border border-[#F3F3F3] p-[12px] cursor-pointer text-white rounded-full font-bwmss01 font-light min-h-[55px] pt-[17px] min-w-[120px] text-center"
+                        className="border border-[#F3F3F3] cursor-pointer text-white rounded-[4px] font-bwmss01 font-light  px-[25px] py-[13px] text-center"
                         style={{
                           background:
                             "transparent linear-gradient(360deg, #13224F 0%, #13224F 0%, #0C1C46 51%, #020F3B 100%) 0% 0% no-repeat padding-box",

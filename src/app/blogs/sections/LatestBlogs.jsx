@@ -5,8 +5,7 @@ import React from "react";
 const LatestBlogs = () => {
   const dataArray = [
     {
-      title:
-        "SwiGLU: The Activation Function Powering Modern LLMs",
+      title: "SwiGLU: The Activation Function Powering Modern LLMs",
       href: "/blogs/swiglu",
       authorName: "Arjun Jain ",
       authorImg: "/arjun.jpg",
@@ -14,15 +13,14 @@ const LatestBlogs = () => {
       background: "bg-swiglu",
     },
     {
-      title:
-        "Why SiLU Matters: Smooth Activations for Advanced AI Models",
+      title: "Why SiLU Matters: Smooth Activations for Advanced AI Models",
       href: "/blogs/silu",
       authorName: "Arjun Jain ",
       authorImg: "/arjun.jpg",
       publicationDate: "10 Nov 2024",
       background: "bg-silu",
     },
-   
+
     {
       title:
         "Navigating Hardware Limitations: Our Journey to Training Large Diffusion Models on a Startup Budget",

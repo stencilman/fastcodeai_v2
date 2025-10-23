@@ -27,7 +27,7 @@ const HoverDetailDialog = ({ label, detail }) => {
         setOpen((prev) => !prev);
       }}
     >
-      <div className="bg-[#1A2758] text-white px-6 py-3 rounded-lg font-medium cursor-default select-none">
+      <div className="bg-[#1A2758] text-white px-6 py-3 rounded-[4px] font-medium cursor-default select-none">
         {label}
       </div>
 
@@ -63,7 +63,7 @@ const HoverDetailDialog = ({ label, detail }) => {
                 <Link
                   href={detail?.ctaLink || "#"}
                   target={detail?.ctaLink ? "_blank" : undefined}
-                  className="inline-flex items-center gap-2 rounded-full border border-white/25 text-white px-5 py-3 font-medium hover:bg-white/10 transition-colors"
+                  className="inline-flex items-center gap-2 rounded-[4px] border border-white/25 text-white px-5 py-3 font-medium hover:bg-white/10 transition-colors"
                 >
                   {detail.ctaText}
                   <span className="ml-1 inline-flex items-center justify-center w-6 h-6 rounded-full bg-white">

@@ -87,18 +87,13 @@ const Form = () => {
           <div className="flex flex-col gap-[50px] p-[20px]">
             <div className="flex gap-[20px]">
               <div
-                className="w-[50px] h-[50px] rounded-full flex justify-center items-center border border-[#1A2758]"
+                className="w-[50px] h-[50px] rounded-[4px] flex justify-center items-center border border-[#1A2758]"
                 style={{
                   background:
                     " transparent linear-gradient(360deg, #13224F 0%, #13224F 0%, #0C1C46 51%, #020F3B 100%) 0% 0% no-repeat padding-box",
                 }}
               >
-                <Image
-                  src={mailIcon}
-                  width="23"
-                  height="17"
-                  alt=""
-                />
+                <Image src={mailIcon} width="23" height="17" alt="" />
               </div>
               <div>
                 <h6 className="text-white text-2xl font-aeonik">Write us</h6>
@@ -109,18 +104,13 @@ const Form = () => {
             </div>
             <div className="flex gap-[20px]">
               <div
-                className="w-[50px] h-[50px] rounded-full flex justify-center items-center border border-[#1A2758]"
+                className="w-[50px] h-[50px] rounded-[4px] flex justify-center items-center border border-[#1A2758]"
                 style={{
                   background:
                     " transparent linear-gradient(360deg, #13224F 0%, #13224F 0%, #0C1C46 51%, #020F3B 100%) 0% 0% no-repeat padding-box",
                 }}
               >
-                <Image
-                  src={phoneIcon}
-                  width="24"
-                  height="24"
-                  alt=""
-                />
+                <Image src={phoneIcon} width="24" height="24" alt="" />
               </div>
               <div>
                 <h6 className="text-white text-2xl font-aeonik">Phone no</h6>
@@ -131,18 +121,13 @@ const Form = () => {
             </div>
             <div className="flex gap-[20px]">
               <div
-                className="w-[50px] h-[50px] rounded-full flex justify-center items-center border border-[#1A2758]"
+                className="w-[50px] h-[50px] rounded-[4px] flex justify-center items-center border border-[#1A2758]"
                 style={{
                   background:
                     " transparent linear-gradient(360deg, #13224F 0%, #13224F 0%, #0C1C46 51%, #020F3B 100%) 0% 0% no-repeat padding-box",
                 }}
               >
-                <Image
-                  src={locationIcon}
-                  width="22"
-                  height="31"
-                  alt=""
-                />
+                <Image src={locationIcon} width="22" height="31" alt="" />
               </div>
               <div>
                 <h6 className="text-white text-2xl font-aeonik">Address</h6>
@@ -173,7 +158,7 @@ const Form = () => {
             >
               <div className="flex gap-[5px] group">
                 <Image
-                className="group-hover:scale-110 transition-all duration-300 ease-in-out"
+                  className="group-hover:scale-110 transition-all duration-300 ease-in-out"
                   src={linkedinIcon}
                   width="28"
                   height="28"
@@ -188,7 +173,7 @@ const Form = () => {
         </div>
         <div className="w-[100%] lg:w-[60%] h-[50%] md:h-[50%] lg:h-[auto] py-[50px] px-[20px] md:px-[50px] lg:px-[86px] right-0 bg-[#0E1E49] rounded-[20px] flex flex-col  justify-center gap-[20px] md:gap-[30px] lg:gap-[40px]">
           <div className="flex items-center pl-[10vw] sm:pl-0 justify-center lg:justify-start lg:pl-0 gap-[7px]">
-            <p className=" w-[5px] h-[5px] rounded-full bg-white"></p>
+            <p className=" w-[5px] h-[5px] rounded-[4px] bg-white"></p>
             <p className="text-[#9EB3CF] text-lg font-bwmss01 ">
               {"Let's"} Kick Off A Dialogue.
             </p>
@@ -294,7 +279,7 @@ const Form = () => {
                       <button
                         key={service}
                         type="button"
-                        className={`border border-white rounded-[36px] px-[20px] py-[15px] text-[#9EB3CF] text-base font-aeonik tracking-normal cursor-pointer hover:bg-[#000D2F] transition-all duration-200 ease-in ${
+                        className={`border border-white rounded-[4px] px-[20px] py-[15px] text-[#9EB3CF] text-base font-aeonik tracking-normal cursor-pointer hover:bg-[#000D2F] transition-all duration-200 ease-in ${
                           formData.service.includes(service)
                             ? "bg-[#000D2F] text-white"
                             : ""
@@ -307,7 +292,7 @@ const Form = () => {
                   </div>
                 </div>
               </div>
-              <div className="flex flex-col md:flex-row md:gap-[30px] gap-[10px] xl:gap-[80px] items-center mt-[25px]">
+              <div className="flex flex-col md:gap-[30px] gap-[10px] xl:gap-[80px] items-start mt-[25px]">
                 <div className="relative z-0 w-full mb-5 group">
                   <textarea
                     ref={messageRef}
@@ -331,13 +316,14 @@ const Form = () => {
 
                 <button
                   type="submit"
-                  className="text-white h-[63px] focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm w-[63px] md:w-[76px] sm:w-auto px-5 py-2.5 text-center "
+                  className="text-white  focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-[4px]  py-[10px] px-[25px] text-center font-bwmss01"
                   style={{
                     background:
                       "transparent linear-gradient(174deg, #2DC1C3 0%, #0268F2 100%) 0% 0% no-repeat padding-box",
                   }}
                 >
-                  <Image src="/arrowRight.svg" width="32" height="32" alt="" />
+                  Submit
+                  {/* <Image src="/arrowRight.svg" width="32" height="32" alt="" /> */}
                 </button>
               </div>
               <div className="text-white text-base hidden md:block">
