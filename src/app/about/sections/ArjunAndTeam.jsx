@@ -174,7 +174,7 @@ const ArjunAndTeam = ({ showTeam }) => {
                 <Link
                   href="https://arjunjain.co.in/"
                   target="_blank"
-                  className="rounded-[28px] relative z-[1] flex items-center gap-[7px] bg-gradient-to-br from-[#2DC1C3] to-[#0268F2] text-white p-[15px] text-lg "
+                  className="rounded-[4px] relative z-[1] flex items-center gap-[7px] bg-gradient-to-br from-[#2DC1C3] to-[#0268F2] text-white p-[15px] text-lg "
                 >
                   <div>Personal Website</div>
                   <div>
@@ -194,7 +194,7 @@ const ArjunAndTeam = ({ showTeam }) => {
             <Link
               href="https://arjunjain.co.in/"
               target="_blank"
-              className="rounded-[28px] relative z-[1] flex items-center gap-[7px] bg-gradient-to-br from-[#2DC1C3] to-[#0268F2] text-white p-[15px] text-lg "
+              className="rounded-[4px] relative z-[1] flex items-center gap-[7px] bg-gradient-to-br from-[#2DC1C3] to-[#0268F2] text-white p-[15px] text-lg "
             >
               <div>Personal Website</div>
               <div>
