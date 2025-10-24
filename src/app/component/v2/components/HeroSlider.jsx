@@ -52,7 +52,7 @@ const HeroSlider = () => {
     {
       id: 3,
       bgVideo: "/v2/hero/mbux.mp4",
-      mobileVideo: "/v2/hero/mobile/pose-estimation.mp4",
+      mobileVideo: "/v2/hero/mobile/mbux.mp4",
       title: "Frontier AI. Enterprise Scale. Delivered.",
       subtitle:
         "We help organisations harness AI to transform how they innovate, operate, and compete - from research to real-world deployment.",
@@ -131,7 +131,7 @@ const HeroSlider = () => {
             </div>
 
             {/* Content */}
-            <div className="relative z-10 flex flex-col justify-center h-[100vh]   max-w-[1440px] mx-auto px-4 md:px-8 lg:px-16">
+            <div className="relative z-10 flex flex-col md:justify-center h-auto md:h-[100vh] mt-[100px] mb-[40px] md:my-0 max-w-[1440px] mx-auto px-4 md:px-8 lg:px-16">
               <div className="max-w-[700px]">
                 <h1 className="text-3xl md:text-5xl text-white font-bold  font-aeonik tracking-wide mb-6 ">
                   {slide.title}
@@ -195,7 +195,8 @@ const HeroSlider = () => {
 
         @media (max-width: 767px) {
           .swiper .swiper-pagination.swiper-pagination-bullets {
-            bottom: 16px !important;
+            position: relative !important;
+            bottom: 0 !important;
             left: 1rem !important;
             right: auto !important;
           }
