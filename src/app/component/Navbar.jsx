@@ -64,10 +64,10 @@ const Navbar = () => {
         </div>
         <div className="flex items-center gaa-[0px] sm:gap-[14px]">
           <div
-            style={{
-              transform: `scale(${scale})`,
-              transition: "transform 0.5s",
-            }}
+            // style={{
+            //   transform: `scale(${scale})`,
+            //   transition: "transform 0.5s",
+            // }}
             className="relative z-[1] hidden  sm:block  "
           >
             <Button to="/contact" name="Get Started" />

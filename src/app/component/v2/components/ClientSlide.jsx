@@ -33,9 +33,9 @@ const ClientSlide = () => {
     offset: ["start end", "end start"],
   });
 
-  const x1 = useTransform(scrollYProgress, [0, 1], ["-80%", "50%"]);
+  const x1 = useTransform(scrollYProgress, [0, 1], ["-40%", "25%"]);
 
-  const x2 = useTransform(scrollYProgress, [0, 1], ["30%", "-80%"]);
+  const x2 = useTransform(scrollYProgress, [0, 1], ["20%", "-40%"]);
 
   const slider1 = [
     {
@@ -140,8 +140,8 @@ const ClientSlide = () => {
         </div>
         {/* slidingImages */}
         <div className="w-[100%]  flex flex-col gap-[4vw] md:gap-[2vw] relative z-[1] overflow-x-hidden">
-          <div className="absolute top-[-19px] lg:top-0 left-[-60px] md:left-[] lg:left-[-65px] w-[80px] h-[107%] lg:h-[100%]  bg-gradient-to-br from-[#000a2b] to-[#000b2c] opacity-83 z-20 blur-[10px]"></div>
-          <div className="absolute lg:hidden top-[-19px] lg:top-0 right-[-60px] md:right-[] lg:right-[-65px] w-[80px] h-[107%] lg:h-[100%]  bg-gradient-to-br from-[#000a2b] to-[#000b2c] opacity-83 z-20 blur-[10px]"></div>
+          {/* <div className="absolute top-[-19px] lg:top-0 left-[-60px] md:left-[] lg:left-[-65px] w-[80px] h-[107%] lg:h-[100%]  bg-gradient-to-br from-[#000a2b] to-[#000b2c] opacity-83 z-20 blur-[10px]"></div>
+          <div className="absolute lg:hidden top-[-19px] lg:top-0 right-[-60px] md:right-[] lg:right-[-65px] w-[80px] h-[107%] lg:h-[100%]  bg-gradient-to-br from-[#000a2b] to-[#000b2c] opacity-83 z-20 blur-[10px]"></div> */}
           {/* slider */}
           <motion.div
             style={{
@@ -154,14 +154,25 @@ const ClientSlide = () => {
               return (
                 <div
                   key={i}
-                  className="border-[#1D2B4F] cursor-pointer transition border-color duration-500 hover:border-[#ffffff92] hover:border border rounded-[18px] min-w-[150px] w-[258px] h-[122px] md:h-[182px] flex items-center justify-center"
+                  className="border border-[#1D2B4F]  border-color duration-500 hover:border-[#ffffff92] hover:border cursor-pointer transition rounded-[18px] min-w-[150px] w-[258px] h-[122px] md:h-[182px] flex items-center justify-center group"
                 >
-                  <Image
-                    src={e.src}
-                    width="122"
-                    height="70"
-                    alt="mercedesLogo"
-                  />
+                  <div className="relative flex items-center justify-center group">
+                    <span
+                      role="img"
+                      aria-label="client logo"
+                      className="block w-[122px] h-[70px] bg-[#9EB3CF] group-hover:bg-white transition-colors duration-300"
+                      style={{
+                        WebkitMaskImage: `url(${e.src.src})`,
+                        maskImage: `url(${e.src.src})`,
+                        WebkitMaskRepeat: "no-repeat",
+                        maskRepeat: "no-repeat",
+                        WebkitMaskSize: "contain",
+                        maskSize: "contain",
+                        WebkitMaskPosition: "center",
+                        maskPosition: "center",
+                      }}
+                    />
+                  </div>
                 </div>
               );
             })}
@@ -178,9 +189,25 @@ const ClientSlide = () => {
               return (
                 <div
                   key={i}
-                  className="border-[#1D2B4F] cursor-pointer transition border-color duration-500 hover:border-[#ffffff92] hover:border border rounded-[18px] min-w-[150px] w-[258px] h-[122px] md:h-[182px] flex items-center justify-center"
+                  className="border border-[#1D2B4F]  border-color duration-500 hover:border-[#ffffff92] hover:border cursor-pointer transition rounded-[18px] min-w-[150px] w-[258px] h-[122px] md:h-[182px] flex items-center justify-center group"
                 >
-                  <Image src={e.src} width="122" height="70" alt="clientLogo" />
+                  <div className="relative flex items-center justify-center group">
+                    <span
+                      role="img"
+                      aria-label="client logo"
+                      className="block w-[122px] h-[70px] bg-[#9EB3CF] group-hover:bg-white transition-colors duration-300"
+                      style={{
+                        WebkitMaskImage: `url(${e.src.src})`,
+                        maskImage: `url(${e.src.src})`,
+                        WebkitMaskRepeat: "no-repeat",
+                        maskRepeat: "no-repeat",
+                        WebkitMaskSize: "contain",
+                        maskSize: "contain",
+                        WebkitMaskPosition: "center",
+                        maskPosition: "center",
+                      }}
+                    />
+                  </div>
                 </div>
               );
             })}
