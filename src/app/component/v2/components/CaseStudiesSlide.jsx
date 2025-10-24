@@ -39,7 +39,7 @@ const CaseStudiesSlide = () => {
       description:
         "Our solution for Aramco in critical safety analysis, establishing a lasting partnership that continues to drive innovation.",
       image: "/v2/case-studies/case-3.jpg",
-      link: "#",
+      link: "/case-studies/process-flow-ai",
       ctaText: "View case study",
     },
     {
@@ -223,7 +223,7 @@ const CaseStudiesSlide = () => {
                         {activeStudy?.ctaText && (
                           <Link
                             href={activeStudy?.link || "#"}
-                            target={activeStudy?.link ? "_blank" : undefined}
+                            // target={activeStudy?.link ? "_blank" : undefined}
                             className={`relative rounded-[4px] z-[1] flex items-center gap-[7px] px-[25px] py-[10px] text-lg justify-between main_cta_button bg-gradient-to-br from-[#2DC1C3] to-[#0268F2]  text-white font-bwmss01 capitalize`}
                           >
                             <div className={``}>{activeStudy.ctaText}</div>
@@ -260,7 +260,7 @@ const CaseStudiesSlide = () => {
               {activeStudy?.ctaText && (
                 <Link
                   href={activeStudy?.link || "#"}
-                  target={activeStudy?.link ? "_blank" : undefined}
+                  // target={activeStudy?.link ? "_blank" : undefined}
                   className="relative block text-center rounded-[4px] px-4 py-2 text-white text-base font-medium bg-gradient-to-br from-[#2DC1C3] to-[#0268F2] font-bwmss01 capitalize"
                 >
                   {activeStudy.ctaText}
