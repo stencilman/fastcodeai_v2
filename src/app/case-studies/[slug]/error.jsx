@@ -2,7 +2,7 @@
 
 export default function CaseStudyError({ reset }) {
   return (
-    <div className="flex min-h-[60vh] flex-col items-center justify-center gap-6 bg-[#010821] px-6 text-center text-white">
+    <div className="flex min-h-[60vh] flex-col items-center justify-center gap-6 bg-[#010821] px-6 text-center text-white mt-[120px]">
       <div className="rounded-full border border-white/10 bg-[#1A2744] px-4 py-2 text-xs uppercase tracking-[0.2em] text-[#8AA2CD]">
         Something went wrong
       </div>
