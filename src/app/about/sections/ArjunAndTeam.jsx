@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import Button from "@/app/component/Button";
+import Button from "../../component/Button";
 import Arjun from "../../../../public/team/Arjun_Jain.webp";
 import Dhaval from "../../../../public/team/Dhaval2.jpg";
 import Abdul from "../../../../public/team/abdul.png";

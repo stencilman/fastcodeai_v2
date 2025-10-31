@@ -3,8 +3,8 @@ import React, { useEffect, useRef, useState } from "react";
 import SocialShare from "../../components/SocialShare";
 import Image from "next/image";
 import Link from "next/link";
-import Button from "@/app/component/Button";
-import { recommendBlogsDataList } from "@/app/utils/recommendBlogsDataList";
+import Button from "../../../component/Button";
+import { recommendBlogsDataList } from "../../../utils/recommendBlogsDataList";
 import RecommendBlogSection from "../../sections/RecommendBlogSection";
 
 const Main = () => {
