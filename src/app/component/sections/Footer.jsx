@@ -6,6 +6,8 @@ import Link from "next/link";
 import React, { useState, useEffect, useRef } from "react";
 import Modal from "../Modal";
 import footerLogo from "../../../../public/f_logo1.png";
+import brainLogo from "../../../../public/footer-logo/brain.svg";
+import textLogo from "../../../../public/footer-logo/text.svg";
 import MagneticEffect from "../MagneticEffect";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagram, FaLinkedinIn, FaYoutube } from "react-icons/fa";
@@ -55,14 +57,29 @@ const Footer = ({ showExtraSpace }) => {
           }}
         >
           <div className="flex h-full w-full pl-[20px] pr-[20px] md:pl-[50px] md:pr-[50px] lg:pl-[160px] lg:pr-[73px] justify-between">
-            <div className="hidden md:flex w-[369px] h-[407px] rounded-[18px] bg-gradient-to-br from-[#000E32] to-[#000929]  items-center justify-center relative z-[6] top-[-120px] ">
-              <Image
+            <div className="hidden md:flex flex-col gap-5 w-[369px] h-[407px] rounded-[18px] bg-gradient-to-br from-[#000E32] to-[#000929]  items-center justify-center relative z-[6] top-[-120px] ">
+              {/* <Image
                 placeholder="blur"
                 src={footerLogo}
                 height="140"
                 width="249"
                 alt="logo"
+              /> */}
+              <Image
+                // placeholder="blur"
+                src="/footer-logo/brain.svg"
+                height="100"
+                width="100"
+                alt="logo"
               />
+              <Image
+                // placeholder="blur"
+                src="/footer-logo/text.svg"
+                height="140"
+                width="249"
+                alt="logo"
+              />
+
               {/* Social icons row positioned just below the card */}
               <div className="absolute -bottom-[72px] left-1/2 -translate-x-1/2 flex justify-around w-full gap-[18px] z-[7]">
                 <Link

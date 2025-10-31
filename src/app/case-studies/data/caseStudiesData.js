@@ -155,6 +155,156 @@ export const caseStudies = [
       },
     ],
   },
+  {
+    slug: "mi-ai-law",
+    hero: {
+      badges: ["RAG System", "LegalTech Automation"],
+      title: "AI Legal Helper",
+      subtitle: "",
+      image: {
+        src: "/v2/case-studies/case-4.jpg",
+        alt: "MiAI Law dashboard",
+        width: 1920,
+        height: 1080,
+      },
+      backgroundImage: "/case-studies/process-flow-ai/background.jpg",
+      readTime: "6 min read",
+      meta: [
+        { label: "Industry", value: "Law" },
+        { label: "Duration", value: "6 months" },
+        { label: "Time", value: "May'25 – Nov'25" },
+        { label: "Team", value: "Team of 6" },
+      ],
+    },
+    sections: [
+      {
+        id: "challenge",
+        title: "The Challenge",
+        tocTitle: "Challenge",
+        blocks: [
+          {
+            type: "text",
+            content: [
+              "Manual Research Burden: Lawyers spend vast amounts of time manually reviewing legal documents and analyzing case law.",
+              "Prohibitive Costs: Traditional legal research at $50-100/hour makes quality legal services inaccessible for many.",
+              "Processing Delays: Law firms and in-house legal teams face weeks of delays in processing cases and making decisions.",
+              "Human Error: Manual document review is prone to oversight and inconsistency.",
+            ],
+          },
+        ],
+      },
+      // add image here
+      {
+        id: "image",
+        title: "",
+        blocks: [
+          {
+            type: "image",
+            src: "/v2/case-studies/MiAI-Law-Demo.jpg",
+          },
+        ],
+      },
+      {
+        id: "data-foundation",
+        title: "Data Foundation",
+        tocTitle: "Data Foundation",
+        navLabel: "Data",
+        blocks: [
+          {
+            type: "subsections",
+            layout: "stack",
+            items: [
+              {
+                heading: "Data Collection & Curation",
+                bullets: [
+                  "Scope: 500,000+ legal cases across 9 Australian jurisdictions",
+                  "Sources: Public court websites, legislation databases, case law repositories",
+                  "Formats Handled: HTML, DOCX, PDF, and various proprietary court formats",
+                  "Web Scraping Infrastructure: Custom crawlers for each jurisdiction's unique structure",
+                ],
+              },
+              {
+                heading: "Our Data Processing Role",
+                bullets: [
+                  "Extraction: Built specialised scrapers for different court websites and formats",
+                  "Standardisation: Converted diverse formats into unified structured database",
+                  "Curation: Cleaned, validated, and enriched data with metadata",
+                  "Optimisation: Created efficient indexing for sub-second retrieval",
+                  "Compliance: Implemented alternating data sources to manage copyright considerations",
+                ],
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: "solution",
+        title: "Solution: MiAI Law Chatbot revolutionises legal research",
+        tocTitle: "Solution",
+        blocks: [
+          {
+            type: "subsections",
+            layout: "stack",
+            items: [
+              {
+                heading: "Intelligent Document Analysis",
+                bullets: [
+                  "Automates legal document review, case law analysis, and doctrinal research",
+                ],
+              },
+              {
+                heading: "Advanced Case Summarisation",
+                bullets: [
+                  "Instantly analyses case documents and extracts key details",
+                ],
+              },
+              {
+                heading: "Smart Legal Research",
+                bullets: [
+                  "Retrieves and analyses relevant case law and statutes using RAG (Retrieval-Augmented Generation)",
+                ],
+              },
+              {
+                heading: "Contract Audits and Reviews",
+                bullets: [
+                  "Highlights potential risks and suggests alternative clauses grounded in legal principles",
+                ],
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: "impact",
+        title: "Impact",
+        tocTitle: "Impact",
+        blocks: [
+          {
+            type: "subsections",
+            layout: "stack",
+            items: [
+              {
+                heading: "Speed & Efficiency",
+                bullets: [
+                  "60x Faster Case Resolution: Legal research that took days now completes in minutes",
+                  "85% Time Reduction: Lawyers reclaim a full workday per case, handling 5x more clients",
+                  "100% Accuracy: AI ensures more comprehensive case law coverage than manual search",
+                ],
+              },
+              {
+                heading: "Cost Savings",
+                bullets: [
+                  "90% Cost Reduction: From 50-100 USD/hour for manual research to <5 USD per query",
+                  "ROI in 2 Months: Law firms recover investment through efficiency gains",
+                  "Scale Economics: Mid-size firms save 200,000+ USD annually on research costs",
+                ],
+              },
+            ],
+          },
+        ],
+      },
+    ],
+  },
 ];
 
 export const getCaseStudyBySlug = (slug) =>

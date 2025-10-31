@@ -2,7 +2,7 @@
 import React,{useEffect} from 'react'
 import Hero from './sections/Hero'
 import Main from './sections/Main'
-import Footer from '@/app/component/sections/Footer'
+import Footer from '../../component/sections/Footer'
 
 const AiDangersAndPreventingMonopolization = () => {
   useEffect(() => {

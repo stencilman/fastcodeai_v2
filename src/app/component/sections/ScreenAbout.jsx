@@ -10,7 +10,7 @@ import RevealX from "../RevealX";
 import RevealY from "../RevealY";
 import Button from "../Button";
 import arrowRight from "../../../../public/arrowRight.svg";
-import AboutSectionAnimation from "@/app/utils/AboutSectionAnimation";
+import AboutSectionAnimation from "../../utils/AboutSectionAnimation";
 
 const ScreenAbout = () => {
   const [isShortScreen, setIsShortScreen] = useState(false);

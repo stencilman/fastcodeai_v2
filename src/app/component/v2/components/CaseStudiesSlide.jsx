@@ -19,7 +19,7 @@ const CaseStudiesSlide = () => {
       id: 1,
       title: "Data Platform",
       description:
-        "Our Data Intelligence Platform transforms petabytes of raw enterprise data into actionable AI-ready insights, automating labeling while ensuring governance.",
+        "Our Data Intelligence Platform transforms petabytes of raw enterprise data into actionable AI-ready insights.",
       image: "/v2/case-studies/case-1.jpg",
       link: "#",
       ctaText: "Start your pilot today",
@@ -37,7 +37,7 @@ const CaseStudiesSlide = () => {
       id: 3,
       title: "ProcessFlow AI",
       description:
-        "Our solution for Aramco in critical safety analysis, establishing a lasting partnership that continues to drive innovation.",
+        "Advanced computer vision digitizes engineering drawings for critical safety analysis in oil and gas.",
       image: "/v2/case-studies/case-3.jpg",
       link: "/case-studies/process-flow-ai",
       ctaText: "View case study",
@@ -46,16 +46,16 @@ const CaseStudiesSlide = () => {
       id: 4,
       title: "MiAI Law",
       description:
-        "We engineered MiAI Law's advanced RAG pipeline with structured legal logic, eliminating hallucinations through verifiable reasoning, achieving 60x faster case analysis and 90% cost reduction for law firms.",
+        "Engineered hallucination-free RAG with verifiable legal reasoning, achieving 60x faster analysis and 90% cost reduction.",
       image: "/v2/case-studies/case-4.jpg",
-      link: "#",
+      link: "/case-studies/mi-ai-law",
       ctaText: "View case study",
     },
     {
       id: 5,
       title: "Seikor",
       description:
-        "Seikor revolutionizes HR with AI that streamlines entire hiring workflows, from job posting to candidate management, making recruitment faster and smarter.",
+        "Seikor's AI streamlines hiring workflows from job posting to candidate management, making recruitment faster for everyone.",
       image: "/v2/case-studies/case-5.jpg",
       link: "https://seikor.com/",
       ctaText: "View the product",
@@ -64,7 +64,7 @@ const CaseStudiesSlide = () => {
       id: 6,
       title: "Career",
       description:
-        "We've cracked AI challenges for Mercedes, Bosch, and Aramco, but that's just the warm-up. The real game begins now: building breakthrough AI that doesn't exist yet.",
+        "We've cracked AI challenges for Mercedes, Bosch, and Aramco, but that's just the warm-up. We still have a lot to build.",
       image: "/v2/case-studies/case-6.jpg",
       link: "/careers",
       ctaText: "Join us",
@@ -73,7 +73,7 @@ const CaseStudiesSlide = () => {
       id: 7,
       title: "Spiral Health",
       description:
-        "This revolutionizes physical therapy by using AI-powered posture analysis to deliver personalized, real-time corrective exercises through your smartphone.",
+        "AI-powered posture analysis delivers personalized physical therapy exercises in real-time through smartphones.",
       image: "/v2/case-studies/case-7.jpg",
       link: "https://spiral.health/",
       ctaText: "See Spiral in action",

@@ -1,6 +1,6 @@
 "use client";
-import RevealX from "@/app/component/RevealX";
-import RevealY from "@/app/component/RevealY";
+import RevealX from "../../component/RevealX";
+import RevealY from "../../component/RevealY";
 import React, { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
 
