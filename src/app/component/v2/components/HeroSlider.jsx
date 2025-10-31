@@ -1,14 +1,127 @@
 "use client";
-import React from "react";
+import React, { useMemo } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectFade, Autoplay, Pagination } from "swiper/modules";
 import Link from "next/link";
-import HoverDetailDialog from "./HoverDetailDialog";
+import {
+  MorphingDialog,
+  MorphingDialogTrigger,
+  MorphingDialogContent,
+  MorphingDialogTitle,
+  MorphingDialogSubtitle,
+  MorphingDialogDescription,
+  MorphingDialogClose,
+  MorphingDialogContainer,
+} from "../../../../components/core/morphing-dialog";
+import { cn } from "../../../../lib/utils";
 
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/effect-fade";
 import "swiper/css/pagination";
+
+const dialogTransition = {
+  type: "spring",
+  stiffness: 200,
+  damping: 24,
+};
+
+const SlideMorphingDialog = ({ category, detail, triggerClassName }) => {
+  const descriptionParagraphs = useMemo(() => {
+    if (!detail?.description) return [];
+
+    if (Array.isArray(detail.description)) {
+      return detail.description.filter(Boolean);
+    }
+
+    return detail.description
+      .split(/\n{2,}|\r?\n/)
+      .map((paragraph) => paragraph.trim())
+      .filter(Boolean);
+  }, [detail?.description]);
+
+  return (
+    <MorphingDialog transition={dialogTransition}>
+      <MorphingDialogTrigger
+        className={cn(
+          "group inline-flex w-auto items-center gap-3 rounded-[4px] border border-white/30 bg-[#1A2758]/90 px-6 py-3 text-white transition hover:border-white/60 hover:bg-[#1A2758]",
+          triggerClassName
+        )}
+      >
+        <MorphingDialogTitle className="text-sm font-medium tracking-wide text-white">
+          {category}
+        </MorphingDialogTitle>
+        <span className="flex h-6 w-6 items-center justify-center rounded-full border border-white/40 transition group-hover:border-white group-hover:bg-white">
+          <svg
+            width="12"
+            height="12"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            className="text-white transition group-hover:text-[#0A1C3A]"
+          >
+            <path
+              d="M5 12h14M13 5l7 7-7 7"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
+        </span>
+      </MorphingDialogTrigger>
+      <MorphingDialogContainer>
+        <MorphingDialogContent className="absolute bottom-0 w-[90vw] max-w-[580px] border border-white/15 bg-[#030b17]/95 p-6 text-white shadow-2xl backdrop-blur-md md:rounded-[12px]">
+          <MorphingDialogClose className="text-white/70 transition hover:text-white" />
+          <div className="space-y-4 pr-1 md:pr-2">
+            <MorphingDialogTitle className="text-2xl font-semibold leading-snug text-white md:text-[28px]">
+              {/* {detail?.title ?? category} */}
+              {category}
+            </MorphingDialogTitle>
+
+            <MorphingDialogSubtitle className="text-sm uppercase tracking-[0.2em] text-white/60">
+              {detail?.title}
+            </MorphingDialogSubtitle>
+
+            {descriptionParagraphs.length > 0 && (
+              <MorphingDialogDescription className="space-y-3 text-sm leading-6 text-[#9EB3CF]">
+                {descriptionParagraphs.map((paragraph, index) => (
+                  <p key={index}>{paragraph}</p>
+                ))}
+              </MorphingDialogDescription>
+            )}
+            {detail?.ctaText && (
+              <Link
+                href={detail?.ctaLink || "#"}
+                target={detail?.ctaLink ? "_blank" : undefined}
+                className="inline-flex items-center gap-2 rounded-[4px] border border-white/25 px-5 py-3 font-medium text-white transition-colors hover:bg-white/10"
+              >
+                {detail.ctaText}
+                <span className="ml-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-white">
+                  <svg
+                    width="12"
+                    height="12"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M5 12h14M13 5l7 7-7 7"
+                      stroke="#0A1C3A"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                    />
+                  </svg>
+                </span>
+              </Link>
+            )}
+          </div>
+        </MorphingDialogContent>
+      </MorphingDialogContainer>
+    </MorphingDialog>
+  );
+};
 
 const HeroSlider = () => {
   const slides = [
@@ -131,7 +244,7 @@ const HeroSlider = () => {
             </div>
 
             {/* Content */}
-            <div className="relative z-10 flex flex-col md:justify-center h-auto md:h-[100vh] mt-[100px] mb-[40px] md:my-0 max-w-[1440px] mx-auto px-4 md:px-8 lg:px-16">
+            <div className="relative z-10 flex flex-col md:justify-center h-auto md:h-[100vh] mt-[100px] mb-[40px] md:my-0   px-4 md:px-16 lg:px-28">
               <div className="max-w-[700px]">
                 <h1 className="text-3xl md:text-5xl text-white font-bold  font-aeonik tracking-wide mb-6 ">
                   {slide.title}
@@ -162,17 +275,21 @@ const HeroSlider = () => {
 
                 {/* Mobile: inline category pill and details */}
                 <div className="md:hidden mt-6">
-                  <HoverDetailDialog
-                    label={slide.category}
+                  <SlideMorphingDialog
+                    category={slide.category}
                     detail={slide.detail}
+                    triggerClassName=""
                   />
                 </div>
               </div>
             </div>
 
             {/* Category Tag + Hover Dialog */}
-            <div className="hidden md:block absolute bottom-12 left-4 md:left-8 lg:left-16 z-20">
-              <HoverDetailDialog label={slide.category} detail={slide.detail} />
+            <div className="hidden md:block absolute bottom-12 left-4 md:left-12 lg:left-[110px] z-20">
+              <SlideMorphingDialog
+                category={slide.category}
+                detail={slide.detail}
+              />
             </div>
           </SwiperSlide>
         ))}

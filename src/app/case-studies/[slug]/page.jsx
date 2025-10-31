@@ -30,9 +30,20 @@ const SectionTitle = ({ title }) => (
 
 const ParagraphGroup = ({ content }) => (
   <div className="space-y-4 text-base md:text-lg text-[#9EB3CF] font-bwmss01">
-    {content?.map((paragraph, index) => (
-      <p key={index}>{paragraph}</p>
-    ))}
+    {content?.map((paragraph, index) => {
+      if (typeof paragraph === "string" && paragraph.includes(":")) {
+        const [lead, ...restParts] = paragraph.split(":");
+        const rest = restParts.join(":");
+        return (
+          <p key={index}>
+            <strong className="font-semibold text-white">{lead}</strong>
+            {":"}
+            {rest}
+          </p>
+        );
+      }
+      return <p key={index}>{paragraph}</p>;
+    })}
   </div>
 );
 
@@ -181,6 +192,33 @@ const VideoBlock = ({
   </div>
 );
 
+const ImageBlock = ({
+  src,
+  alt = "Case study visual",
+  width = 1920,
+  height = 1080,
+  caption,
+}) => {
+  if (!src) return null;
+
+  return (
+    <figure className="overflow-hidden rounded-2xl border border-white/10 bg-[#071336] shadow-[0_20px_80px_rgba(2,11,33,0.45)]">
+      <Image
+        src={src}
+        alt={alt}
+        width={width}
+        height={height}
+        className="h-auto w-full object-cover"
+      />
+      {caption && (
+        <figcaption className="px-4 py-3 text-sm text-[#9EB3CF]">
+          {caption}
+        </figcaption>
+      )}
+    </figure>
+  );
+};
+
 const renderBlock = (block) => {
   switch (block.type) {
     case "text":
@@ -205,6 +243,16 @@ const renderBlock = (block) => {
       );
     case "video":
       return <VideoBlock placeholder={block.placeholder} />;
+    case "image":
+      return (
+        <ImageBlock
+          src={block.src}
+          alt={block.alt}
+          width={block.width}
+          height={block.height}
+          caption={block.caption}
+        />
+      );
     default:
       return null;
   }
