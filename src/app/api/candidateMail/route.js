@@ -1,83 +1,73 @@
-// // pages/api/sendMail.js
-// import nodemailer from 'nodemailer';
-// import { Readable } from 'stream';
+import { NextResponse } from "next/server";
+import nodemailer from "nodemailer";
 
-// export const config = {
-//   api: {
-//     bodyParser: false,
-//   },
-// };
+export const runtime = "nodejs";
 
-// export async function POST (req, res)  {
-//   if (req.method !== 'POST') {
-//     return res.status(405).json({ message: 'Method not allowed' });
-//   }
+const buildTransporter = () =>
+  nodemailer.createTransport({
+    service: "gmail",
+    auth: {
+      user: process.env.SMTP_EMAIL,
+      pass: process.env.SMTP_PASSWORD,
+    },
+  });
 
-//   try {
-//     const buffers = [];
-//     for await (const chunk of req) {
-//       buffers.push(chunk);
-//     }
-//     const data = Buffer.concat(buffers);
-//     const boundary = req.headers['content-type'].split('; ')[1].replace('boundary=', '');
+const getAttachment = async (file) => {
+  if (!file || typeof file !== "object" || !("arrayBuffer" in file)) {
+    return null;
+  }
 
-//     const parsedData = parseMultipartFormData(data, boundary);
-//     const { name, email, file } = parsedData;
+  const arrayBuffer = await file.arrayBuffer();
+  const buffer = Buffer.from(arrayBuffer);
 
-//     const transporter = nodemailer.createTransport({
-//       service: 'gmail',
-//       auth: {
-//         user: process.env.GMAIL_USER,
-//         pass: process.env.GMAIL_PASS,
-//       },
-//     });
+  if (!buffer.length) {
+    return null;
+  }
 
-//     const mailOptions = {
-//       from: process.env.GMAIL_USER,
-//       to: 'recipient@example.com',
-//       subject: 'Contact Form Submission',
-//       text: `Name: ${name}\nEmail: ${email}`,
-//       attachments: file ? [{
-//         filename: file.filename,
-//         content: Buffer.from(file.content, 'binary'),
-//         contentType: file.contentType,
-//       }] : [],
-//     };
+  return {
+    filename: file.name || "attachment.pdf",
+    content: buffer,
+    contentType: file.type || "application/octet-stream",
+  };
+};
 
-//     await transporter.sendMail(mailOptions);
-//     return res.status(200).json({ message: 'Email sent successfully' });
-//   } catch (error) {
-//     console.error('Error sending email:', error);
-//     return res.status(500).json({ error: 'Error sending email' });
-//   }
-// };
+export async function POST(req) {
+  try {
+    const formData = await req.formData();
+    const name = formData.get("name")?.toString().trim();
+    const email = formData.get("email")?.toString().trim();
+    const file = formData.get("file");
 
-// const parseMultipartFormData = (data, boundary) => {
-//   const parts = data.toString().split(`--${boundary}`);
-//   const formData = {};
-//   parts.forEach((part) => {
-//     if (part.includes('Content-Disposition')) {
-//       const nameMatch = part.match(/name="([^"]+)"/);
-//       const filenameMatch = part.match(/filename="([^"]+)"/);
-//       const contentTypeMatch = part.match(/Content-Type: ([^\r\n]+)/);
+    if (!name || !email) {
+      return NextResponse.json(
+        { error: "Name and email are required." },
+        { status: 400 }
+      );
+    }
 
-//       if (nameMatch) {
-//         const name = nameMatch[1];
-//         const content = part.split('\r\n\r\n')[1].replace(/\r\n--$/, '');
+    const attachment = await getAttachment(file);
 
-//         if (filenameMatch && contentTypeMatch) {
-//           formData[name] = {
-//             filename: filenameMatch[1],
-//             contentType: contentTypeMatch[1],
-//             content,
-//           };
-//         } else {
-//           formData[name] = content;
-//         }
-//       }
-//     }
-//   });
-//   return formData;
-// };
+    const transporter = buildTransporter();
+    const mailOptions = {
+      from: process.env.SMTP_EMAIL,
+      to: process.env.CAREERS_EMAIL || "arjun@fastcode.ai",
+      replyTo: email,
+      subject: `New candidate submission from ${name}`,
+      text: `Candidate details:\n\nName: ${name}\nEmail: ${email}`,
+      attachments: attachment ? [attachment] : [],
+    };
 
+    await transporter.sendMail(mailOptions);
 
+    return NextResponse.json(
+      { message: "Candidate details sent successfully." },
+      { status: 200 }
+    );
+  } catch (error) {
+    console.error("Error sending candidate mail:", error);
+    return NextResponse.json(
+      { error: "Error sending email." },
+      { status: 500 }
+    );
+  }
+}
