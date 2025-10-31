@@ -129,14 +129,14 @@ const CaseStudiesSlide = () => {
   const activeStudy = caseStudies[activeIndex] || {};
 
   return (
-    <div className="relative bg-[#00081F] py-16">
-      <div className="container mx-auto px-4">
+    <div className="relative bg-[#00081F] pb-16">
+      <div className="mt-[60px] md:mt-[170px] mx-auto px-4">
         {/* Top Pagination Section */}
-        <div className="flex gap-3 mb-12 flex-wrap -mx-4 px-4 md:mx-0 md:px-0">
+        <div className="flex gap-3 mb-12 flex-wrap -mx-4 px-4 md:mx-0 md:px-20">
           {caseStudies.map((study, index) => (
             <div
               key={study.id}
-              className={`shrink-0 group cursor-pointer relative bg-[rgba(255,255,255,0.05)] backdrop-blur-[3px] rounded-[4px] px-4 py-2 md:px-6 md:py-3 transition-all duration-300 overflow-hidden `}
+              className={`shrink-0 group cursor-pointer relative bg-[rgba(255,255,255,0.05)] backdrop-blur-[3px] rounded-[4px] px-4 py-2 md:px-6 md:py-3 transition-all duration-300 overflow-hidden group`}
               onClick={() => mainSwiperRef.current?.swiper.slideToLoop(index)}
             >
               {/* Progress animation pseudo-element only, no width progress logic */}
@@ -155,7 +155,7 @@ const CaseStudiesSlide = () => {
               ></span>
               <div className="relative z-10">
                 <div
-                  className={`text-xs md:text-sm transition-colors duration-300 ${
+                  className={`text-xs md:text-sm transition-colors duration-300 group-hover:text-white ${
                     index === activeIndex ? "text-white " : "text-[#FFFFFF80]"
                   }`}
                 >

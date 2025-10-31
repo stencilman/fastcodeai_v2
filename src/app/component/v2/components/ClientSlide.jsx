@@ -128,12 +128,12 @@ const ClientSlide = () => {
     >
       {/* shadow */}
       {/* <div className="absolute bottom-[0px] left-0 w-full h-[150px] blur-[50px] translate-y-[30px] scale-90  rounded-[50%] z-[-1] bg-gradient-to-br from-[#1D8283] to-[#033577] bg-gradient-156deg bg-no-repeat bg-[0% 0%] opacity-49 border-0 border-opacity-0 filter blur-[50px]"></div> */}
-      <Shadow />
+      {/* <Shadow /> */}
 
       <div className="flex pt-[50px] sm:pt-0 flex-col gap-[60px] w-full items-center ">
         <div className=" h-auto w-[100%] text-center  ">
           <div className="w-full h-full flex flex-col justify-center">
-            <h1 className="text-3xl md:text-5xl text-white font-bold  font-aeonik tracking-wide w-full px-[20px] text-center">
+            <h1 className="text-3xl md:text-5xl text-[#9EB3CF] font-bold  font-aeonik tracking-wide w-full px-[20px] text-center">
               Trusted by Industry Leaders
             </h1>
           </div>
