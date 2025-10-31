@@ -65,22 +65,21 @@ const Footer = ({ showExtraSpace }) => {
                 width="249"
                 alt="logo"
               /> */}
-               <Image
+              <Image
                 // placeholder="blur"
-                src={brainLogo}
+                src="/footer-logo/brain.svg"
                 height="100"
                 width="100"
                 alt="logo"
               />
-               <Image
+              <Image
                 // placeholder="blur"
-                src={textLogo}
+                src="/footer-logo/text.svg"
                 height="140"
                 width="249"
                 alt="logo"
               />
-              
-              
+
               {/* Social icons row positioned just below the card */}
               <div className="absolute -bottom-[72px] left-1/2 -translate-x-1/2 flex justify-around w-full gap-[18px] z-[7]">
                 <Link
