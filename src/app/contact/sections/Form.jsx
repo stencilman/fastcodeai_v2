@@ -19,6 +19,8 @@ const Form = () => {
     message: "",
   });
   const [message, setMessage] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false);
   const nameRef = useRef();
   const emailRef = useRef();
   const phoneRef = useRef();
@@ -46,31 +48,57 @@ const Form = () => {
   const handleSubmit = async (e) => {
     console.log("formData", formData);
     e.preventDefault();
-    setMessage("Email sending...");
+    setIsLoading(true);
+    setIsSubmitted(false);
+    setMessage("Sending email...");
 
-    const response = await fetch("/api/contact", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify(formData),
-    });
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
 
-    const result = await response.json();
-    console.log("result", result);
+      const result = await response.json();
+      console.log("result", result);
 
-    if (response.ok) {
-      setMessage("Email sent successfully");
+      if (response.ok) {
+        setIsSubmitted(true);
+        setMessage("✓ Email sent successfully!");
+        // Reset form
+        nameRef.current.value = "";
+        emailRef.current.value = "";
+        phoneRef.current.value = "";
+        companyRef.current.value = "";
+        messageRef.current.value = "";
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          companyName: "",
+          service: [],
+          message: "",
+        });
+        setTimeout(() => {
+          setMessage("");
+          setIsSubmitted(false);
+        }, 4000);
+      } else {
+        setMessage("✗ Error sending email. Please try again.");
+        setTimeout(() => {
+          setMessage("");
+        }, 4000);
+      }
+    } catch (error) {
+      console.error("Error:", error);
+      setMessage("✗ Error sending email. Please try again.");
       setTimeout(() => {
         setMessage("");
-      }, 3000);
-      console.log("message", message);
-    } else {
-      setMessage("Error sending email");
-      setTimeout(() => {
-        setMessage("");
-      }, 3000);
-      console.log("message", message);
+      }, 4000);
+    } finally {
+      setIsLoading(false);
     }
   };
 
@@ -310,24 +338,50 @@ const Form = () => {
                     Your Message
                   </label>
                 </div>
-                <div className="text-white text-base block md:hidden pb-[10px]">
-                  {message}
+
+                {/* Status Message with Loading Spinner */}
+                <div className="text-white text-base block md:hidden pb-[10px] min-h-[24px]">
+                  {isLoading && (
+                    <div className="flex items-center gap-2">
+                      <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
+                      <span>{message}</span>
+                    </div>
+                  )}
+                  {isSubmitted && !isLoading && (
+                    <span className="text-green-400 font-medium">
+                      {message}
+                    </span>
+                  )}
+                  {message && !isLoading && !isSubmitted && (
+                    <span className="text-red-400 font-medium">{message}</span>
+                  )}
                 </div>
 
                 <button
                   type="submit"
-                  className="text-white  focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-[4px]  py-[10px] px-[25px] text-center font-bwmss01"
+                  disabled={isLoading}
+                  className={`text-white focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-[4px] py-[10px] px-[25px] text-center font-bwmss01 transition-all duration-300 ${
+                    isLoading
+                      ? "opacity-70 cursor-not-allowed"
+                      : "hover:opacity-90"
+                  }`}
                   style={{
-                    background:
-                      "transparent linear-gradient(174deg, #2DC1C3 0%, #0268F2 100%) 0% 0% no-repeat padding-box",
+                    background: isLoading
+                      ? "transparent linear-gradient(174deg, #2DC1C3 0%, #0268F2 100%) 0% 0% no-repeat padding-box"
+                      : "transparent linear-gradient(174deg, #2DC1C3 0%, #0268F2 100%) 0% 0% no-repeat padding-box",
                   }}
                 >
-                  Submit
-                  {/* <Image src="/arrowRight.svg" width="32" height="32" alt="" /> */}
+                  {isLoading ? (
+                    <div className="flex items-center gap-2">
+                      <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
+                      <span>Sending...</span>
+                    </div>
+                  ) : isSubmitted && message ? (
+                    <span>✓ Submitted</span>
+                  ) : (
+                    "Submit"
+                  )}
                 </button>
-              </div>
-              <div className="text-white text-base hidden md:block">
-                {message}
               </div>
             </form>
           </div>
