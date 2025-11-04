@@ -339,23 +339,7 @@ const Form = () => {
                   </label>
                 </div>
 
-                {/* Status Message with Loading Spinner */}
-                <div className="text-white text-base block md:hidden pb-[10px] min-h-[24px]">
-                  {isLoading && (
-                    <div className="flex items-center gap-2">
-                      <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
-                      <span>{message}</span>
-                    </div>
-                  )}
-                  {isSubmitted && !isLoading && (
-                    <span className="text-green-400 font-medium">
-                      {message}
-                    </span>
-                  )}
-                  {message && !isLoading && !isSubmitted && (
-                    <span className="text-red-400 font-medium">{message}</span>
-                  )}
-                </div>
+                
 
                 <button
                   type="submit"
