@@ -1,54 +1,61 @@
-import { NextResponse, NextRequest } from 'next/server'
-import nodemailer from 'nodemailer';
+import { NextResponse } from "next/server";
+import nodemailer from "nodemailer";
 
+const CONTACT_RECIPIENT = process.env.CONTACT_RECIPIENT || "arjun@fastcode.ai";
 
-export async function POST(req, res) {
-  if (req.method === 'POST') {
+export async function POST(req) {
+  if (!process.env.SMTP_EMAIL || !process.env.SMTP_PASSWORD) {
+    console.error("Contact form mailer missing SMTP credentials");
+    return NextResponse.json(
+      { error: "Mail service not configured" },
+      { status: 500 }
+    );
+  }
+
+  try {
     const body = await req.json();
-    console.log("post resquest", body)
-    const { name, email, phone, companyName, service, message } = body;
-    const services = service.join(', ')
+    const {
+      name = "N/A",
+      email = "N/A",
+      phone = "N/A",
+      companyName = "N/A",
+      service = [],
+      message = "N/A",
+    } = body;
+
+    const services = Array.isArray(service)
+      ? service.join(", ")
+      : String(service || "");
+
     const transporter = nodemailer.createTransport({
-      service: 'gmail',
+      service: "gmail",
       auth: {
         user: process.env.SMTP_EMAIL,
         pass: process.env.SMTP_PASSWORD,
       },
     });
 
-    const mailOptions = {
-      from: email,
-      to: "arjun@fastcode.ai",
-      subject: 'Contact message(Fast Code AI Website)',
+    await transporter.sendMail({
+      from: process.env.SMTP_EMAIL,
+      replyTo: email,
+      to: CONTACT_RECIPIENT,
+      subject: "Contact message (Fast Code AI Website)",
       text: `
         Name: ${name}
         Email: ${email}
         Phone: ${phone}
         Company Name: ${companyName}
-       Services : ${services}
+        Services: ${services}
         Message: ${message}
       `,
-    };
+    });
 
-    try {
-      await transporter.sendMail(mailOptions);
-      // res.status(200).json({ message: 'Email sent successfully' });
-      return new Response(JSON.stringify({ message: 'Email sent successfully' }), {
-        headers: { 'Content-Type': 'application/json' },
-        status: 200
-      })
-    } catch (error) {
-      // res.status(500).json({ error: 'Error sending email' });
-      return new Response(JSON.stringify({ error: 'Error sending email' }), {
-        headers: { 'Content-Type': 'application/json' },
-        status: 500
-      })
-    }
-  } else {
-    // res.status(405).json({ message: 'Method not allowed' });
-    return new Response(JSON.stringify({ message: 'Method not allowed' }), {
-      headers: { 'Content-Type': 'application/json' },
-      status: 500
-    })
+    return NextResponse.json(
+      { message: "Email sent successfully" },
+      { status: 200 }
+    );
+  } catch (error) {
+    console.error("Failed to send contact email", error);
+    return NextResponse.json({ error: "Error sending email" }, { status: 500 });
   }
 }
