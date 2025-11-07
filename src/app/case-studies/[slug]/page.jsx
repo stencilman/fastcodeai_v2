@@ -358,7 +358,7 @@ export default function CaseStudyDetailPage({ params }) {
       <section className="relative z-10  pb-24">
         <div className="mx-auto grid  gap-10 px-6 md:px-24 lg:grid-cols-[220px_minmax(0,1fr)]">
           <aside className="hidden h-full lg:block">
-            <div className="sticky top-[136px] rounded-2xl border border-white/10 bg-[#071336] p-6 backdrop-blur-lg shadow-[0_20px_80px_rgba(2,11,33,0.45)]">
+            <div className="sticky top-[136px] rounded-2xl  p-6 backdrop-blur-lg shadow-[0_20px_80px_rgba(2,11,33,0.45)]">
               <p className="text-md  text-[#9EB3CF80]">Table of contents</p>
               <TableOfContents sections={sections} />
             </div>

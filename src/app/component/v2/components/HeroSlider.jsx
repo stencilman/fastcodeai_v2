@@ -14,7 +14,7 @@ import {
   MorphingDialogContainer,
 } from "../../../../components/core/morphing-dialog";
 import { cn } from "../../../../lib/utils";
-
+import Button from "../../Button";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/effect-fade";
@@ -252,13 +252,15 @@ const HeroSlider = () => {
                 <p className="text-lg text-white mb-8 font-bwmss01 whitespace-pre-line">
                   {slide.subtitle}
                 </p>
-                <Link
+                {/* <Link
                   href={slide.ctaLink}
                   className="inline-flex bg-gradient-to-r from-[#00D1FF] to-[#0029FF] text-white px-[25px] py-[10px] rounded-[4px] text-lg font-aeonik font-medium transition-transform hover:scale-105"
                 >
                   {slide.ctaText}
-                </Link>
-
+                </Link> */}
+                <div className="w-fit">
+                  <Button to={slide.ctaLink} name={slide.ctaText} />
+                </div>
                 {/* Mobile: render video as a separate section below CTA */}
                 <div className="md:hidden mt-8">
                   <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden border border-white/10">

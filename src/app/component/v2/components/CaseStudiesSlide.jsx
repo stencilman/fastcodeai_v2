@@ -21,7 +21,7 @@ const CaseStudiesSlide = () => {
       description:
         "Our Data Intelligence Platform transforms petabytes of raw enterprise data into actionable AI-ready insights.",
       image: "/v2/case-studies/case-1.jpg",
-      link: "#",
+      link: "/case-studies/data-intelligence-platform",
       ctaText: "Start your pilot today",
     },
     {
@@ -196,7 +196,7 @@ const CaseStudiesSlide = () => {
                           {/* Mac Book style mockup */}
                           <div className="relative">
                             {/* Screen */}
-                            <div className="relative w-full aspect-[16/9.2] bg-white rounded-t-lg overflow-hidden">
+                            <div className="relative w-full aspect-[16/10] md:aspect-[26/12] bg-white rounded-t-lg overflow-hidden">
                               <Image
                                 src={study.image}
                                 alt="DripLabs Interface"
@@ -252,7 +252,7 @@ const CaseStudiesSlide = () => {
           <div className="md:hidden mt-6">
             <div className="relative mx-auto w-full rounded-2xl border border-white/10 backdrop-blur-md bg-[rgba(255,255,255,0.06)] px-5 py-6">
               {/* caret */}
-              <div className="absolute -top-2 left-8 w-4 h-4 rotate-45 bg-[rgba(255,255,255,0.06)] border-l border-t border-white/10" />
+              {/* <div className="absolute -top-2 left-8 w-4 h-4 rotate-45 bg-[rgba(255,255,255,0.06)] border-l border-t border-white/10" /> */}
 
               <p className="text-[#9EB3CF] text-base leading-6 mb-5">
                 {activeStudy?.description}
