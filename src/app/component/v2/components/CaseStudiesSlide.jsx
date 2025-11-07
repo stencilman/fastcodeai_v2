@@ -189,20 +189,21 @@ const CaseStudiesSlide = () => {
               <SwiperSlide key={study.id}>
                 <div className="bg-[#030B17] relative overflow-hidden">
                   {/* Full Image Section */}
-                  <div className="relative w-full">
+                  <div className="relative w-full max-h-[400px] md:max-h-[450px] lg:max-h-[500px] overflow-hidden">
                     <div className="relative  w-full">
                       <div className="bg-[#1a1a1a] w-full h-full ">
                         <div className="relative w-[100%] ">
                           {/* Mac Book style mockup */}
                           <div className="relative">
                             {/* Screen */}
-                            <div className="relative w-full aspect-[16/10] md:aspect-[26/12] bg-white rounded-t-lg overflow-hidden">
+                            <div className="relative w-full bg-white rounded-t-lg overflow-hidden flex items-center justify-center">
                               <Image
                                 src={study.image}
                                 alt="DripLabs Interface"
-                                fill
-                                className="object-cover"
-                                sizes="(max-width: 1200px) 90vw, 1100px"
+                                width={1920}
+                                height={1080}
+                                className="w-full h-auto max-h-[400px] md:max-h-[450px] lg:max-h-[500px] object-cover"
+                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 1100px"
                                 priority
                               />
                             </div>
