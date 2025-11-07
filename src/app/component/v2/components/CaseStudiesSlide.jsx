@@ -167,7 +167,33 @@ const CaseStudiesSlide = () => {
         </div>
 
         {/* Main */}
-        <div className="relative">
+        <div className="relative group/slider">
+          {/* Navigation Arrows */}
+          <button
+            className="prev-button absolute left-2 md:left-4 top-1/2 -translate-y-1/2 z-10 w-10 h-10 md:w-12 md:h-12 rounded-full bg-white/10 backdrop-blur-md hover:bg-white/20 transition-all duration-300 flex items-center justify-center opacity-0 group-hover/slider:opacity-100 group"
+            aria-label="Previous slide"
+          >
+            <Image
+              src="/arrowRight.svg"
+              alt="Previous"
+              width={24}
+              height={24}
+              className="rotate-180 group-hover:scale-110 transition-transform"
+            />
+          </button>
+          <button
+            className="next-button absolute right-2 md:right-4 top-1/2 -translate-y-1/2 z-10 w-10 h-10 md:w-12 md:h-12 rounded-full bg-white/10 backdrop-blur-md hover:bg-white/20 transition-all duration-300 flex items-center justify-center opacity-0 group-hover/slider:opacity-100 group"
+            aria-label="Next slide"
+          >
+            <Image
+              src="/arrowRight.svg"
+              alt="Next"
+              width={24}
+              height={24}
+              className="group-hover:scale-110 transition-transform"
+            />
+          </button>
+
           <Swiper
             loop={true}
             ref={mainSwiperRef}
