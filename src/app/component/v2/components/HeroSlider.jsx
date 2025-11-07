@@ -1,5 +1,5 @@
 "use client";
-import React, { useMemo } from "react";
+import React, { useMemo, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectFade, Autoplay, Pagination } from "swiper/modules";
 import Link from "next/link";
@@ -15,6 +15,7 @@ import {
 } from "../../../../components/core/morphing-dialog";
 import { cn } from "../../../../lib/utils";
 import Button from "../../Button";
+import FormModal from "../../../contact/sections/FormModal";
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/effect-fade";
@@ -124,6 +125,8 @@ const SlideMorphingDialog = ({ category, detail, triggerClassName }) => {
 };
 
 const HeroSlider = () => {
+  const [isFormModalOpen, setIsFormModalOpen] = useState(false);
+
   const slides = [
     {
       id: 1,
@@ -259,7 +262,10 @@ const HeroSlider = () => {
                   {slide.ctaText}
                 </Link> */}
                 <div className="w-fit">
-                  <Button to={slide.ctaLink} name={slide.ctaText} />
+                  <Button
+                    onClick={() => setIsFormModalOpen(true)}
+                    name={slide.ctaText}
+                  />
                 </div>
                 {/* Mobile: render video as a separate section below CTA */}
                 <div className="md:hidden mt-8">
@@ -296,6 +302,12 @@ const HeroSlider = () => {
           </SwiperSlide>
         ))}
       </Swiper>
+
+      {/* Form Modal */}
+      <FormModal
+        isOpen={isFormModalOpen}
+        onClose={() => setIsFormModalOpen(false)}
+      />
 
       {/* Swiper pagination custom styling */}
       <style jsx global>{`
