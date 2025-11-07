@@ -320,12 +320,12 @@ export const caseStudies = [
       // },
       // backgroundImage: "/case-studies/data-intelligence/background.jpg",
       readTime: "5 min read",
-      meta: [
-        { label: "Industry", value: "Enterprise" },
-        { label: "Duration", value: "Few weeks" },
-        { label: "Time", value: "Ongoing" },
-        { label: "Team", value: "Cross-functional" },
-      ],
+      // meta: [
+      //   { label: "Industry", value: "Enterprise" },
+      //   { label: "Duration", value: "Few weeks" },
+      //   { label: "Time", value: "Ongoing" },
+      //   { label: "Team", value: "Cross-functional" },
+      // ],
     },
     sections: [
       {
