@@ -21,7 +21,7 @@ const CaseStudiesSlide = () => {
       description:
         "Our Data Intelligence Platform transforms petabytes of raw enterprise data into actionable AI-ready insights.",
       image: "/v2/case-studies/case-1.jpg",
-      link: "#",
+      link: "/case-studies/data-intelligence-platform",
       ctaText: "Start your pilot today",
     },
     {
@@ -167,7 +167,33 @@ const CaseStudiesSlide = () => {
         </div>
 
         {/* Main */}
-        <div className="relative">
+        <div className="relative group/slider">
+          {/* Navigation Arrows */}
+          <button
+            className="prev-button absolute left-2 md:left-4 top-1/2 -translate-y-1/2 z-10 w-10 h-10 md:w-12 md:h-12 rounded-full bg-white/10 backdrop-blur-md hover:bg-white/20 transition-all duration-300 flex items-center justify-center opacity-0 group-hover/slider:opacity-100 group"
+            aria-label="Previous slide"
+          >
+            <Image
+              src="/arrowRight.svg"
+              alt="Previous"
+              width={24}
+              height={24}
+              className="rotate-180 group-hover:scale-110 transition-transform"
+            />
+          </button>
+          <button
+            className="next-button absolute right-2 md:right-4 top-1/2 -translate-y-1/2 z-10 w-10 h-10 md:w-12 md:h-12 rounded-full bg-white/10 backdrop-blur-md hover:bg-white/20 transition-all duration-300 flex items-center justify-center opacity-0 group-hover/slider:opacity-100 group"
+            aria-label="Next slide"
+          >
+            <Image
+              src="/arrowRight.svg"
+              alt="Next"
+              width={24}
+              height={24}
+              className="group-hover:scale-110 transition-transform"
+            />
+          </button>
+
           <Swiper
             loop={true}
             ref={mainSwiperRef}
@@ -189,20 +215,21 @@ const CaseStudiesSlide = () => {
               <SwiperSlide key={study.id}>
                 <div className="bg-[#030B17] relative overflow-hidden">
                   {/* Full Image Section */}
-                  <div className="relative w-full">
+                  <div className="relative w-full max-h-[400px] md:max-h-[450px] lg:max-h-[500px] overflow-hidden">
                     <div className="relative  w-full">
                       <div className="bg-[#1a1a1a] w-full h-full ">
                         <div className="relative w-[100%] ">
                           {/* Mac Book style mockup */}
                           <div className="relative">
                             {/* Screen */}
-                            <div className="relative w-full aspect-[16/9.2] bg-white rounded-t-lg overflow-hidden">
+                            <div className="relative w-full bg-white rounded-t-lg overflow-hidden flex items-center justify-center">
                               <Image
                                 src={study.image}
                                 alt="DripLabs Interface"
-                                fill
-                                className="object-cover"
-                                sizes="(max-width: 1200px) 90vw, 1100px"
+                                width={1920}
+                                height={1080}
+                                className="w-full h-auto max-h-[400px] md:max-h-[450px] lg:max-h-[500px] object-cover"
+                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 1100px"
                                 priority
                               />
                             </div>
@@ -252,7 +279,7 @@ const CaseStudiesSlide = () => {
           <div className="md:hidden mt-6">
             <div className="relative mx-auto w-full rounded-2xl border border-white/10 backdrop-blur-md bg-[rgba(255,255,255,0.06)] px-5 py-6">
               {/* caret */}
-              <div className="absolute -top-2 left-8 w-4 h-4 rotate-45 bg-[rgba(255,255,255,0.06)] border-l border-t border-white/10" />
+              {/* <div className="absolute -top-2 left-8 w-4 h-4 rotate-45 bg-[rgba(255,255,255,0.06)] border-l border-t border-white/10" /> */}
 
               <p className="text-[#9EB3CF] text-base leading-6 mb-5">
                 {activeStudy?.description}

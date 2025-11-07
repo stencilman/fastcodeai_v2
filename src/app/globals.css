@@ -3742,7 +3742,7 @@ figcaption {
 
 .cs-card-quote {
   letter-spacing: -.04em;
-  color: white;
+  color: #9EB3CF;
   border-left-style: none;
   margin-bottom: 40px;
   padding: 0;
@@ -12806,7 +12806,7 @@ figcaption {
   }
 
   .cs-card-quote {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .cs-card-quote.cs-card-quote--grid {

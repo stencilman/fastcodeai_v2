@@ -43,13 +43,11 @@ const TestimonialsN = () => {
       slideToClickedSlide: true,
     });
 
-    
-
     const swiperEl = document.querySelector(".cs-cards-swiper");
     const swiper = new Swiper(swiperEl, {
       grabCursor: true,
       watchSlidesProgress: true,
-      loop: true, 
+      loop: true,
       speed: 400,
       keyboard: {
         enabled: true,
@@ -106,13 +104,12 @@ const TestimonialsN = () => {
       },
     });
 
-
     // Pause autoplay on hover
-    document.querySelectorAll('.cs-nav-slide').forEach((slide) => {
-      slide.addEventListener('mouseenter', () => {
+    document.querySelectorAll(".cs-nav-slide").forEach((slide) => {
+      slide.addEventListener("mouseenter", () => {
         swiper.autoplay.stop();
       });
-      slide.addEventListener('mouseleave', () => {
+      slide.addEventListener("mouseleave", () => {
         swiper.autoplay.start();
       });
     });
@@ -156,7 +153,7 @@ const TestimonialsN = () => {
                         className="cs-card-logo w-auto h-auto"
                       />
                       <div className="cs-card-quote cc-embed w-embed">
-                        <blockquote className="cs-card-quote font-bwmss01">
+                        <blockquote className="cs-card-quote font-bwmss01 text-[#9EB3CF]">
                           “Arjun is a great researcher / scientist / and
                           entrepreneur. I first learned about his research at
                           MPI on his movie-reshape work that made a big splash
@@ -265,9 +262,9 @@ const TestimonialsN = () => {
                         className="cs-card-logo w-auto h-auto"
                       />
                       <div className="cs-card-quote cc-embed w-embed">
-                        <blockquote className="cs-card-quote font-bwmss01">
-                          “I had the pleasure of working with Arjun while he
-                          was a PhD student at NYU. We co-authored a number of
+                        <blockquote className="cs-card-quote font-bwmss01 text-[#9EB3CF]">
+                          “I had the pleasure of working with Arjun while he was
+                          a PhD student at NYU. We co-authored a number of
                           papers together on deep unsupervised learning methods.
                           Unsupervised learning and deep learning are very
                           popular topics today, but Arjun worked on this before
@@ -369,7 +366,7 @@ const TestimonialsN = () => {
                         className="cs-card-logo w-auto h-auto"
                       />
                       <div className="cs-card-quote cc-embed w-embed">
-                        <blockquote className="cs-card-quote font-bwmss01">
+                        <blockquote className="cs-card-quote font-bwmss01 text-[#9EB3CF]">
                           “ {"Arjun's"} dedication and innovative approach
                           significantly accelerated our projects success at
                           Incivus. His expertise and commitment to excellence
@@ -473,7 +470,7 @@ const TestimonialsN = () => {
                         className="cs-card-logo w-auto h-auto"
                       />
                       <div className="cs-card-quote cc-embed w-embed">
-                        <blockquote className="cs-card-quote font-bwmss01">
+                        <blockquote className="cs-card-quote font-bwmss01 text-[#9EB3CF]">
                           “ I had the pleasure of working with Arjun on a
                           project focused on pedestrian pose estimation for
                           autonomous driving. I genuinely enjoyed collaborating
@@ -578,7 +575,7 @@ const TestimonialsN = () => {
                       />
 
                       <div className="cs-card-quote cc-embed w-embed">
-                        <blockquote className="cs-card-quote font-bwmss01">
+                        <blockquote className="cs-card-quote font-bwmss01 text-[#9EB3CF]">
                           “I have been working with Arjun and his team for over
                           four years now. Together we have been working and
                           solving complex AI computer vision problems in the

@@ -305,6 +305,121 @@ export const caseStudies = [
       },
     ],
   },
+  {
+    slug: "data-intelligence-platform",
+    hero: {
+      badges: ["Deploy in weeks", "Data Analytics"],
+      title: "Build Intelligence from Data",
+      subtitle:
+        "Every company sits on a mountain of data, yet turning it into something meaningful still takes months of effort, complex tools, and specialized teams. The Data Intelligence Platform changes that.",
+      // image: {
+      //   src: "/v2/case-studies/case-5.jpg",
+      //   alt: "Data Intelligence Platform",
+      //   width: 1920,
+      //   height: 1080,
+      // },
+      // backgroundImage: "/case-studies/data-intelligence/background.jpg",
+      readTime: "5 min read",
+      // meta: [
+      //   { label: "Industry", value: "Enterprise" },
+      //   { label: "Duration", value: "Few weeks" },
+      //   { label: "Time", value: "Ongoing" },
+      //   { label: "Team", value: "Cross-functional" },
+      // ],
+    },
+    sections: [
+      {
+        id: "unified-solution",
+        title: "Our Unified Solution",
+        tocTitle: "Our Unified Solution",
+        blocks: [
+          {
+            type: "text",
+            content: [
+              "It helps organizations move from scattered data silos to connected, insight-ready intelligence faster than ever. It brings together everything you need to find the right data, understand what it means, and keep it accurate and trustworthy, all in one place.",
+            ],
+          },
+        ],
+      },
+      {
+        id: "how-it-works",
+        title: "How it works",
+        tocTitle: "How it works",
+        blocks: [
+          {
+            type: "subsections",
+            layout: "stack",
+            items: [
+              {
+                heading: "Find what matters instantly.",
+                bullets: [
+                  "Search across documents, logs, contracts, and telemetry data using natural language. No coding or data wrangling required.",
+                ],
+              },
+              {
+                heading: "Label and train at scale.",
+                bullets: [
+                  "The platform automates supervision and labeling using a mix of AI models, rules, and validation loops. Manual effort drops by up to 90 percent.",
+                ],
+              },
+              {
+                heading: "Understand context.",
+                bullets: [
+                  "It goes beyond detection to reasoning, applying your business logic and policies so that decisions are grounded in reality.",
+                ],
+              },
+              {
+                heading: "Keep quality in check.",
+                bullets: [
+                  "Every data stream, model, and decision is monitored for accuracy and drift. Governance and lineage are built in for full transparency.",
+                ],
+              },
+            ],
+          },
+        ],
+      },
+      {
+        id: "why-it-matters",
+        title: "Why it matters",
+        tocTitle: "Why it matters",
+        blocks: [
+          {
+            type: "text",
+            content: [
+              "Teams can move from raw data to reliable insight in weeks instead of months. No waiting for perfect datasets or endless dashboard iterations. Just fast, clear answers that drive confident decisions.",
+            ],
+          },
+        ],
+      },
+      {
+        id: "impact",
+        title: "The Impact",
+        tocTitle: "The Impact",
+        blocks: [
+          {
+            type: "text",
+            content: [
+              "Analysts and engineers spend less time on tedious prep work. Business teams get trusted insights when they need them. AI and automation projects scale faster and deliver real outcomes.",
+            ],
+          },
+        ],
+      },
+      {
+        id: "start-small",
+        title: "Start small, grow fast",
+        tocTitle: "Start small, grow fast",
+        blocks: [
+          {
+            type: "text",
+            content: [
+              "You do not need to replace your existing systems. In just a few weeks you can connect your data, set up retrieval and quality loops, and see immediate results. Watch your organization evolve from data heavy to intelligence driven one step at a time.",
+              "Let's explore what's possible with your data.",
+            ],
+          },
+        ],
+      },
+    ],
+  },
 ];
 
 export const getCaseStudyBySlug = (slug) =>
