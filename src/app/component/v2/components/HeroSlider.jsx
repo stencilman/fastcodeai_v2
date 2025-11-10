@@ -1,5 +1,5 @@
 "use client";
-import React, { useMemo, useState } from "react";
+import React, { useMemo, useState, useRef, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectFade, Autoplay, Pagination } from "swiper/modules";
 import Link from "next/link";
@@ -27,7 +27,13 @@ const dialogTransition = {
   damping: 24,
 };
 
-const SlideMorphingDialog = ({ category, detail, triggerClassName }) => {
+const SlideMorphingDialog = ({
+  category,
+  detail,
+  triggerClassName,
+  slideId,
+  onOpenChange,
+}) => {
   const descriptionParagraphs = useMemo(() => {
     if (!detail?.description) return [];
 
@@ -42,7 +48,11 @@ const SlideMorphingDialog = ({ category, detail, triggerClassName }) => {
   }, [detail?.description]);
 
   return (
-    <MorphingDialog transition={dialogTransition}>
+    <MorphingDialog
+      key={`dialog-${slideId}`}
+      transition={dialogTransition}
+      onOpenChange={onOpenChange}
+    >
       <MorphingDialogTrigger
         className={cn(
           "group inline-flex w-auto items-center gap-3 rounded-[4px] border border-white/30 bg-[#1A2758]/90 px-6 py-3 text-white transition hover:border-white/60 hover:bg-[#1A2758]",
@@ -126,6 +136,20 @@ const SlideMorphingDialog = ({ category, detail, triggerClassName }) => {
 
 const HeroSlider = () => {
   const [isFormModalOpen, setIsFormModalOpen] = useState(false);
+  const [, setActiveSlideIndex] = useState(0);
+  const [isDialogOpen, setIsDialogOpen] = useState(false);
+  const swiperRef = useRef(null);
+
+  // Control autoplay based on dialog state
+  useEffect(() => {
+    if (swiperRef.current && swiperRef.current.autoplay) {
+      if (isDialogOpen) {
+        swiperRef.current.autoplay.stop();
+      } else {
+        swiperRef.current.autoplay.start();
+      }
+    }
+  }, [isDialogOpen]);
 
   const slides = [
     {
@@ -162,7 +186,7 @@ const HeroSlider = () => {
         description:
           "Our lane assist and vulnerable road user detection system for Bosch enhanced traffic sign recognition for Level 2-3 autonomy. This project sparked long-term partnerships with Mercedes and Bosch, leading to multiple breakthrough collaborations in autonomous driving technology.",
         ctaText: "View Documentation",
-        ctaLink: "#",
+        ctaLink: "/VRU-Pose-SSD Article-May-2021.pdf",
       },
     },
     {
@@ -218,6 +242,8 @@ const HeroSlider = () => {
         }}
         loop={true}
         className="w-full h-full"
+        onSwiper={(swiper) => (swiperRef.current = swiper)}
+        onSlideChange={(swiper) => setActiveSlideIndex(swiper.realIndex)}
         pagination={{
           // dynamicBullets: true,
           clickable: true,
@@ -232,73 +258,85 @@ const HeroSlider = () => {
       >
         {slides.map((slide) => (
           <SwiperSlide key={slide.id} className="relative">
-            {/* Background video (desktop/tablet only) */}
-            <div className="absolute inset-0">
-              <video
-                src={slide.bgVideo}
-                autoPlay
-                muted
-                loop
-                playsInline
-                className="hidden md:block w-full h-full object-cover"
-              />
-              {/* Gradient Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-r from-[#00081F] via-[#00081F]/80 to-transparent" />
-            </div>
-
-            {/* Content */}
-            <div className="relative z-10 flex flex-col md:justify-center h-auto md:h-[100vh] mt-[100px] mb-[40px] md:my-0   px-4 md:px-16 lg:px-28">
-              <div className="max-w-[700px]">
-                <h1 className="text-3xl md:text-5xl text-white font-bold  font-aeonik tracking-wide mb-6 ">
-                  {slide.title}
-                </h1>
-                <p className="text-lg text-white mb-8 font-bwmss01 whitespace-pre-line">
-                  {slide.subtitle}
-                </p>
-                {/* <Link
-                  href={slide.ctaLink}
-                  className="inline-flex bg-gradient-to-r from-[#00D1FF] to-[#0029FF] text-white px-[25px] py-[10px] rounded-[4px] text-lg font-aeonik font-medium transition-transform hover:scale-105"
-                >
-                  {slide.ctaText}
-                </Link> */}
-                <div className="w-fit">
-                  <Button
-                    onClick={() => setIsFormModalOpen(true)}
-                    name={slide.ctaText}
+            {({ isActive }) => (
+              <>
+                {/* Background video (desktop/tablet only) */}
+                <div className="absolute inset-0">
+                  <video
+                    src={slide.bgVideo}
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    className="hidden md:block w-full h-full object-cover"
                   />
+                  {/* Gradient Overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-r from-[#00081F] via-[#00081F]/80 to-transparent" />
                 </div>
-                {/* Mobile: render video as a separate section below CTA */}
-                <div className="md:hidden mt-8">
-                  <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden border border-white/10">
-                    <video
-                      src={slide.mobileVideo}
-                      autoPlay
-                      muted
-                      loop
-                      playsInline
-                      className="w-full h-full object-cover"
-                    />
+
+                {/* Content */}
+                <div className="relative z-10 flex flex-col md:justify-center h-auto md:h-[100vh] mt-[100px] mb-[40px] md:my-0   px-4 md:px-16 lg:px-28">
+                  <div className="max-w-[700px]">
+                    <h1 className="text-3xl md:text-5xl text-white font-bold  font-aeonik tracking-wide mb-6 ">
+                      {slide.title}
+                    </h1>
+                    <p className="text-lg text-white mb-8 font-bwmss01 whitespace-pre-line">
+                      {slide.subtitle}
+                    </p>
+                    {/* <Link
+                      href={slide.ctaLink}
+                      className="inline-flex bg-gradient-to-r from-[#00D1FF] to-[#0029FF] text-white px-[25px] py-[10px] rounded-[4px] text-lg font-aeonik font-medium transition-transform hover:scale-105"
+                    >
+                      {slide.ctaText}
+                    </Link> */}
+                    <div className="w-fit">
+                      <Button
+                        onClick={() => setIsFormModalOpen(true)}
+                        name={slide.ctaText}
+                      />
+                    </div>
+                    {/* Mobile: render video as a separate section below CTA */}
+                    <div className="md:hidden mt-8">
+                      <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden border border-white/10">
+                        <video
+                          src={slide.mobileVideo}
+                          autoPlay
+                          muted
+                          loop
+                          playsInline
+                          className="w-full h-full object-cover"
+                        />
+                      </div>
+                    </div>
+
+                    {/* Mobile: inline category pill and details */}
+                    {isActive && (
+                      <div className="md:hidden mt-6">
+                        <SlideMorphingDialog
+                          category={slide.category}
+                          detail={slide.detail}
+                          triggerClassName=""
+                          slideId={slide.id}
+                          onOpenChange={setIsDialogOpen}
+                        />
+                      </div>
+                    )}
                   </div>
                 </div>
 
-                {/* Mobile: inline category pill and details */}
-                <div className="md:hidden mt-6">
-                  <SlideMorphingDialog
-                    category={slide.category}
-                    detail={slide.detail}
-                    triggerClassName=""
-                  />
-                </div>
-              </div>
-            </div>
-
-            {/* Category Tag + Hover Dialog */}
-            <div className="hidden md:block absolute bottom-12 left-4 md:left-12 lg:left-[110px] z-20">
-              <SlideMorphingDialog
-                category={slide.category}
-                detail={slide.detail}
-              />
-            </div>
+                {/* Category Tag + Hover Dialog */}
+                {isActive && (
+                  <div className="hidden md:block absolute bottom-12 left-4 md:left-12 lg:left-[110px] z-20">
+                    <SlideMorphingDialog
+                      category={slide.category}
+                      detail={slide.detail}
+                      slideId={slide.id}
+                      onOpenChange={setIsDialogOpen}
+                    />
+                  </div>
+                )}
+              </>
+            )}
           </SwiperSlide>
         ))}
       </Swiper>

@@ -44,15 +44,22 @@ function useMorphingDialog() {
 export type MorphingDialogProviderProps = {
   children: React.ReactNode;
   transition?: Transition;
+  onOpenChange?: (isOpen: boolean) => void;
 };
 
 function MorphingDialogProvider({
   children,
   transition,
+  onOpenChange,
 }: MorphingDialogProviderProps) {
   const [isOpen, setIsOpen] = useState(false);
   const uniqueId = useId();
   const triggerRef = useRef<HTMLButtonElement>(null!);
+
+  // Notify parent component when dialog open state changes
+  useEffect(() => {
+    onOpenChange?.(isOpen);
+  }, [isOpen, onOpenChange]);
 
   const contextValue = useMemo(
     () => ({
@@ -74,12 +81,17 @@ function MorphingDialogProvider({
 export type MorphingDialogProps = {
   children: React.ReactNode;
   transition?: Transition;
+  onOpenChange?: (isOpen: boolean) => void;
 };
 
-function MorphingDialog({ children, transition }: MorphingDialogProps) {
+function MorphingDialog({
+  children,
+  transition,
+  onOpenChange,
+}: MorphingDialogProps) {
   return (
-    <MorphingDialogProvider>
-      <MotionConfig transition={transition}>{children}</MotionConfig>
+    <MorphingDialogProvider transition={transition} onOpenChange={onOpenChange}>
+      {children}
     </MorphingDialogProvider>
   );
 }
@@ -242,7 +254,7 @@ function MorphingDialogContainer({ children }: MorphingDialogContainerProps) {
         <>
           <motion.div
             key={`backdrop-${uniqueId}`}
-            className="fixed inset-0 h-full w-full "
+            className="fixed inset-0 h-full w-full z-[5]"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
