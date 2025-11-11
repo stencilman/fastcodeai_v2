@@ -83,7 +83,7 @@ const SlideMorphingDialog = ({
         </span>
       </MorphingDialogTrigger>
       <MorphingDialogContainer>
-        <MorphingDialogContent className="absolute bottom-0 w-[90vw] max-w-[580px] border border-white/15 bg-[#030b17]/95 p-6 text-white shadow-2xl backdrop-blur-md md:rounded-[12px]">
+        <MorphingDialogContent className="absolute bottom-0 w-[90vw] max-w-[580px] border border-white/15 bg-[#030b17]/95 p-6 text-white shadow-2xl backdrop-blur-md rounded-md">
           <MorphingDialogClose className="text-white/70 transition hover:text-white" />
           <div className="space-y-4 pr-1 md:pr-2">
             <MorphingDialogTitle className="text-2xl font-semibold leading-snug text-white md:text-[28px]">
