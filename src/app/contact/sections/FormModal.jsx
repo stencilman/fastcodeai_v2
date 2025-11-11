@@ -14,6 +14,7 @@ const FormModal = ({ isOpen, onClose }) => {
     email: "",
     phone: "",
     companyName: "",
+    country: "",
     service: [],
     message: "",
   });
@@ -24,25 +25,35 @@ const FormModal = ({ isOpen, onClose }) => {
   const emailRef = useRef();
   const phoneRef = useRef();
   const companyRef = useRef();
+  const countryRef = useRef();
   const messageRef = useRef();
   const modalRef = useRef();
+  const scrollYRef = useRef(0);
 
   // Handle click outside to close modal
   useEffect(() => {
+    if (!isOpen) {
+      return undefined;
+    }
+
     const handleClickOutside = (event) => {
       if (modalRef.current && !modalRef.current.contains(event.target)) {
         onClose();
       }
     };
 
-    if (isOpen) {
-      document.addEventListener("mousedown", handleClickOutside);
-      document.body.style.overflow = "hidden"; // Prevent background scroll
-    }
+    document.addEventListener("mousedown", handleClickOutside);
+    scrollYRef.current = window.scrollY;
+    document.body.style.position = "fixed";
+    document.body.style.top = `-${scrollYRef.current}px`;
+    document.body.style.width = "100%";
 
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
-      document.body.style.overflow = "unset";
+      document.body.style.position = "";
+      document.body.style.top = "";
+      document.body.style.width = "";
+      window.scrollTo(0, scrollYRef.current);
     };
   }, [isOpen, onClose]);
 
@@ -108,12 +119,14 @@ const FormModal = ({ isOpen, onClose }) => {
         emailRef.current.value = "";
         phoneRef.current.value = "";
         companyRef.current.value = "";
+        countryRef.current.value = "";
         messageRef.current.value = "";
         setFormData({
           name: "",
           email: "",
           phone: "",
           companyName: "",
+          country: "",
           service: [],
           message: "",
         });
@@ -147,9 +160,9 @@ const FormModal = ({ isOpen, onClose }) => {
         ref={modalRef}
         className="relative w-full max-w-[95%] lg:max-w-[900px] max-h-[95vh] md:max-h-[90vh] overflow-y-auto rounded-[18px] bg-[#0E1E49] shadow-2xl my-auto"
         style={{
-          WebkitOverflowScrolling: 'touch',
-          scrollbarWidth: 'thin',
-          scrollbarColor: 'rgba(255, 255, 255, 0.3) rgba(255, 255, 255, 0.1)'
+          WebkitOverflowScrolling: "touch",
+          scrollbarWidth: "thin",
+          scrollbarColor: "rgba(255, 255, 255, 0.3) rgba(255, 255, 255, 0.1)",
         }}
       >
         {/* Close button */}
@@ -265,6 +278,24 @@ const FormModal = ({ isOpen, onClose }) => {
                     Company Name
                   </label>
                 </div>
+              </div>
+              <div className="relative z-0 w-full mb-5 group">
+                <input
+                  ref={countryRef}
+                  type="text"
+                  name="floating_country"
+                  id="floating_country"
+                  className="block py-2.5 px-0 w-full font-aeonik text-base text-white bg-transparent border-0 border-b-2 border-gray-400 appearance-auto dark:text-white dark:border-gray-400 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                  onChange={() => handleChange(countryRef, "country")}
+                  placeholder=" "
+                  required
+                />
+                <label
+                  htmlFor="floating_country"
+                  className="peer-focus:font-medium absolute font-aeonik text-base font-medium text-[#9eb3cf] dark:text-[#9eb3cf] duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:start-0 rtl:peer-placeholder-shown:translate-x-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                >
+                  Country
+                </label>
               </div>
               <div className="relative z-0 w-full mb-5 group">
                 <div className="py-2.5 px-0">
@@ -390,4 +421,3 @@ const FormModal = ({ isOpen, onClose }) => {
 };
 
 export default FormModal;
-
