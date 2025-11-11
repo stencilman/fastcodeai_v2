@@ -170,7 +170,7 @@ const CaseStudiesSlide = () => {
         <div className="relative group/slider">
           {/* Navigation Arrows */}
           <button
-            className="prev-button absolute left-2 md:left-4 top-1/2 -translate-y-1/2 z-10 w-10 h-10 md:w-12 md:h-12 rounded-full bg-white/10 backdrop-blur-md hover:bg-white/20 transition-all duration-300 flex items-center justify-center opacity-0 group-hover/slider:opacity-100 group"
+            className="prev-button absolute left-2 md:left-4 top-1/2 -translate-y-1/2 z-10 w-10 h-10 md:w-12 md:h-12 rounded-md bg-white/10 backdrop-blur-md hover:bg-white/20 transition-all duration-300 flex items-center justify-center opacity-0 group-hover/slider:opacity-100 group"
             aria-label="Previous slide"
           >
             <Image
@@ -182,7 +182,7 @@ const CaseStudiesSlide = () => {
             />
           </button>
           <button
-            className="next-button absolute right-2 md:right-4 top-1/2 -translate-y-1/2 z-10 w-10 h-10 md:w-12 md:h-12 rounded-full bg-white/10 backdrop-blur-md hover:bg-white/20 transition-all duration-300 flex items-center justify-center opacity-0 group-hover/slider:opacity-100 group"
+            className="next-button absolute right-2 md:right-4 top-1/2 -translate-y-1/2 z-10 w-10 h-10 md:w-12 md:h-12 rounded-md bg-white/10 backdrop-blur-md hover:bg-white/20 transition-all duration-300 flex items-center justify-center opacity-0 group-hover/slider:opacity-100 group"
             aria-label="Next slide"
           >
             <Image
