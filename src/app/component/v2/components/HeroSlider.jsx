@@ -23,8 +23,9 @@ import "swiper/css/pagination";
 
 const dialogTransition = {
   type: "spring",
-  stiffness: 200,
-  damping: 24,
+  stiffness: 260,
+  damping: 26,
+  mass: 0.8,
 };
 
 const SlideMorphingDialog = ({
