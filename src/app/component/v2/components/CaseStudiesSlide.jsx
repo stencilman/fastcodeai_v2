@@ -99,8 +99,8 @@ const CaseStudiesSlide = () => {
         if (ref) {
           if (index === currentIndex) {
             ref.style.width = `${
-              ((swiper.autoplay.running ? swiper.autoplay.timeLeft : 3000) /
-                3000) *
+              ((swiper.autoplay.running ? swiper.autoplay.timeLeft : 5000) /
+                5000) *
               100
             }%`;
           } else {
@@ -206,7 +206,7 @@ const CaseStudiesSlide = () => {
               nextEl: ".next-button",
             }}
             autoplay={{
-              delay: 3000,
+              delay: 5000,
               disableOnInteraction: false,
             }}
             className="case-studies-swiper"
