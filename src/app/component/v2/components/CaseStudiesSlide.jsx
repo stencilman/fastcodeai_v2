@@ -198,8 +198,8 @@ const CaseStudiesSlide = () => {
             loop={true}
             ref={mainSwiperRef}
             modules={[Autoplay, Navigation, Controller]}
-            spaceBetween={20}
-            slidesPerView={1.1}
+            spaceBetween={25}
+            slidesPerView={1.3}
             centeredSlides={true}
             navigation={{
               prevEl: ".prev-button",
@@ -215,7 +215,7 @@ const CaseStudiesSlide = () => {
               <SwiperSlide key={study.id}>
                 <div className="bg-[#030B17] relative overflow-hidden">
                   {/* Full Image Section */}
-                  <div className="relative w-full max-h-[400px] md:max-h-[450px] lg:max-h-[500px] overflow-hidden">
+                  <div className="relative w-full max-h-[400px] md:max-h-[450px] lg:max-h-[600px] overflow-hidden">
                     <div className="relative  w-full">
                       <div className="bg-[#1a1a1a] w-full h-full ">
                         <div className="relative w-[100%] ">
@@ -228,7 +228,7 @@ const CaseStudiesSlide = () => {
                                 alt="DripLabs Interface"
                                 width={1920}
                                 height={1080}
-                                className="w-full h-auto max-h-[400px] md:max-h-[450px] lg:max-h-[500px] object-cover"
+                                className="w-full h-auto max-h-[400px] md:max-h-[450px] lg:max-h-[600px] object-cover"
                                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 1100px"
                                 priority
                               />
