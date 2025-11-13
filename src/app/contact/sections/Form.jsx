@@ -16,6 +16,7 @@ const Form = () => {
     phone: "",
     companyName: "",
     country: "",
+    linkedInUrl: "",
     service: [],
     message: "",
   });
@@ -27,6 +28,7 @@ const Form = () => {
   const phoneRef = useRef();
   const companyRef = useRef();
   const countryRef = useRef();
+  const linkedInUrlRef = useRef();
   const messageRef = useRef();
 
   const handleService = (service) => {
@@ -75,6 +77,7 @@ const Form = () => {
         phoneRef.current.value = "";
         companyRef.current.value = "";
         countryRef.current.value = "";
+        linkedInUrlRef.current.value = "";
         messageRef.current.value = "";
         setFormData({
           name: "",
@@ -82,6 +85,7 @@ const Form = () => {
           phone: "",
           companyName: "",
           country: "",
+          linkedInUrl: "",
           service: [],
           message: "",
         });
@@ -312,6 +316,23 @@ const Form = () => {
                 </label>
               </div>
               <div className="relative z-0 w-full mb-5 group">
+                <input
+                  ref={linkedInUrlRef}
+                  type="url"
+                  name="floating_linkedin"
+                  id="floating_linkedin"
+                  className="block py-2.5 px-0 w-full font-aeonik text-base text-white bg-transparent border-0 border-b-2 border-gray-400 appearance-auto dark:text-white dark:border-gray-400 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
+                  onChange={() => handleChange(linkedInUrlRef, "linkedInUrl")}
+                  placeholder=" "
+                />
+                <label
+                  htmlFor="floating_linkedin"
+                  className="peer-focus:font-medium absolute font-aeonik text-base font-medium text-[#9eb3cf] dark:text-[#9eb3cf] duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:start-0 rtl:peer-placeholder-shown:translate-x-0 peer-focus:scale-75 peer-focus:-translate-y-6"
+                >
+                  LinkedIn Profile URL
+                </label>
+              </div>
+              <div className="relative z-0 w-full mb-5 group">
                 <div className="py-2.5 px-0">
                   <label
                     htmlFor="services"
@@ -357,7 +378,7 @@ const Form = () => {
                     htmlFor="floating_message"
                     className="peer-focus:font-medium absolute font-aeonik text-base font-medium text-[#9eb3cf] dark:text-[#9eb3cf] duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:start-0 rtl:peer-focus:translate-x-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:start-0 rtl:peer-placeholder-shown:translate-x-0 peer-focus:scale-75 peer-focus:-translate-y-6"
                   >
-                    Your Message
+                    Tell us about your project
                   </label>
                 </div>
 

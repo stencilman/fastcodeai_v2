@@ -19,6 +19,7 @@ export async function POST(req) {
       email = "N/A",
       phone = "N/A",
       companyName = "N/A",
+      linkedInUrl = "N/A",
       service = [],
       message = "N/A",
     } = body;
@@ -45,6 +46,7 @@ export async function POST(req) {
         Email: ${email}
         Phone: ${phone}
         Company Name: ${companyName}
+        LinkedIn URL: ${linkedInUrl}
         Services: ${services}
         Message: ${message}
       `,
