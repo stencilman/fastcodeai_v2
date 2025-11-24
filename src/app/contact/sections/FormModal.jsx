@@ -16,7 +16,6 @@ const FormModal = ({ isOpen, onClose }) => {
     companyName: "",
     country: "",
     linkedInUrl: "",
-    service: [],
     message: "",
   });
   const [message, setMessage] = useState("");
@@ -76,17 +75,6 @@ const FormModal = ({ isOpen, onClose }) => {
     };
   }, [isOpen, onClose]);
 
-  const handleService = (service) => {
-    setFormData((prevFormData) => {
-      const serviceIndex = prevFormData.service.indexOf(service);
-      const newServices =
-        serviceIndex >= 0
-          ? prevFormData.service.filter((s) => s !== service)
-          : [...prevFormData.service, service];
-      return { ...prevFormData, service: newServices };
-    });
-  };
-
   const handleChange = (ref, field) => {
     setFormData((prevFormData) => ({
       ...prevFormData,
@@ -99,7 +87,7 @@ const FormModal = ({ isOpen, onClose }) => {
     e.preventDefault();
     setIsLoading(true);
     setIsSubmitted(false);
-    setMessage("Sending email...");
+    // setMessage("Sending email...");
 
     try {
       const response = await fetch("/api/contact", {
@@ -115,7 +103,9 @@ const FormModal = ({ isOpen, onClose }) => {
 
       if (response.ok) {
         setIsSubmitted(true);
-        setMessage("✓ Email sent successfully!");
+        setMessage(
+          `Thank you! We'll get back to you at ${formData.email} within 48 hours.`
+        );
         // Reset form
         nameRef.current.value = "";
         emailRef.current.value = "";
@@ -131,23 +121,22 @@ const FormModal = ({ isOpen, onClose }) => {
           companyName: "",
           country: "",
           linkedInUrl: "",
-          service: [],
           message: "",
         });
         setTimeout(() => {
           setMessage("");
           setIsSubmitted(false);
           onClose();
-        }, 2000);
+        }, 5000);
       } else {
-        setMessage("✗ Error sending email. Please try again.");
+        setMessage("Error sending email. Please try again.");
         setTimeout(() => {
           setMessage("");
         }, 4000);
       }
     } catch (error) {
       console.error("Error:", error);
-      setMessage("✗ Error sending email. Please try again.");
+      setMessage("Error sending email. Please try again.");
       setTimeout(() => {
         setMessage("");
       }, 4000);
@@ -318,37 +307,6 @@ const FormModal = ({ isOpen, onClose }) => {
                   LinkedIn Profile URL
                 </label>
               </div>
-              <div className="relative z-0 w-full mb-5 group">
-                <div className="py-2.5 px-0">
-                  <label
-                    htmlFor="services"
-                    className="block mb-2 font-aeonik text-base font-medium text-[#9eb3cf]"
-                  >
-                    Services
-                  </label>
-                  <div className="flex gap-3 flex-wrap">
-                    {[
-                      "ML Software Solutions",
-                      "Consultation",
-                      "Niche Staffing",
-                      "Product Portfolio",
-                    ].map((service) => (
-                      <button
-                        key={service}
-                        type="button"
-                        className={`border border-white rounded-[4px] px-[20px] py-[15px] text-[#9EB3CF] text-base font-aeonik tracking-normal cursor-pointer hover:bg-[#000D2F] transition-all duration-200 ease-in ${
-                          formData.service.includes(service)
-                            ? "bg-[#000D2F] text-white"
-                            : ""
-                        }`}
-                        onClick={() => handleService(service)}
-                      >
-                        {service}
-                      </button>
-                    ))}
-                  </div>
-                </div>
-              </div>
               <div className="flex flex-col md:gap-[30px] gap-[10px] xl:gap-[40px] items-start mt-[25px]">
                 <div className="relative z-0 w-full mb-5 group">
                   <textarea
@@ -370,11 +328,56 @@ const FormModal = ({ isOpen, onClose }) => {
 
                 {message && (
                   <div
-                    className={`text-sm font-medium ${
-                      isSubmitted ? "text-green-400" : "text-red-400"
+                    className={`w-full px-4 py-3 rounded-[8px] border transition-all duration-300 ease-in-out ${
+                      isSubmitted
+                        ? "bg-gradient-to-r from-[#2DC1C3]/10 to-[#0268F2]/10 border-[#2DC1C3]/30 text-[#2DC1C3]"
+                        : "bg-red-500/10 border-red-500/30 text-red-400"
                     }`}
                   >
-                    {message}
+                    <div className="flex items-start gap-3">
+                      <div
+                        className={`flex-shrink-0 mt-0.5 ${
+                          isSubmitted ? "text-[#2DC1C3]" : "text-red-400"
+                        }`}
+                      >
+                        {isSubmitted ? (
+                          <svg
+                            width="20"
+                            height="20"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M20 6L9 17L4 12"
+                              stroke="currentColor"
+                              strokeWidth="2.5"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                            />
+                          </svg>
+                        ) : (
+                          <svg
+                            width="20"
+                            height="20"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M18 6L6 18M6 6l12 12"
+                              stroke="currentColor"
+                              strokeWidth="2.5"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                            />
+                          </svg>
+                        )}
+                      </div>
+                      <p className="text-sm font-aeonik font-medium leading-relaxed flex-1">
+                        {message}
+                      </p>
+                    </div>
                   </div>
                 )}
 
